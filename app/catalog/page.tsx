@@ -51,6 +51,10 @@ export default async function Page({
           <button type="submit" className="el-8">
             {"検索"}
           </button>
+          <label className="checkbox">
+            <input type="checkbox" name="agree" />
+            {"同意する"}
+          </label>
         </form>
         <div className="el-13">
           {items0.map((item, i) => (
