@@ -1,34 +1,60 @@
 {
   "siteName": "My Site",
   "pages": {
-    "page_mrg2598sn": {
-      "id": "page_mrg2598sn",
+    "page_mrggmomon": {
+      "id": "page_mrggmomon",
       "name": "ホーム",
       "slug": "",
       "title": "ホーム",
       "description": "",
       "children": [
-        "node_mrg2598s6",
-        "node_mrg2598sa",
-        "node_mrg2598sk",
-        "node_mrg2598sm"
+        "node_mrggmomn6",
+        "node_mrggmomna",
+        "node_mrggmomok",
+        "node_mrggmomom"
+      ]
+    },
+    "page_mrggmomo18": {
+      "id": "page_mrggmomo18",
+      "name": "商品一覧（デモ）",
+      "slug": "catalog",
+      "title": "商品一覧",
+      "description": "dummyjson.comのデータで動くサンプルページ",
+      "children": [
+        "node_mrggmomo17"
+      ]
+    },
+    "page_mrggmomow": {
+      "id": "page_mrggmomow",
+      "name": "商品詳細（デモ）",
+      "slug": "products",
+      "title": "商品詳細",
+      "description": "",
+      "dynamic": {
+        "sourceId": "ds_mrggmomoo",
+        "slugField": "id"
+      },
+      "children": [
+        "node_mrggmomov"
       ]
     }
   },
   "pageOrder": [
-    "page_mrg2598sn"
+    "page_mrggmomon",
+    "page_mrggmomo18",
+    "page_mrggmomow"
   ],
   "nodes": {
-    "node_mrg2598s6": {
-      "id": "node_mrg2598s6",
+    "node_mrggmomn6": {
+      "id": "node_mrggmomn6",
       "type": "box",
       "name": "ナビバー",
       "semantic": "header",
       "text": null,
       "link": null,
       "children": [
-        "node_mrg2598s1",
-        "node_mrg2598s5"
+        "node_mrggmomn1",
+        "node_mrggmomn5"
       ],
       "styles": {
         "base": {
@@ -45,8 +71,8 @@
         }
       }
     },
-    "node_mrg2598s1": {
-      "id": "node_mrg2598s1",
+    "node_mrggmomn1": {
+      "id": "node_mrggmomn1",
       "type": "box",
       "name": "ロゴ",
       "semantic": "auto",
@@ -66,17 +92,17 @@
         }
       }
     },
-    "node_mrg2598s5": {
-      "id": "node_mrg2598s5",
+    "node_mrggmomn5": {
+      "id": "node_mrggmomn5",
       "type": "box",
       "name": "ナビリンク",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrg2598s2",
-        "node_mrg2598s3",
-        "node_mrg2598s4"
+        "node_mrggmomn2",
+        "node_mrggmomn3",
+        "node_mrggmomn4"
       ],
       "styles": {
         "base": {
@@ -90,8 +116,8 @@
         }
       }
     },
-    "node_mrg2598s2": {
-      "id": "node_mrg2598s2",
+    "node_mrggmomn2": {
+      "id": "node_mrggmomn2",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -116,8 +142,8 @@
         }
       }
     },
-    "node_mrg2598s3": {
-      "id": "node_mrg2598s3",
+    "node_mrggmomn3": {
+      "id": "node_mrggmomn3",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -142,8 +168,8 @@
         }
       }
     },
-    "node_mrg2598s4": {
-      "id": "node_mrg2598s4",
+    "node_mrggmomn4": {
+      "id": "node_mrggmomn4",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -168,17 +194,17 @@
         }
       }
     },
-    "node_mrg2598sa": {
-      "id": "node_mrg2598sa",
+    "node_mrggmomna": {
+      "id": "node_mrggmomna",
       "type": "box",
       "name": "ヒーロー",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrg2598s7",
-        "node_mrg2598s8",
-        "node_mrg2598s9"
+        "node_mrggmomn7",
+        "node_mrggmomn8",
+        "node_mrggmomn9"
       ],
       "styles": {
         "base": {
@@ -194,13 +220,13 @@
         }
       }
     },
-    "node_mrg2598s7": {
-      "id": "node_mrg2598s7",
+    "node_mrggmomn7": {
+      "id": "node_mrggmomn7",
       "type": "box",
       "name": "あなたのサイトを、\nもっ",
       "semantic": "auto",
       "text": {
-        "content": "あなたのサイトを、\nもっと自由にするううううううううううう。",
+        "content": "あなたのサイトを、\nもっと自由に。",
         "heading": 1
       },
       "link": null,
@@ -217,8 +243,8 @@
         }
       }
     },
-    "node_mrg2598s8": {
-      "id": "node_mrg2598s8",
+    "node_mrggmomn8": {
+      "id": "node_mrggmomn8",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -240,8 +266,8 @@
         }
       }
     },
-    "node_mrg2598s9": {
-      "id": "node_mrg2598s9",
+    "node_mrggmomn9": {
+      "id": "node_mrggmomn9",
       "type": "box",
       "name": "ボタン",
       "semantic": "auto",
@@ -277,17 +303,17 @@
         }
       }
     },
-    "node_mrg2598sk": {
-      "id": "node_mrg2598sk",
+    "node_mrggmomok": {
+      "id": "node_mrggmomok",
       "type": "box",
       "name": "カードグリッド",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrg2598sd",
-        "node_mrg2598sg",
-        "node_mrg2598sj"
+        "node_mrggmomod",
+        "node_mrggmomog",
+        "node_mrggmomoj"
       ],
       "styles": {
         "base": {
@@ -306,16 +332,16 @@
         }
       }
     },
-    "node_mrg2598sd": {
-      "id": "node_mrg2598sd",
+    "node_mrggmomod": {
+      "id": "node_mrggmomod",
       "type": "box",
       "name": "カード 1",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrg2598sb",
-        "node_mrg2598sc"
+        "node_mrggmomob",
+        "node_mrggmomoc"
       ],
       "styles": {
         "base": {
@@ -331,8 +357,8 @@
         }
       }
     },
-    "node_mrg2598sb": {
-      "id": "node_mrg2598sb",
+    "node_mrggmomob": {
+      "id": "node_mrggmomob",
       "type": "box",
       "name": "カード 1",
       "semantic": "auto",
@@ -352,8 +378,8 @@
         }
       }
     },
-    "node_mrg2598sc": {
-      "id": "node_mrg2598sc",
+    "node_mrggmomoc": {
+      "id": "node_mrggmomoc",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -373,16 +399,16 @@
         }
       }
     },
-    "node_mrg2598sg": {
-      "id": "node_mrg2598sg",
+    "node_mrggmomog": {
+      "id": "node_mrggmomog",
       "type": "box",
       "name": "カード 2",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrg2598se",
-        "node_mrg2598sf"
+        "node_mrggmomoe",
+        "node_mrggmomof"
       ],
       "styles": {
         "base": {
@@ -398,8 +424,8 @@
         }
       }
     },
-    "node_mrg2598se": {
-      "id": "node_mrg2598se",
+    "node_mrggmomoe": {
+      "id": "node_mrggmomoe",
       "type": "box",
       "name": "カード 2",
       "semantic": "auto",
@@ -419,8 +445,8 @@
         }
       }
     },
-    "node_mrg2598sf": {
-      "id": "node_mrg2598sf",
+    "node_mrggmomof": {
+      "id": "node_mrggmomof",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -440,16 +466,16 @@
         }
       }
     },
-    "node_mrg2598sj": {
-      "id": "node_mrg2598sj",
+    "node_mrggmomoj": {
+      "id": "node_mrggmomoj",
       "type": "box",
       "name": "カード 3",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrg2598sh",
-        "node_mrg2598si"
+        "node_mrggmomoh",
+        "node_mrggmomoi"
       ],
       "styles": {
         "base": {
@@ -465,8 +491,8 @@
         }
       }
     },
-    "node_mrg2598sh": {
-      "id": "node_mrg2598sh",
+    "node_mrggmomoh": {
+      "id": "node_mrggmomoh",
       "type": "box",
       "name": "カード 3",
       "semantic": "auto",
@@ -486,8 +512,8 @@
         }
       }
     },
-    "node_mrg2598si": {
-      "id": "node_mrg2598si",
+    "node_mrggmomoi": {
+      "id": "node_mrggmomoi",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -507,15 +533,15 @@
         }
       }
     },
-    "node_mrg2598sm": {
-      "id": "node_mrg2598sm",
+    "node_mrggmomom": {
+      "id": "node_mrggmomom",
       "type": "box",
       "name": "フッター",
       "semantic": "footer",
       "text": null,
       "link": null,
       "children": [
-        "node_mrg2598sl"
+        "node_mrggmomol"
       ],
       "styles": {
         "base": {
@@ -531,8 +557,8 @@
         }
       }
     },
-    "node_mrg2598sl": {
-      "id": "node_mrg2598sl",
+    "node_mrggmomol": {
+      "id": "node_mrggmomol",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -551,6 +577,535 @@
           }
         }
       }
+    },
+    "node_mrggmomop": {
+      "id": "node_mrggmomop",
+      "type": "image",
+      "name": "商品画像",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+        "alt": "商品画像",
+        "width": 300,
+        "height": 300
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "320px",
+            "borderRadius": "16px",
+            "backgroundColor": "#fafafa"
+          }
+        }
+      },
+      "bind": {
+        "image": "thumbnail"
+      }
+    },
+    "node_mrggmomoq": {
+      "id": "node_mrggmomoq",
+      "type": "box",
+      "name": "商品名",
+      "semantic": "auto",
+      "text": {
+        "content": "商品名",
+        "heading": 1
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "34px",
+            "fontWeight": "700",
+            "lineHeight": "1.4"
+          }
+        }
+      },
+      "bind": {
+        "text": "title"
+      }
+    },
+    "node_mrggmomor": {
+      "id": "node_mrggmomor",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "ブランド",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "13px",
+            "lineHeight": "1.7",
+            "color": "#a1a1aa"
+          }
+        }
+      },
+      "bind": {
+        "text": "brand"
+      }
+    },
+    "node_mrggmomos": {
+      "id": "node_mrggmomos",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "説明文",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "15px",
+            "lineHeight": "1.7",
+            "color": "#52525b"
+          }
+        }
+      },
+      "bind": {
+        "text": "description"
+      }
+    },
+    "node_mrggmomot": {
+      "id": "node_mrggmomot",
+      "type": "box",
+      "name": "価格",
+      "semantic": "auto",
+      "text": {
+        "content": "価格",
+        "heading": 3
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "26px",
+            "fontWeight": "700",
+            "lineHeight": "1.4",
+            "color": "#0d99ff"
+          }
+        }
+      },
+      "bind": {
+        "text": "price"
+      }
+    },
+    "node_mrggmomou": {
+      "id": "node_mrggmomou",
+      "type": "box",
+      "name": "商品情報",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mrggmomor",
+        "node_mrggmomoq",
+        "node_mrggmomot",
+        "node_mrggmomos"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "12px",
+            "alignItems": "flex-start",
+            "flex": "1"
+          }
+        }
+      }
+    },
+    "node_mrggmomov": {
+      "id": "node_mrggmomov",
+      "type": "box",
+      "name": "詳細レイアウト",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mrggmomop",
+        "node_mrggmomou"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "padding": "64px 40px",
+            "gap": "40px",
+            "maxWidth": "900px",
+            "margin": "0 auto",
+            "width": "100%"
+          }
+        },
+        "md": {
+          "default": {
+            "flexDirection": "column"
+          }
+        }
+      }
+    },
+    "node_mrggmomox": {
+      "id": "node_mrggmomox",
+      "type": "box",
+      "name": "商品カタログ",
+      "semantic": "auto",
+      "text": {
+        "content": "商品カタログ",
+        "heading": 1
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "44px",
+            "fontWeight": "700",
+            "lineHeight": "1.4",
+            "textAlign": "center"
+          }
+        }
+      }
+    },
+    "node_mrggmomoy": {
+      "id": "node_mrggmomoy",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "dummyjson.com のデータで動く一覧・検索・詳細ページのサンプルです。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "14px",
+            "lineHeight": "1.7",
+            "color": "#71717a",
+            "textAlign": "center"
+          }
+        }
+      }
+    },
+    "node_mrggmomoz": {
+      "id": "node_mrggmomoz",
+      "type": "field",
+      "name": "入力欄",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "field": {
+        "kind": "input",
+        "name": "q",
+        "placeholder": "商品を検索…"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "360px",
+            "padding": "10px 14px",
+            "fontSize": "14px",
+            "border": "1px solid #d4d4d8",
+            "borderRadius": "8px",
+            "backgroundColor": "#ffffff"
+          }
+        }
+      }
+    },
+    "node_mrggmomo10": {
+      "id": "node_mrggmomo10",
+      "type": "field",
+      "name": "送信ボタン",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "field": {
+        "kind": "submit",
+        "label": "検索"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "inline-flex",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "padding": "10px 24px",
+            "backgroundColor": "#18181b",
+            "color": "#ffffff",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "border": "none",
+            "borderRadius": "8px",
+            "cursor": "pointer"
+          }
+        }
+      }
+    },
+    "node_mrggmomo11": {
+      "id": "node_mrggmomo11",
+      "type": "box",
+      "name": "検索フォーム",
+      "semantic": "form",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mrggmomoz",
+        "node_mrggmomo10"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "padding": "0px",
+            "gap": "10px",
+            "justifyContent": "center",
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mrggmomo12": {
+      "id": "node_mrggmomo12",
+      "type": "image",
+      "name": "サムネイル",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+        "alt": "商品サムネイル",
+        "width": 300,
+        "height": 300
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "aspectRatio": "1 / 1",
+            "objectFit": "cover",
+            "borderRadius": "10px",
+            "backgroundColor": "#fafafa"
+          }
+        }
+      },
+      "bind": {
+        "image": "thumbnail"
+      }
+    },
+    "node_mrggmomo13": {
+      "id": "node_mrggmomo13",
+      "type": "box",
+      "name": "商品名",
+      "semantic": "auto",
+      "text": {
+        "content": "商品名",
+        "heading": 3
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "15px",
+            "fontWeight": "700",
+            "lineHeight": "1.4"
+          }
+        }
+      },
+      "bind": {
+        "text": "title"
+      }
+    },
+    "node_mrggmomo14": {
+      "id": "node_mrggmomo14",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "価格",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "14px",
+            "lineHeight": "1.7",
+            "fontWeight": "600",
+            "color": "#0d99ff"
+          }
+        }
+      },
+      "bind": {
+        "text": "price"
+      }
+    },
+    "node_mrggmomo15": {
+      "id": "node_mrggmomo15",
+      "type": "box",
+      "name": "商品カード",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mrggmomo12",
+        "node_mrggmomo13",
+        "node_mrggmomo14"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "10px",
+            "cursor": "pointer"
+          }
+        }
+      }
+    },
+    "node_mrggmomo16": {
+      "id": "node_mrggmomo16",
+      "type": "list",
+      "name": "商品リスト",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "list": {
+        "sourceId": "ds_mrggmomoo",
+        "limit": 12,
+        "linkToPageId": "page_mrggmomow",
+        "passQuery": true
+      },
+      "children": [
+        "node_mrggmomo15"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "grid",
+            "gridTemplateColumns": "repeat(4, 1fr)",
+            "gap": "24px",
+            "padding": "0px",
+            "width": "100%"
+          }
+        },
+        "md": {
+          "default": {
+            "gridTemplateColumns": "repeat(2, 1fr)"
+          }
+        }
+      }
+    },
+    "node_mrggmomo17": {
+      "id": "node_mrggmomo17",
+      "type": "box",
+      "name": "商品一覧セクション",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mrggmomox",
+        "node_mrggmomoy",
+        "node_mrggmomo11",
+        "node_mrggmomo16"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "64px 40px",
+            "gap": "28px",
+            "alignItems": "center",
+            "maxWidth": "1080px",
+            "margin": "0 auto",
+            "width": "100%"
+          }
+        }
+      }
+    }
+  },
+  "dataSources": {
+    "ds_mrggmomoo": {
+      "id": "ds_mrggmomoo",
+      "name": "商品カタログ（デモ）",
+      "url": "https://dummyjson.com/products/search",
+      "itemsPath": "products",
+      "fields": [
+        "id",
+        "title",
+        "description",
+        "price",
+        "thumbnail",
+        "category",
+        "brand",
+        "rating"
+      ],
+      "sample": [
+        {
+          "id": 1,
+          "title": "Essence Mascara Lash Princess",
+          "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing …",
+          "price": 9.99,
+          "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+          "category": "beauty",
+          "brand": "Essence",
+          "rating": 2.56
+        },
+        {
+          "id": 2,
+          "title": "Eyeshadow Palette with Mirror",
+          "description": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades f…",
+          "price": 19.99,
+          "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp",
+          "category": "beauty",
+          "brand": "Glamour Beauty",
+          "rating": 2.86
+        },
+        {
+          "id": 3,
+          "title": "Powder Canister",
+          "description": "The Powder Canister is a finely milled setting powder designed to set makeup and…",
+          "price": 14.99,
+          "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp",
+          "category": "beauty",
+          "brand": "Velvet Touch",
+          "rating": 4.64
+        },
+        {
+          "id": 4,
+          "title": "Red Lipstick",
+          "description": "The Red Lipstick is a classic and bold choice for adding a pop of color to your …",
+          "price": 12.99,
+          "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
+          "category": "beauty",
+          "brand": "Chic Cosmetics",
+          "rating": 4.36
+        }
+      ],
+      "fetchedAt": 1783780124208
     }
   },
   "assets": {},

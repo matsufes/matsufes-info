@@ -25,7 +25,7 @@ export default function Page() {
       </header>
       <section className="hero">
         <h1 className="el">
-          {"あなたのサイトを、\nもっと自由にするううううううううううう。"}
+          {"あなたのサイトを、\nもっと自由に。"}
         </h1>
         <p className="text-4">
           {"ビジュアルエディタで作って、Next.jsとして書き出す。ロックインのないサイトビルダー。"}
