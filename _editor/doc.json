@@ -1,18 +1,21 @@
 {
-  "siteName": "My Site",
+  "siteName": "第56回松ヶ崎祭",
   "pages": {
     "page_mrgi4i6p1v": {
       "id": "page_mrgi4i6p1v",
       "name": "ホーム",
       "slug": "",
       "title": "ホーム",
-      "description": "",
+      "description": "第56回松ヶ崎祭",
       "children": [
         "node_mrgi4i6p1e",
         "node_mrgi4i6p1i",
         "node_mrgi4i6p1s",
         "node_mrgi4i6p1u"
-      ]
+      ],
+      "ogImage": {
+        "assetId": "asset_mrgkb23h2"
+      }
     },
     "page_mrgi4i6p2g": {
       "id": "page_mrgi4i6p2g",
@@ -1145,6 +1148,25 @@
       "fetchedAt": 1783782635281
     }
   },
-  "assets": {},
-  "customCss": ""
+  "assets": {
+    "asset_mrgk9lua1": {
+      "id": "asset_mrgk9lua1",
+      "name": "favicon.ico",
+      "path": "editor-7a8da8a6f505ea11/assets/mrgk9ki7-favicon.ico",
+      "width": 256,
+      "height": 256
+    },
+    "asset_mrgkb23h2": {
+      "id": "asset_mrgkb23h2",
+      "name": "ogp.png",
+      "path": "editor-7a8da8a6f505ea11/assets/mrgkb0rn-ogp.png",
+      "width": 1200,
+      "height": 630
+    }
+  },
+  "customCss": "",
+  "favicon": {
+    "assetId": "asset_mrgk9lua1"
+  },
+  "siteUrl": "https://homepage-gray-psi.vercel.app/"
 }

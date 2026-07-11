@@ -2,6 +2,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "ホーム",
+  description: "第56回松ヶ崎祭",
+  openGraph: {
+    title: "ホーム",
+    description: "第56回松ヶ崎祭",
+    images: ["/assets/ogp.png"],
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 export default function Page() {
