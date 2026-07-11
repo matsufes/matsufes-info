@@ -1,4 +1,4 @@
-# matsufes.info
+# My Site
 
 サイトエディタから書き出された Next.js プロジェクトです。
 

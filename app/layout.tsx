@@ -4,8 +4,8 @@ import "../styles/site.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "matsufes.info",
-    template: "%s | matsufes.info",
+    default: "My Site",
+    template: "%s | My Site",
   },
 };
 
