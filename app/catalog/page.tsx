@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import SearchForm from "@/components/SearchForm";
 
 // リストのJSONを毎リクエスト取得し、常に最新の内容を配信する
 export const dynamic = "force-dynamic";
@@ -46,7 +47,7 @@ export default async function Page({
         <p className="text-11">
           {"dummyjson.com のデータで動く一覧・検索・詳細ページのサンプルです。"}
         </p>
-        <form method="get" className="el-9">
+        <SearchForm className="el-9">
           <input type="text" className="input" name="q" placeholder="商品を検索…" />
           <button type="submit" className="el-8">
             {"検索"}
@@ -55,7 +56,7 @@ export default async function Page({
             <input type="checkbox" name="agree" />
             {"同意する"}
           </label>
-        </form>
+        </SearchForm>
         <div className="el-13">
           {items0.map((item, i) => (
             <a
