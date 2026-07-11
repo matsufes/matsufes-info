@@ -37,12 +37,23 @@
       "children": [
         "node_mrgi4i6p23"
       ]
+    },
+    "page_mrgj0xtn1": {
+      "id": "page_mrgj0xtn1",
+      "name": "ページ 4",
+      "slug": "page-4",
+      "title": "ページ 4",
+      "description": "",
+      "children": [],
+      "rawHtml": "<!DOCTYPE html>\n<html lang=\"ja\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <title>ドラッグで100km四方</title>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\n  <link\n    rel=\"stylesheet\"\n    href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\"\n  />\n  <script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n  <script src=\"https://unpkg.com/@turf/turf@6/turf.min.js\"></script>\n\n  <style>\n    #map {\n      height: 100vh;\n      width: 100%;\n    }\n    body {\n      padding: 0;\n      margin: 0;\n    }\n  </style>\n</head>\n<body>\n<div id=\"map\"></div>\n\n<script>\n  const map = L.map('map').setView([35.0116, 135.7681], 8);\n\n  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {\n    attribution: '&copy; OpenStreetMap contributors'\n  }).addTo(map);\n\n  // ドラッグ可能な中心マーカー\n  const centerMarker = L.marker([35.0116, 135.7681], {\n    draggable: true\n  }).addTo(map);\n\n  let squareLayer = null;\n\n  function updateSquare(lat, lng) {\n    const center = [lng, lat];\n    const half = 50;\n\n    const north = turf.destination(center, half, 0, { units: 'kilometers' });\n    const south = turf.destination(center, half, 180, { units: 'kilometers' });\n    const east  = turf.destination(center, half, 90, { units: 'kilometers' });\n    const west  = turf.destination(center, half, 270, { units: 'kilometers' });\n\n    const polygon = [\n      [north.geometry.coordinates[1], west.geometry.coordinates[0]],\n      [north.geometry.coordinates[1], east.geometry.coordinates[0]],\n      [south.geometry.coordinates[1], east.geometry.coordinates[0]],\n      [south.geometry.coordinates[1], west.geometry.coordinates[0]],\n      [north.geometry.coordinates[1], west.geometry.coordinates[0]]\n    ];\n\n    if (squareLayer) {\n      squareLayer.setLatLngs(polygon);\n    } else {\n      squareLayer = L.polygon(polygon, {\n        color: 'red',\n        weight: 2,\n        fillOpacity: 0.15\n      }).addTo(map);\n    }\n  }\n\n  // 初期描画\n  updateSquare(35.0116, 135.7681);\n\n  // ドラッグで更新\n  centerMarker.on('drag', (e) => {\n    const latlng = e.latlng;\n    updateSquare(latlng.lat, latlng.lng);\n  });\n</script>\n</body>\n</html>",
+      "dynamic": null
     }
   },
   "pageOrder": [
     "page_mrgi4i6p1v",
     "page_mrgi4i6p2g",
-    "page_mrgi4i6p24"
+    "page_mrgi4i6p24",
+    "page_mrgj0xtn1"
   ],
   "nodes": {
     "node_mrgi4i6p1e": {
