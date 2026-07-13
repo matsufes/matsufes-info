@@ -1,74 +1,68 @@
 {
-  "siteName": "第56回松ヶ崎祭",
+  "siteName": "My Site",
   "pages": {
-    "page_mrgi4i6p1v": {
-      "id": "page_mrgi4i6p1v",
+    "page_mrirkjizo": {
+      "id": "page_mrirkjizo",
       "name": "ホーム",
       "slug": "",
       "title": "ホーム",
-      "description": "第56回松ヶ崎祭",
+      "description": "",
       "children": [
-        "node_mrgi4i6p1e",
-        "node_mrgi4i6p1i",
-        "node_mrgi4i6p1s",
-        "node_mrgi4i6p1u"
-      ],
-      "ogImage": {
-        "assetId": "asset_mrgkb23h2"
-      }
+        "node_mrirkjiy7",
+        "node_mrirkjizb",
+        "node_mrirkjizl",
+        "node_mrirkjizn"
+      ]
     },
-    "page_mrgi4i6p2g": {
-      "id": "page_mrgi4i6p2g",
+    "page_mrirkjiz1f": {
+      "id": "page_mrirkjiz1f",
       "name": "商品一覧（デモ）",
       "slug": "catalog",
       "title": "商品一覧",
       "description": "dummyjson.comのデータで動くサンプルページ",
       "children": [
-        "node_mrgi4i6p2f"
+        "node_mrirkjiz1e"
       ]
     },
-    "page_mrgi4i6p24": {
-      "id": "page_mrgi4i6p24",
+    "page_mrirkjiz13": {
+      "id": "page_mrirkjiz13",
       "name": "商品詳細（デモ）",
-      "slug": "products",
+      "slug": "products/[slug]",
       "title": "商品詳細",
       "description": "",
-      "dynamic": {
-        "sourceId": "ds_mrgi4i6p1w",
-        "slugField": "id"
-      },
       "children": [
-        "node_mrgi4i6p23"
+        "node_mrirkjiz12"
       ]
     },
-    "page_mrgj0xtn1": {
-      "id": "page_mrgj0xtn1",
-      "name": "ページ 4",
-      "slug": "page-4",
-      "title": "ページ 4",
+    "page_mrirkjizt": {
+      "id": "page_mrirkjizt",
+      "name": "404（見つからないとき）",
+      "slug": "404",
+      "title": "ページが見つかりません",
       "description": "",
-      "children": [],
-      "rawHtml": "<!DOCTYPE html>\n<html lang=\"ja\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <title>ドラッグで100km四方</title>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\n  <link\n    rel=\"stylesheet\"\n    href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\"\n  />\n  <script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n  <script src=\"https://unpkg.com/@turf/turf@6/turf.min.js\"></script>\n\n  <style>\n    #map {\n      height: 100vh;\n      width: 100%;\n    }\n    body {\n      padding: 0;\n      margin: 0;\n    }\n  </style>\n</head>\n<body>\n<div id=\"map\"></div>\n\n<script>\n  const map = L.map('map').setView([35.0116, 135.7681], 8);\n\n  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {\n    attribution: '&copy; OpenStreetMap contributors'\n  }).addTo(map);\n\n  // ドラッグ可能な中心マーカー\n  const centerMarker = L.marker([35.0116, 135.7681], {\n    draggable: true\n  }).addTo(map);\n\n  let squareLayer = null;\n\n  function updateSquare(lat, lng) {\n    const center = [lng, lat];\n    const half = 50;\n\n    const north = turf.destination(center, half, 0, { units: 'kilometers' });\n    const south = turf.destination(center, half, 180, { units: 'kilometers' });\n    const east  = turf.destination(center, half, 90, { units: 'kilometers' });\n    const west  = turf.destination(center, half, 270, { units: 'kilometers' });\n\n    const polygon = [\n      [north.geometry.coordinates[1], west.geometry.coordinates[0]],\n      [north.geometry.coordinates[1], east.geometry.coordinates[0]],\n      [south.geometry.coordinates[1], east.geometry.coordinates[0]],\n      [south.geometry.coordinates[1], west.geometry.coordinates[0]],\n      [north.geometry.coordinates[1], west.geometry.coordinates[0]]\n    ];\n\n    if (squareLayer) {\n      squareLayer.setLatLngs(polygon);\n    } else {\n      squareLayer = L.polygon(polygon, {\n        color: 'red',\n        weight: 2,\n        fillOpacity: 0.15\n      }).addTo(map);\n    }\n  }\n\n  // 初期描画\n  updateSquare(35.0116, 135.7681);\n\n  // ドラッグで更新\n  centerMarker.on('drag', (e) => {\n    const latlng = e.latlng;\n    updateSquare(latlng.lat, latlng.lng);\n  });\n</script>\n</body>\n</html>",
-      "dynamic": null
+      "children": [
+        "node_mrirkjizs"
+      ]
     }
   },
   "pageOrder": [
-    "page_mrgi4i6p1v",
-    "page_mrgi4i6p2g",
-    "page_mrgi4i6p24",
-    "page_mrgj0xtn1"
+    "page_mrirkjizo",
+    "page_mrirkjiz1f",
+    "page_mrirkjiz13",
+    "page_mrirkjizt"
   ],
   "nodes": {
-    "node_mrgi4i6p1e": {
-      "id": "node_mrgi4i6p1e",
+    "node_mrirkjiy7": {
+      "id": "node_mrirkjiy7",
       "type": "box",
       "name": "ナビバー",
       "semantic": "header",
       "text": null,
       "link": null,
       "children": [
-        "node_mrgi4i6p19",
-        "node_mrgi4i6p1d"
+        "node_mrirkjiy1",
+        "node_mrirkjiy5",
+        "node_mrirkjiy6"
       ],
       "styles": {
         "base": {
@@ -83,10 +77,11 @@
             "borderBottom": "1px solid #e4e4e7"
           }
         }
-      }
+      },
+      "attrId": "navbar"
     },
-    "node_mrgi4i6p19": {
-      "id": "node_mrgi4i6p19",
+    "node_mrirkjiy1": {
+      "id": "node_mrirkjiy1",
       "type": "box",
       "name": "ロゴ",
       "semantic": "auto",
@@ -106,17 +101,17 @@
         }
       }
     },
-    "node_mrgi4i6p1d": {
-      "id": "node_mrgi4i6p1d",
+    "node_mrirkjiy5": {
+      "id": "node_mrirkjiy5",
       "type": "box",
       "name": "ナビリンク",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrgi4i6p1a",
-        "node_mrgi4i6p1b",
-        "node_mrgi4i6p1c"
+        "node_mrirkjiy2",
+        "node_mrirkjiy3",
+        "node_mrirkjiy4"
       ],
       "styles": {
         "base": {
@@ -127,11 +122,61 @@
             "gap": "28px",
             "alignItems": "center"
           }
+        },
+        "sm": {
+          "default": {
+            "display": "none",
+            "position": "absolute",
+            "top": "100%",
+            "left": "0",
+            "right": "0",
+            "zIndex": "50",
+            "flexDirection": "column",
+            "alignItems": "stretch",
+            "gap": "0px",
+            "padding": "8px 0",
+            "backgroundColor": "#ffffff",
+            "borderBottom": "1px solid #e4e4e7"
+          }
+        }
+      },
+      "attrId": "nav-links"
+    },
+    "node_mrirkjiy6": {
+      "id": "node_mrirkjiy6",
+      "type": "icon",
+      "name": "メニュー開閉",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "icon": {
+        "name": "menu",
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-menu\" aria-hidden=\"true\"><path d=\"M4 5h16\"></path><path d=\"M4 12h16\"></path><path d=\"M4 19h16\"></path></svg>"
+      },
+      "toggle": {
+        "trigger": "click",
+        "targetId": "nav-links"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "none",
+            "width": "24px",
+            "height": "24px",
+            "color": "#18181b",
+            "cursor": "pointer"
+          }
+        },
+        "sm": {
+          "default": {
+            "display": "inline-flex"
+          }
         }
       }
     },
-    "node_mrgi4i6p1a": {
-      "id": "node_mrgi4i6p1a",
+    "node_mrirkjiy2": {
+      "id": "node_mrirkjiy2",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -153,11 +198,16 @@
             "textDecoration": "none",
             "color": "#18181b"
           }
+        },
+        "sm": {
+          "default": {
+            "padding": "12px 24px"
+          }
         }
       }
     },
-    "node_mrgi4i6p1b": {
-      "id": "node_mrgi4i6p1b",
+    "node_mrirkjiy3": {
+      "id": "node_mrirkjiy3",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -179,11 +229,16 @@
             "textDecoration": "none",
             "color": "#18181b"
           }
+        },
+        "sm": {
+          "default": {
+            "padding": "12px 24px"
+          }
         }
       }
     },
-    "node_mrgi4i6p1c": {
-      "id": "node_mrgi4i6p1c",
+    "node_mrirkjiy4": {
+      "id": "node_mrirkjiy4",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -205,20 +260,25 @@
             "textDecoration": "none",
             "color": "#18181b"
           }
+        },
+        "sm": {
+          "default": {
+            "padding": "12px 24px"
+          }
         }
       }
     },
-    "node_mrgi4i6p1i": {
-      "id": "node_mrgi4i6p1i",
+    "node_mrirkjizb": {
+      "id": "node_mrirkjizb",
       "type": "box",
       "name": "ヒーロー",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrgi4i6p1f",
-        "node_mrgi4i6p1g",
-        "node_mrgi4i6p1h"
+        "node_mrirkjiy8",
+        "node_mrirkjiy9",
+        "node_mrirkjiya"
       ],
       "styles": {
         "base": {
@@ -234,8 +294,8 @@
         }
       }
     },
-    "node_mrgi4i6p1f": {
-      "id": "node_mrgi4i6p1f",
+    "node_mrirkjiy8": {
+      "id": "node_mrirkjiy8",
       "type": "box",
       "name": "あなたのサイトを、\nもっ",
       "semantic": "auto",
@@ -257,8 +317,8 @@
         }
       }
     },
-    "node_mrgi4i6p1g": {
-      "id": "node_mrgi4i6p1g",
+    "node_mrirkjiy9": {
+      "id": "node_mrirkjiy9",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -280,8 +340,8 @@
         }
       }
     },
-    "node_mrgi4i6p1h": {
-      "id": "node_mrgi4i6p1h",
+    "node_mrirkjiya": {
+      "id": "node_mrirkjiya",
       "type": "box",
       "name": "ボタン",
       "semantic": "auto",
@@ -317,17 +377,17 @@
         }
       }
     },
-    "node_mrgi4i6p1s": {
-      "id": "node_mrgi4i6p1s",
+    "node_mrirkjizl": {
+      "id": "node_mrirkjizl",
       "type": "box",
       "name": "カードグリッド",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrgi4i6p1l",
-        "node_mrgi4i6p1o",
-        "node_mrgi4i6p1r"
+        "node_mrirkjize",
+        "node_mrirkjizh",
+        "node_mrirkjizk"
       ],
       "styles": {
         "base": {
@@ -346,16 +406,16 @@
         }
       }
     },
-    "node_mrgi4i6p1l": {
-      "id": "node_mrgi4i6p1l",
+    "node_mrirkjize": {
+      "id": "node_mrirkjize",
       "type": "box",
       "name": "カード 1",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrgi4i6p1j",
-        "node_mrgi4i6p1k"
+        "node_mrirkjizc",
+        "node_mrirkjizd"
       ],
       "styles": {
         "base": {
@@ -371,8 +431,8 @@
         }
       }
     },
-    "node_mrgi4i6p1j": {
-      "id": "node_mrgi4i6p1j",
+    "node_mrirkjizc": {
+      "id": "node_mrirkjizc",
       "type": "box",
       "name": "カード 1",
       "semantic": "auto",
@@ -392,8 +452,8 @@
         }
       }
     },
-    "node_mrgi4i6p1k": {
-      "id": "node_mrgi4i6p1k",
+    "node_mrirkjizd": {
+      "id": "node_mrirkjizd",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -413,16 +473,16 @@
         }
       }
     },
-    "node_mrgi4i6p1o": {
-      "id": "node_mrgi4i6p1o",
+    "node_mrirkjizh": {
+      "id": "node_mrirkjizh",
       "type": "box",
       "name": "カード 2",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrgi4i6p1m",
-        "node_mrgi4i6p1n"
+        "node_mrirkjizf",
+        "node_mrirkjizg"
       ],
       "styles": {
         "base": {
@@ -438,8 +498,8 @@
         }
       }
     },
-    "node_mrgi4i6p1m": {
-      "id": "node_mrgi4i6p1m",
+    "node_mrirkjizf": {
+      "id": "node_mrirkjizf",
       "type": "box",
       "name": "カード 2",
       "semantic": "auto",
@@ -459,8 +519,8 @@
         }
       }
     },
-    "node_mrgi4i6p1n": {
-      "id": "node_mrgi4i6p1n",
+    "node_mrirkjizg": {
+      "id": "node_mrirkjizg",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -480,16 +540,16 @@
         }
       }
     },
-    "node_mrgi4i6p1r": {
-      "id": "node_mrgi4i6p1r",
+    "node_mrirkjizk": {
+      "id": "node_mrirkjizk",
       "type": "box",
       "name": "カード 3",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrgi4i6p1p",
-        "node_mrgi4i6p1q"
+        "node_mrirkjizi",
+        "node_mrirkjizj"
       ],
       "styles": {
         "base": {
@@ -505,8 +565,8 @@
         }
       }
     },
-    "node_mrgi4i6p1p": {
-      "id": "node_mrgi4i6p1p",
+    "node_mrirkjizi": {
+      "id": "node_mrirkjizi",
       "type": "box",
       "name": "カード 3",
       "semantic": "auto",
@@ -526,8 +586,8 @@
         }
       }
     },
-    "node_mrgi4i6p1q": {
-      "id": "node_mrgi4i6p1q",
+    "node_mrirkjizj": {
+      "id": "node_mrirkjizj",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -547,15 +607,15 @@
         }
       }
     },
-    "node_mrgi4i6p1u": {
-      "id": "node_mrgi4i6p1u",
+    "node_mrirkjizn": {
+      "id": "node_mrirkjizn",
       "type": "box",
       "name": "フッター",
       "semantic": "footer",
       "text": null,
       "link": null,
       "children": [
-        "node_mrgi4i6p1t"
+        "node_mrirkjizm"
       ],
       "styles": {
         "base": {
@@ -571,8 +631,8 @@
         }
       }
     },
-    "node_mrgi4i6p1t": {
-      "id": "node_mrgi4i6p1t",
+    "node_mrirkjizm": {
+      "id": "node_mrirkjizm",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -592,18 +652,124 @@
         }
       }
     },
-    "node_mrgi4i6p1x": {
-      "id": "node_mrgi4i6p1x",
+    "node_mrirkjizs": {
+      "id": "node_mrirkjizs",
+      "type": "box",
+      "name": "404セクション",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mrirkjizp",
+        "node_mrirkjizq",
+        "node_mrirkjizr"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "140px 40px",
+            "gap": "18px",
+            "alignItems": "center",
+            "justifyContent": "center"
+          }
+        }
+      }
+    },
+    "node_mrirkjizp": {
+      "id": "node_mrirkjizp",
+      "type": "box",
+      "name": "404見出し",
+      "semantic": "auto",
+      "text": {
+        "content": "404",
+        "heading": 1
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "64px",
+            "fontWeight": "700",
+            "lineHeight": "1.4",
+            "letterSpacing": "0.04em",
+            "textAlign": "center"
+          }
+        }
+      }
+    },
+    "node_mrirkjizq": {
+      "id": "node_mrirkjizq",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "お探しのページは見つかりませんでした。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "15px",
+            "lineHeight": "1.7",
+            "color": "#71717a",
+            "textAlign": "center"
+          }
+        }
+      }
+    },
+    "node_mrirkjizr": {
+      "id": "node_mrirkjizr",
+      "type": "box",
+      "name": "ボタン",
+      "semantic": "auto",
+      "text": {
+        "content": "ホームへ戻る",
+        "heading": 0
+      },
+      "link": {
+        "kind": "page",
+        "pageId": "page_mrirkjizo"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "inline-flex",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "padding": "12px 28px",
+            "backgroundColor": "#18181b",
+            "color": "#ffffff",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "borderRadius": "8px",
+            "textDecoration": "none",
+            "transition": "all 200ms ease",
+            "cursor": "pointer"
+          },
+          "hover": {
+            "backgroundColor": "#3f3f46"
+          }
+        }
+      }
+    },
+    "node_mrirkjizw": {
+      "id": "node_mrirkjizw",
       "type": "image",
       "name": "商品画像",
       "semantic": "auto",
       "text": null,
       "link": null,
       "image": {
-        "src": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+        "src": "{thumbnail}",
         "alt": "商品画像",
-        "width": 300,
-        "height": 300
+        "width": 400,
+        "height": 400
       },
       "children": [],
       "styles": {
@@ -614,18 +780,15 @@
             "backgroundColor": "#fafafa"
           }
         }
-      },
-      "bind": {
-        "image": "thumbnail"
       }
     },
-    "node_mrgi4i6p1y": {
-      "id": "node_mrgi4i6p1y",
+    "node_mrirkjizx": {
+      "id": "node_mrirkjizx",
       "type": "box",
       "name": "商品名",
       "semantic": "auto",
       "text": {
-        "content": "商品名",
+        "content": "{title}",
         "heading": 1
       },
       "link": null,
@@ -638,18 +801,15 @@
             "lineHeight": "1.4"
           }
         }
-      },
-      "bind": {
-        "text": "title"
       }
     },
-    "node_mrgi4i6p1z": {
-      "id": "node_mrgi4i6p1z",
+    "node_mrirkjizy": {
+      "id": "node_mrirkjizy",
       "type": "box",
-      "name": "テキスト",
+      "name": "ブランド",
       "semantic": "auto",
       "text": {
-        "content": "ブランド",
+        "content": "{brand}",
         "heading": 0
       },
       "link": null,
@@ -662,18 +822,15 @@
             "color": "#a1a1aa"
           }
         }
-      },
-      "bind": {
-        "text": "brand"
       }
     },
-    "node_mrgi4i6p20": {
-      "id": "node_mrgi4i6p20",
+    "node_mrirkjizz": {
+      "id": "node_mrirkjizz",
       "type": "box",
-      "name": "テキスト",
+      "name": "説明文",
       "semantic": "auto",
       "text": {
-        "content": "説明文",
+        "content": "{description}",
         "heading": 0
       },
       "link": null,
@@ -686,18 +843,15 @@
             "color": "#52525b"
           }
         }
-      },
-      "bind": {
-        "text": "description"
       }
     },
-    "node_mrgi4i6p21": {
-      "id": "node_mrgi4i6p21",
+    "node_mrirkjiz10": {
+      "id": "node_mrirkjiz10",
       "type": "box",
       "name": "価格",
       "semantic": "auto",
       "text": {
-        "content": "価格",
+        "content": "¥{price}",
         "heading": 3
       },
       "link": null,
@@ -711,23 +865,20 @@
             "color": "#0d99ff"
           }
         }
-      },
-      "bind": {
-        "text": "price"
       }
     },
-    "node_mrgi4i6p22": {
-      "id": "node_mrgi4i6p22",
+    "node_mrirkjiz11": {
+      "id": "node_mrirkjiz11",
       "type": "box",
       "name": "商品情報",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrgi4i6p1z",
-        "node_mrgi4i6p1y",
-        "node_mrgi4i6p21",
-        "node_mrgi4i6p20"
+        "node_mrirkjizy",
+        "node_mrirkjizx",
+        "node_mrirkjiz10",
+        "node_mrirkjizz"
       ],
       "styles": {
         "base": {
@@ -742,16 +893,16 @@
         }
       }
     },
-    "node_mrgi4i6p23": {
-      "id": "node_mrgi4i6p23",
+    "node_mrirkjiz12": {
+      "id": "node_mrirkjiz12",
       "type": "box",
       "name": "詳細レイアウト",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrgi4i6p1x",
-        "node_mrgi4i6p22"
+        "node_mrirkjizw",
+        "node_mrirkjiz11"
       ],
       "styles": {
         "base": {
@@ -770,10 +921,13 @@
             "flexDirection": "column"
           }
         }
+      },
+      "data": {
+        "sourceId": "ds_mrirkjizv"
       }
     },
-    "node_mrgi4i6p25": {
-      "id": "node_mrgi4i6p25",
+    "node_mrirkjiz14": {
+      "id": "node_mrirkjiz14",
       "type": "box",
       "name": "商品カタログ",
       "semantic": "auto",
@@ -794,8 +948,8 @@
         }
       }
     },
-    "node_mrgi4i6p26": {
-      "id": "node_mrgi4i6p26",
+    "node_mrirkjiz15": {
+      "id": "node_mrirkjiz15",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -816,8 +970,8 @@
         }
       }
     },
-    "node_mrgi4i6p27": {
-      "id": "node_mrgi4i6p27",
+    "node_mrirkjiz16": {
+      "id": "node_mrirkjiz16",
       "type": "field",
       "name": "入力欄",
       "semantic": "auto",
@@ -825,9 +979,9 @@
       "link": null,
       "field": {
         "kind": "input",
-        "name": "q",
         "placeholder": "商品を検索…"
       },
+      "attrId": "q",
       "children": [],
       "styles": {
         "base": {
@@ -843,8 +997,8 @@
         }
       }
     },
-    "node_mrgi4i6p28": {
-      "id": "node_mrgi4i6p28",
+    "node_mrirkjiz17": {
+      "id": "node_mrirkjiz17",
       "type": "field",
       "name": "送信ボタン",
       "semantic": "auto",
@@ -873,17 +1027,16 @@
         }
       }
     },
-    "node_mrgi4i6p29": {
-      "id": "node_mrgi4i6p29",
+    "node_mrirkjiz18": {
+      "id": "node_mrirkjiz18",
       "type": "box",
       "name": "検索フォーム",
       "semantic": "form",
       "text": null,
       "link": null,
       "children": [
-        "node_mrgi4i6p27",
-        "node_mrgi4i6p28",
-        "node_mrgi5a342h"
+        "node_mrirkjiz16",
+        "node_mrirkjiz17"
       ],
       "styles": {
         "base": {
@@ -898,18 +1051,18 @@
         }
       }
     },
-    "node_mrgi4i6p2a": {
-      "id": "node_mrgi4i6p2a",
+    "node_mrirkjiz19": {
+      "id": "node_mrirkjiz19",
       "type": "image",
       "name": "サムネイル",
       "semantic": "auto",
       "text": null,
       "link": null,
       "image": {
-        "src": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+        "src": "{thumbnail}",
         "alt": "商品サムネイル",
-        "width": 300,
-        "height": 300
+        "width": 400,
+        "height": 400
       },
       "children": [],
       "styles": {
@@ -922,18 +1075,15 @@
             "backgroundColor": "#fafafa"
           }
         }
-      },
-      "bind": {
-        "image": "thumbnail"
       }
     },
-    "node_mrgi4i6p2b": {
-      "id": "node_mrgi4i6p2b",
+    "node_mrirkjiz1a": {
+      "id": "node_mrirkjiz1a",
       "type": "box",
       "name": "商品名",
       "semantic": "auto",
       "text": {
-        "content": "商品名",
+        "content": "{title}",
         "heading": 3
       },
       "link": null,
@@ -946,18 +1096,15 @@
             "lineHeight": "1.4"
           }
         }
-      },
-      "bind": {
-        "text": "title"
       }
     },
-    "node_mrgi4i6p2c": {
-      "id": "node_mrgi4i6p2c",
+    "node_mrirkjiz1b": {
+      "id": "node_mrirkjiz1b",
       "type": "box",
-      "name": "テキスト",
+      "name": "価格",
       "semantic": "auto",
       "text": {
-        "content": "価格",
+        "content": "¥{price}",
         "heading": 0
       },
       "link": null,
@@ -971,22 +1118,22 @@
             "color": "#0d99ff"
           }
         }
-      },
-      "bind": {
-        "text": "price"
       }
     },
-    "node_mrgi4i6p2d": {
-      "id": "node_mrgi4i6p2d",
+    "node_mrirkjiz1c": {
+      "id": "node_mrirkjiz1c",
       "type": "box",
       "name": "商品カード",
       "semantic": "auto",
       "text": null,
-      "link": null,
+      "link": {
+        "kind": "url",
+        "url": "/products/{id}"
+      },
       "children": [
-        "node_mrgi4i6p2a",
-        "node_mrgi4i6p2b",
-        "node_mrgi4i6p2c"
+        "node_mrirkjiz19",
+        "node_mrirkjiz1a",
+        "node_mrirkjiz1b"
       ],
       "styles": {
         "base": {
@@ -1000,21 +1147,19 @@
         }
       }
     },
-    "node_mrgi4i6p2e": {
-      "id": "node_mrgi4i6p2e",
+    "node_mrirkjiz1d": {
+      "id": "node_mrirkjiz1d",
       "type": "list",
       "name": "商品リスト",
       "semantic": "auto",
       "text": null,
       "link": null,
       "list": {
-        "sourceId": "ds_mrgi4i6p1w",
-        "limit": 12,
-        "linkToPageId": "page_mrgi4i6p24",
-        "passQuery": true
+        "sourceId": "ds_mrirkjizu",
+        "limit": 12
       },
       "children": [
-        "node_mrgi4i6p2d"
+        "node_mrirkjiz1c"
       ],
       "styles": {
         "base": {
@@ -1033,18 +1178,18 @@
         }
       }
     },
-    "node_mrgi4i6p2f": {
-      "id": "node_mrgi4i6p2f",
+    "node_mrirkjiz1e": {
+      "id": "node_mrirkjiz1e",
       "type": "box",
       "name": "商品一覧セクション",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrgi4i6p25",
-        "node_mrgi4i6p26",
-        "node_mrgi4i6p29",
-        "node_mrgi4i6p2e"
+        "node_mrirkjiz14",
+        "node_mrirkjiz15",
+        "node_mrirkjiz18",
+        "node_mrirkjiz1d"
       ],
       "styles": {
         "base": {
@@ -1060,38 +1205,13 @@
           }
         }
       }
-    },
-    "node_mrgi5a342h": {
-      "id": "node_mrgi5a342h",
-      "type": "field",
-      "name": "チェックボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "field": {
-        "kind": "checkbox",
-        "label": "同意する",
-        "name": "agree"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "gap": "8px",
-            "fontSize": "14px",
-            "cursor": "pointer"
-          }
-        }
-      }
     }
   },
   "dataSources": {
-    "ds_mrgi4i6p1w": {
-      "id": "ds_mrgi4i6p1w",
+    "ds_mrirkjizu": {
+      "id": "ds_mrirkjizu",
       "name": "商品カタログ（デモ）",
-      "url": "https://dummyjson.com/products/search",
+      "url": "https://dummyjson.com/products/search?q={q}",
       "itemsPath": "products",
       "fields": [
         "id",
@@ -1145,28 +1265,38 @@
           "rating": 4.36
         }
       ],
-      "fetchedAt": 1783782635281
-    }
-  },
-  "assets": {
-    "asset_mrgk9lua1": {
-      "id": "asset_mrgk9lua1",
-      "name": "favicon.ico",
-      "path": "editor-7a8da8a6f505ea11/assets/mrgk9ki7-favicon.ico",
-      "width": 256,
-      "height": 256
+      "fetchedAt": 1783919432411
     },
-    "asset_mrgkb23h2": {
-      "id": "asset_mrgkb23h2",
-      "name": "ogp.png",
-      "path": "editor-7a8da8a6f505ea11/assets/mrgkb0rn-ogp.png",
-      "width": 1200,
-      "height": 630
+    "ds_mrirkjizv": {
+      "id": "ds_mrirkjizv",
+      "name": "商品詳細（デモ）",
+      "url": "https://dummyjson.com/products/{slug}",
+      "itemsPath": "",
+      "fields": [
+        "id",
+        "title",
+        "description",
+        "price",
+        "thumbnail",
+        "category",
+        "brand",
+        "rating"
+      ],
+      "sample": [
+        {
+          "id": 1,
+          "title": "Essence Mascara Lash Princess",
+          "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing …",
+          "price": 9.99,
+          "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+          "category": "beauty",
+          "brand": "Essence",
+          "rating": 2.56
+        }
+      ],
+      "fetchedAt": 1783919432411
     }
   },
-  "customCss": "",
-  "favicon": {
-    "assetId": "asset_mrgk9lua1"
-  },
-  "siteUrl": "https://homepage-gray-psi.vercel.app/"
+  "assets": {},
+  "customCss": ""
 }

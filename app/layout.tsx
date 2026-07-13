@@ -3,12 +3,10 @@ import "./globals.css";
 import "../styles/site.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://homepage-gray-psi.vercel.app/"),
   title: {
-    default: "第56回松ヶ崎祭",
-    template: "%s | 第56回松ヶ崎祭",
+    default: "My Site",
+    template: "%s | My Site",
   },
-  icons: { icon: "/assets/favicon.ico" },
 };
 
 export default function RootLayout({
@@ -20,6 +18,9 @@ export default function RootLayout({
     <html lang="ja">
       <body>
         {children}
+        <div
+          dangerouslySetInnerHTML={{ __html: "<script src=\"/toggle.js\" defer></script>" }}
+        />
       </body>
     </html>
   );

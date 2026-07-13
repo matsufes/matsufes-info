@@ -1,10 +1,19 @@
-export default function NotFound() {
+import Link from "next/link";
+
+export default function Page() {
   return (
-    <main style={{ display: "grid", placeItems: "center", minHeight: "100vh" }}>
-      <div style={{ textAlign: "center" }}>
-        <h1 style={{ fontSize: 64, margin: 0 }}>404</h1>
-        <p>ページが見つかりませんでした。</p>
-      </div>
-    </main>
+    <>
+      <section className="el-3">
+        <h1 className="el-4">
+          {"404"}
+        </h1>
+        <p className="text-9">
+          {"お探しのページは見つかりませんでした。"}
+        </p>
+        <Link href="/" className="button-2">
+          {"ホームへ戻る"}
+        </Link>
+      </section>
+    </>
   );
 }

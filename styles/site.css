@@ -7,6 +7,7 @@
   justify-content: space-between;
   background-color: #ffffff;
   border-bottom: 1px solid #e4e4e7;
+  position: relative;
 }
 
 .logo {
@@ -21,6 +22,14 @@
   padding: 0px;
   gap: 28px;
   align-items: center;
+}
+
+.el {
+  display: none;
+  width: 24px;
+  height: 24px;
+  color: #18181b;
+  cursor: pointer;
 }
 
 .text {
@@ -54,7 +63,7 @@
   background-color: #fafafa;
 }
 
-.el {
+.el-2 {
   font-size: 44px;
   font-weight: 700;
   line-height: 1.4;
@@ -179,38 +188,81 @@
   color: #71717a;
 }
 
-.el-2 {
+.el-3 {
+  display: flex;
+  flex-direction: column;
+  padding: 140px 40px;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+}
+
+.el-4 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.text-9 {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #71717a;
+  text-align: center;
+}
+
+.button-2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  background-color: #18181b;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.button-2:hover {
+  background-color: #3f3f46;
+}
+
+.el-5 {
   width: 320px;
   border-radius: 16px;
   background-color: #fafafa;
 }
 
-.el-3 {
+.el-6 {
   font-size: 34px;
   font-weight: 700;
   line-height: 1.4;
 }
 
-.text-9 {
+.el-7 {
   font-size: 13px;
   line-height: 1.7;
   color: #a1a1aa;
 }
 
-.text-10 {
+.el-8 {
   font-size: 15px;
   line-height: 1.7;
   color: #52525b;
 }
 
-.el-4 {
+.el-9 {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.4;
   color: #0d99ff;
 }
 
-.el-5 {
+.el-10 {
   display: flex;
   flex-direction: column;
   padding: 0px;
@@ -219,7 +271,7 @@
   flex: 1;
 }
 
-.el-6 {
+.el-11 {
   display: flex;
   flex-direction: row;
   padding: 64px 40px;
@@ -229,14 +281,14 @@
   width: 100%;
 }
 
-.el-7 {
+.el-12 {
   font-size: 44px;
   font-weight: 700;
   line-height: 1.4;
   text-align: center;
 }
 
-.text-11 {
+.text-10 {
   font-size: 14px;
   line-height: 1.7;
   color: #71717a;
@@ -253,7 +305,7 @@
   background-color: #ffffff;
 }
 
-.el-8 {
+.el-13 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -267,7 +319,7 @@
   cursor: pointer;
 }
 
-.el-9 {
+.el-14 {
   display: flex;
   flex-direction: row;
   padding: 0px;
@@ -276,7 +328,7 @@
   width: 100%;
 }
 
-.el-10 {
+.el-15 {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
@@ -284,20 +336,20 @@
   background-color: #fafafa;
 }
 
-.el-11 {
+.el-16 {
   font-size: 15px;
   font-weight: 700;
   line-height: 1.4;
 }
 
-.text-12 {
+.el-17 {
   font-size: 14px;
   line-height: 1.7;
   font-weight: 600;
   color: #0d99ff;
 }
 
-.el-12 {
+.el-18 {
   display: flex;
   flex-direction: column;
   padding: 0px;
@@ -305,7 +357,7 @@
   cursor: pointer;
 }
 
-.el-13 {
+.el-19 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
@@ -313,7 +365,7 @@
   width: 100%;
 }
 
-.el-14 {
+.el-20 {
   display: flex;
   flex-direction: column;
   padding: 64px 40px;
@@ -324,24 +376,49 @@
   width: 100%;
 }
 
-.checkbox {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
 @media (max-width: 767px) {
   .card-grid {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .el-6 {
+  .el-11 {
     flex-direction: column;
   }
 
-  .el-13 {
+  .el-19 {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 478px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+    padding: 8px 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e4e4e7;
+  }
+
+  .el {
+    display: inline-flex;
+  }
+
+  .text {
+    padding: 12px 24px;
+  }
+
+  .text-2 {
+    padding: 12px 24px;
+  }
+
+  .text-3 {
+    padding: 12px 24px;
   }
 }
