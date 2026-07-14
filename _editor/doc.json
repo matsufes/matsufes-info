@@ -1,68 +1,68 @@
 {
   "siteName": "My Site",
   "pages": {
-    "page_mrirkjizo": {
-      "id": "page_mrirkjizo",
+    "page_mrk8srx0o": {
+      "id": "page_mrk8srx0o",
       "name": "ホーム",
       "slug": "",
       "title": "ホーム",
       "description": "",
       "children": [
-        "node_mrirkjiy7",
-        "node_mrirkjizb",
-        "node_mrirkjizl",
-        "node_mrirkjizn"
+        "node_mrk8srx07",
+        "node_mrk8srx0b",
+        "node_mrk8srx0l",
+        "node_mrk8srx0n"
       ]
     },
-    "page_mrirkjiz1f": {
-      "id": "page_mrirkjiz1f",
+    "page_mrk8srx11f": {
+      "id": "page_mrk8srx11f",
       "name": "商品一覧（デモ）",
       "slug": "catalog",
       "title": "商品一覧",
       "description": "dummyjson.comのデータで動くサンプルページ",
       "children": [
-        "node_mrirkjiz1e"
+        "node_mrk8srx11e"
       ]
     },
-    "page_mrirkjiz13": {
-      "id": "page_mrirkjiz13",
+    "page_mrk8srx113": {
+      "id": "page_mrk8srx113",
       "name": "商品詳細（デモ）",
       "slug": "products/[slug]",
       "title": "商品詳細",
       "description": "",
       "children": [
-        "node_mrirkjiz12"
+        "node_mrk8srx112"
       ]
     },
-    "page_mrirkjizt": {
-      "id": "page_mrirkjizt",
+    "page_mrk8srx0t": {
+      "id": "page_mrk8srx0t",
       "name": "404（見つからないとき）",
       "slug": "404",
       "title": "ページが見つかりません",
       "description": "",
       "children": [
-        "node_mrirkjizs"
+        "node_mrk8srx0s"
       ]
     }
   },
   "pageOrder": [
-    "page_mrirkjizo",
-    "page_mrirkjiz1f",
-    "page_mrirkjiz13",
-    "page_mrirkjizt"
+    "page_mrk8srx0o",
+    "page_mrk8srx11f",
+    "page_mrk8srx113",
+    "page_mrk8srx0t"
   ],
   "nodes": {
-    "node_mrirkjiy7": {
-      "id": "node_mrirkjiy7",
+    "node_mrk8srx07": {
+      "id": "node_mrk8srx07",
       "type": "box",
       "name": "ナビバー",
       "semantic": "header",
       "text": null,
       "link": null,
       "children": [
-        "node_mrirkjiy1",
-        "node_mrirkjiy5",
-        "node_mrirkjiy6"
+        "node_mrk8srx01",
+        "node_mrk8srx05",
+        "node_mrk8srx06"
       ],
       "styles": {
         "base": {
@@ -80,8 +80,8 @@
       },
       "attrId": "navbar"
     },
-    "node_mrirkjiy1": {
-      "id": "node_mrirkjiy1",
+    "node_mrk8srx01": {
+      "id": "node_mrk8srx01",
       "type": "box",
       "name": "ロゴ",
       "semantic": "auto",
@@ -101,17 +101,17 @@
         }
       }
     },
-    "node_mrirkjiy5": {
-      "id": "node_mrirkjiy5",
+    "node_mrk8srx05": {
+      "id": "node_mrk8srx05",
       "type": "box",
       "name": "ナビリンク",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrirkjiy2",
-        "node_mrirkjiy3",
-        "node_mrirkjiy4"
+        "node_mrk8srx02",
+        "node_mrk8srx03",
+        "node_mrk8srx04"
       ],
       "styles": {
         "base": {
@@ -142,8 +142,8 @@
       },
       "attrId": "nav-links"
     },
-    "node_mrirkjiy6": {
-      "id": "node_mrirkjiy6",
+    "node_mrk8srx06": {
+      "id": "node_mrk8srx06",
       "type": "icon",
       "name": "メニュー開閉",
       "semantic": "auto",
@@ -175,8 +175,8 @@
         }
       }
     },
-    "node_mrirkjiy2": {
-      "id": "node_mrirkjiy2",
+    "node_mrk8srx02": {
+      "id": "node_mrk8srx02",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -206,8 +206,8 @@
         }
       }
     },
-    "node_mrirkjiy3": {
-      "id": "node_mrirkjiy3",
+    "node_mrk8srx03": {
+      "id": "node_mrk8srx03",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -237,8 +237,8 @@
         }
       }
     },
-    "node_mrirkjiy4": {
-      "id": "node_mrirkjiy4",
+    "node_mrk8srx04": {
+      "id": "node_mrk8srx04",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -268,17 +268,17 @@
         }
       }
     },
-    "node_mrirkjizb": {
-      "id": "node_mrirkjizb",
+    "node_mrk8srx0b": {
+      "id": "node_mrk8srx0b",
       "type": "box",
       "name": "ヒーロー",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrirkjiy8",
-        "node_mrirkjiy9",
-        "node_mrirkjiya"
+        "node_mrk8srx08",
+        "node_mrk8srx09",
+        "node_mrk8srx0a"
       ],
       "styles": {
         "base": {
@@ -294,8 +294,8 @@
         }
       }
     },
-    "node_mrirkjiy8": {
-      "id": "node_mrirkjiy8",
+    "node_mrk8srx08": {
+      "id": "node_mrk8srx08",
       "type": "box",
       "name": "あなたのサイトを、\nもっ",
       "semantic": "auto",
@@ -317,8 +317,8 @@
         }
       }
     },
-    "node_mrirkjiy9": {
-      "id": "node_mrirkjiy9",
+    "node_mrk8srx09": {
+      "id": "node_mrk8srx09",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -340,8 +340,8 @@
         }
       }
     },
-    "node_mrirkjiya": {
-      "id": "node_mrirkjiya",
+    "node_mrk8srx0a": {
+      "id": "node_mrk8srx0a",
       "type": "box",
       "name": "ボタン",
       "semantic": "auto",
@@ -377,17 +377,17 @@
         }
       }
     },
-    "node_mrirkjizl": {
-      "id": "node_mrirkjizl",
+    "node_mrk8srx0l": {
+      "id": "node_mrk8srx0l",
       "type": "box",
       "name": "カードグリッド",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrirkjize",
-        "node_mrirkjizh",
-        "node_mrirkjizk"
+        "node_mrk8srx0e",
+        "node_mrk8srx0h",
+        "node_mrk8srx0k"
       ],
       "styles": {
         "base": {
@@ -406,16 +406,16 @@
         }
       }
     },
-    "node_mrirkjize": {
-      "id": "node_mrirkjize",
+    "node_mrk8srx0e": {
+      "id": "node_mrk8srx0e",
       "type": "box",
       "name": "カード 1",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrirkjizc",
-        "node_mrirkjizd"
+        "node_mrk8srx0c",
+        "node_mrk8srx0d"
       ],
       "styles": {
         "base": {
@@ -431,8 +431,8 @@
         }
       }
     },
-    "node_mrirkjizc": {
-      "id": "node_mrirkjizc",
+    "node_mrk8srx0c": {
+      "id": "node_mrk8srx0c",
       "type": "box",
       "name": "カード 1",
       "semantic": "auto",
@@ -452,8 +452,8 @@
         }
       }
     },
-    "node_mrirkjizd": {
-      "id": "node_mrirkjizd",
+    "node_mrk8srx0d": {
+      "id": "node_mrk8srx0d",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -473,16 +473,16 @@
         }
       }
     },
-    "node_mrirkjizh": {
-      "id": "node_mrirkjizh",
+    "node_mrk8srx0h": {
+      "id": "node_mrk8srx0h",
       "type": "box",
       "name": "カード 2",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrirkjizf",
-        "node_mrirkjizg"
+        "node_mrk8srx0f",
+        "node_mrk8srx0g"
       ],
       "styles": {
         "base": {
@@ -498,8 +498,8 @@
         }
       }
     },
-    "node_mrirkjizf": {
-      "id": "node_mrirkjizf",
+    "node_mrk8srx0f": {
+      "id": "node_mrk8srx0f",
       "type": "box",
       "name": "カード 2",
       "semantic": "auto",
@@ -519,8 +519,8 @@
         }
       }
     },
-    "node_mrirkjizg": {
-      "id": "node_mrirkjizg",
+    "node_mrk8srx0g": {
+      "id": "node_mrk8srx0g",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -540,16 +540,16 @@
         }
       }
     },
-    "node_mrirkjizk": {
-      "id": "node_mrirkjizk",
+    "node_mrk8srx0k": {
+      "id": "node_mrk8srx0k",
       "type": "box",
       "name": "カード 3",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrirkjizi",
-        "node_mrirkjizj"
+        "node_mrk8srx0i",
+        "node_mrk8srx0j"
       ],
       "styles": {
         "base": {
@@ -565,8 +565,8 @@
         }
       }
     },
-    "node_mrirkjizi": {
-      "id": "node_mrirkjizi",
+    "node_mrk8srx0i": {
+      "id": "node_mrk8srx0i",
       "type": "box",
       "name": "カード 3",
       "semantic": "auto",
@@ -586,8 +586,8 @@
         }
       }
     },
-    "node_mrirkjizj": {
-      "id": "node_mrirkjizj",
+    "node_mrk8srx0j": {
+      "id": "node_mrk8srx0j",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -607,15 +607,15 @@
         }
       }
     },
-    "node_mrirkjizn": {
-      "id": "node_mrirkjizn",
+    "node_mrk8srx0n": {
+      "id": "node_mrk8srx0n",
       "type": "box",
       "name": "フッター",
       "semantic": "footer",
       "text": null,
       "link": null,
       "children": [
-        "node_mrirkjizm"
+        "node_mrk8srx0m"
       ],
       "styles": {
         "base": {
@@ -631,8 +631,8 @@
         }
       }
     },
-    "node_mrirkjizm": {
-      "id": "node_mrirkjizm",
+    "node_mrk8srx0m": {
+      "id": "node_mrk8srx0m",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -652,17 +652,17 @@
         }
       }
     },
-    "node_mrirkjizs": {
-      "id": "node_mrirkjizs",
+    "node_mrk8srx0s": {
+      "id": "node_mrk8srx0s",
       "type": "box",
       "name": "404セクション",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrirkjizp",
-        "node_mrirkjizq",
-        "node_mrirkjizr"
+        "node_mrk8srx0p",
+        "node_mrk8srx0q",
+        "node_mrk8srx0r"
       ],
       "styles": {
         "base": {
@@ -677,8 +677,8 @@
         }
       }
     },
-    "node_mrirkjizp": {
-      "id": "node_mrirkjizp",
+    "node_mrk8srx0p": {
+      "id": "node_mrk8srx0p",
       "type": "box",
       "name": "404見出し",
       "semantic": "auto",
@@ -700,8 +700,8 @@
         }
       }
     },
-    "node_mrirkjizq": {
-      "id": "node_mrirkjizq",
+    "node_mrk8srx0q": {
+      "id": "node_mrk8srx0q",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -722,8 +722,8 @@
         }
       }
     },
-    "node_mrirkjizr": {
-      "id": "node_mrirkjizr",
+    "node_mrk8srx0r": {
+      "id": "node_mrk8srx0r",
       "type": "box",
       "name": "ボタン",
       "semantic": "auto",
@@ -733,7 +733,7 @@
       },
       "link": {
         "kind": "page",
-        "pageId": "page_mrirkjizo"
+        "pageId": "page_mrk8srx0o"
       },
       "children": [],
       "styles": {
@@ -758,8 +758,8 @@
         }
       }
     },
-    "node_mrirkjizw": {
-      "id": "node_mrirkjizw",
+    "node_mrk8srx1w": {
+      "id": "node_mrk8srx1w",
       "type": "image",
       "name": "商品画像",
       "semantic": "auto",
@@ -782,8 +782,8 @@
         }
       }
     },
-    "node_mrirkjizx": {
-      "id": "node_mrirkjizx",
+    "node_mrk8srx1x": {
+      "id": "node_mrk8srx1x",
       "type": "box",
       "name": "商品名",
       "semantic": "auto",
@@ -803,8 +803,8 @@
         }
       }
     },
-    "node_mrirkjizy": {
-      "id": "node_mrirkjizy",
+    "node_mrk8srx1y": {
+      "id": "node_mrk8srx1y",
       "type": "box",
       "name": "ブランド",
       "semantic": "auto",
@@ -824,8 +824,8 @@
         }
       }
     },
-    "node_mrirkjizz": {
-      "id": "node_mrirkjizz",
+    "node_mrk8srx1z": {
+      "id": "node_mrk8srx1z",
       "type": "box",
       "name": "説明文",
       "semantic": "auto",
@@ -845,8 +845,8 @@
         }
       }
     },
-    "node_mrirkjiz10": {
-      "id": "node_mrirkjiz10",
+    "node_mrk8srx110": {
+      "id": "node_mrk8srx110",
       "type": "box",
       "name": "価格",
       "semantic": "auto",
@@ -867,18 +867,18 @@
         }
       }
     },
-    "node_mrirkjiz11": {
-      "id": "node_mrirkjiz11",
+    "node_mrk8srx111": {
+      "id": "node_mrk8srx111",
       "type": "box",
       "name": "商品情報",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrirkjizy",
-        "node_mrirkjizx",
-        "node_mrirkjiz10",
-        "node_mrirkjizz"
+        "node_mrk8srx1y",
+        "node_mrk8srx1x",
+        "node_mrk8srx110",
+        "node_mrk8srx1z"
       ],
       "styles": {
         "base": {
@@ -893,16 +893,16 @@
         }
       }
     },
-    "node_mrirkjiz12": {
-      "id": "node_mrirkjiz12",
+    "node_mrk8srx112": {
+      "id": "node_mrk8srx112",
       "type": "box",
       "name": "詳細レイアウト",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrirkjizw",
-        "node_mrirkjiz11"
+        "node_mrk8srx1w",
+        "node_mrk8srx111"
       ],
       "styles": {
         "base": {
@@ -923,11 +923,11 @@
         }
       },
       "data": {
-        "sourceId": "ds_mrirkjizv"
+        "sourceId": "ds_mrk8srx1v"
       }
     },
-    "node_mrirkjiz14": {
-      "id": "node_mrirkjiz14",
+    "node_mrk8srx114": {
+      "id": "node_mrk8srx114",
       "type": "box",
       "name": "商品カタログ",
       "semantic": "auto",
@@ -948,8 +948,8 @@
         }
       }
     },
-    "node_mrirkjiz15": {
-      "id": "node_mrirkjiz15",
+    "node_mrk8srx115": {
+      "id": "node_mrk8srx115",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -970,8 +970,8 @@
         }
       }
     },
-    "node_mrirkjiz16": {
-      "id": "node_mrirkjiz16",
+    "node_mrk8srx116": {
+      "id": "node_mrk8srx116",
       "type": "field",
       "name": "入力欄",
       "semantic": "auto",
@@ -997,8 +997,8 @@
         }
       }
     },
-    "node_mrirkjiz17": {
-      "id": "node_mrirkjiz17",
+    "node_mrk8srx117": {
+      "id": "node_mrk8srx117",
       "type": "field",
       "name": "送信ボタン",
       "semantic": "auto",
@@ -1027,16 +1027,16 @@
         }
       }
     },
-    "node_mrirkjiz18": {
-      "id": "node_mrirkjiz18",
+    "node_mrk8srx118": {
+      "id": "node_mrk8srx118",
       "type": "box",
       "name": "検索フォーム",
       "semantic": "form",
       "text": null,
       "link": null,
       "children": [
-        "node_mrirkjiz16",
-        "node_mrirkjiz17"
+        "node_mrk8srx116",
+        "node_mrk8srx117"
       ],
       "styles": {
         "base": {
@@ -1051,8 +1051,8 @@
         }
       }
     },
-    "node_mrirkjiz19": {
-      "id": "node_mrirkjiz19",
+    "node_mrk8srx119": {
+      "id": "node_mrk8srx119",
       "type": "image",
       "name": "サムネイル",
       "semantic": "auto",
@@ -1077,8 +1077,8 @@
         }
       }
     },
-    "node_mrirkjiz1a": {
-      "id": "node_mrirkjiz1a",
+    "node_mrk8srx11a": {
+      "id": "node_mrk8srx11a",
       "type": "box",
       "name": "商品名",
       "semantic": "auto",
@@ -1098,8 +1098,8 @@
         }
       }
     },
-    "node_mrirkjiz1b": {
-      "id": "node_mrirkjiz1b",
+    "node_mrk8srx11b": {
+      "id": "node_mrk8srx11b",
       "type": "box",
       "name": "価格",
       "semantic": "auto",
@@ -1120,8 +1120,8 @@
         }
       }
     },
-    "node_mrirkjiz1c": {
-      "id": "node_mrirkjiz1c",
+    "node_mrk8srx11c": {
+      "id": "node_mrk8srx11c",
       "type": "box",
       "name": "商品カード",
       "semantic": "auto",
@@ -1131,9 +1131,9 @@
         "url": "/products/{id}"
       },
       "children": [
-        "node_mrirkjiz19",
-        "node_mrirkjiz1a",
-        "node_mrirkjiz1b"
+        "node_mrk8srx119",
+        "node_mrk8srx11a",
+        "node_mrk8srx11b"
       ],
       "styles": {
         "base": {
@@ -1147,19 +1147,19 @@
         }
       }
     },
-    "node_mrirkjiz1d": {
-      "id": "node_mrirkjiz1d",
+    "node_mrk8srx11d": {
+      "id": "node_mrk8srx11d",
       "type": "list",
       "name": "商品リスト",
       "semantic": "auto",
       "text": null,
       "link": null,
       "list": {
-        "sourceId": "ds_mrirkjizu",
+        "sourceId": "ds_mrk8srx1u",
         "limit": 12
       },
       "children": [
-        "node_mrirkjiz1c"
+        "node_mrk8srx11c"
       ],
       "styles": {
         "base": {
@@ -1178,18 +1178,18 @@
         }
       }
     },
-    "node_mrirkjiz1e": {
-      "id": "node_mrirkjiz1e",
+    "node_mrk8srx11e": {
+      "id": "node_mrk8srx11e",
       "type": "box",
       "name": "商品一覧セクション",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrirkjiz14",
-        "node_mrirkjiz15",
-        "node_mrirkjiz18",
-        "node_mrirkjiz1d"
+        "node_mrk8srx114",
+        "node_mrk8srx115",
+        "node_mrk8srx118",
+        "node_mrk8srx11d"
       ],
       "styles": {
         "base": {
@@ -1208,8 +1208,8 @@
     }
   },
   "dataSources": {
-    "ds_mrirkjizu": {
-      "id": "ds_mrirkjizu",
+    "ds_mrk8srx1u": {
+      "id": "ds_mrk8srx1u",
       "name": "商品カタログ（デモ）",
       "url": "https://dummyjson.com/products/search?q={q}",
       "itemsPath": "products",
@@ -1265,10 +1265,10 @@
           "rating": 4.36
         }
       ],
-      "fetchedAt": 1783919432411
+      "fetchedAt": 1784008836181
     },
-    "ds_mrirkjizv": {
-      "id": "ds_mrirkjizv",
+    "ds_mrk8srx1v": {
+      "id": "ds_mrk8srx1v",
       "name": "商品詳細（デモ）",
       "url": "https://dummyjson.com/products/{slug}",
       "itemsPath": "",
@@ -1294,7 +1294,7 @@
           "rating": 2.56
         }
       ],
-      "fetchedAt": 1783919432411
+      "fetchedAt": 1784008836181
     }
   },
   "assets": {},
