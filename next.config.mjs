@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    remotePatterns: [
-      { protocol: "https", hostname: "**" },
-      { protocol: "http", hostname: "**" },
-    ],
+    // Cloudflare Workers には Next.js の画像最適化サーバーが無いため無効化
+    unoptimized: true,
   },
 };
 

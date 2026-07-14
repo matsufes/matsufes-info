@@ -30,7 +30,7 @@ export default function Page() {
       </header>
       <section className="hero">
         <h1 className="el-2">
-          {"あなたのサイトを、\nもっと自由に。"}
+          {"あなたのサイトを、\nもっと自由に。ああああ"}
         </h1>
         <p className="text-4">
           {"ビジュアルエディタで作って、Next.jsとして書き出す。ロックインのないサイトビルダー。"}

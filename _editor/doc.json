@@ -1,68 +1,68 @@
 {
   "siteName": "My Site",
   "pages": {
-    "page_mrk8srx0o": {
-      "id": "page_mrk8srx0o",
+    "page_mrk9p1upo": {
+      "id": "page_mrk9p1upo",
       "name": "ホーム",
       "slug": "",
       "title": "ホーム",
       "description": "",
       "children": [
-        "node_mrk8srx07",
-        "node_mrk8srx0b",
-        "node_mrk8srx0l",
-        "node_mrk8srx0n"
+        "node_mrk9p1up7",
+        "node_mrk9p1upb",
+        "node_mrk9p1upl",
+        "node_mrk9p1upn"
       ]
     },
-    "page_mrk8srx11f": {
-      "id": "page_mrk8srx11f",
+    "page_mrk9p1uq1f": {
+      "id": "page_mrk9p1uq1f",
       "name": "商品一覧（デモ）",
       "slug": "catalog",
       "title": "商品一覧",
       "description": "dummyjson.comのデータで動くサンプルページ",
       "children": [
-        "node_mrk8srx11e"
+        "node_mrk9p1uq1e"
       ]
     },
-    "page_mrk8srx113": {
-      "id": "page_mrk8srx113",
+    "page_mrk9p1uq13": {
+      "id": "page_mrk9p1uq13",
       "name": "商品詳細（デモ）",
       "slug": "products/[slug]",
       "title": "商品詳細",
       "description": "",
       "children": [
-        "node_mrk8srx112"
+        "node_mrk9p1uq12"
       ]
     },
-    "page_mrk8srx0t": {
-      "id": "page_mrk8srx0t",
+    "page_mrk9p1upt": {
+      "id": "page_mrk9p1upt",
       "name": "404（見つからないとき）",
       "slug": "404",
       "title": "ページが見つかりません",
       "description": "",
       "children": [
-        "node_mrk8srx0s"
+        "node_mrk9p1ups"
       ]
     }
   },
   "pageOrder": [
-    "page_mrk8srx0o",
-    "page_mrk8srx11f",
-    "page_mrk8srx113",
-    "page_mrk8srx0t"
+    "page_mrk9p1upo",
+    "page_mrk9p1uq1f",
+    "page_mrk9p1uq13",
+    "page_mrk9p1upt"
   ],
   "nodes": {
-    "node_mrk8srx07": {
-      "id": "node_mrk8srx07",
+    "node_mrk9p1up7": {
+      "id": "node_mrk9p1up7",
       "type": "box",
       "name": "ナビバー",
       "semantic": "header",
       "text": null,
       "link": null,
       "children": [
-        "node_mrk8srx01",
-        "node_mrk8srx05",
-        "node_mrk8srx06"
+        "node_mrk9p1up1",
+        "node_mrk9p1up5",
+        "node_mrk9p1up6"
       ],
       "styles": {
         "base": {
@@ -80,8 +80,8 @@
       },
       "attrId": "navbar"
     },
-    "node_mrk8srx01": {
-      "id": "node_mrk8srx01",
+    "node_mrk9p1up1": {
+      "id": "node_mrk9p1up1",
       "type": "box",
       "name": "ロゴ",
       "semantic": "auto",
@@ -101,17 +101,17 @@
         }
       }
     },
-    "node_mrk8srx05": {
-      "id": "node_mrk8srx05",
+    "node_mrk9p1up5": {
+      "id": "node_mrk9p1up5",
       "type": "box",
       "name": "ナビリンク",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrk8srx02",
-        "node_mrk8srx03",
-        "node_mrk8srx04"
+        "node_mrk9p1up2",
+        "node_mrk9p1up3",
+        "node_mrk9p1up4"
       ],
       "styles": {
         "base": {
@@ -142,8 +142,8 @@
       },
       "attrId": "nav-links"
     },
-    "node_mrk8srx06": {
-      "id": "node_mrk8srx06",
+    "node_mrk9p1up6": {
+      "id": "node_mrk9p1up6",
       "type": "icon",
       "name": "メニュー開閉",
       "semantic": "auto",
@@ -175,8 +175,8 @@
         }
       }
     },
-    "node_mrk8srx02": {
-      "id": "node_mrk8srx02",
+    "node_mrk9p1up2": {
+      "id": "node_mrk9p1up2",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -206,8 +206,8 @@
         }
       }
     },
-    "node_mrk8srx03": {
-      "id": "node_mrk8srx03",
+    "node_mrk9p1up3": {
+      "id": "node_mrk9p1up3",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -237,8 +237,8 @@
         }
       }
     },
-    "node_mrk8srx04": {
-      "id": "node_mrk8srx04",
+    "node_mrk9p1up4": {
+      "id": "node_mrk9p1up4",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -268,17 +268,17 @@
         }
       }
     },
-    "node_mrk8srx0b": {
-      "id": "node_mrk8srx0b",
+    "node_mrk9p1upb": {
+      "id": "node_mrk9p1upb",
       "type": "box",
       "name": "ヒーロー",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrk8srx08",
-        "node_mrk8srx09",
-        "node_mrk8srx0a"
+        "node_mrk9p1up8",
+        "node_mrk9p1up9",
+        "node_mrk9p1upa"
       ],
       "styles": {
         "base": {
@@ -292,15 +292,29 @@
             "backgroundColor": "#fafafa"
           }
         }
-      }
+      },
+      "motions": [
+        {
+          "id": "motion_mrka2j701g",
+          "trigger": "state",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.3,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
     },
-    "node_mrk8srx08": {
-      "id": "node_mrk8srx08",
+    "node_mrk9p1up8": {
+      "id": "node_mrk9p1up8",
       "type": "box",
       "name": "あなたのサイトを、\nもっ",
       "semantic": "auto",
       "text": {
-        "content": "あなたのサイトを、\nもっと自由に。",
+        "content": "あなたのサイトを、\nもっと自由に。ああああ",
         "heading": 1
       },
       "link": null,
@@ -317,8 +331,8 @@
         }
       }
     },
-    "node_mrk8srx09": {
-      "id": "node_mrk8srx09",
+    "node_mrk9p1up9": {
+      "id": "node_mrk9p1up9",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -340,8 +354,8 @@
         }
       }
     },
-    "node_mrk8srx0a": {
-      "id": "node_mrk8srx0a",
+    "node_mrk9p1upa": {
+      "id": "node_mrk9p1upa",
       "type": "box",
       "name": "ボタン",
       "semantic": "auto",
@@ -377,22 +391,21 @@
         }
       }
     },
-    "node_mrk8srx0l": {
-      "id": "node_mrk8srx0l",
+    "node_mrk9p1upl": {
+      "id": "node_mrk9p1upl",
       "type": "box",
       "name": "カードグリッド",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrk8srx0e",
-        "node_mrk8srx0h",
-        "node_mrk8srx0k"
+        "node_mrk9p1upe",
+        "node_mrk9p1uph",
+        "node_mrk9p1upk"
       ],
       "styles": {
         "base": {
           "default": {
-            "display": "grid",
             "flexDirection": "column",
             "padding": "64px 40px",
             "gap": "20px",
@@ -406,16 +419,16 @@
         }
       }
     },
-    "node_mrk8srx0e": {
-      "id": "node_mrk8srx0e",
+    "node_mrk9p1upe": {
+      "id": "node_mrk9p1upe",
       "type": "box",
       "name": "カード 1",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrk8srx0c",
-        "node_mrk8srx0d"
+        "node_mrk9p1upc",
+        "node_mrk9p1upd"
       ],
       "styles": {
         "base": {
@@ -431,8 +444,8 @@
         }
       }
     },
-    "node_mrk8srx0c": {
-      "id": "node_mrk8srx0c",
+    "node_mrk9p1upc": {
+      "id": "node_mrk9p1upc",
       "type": "box",
       "name": "カード 1",
       "semantic": "auto",
@@ -452,8 +465,8 @@
         }
       }
     },
-    "node_mrk8srx0d": {
-      "id": "node_mrk8srx0d",
+    "node_mrk9p1upd": {
+      "id": "node_mrk9p1upd",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -473,16 +486,16 @@
         }
       }
     },
-    "node_mrk8srx0h": {
-      "id": "node_mrk8srx0h",
+    "node_mrk9p1uph": {
+      "id": "node_mrk9p1uph",
       "type": "box",
       "name": "カード 2",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrk8srx0f",
-        "node_mrk8srx0g"
+        "node_mrk9p1upf",
+        "node_mrk9p1upg"
       ],
       "styles": {
         "base": {
@@ -498,8 +511,8 @@
         }
       }
     },
-    "node_mrk8srx0f": {
-      "id": "node_mrk8srx0f",
+    "node_mrk9p1upf": {
+      "id": "node_mrk9p1upf",
       "type": "box",
       "name": "カード 2",
       "semantic": "auto",
@@ -519,8 +532,8 @@
         }
       }
     },
-    "node_mrk8srx0g": {
-      "id": "node_mrk8srx0g",
+    "node_mrk9p1upg": {
+      "id": "node_mrk9p1upg",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -540,16 +553,16 @@
         }
       }
     },
-    "node_mrk8srx0k": {
-      "id": "node_mrk8srx0k",
+    "node_mrk9p1upk": {
+      "id": "node_mrk9p1upk",
       "type": "box",
       "name": "カード 3",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrk8srx0i",
-        "node_mrk8srx0j"
+        "node_mrk9p1upi",
+        "node_mrk9p1upj"
       ],
       "styles": {
         "base": {
@@ -565,8 +578,8 @@
         }
       }
     },
-    "node_mrk8srx0i": {
-      "id": "node_mrk8srx0i",
+    "node_mrk9p1upi": {
+      "id": "node_mrk9p1upi",
       "type": "box",
       "name": "カード 3",
       "semantic": "auto",
@@ -586,8 +599,8 @@
         }
       }
     },
-    "node_mrk8srx0j": {
-      "id": "node_mrk8srx0j",
+    "node_mrk9p1upj": {
+      "id": "node_mrk9p1upj",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -607,15 +620,15 @@
         }
       }
     },
-    "node_mrk8srx0n": {
-      "id": "node_mrk8srx0n",
+    "node_mrk9p1upn": {
+      "id": "node_mrk9p1upn",
       "type": "box",
       "name": "フッター",
       "semantic": "footer",
       "text": null,
       "link": null,
       "children": [
-        "node_mrk8srx0m"
+        "node_mrk9p1upm"
       ],
       "styles": {
         "base": {
@@ -626,13 +639,14 @@
             "gap": "12px",
             "alignItems": "center",
             "backgroundColor": "#fafafa",
-            "borderTop": "1px solid #e4e4e7"
+            "borderTop": "1px solid #e4e4e7",
+            "height": "105px"
           }
         }
       }
     },
-    "node_mrk8srx0m": {
-      "id": "node_mrk8srx0m",
+    "node_mrk9p1upm": {
+      "id": "node_mrk9p1upm",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -652,17 +666,17 @@
         }
       }
     },
-    "node_mrk8srx0s": {
-      "id": "node_mrk8srx0s",
+    "node_mrk9p1ups": {
+      "id": "node_mrk9p1ups",
       "type": "box",
       "name": "404セクション",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrk8srx0p",
-        "node_mrk8srx0q",
-        "node_mrk8srx0r"
+        "node_mrk9p1upp",
+        "node_mrk9p1upq",
+        "node_mrk9p1upr"
       ],
       "styles": {
         "base": {
@@ -677,8 +691,8 @@
         }
       }
     },
-    "node_mrk8srx0p": {
-      "id": "node_mrk8srx0p",
+    "node_mrk9p1upp": {
+      "id": "node_mrk9p1upp",
       "type": "box",
       "name": "404見出し",
       "semantic": "auto",
@@ -700,8 +714,8 @@
         }
       }
     },
-    "node_mrk8srx0q": {
-      "id": "node_mrk8srx0q",
+    "node_mrk9p1upq": {
+      "id": "node_mrk9p1upq",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -722,8 +736,8 @@
         }
       }
     },
-    "node_mrk8srx0r": {
-      "id": "node_mrk8srx0r",
+    "node_mrk9p1upr": {
+      "id": "node_mrk9p1upr",
       "type": "box",
       "name": "ボタン",
       "semantic": "auto",
@@ -733,7 +747,7 @@
       },
       "link": {
         "kind": "page",
-        "pageId": "page_mrk8srx0o"
+        "pageId": "page_mrk9p1upo"
       },
       "children": [],
       "styles": {
@@ -758,8 +772,8 @@
         }
       }
     },
-    "node_mrk8srx1w": {
-      "id": "node_mrk8srx1w",
+    "node_mrk9p1uqw": {
+      "id": "node_mrk9p1uqw",
       "type": "image",
       "name": "商品画像",
       "semantic": "auto",
@@ -782,8 +796,8 @@
         }
       }
     },
-    "node_mrk8srx1x": {
-      "id": "node_mrk8srx1x",
+    "node_mrk9p1uqx": {
+      "id": "node_mrk9p1uqx",
       "type": "box",
       "name": "商品名",
       "semantic": "auto",
@@ -803,8 +817,8 @@
         }
       }
     },
-    "node_mrk8srx1y": {
-      "id": "node_mrk8srx1y",
+    "node_mrk9p1uqy": {
+      "id": "node_mrk9p1uqy",
       "type": "box",
       "name": "ブランド",
       "semantic": "auto",
@@ -824,8 +838,8 @@
         }
       }
     },
-    "node_mrk8srx1z": {
-      "id": "node_mrk8srx1z",
+    "node_mrk9p1uqz": {
+      "id": "node_mrk9p1uqz",
       "type": "box",
       "name": "説明文",
       "semantic": "auto",
@@ -845,8 +859,8 @@
         }
       }
     },
-    "node_mrk8srx110": {
-      "id": "node_mrk8srx110",
+    "node_mrk9p1uq10": {
+      "id": "node_mrk9p1uq10",
       "type": "box",
       "name": "価格",
       "semantic": "auto",
@@ -867,18 +881,18 @@
         }
       }
     },
-    "node_mrk8srx111": {
-      "id": "node_mrk8srx111",
+    "node_mrk9p1uq11": {
+      "id": "node_mrk9p1uq11",
       "type": "box",
       "name": "商品情報",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrk8srx1y",
-        "node_mrk8srx1x",
-        "node_mrk8srx110",
-        "node_mrk8srx1z"
+        "node_mrk9p1uqy",
+        "node_mrk9p1uqx",
+        "node_mrk9p1uq10",
+        "node_mrk9p1uqz"
       ],
       "styles": {
         "base": {
@@ -893,16 +907,16 @@
         }
       }
     },
-    "node_mrk8srx112": {
-      "id": "node_mrk8srx112",
+    "node_mrk9p1uq12": {
+      "id": "node_mrk9p1uq12",
       "type": "box",
       "name": "詳細レイアウト",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrk8srx1w",
-        "node_mrk8srx111"
+        "node_mrk9p1uqw",
+        "node_mrk9p1uq11"
       ],
       "styles": {
         "base": {
@@ -923,11 +937,11 @@
         }
       },
       "data": {
-        "sourceId": "ds_mrk8srx1v"
+        "sourceId": "ds_mrk9p1uqv"
       }
     },
-    "node_mrk8srx114": {
-      "id": "node_mrk8srx114",
+    "node_mrk9p1uq14": {
+      "id": "node_mrk9p1uq14",
       "type": "box",
       "name": "商品カタログ",
       "semantic": "auto",
@@ -948,8 +962,8 @@
         }
       }
     },
-    "node_mrk8srx115": {
-      "id": "node_mrk8srx115",
+    "node_mrk9p1uq15": {
+      "id": "node_mrk9p1uq15",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -970,8 +984,8 @@
         }
       }
     },
-    "node_mrk8srx116": {
-      "id": "node_mrk8srx116",
+    "node_mrk9p1uq16": {
+      "id": "node_mrk9p1uq16",
       "type": "field",
       "name": "入力欄",
       "semantic": "auto",
@@ -997,8 +1011,8 @@
         }
       }
     },
-    "node_mrk8srx117": {
-      "id": "node_mrk8srx117",
+    "node_mrk9p1uq17": {
+      "id": "node_mrk9p1uq17",
       "type": "field",
       "name": "送信ボタン",
       "semantic": "auto",
@@ -1027,16 +1041,16 @@
         }
       }
     },
-    "node_mrk8srx118": {
-      "id": "node_mrk8srx118",
+    "node_mrk9p1uq18": {
+      "id": "node_mrk9p1uq18",
       "type": "box",
       "name": "検索フォーム",
       "semantic": "form",
       "text": null,
       "link": null,
       "children": [
-        "node_mrk8srx116",
-        "node_mrk8srx117"
+        "node_mrk9p1uq16",
+        "node_mrk9p1uq17"
       ],
       "styles": {
         "base": {
@@ -1051,8 +1065,8 @@
         }
       }
     },
-    "node_mrk8srx119": {
-      "id": "node_mrk8srx119",
+    "node_mrk9p1uq19": {
+      "id": "node_mrk9p1uq19",
       "type": "image",
       "name": "サムネイル",
       "semantic": "auto",
@@ -1077,8 +1091,8 @@
         }
       }
     },
-    "node_mrk8srx11a": {
-      "id": "node_mrk8srx11a",
+    "node_mrk9p1uq1a": {
+      "id": "node_mrk9p1uq1a",
       "type": "box",
       "name": "商品名",
       "semantic": "auto",
@@ -1098,8 +1112,8 @@
         }
       }
     },
-    "node_mrk8srx11b": {
-      "id": "node_mrk8srx11b",
+    "node_mrk9p1uq1b": {
+      "id": "node_mrk9p1uq1b",
       "type": "box",
       "name": "価格",
       "semantic": "auto",
@@ -1120,8 +1134,8 @@
         }
       }
     },
-    "node_mrk8srx11c": {
-      "id": "node_mrk8srx11c",
+    "node_mrk9p1uq1c": {
+      "id": "node_mrk9p1uq1c",
       "type": "box",
       "name": "商品カード",
       "semantic": "auto",
@@ -1131,9 +1145,9 @@
         "url": "/products/{id}"
       },
       "children": [
-        "node_mrk8srx119",
-        "node_mrk8srx11a",
-        "node_mrk8srx11b"
+        "node_mrk9p1uq19",
+        "node_mrk9p1uq1a",
+        "node_mrk9p1uq1b"
       ],
       "styles": {
         "base": {
@@ -1147,19 +1161,19 @@
         }
       }
     },
-    "node_mrk8srx11d": {
-      "id": "node_mrk8srx11d",
+    "node_mrk9p1uq1d": {
+      "id": "node_mrk9p1uq1d",
       "type": "list",
       "name": "商品リスト",
       "semantic": "auto",
       "text": null,
       "link": null,
       "list": {
-        "sourceId": "ds_mrk8srx1u",
+        "sourceId": "ds_mrk9p1upu",
         "limit": 12
       },
       "children": [
-        "node_mrk8srx11c"
+        "node_mrk9p1uq1c"
       ],
       "styles": {
         "base": {
@@ -1178,18 +1192,18 @@
         }
       }
     },
-    "node_mrk8srx11e": {
-      "id": "node_mrk8srx11e",
+    "node_mrk9p1uq1e": {
+      "id": "node_mrk9p1uq1e",
       "type": "box",
       "name": "商品一覧セクション",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrk8srx114",
-        "node_mrk8srx115",
-        "node_mrk8srx118",
-        "node_mrk8srx11d"
+        "node_mrk9p1uq14",
+        "node_mrk9p1uq15",
+        "node_mrk9p1uq18",
+        "node_mrk9p1uq1d"
       ],
       "styles": {
         "base": {
@@ -1208,8 +1222,8 @@
     }
   },
   "dataSources": {
-    "ds_mrk8srx1u": {
-      "id": "ds_mrk8srx1u",
+    "ds_mrk9p1upu": {
+      "id": "ds_mrk9p1upu",
       "name": "商品カタログ（デモ）",
       "url": "https://dummyjson.com/products/search?q={q}",
       "itemsPath": "products",
@@ -1265,10 +1279,10 @@
           "rating": 4.36
         }
       ],
-      "fetchedAt": 1784008836181
+      "fetchedAt": 1784010342050
     },
-    "ds_mrk8srx1v": {
-      "id": "ds_mrk8srx1v",
+    "ds_mrk9p1uqv": {
+      "id": "ds_mrk9p1uqv",
       "name": "商品詳細（デモ）",
       "url": "https://dummyjson.com/products/{slug}",
       "itemsPath": "",
@@ -1294,9 +1308,18 @@
           "rating": 2.56
         }
       ],
-      "fetchedAt": 1784008836181
+      "fetchedAt": 1784010342050
     }
   },
-  "assets": {},
+  "assets": {
+    "asset_mrk9q1101g": {
+      "id": "asset_mrk9q1101g",
+      "name": "274664851.jpeg",
+      "path": "assets/mrk9q0js-274664851.jpeg",
+      "bytes": 12565,
+      "width": 400,
+      "height": 400
+    }
+  },
   "customCss": ""
 }
