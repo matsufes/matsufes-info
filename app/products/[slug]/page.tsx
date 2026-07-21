@@ -59,25 +59,25 @@ export default async function Page({
       {(() => {
         const dvars0 = { ...vars, ...(data0 ?? {}) };
         return (
-          <section className="el-11">
+          <section className="el-12">
             <Image
               src={interpolate("{thumbnail}", dvars0) || "data:image/gif;base64,R0lGODlhAQABAAAAACw="}
               alt="商品画像"
               width={400}
               height={400}
-              className="el-5"
+              className="el-6"
             />
-            <div className="el-10">
-              <p className="el-7">
+            <div className="el-11">
+              <p className="el-8">
                 {interpolate("{brand}", dvars0)}
               </p>
-              <h1 className="el-6">
+              <h1 className="el-7">
                 {interpolate("{title}", dvars0)}
               </h1>
-              <h3 className="el-9">
+              <h3 className="el-10">
                 {interpolate("¥{price}", dvars0)}
               </h3>
-              <p className="el-8">
+              <p className="el-9">
                 {interpolate("{description}", dvars0)}
               </p>
             </div>

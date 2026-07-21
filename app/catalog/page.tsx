@@ -44,36 +44,36 @@ export default async function Page({
   items0 = items0.slice(0, 12);
   return (
     <>
-      <section className="el-20">
-        <h1 className="el-12">
+      <section className="el-21">
+        <h1 className="el-13">
           {"商品カタログ"}
         </h1>
         <p className="text-10">
           {"dummyjson.com のデータで動く一覧・検索・詳細ページのサンプルです。"}
         </p>
-        <SearchForm className="el-14">
+        <SearchForm className="el-15">
           <input id="q" type="text" className="input" name="q" placeholder="商品を検索…" />
-          <button type="submit" className="el-13">
+          <button type="submit" className="el-14">
             {"検索"}
           </button>
         </SearchForm>
-        <div className="el-19">
+        <div className="el-20">
           {items0.map((item, i) => {
             const iv0 = { ...vars, ...item };
             return (
               <div key={i} style={{ display: "contents" }}>
-                <a href={interpolateUrl("/products/{id}", iv0)} className="el-18">
+                <a href={interpolateUrl("/products/{id}", iv0)} className="el-19">
                   <Image
                     src={interpolate("{thumbnail}", iv0) || "data:image/gif;base64,R0lGODlhAQABAAAAACw="}
                     alt="商品サムネイル"
                     width={400}
                     height={400}
-                    className="el-15"
+                    className="el-16"
                   />
-                  <h3 className="el-16">
+                  <h3 className="el-17">
                     {interpolate("{title}", iv0)}
                   </h3>
-                  <p className="el-17">
+                  <p className="el-18">
                     {interpolate("¥{price}", iv0)}
                   </p>
                 </a>
