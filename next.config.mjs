@@ -5,13 +5,7 @@ const nextConfig = {
     unoptimized: true,
   },
   async redirects() {
-    return [
-    {
-        "source": "/page-5",
-        "destination": "https://matsufes.info/",
-        "statusCode": 301
-    }
-];
+    return [];
   },
   async rewrites() {
     return {

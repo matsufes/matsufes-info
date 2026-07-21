@@ -18,9 +18,6 @@ export default function RootLayout({
     <html lang="ja">
       <body>
         {children}
-        <div
-          dangerouslySetInnerHTML={{ __html: "<script src=\"/toggle.js\" defer></script>" }}
-        />
       </body>
     </html>
   );
