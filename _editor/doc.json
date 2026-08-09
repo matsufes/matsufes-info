@@ -46,14 +46,19 @@
         "node_mslbenpoy"
       ]
     },
-    "page_mslbslp81m": {
-      "id": "page_mslbslp81m",
-      "name": "ページ 5",
-      "slug": "osero",
-      "title": "ページ 5",
+    "page_msleaffe1": {
+      "id": "page_msleaffe1",
+      "name": "ホーム",
+      "slug": "practice",
+      "title": "ページ 6",
       "description": "",
-      "children": [],
-      "rawHtml": "<!DOCTYPE html>\n<html><head>\n        <title>タイトル</title>\n\n    </head>\n\n    <body>\n        <h1 id=\"id1\">ああああ</h1>\n        <h1 id=\"id2\">ああああ</h1>\n        <p>これは段落です。</p>\n\n        <div onclick=\"push()\">ケアｗｆｂｋ</div>\n\n        <input id=\"id3\">\n        <img src=\"/api/assets/file?path=assets%2Fmsle3nl6-game-ogp.png\">&gt;\n\n        <script>\n\n            function push() {\n                let moji = [\n                    \"ああああ\",\n                    \"いいいい\",\n                    \"うううう\",\n                    \"ええええ\",\n                    \"おおおお\"\n                ]\n                document.getElementById(\"id1\").innerText = moji[Math.floor(Math.random() * moji.length)];\n            }\n\n            \n            \n        </script>\n\n    \n</body></html>"
+      "children": [
+        "node_mslg4y6c9",
+        "node_mslfgu091",
+        "node_mslh1q9gk",
+        "node_mslhxf225"
+      ],
+      "unpublished": true
     }
   },
   "pageOrder": [
@@ -61,7 +66,7 @@
     "page_mslbenpp1l",
     "page_mslbenpp19",
     "page_mslbenpoz",
-    "page_mslbslp81m"
+    "page_msleaffe1"
   ],
   "nodes": {
     "node_mslbenpod": {
@@ -398,8 +403,8 @@
       "link": null,
       "children": [
         "node_mslbenpok",
-        "node_mslbenpon",
-        "node_mslbenpoq"
+        "node_mslbenpoq",
+        "node_mslbenpon"
       ],
       "styles": {
         "base": {
@@ -1167,7 +1172,7 @@
       "text": null,
       "link": null,
       "list": {
-        "sourceId": "ds_mslbenpp10",
+        "sourceId": "",
         "limit": 12
       },
       "children": [
@@ -1217,68 +1222,446 @@
           }
         }
       }
+    },
+    "node_mslfgu091": {
+      "id": "node_mslfgu091",
+      "type": "image",
+      "name": "画像",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmslfbswe-IMG_3053.PNG",
+        "alt": "",
+        "width": 2480,
+        "height": 3508,
+        "assetId": "asset_mslfbvdqe"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "880px",
+            "borderRadius": "12px",
+            "position": "absolute",
+            "left": "0px",
+            "top": "50px"
+          }
+        }
+      }
+    },
+    "node_mslg4y6c9": {
+      "id": "node_mslg4y6c9",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mslg5e0oa",
+        "node_mslg5y5sc"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "padding": "20px",
+            "gap": "12px",
+            "height": "121px",
+            "justifyContent": "flex-start",
+            "alignItems": "center"
+          }
+        }
+      }
+    },
+    "node_mslg5e0oa": {
+      "id": "node_mslg5e0oa",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mslg9isph"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "width": "109px",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        }
+      }
+    },
+    "node_mslg5y5sc": {
+      "id": "node_mslg5y5sc",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mslg8xpyd",
+        "node_mslg93jng",
+        "node_mslg91jvf",
+        "node_mslg8zq4e",
+        "node_mslgaqv9i"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "padding": "20px",
+            "gap": "12px",
+            "width": "1168px",
+            "justifyContent": "flex-end",
+            "alignItems": "center"
+          }
+        }
+      }
+    },
+    "node_mslg8xpyd": {
+      "id": "node_mslg8xpyd",
+      "type": "box",
+      "name": "ボタン",
+      "semantic": "auto",
+      "text": {
+        "content": "ボタン",
+        "heading": 0
+      },
+      "link": {
+        "kind": "url",
+        "url": "#",
+        "newTab": false
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "inline-flex",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "padding": "12px 28px",
+            "backgroundColor": "#18181b",
+            "color": "#ffffff",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "borderRadius": "8px",
+            "textDecoration": "none",
+            "transition": "all 200ms ease",
+            "cursor": "pointer"
+          },
+          "hover": {
+            "backgroundColor": "#3f3f46"
+          }
+        }
+      }
+    },
+    "node_mslg8zq4e": {
+      "id": "node_mslg8zq4e",
+      "type": "box",
+      "name": "ボタン",
+      "semantic": "auto",
+      "text": {
+        "content": "ボタン",
+        "heading": 0
+      },
+      "link": {
+        "kind": "url",
+        "url": "#",
+        "newTab": false
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "inline-flex",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "padding": "12px 28px",
+            "backgroundColor": "#18181b",
+            "color": "#ffffff",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "borderRadius": "8px",
+            "textDecoration": "none",
+            "transition": "all 200ms ease",
+            "cursor": "pointer"
+          },
+          "hover": {
+            "backgroundColor": "#3f3f46"
+          }
+        }
+      }
+    },
+    "node_mslg91jvf": {
+      "id": "node_mslg91jvf",
+      "type": "box",
+      "name": "ボタン",
+      "semantic": "auto",
+      "text": {
+        "content": "ボタン",
+        "heading": 0
+      },
+      "link": {
+        "kind": "url",
+        "url": "#",
+        "newTab": false
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "inline-flex",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "padding": "12px 28px",
+            "backgroundColor": "#18181b",
+            "color": "#ffffff",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "borderRadius": "8px",
+            "textDecoration": "none",
+            "transition": "all 200ms ease",
+            "cursor": "pointer"
+          },
+          "hover": {
+            "backgroundColor": "#3f3f46"
+          }
+        }
+      }
+    },
+    "node_mslg93jng": {
+      "id": "node_mslg93jng",
+      "type": "box",
+      "name": "ボタン",
+      "semantic": "auto",
+      "text": {
+        "content": "ボタン",
+        "heading": 0
+      },
+      "link": {
+        "kind": "url",
+        "url": "#",
+        "newTab": false
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "padding": "12px 28px",
+            "backgroundColor": "#18181b",
+            "color": "#ffffff",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "borderRadius": "8px",
+            "textDecoration": "none",
+            "transition": "all 200ms ease",
+            "cursor": "pointer",
+            "flexDirection": "row"
+          },
+          "hover": {
+            "backgroundColor": "#3f3f46"
+          }
+        }
+      }
+    },
+    "node_mslg9isph": {
+      "id": "node_mslg9isph",
+      "type": "box",
+      "name": "ボタン",
+      "semantic": "auto",
+      "text": {
+        "content": "ボタン",
+        "heading": 0
+      },
+      "link": {
+        "kind": "url",
+        "url": "#",
+        "newTab": false
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "inline-flex",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "padding": "12px 28px",
+            "backgroundColor": "#18181b",
+            "color": "#ffffff",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "borderRadius": "8px",
+            "textDecoration": "none",
+            "transition": "all 200ms ease",
+            "cursor": "pointer"
+          },
+          "hover": {
+            "backgroundColor": "#3f3f46"
+          }
+        }
+      }
+    },
+    "node_mslgaqv9i": {
+      "id": "node_mslgaqv9i",
+      "type": "box",
+      "name": "ボタン",
+      "semantic": "auto",
+      "text": {
+        "content": "ボタン",
+        "heading": 0
+      },
+      "link": {
+        "kind": "url",
+        "url": "#",
+        "newTab": false
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "inline-flex",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "padding": "12px 28px",
+            "backgroundColor": "#18181b",
+            "color": "#ffffff",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "borderRadius": "8px",
+            "textDecoration": "none",
+            "transition": "all 200ms ease",
+            "cursor": "pointer",
+            "width": "13px"
+          },
+          "hover": {
+            "backgroundColor": "#3f3f46"
+          }
+        }
+      }
+    },
+    "node_mslh1q9gk": {
+      "id": "node_mslh1q9gk",
+      "type": "image",
+      "name": "画像",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmslh1hn2--56-.svg",
+        "alt": "",
+        "width": 267,
+        "height": 150,
+        "assetId": "asset_mslh1ihnj"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "798px",
+            "borderRadius": "12px",
+            "height": "523px",
+            "display": "flex",
+            "justifyContent": "flex-end",
+            "alignItems": "center",
+            "gridTemplateColumns": "repeat(2, 1fr)",
+            "flexDirection": "row",
+            "position": "absolute",
+            "left": "500px",
+            "top": "300px"
+          }
+        }
+      }
+    },
+    "node_mslhxf225": {
+      "id": "node_mslhxf225",
+      "type": "image",
+      "name": "画像",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmslhx4j8--.svg",
+        "alt": "",
+        "width": 1920,
+        "height": 1312,
+        "assetId": "asset_mslhx7ct4"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "1343px",
+            "borderRadius": "12px",
+            "height": "957px",
+            "position": "absolute",
+            "left": "0px",
+            "top": "600px"
+          }
+        }
+      }
     }
   },
-  "dataSources": {
-    "ds_mslbenpp10": {
-      "id": "ds_mslbenpp10",
-      "name": "商品カタログ（デモ）",
-      "url": "https://dummyjson.com/products/search?q={q}",
-      "itemsPath": "products",
-      "fields": [
-        "id",
-        "title",
-        "description",
-        "price",
-        "thumbnail",
-        "category",
-        "brand",
-        "rating"
-      ],
-      "sample": [
-        {
-          "id": 1,
-          "title": "Essence Mascara Lash Princess",
-          "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing …",
-          "price": 9.99,
-          "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
-          "category": "beauty",
-          "brand": "Essence",
-          "rating": 2.56
-        },
-        {
-          "id": 2,
-          "title": "Eyeshadow Palette with Mirror",
-          "description": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades f…",
-          "price": 19.99,
-          "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp",
-          "category": "beauty",
-          "brand": "Glamour Beauty",
-          "rating": 2.86
-        },
-        {
-          "id": 3,
-          "title": "Powder Canister",
-          "description": "The Powder Canister is a finely milled setting powder designed to set makeup and…",
-          "price": 14.99,
-          "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp",
-          "category": "beauty",
-          "brand": "Velvet Touch",
-          "rating": 4.64
-        },
-        {
-          "id": 4,
-          "title": "Red Lipstick",
-          "description": "The Red Lipstick is a classic and bold choice for adding a pop of color to your …",
-          "price": 12.99,
-          "thumbnail": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
-          "category": "beauty",
-          "brand": "Chic Cosmetics",
-          "rating": 4.36
-        }
-      ],
-      "fetchedAt": 1786250464909
+  "assets": {
+    "asset_mslfbvdqe": {
+      "id": "asset_mslfbvdqe",
+      "name": "IMG_3053.PNG",
+      "path": "assets/mslfbswe-IMG_3053.PNG",
+      "bytes": 7077869,
+      "mimeType": "image/png",
+      "width": 2480,
+      "height": 3508
     },
+    "asset_mslh1ihnj": {
+      "id": "asset_mslh1ihnj",
+      "name": "-56-.svg",
+      "path": "assets/mslh1hn2--56-.svg",
+      "bytes": 702022,
+      "mimeType": "image/svg+xml",
+      "width": 267,
+      "height": 150
+    },
+    "asset_mslh7qan5": {
+      "id": "asset_mslh7qan5",
+      "name": "tap.png",
+      "path": "assets/mslh7ppw-tap.png",
+      "bytes": 27436,
+      "mimeType": "image/png",
+      "width": 239,
+      "height": 240
+    },
+    "asset_mslhjeut1": {
+      "id": "asset_mslhjeut1",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mslhjcwr-pasted-artwork.svg",
+      "bytes": 3500500,
+      "mimeType": "image/svg+xml",
+      "width": 230,
+      "height": 150
+    },
+    "asset_mslhx7ct4": {
+      "id": "asset_mslhx7ct4",
+      "name": "-.svg",
+      "path": "assets/mslhx4j8--.svg",
+      "bytes": 10745889,
+      "mimeType": "image/svg+xml",
+      "width": 1920,
+      "height": 1312
+    }
+  },
+  "components": {},
+  "dataSources": {
     "ds_mslbenpp11": {
       "id": "ds_mslbenpp11",
       "name": "商品詳細（デモ）",
@@ -1307,17 +1690,6 @@
         }
       ],
       "fetchedAt": 1786250464909
-    }
-  },
-  "assets": {
-    "asset_msle3o9o1": {
-      "id": "asset_msle3o9o1",
-      "name": "game-ogp.png",
-      "path": "assets/msle3nl6-game-ogp.png",
-      "bytes": 122276,
-      "mimeType": "image/png",
-      "width": 1200,
-      "height": 630
     }
   },
   "customCss": ""

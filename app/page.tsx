@@ -48,19 +48,19 @@ export default function Page() {
             {"説明文をここに入力します。"}
           </p>
         </div>
-        <div className="card-3">
-          <h3 className="card-4">
-            {"カード 2"}
-          </h3>
-          <p className="text-6">
-            {"説明文をここに入力します。"}
-          </p>
-        </div>
         <div className="card-5">
           <h3 className="card-6">
             {"カード 3"}
           </h3>
           <p className="text-7">
+            {"説明文をここに入力します。"}
+          </p>
+        </div>
+        <div className="card-3">
+          <h3 className="card-4">
+            {"カード 2"}
+          </h3>
+          <p className="text-6">
             {"説明文をここに入力します。"}
           </p>
         </div>
