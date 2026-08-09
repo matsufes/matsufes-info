@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Zen_Kaku_Gothic_New } from "next/font/google";
 import "./globals.css";
 import "../styles/site.css";
 
@@ -9,6 +10,8 @@ export const metadata: Metadata = {
   },
 };
 
+const zenkakugothicnew = Zen_Kaku_Gothic_New({ subsets: ["latin"], variable: "--font-zen-kaku-gothic-new", weight: ["400","500","700"] });
+
 export default function RootLayout({
   children,
 }: {
@@ -16,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body>
+      <body className={`${zenkakugothicnew.variable}`}>
         {children}
         <div
           dangerouslySetInnerHTML={{ __html: "<script src=\"/toggle.js\" defer></script>" }}

@@ -1,3 +1,28 @@
+body:has([data-page-body="page_mslbenpou"]) {
+  width: auto;
+  height: auto;
+}
+
+body:has([data-page-body="page_mslbenpp1l"]) {
+  width: auto;
+  height: auto;
+}
+
+body:has([data-page-body="page_mslbenpp19"]) {
+  width: auto;
+  height: auto;
+}
+
+body:has([data-page-body="page_mslbenpoz"]) {
+  width: auto;
+  height: auto;
+}
+
+body:has([data-page-body="page_msleaffe1"]) {
+  width: auto;
+  height: auto;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -7,6 +32,8 @@
   justify-content: space-between;
   background-color: #ffffff;
   border-bottom: 1px solid #e4e4e7;
+  width: auto;
+  height: auto;
   position: relative;
 }
 
@@ -14,6 +41,8 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 1.4;
+  width: auto;
+  height: auto;
 }
 
 .nav-links {
@@ -22,6 +51,8 @@
   padding: 0px;
   gap: 28px;
   align-items: center;
+  width: auto;
+  height: auto;
 }
 
 .el {
@@ -37,6 +68,8 @@
   line-height: 1.7;
   text-decoration: none;
   color: #18181b;
+  width: auto;
+  height: auto;
 }
 
 .text-2 {
@@ -44,6 +77,8 @@
   line-height: 1.7;
   text-decoration: none;
   color: #18181b;
+  width: auto;
+  height: auto;
 }
 
 .text-3 {
@@ -51,6 +86,8 @@
   line-height: 1.7;
   text-decoration: none;
   color: #18181b;
+  width: auto;
+  height: auto;
 }
 
 .hero {
@@ -61,6 +98,8 @@
   align-items: center;
   justify-content: center;
   background-color: #fafafa;
+  width: auto;
+  height: auto;
 }
 
 .el-2 {
@@ -69,6 +108,8 @@
   line-height: 1.4;
   text-align: center;
   letter-spacing: -0.02em;
+  width: auto;
+  height: auto;
 }
 
 .text-4 {
@@ -77,6 +118,8 @@
   color: #71717a;
   text-align: center;
   max-width: 560px;
+  width: auto;
+  height: auto;
 }
 
 .button {
@@ -92,6 +135,8 @@
   text-decoration: none;
   transition: all 200ms ease;
   cursor: pointer;
+  width: auto;
+  height: auto;
 }
 
 .button:hover {
@@ -104,6 +149,8 @@
   padding: 64px 40px;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
+  width: auto;
+  height: auto;
 }
 
 .card {
@@ -114,18 +161,24 @@
   background-color: #ffffff;
   border-radius: 12px;
   border: 1px solid #e4e4e7;
+  width: auto;
+  height: auto;
 }
 
 .card-2 {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.4;
+  width: auto;
+  height: auto;
 }
 
 .text-5 {
   font-size: 14px;
   line-height: 1.7;
   color: #71717a;
+  width: auto;
+  height: auto;
 }
 
 .card-3 {
@@ -136,18 +189,24 @@
   background-color: #ffffff;
   border-radius: 12px;
   border: 1px solid #e4e4e7;
+  width: auto;
+  height: auto;
 }
 
 .card-4 {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.4;
+  width: auto;
+  height: auto;
 }
 
 .text-6 {
   font-size: 14px;
   line-height: 1.7;
   color: #71717a;
+  width: auto;
+  height: auto;
 }
 
 .card-5 {
@@ -158,18 +217,24 @@
   background-color: #ffffff;
   border-radius: 12px;
   border: 1px solid #e4e4e7;
+  width: auto;
+  height: auto;
 }
 
 .card-6 {
   font-size: 18px;
   font-weight: 700;
   line-height: 1.4;
+  width: auto;
+  height: auto;
 }
 
 .text-7 {
   font-size: 14px;
   line-height: 1.7;
   color: #71717a;
+  width: auto;
+  height: auto;
 }
 
 .footer {
@@ -180,12 +245,16 @@
   align-items: center;
   background-color: #fafafa;
   border-top: 1px solid #e4e4e7;
+  width: auto;
+  height: auto;
 }
 
 .text-8 {
   font-size: 13px;
   line-height: 1.7;
   color: #71717a;
+  width: auto;
+  height: auto;
 }
 
 .el-3 {
@@ -195,6 +264,8 @@
   gap: 18px;
   align-items: center;
   justify-content: center;
+  width: auto;
+  height: auto;
 }
 
 .el-4 {
@@ -203,6 +274,8 @@
   line-height: 1.4;
   letter-spacing: 0.04em;
   text-align: center;
+  width: auto;
+  height: auto;
 }
 
 .text-9 {
@@ -210,6 +283,8 @@
   line-height: 1.7;
   color: #71717a;
   text-align: center;
+  width: auto;
+  height: auto;
 }
 
 .button-2 {
@@ -225,6 +300,8 @@
   text-decoration: none;
   transition: all 200ms ease;
   cursor: pointer;
+  width: auto;
+  height: auto;
 }
 
 .button-2:hover {
@@ -235,24 +312,31 @@
   width: 320px;
   border-radius: 16px;
   background-color: #fafafa;
+  height: auto;
 }
 
 .el-6 {
   font-size: 34px;
   font-weight: 700;
   line-height: 1.4;
+  width: auto;
+  height: auto;
 }
 
 .el-7 {
   font-size: 13px;
   line-height: 1.7;
   color: #a1a1aa;
+  width: auto;
+  height: auto;
 }
 
 .el-8 {
   font-size: 15px;
   line-height: 1.7;
   color: #52525b;
+  width: auto;
+  height: auto;
 }
 
 .el-9 {
@@ -260,6 +344,8 @@
   font-weight: 700;
   line-height: 1.4;
   color: #0d99ff;
+  width: auto;
+  height: auto;
 }
 
 .el-10 {
@@ -269,6 +355,8 @@
   gap: 12px;
   align-items: flex-start;
   flex: 1;
+  width: auto;
+  height: auto;
 }
 
 .el-11 {
@@ -279,6 +367,7 @@
   max-width: 900px;
   margin: 0 auto;
   width: 100%;
+  height: auto;
 }
 
 .el-12 {
@@ -286,6 +375,8 @@
   font-weight: 700;
   line-height: 1.4;
   text-align: center;
+  width: auto;
+  height: auto;
 }
 
 .text-10 {
@@ -293,6 +384,8 @@
   line-height: 1.7;
   color: #71717a;
   text-align: center;
+  width: auto;
+  height: auto;
 }
 
 .input {
@@ -303,6 +396,7 @@
   border: 1px solid #d4d4d8;
   border-radius: 8px;
   background-color: #ffffff;
+  height: auto;
 }
 
 .el-13 {
@@ -317,6 +411,8 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  width: auto;
+  height: auto;
 }
 
 .el-14 {
@@ -326,6 +422,7 @@
   gap: 10px;
   justify-content: center;
   width: 100%;
+  height: auto;
 }
 
 .el-15 {
@@ -334,12 +431,15 @@
   object-fit: cover;
   border-radius: 10px;
   background-color: #fafafa;
+  height: auto;
 }
 
 .el-16 {
   font-size: 15px;
   font-weight: 700;
   line-height: 1.4;
+  width: auto;
+  height: auto;
 }
 
 .el-17 {
@@ -347,6 +447,8 @@
   line-height: 1.7;
   font-weight: 600;
   color: #0d99ff;
+  width: auto;
+  height: auto;
 }
 
 .el-18 {
@@ -355,6 +457,8 @@
   padding: 0px;
   gap: 10px;
   cursor: pointer;
+  width: auto;
+  height: auto;
 }
 
 .el-19 {
@@ -363,6 +467,7 @@
   gap: 24px;
   padding: 0px;
   width: 100%;
+  height: auto;
 }
 
 .el-20 {
@@ -374,6 +479,7 @@
   max-width: 1080px;
   margin: 0 auto;
   width: 100%;
+  height: auto;
 }
 
 .image {
@@ -381,7 +487,8 @@
   border-radius: 12px;
   position: absolute;
   left: 0px;
-  top: 50px;
+  top: 0px;
+  height: auto;
 }
 
 .box {
@@ -392,6 +499,7 @@
   height: 121px;
   justify-content: flex-start;
   align-items: center;
+  width: auto;
 }
 
 .box-2 {
@@ -402,6 +510,7 @@
   width: 109px;
   justify-content: center;
   align-items: center;
+  height: auto;
 }
 
 .box-3 {
@@ -412,6 +521,7 @@
   width: 1168px;
   justify-content: flex-end;
   align-items: center;
+  height: auto;
 }
 
 .button-3 {
@@ -427,6 +537,8 @@
   text-decoration: none;
   transition: all 200ms ease;
   cursor: pointer;
+  width: auto;
+  height: auto;
 }
 
 .button-3:hover {
@@ -446,6 +558,8 @@
   text-decoration: none;
   transition: all 200ms ease;
   cursor: pointer;
+  width: auto;
+  height: auto;
 }
 
 .button-4:hover {
@@ -465,6 +579,8 @@
   text-decoration: none;
   transition: all 200ms ease;
   cursor: pointer;
+  width: auto;
+  height: auto;
 }
 
 .button-5:hover {
@@ -485,6 +601,8 @@
   transition: all 200ms ease;
   cursor: pointer;
   flex-direction: row;
+  width: auto;
+  height: auto;
 }
 
 .button-6:hover {
@@ -504,6 +622,8 @@
   text-decoration: none;
   transition: all 200ms ease;
   cursor: pointer;
+  width: auto;
+  height: auto;
 }
 
 .button-7:hover {
@@ -524,6 +644,7 @@
   transition: all 200ms ease;
   cursor: pointer;
   width: 13px;
+  height: auto;
 }
 
 .button-8:hover {
@@ -547,10 +668,21 @@
 .image-3 {
   width: 1343px;
   border-radius: 12px;
-  height: 957px;
-  position: absolute;
-  left: 0px;
-  top: 600px;
+  height: 1019px;
+  margin-top: 300px;
+}
+
+.box-4 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 12px;
+  height: 172px;
+  font-size: 80px;
+  font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  width: auto;
 }
 
 @media (max-width: 767px) {

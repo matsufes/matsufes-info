@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
+      <span hidden data-page-body="page_msleaffe1" />
       <section className="box">
         <div className="box-2">
           <a href="#" className="button-7">
@@ -53,6 +54,9 @@ export default function Page() {
         height={1312}
         className="image-3"
       />
+      <p className="box-4">
+        {"企画さがし"}
+      </p>
     </>
   );
 }

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
+      <span hidden data-page-body="page_mslbenpp1l" />
       <section className="el-20">
         <h1 className="el-12">
           {"商品カタログ"}

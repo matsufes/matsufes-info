@@ -7,6 +7,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
+      <span hidden data-page-body="page_mslbenpou" />
       <header id="navbar" className="navbar">
         <h6 className="logo">
           {"Site"}

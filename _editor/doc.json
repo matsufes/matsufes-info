@@ -56,7 +56,8 @@
         "node_mslg4y6c9",
         "node_mslfgu091",
         "node_mslh1q9gk",
-        "node_mslhxf225"
+        "node_mslhxf225",
+        "node_mslieh456"
       ],
       "unpublished": false
     }
@@ -1245,7 +1246,7 @@
             "borderRadius": "12px",
             "position": "absolute",
             "left": "0px",
-            "top": "50px"
+            "top": "0px"
           }
         }
       }
@@ -1604,10 +1605,35 @@
           "default": {
             "width": "1343px",
             "borderRadius": "12px",
-            "height": "957px",
-            "position": "absolute",
-            "left": "0px",
-            "top": "600px"
+            "height": "1019px",
+            "marginTop": "300px"
+          }
+        }
+      }
+    },
+    "node_mslieh456": {
+      "id": "node_mslieh456",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": {
+        "content": "企画さがし",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "height": "172px",
+            "fontSize": "80px",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontWeight": "700",
+            "color": "#ffffff"
           }
         }
       }
@@ -1692,5 +1718,15 @@
       "fetchedAt": 1786250464909
     }
   },
-  "customCss": ""
+  "customCss": "",
+  "customFonts": [
+    {
+      "family": "Zen Kaku Gothic New",
+      "weights": [
+        "400",
+        "500",
+        "700"
+      ]
+    }
+  ]
 }

@@ -56,6 +56,7 @@ export default async function Page({
   if (!data0) notFound();
   return (
     <>
+      <span hidden data-page-body="page_mslbenpp19" />
       {(() => {
         const dvars0 = { ...vars, ...(data0 ?? {}) };
         return (
