@@ -1,55 +1,296 @@
 {
   "siteName": "My Site",
+  "colorPalette": [],
   "pages": {
-    "page_mrueefu6q": {
-      "id": "page_mrueefu6q",
+    "page_mslbenpou": {
+      "id": "page_mslbenpou",
       "name": "ホーム",
       "slug": "",
       "title": "ホーム",
       "description": "",
       "children": [
-        "node_mrueefu5d",
-        "node_mrueefu6p",
-        "node_mrueefu6n"
+        "node_mslbenpod",
+        "node_mslbenpoh",
+        "node_mslbenpor",
+        "node_mslbenpot"
+      ],
+      "rawHtml": null
+    },
+    "page_mslbenpp1l": {
+      "id": "page_mslbenpp1l",
+      "name": "商品一覧（デモ）",
+      "slug": "catalog",
+      "title": "商品一覧",
+      "description": "dummyjson.comのデータで動くサンプルページ",
+      "children": [
+        "node_mslbenpp1k"
       ]
     },
-    "page_mrueefu6v": {
-      "id": "page_mrueefu6v",
+    "page_mslbenpp19": {
+      "id": "page_mslbenpp19",
+      "name": "商品詳細（デモ）",
+      "slug": "products/[slug]",
+      "title": "商品詳細",
+      "description": "",
+      "children": [
+        "node_mslbenpp18"
+      ]
+    },
+    "page_mslbenpoz": {
+      "id": "page_mslbenpoz",
       "name": "404（見つからないとき）",
       "slug": "404",
       "title": "ページが見つかりません",
       "description": "",
       "children": [
-        "node_mrueefu6u"
+        "node_mslbenpoy"
       ]
     },
-    "page_mrufjsom3": {
-      "id": "page_mrufjsom3",
-      "name": "ローディング画面",
-      "slug": "__loading-screen",
-      "title": "ローディング画面",
+    "page_mslbslp81m": {
+      "id": "page_mslbslp81m",
+      "name": "ページ 5",
+      "slug": "osero",
+      "title": "ページ 5",
       "description": "",
-      "children": [
-        "node_mrufjsom1"
-      ]
+      "children": [],
+      "rawHtml": "<!DOCTYPE html>\n<html lang=\"ja\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>オセロ (Othello / Reversi)</title>\n    <style>\n        :root {\n            --bg-color: #1e1e2e;\n            --card-bg: #2b2b3d;\n            --board-bg: #106b38;\n            --board-border: #0a4724;\n            --text-color: #ffffff;\n            --text-muted: #a0a0b0;\n            --accent-color: #4e9f3d;\n            --highlight-color: rgba(255, 255, 255, 0.3);\n        }\n\n        * {\n            box-sizing: border-box;\n            margin: 0;\n            padding: 0;\n            user-select: none;\n        }\n\n        body {\n            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;\n            background-color: var(--bg-color);\n            color: var(--text-color);\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            justify-content: center;\n            min-height: 100vh;\n            padding: 20px;\n        }\n\n        .container {\n            background-color: var(--card-bg);\n            padding: 30px;\n            border-radius: 16px;\n            box-shadow: 0 10px 30px rgba(0,0,0,0.5);\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            max-width: 500px;\n            width: 100%;\n        }\n\n        h1 {\n            font-size: 28px;\n            margin-bottom: 20px;\n            letter-spacing: 2px;\n            color: #ffffff;\n        }\n\n        .status-board {\n            display: flex;\n            justify-content: space-between;\n            align-items: center;\n            width: 100%;\n            margin-bottom: 20px;\n            background: rgba(0, 0, 0, 0.2);\n            padding: 12px 20px;\n            border-radius: 12px;\n        }\n\n        .player-info {\n            display: flex;\n            align-items: center;\n            gap: 10px;\n            font-size: 18px;\n            font-weight: bold;\n            padding: 8px 12px;\n            border-radius: 8px;\n            transition: all 0.3s ease;\n        }\n\n        .player-info.active {\n            background-color: rgba(255, 255, 255, 0.15);\n            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);\n        }\n\n        .disc-icon {\n            width: 24px;\n            height: 24px;\n            border-radius: 50%;\n            display: inline-block;\n            box-shadow: 0 2px 4px rgba(0,0,0,0.4);\n        }\n\n        .disc-icon.black {\n            background: radial-gradient(circle at 30% 30%, #444, #000);\n        }\n\n        .disc-icon.white {\n            background: radial-gradient(circle at 30% 30%, #fff, #ccc);\n        }\n\n        .message {\n            font-size: 16px;\n            margin-bottom: 15px;\n            height: 24px;\n            color: #e0e0e0;\n            font-weight: 500;\n            text-align: center;\n        }\n\n        .board-wrapper {\n            position: relative;\n            padding: 10px;\n            background-color: var(--board-border);\n            border-radius: 12px;\n            box-shadow: inset 0 0 10px rgba(0,0,0,0.6), 0 8px 16px rgba(0,0,0,0.4);\n        }\n\n        .board {\n            display: grid;\n            grid-template-columns: repeat(8, 1fr);\n            grid-template-rows: repeat(8, 1fr);\n            gap: 2px;\n            background-color: #052914;\n            width: 360px;\n            height: 360px;\n        }\n\n        @media (max-width: 480px) {\n            .board {\n                width: 280px;\n                height: 280px;\n            }\n        }\n\n        .cell {\n            background-color: var(--board-bg);\n            display: flex;\n            align-items: center;\n            justify-content: center;\n            cursor: pointer;\n            position: relative;\n        }\n\n        .cell.valid-move::after {\n            content: '';\n            width: 14px;\n            height: 14px;\n            border-radius: 50%;\n            background-color: var(--highlight-color);\n            transition: transform 0.2s;\n        }\n\n        .cell.valid-move:hover::after {\n            transform: scale(1.3);\n            background-color: rgba(255, 255, 255, 0.5);\n        }\n\n        /* 盤面の星（ドット） */\n        .cell.dot::before {\n            content: '';\n            position: absolute;\n            width: 6px;\n            height: 6px;\n            background-color: #052914;\n            border-radius: 50%;\n            z-index: 1;\n        }\n\n        .disc {\n            width: 82%;\n            height: 82%;\n            border-radius: 50%;\n            position: relative;\n            transform-style: preserve-3d;\n            transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);\n            z-index: 2;\n        }\n\n        .disc.black {\n            transform: rotateY(0deg);\n        }\n\n        .disc.white {\n            transform: rotateY(180deg);\n        }\n\n        .disc-face {\n            position: absolute;\n            width: 100%;\n            height: 100%;\n            border-radius: 50%;\n            backface-visibility: hidden;\n            box-shadow: 0 3px 6px rgba(0,0,0,0.4);\n        }\n\n        .disc-face.black-face {\n            background: radial-gradient(circle at 35% 35%, #555, #111);\n        }\n\n        .disc-face.white-face {\n            background: radial-gradient(circle at 35% 35%, #ffffff, #dddddd);\n            transform: rotateY(180deg);\n        }\n\n        .controls {\n            margin-top: 25px;\n            display: flex;\n            gap: 12px;\n            width: 100%;\n        }\n\n        button {\n            flex: 1;\n            padding: 12px 20px;\n            font-size: 15px;\n            font-weight: bold;\n            color: #ffffff;\n            background-color: #3b3b54;\n            border: none;\n            border-radius: 8px;\n            cursor: pointer;\n            transition: all 0.2s;\n            box-shadow: 0 4px 6px rgba(0,0,0,0.2);\n        }\n\n        button:hover {\n            background-color: #4a4a6a;\n            transform: translateY(-2px);\n        }\n\n        button:active {\n            transform: translateY(0);\n        }\n\n        button.primary {\n            background-color: var(--accent-color);\n        }\n\n        button.primary:hover {\n            background-color: #5bbd47;\n        }\n    </style>\n</head>\n<body>\n\n    <div class=\"container\">\n        <h1>OTHELLO</h1>\n\n        <div class=\"status-board\">\n            <div class=\"player-info\" id=\"player-black\">\n                <span class=\"disc-icon black\"></span>\n                <span>黒: <span id=\"score-black\">2</span></span>\n            </div>\n            <div class=\"player-info\" id=\"player-white\">\n                <span class=\"disc-icon white\"></span>\n                <span>白: <span id=\"score-white\">2</span></span>\n            </div>\n        </div>\n\n        <div class=\"message\" id=\"message\">黒の番です</div>\n\n        <div class=\"board-wrapper\">\n            <div class=\"board\" id=\"board\"></div>\n        </div>\n\n        <div class=\"controls\">\n            <button class=\"primary\" onclick=\"resetGame()\">リセット</button>\n        </div>\n    </div>\n\n    <script>\n        const BOARD_SIZE = 8;\n        const BLACK = 1;\n        const WHITE = -1;\n        const EMPTY = 0;\n\n        let board = [];\n        let currentPlayer = BLACK;\n        let gameOver = false;\n\n        const DIRECTIONS = [\n            [-1, -1], [-1, 0], [-1, 1],\n            [0, -1],           [0, 1],\n            [1, -1],  [1, 0],  [1, 1]\n        ];\n\n        const boardElement = document.getElementById('board');\n        const scoreBlackElement = document.getElementById('score-black');\n        const scoreWhiteElement = document.getElementById('score-white');\n        const messageElement = document.getElementById('message');\n        const playerBlackElement = document.getElementById('player-black');\n        const playerWhiteElement = document.getElementById('player-white');\n\n        function initGame() {\n            board = Array(BOARD_SIZE).fill(null).map(() => Array(BOARD_SIZE).fill(EMPTY));\n            \n            // 初期配置\n            board[3][3] = WHITE;\n            board[3][4] = BLACK;\n            board[4][3] = BLACK;\n            board[4][4] = WHITE;\n\n            currentPlayer = BLACK;\n            gameOver = false;\n\n            renderBoard();\n            updateStatus();\n        }\n\n        function createBoardDOM() {\n            boardElement.innerHTML = '';\n            for (let r = 0; r < BOARD_SIZE; r++) {\n                for (let c = 0; c < BOARD_SIZE; c++) {\n                    const cell = document.createElement('div');\n                    cell.className = 'cell';\n                    cell.dataset.row = r;\n                    cell.dataset.col = c;\n\n                    // オセロ盤の星（ドット）の位置 (2,2), (2,6), (6,2), (6,6)\n                    if ((r === 2 || r === 6) && (c === 2 || c === 6)) {\n                        cell.classList.add('dot');\n                    }\n\n                    cell.addEventListener('click', () => handleCellClick(r, c));\n                    boardElement.appendChild(cell);\n                }\n            }\n        }\n\n        function getFlips(r, c, player) {\n            if (board[r][c] !== EMPTY) return [];\n\n            let totalFlips = [];\n\n            for (const [dr, dc] of DIRECTIONS) {\n                let nr = r + dr;\n                let nc = c + dc;\n                let flipsInDir = [];\n\n                while (nr >= 0 && nr < BOARD_SIZE && nc >= 0 && nc < BOARD_SIZE && board[nr][nc] === -player) {\n                    flipsInDir.push([nr, nc]);\n                    nr += dr;\n                    nc += dc;\n                }\n\n                if (nr >= 0 && nr < BOARD_SIZE && nc >= 0 && nc < BOARD_SIZE && board[nr][nc] === player) {\n                    totalFlips.push(...flipsInDir);\n                }\n            }\n\n            return totalFlips;\n        }\n\n        function getValidMoves(player) {\n            const moves = [];\n            for (let r = 0; r < BOARD_SIZE; r++) {\n                for (let c = 0; c < BOARD_SIZE; c++) {\n                    const flips = getFlips(r, c, player);\n                    if (flips.length > 0) {\n                        moves.push({ r, c, flips });\n                    }\n                }\n            }\n            return moves;\n        }\n\n        function handleCellClick(r, c) {\n            if (gameOver) return;\n\n            const flips = getFlips(r, c, currentPlayer);\n            if (flips.length === 0) return;\n\n            // 石を置く\n            board[r][c] = currentPlayer;\n            flips.forEach(([fr, fc]) => {\n                board[fr][fc] = currentPlayer;\n            });\n\n            // ターン交代\n            currentPlayer = -currentPlayer;\n\n            // 打てる手があるか確認\n            let validMoves = getValidMoves(currentPlayer);\n            \n            if (validMoves.length === 0) {\n                // パス処理\n                currentPlayer = -currentPlayer;\n                validMoves = getValidMoves(currentPlayer);\n\n                if (validMoves.length === 0) {\n                    // 両者打てる場所がないためゲーム終了\n                    gameOver = true;\n                } else {\n                    alert((currentPlayer === BLACK ? \"白\" : \"黒\") + \"は置ける場所がないためパスします。\");\n                }\n            }\n\n            renderBoard();\n            updateStatus();\n        }\n\n        function renderBoard() {\n            const validMoves = gameOver ? [] : getValidMoves(currentPlayer);\n\n            for (let r = 0; r < BOARD_SIZE; r++) {\n                for (let c = 0; c < BOARD_SIZE; c++) {\n                    const cell = boardElement.children[r * BOARD_SIZE + c];\n                    const val = board[r][c];\n\n                    // 有効な手のハイライトクリア\n                    cell.classList.remove('valid-move');\n\n                    // 石の表示/更新\n                    let disc = cell.querySelector('.disc');\n                    if (val !== EMPTY) {\n                        if (!disc) {\n                            disc = document.createElement('div');\n                            disc.className = 'disc';\n                            disc.innerHTML = '<div class=\"disc-face black-face\"></div><div class=\"disc-face white-face\"></div>';\n                            cell.appendChild(disc);\n                        }\n                        \n                        if (val === BLACK) {\n                            disc.classList.remove('white');\n                            disc.classList.add('black');\n                        } else {\n                            disc.classList.remove('black');\n                            disc.classList.add('white');\n                        }\n                    } else {\n                        if (disc) {\n                            cell.removeChild(disc);\n                        }\n                        // 置ける場所のガイド表示\n                        const isValid = validMoves.some(m => m.r === r && m.c === c);\n                        if (isValid) {\n                            cell.classList.add('valid-move');\n                        }\n                    }\n                }\n            }\n        }\n\n        function updateStatus() {\n            let blackCount = 0;\n            let whiteCount = 0;\n\n            for (let r = 0; r < BOARD_SIZE; r++) {\n                for (let c = 0; c < BOARD_SIZE; c++) {\n                    if (board[r][c] === BLACK) blackCount++;\n                    if (board[r][c] === WHITE) whiteCount++;\n                }\n            }\n\n            scoreBlackElement.textContent = blackCount;\n            scoreWhiteElement.textContent = whiteCount;\n\n            playerBlackElement.classList.toggle('active', currentPlayer === BLACK && !gameOver);\n            playerWhiteElement.classList.toggle('active', currentPlayer === WHITE && !gameOver);\n\n            if (gameOver) {\n                if (blackCount > whiteCount) {\n                    messageElement.textContent = `ゲーム終了！ 黒の勝ちです！ (${blackCount} - ${whiteCount})`;\n                } else if (whiteCount > blackCount) {\n                    messageElement.textContent = `ゲーム終了！ 白の勝ちです！ (${whiteCount} - ${blackCount})`;\n                } else {\n                    messageElement.textContent = `ゲーム終了！ 引き分けです！ (${blackCount} - ${whiteCount})`;\n                }\n            } else {\n                messageElement.textContent = `${currentPlayer === BLACK ? \"黒\" : \"白\"}の番です`;\n            }\n        }\n\n        function resetGame() {\n            initGame();\n        }\n\n        // 初期化実行\n        createBoardDOM();\n        initGame();\n    </script>\n</body>\n</html>"
     }
   },
   "pageOrder": [
-    "page_mrueefu6q",
-    "page_mrueefu6v"
+    "page_mslbenpou",
+    "page_mslbenpp1l",
+    "page_mslbenpp19",
+    "page_mslbenpoz",
+    "page_mslbslp81m"
   ],
   "nodes": {
-    "node_mrueefu5d": {
-      "id": "node_mrueefu5d",
+    "node_mslbenpod": {
+      "id": "node_mslbenpod",
+      "type": "box",
+      "name": "ナビバー",
+      "semantic": "header",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mslbenpo7",
+        "node_mslbenpob",
+        "node_mslbenpoc"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "padding": "16px 40px",
+            "gap": "24px",
+            "alignItems": "center",
+            "justifyContent": "space-between",
+            "backgroundColor": "#ffffff",
+            "borderBottom": "1px solid #e4e4e7"
+          }
+        }
+      },
+      "attrId": "navbar"
+    },
+    "node_mslbenpo7": {
+      "id": "node_mslbenpo7",
+      "type": "box",
+      "name": "ロゴ",
+      "semantic": "auto",
+      "text": {
+        "content": "Site",
+        "heading": 6
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "18px",
+            "fontWeight": "700",
+            "lineHeight": "1.4"
+          }
+        }
+      }
+    },
+    "node_mslbenpob": {
+      "id": "node_mslbenpob",
+      "type": "box",
+      "name": "ナビリンク",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mslbenpo8",
+        "node_mslbenpo9",
+        "node_mslbenpoa"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "padding": "0px",
+            "gap": "28px",
+            "alignItems": "center"
+          }
+        },
+        "sm": {
+          "default": {
+            "display": "none",
+            "position": "absolute",
+            "top": "100%",
+            "left": "0",
+            "right": "0",
+            "zIndex": "50",
+            "flexDirection": "column",
+            "alignItems": "stretch",
+            "gap": "0px",
+            "padding": "8px 0",
+            "backgroundColor": "#ffffff",
+            "borderBottom": "1px solid #e4e4e7"
+          }
+        }
+      },
+      "attrId": "nav-links"
+    },
+    "node_mslbenpoc": {
+      "id": "node_mslbenpoc",
+      "type": "icon",
+      "name": "メニュー開閉",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "icon": {
+        "name": "menu",
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"100%\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-menu\" aria-hidden=\"true\"><path d=\"M4 5h16\"></path><path d=\"M4 12h16\"></path><path d=\"M4 19h16\"></path></svg>"
+      },
+      "toggle": {
+        "trigger": "click",
+        "targetId": "nav-links"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "none",
+            "width": "24px",
+            "height": "24px",
+            "color": "#18181b",
+            "cursor": "pointer"
+          }
+        },
+        "sm": {
+          "default": {
+            "display": "inline-flex"
+          }
+        }
+      }
+    },
+    "node_mslbenpo8": {
+      "id": "node_mslbenpo8",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "ホーム",
+        "heading": 0
+      },
+      "link": {
+        "kind": "url",
+        "url": "#",
+        "newTab": false
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "14px",
+            "lineHeight": "1.7",
+            "textDecoration": "none",
+            "color": "#18181b"
+          }
+        },
+        "sm": {
+          "default": {
+            "padding": "12px 24px"
+          }
+        }
+      }
+    },
+    "node_mslbenpo9": {
+      "id": "node_mslbenpo9",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "ブログ",
+        "heading": 0
+      },
+      "link": {
+        "kind": "url",
+        "url": "#",
+        "newTab": false
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "14px",
+            "lineHeight": "1.7",
+            "textDecoration": "none",
+            "color": "#18181b"
+          }
+        },
+        "sm": {
+          "default": {
+            "padding": "12px 24px"
+          }
+        }
+      }
+    },
+    "node_mslbenpoa": {
+      "id": "node_mslbenpoa",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "お問い合わせ",
+        "heading": 0
+      },
+      "link": {
+        "kind": "url",
+        "url": "#",
+        "newTab": false
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "14px",
+            "lineHeight": "1.7",
+            "textDecoration": "none",
+            "color": "#18181b"
+          }
+        },
+        "sm": {
+          "default": {
+            "padding": "12px 24px"
+          }
+        }
+      }
+    },
+    "node_mslbenpoh": {
+      "id": "node_mslbenpoh",
       "type": "box",
       "name": "ヒーロー",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrueefu5a",
-        "node_mrueefu5b",
-        "node_mrueefu5c"
+        "node_mslbenpoe",
+        "node_mslbenpof",
+        "node_mslbenpog"
       ],
       "styles": {
         "base": {
@@ -65,8 +306,8 @@
         }
       }
     },
-    "node_mrueefu5a": {
-      "id": "node_mrueefu5a",
+    "node_mslbenpoe": {
+      "id": "node_mslbenpoe",
       "type": "box",
       "name": "あなたのサイトを、\nもっ",
       "semantic": "auto",
@@ -88,8 +329,8 @@
         }
       }
     },
-    "node_mrueefu5b": {
-      "id": "node_mrueefu5b",
+    "node_mslbenpof": {
+      "id": "node_mslbenpof",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -111,8 +352,8 @@
         }
       }
     },
-    "node_mrueefu5c": {
-      "id": "node_mrueefu5c",
+    "node_mslbenpog": {
+      "id": "node_mslbenpog",
       "type": "box",
       "name": "ボタン",
       "semantic": "auto",
@@ -148,17 +389,17 @@
         }
       }
     },
-    "node_mrueefu6n": {
-      "id": "node_mrueefu6n",
+    "node_mslbenpor": {
+      "id": "node_mslbenpor",
       "type": "box",
       "name": "カードグリッド",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrueefu6g",
-        "node_mrueefu6j",
-        "node_mrueefu6m"
+        "node_mslbenpok",
+        "node_mslbenpon",
+        "node_mslbenpoq"
       ],
       "styles": {
         "base": {
@@ -177,16 +418,16 @@
         }
       }
     },
-    "node_mrueefu6g": {
-      "id": "node_mrueefu6g",
+    "node_mslbenpok": {
+      "id": "node_mslbenpok",
       "type": "box",
       "name": "カード 1",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrueefu6e",
-        "node_mrueefu6f"
+        "node_mslbenpoi",
+        "node_mslbenpoj"
       ],
       "styles": {
         "base": {
@@ -202,8 +443,8 @@
         }
       }
     },
-    "node_mrueefu6e": {
-      "id": "node_mrueefu6e",
+    "node_mslbenpoi": {
+      "id": "node_mslbenpoi",
       "type": "box",
       "name": "カード 1",
       "semantic": "auto",
@@ -223,8 +464,8 @@
         }
       }
     },
-    "node_mrueefu6f": {
-      "id": "node_mrueefu6f",
+    "node_mslbenpoj": {
+      "id": "node_mslbenpoj",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -244,16 +485,16 @@
         }
       }
     },
-    "node_mrueefu6j": {
-      "id": "node_mrueefu6j",
+    "node_mslbenpon": {
+      "id": "node_mslbenpon",
       "type": "box",
       "name": "カード 2",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrueefu6h",
-        "node_mrueefu6i"
+        "node_mslbenpol",
+        "node_mslbenpom"
       ],
       "styles": {
         "base": {
@@ -269,8 +510,8 @@
         }
       }
     },
-    "node_mrueefu6h": {
-      "id": "node_mrueefu6h",
+    "node_mslbenpol": {
+      "id": "node_mslbenpol",
       "type": "box",
       "name": "カード 2",
       "semantic": "auto",
@@ -290,8 +531,8 @@
         }
       }
     },
-    "node_mrueefu6i": {
-      "id": "node_mrueefu6i",
+    "node_mslbenpom": {
+      "id": "node_mslbenpom",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -311,16 +552,16 @@
         }
       }
     },
-    "node_mrueefu6m": {
-      "id": "node_mrueefu6m",
+    "node_mslbenpoq": {
+      "id": "node_mslbenpoq",
       "type": "box",
       "name": "カード 3",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrueefu6k",
-        "node_mrueefu6l"
+        "node_mslbenpoo",
+        "node_mslbenpop"
       ],
       "styles": {
         "base": {
@@ -336,8 +577,8 @@
         }
       }
     },
-    "node_mrueefu6k": {
-      "id": "node_mrueefu6k",
+    "node_mslbenpoo": {
+      "id": "node_mslbenpoo",
       "type": "box",
       "name": "カード 3",
       "semantic": "auto",
@@ -357,8 +598,8 @@
         }
       }
     },
-    "node_mrueefu6l": {
-      "id": "node_mrueefu6l",
+    "node_mslbenpop": {
+      "id": "node_mslbenpop",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -378,15 +619,15 @@
         }
       }
     },
-    "node_mrueefu6p": {
-      "id": "node_mrueefu6p",
+    "node_mslbenpot": {
+      "id": "node_mslbenpot",
       "type": "box",
       "name": "フッター",
       "semantic": "footer",
       "text": null,
       "link": null,
       "children": [
-        "node_mrueefu6o"
+        "node_mslbenpos"
       ],
       "styles": {
         "base": {
@@ -402,8 +643,8 @@
         }
       }
     },
-    "node_mrueefu6o": {
-      "id": "node_mrueefu6o",
+    "node_mslbenpos": {
+      "id": "node_mslbenpos",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -423,17 +664,17 @@
         }
       }
     },
-    "node_mrueefu6u": {
-      "id": "node_mrueefu6u",
+    "node_mslbenpoy": {
+      "id": "node_mslbenpoy",
       "type": "box",
       "name": "404セクション",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mrueefu6r",
-        "node_mrueefu6s",
-        "node_mrueefu6t"
+        "node_mslbenpov",
+        "node_mslbenpow",
+        "node_mslbenpox"
       ],
       "styles": {
         "base": {
@@ -448,8 +689,8 @@
         }
       }
     },
-    "node_mrueefu6r": {
-      "id": "node_mrueefu6r",
+    "node_mslbenpov": {
+      "id": "node_mslbenpov",
       "type": "box",
       "name": "404見出し",
       "semantic": "auto",
@@ -471,8 +712,8 @@
         }
       }
     },
-    "node_mrueefu6s": {
-      "id": "node_mrueefu6s",
+    "node_mslbenpow": {
+      "id": "node_mslbenpow",
       "type": "box",
       "name": "テキスト",
       "semantic": "auto",
@@ -493,8 +734,8 @@
         }
       }
     },
-    "node_mrueefu6t": {
-      "id": "node_mrueefu6t",
+    "node_mslbenpox": {
+      "id": "node_mslbenpox",
       "type": "box",
       "name": "ボタン",
       "semantic": "auto",
@@ -504,7 +745,7 @@
       },
       "link": {
         "kind": "page",
-        "pageId": "page_mrueefu6q"
+        "pageId": "page_mslbenpou"
       },
       "children": [],
       "styles": {
@@ -529,40 +770,58 @@
         }
       }
     },
-    "node_mrufjsom1": {
-      "id": "node_mrufjsom1",
-      "type": "box",
-      "name": "ローディング画面",
+    "node_mslbenpp12": {
+      "id": "node_mslbenpp12",
+      "type": "image",
+      "name": "商品画像",
       "semantic": "auto",
       "text": null,
       "link": null,
-      "children": [
-        "node_mrufjsom2"
-      ],
+      "image": {
+        "src": "{thumbnail}",
+        "alt": "商品画像",
+        "width": 400,
+        "height": 400
+      },
+      "children": [],
       "styles": {
         "base": {
           "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "40px",
-            "gap": "16px",
-            "width": "100%",
-            "minHeight": "100vh",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "backgroundColor": "#ffffff",
-            "color": "#18181b"
+            "width": "320px",
+            "borderRadius": "16px",
+            "backgroundColor": "#fafafa"
           }
         }
       }
     },
-    "node_mrufjsom2": {
-      "id": "node_mrufjsom2",
+    "node_mslbenpp13": {
+      "id": "node_mslbenpp13",
       "type": "box",
-      "name": "ローディングテキスト",
+      "name": "商品名",
       "semantic": "auto",
       "text": {
-        "content": "読み込み中…",
+        "content": "{title}",
+        "heading": 1
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "34px",
+            "fontWeight": "700",
+            "lineHeight": "1.4"
+          }
+        }
+      }
+    },
+    "node_mslbenpp14": {
+      "id": "node_mslbenpp14",
+      "type": "box",
+      "name": "ブランド",
+      "semantic": "auto",
+      "text": {
+        "content": "{brand}",
         "heading": 0
       },
       "link": null,
@@ -570,18 +829,399 @@
       "styles": {
         "base": {
           "default": {
-            "fontSize": "16px",
+            "fontSize": "13px",
             "lineHeight": "1.7",
-            "color": "#18181b",
+            "color": "#a1a1aa"
+          }
+        }
+      }
+    },
+    "node_mslbenpp15": {
+      "id": "node_mslbenpp15",
+      "type": "box",
+      "name": "説明文",
+      "semantic": "auto",
+      "text": {
+        "content": "{description}",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "15px",
+            "lineHeight": "1.7",
+            "color": "#52525b"
+          }
+        }
+      }
+    },
+    "node_mslbenpp16": {
+      "id": "node_mslbenpp16",
+      "type": "box",
+      "name": "価格",
+      "semantic": "auto",
+      "text": {
+        "content": "¥{price}",
+        "heading": 3
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "26px",
+            "fontWeight": "700",
+            "lineHeight": "1.4",
+            "color": "#0d99ff"
+          }
+        }
+      }
+    },
+    "node_mslbenpp17": {
+      "id": "node_mslbenpp17",
+      "type": "box",
+      "name": "商品情報",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mslbenpp14",
+        "node_mslbenpp13",
+        "node_mslbenpp16",
+        "node_mslbenpp15"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "12px",
+            "alignItems": "flex-start",
+            "flex": "1"
+          }
+        }
+      }
+    },
+    "node_mslbenpp18": {
+      "id": "node_mslbenpp18",
+      "type": "box",
+      "name": "詳細レイアウト",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mslbenpp12",
+        "node_mslbenpp17"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "padding": "64px 40px",
+            "gap": "40px",
+            "maxWidth": "900px",
+            "margin": "0 auto",
+            "width": "100%"
+          }
+        },
+        "md": {
+          "default": {
+            "flexDirection": "column"
+          }
+        }
+      },
+      "data": {
+        "sourceId": "ds_mslbenpp11"
+      }
+    },
+    "node_mslbenpp1a": {
+      "id": "node_mslbenpp1a",
+      "type": "box",
+      "name": "商品カタログ",
+      "semantic": "auto",
+      "text": {
+        "content": "商品カタログ",
+        "heading": 1
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "44px",
+            "fontWeight": "700",
+            "lineHeight": "1.4",
             "textAlign": "center"
+          }
+        }
+      }
+    },
+    "node_mslbenpp1b": {
+      "id": "node_mslbenpp1b",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "dummyjson.com のデータで動く一覧・検索・詳細ページのサンプルです。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "14px",
+            "lineHeight": "1.7",
+            "color": "#71717a",
+            "textAlign": "center"
+          }
+        }
+      }
+    },
+    "node_mslbenpp1c": {
+      "id": "node_mslbenpp1c",
+      "type": "field",
+      "name": "入力欄",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "field": {
+        "kind": "input",
+        "placeholder": "商品を検索…"
+      },
+      "attrId": "q",
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "360px",
+            "padding": "10px 14px",
+            "fontSize": "14px",
+            "border": "1px solid #d4d4d8",
+            "borderRadius": "8px",
+            "backgroundColor": "#ffffff"
+          }
+        }
+      }
+    },
+    "node_mslbenpp1d": {
+      "id": "node_mslbenpp1d",
+      "type": "field",
+      "name": "送信ボタン",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "field": {
+        "kind": "submit",
+        "label": "検索"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "inline-flex",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "padding": "10px 24px",
+            "backgroundColor": "#18181b",
+            "color": "#ffffff",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "border": "none",
+            "borderRadius": "8px",
+            "cursor": "pointer"
+          }
+        }
+      }
+    },
+    "node_mslbenpp1e": {
+      "id": "node_mslbenpp1e",
+      "type": "box",
+      "name": "検索フォーム",
+      "semantic": "form",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mslbenpp1c",
+        "node_mslbenpp1d"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "padding": "0px",
+            "gap": "10px",
+            "justifyContent": "center",
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mslbenpp1f": {
+      "id": "node_mslbenpp1f",
+      "type": "image",
+      "name": "サムネイル",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "{thumbnail}",
+        "alt": "商品サムネイル",
+        "width": 400,
+        "height": 400
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "aspectRatio": "1 / 1",
+            "objectFit": "cover",
+            "borderRadius": "10px",
+            "backgroundColor": "#fafafa"
+          }
+        }
+      }
+    },
+    "node_mslbenpp1g": {
+      "id": "node_mslbenpp1g",
+      "type": "box",
+      "name": "商品名",
+      "semantic": "auto",
+      "text": {
+        "content": "{title}",
+        "heading": 3
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "15px",
+            "fontWeight": "700",
+            "lineHeight": "1.4"
+          }
+        }
+      }
+    },
+    "node_mslbenpp1h": {
+      "id": "node_mslbenpp1h",
+      "type": "box",
+      "name": "価格",
+      "semantic": "auto",
+      "text": {
+        "content": "¥{price}",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "14px",
+            "lineHeight": "1.7",
+            "fontWeight": "600",
+            "color": "#0d99ff"
+          }
+        }
+      }
+    },
+    "node_mslbenpp1i": {
+      "id": "node_mslbenpp1i",
+      "type": "box",
+      "name": "商品カード",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "/products/{id}"
+      },
+      "children": [
+        "node_mslbenpp1f",
+        "node_mslbenpp1g",
+        "node_mslbenpp1h"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "10px",
+            "cursor": "pointer"
+          }
+        }
+      }
+    },
+    "node_mslbenpp1j": {
+      "id": "node_mslbenpp1j",
+      "type": "list",
+      "name": "商品リスト",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "list": {
+        "sourceId": "ds_mslbenpp10",
+        "limit": 12
+      },
+      "children": [
+        "node_mslbenpp1i"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "grid",
+            "gridTemplateColumns": "repeat(4, 1fr)",
+            "gap": "24px",
+            "padding": "0px",
+            "width": "100%"
+          }
+        },
+        "md": {
+          "default": {
+            "gridTemplateColumns": "repeat(2, 1fr)"
+          }
+        }
+      }
+    },
+    "node_mslbenpp1k": {
+      "id": "node_mslbenpp1k",
+      "type": "box",
+      "name": "商品一覧セクション",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mslbenpp1a",
+        "node_mslbenpp1b",
+        "node_mslbenpp1e",
+        "node_mslbenpp1j"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "64px 40px",
+            "gap": "28px",
+            "alignItems": "center",
+            "maxWidth": "1080px",
+            "margin": "0 auto",
+            "width": "100%"
           }
         }
       }
     }
   },
   "dataSources": {
-    "ds_mrueefu6w": {
-      "id": "ds_mrueefu6w",
+    "ds_mslbenpp10": {
+      "id": "ds_mslbenpp10",
       "name": "商品カタログ（デモ）",
       "url": "https://dummyjson.com/products/search?q={q}",
       "itemsPath": "products",
@@ -637,10 +1277,10 @@
           "rating": 4.36
         }
       ],
-      "fetchedAt": 1784622906798
+      "fetchedAt": 1786250464909
     },
-    "ds_mrueefu6x": {
-      "id": "ds_mrueefu6x",
+    "ds_mslbenpp11": {
+      "id": "ds_mslbenpp11",
       "name": "商品詳細（デモ）",
       "url": "https://dummyjson.com/products/{slug}",
       "itemsPath": "",
@@ -666,16 +1306,9 @@
           "rating": 2.56
         }
       ],
-      "fetchedAt": 1784622906798
+      "fetchedAt": 1786250464909
     }
   },
   "assets": {},
-  "customCss": "",
-  "loadingScreen": {
-    "minDuration": 500,
-    "fadeDuration": 300,
-    "showOnce": true,
-    "enabled": false,
-    "pageId": "page_mrufjsom3"
-  }
+  "customCss": ""
 }
