@@ -57,6 +57,48 @@ export default function Page() {
       <p className="box-4">
         {"企画さがし"}
       </p>
+      <section className="box-5">
+        <div className="box-11">
+          <Image
+            src="/assets/-.png"
+            alt=""
+            width={167}
+            height={298}
+            className="image-5"
+          />
+        </div>
+        <div className="box-12">
+          <Image
+            src="/assets/--2.svg"
+            alt=""
+            width={371}
+            height={328}
+            className="image-6"
+          />
+        </div>
+        <div className="box-13">
+          <Image
+            src="/assets/--2.png"
+            alt=""
+            width={239}
+            height={240}
+            className="image-7"
+          />
+        </div>
+      </section>
+      <section className="box-7">
+        <p className="box-8">
+          {"委員会企画"}
+        </p>
+      </section>
+      <Image
+        src="/assets/pasted-artwork-2.svg"
+        alt=""
+        width={671}
+        height={42}
+        className="svg"
+      />
+      <section className="box-9" />
     </>
   );
 }

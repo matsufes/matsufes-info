@@ -57,9 +57,23 @@
         "node_mslfgu091",
         "node_mslh1q9gk",
         "node_mslhxf225",
-        "node_mslieh456"
+        "node_mslieh456",
+        "node_mslj0ppk9",
+        "node_msljya4d9",
+        "node_mslknhcjp",
+        "node_mslk0mc9c"
       ],
-      "unpublished": false
+      "unpublished": false,
+      "bodyStyles": {
+        "base": {
+          "default": {
+            "backgroundImage": "url(\"/api/assets/file?path=assets%2Fmslkoigc--.png\")",
+            "backgroundSize": "cover",
+            "backgroundPosition": "center",
+            "backgroundRepeat": "repeat"
+          }
+        }
+      }
     }
   },
   "pageOrder": [
@@ -296,7 +310,8 @@
       "children": [
         "node_mslbenpoe",
         "node_mslbenpof",
-        "node_mslbenpog"
+        "node_mslbenpog",
+        "node_msljrz6c3"
       ],
       "styles": {
         "base": {
@@ -1633,7 +1648,339 @@
             "fontSize": "80px",
             "fontFamily": "Zen Kaku Gothic New",
             "fontWeight": "700",
-            "color": "#ffffff"
+            "color": "#ffffff",
+            "textShadow": "0px 3px 4px rgba(0, 0, 0, 0.4)"
+          }
+        }
+      }
+    },
+    "node_mslj0ppk9": {
+      "id": "node_mslj0ppk9",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mslk4acnd",
+        "node_mslkb53eg",
+        "node_mslkb6wzh"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "padding": "20px",
+            "gap": "110px",
+            "height": "584px",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        }
+      }
+    },
+    "node_msljrz6c3": {
+      "id": "node_msljrz6c3",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_msljs0874"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px"
+          }
+        }
+      }
+    },
+    "node_msljs0874": {
+      "id": "node_msljs0874",
+      "type": "image",
+      "name": "画像",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "https://picsum.photos/seed/editor/800/500",
+        "alt": "",
+        "width": 800,
+        "height": 500
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "12px"
+          }
+        }
+      }
+    },
+    "node_msljya4d9": {
+      "id": "node_msljya4d9",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_msljz9lna"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "height": "204px",
+            "justifyContent": "center",
+            "alignItems": "flex-start"
+          }
+        }
+      }
+    },
+    "node_msljz9lna": {
+      "id": "node_msljz9lna",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": {
+        "content": "委員会企画",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "height": "172px",
+            "fontSize": "80px",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontWeight": "700",
+            "color": "#ffffff",
+            "textShadow": "0px 3px 4px rgba(0, 0, 0, 0.4)"
+          }
+        }
+      }
+    },
+    "node_mslk0mc9c": {
+      "id": "node_mslk0mc9c",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "height": "361px"
+          }
+        }
+      }
+    },
+    "node_mslk3jko1": {
+      "id": "node_mslk3jko1",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "width": "42px",
+            "height": "42px"
+          }
+        }
+      }
+    },
+    "node_mslk4acnd": {
+      "id": "node_mslk4acnd",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mslk5evne"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "width": "157px",
+            "height": "258px"
+          }
+        }
+      }
+    },
+    "node_mslk5evne": {
+      "id": "node_mslk5evne",
+      "type": "image",
+      "name": "画像",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmsljhzyr--.png",
+        "alt": "",
+        "width": 167,
+        "height": 298,
+        "assetId": "asset_mslji0c31"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "167px",
+            "borderRadius": "12px",
+            "height": "297px"
+          }
+        }
+      }
+    },
+    "node_mslkb53eg": {
+      "id": "node_mslkb53eg",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mslkeftpk"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "width": "279px",
+            "height": "264px"
+          }
+        }
+      }
+    },
+    "node_mslkb6wzh": {
+      "id": "node_mslkb6wzh",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mslkej2cl"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "width": "236px",
+            "height": "256px"
+          }
+        }
+      }
+    },
+    "node_mslkeftpk": {
+      "id": "node_mslkeftpk",
+      "type": "image",
+      "name": "画像",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmslkdx70--.svg",
+        "alt": "",
+        "width": 371,
+        "height": 328,
+        "assetId": "asset_mslkdz83i"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "12px"
+          }
+        }
+      }
+    },
+    "node_mslkej2cl": {
+      "id": "node_mslkej2cl",
+      "type": "image",
+      "name": "画像",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmslke6yi--.png",
+        "alt": "",
+        "width": 239,
+        "height": 240,
+        "assetId": "asset_mslke75jj"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "12px"
+          }
+        }
+      }
+    },
+    "node_mslknhcjp": {
+      "id": "node_mslknhcjp",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmslknh4y-pasted-artwork.svg",
+        "alt": "",
+        "width": 671,
+        "height": 42,
+        "assetId": "asset_mslknhcio"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "515px",
+            "borderRadius": "0px",
+            "maxWidth": "100%",
+            "height": "32px"
           }
         }
       }
@@ -1684,6 +2031,60 @@
       "mimeType": "image/svg+xml",
       "width": 1920,
       "height": 1312
+    },
+    "asset_mslji0c31": {
+      "id": "asset_mslji0c31",
+      "name": "-.png",
+      "path": "assets/msljhzyr--.png",
+      "bytes": 27122,
+      "mimeType": "image/png",
+      "width": 167,
+      "height": 298
+    },
+    "asset_mslkdz83i": {
+      "id": "asset_mslkdz83i",
+      "name": "-.svg",
+      "path": "assets/mslkdx70--.svg",
+      "bytes": 5723419,
+      "mimeType": "image/svg+xml",
+      "width": 371,
+      "height": 328
+    },
+    "asset_mslke75jj": {
+      "id": "asset_mslke75jj",
+      "name": "-.png",
+      "path": "assets/mslke6yi--.png",
+      "bytes": 37560,
+      "mimeType": "image/png",
+      "width": 239,
+      "height": 240
+    },
+    "asset_mslkmtsvm": {
+      "id": "asset_mslkmtsvm",
+      "name": "-.svg",
+      "path": "assets/mslkmtmz--.svg",
+      "bytes": 2703,
+      "mimeType": "image/svg+xml",
+      "width": 671,
+      "height": 42
+    },
+    "asset_mslknhcio": {
+      "id": "asset_mslknhcio",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mslknh4y-pasted-artwork.svg",
+      "bytes": 2702,
+      "mimeType": "image/svg+xml",
+      "width": 671,
+      "height": 42
+    },
+    "asset_mslkoluo4": {
+      "id": "asset_mslkoluo4",
+      "name": "-.png",
+      "path": "assets/mslkoigc--.png",
+      "bytes": 16643006,
+      "mimeType": "image/png",
+      "width": 1920,
+      "height": 4499
     }
   },
   "components": {},
@@ -1718,7 +2119,6 @@
       "fetchedAt": 1786250464909
     }
   },
-  "customCss": "",
   "customFonts": [
     {
       "family": "Zen Kaku Gothic New",
@@ -1728,5 +2128,6 @@
         "700"
       ]
     }
-  ]
+  ],
+  "customCss": ""
 }

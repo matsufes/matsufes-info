@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "ホーム",
@@ -39,6 +40,15 @@ export default function Page() {
         <a href="#" className="button">
           {"はじめる"}
         </a>
+        <div className="box-6">
+          <Image
+            src="https://picsum.photos/seed/editor/800/500"
+            alt=""
+            width={800}
+            height={500}
+            className="image-4"
+          />
+        </div>
       </section>
       <section className="card-grid">
         <div className="card">
