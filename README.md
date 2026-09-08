@@ -1,4 +1,4 @@
-# My Site
+# 第56回松ヶ崎祭
 
 サイトエディタから書き出された Next.js プロジェクトです。
 Cloudflare Workers（OpenNext）でそのままデプロイできます。

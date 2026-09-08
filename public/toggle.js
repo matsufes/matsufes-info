@@ -1,4 +1,5 @@
 (function () {
+  var heldHoverTriggers = new Set();
   function targetOf(t) {
     var id = t.getAttribute("data-toggle-target");
     return id ? document.getElementById(id) : null;
@@ -34,8 +35,40 @@
     // 子要素間の移動では発火させない
     if (!t || (e.relatedTarget && t.contains(e.relatedTarget))) return;
     var el = targetOf(t);
-    if (el) toggle(el);
+    if (!el) return;
+    if (t.getAttribute("data-toggle-keep-target-hover") === "true") {
+      if (e.type === "mouseover") {
+        if (!heldHoverTriggers.has(t)) {
+          heldHoverTriggers.add(t);
+          toggle(el);
+        }
+      } else {
+        setTimeout(function () {
+          if (!heldHoverTriggers.has(t)) return;
+          if (t.matches(":hover") || el.matches(":hover")) return;
+          heldHoverTriggers.delete(t);
+          toggle(el);
+        }, 0);
+      }
+      return;
+    }
+    toggle(el);
   }
   document.addEventListener("mouseover", onHover);
   document.addEventListener("mouseout", onHover);
+  document.addEventListener("mouseout", function () {
+    heldHoverTriggers.forEach(function (t) {
+      var el = targetOf(t);
+      if (!el) {
+        heldHoverTriggers.delete(t);
+        return;
+      }
+      setTimeout(function () {
+        if (!heldHoverTriggers.has(t)) return;
+        if (t.matches(":hover") || el.matches(":hover")) return;
+        heldHoverTriggers.delete(t);
+        toggle(el);
+      }, 0);
+    });
+  });
 })();

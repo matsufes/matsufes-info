@@ -4,9 +4,10 @@ import "./globals.css";
 import "../styles/site.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://matsufes.info"),
   title: {
-    default: "My Site",
-    template: "%s | My Site",
+    default: "第56回松ヶ崎祭",
+    template: "%s | 第56回松ヶ崎祭",
   },
 };
 
@@ -22,7 +23,7 @@ export default function RootLayout({
       <body className={`${zenkakugothicnew.variable}`}>
         {children}
         <div
-          dangerouslySetInnerHTML={{ __html: "<script src=\"/toggle.js\" defer></script>" }}
+          dangerouslySetInnerHTML={{ __html: "<script src=\"/inview.js\" defer></script>\n<script src=\"/toggle.js\" defer></script>" }}
         />
       </body>
     </html>

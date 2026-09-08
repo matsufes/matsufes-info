@@ -40,13 +40,13 @@ export default function Page() {
         <a href="#" className="button">
           {"はじめる"}
         </a>
-        <div className="box-6">
+        <div id="aaa" data-inview className="box">
           <Image
             src="https://picsum.photos/seed/editor/800/500"
             alt=""
             width={800}
             height={500}
-            className="image-4"
+            className="image"
           />
         </div>
       </section>
