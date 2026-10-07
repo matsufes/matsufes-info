@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Zen_Kaku_Gothic_New } from "next/font/google";
+import { Zen_Maru_Gothic, Zen_Kaku_Gothic_New } from "next/font/google";
 import "./globals.css";
 import "../styles/site.css";
 
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   },
 };
 
+const zenmarugothic = Zen_Maru_Gothic({ subsets: ["latin"], variable: "--font-zen-maru-gothic", weight: ["400","500","700"] });
 const zenkakugothicnew = Zen_Kaku_Gothic_New({ subsets: ["latin"], variable: "--font-zen-kaku-gothic-new", weight: ["400","500","700"] });
 
 export default function RootLayout({
@@ -20,10 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={`${zenkakugothicnew.variable}`}>
+      <body className={`${zenmarugothic.variable} ${zenkakugothicnew.variable}`}>
         {children}
         <div
-          dangerouslySetInnerHTML={{ __html: "<script src=\"/inview.js\" defer></script>\n<script src=\"/toggle.js\" defer></script>" }}
+          dangerouslySetInnerHTML={{ __html: "<script src=\"/inview.js\" defer></script>\n<script src=\"/scripts.js\" defer></script>" }}
         />
       </body>
     </html>
