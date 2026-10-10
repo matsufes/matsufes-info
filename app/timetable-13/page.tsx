@@ -10,25 +10,25 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_msmxmtrg5" />
-      <section data-inview className="el-29">
+      <section data-inview className="el-27">
         <Image
-          src="/assets/svg-7"
+          src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
           className="svg-94"
         />
       </section>
-      <p className="el-30">
+      <p className="el-28">
         <Image
           src="/assets/pasted-artwork-41.svg"
           alt=""
           width={719}
           height={157}
-          className="el-55"
+          className="el-53"
         />
       </p>
-      <section className="el-59">
+      <section className="el-57">
         <Image
           src="/assets/pasted-artwork-138.svg"
           alt=""
@@ -46,7 +46,7 @@ export default function Page() {
           className="svg-21"
         />
       </section>
-      <section className="el-78">
+      <section className="el-76">
         <Image
           src="/assets/pasted-artwork-84.svg"
           alt=""
@@ -55,8 +55,8 @@ export default function Page() {
           className="svg-39"
         />
       </section>
-      <section className="el-83">
-        <div className="el-84">
+      <section className="el-81">
+        <div className="el-82">
           <Image
             src="/assets/pasted-artwork-85.svg"
             alt=""
@@ -65,7 +65,7 @@ export default function Page() {
             className="svg-41"
           />
         </div>
-        <Link href="/timetable-14" className="el-85">
+        <Link href="/timetable-14" className="el-83">
           <Image
             src="/assets/pasted-artwork-86.svg"
             alt=""
@@ -74,7 +74,7 @@ export default function Page() {
             className="svg-42"
           />
         </Link>
-        <Link href="/timetable-15" className="el-86">
+        <Link href="/timetable-15" className="el-84">
           <Image
             src="/assets/pasted-artwork-87.svg"
             alt=""
@@ -84,7 +84,7 @@ export default function Page() {
           />
         </Link>
       </section>
-      <section className="box-133">
+      <section className="box-132">
         <select id="choice" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"メインステージ\"},\"then\":[{\"kind\":\"show\",\"target\":\"main\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"センターホール\"},\"then\":[{\"kind\":\"hide\",\"target\":\"main\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"ストリートパフォーマンス\"},\"then\":[{\"kind\":\"hide\",\"target\":\"main\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"委員会企画\"},\"then\":[{\"kind\":\"hide\",\"target\":\"main\"}]}]}]"} className="select-3" name="choice">
           <option>場所を選んでね。</option>
           <option>メインステージ</option>
@@ -93,13 +93,13 @@ export default function Page() {
           <option>委員会企画</option>
         </select>
       </section>
-      <section className="el-31">
+      <section className="el-29">
         <Image
           src="/assets/pasted-artwork-93.svg"
           alt=""
           width={1701}
           height={3102}
-          className="el-88"
+          className="el-86"
         />
         <Image
           src="/assets/pasted-artwork-142.svg"
@@ -108,7 +108,7 @@ export default function Page() {
           height={2502}
           className="pasted-artwork-svg-40"
         />
-        <div id="main" data-toggle-show="flex" className="el-139">
+        <div id="main" data-toggle-show="flex" className="el-137">
           <Image
             src="/assets/pasted-artwork-177.svg"
             alt=""
@@ -140,11 +140,11 @@ export default function Page() {
         </div>
       </section>
       <Image data-inview
-        src="/assets/svg-6"
+        src="/assets/image-6.svg"
         alt=""
         width={1920}
         height={713}
-        className="el-32"
+        className="el-30"
       />
     </>
   );

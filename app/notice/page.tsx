@@ -9,16 +9,16 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_muf6flq18p" />
-      <section data-inview className="el-114">
+      <section data-inview className="el-112">
         <Image
-          src="/assets/svg-7"
+          src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
           className="svg-107"
         />
       </section>
-      <p className="box-72">
+      <p className="box-71">
         <Image
           src="/assets/pasted-artwork-128.svg"
           alt=""
@@ -27,7 +27,7 @@ export default function Page() {
           className="svg-84"
         />
       </p>
-      <section className="box-73">
+      <section className="box-72">
         <Image
           src="/assets/pasted-artwork-138.svg"
           alt=""
@@ -36,7 +36,7 @@ export default function Page() {
           className="pasted-artwork-svg-27"
         />
       </section>
-      <section className="el-93">
+      <section className="el-91">
         <Image
           src="/assets/pasted-artwork-222.svg"
           alt=""
@@ -45,28 +45,28 @@ export default function Page() {
           className="svg-194"
         />
       </section>
-      <section className="box-142">
+      <section className="box-141">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"更新中身\"}]}]"}
           src="/assets/pasted-artwork-227.svg"
           alt=""
           width={1393}
           height={115}
-          className="el-159"
+          className="el-157"
         />
         <Image id="更新中身" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"更新中身\"}]}]"} data-toggle-show="block"
           src="/assets/pasted-artwork-228.svg"
           alt=""
           width={1393}
           height={391}
-          className="el-160"
+          className="el-158"
         />
       </section>
       <Image data-inview
-        src="/assets/svg-6"
+        src="/assets/image-6.svg"
         alt=""
         width={1920}
         height={713}
-        className="image-15"
+        className="image-14"
       />
       <Image
         src=""

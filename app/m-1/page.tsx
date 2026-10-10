@@ -9,16 +9,16 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_mswzfiqry" />
-      <section data-inview className="el-106">
+      <section data-inview className="el-104">
         <Image
-          src="/assets/svg-7"
+          src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
           className="svg-99"
         />
       </section>
-      <p className="box-10">
+      <p className="box-9">
         <Image
           src="/assets/pasted-artwork-43.svg"
           alt=""
@@ -27,7 +27,7 @@ export default function Page() {
           className="svg-7"
         />
       </p>
-      <section className="box-13">
+      <section className="box-12">
         <Image
           src="/assets/pasted-artwork-138.svg"
           alt=""
@@ -36,7 +36,7 @@ export default function Page() {
           className="pasted-artwork-svg-19"
         />
       </section>
-      <section className="box-11">
+      <section className="box-10">
         <Image
           src="/assets/pasted-artwork-151.svg"
           alt=""
@@ -45,12 +45,12 @@ export default function Page() {
           className="svg-131"
         />
       </section>
-      <section className="box-19">
-        <p className="box-96">
+      <section className="box-18">
+        <p className="box-95">
           {"「m-1グランプリ」は、来場者様みんなの投票によって、部門ごとのNo.1出展団体を決定する、松ヶ崎祭の目玉企画。\n\n\n来場者様一人ひとりの「いちばん良かった！」が、各部門の頂点を選び出すよ。\n\n\n見事1位に輝いた出展団体には、豪華商品が贈られるよ。"}
         </p>
       </section>
-      <section className="box-97">
+      <section className="box-96">
         <Image
           src="/assets/pasted-artwork-152.svg"
           alt=""
@@ -59,7 +59,7 @@ export default function Page() {
           className="svg-132"
         />
       </section>
-      <section className="box-98">
+      <section className="box-97">
         <Image
           src="/assets/pasted-artwork-153.svg"
           alt=""
@@ -68,8 +68,8 @@ export default function Page() {
           className="svg-133"
         />
       </section>
-      <section className="box-99">
-        <div className="box-100">
+      <section className="box-98">
+        <div className="box-99">
           <Image
             src="/assets/pasted-artwork-154.svg"
             alt=""
@@ -78,7 +78,7 @@ export default function Page() {
             className="svg-134"
           />
         </div>
-        <div className="box-103">
+        <div className="box-102">
           <Image
             src="/assets/pasted-artwork-157.svg"
             alt=""
@@ -87,7 +87,7 @@ export default function Page() {
             className="svg-137"
           />
         </div>
-        <div className="box-101">
+        <div className="box-100">
           <Image
             src="/assets/pasted-artwork-155.svg"
             alt=""
@@ -96,7 +96,7 @@ export default function Page() {
             className="svg-135"
           />
         </div>
-        <div className="box-104">
+        <div className="box-103">
           <Image
             src="/assets/pasted-artwork-157.svg"
             alt=""
@@ -105,7 +105,7 @@ export default function Page() {
             className="pasted-artwork-svg-37"
           />
         </div>
-        <div className="box-102">
+        <div className="box-101">
           <Image
             src="/assets/pasted-artwork-156.svg"
             alt=""
@@ -115,10 +115,10 @@ export default function Page() {
           />
         </div>
       </section>
-      <section className="box-20">
+      <section className="box-19">
         <input id="field" type="text" className="input-3" name="field" placeholder="ここに　言葉を　入力してみてね" />
       </section>
-      <section className="box-29">
+      <section className="box-28">
         <Image
           src="/assets/pasted-artwork-19.svg"
           alt=""
@@ -155,7 +155,7 @@ export default function Page() {
           className="pasted-artwork-svg-7"
         />
       </section>
-      <section className="box-12">
+      <section className="box-11">
         <Image
           src="/assets/pasted-artwork-158.svg"
           alt=""
@@ -164,11 +164,11 @@ export default function Page() {
           className="svg-138"
         />
       </section>
-      <section className="box-21">
-        <p className="box-105">
+      <section className="box-20">
+        <p className="box-104">
           {"全部で5部門に分かれているよ。\n\n\n5部門それぞれに１票づつ投票できるよ。"}
         </p>
-        <div className="box-106">
+        <div className="box-105">
           <Image
             src="/assets/pasted-artwork-159.svg"
             alt=""
@@ -177,14 +177,14 @@ export default function Page() {
             className="svg-139"
           />
         </div>
-        <p className="box-107">
+        <p className="box-106">
           {"自分が投票した企画は「きみのしおり」から確認できるよ。\n\n\n5部門中3部門以上投票すると　豪華景品が当たる 「ちゅーせんかい」に 参加できるよ。"}
         </p>
-        <p className="box-131">
+        <p className="box-130">
           {"※個人出展は対象外となります。ご了承ください。"}
         </p>
       </section>
-      <p className="box-130">
+      <p className="box-129">
         <Image
           src="/assets/pasted-artwork-239.svg"
           alt=""
@@ -208,11 +208,11 @@ export default function Page() {
         />
       </p>
       <Image data-inview
-        src="/assets/svg-6"
+        src="/assets/image-6.svg"
         alt=""
         width={1920}
         height={713}
-        className="image-4"
+        className="image-3"
       />
       <Image
         src=""

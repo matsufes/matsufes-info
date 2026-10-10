@@ -1,19 +1,17 @@
-import Link from "next/link";
-
 export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_mslbenpoz" />
-      <section className="el-3">
-        <h1 className="el-4">
+      <section className="el">
+        <h1 className="el-2">
           {"404"}
         </h1>
-        <p className="text-9">
+        <p className="text">
           {"お探しのページは見つかりませんでした。"}
         </p>
-        <Link href="/" className="button-2">
+        <p className="button">
           {"ホームへ戻る"}
-        </Link>
+        </p>
       </section>
     </>
   );

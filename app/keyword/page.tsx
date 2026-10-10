@@ -9,16 +9,16 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_msotieex1e" />
-      <section data-inview className="el-104">
+      <section data-inview className="el-102">
         <Image
-          src="/assets/svg-7"
+          src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
           className="svg-97"
         />
       </section>
-      <p className="el-33">
+      <p className="el-31">
         <Image
           src="/assets/pasted-artwork-40.svg"
           alt=""
@@ -27,7 +27,7 @@ export default function Page() {
           className="svg-5"
         />
       </p>
-      <section className="el-60">
+      <section className="el-58">
         <Image
           src="/assets/pasted-artwork-138.svg"
           alt=""
@@ -47,51 +47,51 @@ export default function Page() {
       </p>
       <section className="input">
         <input id="field" type="text" className="input-2" name="field" placeholder="ここに　言葉を　入力してみてね" />
-        <div className="box-143">
-          <div className="box-144">
-            <div className="box-145" />
+        <div className="box-142">
+          <div className="box-143">
+            <div className="box-144" />
           </div>
         </div>
       </section>
-      <section className="el-36">
-        <div className="box-6">
+      <section className="el-34">
+        <div className="box-5">
           <Image
             src="/assets/pasted-artwork-2.svg"
             alt=""
             width={150}
             height={150}
-            className="image-3"
+            className="image-2"
           />
         </div>
-        <p className="box-5">
+        <p className="box-4">
           {"  いつ？"}
         </p>
       </section>
-      <section className="el-34">
+      <section className="el-32">
         <Image
           src="/assets/pasted-artwork-5.svg"
           alt=""
           width={137}
           height={49}
-          className="el-39"
+          className="el-37"
         />
         <Image
           src="/assets/pasted-artwork-6.svg"
           alt=""
           width={137}
           height={49}
-          className="el-40"
+          className="el-38"
         />
         <Image
           src="/assets/pasted-artwork-7.svg"
           alt=""
           width={137}
           height={49}
-          className="el-41"
+          className="el-39"
         />
       </section>
-      <section className="el-62">
-        <div className="box-47">
+      <section className="el-60">
+        <div className="box-46">
           <Image
             src="/assets/pasted-artwork-3.svg"
             alt=""
@@ -100,35 +100,35 @@ export default function Page() {
             className="pasted-artwork-svg-8"
           />
         </div>
-        <p className="box-48">
+        <p className="box-47">
           {"どこで？"}
         </p>
       </section>
-      <section className="el-37">
+      <section className="el-35">
         <Image
           src="/assets/pasted-artwork-9.svg"
           alt=""
           width={137}
           height={49}
-          className="el-43"
+          className="el-41"
         />
         <Image
           src="/assets/pasted-artwork-8.svg"
           alt=""
           width={137}
           height={49}
-          className="el-42"
+          className="el-40"
         />
         <Image
           src="/assets/pasted-artwork-10.svg"
           alt=""
           width={137}
           height={49}
-          className="el-44"
+          className="el-42"
         />
       </section>
-      <section className="el-63">
-        <div className="box-49">
+      <section className="el-61">
+        <div className="box-48">
           <Image
             src="/assets/pasted-artwork-4.svg"
             alt=""
@@ -137,82 +137,82 @@ export default function Page() {
             className="pasted-artwork-svg-9"
           />
         </div>
-        <p className="box-50">
+        <p className="box-49">
           {"  どんなことがしたい？"}
         </p>
       </section>
-      <section className="el-38">
-        <div className="box-7">
+      <section className="el-36">
+        <div className="box-6">
           <Image
             src="/assets/pasted-artwork-11.svg"
             alt=""
             width={138}
             height={49}
-            className="el-45"
+            className="el-43"
           />
           <Image
             src="/assets/pasted-artwork-12.svg"
             alt=""
             width={137}
             height={49}
-            className="el-46"
+            className="el-44"
           />
           <Image
             src="/assets/pasted-artwork-13.svg"
             alt=""
             width={137}
             height={49}
-            className="el-47"
+            className="el-45"
           />
           <Image
             src="/assets/pasted-artwork-14.svg"
             alt=""
             width={137}
             height={49}
-            className="el-48"
+            className="el-46"
           />
         </div>
-        <div className="box-8">
+        <div className="box-7">
           <Image
             src="/assets/pasted-artwork-15.svg"
             alt=""
             width={138}
             height={49}
-            className="el-49"
+            className="el-47"
           />
           <Image
             src="/assets/pasted-artwork-16.svg"
             alt=""
             width={138}
             height={49}
-            className="el-50"
+            className="el-48"
           />
           <Image
             src="/assets/pasted-artwork-17.svg"
             alt=""
             width={137}
             height={49}
-            className="el-51"
+            className="el-49"
           />
           <Image
             src="/assets/pasted-artwork-18.svg"
             alt=""
             width={137}
             height={49}
-            className="el-52"
+            className="el-50"
           />
         </div>
       </section>
-      <section className="box-9">
+      <section className="box-8">
         <Image
           src="/assets/pasted-artwork-27.svg"
           alt=""
           width={179}
           height={49}
-          className="el-53"
+          className="el-51"
         />
       </section>
-      <section className="box-146">
+      <section className="box-145">
         <Image id="m-1" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"pageId\":\"page_mswzfiqry\",\"href\":\"/m-1\"}]}]"}
           src="/assets/pasted-artwork-229.svg"
           alt=""
@@ -222,13 +222,13 @@ export default function Page() {
         />
       </section>
       <Image data-inview
-        src="/assets/svg-6"
+        src="/assets/image-6.svg"
         alt=""
         width={1920}
         height={713}
-        className="el-35"
+        className="el-33"
       />
-      <section className="box-174">
+      <section className="box-173">
         <Image
           src="/assets/pasted-artwork-247.svg"
           alt=""
@@ -236,10 +236,10 @@ export default function Page() {
           height={280}
           className="pasted-artwork-svg-44"
         />
-        <p className="box-175">
+        <p className="box-174">
           {"木匠生のワッフル&雑貨屋さん"}
         </p>
-        <p className="box-176">
+        <p className="box-175">
           {"加子母木匠塾"}
         </p>
         <Image
@@ -263,10 +263,10 @@ export default function Page() {
           height={20}
           className="svg-207"
         />
-        <p className="box-178">
+        <p className="box-177">
           {"ああああああああああああちゅ〜"}
         </p>
-        <p className="box-179">
+        <p className="box-178">
           {"１のA"}
         </p>
         <Image
@@ -283,13 +283,13 @@ export default function Page() {
           height={16}
           className="svg-209"
         />
-        <p className="box-184">
+        <p className="box-183">
           {"m-1カテゴリ"}
         </p>
-        <p className="box-185">
+        <p className="box-184">
           {"中分類"}
         </p>
-        <p className="box-186">
+        <p className="box-185">
           {"大分類"}
         </p>
       </section>

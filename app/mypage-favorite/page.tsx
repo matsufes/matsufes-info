@@ -9,16 +9,16 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_mu3wp199l" />
-      <section data-inview className="el-115">
+      <section data-inview className="el-113">
         <Image
-          src="/assets/svg-7"
+          src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
           className="svg-108"
         />
       </section>
-      <p className="box-30">
+      <p className="box-29">
         <Image
           src="/assets/pasted-artwork-74.svg"
           alt=""
@@ -27,7 +27,7 @@ export default function Page() {
           className="svg-23"
         />
       </p>
-      <section className="box-31">
+      <section className="box-30">
         <Image
           src="/assets/pasted-artwork-138.svg"
           alt=""
@@ -36,7 +36,7 @@ export default function Page() {
           className="pasted-artwork-svg-28"
         />
       </section>
-      <section className="box-32">
+      <section className="box-31">
         <Image
           src="/assets/pasted-artwork-75.svg"
           alt=""
@@ -45,8 +45,8 @@ export default function Page() {
           className="svg-24"
         />
       </section>
-      <section className="box-34">
-        <div className="box-43">
+      <section className="box-33">
+        <div className="box-42">
           <Image
             src="/assets/pasted-artwork-80.svg"
             alt=""
@@ -55,7 +55,7 @@ export default function Page() {
             className="svg-30"
           />
         </div>
-        <div className="box-44">
+        <div className="box-43">
           <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"pageId\":\"page_mu727nz01e\",\"href\":\"/mypage-m-1\"}]}]"}
             src="/assets/pasted-artwork-81.svg"
             alt=""
@@ -65,7 +65,7 @@ export default function Page() {
           />
         </div>
       </section>
-      <section className="box-33">
+      <section className="box-32">
         <Image
           src="/assets/pasted-artwork-76.svg"
           alt=""
@@ -74,13 +74,13 @@ export default function Page() {
           className="svg-25"
         />
       </section>
-      <section className="box-35" />
+      <section className="box-34" />
       <Image data-inview
-        src="/assets/svg-6"
+        src="/assets/image-6.svg"
         alt=""
         width={1920}
         height={713}
-        className="image-6"
+        className="image-5"
       />
       <Image
         src=""

@@ -4,7 +4,14 @@
   box-sizing: border-box;
 }
 
+/* 画面端からはみ出した要素で横スクロールが出ないようにする。
+   body は clip にして position: sticky を壊さない（hidden だとスクロールコンテナになる） */
+html {
+  overflow-x: hidden;
+}
+
 body {
+  overflow-x: clip;
   margin: 0;
   font-family: system-ui, -apple-system, "Hiragino Sans", sans-serif;
   color: #18181b;

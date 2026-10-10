@@ -9,16 +9,16 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_muf53mtd6j" />
-      <section data-inview className="el-107">
+      <section data-inview className="el-105">
         <Image
-          src="/assets/svg-7"
+          src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
           className="svg-100"
         />
       </section>
-      <p className="box-51">
+      <p className="box-50">
         <Image
           src="/assets/pasted-artwork-117.svg"
           alt=""
@@ -27,7 +27,7 @@ export default function Page() {
           className="svg-68"
         />
       </p>
-      <section className="box-52">
+      <section className="box-51">
         <Image
           src="/assets/pasted-artwork-138.svg"
           alt=""
@@ -36,7 +36,7 @@ export default function Page() {
           className="pasted-artwork-svg-20"
         />
       </section>
-      <section className="box-53">
+      <section className="box-52">
         <Image
           src="/assets/pasted-artwork-145.svg"
           alt=""
@@ -45,7 +45,7 @@ export default function Page() {
           className="pasted-artwork-svg-36"
         />
       </section>
-      <section className="box-89">
+      <section className="box-88">
         <Image
           src="/assets/pasted-artwork-146.svg"
           alt=""
@@ -54,7 +54,7 @@ export default function Page() {
           className="svg-126"
         />
       </section>
-      <section className="box-90">
+      <section className="box-89">
         <Image
           src="/assets/pasted-artwork-147.svg"
           alt=""
@@ -63,7 +63,7 @@ export default function Page() {
           className="svg-127"
         />
       </section>
-      <section className="box-91">
+      <section className="box-90">
         <Image
           src="/assets/pasted-artwork-148.svg"
           alt=""
@@ -72,7 +72,7 @@ export default function Page() {
           className="svg-128"
         />
       </section>
-      <section className="box-92">
+      <section className="box-91">
         <Image
           src="/assets/pasted-artwork-149.svg"
           alt=""
@@ -81,12 +81,12 @@ export default function Page() {
           className="svg-129"
         />
       </section>
-      <section className="box-93">
-        <p className="box-94">
+      <section className="box-92">
+        <p className="box-93">
           {"ご来場の際は、公共交通機関をご利用ください。 \n\n\n自家用車・タクシー・バイク・自転車・キックボードなどでの入構はご遠慮いただいております。\n\n\n自転車でご来場の方は、会場の案内係の指示に従い、指定の場所へ駐輪してください。\n\n\n構内の自転車走行は禁止されています。"}
         </p>
       </section>
-      <section className="box-54">
+      <section className="box-53">
         <Image
           src="/assets/pasted-artwork-118.svg"
           alt=""
@@ -95,13 +95,13 @@ export default function Page() {
           className="svg-69"
         />
       </section>
-      <section className="box-55" />
+      <section className="box-54" />
       <Image data-inview
-        src="/assets/svg-6"
+        src="/assets/image-6.svg"
         alt=""
         width={1920}
         height={713}
-        className="image-9"
+        className="image-8"
       />
       <Image
         src=""
