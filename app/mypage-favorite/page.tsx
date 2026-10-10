@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_mu3wp199l" />
-      <section data-inview className="el-116">
+      <section data-inview className="el-115">
         <Image
           src="/assets/svg-7"
           alt=""
@@ -46,7 +46,7 @@ export default function Page() {
         />
       </section>
       <section className="box-34">
-        <div className="box-44">
+        <div className="box-43">
           <Image
             src="/assets/pasted-artwork-80.svg"
             alt=""
@@ -55,7 +55,7 @@ export default function Page() {
             className="svg-30"
           />
         </div>
-        <div className="box-45">
+        <div className="box-44">
           <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"pageId\":\"page_mu727nz01e\",\"href\":\"/mypage-m-1\"}]}]"}
             src="/assets/pasted-artwork-81.svg"
             alt=""

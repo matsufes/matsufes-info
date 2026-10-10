@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_mu98rc7s3u" />
-      <section data-inview className="el-103">
+      <section data-inview className="el-102">
         <Image
           src="/assets/svg-7"
           alt=""
@@ -19,7 +19,7 @@ export default function Page() {
           className="svg-95"
         />
       </section>
-      <p className="el-65">
+      <p className="el-64">
         <Image
           src="/assets/pasted-artwork-41.svg"
           alt=""
@@ -28,7 +28,7 @@ export default function Page() {
           className="svg-32"
         />
       </p>
-      <section className="el-66">
+      <section className="el-65">
         <Image
           src="/assets/pasted-artwork-138.svg"
           alt=""
@@ -46,7 +46,7 @@ export default function Page() {
           className="svg-33"
         />
       </section>
-      <section className="el-78">
+      <section className="el-77">
         <Image
           src="/assets/pasted-artwork-84.svg"
           alt=""
@@ -55,8 +55,8 @@ export default function Page() {
           className="svg-38"
         />
       </section>
-      <section className="el-80">
-        <Link href="/timetable-13" className="el-81">
+      <section className="el-79">
+        <Link href="/timetable-13" className="el-80">
           <Image
             src="/assets/pasted-artwork-89.svg"
             alt=""
@@ -65,7 +65,7 @@ export default function Page() {
             className="svg-45"
           />
         </Link>
-        <div className="el-82">
+        <div className="el-81">
           <Image
             src="/assets/pasted-artwork-88.svg"
             alt=""
@@ -74,7 +74,7 @@ export default function Page() {
             className="svg-44"
           />
         </div>
-        <Link href="/timetable-15" className="el-83">
+        <Link href="/timetable-15" className="el-82">
           <Image
             src="/assets/pasted-artwork-87.svg"
             alt=""
@@ -84,7 +84,7 @@ export default function Page() {
           />
         </Link>
       </section>
-      <section className="box-129">
+      <section className="box-128">
         <select id="choice" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"ストリートパフォーマンス\"},\"then\":[{\"kind\":\"show\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"committee14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"メインステージ\"},\"then\":[{\"kind\":\"show\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"committee14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"センターホール\"},\"then\":[{\"kind\":\"show\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"committee14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"委員会企画\"},\"then\":[{\"kind\":\"show\",\"target\":\"committee14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"main14\"}]}]}]"} className="select" name="choice">
           <option>場所を選んでね。</option>
           <option>メインステージ</option>
@@ -93,13 +93,13 @@ export default function Page() {
           <option>委員会企画</option>
         </select>
       </section>
-      <section className="el-67">
+      <section className="el-66">
         <Image
           src="/assets/pasted-artwork-93.svg"
           alt=""
           width={1701}
           height={3102}
-          className="el-88"
+          className="el-87"
         />
         <Image
           src="/assets/pasted-artwork-142.svg"
@@ -108,7 +108,7 @@ export default function Page() {
           height={2502}
           className="pasted-artwork-svg-41"
         />
-        <div id="main14" data-toggle-show="flex" className="el-135">
+        <div id="main14" data-toggle-show="flex" className="el-134">
           <Image
             src="/assets/pasted-artwork-104.svg"
             alt=""
@@ -201,7 +201,7 @@ export default function Page() {
             className="svg-173"
           />
         </div>
-        <div id="center14" data-toggle-show="flex" className="el-91">
+        <div id="center14" data-toggle-show="flex" className="el-90">
           <Image
             src="/assets/pasted-artwork-98.svg"
             alt=""
@@ -210,7 +210,7 @@ export default function Page() {
             className="svg-51"
           />
         </div>
-        <div id="street14" data-toggle-show="flex" className="el-134">
+        <div id="street14" data-toggle-show="flex" className="el-133">
           <Image
             src="/assets/pasted-artwork-92.svg"
             alt=""
@@ -244,17 +244,17 @@ export default function Page() {
             alt=""
             width={306}
             height={113}
-            className="svg-206"
+            className="svg-200"
           />
           <Image
             src="/assets/pasted-artwork-243.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-207"
+            className="svg-201"
           />
         </div>
-        <div id="committee14" data-toggle-show="flex" className="el-136">
+        <div id="committee14" data-toggle-show="flex" className="el-135">
           <Image
             src="/assets/pasted-artwork-110.svg"
             alt=""
@@ -304,7 +304,7 @@ export default function Page() {
         alt=""
         width={1920}
         height={713}
-        className="el-68"
+        className="el-67"
       />
     </>
   );

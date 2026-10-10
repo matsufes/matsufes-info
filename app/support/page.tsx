@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_muf6exd68g" />
-      <section data-inview className="el-114">
+      <section data-inview className="el-113">
         <Image
           src="/assets/svg-7"
           alt=""
@@ -18,7 +18,7 @@ export default function Page() {
           className="svg-106"
         />
       </section>
-      <p className="box-70">
+      <p className="box-69">
         <Image
           src="/assets/pasted-artwork-126.svg"
           alt=""
@@ -27,7 +27,7 @@ export default function Page() {
           className="svg-83"
         />
       </p>
-      <section className="box-71">
+      <section className="box-70">
         <Image
           src="/assets/pasted-artwork-138.svg"
           alt=""
@@ -36,16 +36,16 @@ export default function Page() {
           className="pasted-artwork-svg-26"
         />
       </section>
-      <section className="box-72">
+      <section className="box-71">
         <Image
           src="/assets/pasted-artwork-241.svg"
           alt=""
           width={1183}
           height={117}
-          className="svg-205"
+          className="svg-199"
         />
       </section>
-      <section className="box-136">
+      <section className="box-135">
         <Image
           src="/assets/pasted-artwork-206.svg"
           alt=""
@@ -54,15 +54,15 @@ export default function Page() {
           className="svg-186"
         />
       </section>
-      <section className="box-167">
-        <p className="box-168">
-          {"・京お好み鉄平\n\n・中華そば 高安\n\n・(株)開晴亭\n\n・遊食邸 北山店\n\n・熟成麺屋 神来 一乗寺店\n\n・珍遊 一乗寺本店\n\n・麺家 澤希\n\n・麺屋 極鶏 一乗寺本店\n\n・家系ラーメン 斎藤家 一乗寺店\n\n・株式会社 バックス画材\n\n・天天有 一乗寺本店\n\n・ライフ 松ヶ崎店\n\n・EARTH CAFE\n\n・びしや"}
+      <section className="box-161">
+        <p className="box-162">
+          {"・京お好み鉄平\n\n・中華そば 高安\n\n・(株)開晴亭\n\n・遊食邸 北山店\n\n・熟成麺屋 神来 一乗寺店\n\n・珍遊 一乗寺本店\n\n・麺家 澤希\n\n・麺屋 極鶏 一乗寺本店\n\n・家系ラーメン 斎藤家 一乗寺店\n\n・株式会社 バックス画材\n\n・天天有 一乗寺本店\n\n・ライフ 松ヶ崎店\n\n・EARTH CAFE"}
         </p>
-        <p className="box-169">
-          {"・麺屋 しな埜\n\n・こにし\n\n・cote a cote\n\n・CAFE JEUNO\n\n・タイ料理 AOW\n\n・musu:bi hair salon\n\n・nondoko ざっぴ\n\n・和より\n\n・餃子と唐揚げ　犀のツノ\n\n・洛北阪急スクエア\n\n・レッドバロン京都北\n\n・うどんの近江や\n\n・BAKERY DAYS"}
+        <p className="box-163">
+          {"・びしや\n\n・麺屋 しな埜\n\n・こにし\n\n・cote a cote\n\n・CAFE JEUNO\n\n・タイ料理 AOW\n\n・musu:bi hair salon\n\n・nondoko ざっぴ\n\n・和より\n\n・餃子と唐揚げ　犀のツノ\n\n・洛北阪急スクエア\n\n・レッドバロン京都北\n\n・うどんの近江や\n\n・BAKERY DAYS"}
         </p>
       </section>
-      <section className="box-137">
+      <section className="box-136">
         <Image
           src="/assets/pasted-artwork-207.svg"
           alt=""
@@ -71,38 +71,63 @@ export default function Page() {
           className="svg-187"
         />
       </section>
-      <section className="box-170">
-        <p className="box-171">
-          {"・小川珈琲株式会社\n\n・株式会社王将フードサービス\n\n・株式会社マンナンライフ\n\n・株式会社三養ジャパン(三養食品)\n\n・株式会社TOAI（カラオケジャンカラ）\n\n？・錦市場（和菓子）"}
+      <section className="box-164">
+        <p className="box-177">
+          {"・小川珈琲ホールディングス株式会社\n\n・櫂有限会社\n\n・株式会社王将フードサービス\n\n・株式会社KINUJO\n\n・株式会社TOAI\n\n・株式会社　丸久小山園"}
         </p>
-        <p className="box-172">
-          {"？・丸久小山園\n\n・株式会社ロッテ\n\n・株式会社KINUJO\n\n・マルサンアイ株式会社\n\n・株式会社モンロワール\n\n・タマノイ酢株式会社"}
+        <p className="box-165">
+          {"・株式会社マンナンライフ\n\n・株式会社ロッテ\n\n・株式会社ロワールホールディングス\n\n・タマノイ酢株式会社\n\n・ブルドックソース株式会社\n\n・マルサンアイ株式会社\n\n・ヤマト株式会社"}
         </p>
       </section>
-      <section className="box-173" />
-      <section className="box-174">
-        <div className="box-175">
+      <section className="box-166">
+        <Image
+          src="/assets/pasted-artwork-293.svg"
+          alt=""
+          width={438}
+          height={114}
+          className="svg-218"
+        />
+      </section>
+      <section className="box-194">
+        <Image
+          src="/assets/HCD_mf56.png"
+          alt=""
+          width={2162}
+          height={1466}
+          className="hcd-mf56-png"
+        />
+      </section>
+      <section className="box-167">
+        <div className="box-168">
           <Image
             src="/assets/1791353956278-d18c90cc-01c7-4f18-93e4-7a2e39bd277f_1.jpg"
             alt=""
             width={1024}
             height={727}
-            className="el-167"
+            className="el-165"
           />
         </div>
-        <div className="box-177">
+        <div className="box-170">
           <Image
             src="/assets/2026-10-07-15.17.40.png"
             alt=""
             width={1438}
             height={1035}
-            className="el-168"
+            className="el-166"
           />
         </div>
-        <div className="box-176" />
+        <div className="box-169">
+          <Image
+            src="/assets/BAKERY-DAYS.jpg"
+            alt=""
+            width={827}
+            height={827}
+            className="bakery-days-jpg"
+          />
+        </div>
       </section>
-      <section className="box-178">
-        <div className="box-179">
+      <section className="box-171">
+        <div className="box-172">
           <Image
             src="/assets/S__148398082.jpg"
             alt=""
@@ -111,13 +136,13 @@ export default function Page() {
             className="s-148398082-jpg"
           />
         </div>
-        <div className="box-180">
+        <div className="box-173">
           <Image
             src="/assets/02.jpg"
             alt=""
             width={1021}
             height={574}
-            className="el-169"
+            className="el-167"
           />
         </div>
       </section>

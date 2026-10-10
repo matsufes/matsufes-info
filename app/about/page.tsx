@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_muf6dx2a7y" />
-      <section data-inview className="el-112">
+      <section data-inview className="el-111">
         <Image
           src="/assets/svg-7"
           alt=""
@@ -18,7 +18,7 @@ export default function Page() {
           className="svg-104"
         />
       </section>
-      <p className="box-64">
+      <p className="box-63">
         <Image
           src="/assets/pasted-artwork-124.svg"
           alt=""
@@ -27,7 +27,7 @@ export default function Page() {
           className="svg-81"
         />
       </p>
-      <section className="box-65">
+      <section className="box-64">
         <Image
           src="/assets/pasted-artwork-138.svg"
           alt=""
@@ -36,7 +36,7 @@ export default function Page() {
           className="pasted-artwork-svg-24"
         />
       </section>
-      <section className="box-66">
+      <section className="box-65">
         <Image
           src="/assets/pasted-artwork-150.svg"
           alt=""
@@ -45,12 +45,12 @@ export default function Page() {
           className="svg-130"
         />
       </section>
-      <section className="box-78">
-        <p className="box-96">
+      <section className="box-77">
+        <p className="box-95">
           {"松ヶ崎祭は2026年で56回目を迎えたよ。\n\n\n毎年 11 月に松ヶ崎キャンパスで開催されている京都工芸繊維大学の学園祭。\n\n様々な団体が日々の活動成果を発表する場になっているよ。"}
         </p>
       </section>
-      <section className="box-135">
+      <section className="box-134">
         <Image
           src="/assets/pasted-artwork-205.svg"
           alt=""
@@ -59,7 +59,7 @@ export default function Page() {
           className="svg-185"
         />
       </section>
-      <section className="el-95">
+      <section className="el-94">
         <a href="https://mf53.matsufes.info/" className="hello-world">
           <Image
             src="/assets/pasted-artwork-134.svg"
@@ -78,7 +78,7 @@ export default function Page() {
             className="svg-91"
           />
         </a>
-        <a href="https://mf54.matsufes.info/" className="el-97">
+        <a href="https://mf54.matsufes.info/" className="el-96">
           <Image
             src="/assets/pasted-artwork-133.svg"
             alt=""
@@ -87,7 +87,7 @@ export default function Page() {
             className="svg-89"
           />
         </a>
-        <a href="https://mf55.matsufes.info/" className="el-96">
+        <a href="https://mf55.matsufes.info/" className="el-95">
           <Image
             src="/assets/pasted-artwork-132.svg"
             alt=""

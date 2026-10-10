@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_mswzfiqry" />
-      <section data-inview className="el-107">
+      <section data-inview className="el-106">
         <Image
           src="/assets/svg-7"
           alt=""
@@ -46,11 +46,11 @@ export default function Page() {
         />
       </section>
       <section className="box-19">
-        <p className="box-97">
+        <p className="box-96">
           {"「m-1グランプリ」は、来場者様みんなの投票によって、部門ごとのNo.1出展団体を決定する、松ヶ崎祭の目玉企画。\n\n\n来場者様一人ひとりの「いちばん良かった！」が、各部門の頂点を選び出すよ。\n\n\n見事1位に輝いた出展団体には、豪華商品が贈られるよ。"}
         </p>
       </section>
-      <section className="box-98">
+      <section className="box-97">
         <Image
           src="/assets/pasted-artwork-152.svg"
           alt=""
@@ -59,7 +59,7 @@ export default function Page() {
           className="svg-132"
         />
       </section>
-      <section className="box-99">
+      <section className="box-98">
         <Image
           src="/assets/pasted-artwork-153.svg"
           alt=""
@@ -68,8 +68,8 @@ export default function Page() {
           className="svg-133"
         />
       </section>
-      <section className="box-100">
-        <div className="box-101">
+      <section className="box-99">
+        <div className="box-100">
           <Image
             src="/assets/pasted-artwork-154.svg"
             alt=""
@@ -78,7 +78,7 @@ export default function Page() {
             className="svg-134"
           />
         </div>
-        <div className="box-104">
+        <div className="box-103">
           <Image
             src="/assets/pasted-artwork-157.svg"
             alt=""
@@ -87,7 +87,7 @@ export default function Page() {
             className="svg-137"
           />
         </div>
-        <div className="box-102">
+        <div className="box-101">
           <Image
             src="/assets/pasted-artwork-155.svg"
             alt=""
@@ -96,7 +96,7 @@ export default function Page() {
             className="svg-135"
           />
         </div>
-        <div className="box-105">
+        <div className="box-104">
           <Image
             src="/assets/pasted-artwork-157.svg"
             alt=""
@@ -105,7 +105,7 @@ export default function Page() {
             className="pasted-artwork-svg-37"
           />
         </div>
-        <div className="box-103">
+        <div className="box-102">
           <Image
             src="/assets/pasted-artwork-156.svg"
             alt=""
@@ -165,10 +165,10 @@ export default function Page() {
         />
       </section>
       <section className="box-21">
-        <p className="box-106">
+        <p className="box-105">
           {"全部で5部門に分かれているよ。\n\n\n5部門それぞれに１票づつ投票できるよ。"}
         </p>
-        <div className="box-107">
+        <div className="box-106">
           <Image
             src="/assets/pasted-artwork-159.svg"
             alt=""
@@ -177,27 +177,27 @@ export default function Page() {
             className="svg-139"
           />
         </div>
-        <p className="box-108">
+        <p className="box-107">
           {"自分が投票した企画は「きみのしおり」から確認できるよ。\n\n\n5部門中3部門以上投票すると　豪華景品が当たる 「ちゅーせんかい」に 参加できるよ。"}
         </p>
-        <p className="box-132">
+        <p className="box-131">
           {"※個人出展は対象外となります。ご了承ください。"}
         </p>
       </section>
-      <p className="box-131">
+      <p className="box-130">
         <Image
           src="/assets/pasted-artwork-239.svg"
           alt=""
           width={352}
           height={279}
-          className="svg-203"
+          className="svg-198"
         />
         <Image
           src="/assets/pasted-artwork-236.svg"
           alt=""
           width={1399}
           height={238}
-          className="pasted-artwork-svg-44"
+          className="pasted-artwork-svg-43"
         />
         <Image
           src="/assets/pasted-artwork-200.svg"
