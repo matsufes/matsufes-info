@@ -310,6 +310,13 @@ export default function Page() {
           height={815}
           className="pasted-artwork-svg-48"
         />
+        <Image
+          src="/assets/pasted-artwork-137.svg"
+          alt=""
+          width={1112}
+          height={769}
+          className="pasted-artwork-svg-49"
+        />
       </section>
       <section className="box-131">
         <Image
