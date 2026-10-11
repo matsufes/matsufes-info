@@ -92,7 +92,7 @@ export default function Page() {
           alt=""
           width={213}
           height={213}
-          className="el-95"
+          className="el-93"
         />
         <div className="el-4">
           <p id="matsufes" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu1\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu1\"}],\"keep\":true}]"} className="el-5">
@@ -195,8 +195,8 @@ export default function Page() {
           />
         </div>
       </section>
-      <section className="el-111">
-        <div data-inview className="el-116">
+      <section className="el-109">
+        <div data-inview className="el-114">
           <Image
             src="/assets/image.svg"
             alt=""
@@ -205,7 +205,7 @@ export default function Page() {
             className="svg-110"
           />
         </div>
-        <div data-inview className="el-112">
+        <div data-inview className="el-110">
           <Image
             src="/assets/IMG_3053.PNG"
             alt=""
@@ -215,16 +215,16 @@ export default function Page() {
           />
         </div>
         <div className="box-194">
-          <div className="el-113">
+          <div className="el-111">
             <Image
               src="/assets/56-.svg"
               alt=""
               width={267}
               height={150}
-              className="el-114"
+              className="el-112"
             />
           </div>
-          <div className="el-115">
+          <div className="el-113">
             <Image
               src="/assets/image-5.svg"
               alt=""
@@ -236,7 +236,7 @@ export default function Page() {
         </div>
       </section>
       <section className="el-8">
-        <div className="el-117">
+        <div className="el-115">
           <Image
             src="/assets/pasted-artwork-65.svg"
             alt=""
@@ -247,7 +247,7 @@ export default function Page() {
         </div>
       </section>
       <section className="box-77">
-        <Link href="/map" className="el-118">
+        <Link href="/map" className="el-116">
           <Image
             src="/assets/pasted-artwork-139.svg"
             alt=""
@@ -256,7 +256,7 @@ export default function Page() {
             className="svg-111"
           />
         </Link>
-        <Link href="/keyword" className="el-119">
+        <Link href="/keyword" className="el-117">
           <Image
             src="/assets/pasted-artwork-140.svg"
             alt=""
@@ -265,7 +265,7 @@ export default function Page() {
             className="svg-112"
           />
         </Link>
-        <Link href="/timetable-13" className="el-120">
+        <Link href="/timetable-13" className="el-118">
           <Image
             src="/assets/pasted-artwork-141.svg"
             alt=""
@@ -276,7 +276,7 @@ export default function Page() {
         </Link>
       </section>
       <section className="el-26">
-        <div className="el-121">
+        <div className="el-119">
           <Image
             src="/assets/pasted-artwork-66.svg"
             alt=""
@@ -292,14 +292,14 @@ export default function Page() {
           alt=""
           width={1051}
           height={732}
-          className="pasted-artwork-svg-47"
+          className="pasted-artwork-svg-45"
         />
         <Image
           src="/assets/pasted-artwork-67.svg"
           alt=""
           width={1122}
           height={862}
-          className="pasted-artwork-svg-46"
+          className="pasted-artwork-svg-44"
         />
       </section>
       <section className="el-198">
@@ -308,14 +308,14 @@ export default function Page() {
           alt=""
           width={999}
           height={815}
-          className="pasted-artwork-svg-48"
+          className="pasted-artwork-svg-46"
         />
         <Image
           src="/assets/pasted-artwork-137.svg"
           alt=""
           width={1112}
           height={769}
-          className="pasted-artwork-svg-49"
+          className="pasted-artwork-svg-47"
         />
       </section>
       <section className="box-131">
@@ -328,7 +328,7 @@ export default function Page() {
         />
       </section>
       <section className="el-56">
-        <div className="el-122">
+        <div className="el-120">
           <Image
             src="/assets/pasted-artwork-69.svg"
             alt=""
@@ -364,7 +364,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={1015}
-          className="pasted-artwork-svg-40"
+          className="pasted-artwork-svg-38"
         />
         <a href="https://www.instagram.com/kit_matsufes/" className="el-145">
           <Image

@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_muf6dx2a7y" />
-      <section data-inview className="el-105">
+      <section data-inview className="el-103">
         <Image
           src="/assets/image-7.svg"
           alt=""
@@ -59,7 +59,7 @@ export default function Page() {
           className="svg-182"
         />
       </section>
-      <section className="el-92">
+      <section className="el-90">
         <a href="https://mf53.matsufes.info/" className="hello-world">
           <Image
             src="/assets/pasted-artwork-134.svg"
@@ -78,7 +78,7 @@ export default function Page() {
             className="svg-91"
           />
         </a>
-        <a href="https://mf54.matsufes.info/" className="el-94">
+        <a href="https://mf54.matsufes.info/" className="el-92">
           <Image
             src="/assets/pasted-artwork-133.svg"
             alt=""
@@ -87,7 +87,7 @@ export default function Page() {
             className="svg-89"
           />
         </a>
-        <a href="https://mf55.matsufes.info/" className="el-93">
+        <a href="https://mf55.matsufes.info/" className="el-91">
           <Image
             src="/assets/pasted-artwork-132.svg"
             alt=""

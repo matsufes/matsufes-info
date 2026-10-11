@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_mu98rc7s3u" />
-      <section data-inview className="el-96">
+      <section data-inview className="el-94">
         <Image
           src="/assets/image-7.svg"
           alt=""
@@ -102,11 +102,18 @@ export default function Page() {
           className="el-85"
         />
         <Image
+          src="/assets/pasted-artwork-296.svg"
+          alt=""
+          width={1670}
+          height={3081}
+          className="pc"
+        />
+        <Image
           src="/assets/pasted-artwork-142.svg"
           alt=""
           width={295}
           height={2502}
-          className="pasted-artwork-svg-39"
+          className="el-125"
         />
         <div id="main14" data-toggle-show="flex" className="el-128">
           <Image
@@ -201,7 +208,7 @@ export default function Page() {
             className="svg-171"
           />
         </div>
-        <div id="center14" data-toggle-show="flex" className="el-88">
+        <div id="center14" data-toggle-show="flex" className="el-86">
           <Image
             src="/assets/pasted-artwork-98.svg"
             alt=""

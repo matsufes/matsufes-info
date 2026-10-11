@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_msotieex1e" />
-      <section data-inview className="el-98">
+      <section data-inview className="el-96">
         <Image
           src="/assets/image-7.svg"
           alt=""
@@ -234,7 +234,7 @@ export default function Page() {
           alt=""
           width={429}
           height={280}
-          className="pasted-artwork-svg-42"
+          className="pasted-artwork-svg-40"
         />
         <p className="box-174">
           {"木匠生のワッフル&雑貨屋さん"}

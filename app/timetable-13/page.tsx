@@ -95,18 +95,18 @@ export default function Page() {
       </section>
       <section className="el-29">
         <Image
-          src="/assets/pasted-artwork-93.svg"
+          src="/assets/pasted-artwork-296.svg"
           alt=""
-          width={1701}
-          height={3102}
-          className="el-86"
+          width={1670}
+          height={3081}
+          className="el-199"
         />
         <Image
           src="/assets/pasted-artwork-142.svg"
           alt=""
           width={295}
           height={2502}
-          className="pasted-artwork-svg-38"
+          className="el-124"
         />
         <div id="main" data-toggle-show="flex" className="el-133">
           <Image

@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_mswzfiqry" />
-      <section data-inview className="el-100">
+      <section data-inview className="el-98">
         <Image
           src="/assets/image-7.svg"
           alt=""
@@ -197,7 +197,7 @@ export default function Page() {
           alt=""
           width={1399}
           height={238}
-          className="pasted-artwork-svg-41"
+          className="pasted-artwork-svg-39"
         />
         <Image
           src="/assets/pasted-artwork-200.svg"

@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_msoti2tux" />
-      <section data-inview className="el-99">
+      <section data-inview className="el-97">
         <Image
           src="/assets/image-7.svg"
           alt=""

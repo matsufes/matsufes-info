@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_mu727nz01e" />
-      <section data-inview className="el-110">
+      <section data-inview className="el-108">
         <Image
           src="/assets/image-7.svg"
           alt=""

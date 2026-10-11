@@ -27,7 +27,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-43"
+          className="pasted-artwork-svg-41"
         />
       </section>
       <p className="el-179">
@@ -40,7 +40,7 @@ export default function Page() {
             alt=""
             width={439}
             height={96}
-            className="pasted-artwork-svg-44"
+            className="pasted-artwork-svg-42"
           />
           <p className="box-181">
             {"ああああああああああああちゅ〜"}
@@ -52,7 +52,7 @@ export default function Page() {
             alt=""
             width={351}
             height={351}
-            className="pasted-artwork-svg-45"
+            className="pasted-artwork-svg-43"
           />
           <Image
             src="/assets/pasted-artwork-282.svg"
