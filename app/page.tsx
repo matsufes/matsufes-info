@@ -287,15 +287,6 @@ export default function Page() {
         </div>
       </section>
       <section className="el-54">
-        <Link href="/access" className="el-95">
-          <Image
-            src="/assets/pasted-artwork-136.svg"
-            alt=""
-            width={1051}
-            height={732}
-            className="svg-92"
-          />
-        </Link>
         <Link href="/attention" className="el-96">
           <Image
             src="/assets/pasted-artwork-67.svg"
@@ -321,6 +312,15 @@ export default function Page() {
             width={1112}
             height={769}
             className="svg-93"
+          />
+        </Link>
+        <Link href="/access" className="el-95">
+          <Image
+            src="/assets/pasted-artwork-136.svg"
+            alt=""
+            width={1051}
+            height={732}
+            className="svg-92"
           />
         </Link>
       </section>

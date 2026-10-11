@@ -1669,7 +1669,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   flex-direction: row;
   padding: 20px;
   gap: 12px;
-  height: 1100px;
+  height: 100%;
   width: 100%;
   justify-content: center;
   align-items: center;
