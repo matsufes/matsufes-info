@@ -15,7 +15,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="svg-98"
+          className="svg-88"
         />
       </section>
       <p className="box-21">
@@ -24,7 +24,7 @@ export default function Page() {
           alt=""
           width={562}
           height={167}
-          className="svg-20"
+          className="svg-18"
         />
       </p>
       <section className="box-22">
@@ -33,7 +33,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-19"
+          className="pasted-artwork-svg-18"
         />
       </section>
       <section className="box-23">
@@ -51,7 +51,7 @@ export default function Page() {
           alt=""
           width={1704}
           height={1867}
-          className="svg-213"
+          className="svg-200"
         />
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://livepocket.jp/e/i1x36\"}]}]"}
           src="/assets/pasted-artwork-292.svg"
@@ -66,14 +66,7 @@ export default function Page() {
         alt=""
         width={1920}
         height={713}
-        className="image-4"
-      />
-      <Image
-        src=""
-        alt=""
-        width={1337}
-        height={415}
-        className="svg-19"
+        className="image-3"
       />
     </>
   );

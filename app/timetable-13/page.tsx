@@ -16,7 +16,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="svg-91"
+          className="svg-81"
         />
       </section>
       <p className="el-28">
@@ -34,7 +34,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="svg-107"
+          className="svg-97"
         />
       </section>
       <section className="heading-2">
@@ -43,7 +43,7 @@ export default function Page() {
           alt=""
           width={1159}
           height={124}
-          className="svg-21"
+          className="svg-19"
         />
       </section>
       <section className="el-76">
@@ -52,7 +52,7 @@ export default function Page() {
           alt=""
           width={430}
           height={64}
-          className="svg-39"
+          className="svg-35"
         />
       </section>
       <section className="el-81">
@@ -62,7 +62,7 @@ export default function Page() {
             alt=""
             width={268}
             height={84}
-            className="svg-41"
+            className="svg-37"
           />
         </div>
         <Link href="/timetable-14" className="el-83">
@@ -71,7 +71,7 @@ export default function Page() {
             alt=""
             width={268}
             height={84}
-            className="svg-42"
+            className="svg-38"
           />
         </Link>
         <Link href="/timetable-15" className="el-84">
@@ -80,7 +80,7 @@ export default function Page() {
             alt=""
             width={268}
             height={84}
-            className="svg-43"
+            className="svg-39"
           />
         </Link>
       </section>
@@ -114,28 +114,28 @@ export default function Page() {
             alt=""
             width={306}
             height={113}
-            className="svg-156"
+            className="svg-143"
           />
           <Image
             src="/assets/pasted-artwork-178.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-157"
+            className="svg-144"
           />
           <Image
             src="/assets/pasted-artwork-179.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-158"
+            className="svg-145"
           />
           <Image
             src="/assets/pasted-artwork-180.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-159"
+            className="svg-146"
           />
         </div>
       </section>

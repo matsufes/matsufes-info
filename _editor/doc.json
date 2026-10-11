@@ -155,8 +155,7 @@
         "node_mswzfiqqw",
         "node_mu2ssvj8x",
         "node_muo78fjm1t",
-        "node_mswzfiqrx",
-        "node_mu2rtpi47"
+        "node_mswzfiqrx"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -213,8 +212,7 @@
         "node_mu2t6c9715",
         "node_mu2t6c9717",
         "node_mu2tnfpk1v",
-        "node_mu2t6c971j",
-        "node_mu2t6c971k"
+        "node_mu2t6c971j"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -242,8 +240,7 @@
         "node_mu71yt0au",
         "node_mu3wp198i",
         "node_mu721ul3z",
-        "node_mu3wp198j",
-        "node_mu3wp199k"
+        "node_mu3wp198j"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -276,8 +273,7 @@
         "node_mujxu1ep8c",
         "node_mujxy9v98n",
         "node_mutsb42r1v",
-        "node_mu727nz01c",
-        "node_mu727nz01d"
+        "node_mu727nz01c"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -367,9 +363,7 @@
         "node_muildk7n54",
         "node_muf53mtd6b",
         "node_muf53mtd6d",
-        "node_muf53mtd6g",
-        "node_muf53mtd6h",
-        "node_muf53mtd6i"
+        "node_muf53mtd6g"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -396,8 +390,7 @@
         "node_muf5w3hl6v",
         "node_muf5w3hl6x",
         "node_mv0jrwsl50",
-        "node_muf5w3hl6y",
-        "node_muf5w3hl6z"
+        "node_muf5w3hl6y"
       ],
       "unpublished": true,
       "bodyStyles": {
@@ -422,8 +415,7 @@
         "node_muf67d6m7b",
         "node_muf67d6m7d",
         "node_muf67d6n7f",
-        "node_muf67d6n7l",
-        "node_muf67d6n7m"
+        "node_muf67d6n7l"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -480,8 +472,7 @@
         "node_mufb30sa97",
         "node_muiosizo6h",
         "node_mufb5xl29c",
-        "node_muf6el0a85",
-        "node_muf6el0a86"
+        "node_muf6el0a85"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -514,8 +505,7 @@
         "node_mv1xa5mk5c",
         "node_muxpz65a1",
         "node_muxq3j9sa",
-        "node_muf6exd68e",
-        "node_muf6exd68f"
+        "node_muf6exd68e"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -546,8 +536,7 @@
         "node_muf6flq18k",
         "node_muf6flq18m",
         "node_muv4oy9g2r",
-        "node_muf6flq18n",
-        "node_muf6flq18o"
+        "node_muf6flq18n"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -571,8 +560,7 @@
         "node_muhpjerx1k",
         "node_muhpjery1q",
         "node_mutsk7t020",
-        "node_muhpjery24",
-        "node_muhpjery25"
+        "node_muhpjery24"
       ],
       "unpublished": true,
       "bodyStyles": {
@@ -595,8 +583,7 @@
       "children": [
         "node_muhpllld27",
         "node_muhpllld2f",
-        "node_muhpllld2g",
-        "node_muhpllld2h"
+        "node_muhpllld2g"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -634,9 +621,7 @@
         "node_muwbkswu4g",
         "node_muwbmxp34m",
         "node_muwbkwak4i",
-        "node_muiixvz33x",
-        "node_muiixvz33y",
-        "node_muiixvz33z"
+        "node_muiixvz33x"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -3514,44 +3499,6 @@
         }
       }
     },
-    "node_mswzfiqrx": {
-      "id": "node_mswzfiqrx",
-      "type": "image",
-      "name": "画像",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmsoqcrmb--.svg",
-        "alt": "",
-        "width": 1920,
-        "height": 713,
-        "assetId": "asset_msoqcsen1p"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "100%",
-            "borderRadius": "0px"
-          }
-        }
-      },
-      "motions": [
-        {
-          "id": "motion_msote2mqg",
-          "trigger": "in-view",
-          "property": "all",
-          "keyframes": "fade-up",
-          "duration": 1,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 1,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ]
-    },
     "node_mswzrs251f": {
       "id": "node_mswzrs251f",
       "type": "box",
@@ -4275,30 +4222,6 @@
       "locked": false,
       "hidden": false
     },
-    "node_mu2rtpi47": {
-      "id": "node_mu2rtpi47",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "",
-        "alt": "",
-        "width": 1337,
-        "height": 415
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1337px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      }
-    },
     "node_mu2ru1jy8": {
       "id": "node_mu2ru1jy8",
       "type": "box",
@@ -4576,30 +4499,6 @@
           "fillMode": "both"
         }
       ]
-    },
-    "node_mu2t6c971k": {
-      "id": "node_mu2t6c971k",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "",
-        "alt": "",
-        "width": 1337,
-        "height": 415
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1337px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      }
     },
     "node_mu2td1rh1r": {
       "id": "node_mu2td1rh1r",
@@ -5384,30 +5283,6 @@
         }
       ]
     },
-    "node_mu3wp199k": {
-      "id": "node_mu3wp199k",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "",
-        "alt": "",
-        "width": 1337,
-        "height": 415
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1337px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      }
-    },
     "node_mu3wr3own": {
       "id": "node_mu3wr3own",
       "type": "image",
@@ -5832,30 +5707,6 @@
           "fillMode": "both"
         }
       ]
-    },
-    "node_mu727nz01d": {
-      "id": "node_mu727nz01d",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "",
-        "alt": "",
-        "width": 1337,
-        "height": 415
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1337px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      }
     },
     "node_mu72cpka1g": {
       "id": "node_mu72cpka1g",
@@ -8765,53 +8616,6 @@
         }
       ]
     },
-    "node_muf53mtd6h": {
-      "id": "node_muf53mtd6h",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "",
-        "alt": "",
-        "width": 1337,
-        "height": 415
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1337px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      }
-    },
-    "node_muf53mtd6i": {
-      "id": "node_muf53mtd6i",
-      "type": "image",
-      "name": "pasted-artwork.svg",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "",
-        "alt": "",
-        "width": 1420,
-        "height": 45
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "100%",
-            "borderRadius": "12px"
-          }
-        }
-      }
-    },
     "node_muf54i8o6l": {
       "id": "node_muf54i8o6l",
       "type": "image",
@@ -9041,30 +8845,6 @@
           "fillMode": "both"
         }
       ]
-    },
-    "node_muf5w3hl6z": {
-      "id": "node_muf5w3hl6z",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "",
-        "alt": "",
-        "width": 1337,
-        "height": 415
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1337px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      }
     },
     "node_muf5xhmh72": {
       "id": "node_muf5xhmh72",
@@ -9365,30 +9145,6 @@
           "fillMode": "both"
         }
       ]
-    },
-    "node_muf67d6n7m": {
-      "id": "node_muf67d6n7m",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "",
-        "alt": "",
-        "width": 1337,
-        "height": 415
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1337px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      }
     },
     "node_muf68wdy7p": {
       "id": "node_muf68wdy7p",
@@ -9697,30 +9453,6 @@
         }
       ]
     },
-    "node_muf6el0a86": {
-      "id": "node_muf6el0a86",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "",
-        "alt": "",
-        "width": 1337,
-        "height": 415
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1337px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      }
-    },
     "node_muf6exd689": {
       "id": "node_muf6exd689",
       "type": "box",
@@ -9857,30 +9589,6 @@
           "fillMode": "both"
         }
       ]
-    },
-    "node_muf6exd68f": {
-      "id": "node_muf6exd68f",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "",
-        "alt": "",
-        "width": 1337,
-        "height": 415
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1337px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      }
     },
     "node_muf6flq18i": {
       "id": "node_muf6flq18i",
@@ -10025,30 +9733,6 @@
           "fillMode": "both"
         }
       ]
-    },
-    "node_muf6flq18o": {
-      "id": "node_muf6flq18o",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "",
-        "alt": "",
-        "width": 1337,
-        "height": 415
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1337px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      }
     },
     "node_muf6gugy8r": {
       "id": "node_muf6gugy8r",
@@ -13063,30 +12747,6 @@
         }
       ]
     },
-    "node_muhpjery25": {
-      "id": "node_muhpjery25",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "",
-        "alt": "",
-        "width": 1337,
-        "height": 415
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1337px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      }
-    },
     "node_muhpllld28": {
       "id": "node_muhpllld28",
       "type": "image",
@@ -13214,30 +12874,6 @@
           "fillMode": "both"
         }
       ]
-    },
-    "node_muhpllld2h": {
-      "id": "node_muhpllld2h",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "",
-        "alt": "",
-        "width": 1337,
-        "height": 415
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1337px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      }
     },
     "node_muiixvz23l": {
       "id": "node_muiixvz23l",
@@ -13489,53 +13125,6 @@
           "fillMode": "both"
         }
       ]
-    },
-    "node_muiixvz33y": {
-      "id": "node_muiixvz33y",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "",
-        "alt": "",
-        "width": 1337,
-        "height": 415
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1337px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      }
-    },
-    "node_muiixvz33z": {
-      "id": "node_muiixvz33z",
-      "type": "image",
-      "name": "pasted-artwork.svg",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "",
-        "alt": "",
-        "width": 1420,
-        "height": 45
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "100%",
-            "borderRadius": "12px"
-          }
-        }
-      }
     },
     "node_muij55ln41": {
       "id": "node_muij55ln41",
@@ -25105,6 +24694,44 @@
         "lg",
         "md",
         "sm"
+      ]
+    },
+    "node_mswzfiqrx": {
+      "id": "node_mswzfiqrx",
+      "type": "image",
+      "name": "画像",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmsoqcrmb--.svg",
+        "alt": "",
+        "width": 1920,
+        "height": 713,
+        "assetId": "asset_msoqcsen1p"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_msote2mqg",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 1,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
       ]
     }
   },

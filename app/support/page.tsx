@@ -15,7 +15,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="svg-103"
+          className="svg-93"
         />
       </section>
       <p className="box-68">
@@ -24,7 +24,7 @@ export default function Page() {
           alt=""
           width={1064}
           height={131}
-          className="svg-82"
+          className="svg-72"
         />
       </p>
       <section className="box-69">
@@ -33,7 +33,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-24"
+          className="pasted-artwork-svg-23"
         />
       </section>
       <section className="box-70">
@@ -42,7 +42,7 @@ export default function Page() {
           alt=""
           width={1183}
           height={117}
-          className="svg-195"
+          className="svg-182"
         />
       </section>
       <section className="box-134">
@@ -51,7 +51,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-182"
+          className="svg-169"
         />
       </section>
       <section className="box-160">
@@ -68,7 +68,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-183"
+          className="svg-170"
         />
       </section>
       <section className="box-163">
@@ -85,7 +85,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-214"
+          className="svg-201"
         />
       </section>
       <section className="box-193">
@@ -151,14 +151,7 @@ export default function Page() {
         alt=""
         width={1920}
         height={713}
-        className="image-13"
-      />
-      <Image
-        src=""
-        alt=""
-        width={1337}
-        height={415}
-        className="svg-78"
+        className="image-12"
       />
     </>
   );

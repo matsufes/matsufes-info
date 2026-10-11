@@ -15,7 +15,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="svg-119"
+          className="svg-107"
         />
       </section>
       <p className="box-80">
@@ -24,7 +24,7 @@ export default function Page() {
           alt=""
           width={845}
           height={130}
-          className="pasted-artwork-svg-31"
+          className="pasted-artwork-svg-30"
         />
       </p>
       <section className="box-81">
@@ -33,7 +33,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-32"
+          className="pasted-artwork-svg-31"
         />
       </section>
       <section className="box-82">
@@ -42,7 +42,7 @@ export default function Page() {
           alt=""
           width={749}
           height={114}
-          className="svg-121"
+          className="svg-108"
         />
       </section>
       <section className="box-83">
@@ -56,7 +56,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-122"
+          className="svg-109"
         />
       </section>
       <section className="box-86">
@@ -70,7 +70,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-186"
+          className="svg-173"
         />
       </section>
       <section className="box-146">
@@ -84,7 +84,7 @@ export default function Page() {
           alt=""
           width={577}
           height={181}
-          className="svg-212"
+          className="svg-199"
         />
         <div className="box-140">
           <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://trias.link/2026/\"}]}]"}
@@ -111,7 +111,7 @@ export default function Page() {
           alt=""
           width={625}
           height={181}
-          className="svg-211"
+          className="svg-198"
         />
         <div className="box-150">
           <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://geidaisai2026.com/\"}]}]"}
@@ -139,7 +139,7 @@ export default function Page() {
             alt=""
             width={562}
             height={181}
-            className="svg-192"
+            className="svg-179"
           />
         </div>
         <div className="box-159">
@@ -168,7 +168,7 @@ export default function Page() {
             alt=""
             width={674}
             height={181}
-            className="svg-193"
+            className="svg-180"
           />
         </div>
         <div className="box-156">
@@ -195,21 +195,7 @@ export default function Page() {
         alt=""
         width={1920}
         height={713}
-        className="image-17"
-      />
-      <Image
-        src=""
-        alt=""
-        width={1337}
-        height={415}
-        className="svg-120"
-      />
-      <Image
-        src=""
-        alt=""
-        width={1420}
-        height={45}
-        className="pasted-artwork-svg-33"
+        className="image-16"
       />
     </>
   );

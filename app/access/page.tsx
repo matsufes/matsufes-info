@@ -15,7 +15,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="svg-97"
+          className="svg-87"
         />
       </section>
       <p className="box-50">
@@ -24,7 +24,7 @@ export default function Page() {
           alt=""
           width={854}
           height={131}
-          className="svg-68"
+          className="svg-63"
         />
       </p>
       <section className="box-51">
@@ -33,7 +33,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-18"
+          className="pasted-artwork-svg-17"
         />
       </section>
       <section className="box-52">
@@ -42,7 +42,7 @@ export default function Page() {
           alt=""
           width={510}
           height={109}
-          className="pasted-artwork-svg-34"
+          className="pasted-artwork-svg-32"
         />
       </section>
       <section className="box-88">
@@ -51,7 +51,7 @@ export default function Page() {
           alt=""
           width={501}
           height={154}
-          className="svg-123"
+          className="svg-110"
         />
       </section>
       <section className="box-89">
@@ -60,7 +60,7 @@ export default function Page() {
           alt=""
           width={510}
           height={101}
-          className="svg-124"
+          className="svg-111"
         />
       </section>
       <section className="box-90">
@@ -69,7 +69,7 @@ export default function Page() {
           alt=""
           width={1028}
           height={262}
-          className="svg-125"
+          className="svg-112"
         />
       </section>
       <section className="box-91">
@@ -78,7 +78,7 @@ export default function Page() {
           alt=""
           width={298}
           height={106}
-          className="svg-126"
+          className="svg-113"
         />
       </section>
       <section className="box-92">
@@ -92,7 +92,7 @@ export default function Page() {
           alt=""
           width={1089}
           height={710}
-          className="svg-69"
+          className="svg-64"
         />
       </section>
       <section className="box-54" />
@@ -101,21 +101,7 @@ export default function Page() {
         alt=""
         width={1920}
         height={713}
-        className="image-8"
-      />
-      <Image
-        src=""
-        alt=""
-        width={1337}
-        height={415}
-        className="svg-67"
-      />
-      <Image
-        src=""
-        alt=""
-        width={1420}
-        height={45}
-        className="pasted-artwork-svg-12"
+        className="image-7"
       />
     </>
   );

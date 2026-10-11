@@ -18,7 +18,7 @@ export default function Page() {
               alt=""
               width={43}
               height={31}
-              className="svg-180"
+              className="svg-167"
             />
           </div>
           <p id="松ヶ崎祭について" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"mf-phone\"}]}]"} className="el-137">
@@ -202,7 +202,7 @@ export default function Page() {
             alt=""
             width={1920}
             height={1312}
-            className="svg-109"
+            className="svg-99"
           />
         </div>
         <div data-inview className="el-110">
@@ -230,7 +230,7 @@ export default function Page() {
               alt=""
               width={677}
               height={352}
-              className="svg-108"
+              className="svg-98"
             />
           </div>
         </div>
@@ -242,7 +242,7 @@ export default function Page() {
             alt=""
             width={674}
             height={215}
-            className="pasted-artwork-svg-28"
+            className="pasted-artwork-svg-27"
           />
         </div>
       </section>
@@ -253,7 +253,7 @@ export default function Page() {
             alt=""
             width={172}
             height={454}
-            className="svg-110"
+            className="svg-100"
           />
         </Link>
         <Link href="/keyword" className="el-117">
@@ -262,7 +262,7 @@ export default function Page() {
             alt=""
             width={371}
             height={461}
-            className="svg-111"
+            className="svg-101"
           />
         </Link>
         <Link href="/timetable-13" className="el-118">
@@ -271,7 +271,7 @@ export default function Page() {
             alt=""
             width={239}
             height={400}
-            className="svg-112"
+            className="svg-102"
           />
         </Link>
       </section>
@@ -282,7 +282,7 @@ export default function Page() {
             alt=""
             width={674}
             height={212}
-            className="pasted-artwork-svg-29"
+            className="pasted-artwork-svg-28"
           />
         </div>
       </section>
@@ -292,14 +292,14 @@ export default function Page() {
           alt=""
           width={1051}
           height={732}
-          className="pasted-artwork-svg-45"
+          className="pasted-artwork-svg-43"
         />
         <Image
           src="/assets/pasted-artwork-67.svg"
           alt=""
           width={1122}
           height={862}
-          className="pasted-artwork-svg-44"
+          className="pasted-artwork-svg-42"
         />
       </section>
       <section className="el-198">
@@ -308,14 +308,14 @@ export default function Page() {
           alt=""
           width={999}
           height={815}
-          className="pasted-artwork-svg-46"
+          className="pasted-artwork-svg-44"
         />
         <Image
           src="/assets/pasted-artwork-137.svg"
           alt=""
           width={1112}
           height={769}
-          className="pasted-artwork-svg-47"
+          className="pasted-artwork-svg-45"
         />
       </section>
       <section className="box-131">
@@ -324,7 +324,7 @@ export default function Page() {
           alt=""
           width={1248}
           height={195}
-          className="svg-179"
+          className="svg-166"
         />
       </section>
       <section className="el-56">
@@ -334,7 +334,7 @@ export default function Page() {
             alt=""
             width={674}
             height={152}
-            className="pasted-artwork-svg-30"
+            className="pasted-artwork-svg-29"
           />
         </div>
       </section>
@@ -345,7 +345,7 @@ export default function Page() {
             alt=""
             width={738}
             height={565}
-            className="svg-113"
+            className="svg-103"
           />
         </div>
         <div className="box-26">
@@ -354,7 +354,7 @@ export default function Page() {
             alt=""
             width={929}
             height={438}
-            className="svg-114"
+            className="svg-104"
           />
         </div>
       </section>
@@ -364,7 +364,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={1015}
-          className="pasted-artwork-svg-38"
+          className="pasted-artwork-svg-36"
         />
         <a href="https://www.instagram.com/kit_matsufes/" className="el-145">
           <Image
@@ -372,7 +372,7 @@ export default function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-184"
+            className="svg-171"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x">
@@ -381,7 +381,7 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-185"
+            className="svg-172"
           />
         </a>
       </section>

@@ -15,7 +15,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="svg-101"
+          className="svg-91"
         />
       </section>
       <p className="box-62">
@@ -24,7 +24,7 @@ export default function Page() {
           alt=""
           width={849}
           height={131}
-          className="svg-80"
+          className="svg-70"
         />
       </p>
       <section className="box-63">
@@ -33,7 +33,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-22"
+          className="pasted-artwork-svg-21"
         />
       </section>
       <section className="box-64">
@@ -42,7 +42,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-127"
+          className="svg-114"
         />
       </section>
       <section className="box-76">
@@ -56,7 +56,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-181"
+          className="svg-168"
         />
       </section>
       <section className="el-90">
@@ -65,7 +65,7 @@ export default function Page() {
           alt=""
           width={1091}
           height={856}
-          className="svg-86"
+          className="svg-76"
         />
         <a href="https://mf53.matsufes.info/" className="hello-world">
           <Image
@@ -73,7 +73,7 @@ export default function Page() {
             alt=""
             width={370}
             height={46}
-            className="svg-89"
+            className="svg-79"
           />
         </a>
         <a href="https://mf52.matsufes.info/" className="re-kit">
@@ -82,7 +82,7 @@ export default function Page() {
             alt=""
             width={254}
             height={43}
-            className="svg-90"
+            className="svg-80"
           />
         </a>
         <a href="https://mf54.matsufes.info/" className="el-92">
@@ -91,7 +91,7 @@ export default function Page() {
             alt=""
             width={295}
             height={43}
-            className="svg-88"
+            className="svg-78"
           />
         </a>
         <a href="https://mf55.matsufes.info/" className="el-91">
@@ -100,7 +100,7 @@ export default function Page() {
             alt=""
             width={400}
             height={44}
-            className="svg-87"
+            className="svg-77"
           />
         </a>
       </section>
@@ -109,7 +109,7 @@ export default function Page() {
         alt=""
         width={1920}
         height={713}
-        className="image-11"
+        className="image-10"
       />
     </>
   );

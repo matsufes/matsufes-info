@@ -15,7 +15,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="svg-95"
+          className="svg-85"
         />
       </section>
       <p className="box-2">
@@ -33,7 +33,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-16"
+          className="pasted-artwork-svg-15"
         />
       </section>
       <section className="box-27" />

@@ -15,7 +15,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="svg-94"
+          className="svg-84"
         />
       </section>
       <p className="el-31">
@@ -33,7 +33,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-15"
+          className="pasted-artwork-svg-14"
         />
       </section>
       <p className="heading">
@@ -218,7 +218,7 @@ export default function Page() {
           alt=""
           width={343}
           height={178}
-          className="svg-191"
+          className="svg-178"
         />
       </section>
       <Image data-inview
@@ -234,7 +234,7 @@ export default function Page() {
           alt=""
           width={429}
           height={280}
-          className="pasted-artwork-svg-40"
+          className="pasted-artwork-svg-38"
         />
         <p className="box-174">
           {"木匠生のワッフル&雑貨屋さん"}
@@ -247,21 +247,21 @@ export default function Page() {
           alt=""
           width={119}
           height={119}
-          className="svg-198"
+          className="svg-185"
         />
         <Image
           src="/assets/pasted-artwork-260.svg"
           alt=""
           width={15}
           height={15}
-          className="svg-202"
+          className="svg-189"
         />
         <Image
           src="/assets/pasted-artwork-261.svg"
           alt=""
           width={13}
           height={20}
-          className="svg-203"
+          className="svg-190"
         />
         <p className="box-177">
           {"ああああああああああああちゅ〜"}
@@ -274,14 +274,14 @@ export default function Page() {
           alt=""
           width={35}
           height={34}
-          className="svg-204"
+          className="svg-191"
         />
         <Image
           src="/assets/pasted-artwork-276.svg"
           alt=""
           width={533}
           height={16}
-          className="svg-205"
+          className="svg-192"
         />
         <p className="box-183">
           {"m-1カテゴリ"}

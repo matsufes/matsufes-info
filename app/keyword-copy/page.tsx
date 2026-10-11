@@ -15,7 +15,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="svg-206"
+          className="svg-193"
         />
       </section>
       <p className="el-177">
@@ -27,7 +27,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-41"
+          className="pasted-artwork-svg-39"
         />
       </section>
       <p className="el-179">
@@ -40,7 +40,7 @@ export default function Page() {
             alt=""
             width={439}
             height={96}
-            className="pasted-artwork-svg-42"
+            className="pasted-artwork-svg-40"
           />
           <p className="box-181">
             {"ああああああああああああちゅ〜"}
@@ -52,14 +52,14 @@ export default function Page() {
             alt=""
             width={351}
             height={351}
-            className="pasted-artwork-svg-43"
+            className="pasted-artwork-svg-41"
           />
           <Image
             src="/assets/pasted-artwork-282.svg"
             alt=""
             width={278}
             height={278}
-            className="svg-208"
+            className="svg-195"
           />
         </div>
         <div className="el-184">
@@ -68,7 +68,7 @@ export default function Page() {
             alt=""
             width={726}
             height={181}
-            className="svg-207"
+            className="svg-194"
           />
           <p className="box-182">
             {"紹介文あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ"}
@@ -118,7 +118,7 @@ export default function Page() {
             alt=""
             width={209}
             height={204}
-            className="svg-210"
+            className="svg-197"
           />
         </div>
         <div className="el-193">
@@ -127,7 +127,7 @@ export default function Page() {
             alt=""
             width={162}
             height={237}
-            className="svg-209"
+            className="svg-196"
           />
         </div>
         <p className="box-186">
