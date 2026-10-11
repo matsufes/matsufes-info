@@ -18,7 +18,7 @@ export default function Page() {
               alt=""
               width={43}
               height={31}
-              className="svg-181"
+              className="svg-180"
             />
           </div>
           <p id="松ヶ崎祭について" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"mf-phone\"}]}]"} className="el-137">
@@ -202,7 +202,7 @@ export default function Page() {
             alt=""
             width={1920}
             height={1312}
-            className="svg-110"
+            className="svg-109"
           />
         </div>
         <div data-inview className="el-110">
@@ -230,7 +230,7 @@ export default function Page() {
               alt=""
               width={677}
               height={352}
-              className="svg-109"
+              className="svg-108"
             />
           </div>
         </div>
@@ -253,7 +253,7 @@ export default function Page() {
             alt=""
             width={172}
             height={454}
-            className="svg-111"
+            className="svg-110"
           />
         </Link>
         <Link href="/keyword" className="el-117">
@@ -262,7 +262,7 @@ export default function Page() {
             alt=""
             width={371}
             height={461}
-            className="svg-112"
+            className="svg-111"
           />
         </Link>
         <Link href="/timetable-13" className="el-118">
@@ -271,7 +271,7 @@ export default function Page() {
             alt=""
             width={239}
             height={400}
-            className="svg-113"
+            className="svg-112"
           />
         </Link>
       </section>
@@ -324,7 +324,7 @@ export default function Page() {
           alt=""
           width={1248}
           height={195}
-          className="svg-180"
+          className="svg-179"
         />
       </section>
       <section className="el-56">
@@ -345,7 +345,7 @@ export default function Page() {
             alt=""
             width={738}
             height={565}
-            className="svg-114"
+            className="svg-113"
           />
         </div>
         <div className="box-26">
@@ -354,7 +354,7 @@ export default function Page() {
             alt=""
             width={929}
             height={438}
-            className="svg-115"
+            className="svg-114"
           />
         </div>
       </section>
@@ -372,7 +372,7 @@ export default function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-185"
+            className="svg-184"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x">
@@ -381,7 +381,7 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-186"
+            className="svg-185"
           />
         </a>
       </section>

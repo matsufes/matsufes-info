@@ -15,7 +15,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="svg-120"
+          className="svg-119"
         />
       </section>
       <p className="box-80">
@@ -42,7 +42,7 @@ export default function Page() {
           alt=""
           width={749}
           height={114}
-          className="svg-122"
+          className="svg-121"
         />
       </section>
       <section className="box-83">
@@ -56,7 +56,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-123"
+          className="svg-122"
         />
       </section>
       <section className="box-86">
@@ -70,7 +70,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-187"
+          className="svg-186"
         />
       </section>
       <section className="box-146">
@@ -84,7 +84,7 @@ export default function Page() {
           alt=""
           width={577}
           height={181}
-          className="svg-213"
+          className="svg-212"
         />
         <div className="box-140">
           <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://trias.link/2026/\"}]}]"}
@@ -111,7 +111,7 @@ export default function Page() {
           alt=""
           width={625}
           height={181}
-          className="svg-212"
+          className="svg-211"
         />
         <div className="box-150">
           <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://geidaisai2026.com/\"}]}]"}
@@ -139,7 +139,7 @@ export default function Page() {
             alt=""
             width={562}
             height={181}
-            className="svg-193"
+            className="svg-192"
           />
         </div>
         <div className="box-159">
@@ -168,7 +168,7 @@ export default function Page() {
             alt=""
             width={674}
             height={181}
-            className="svg-194"
+            className="svg-193"
           />
         </div>
         <div className="box-156">
@@ -202,7 +202,7 @@ export default function Page() {
         alt=""
         width={1337}
         height={415}
-        className="svg-121"
+        className="svg-120"
       />
       <Image
         src=""

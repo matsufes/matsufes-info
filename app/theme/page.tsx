@@ -15,7 +15,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="svg-103"
+          className="svg-102"
         />
       </section>
       <p className="box-65">
@@ -24,7 +24,7 @@ export default function Page() {
           alt=""
           width={917}
           height={87}
-          className="svg-82"
+          className="svg-81"
         />
       </p>
       <section className="box-66">
@@ -42,7 +42,7 @@ export default function Page() {
           alt=""
           width={1383}
           height={304}
-          className="svg-85"
+          className="svg-84"
         />
       </section>
       <section className="box-73">
@@ -51,7 +51,7 @@ export default function Page() {
           alt=""
           width={541}
           height={114}
-          className="svg-138"
+          className="svg-137"
         />
       </section>
       <section className="box-74">
@@ -61,7 +61,7 @@ export default function Page() {
             alt=""
             width={738}
             height={565}
-            className="svg-139"
+            className="svg-138"
           />
         </div>
         <div className="box-108">
@@ -70,7 +70,7 @@ export default function Page() {
             alt=""
             width={523}
             height={66}
-            className="svg-140"
+            className="svg-139"
           />
         </div>
       </section>
@@ -81,7 +81,7 @@ export default function Page() {
             alt=""
             width={985}
             height={748}
-            className="svg-141"
+            className="svg-140"
           />
         </div>
         <div className="box-111">
@@ -90,7 +90,7 @@ export default function Page() {
             alt=""
             width={944}
             height={816}
-            className="svg-142"
+            className="svg-141"
           />
         </div>
       </section>
@@ -100,7 +100,7 @@ export default function Page() {
           alt=""
           width={103}
           height={313}
-          className="svg-86"
+          className="svg-85"
         />
       </section>
       <Image data-inview
@@ -115,7 +115,7 @@ export default function Page() {
         alt=""
         width={1337}
         height={415}
-        className="svg-78"
+        className="svg-77"
       />
     </>
   );

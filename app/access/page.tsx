@@ -15,7 +15,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="svg-98"
+          className="svg-97"
         />
       </section>
       <p className="box-50">
@@ -51,7 +51,7 @@ export default function Page() {
           alt=""
           width={501}
           height={154}
-          className="svg-124"
+          className="svg-123"
         />
       </section>
       <section className="box-89">
@@ -60,7 +60,7 @@ export default function Page() {
           alt=""
           width={510}
           height={101}
-          className="svg-125"
+          className="svg-124"
         />
       </section>
       <section className="box-90">
@@ -69,7 +69,7 @@ export default function Page() {
           alt=""
           width={1028}
           height={262}
-          className="svg-126"
+          className="svg-125"
         />
       </section>
       <section className="box-91">
@@ -78,7 +78,7 @@ export default function Page() {
           alt=""
           width={298}
           height={106}
-          className="svg-127"
+          className="svg-126"
         />
       </section>
       <section className="box-92">

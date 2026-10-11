@@ -16,7 +16,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="svg-92"
+          className="svg-91"
         />
       </section>
       <p className="el-28">
@@ -34,7 +34,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="svg-108"
+          className="svg-107"
         />
       </section>
       <section className="heading-2">
@@ -114,28 +114,28 @@ export default function Page() {
             alt=""
             width={306}
             height={113}
-            className="svg-157"
+            className="svg-156"
           />
           <Image
             src="/assets/pasted-artwork-178.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-158"
+            className="svg-157"
           />
           <Image
             src="/assets/pasted-artwork-179.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-159"
+            className="svg-158"
           />
           <Image
             src="/assets/pasted-artwork-180.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-160"
+            className="svg-159"
           />
         </div>
       </section>

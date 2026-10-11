@@ -15,7 +15,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="svg-102"
+          className="svg-101"
         />
       </section>
       <p className="box-62">
@@ -24,7 +24,7 @@ export default function Page() {
           alt=""
           width={849}
           height={131}
-          className="svg-81"
+          className="svg-80"
         />
       </p>
       <section className="box-63">
@@ -42,7 +42,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-128"
+          className="svg-127"
         />
       </section>
       <section className="box-76">
@@ -56,17 +56,24 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-182"
+          className="svg-181"
         />
       </section>
       <section className="el-90">
+        <Image
+          src="/assets/pasted-artwork-131.svg"
+          alt=""
+          width={1091}
+          height={856}
+          className="svg-86"
+        />
         <a href="https://mf53.matsufes.info/" className="hello-world">
           <Image
             src="/assets/pasted-artwork-134.svg"
             alt=""
             width={370}
             height={46}
-            className="svg-90"
+            className="svg-89"
           />
         </a>
         <a href="https://mf52.matsufes.info/" className="re-kit">
@@ -75,7 +82,7 @@ export default function Page() {
             alt=""
             width={254}
             height={43}
-            className="svg-91"
+            className="svg-90"
           />
         </a>
         <a href="https://mf54.matsufes.info/" className="el-92">
@@ -84,7 +91,7 @@ export default function Page() {
             alt=""
             width={295}
             height={43}
-            className="svg-89"
+            className="svg-88"
           />
         </a>
         <a href="https://mf55.matsufes.info/" className="el-91">
@@ -93,16 +100,9 @@ export default function Page() {
             alt=""
             width={400}
             height={44}
-            className="svg-88"
+            className="svg-87"
           />
         </a>
-        <Image
-          src="/assets/pasted-artwork-131.svg"
-          alt=""
-          width={1091}
-          height={856}
-          className="svg-87"
-        />
       </section>
       <Image data-inview
         src="/assets/image-6.svg"
@@ -110,13 +110,6 @@ export default function Page() {
         width={1920}
         height={713}
         className="image-11"
-      />
-      <Image
-        src=""
-        alt=""
-        width={1337}
-        height={415}
-        className="svg-77"
       />
     </>
   );

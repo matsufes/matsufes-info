@@ -16,7 +16,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="svg-93"
+          className="svg-92"
         />
       </section>
       <p className="el-62">
@@ -135,77 +135,77 @@ export default function Page() {
             alt=""
             width={306}
             height={113}
-            className="svg-161"
+            className="svg-160"
           />
           <Image
             src="/assets/pasted-artwork-182.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-162"
+            className="svg-161"
           />
           <Image
             src="/assets/pasted-artwork-183.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-163"
+            className="svg-162"
           />
           <Image
             src="/assets/pasted-artwork-184.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-164"
+            className="svg-163"
           />
           <Image
             src="/assets/pasted-artwork-185.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-165"
+            className="svg-164"
           />
           <Image
             src="/assets/pasted-artwork-186.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-166"
+            className="svg-165"
           />
           <Image
             src="/assets/pasted-artwork-187.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-167"
+            className="svg-166"
           />
           <Image
             src="/assets/pasted-artwork-188.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-168"
+            className="svg-167"
           />
           <Image
             src="/assets/pasted-artwork-189.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-169"
+            className="svg-168"
           />
           <Image
             src="/assets/pasted-artwork-190.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-170"
+            className="svg-169"
           />
           <Image
             src="/assets/pasted-artwork-191.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-171"
+            className="svg-170"
           />
         </div>
         <div id="center14" data-toggle-show="flex" className="el-86">
@@ -251,14 +251,14 @@ export default function Page() {
             alt=""
             width={306}
             height={113}
-            className="svg-197"
+            className="svg-196"
           />
           <Image
             src="/assets/pasted-artwork-243.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-198"
+            className="svg-197"
           />
         </div>
         <div id="committee14" data-toggle-show="flex" className="el-129">

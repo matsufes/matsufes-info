@@ -451,8 +451,7 @@
         "node_mufcivh59k",
         "node_muqx666i3",
         "node_mufcie7f9h",
-        "node_muf6dx2a7w",
-        "node_muf6dx2a7x"
+        "node_muf6dx2a7w"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -9560,30 +9559,6 @@
         }
       ]
     },
-    "node_muf6dx2a7x": {
-      "id": "node_muf6dx2a7x",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "",
-        "alt": "",
-        "width": 1337,
-        "height": 415
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1337px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      }
-    },
     "node_muf6el0a80": {
       "id": "node_muf6el0a80",
       "type": "box",
@@ -10357,11 +10332,11 @@
       "text": null,
       "link": null,
       "children": [
+        "node_mufcijsn9j",
         "node_mufmqwz79u",
         "node_mufmqbol9q",
         "node_mufmona99o",
-        "node_mufckovs9l",
-        "node_mufcijsn9j"
+        "node_mufckovs9l"
       ],
       "styles": {
         "base": {
@@ -10789,7 +10764,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "10%",
+            "width": "13%",
             "borderRadius": "12px"
           }
         },
@@ -19564,7 +19539,8 @@
             "gap": "12px",
             "position": "absolute",
             "right": "200px",
-            "bottom": "100px"
+            "bottom": "100px",
+            "width": "8%"
           }
         },
         "sm": {
@@ -19577,6 +19553,9 @@
             "right": "80px",
             "bottom": "30px"
           }
+        },
+        "lg": {
+          "default": {}
         }
       }
     },
@@ -19607,7 +19586,8 @@
             "gap": "12px",
             "position": "absolute",
             "right": "100px",
-            "bottom": "100px"
+            "bottom": "100px",
+            "width": "8%"
           }
         },
         "sm": {
@@ -19643,7 +19623,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "58px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
@@ -19673,7 +19653,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "54px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
@@ -24847,6 +24827,11 @@
             "width": "84px",
             "borderRadius": "0px",
             "maxWidth": "100%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "100%"
           }
         }
       }

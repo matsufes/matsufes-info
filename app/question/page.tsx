@@ -15,7 +15,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="svg-101"
+          className="svg-100"
         />
       </section>
       <p className="box-59">
