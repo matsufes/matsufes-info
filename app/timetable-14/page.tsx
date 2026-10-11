@@ -10,13 +10,13 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_mu98rc7s3u" />
-      <section data-inview className="el-94">
+      <section data-inview className="el-95">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-82"
+          className="svg-76"
         />
       </section>
       <p className="el-62">
@@ -25,7 +25,7 @@ export default function Page() {
           alt=""
           width={719}
           height={157}
-          className="svg-28"
+          className="svg-25"
         />
       </p>
       <section className="el-63">
@@ -34,25 +34,19 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-12"
+          className="pasted-artwork-svg-10"
         />
       </section>
-      <section className="heading-3">
-        <Image
-          src="/assets/pasted-artwork-72.svg"
-          alt=""
-          width={1159}
-          height={124}
-          className="svg-29"
-        />
-      </section>
+      <p className="box-192">
+        {"1日の日程表を　見ることができるよ。\nメインステージでの催しや　音楽サークルの公演時間を　確認しよう。"}
+      </p>
       <section className="el-75">
         <Image
           src="/assets/pasted-artwork-84.svg"
           alt=""
           width={430}
           height={64}
-          className="svg-34"
+          className="svg-29"
         />
       </section>
       <section className="el-77">
@@ -62,7 +56,7 @@ export default function Page() {
             alt=""
             width={268}
             height={84}
-            className="svg-41"
+            className="svg-36"
           />
         </Link>
         <div className="el-79">
@@ -71,7 +65,7 @@ export default function Page() {
             alt=""
             width={268}
             height={84}
-            className="svg-40"
+            className="svg-35"
           />
         </div>
         <Link href="/timetable-15" className="el-80">
@@ -80,12 +74,12 @@ export default function Page() {
             alt=""
             width={268}
             height={84}
-            className="svg-36"
+            className="svg-31"
           />
         </Link>
       </section>
-      <section className="box-127">
-        <select id="choice" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"ストリートパフォーマンス\"},\"then\":[{\"kind\":\"show\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"committee14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"メインステージ\"},\"then\":[{\"kind\":\"show\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"committee14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"センターホール\"},\"then\":[{\"kind\":\"show\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"committee14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"委員会企画\"},\"then\":[{\"kind\":\"show\",\"target\":\"committee14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"main14\"}]}]}]"} className="select" name="choice">
+      <section className="select">
+        <select id="choice" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"ストリートパフォーマンス\"},\"then\":[{\"kind\":\"show\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"committee14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"メインステージ\"},\"then\":[{\"kind\":\"show\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"committee14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"センターホール\"},\"then\":[{\"kind\":\"show\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"committee14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"委員会企画\"},\"then\":[{\"kind\":\"show\",\"target\":\"committee14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"main14\"}]}]}]"} className="select-2" name="choice">
           <option>場所を選んでね。</option>
           <option>メインステージ</option>
           <option>センターホール</option>
@@ -94,6 +88,212 @@ export default function Page() {
         </select>
       </section>
       <section className="el-64">
+        <div className="box-195">
+          <div id="main14" data-toggle-show="flex" className="el-129">
+            <Image
+              src="/assets/pasted-artwork-104.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-47"
+            />
+            <Image
+              src="/assets/pasted-artwork-105.svg"
+              alt=""
+              width={306}
+              height={504}
+              className="svg-48"
+            />
+            <Image
+              src="/assets/pasted-artwork-181.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-138"
+            />
+            <Image
+              src="/assets/pasted-artwork-182.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-139"
+            />
+            <Image
+              src="/assets/pasted-artwork-183.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-140"
+            />
+            <Image
+              src="/assets/pasted-artwork-184.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-141"
+            />
+            <Image
+              src="/assets/pasted-artwork-185.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-142"
+            />
+            <Image
+              src="/assets/pasted-artwork-186.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-143"
+            />
+            <Image
+              src="/assets/pasted-artwork-187.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-144"
+            />
+            <Image
+              src="/assets/pasted-artwork-188.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-145"
+            />
+            <Image
+              src="/assets/pasted-artwork-189.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-146"
+            />
+            <Image
+              src="/assets/pasted-artwork-190.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-147"
+            />
+            <Image
+              src="/assets/pasted-artwork-191.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-148"
+            />
+          </div>
+          <div id="center14" data-toggle-show="flex" className="el-86">
+            <Image
+              src="/assets/pasted-artwork-98.svg"
+              alt=""
+              width={306}
+              height={153}
+              className="svg-42"
+            />
+          </div>
+          <div id="street14" data-toggle-show="flex" className="el-128">
+            <Image
+              src="/assets/pasted-artwork-92.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="pasted-artwork-svg-8"
+            />
+            <Image
+              src="/assets/pasted-artwork-95.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-39"
+            />
+            <Image
+              src="/assets/pasted-artwork-96.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-40"
+            />
+            <Image
+              src="/assets/pasted-artwork-97.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-41"
+            />
+            <Image
+              src="/assets/pasted-artwork-242.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-173"
+            />
+            <Image
+              src="/assets/pasted-artwork-243.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-174"
+            />
+          </div>
+          <div id="committee14" data-toggle-show="flex" className="el-130">
+            <Image
+              src="/assets/pasted-artwork-110.svg"
+              alt=""
+              width={306}
+              height={212}
+              className="pasted-artwork-svg-9"
+            />
+            <Image
+              src="/assets/pasted-artwork-113.svg"
+              alt=""
+              width={153}
+              height={212}
+              className="svg-55"
+            />
+            <Image
+              src="/assets/pasted-artwork-112.svg"
+              alt=""
+              width={153}
+              height={212}
+              className="svg-54"
+            />
+            <Image
+              src="/assets/pasted-artwork-111.svg"
+              alt=""
+              width={306}
+              height={212}
+              className="svg-53"
+            />
+            <Image
+              src="/assets/pasted-artwork-114.svg"
+              alt=""
+              width={153}
+              height={594}
+              className="svg-56"
+            />
+            <Image
+              src="/assets/pasted-artwork-115.svg"
+              alt=""
+              width={236}
+              height={181}
+              className="svg-57"
+            />
+          </div>
+          <Image
+            src="/assets/pasted-artwork-142.svg"
+            alt=""
+            width={295}
+            height={2502}
+            className="el-126"
+          />
+          <Image
+            src="/assets/pasted-artwork-296.svg"
+            alt=""
+            width={1670}
+            height={3081}
+            className="pc"
+          />
+        </div>
         <Image
           src="/assets/pasted-artwork-93.svg"
           alt=""
@@ -101,210 +301,6 @@ export default function Page() {
           height={3102}
           className="el-85"
         />
-        <Image
-          src="/assets/pasted-artwork-296.svg"
-          alt=""
-          width={1670}
-          height={3081}
-          className="pc"
-        />
-        <Image
-          src="/assets/pasted-artwork-142.svg"
-          alt=""
-          width={295}
-          height={2502}
-          className="el-125"
-        />
-        <div id="main14" data-toggle-show="flex" className="el-128">
-          <Image
-            src="/assets/pasted-artwork-104.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="svg-52"
-          />
-          <Image
-            src="/assets/pasted-artwork-105.svg"
-            alt=""
-            width={306}
-            height={504}
-            className="svg-53"
-          />
-          <Image
-            src="/assets/pasted-artwork-181.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="svg-147"
-          />
-          <Image
-            src="/assets/pasted-artwork-182.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="svg-148"
-          />
-          <Image
-            src="/assets/pasted-artwork-183.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="svg-149"
-          />
-          <Image
-            src="/assets/pasted-artwork-184.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="svg-150"
-          />
-          <Image
-            src="/assets/pasted-artwork-185.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="svg-151"
-          />
-          <Image
-            src="/assets/pasted-artwork-186.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="svg-152"
-          />
-          <Image
-            src="/assets/pasted-artwork-187.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="svg-153"
-          />
-          <Image
-            src="/assets/pasted-artwork-188.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="svg-154"
-          />
-          <Image
-            src="/assets/pasted-artwork-189.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="svg-155"
-          />
-          <Image
-            src="/assets/pasted-artwork-190.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="svg-156"
-          />
-          <Image
-            src="/assets/pasted-artwork-191.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="svg-157"
-          />
-        </div>
-        <div id="center14" data-toggle-show="flex" className="el-86">
-          <Image
-            src="/assets/pasted-artwork-98.svg"
-            alt=""
-            width={306}
-            height={153}
-            className="svg-47"
-          />
-        </div>
-        <div id="street14" data-toggle-show="flex" className="el-127">
-          <Image
-            src="/assets/pasted-artwork-92.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="pasted-artwork-svg-10"
-          />
-          <Image
-            src="/assets/pasted-artwork-95.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="svg-44"
-          />
-          <Image
-            src="/assets/pasted-artwork-96.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="svg-45"
-          />
-          <Image
-            src="/assets/pasted-artwork-97.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="svg-46"
-          />
-          <Image
-            src="/assets/pasted-artwork-242.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="svg-183"
-          />
-          <Image
-            src="/assets/pasted-artwork-243.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="svg-184"
-          />
-        </div>
-        <div id="committee14" data-toggle-show="flex" className="el-129">
-          <Image
-            src="/assets/pasted-artwork-110.svg"
-            alt=""
-            width={306}
-            height={212}
-            className="pasted-artwork-svg-11"
-          />
-          <Image
-            src="/assets/pasted-artwork-113.svg"
-            alt=""
-            width={153}
-            height={212}
-            className="svg-60"
-          />
-          <Image
-            src="/assets/pasted-artwork-112.svg"
-            alt=""
-            width={153}
-            height={212}
-            className="svg-59"
-          />
-          <Image
-            src="/assets/pasted-artwork-111.svg"
-            alt=""
-            width={306}
-            height={212}
-            className="svg-58"
-          />
-          <Image
-            src="/assets/pasted-artwork-114.svg"
-            alt=""
-            width={153}
-            height={594}
-            className="svg-61"
-          />
-          <Image
-            src="/assets/pasted-artwork-115.svg"
-            alt=""
-            width={236}
-            height={181}
-            className="svg-62"
-          />
-        </div>
       </section>
       <Image data-inview
         src="/assets/image-6.svg"

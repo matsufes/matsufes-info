@@ -9,93 +9,85 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_muf53mtd6j" />
-      <section data-inview className="el-99">
+      <section data-inview className="el-100">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-87"
+          className="svg-81"
         />
       </section>
-      <p className="box-50">
+      <p className="box-47">
         <Image
           src="/assets/pasted-artwork-117.svg"
           alt=""
           width={854}
           height={131}
-          className="svg-63"
+          className="svg-58"
         />
       </p>
-      <section className="box-51">
+      <section className="box-48">
         <Image
           src="/assets/pasted-artwork-138.svg"
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-17"
+          className="pasted-artwork-svg-15"
         />
       </section>
-      <section className="box-52">
+      <section className="box-49">
         <Image
           src="/assets/pasted-artwork-145.svg"
           alt=""
           width={510}
           height={109}
-          className="pasted-artwork-svg-32"
+          className="pasted-artwork-svg-30"
         />
       </section>
-      <section className="box-88">
-        <Image
-          src="/assets/pasted-artwork-146.svg"
-          alt=""
-          width={501}
-          height={154}
-          className="svg-110"
-        />
+      <section className="box-186">
+        <p className="box-187">
+          {"・地下鉄烏丸線　松ヶ崎駅　8分\n\n・叡山電車　一乗寺駅　11分\n\n・叡山電車　修学院駅　14分"}
+        </p>
       </section>
-      <section className="box-89">
+      <section className="box-84">
         <Image
           src="/assets/pasted-artwork-147.svg"
           alt=""
           width={510}
           height={101}
-          className="svg-111"
+          className="svg-104"
         />
       </section>
-      <section className="box-90">
-        <Image
-          src="/assets/pasted-artwork-148.svg"
-          alt=""
-          width={1028}
-          height={262}
-          className="svg-112"
-        />
+      <section className="box-188">
+        <p className="box-189">
+          {"・市バス65号系統など　左京区総合庁舎・京都工芸繊維大学前　1分\n\n\n・京都バス17・43号系統など　高野泉町　4分\n\n\n・市バス松ヶ崎4号系統など　左京区総合庁舎前　5分\n\n\n・市バス北8・65号系統など　松ヶ崎海尻町　7分\n\n\n・市バス206・204号系統など　高木町　8分"}
+        </p>
       </section>
-      <section className="box-91">
+      <section className="box-85">
         <Image
           src="/assets/pasted-artwork-149.svg"
           alt=""
           width={298}
           height={106}
-          className="svg-113"
+          className="svg-105"
         />
       </section>
-      <section className="box-92">
-        <p className="box-93">
+      <section className="box-86">
+        <p className="box-87">
           {"ご来場の際は、公共交通機関をご利用ください。 \n\n\n自家用車・タクシー・バイク・自転車・キックボードなどでの入構はご遠慮いただいております。\n\n\n自転車でご来場の方は、会場の案内係の指示に従い、指定の場所へ駐輪してください。\n\n\n構内の自転車走行は禁止されています。"}
         </p>
       </section>
-      <section className="box-53">
+      <section className="box-50">
         <Image
           src="/assets/pasted-artwork-118.svg"
           alt=""
           width={1089}
           height={710}
-          className="svg-64"
+          className="svg-59"
         />
       </section>
-      <section className="box-54" />
+      <section className="box-51" />
       <Image data-inview
         src="/assets/image-6.svg"
         alt=""

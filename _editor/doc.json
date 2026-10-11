@@ -56,7 +56,7 @@
         "node_msoqqprz1x",
         "node_msoqrmey1z",
         "node_mu3p9t6j41",
-        "node_mu3pka2o44",
+        "node_mv3piez0o",
         "node_mu9anj8i4p",
         "node_mu9aozby4y",
         "node_muqw3e066",
@@ -110,8 +110,8 @@
         "node_muh1n9uhaq",
         "node_msotieex10",
         "node_mu3pep6z42",
-        "node_msotieex11",
-        "node_mtsda1dj9",
+        "node_mv3plg65r",
+        "node_mv3y7iajw",
         "node_msow9ld327",
         "node_msotieex1c",
         "node_mu98l3tk36",
@@ -210,8 +210,8 @@
         "node_muh1pofqb0",
         "node_mu2t6c9713",
         "node_mu2t6c9715",
-        "node_mu2t6c9717",
         "node_mu2tnfpk1v",
+        "node_mv3j1k9ua",
         "node_mu2t6c971j"
       ],
       "unpublished": false,
@@ -236,7 +236,7 @@
         "node_muh1sm8pbe",
         "node_mu3wp198c",
         "node_mu3wp198e",
-        "node_mu3wp198g",
+        "node_mv3hhofk7",
         "node_mu71yt0au",
         "node_mu3wp198i",
         "node_mu721ul3z",
@@ -264,7 +264,7 @@
         "node_muh1su1ubg",
         "node_mu727nyz11",
         "node_mu727nyz13",
-        "node_mu727nyz15",
+        "node_mv3h8d915",
         "node_mu727nyz1b",
         "node_mu727nyz17",
         "node_mu727nyz19",
@@ -297,7 +297,7 @@
         "node_muh1clriak",
         "node_mu98rc7s3j",
         "node_mu98rc7s3l",
-        "node_mu98rc7s3n",
+        "node_mv3pku89p",
         "node_mu9an57d4n",
         "node_mu9anw834r",
         "node_mukyxc077",
@@ -326,7 +326,7 @@
         "node_muh1liqlao",
         "node_mu98rd453x",
         "node_mu98rd453z",
-        "node_mu98rd4541",
+        "node_mv3pl2vxq",
         "node_mu98rd4543",
         "node_mu9ab4a74b",
         "node_mukyya809",
@@ -356,9 +356,9 @@
         "node_muf53mtd65",
         "node_muf53mtd67",
         "node_muf53mtd69",
-        "node_muikyvrx4n",
+        "node_mv3k6tjxg",
         "node_muil4atg4q",
-        "node_muil5kwi4u",
+        "node_mv3k8co5i",
         "node_muil98u24y",
         "node_muildk7n54",
         "node_muf53mtd6b",
@@ -442,6 +442,7 @@
         "node_muf6dx2a7v",
         "node_mufcivh59k",
         "node_muqx666i3",
+        "node_mv3i72l38",
         "node_mufcie7f9h",
         "node_muf6dx2a7w"
       ],
@@ -496,7 +497,7 @@
         "node_muh1rx1wba",
         "node_muf6exd689",
         "node_muf6exd68b",
-        "node_muf6exd68d",
+        "node_mv3gcy3t1",
         "node_muqye6v4d",
         "node_muxi8ecoh",
         "node_muqyjnr5g",
@@ -2118,9 +2119,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mv3cy8qq7",
-        "node_mukxj7cg1",
-        "node_munnnh3xa"
+        "node_mv3q0vfks"
       ],
       "styles": {
         "base": {
@@ -2305,49 +2304,6 @@
             "textShadow": "0px 2px 5px rgba(40, 43, 55, 0.5)",
             "height": "100%",
             "width": "100%"
-          }
-        }
-      }
-    },
-    "node_msotieex11": {
-      "id": "node_msotieex11",
-      "type": "box",
-      "name": "見出し",
-      "semantic": "auto",
-      "text": {
-        "content": "",
-        "heading": 0
-      },
-      "link": null,
-      "children": [
-        "node_mu3p6r3740"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "gap": "12px",
-            "height": "300px",
-            "justifyContent": "center",
-            "alignItems": "center",
-            "textAlign": "center",
-            "fontFamily": "Zen Kaku Gothic New",
-            "fontWeight": "600",
-            "color": "#ffffff",
-            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.5)",
-            "paddingTop": "50px",
-            "paddingRight": "20px",
-            "paddingBottom": "50px",
-            "paddingLeft": "20px",
-            "fontSize": "23px",
-            "lineHeight": "1",
-            "width": "100%"
-          }
-        },
-        "sm": {
-          "default": {
-            "height": "100px"
           }
         }
       }
@@ -3462,7 +3418,8 @@
             "height": "100%",
             "justifyContent": "flex-start",
             "alignItems": "center",
-            "marginTop": "100px"
+            "marginTop": "100px",
+            "width": "100%"
           }
         },
         "sm": {
@@ -3641,7 +3598,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "40%",
+            "width": "50%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "height": "100%"
@@ -3649,7 +3606,7 @@
         },
         "sm": {
           "default": {
-            "width": "70%"
+            "width": "80%"
           }
         }
       }
@@ -3940,91 +3897,6 @@
             "padding": "20px",
             "gap": "12px",
             "height": "389px"
-          }
-        }
-      }
-    },
-    "node_mtsda1dj9": {
-      "id": "node_mtsda1dj9",
-      "type": "box",
-      "name": "インプット枠",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mtsdbd7oa",
-        "node_muw98f5037"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "height": "200px",
-            "backgroundImage": "url(\"/api/assets/file?path=assets%2Fmsov2b52-pasted-artwork.svg\")",
-            "backgroundSize": "cover",
-            "backgroundPosition": "center",
-            "backgroundRepeat": "no-repeat",
-            "justifyContent": "center",
-            "alignItems": "center"
-          }
-        },
-        "sm": {
-          "default": {
-            "height": "100%",
-            "width": "100%",
-            "justifyContent": "center",
-            "alignItems": "center",
-            "display": "flex",
-            "flexDirection": "row"
-          }
-        }
-      }
-    },
-    "node_mtsdbd7oa": {
-      "id": "node_mtsdbd7oa",
-      "type": "field",
-      "name": "インプット",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "field": {
-        "kind": "input",
-        "inputType": "text",
-        "placeholder": "ここに　言葉を　入力してみてね"
-      },
-      "attrId": "field",
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "60%",
-            "padding": "10px 14px",
-            "fontSize": "14px",
-            "borderRadius": "8px",
-            "backgroundColor": "rgba(255, 255, 255, 0)",
-            "backgroundSize": "cover",
-            "backgroundPosition": "center",
-            "backgroundRepeat": "no-repeat",
-            "borderStyle": "solid",
-            "borderWidth": "0px",
-            "borderColor": "#e4e4e7",
-            "height": "31px",
-            "position": "absolute",
-            "left": "260px",
-            "top": "85px",
-            "fontFamily": "Zen Kaku Gothic New"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "60%",
-            "height": "20px",
-            "fontSize": "10px",
-            "left": "100px",
-            "top": "70px"
           }
         }
       }
@@ -4431,37 +4303,6 @@
         }
       }
     },
-    "node_mu2t6c9717": {
-      "id": "node_mu2t6c9717",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mu2tn0dz1u"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "height": "300px",
-            "justifyContent": "center",
-            "alignItems": "center",
-            "width": "auto"
-          }
-        },
-        "sm": {
-          "default": {
-            "height": "100%",
-            "width": "100%"
-          }
-        }
-      }
-    },
     "node_mu2t6c971j": {
       "id": "node_mu2t6c971j",
       "type": "image",
@@ -4518,7 +4359,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "30%",
+            "width": "40%",
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
@@ -4526,35 +4367,6 @@
         "sm": {
           "default": {
             "width": "70%"
-          }
-        }
-      }
-    },
-    "node_mu2tn0dz1u": {
-      "id": "node_mu2tn0dz1u",
-      "type": "image",
-      "name": "pasted-artwork.svg",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmu2tmjvl-pasted-artwork.svg",
-        "alt": "",
-        "width": 1215,
-        "height": 122,
-        "assetId": "asset_mu2tmpdi1s"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "60%",
-            "borderRadius": "12px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "95%"
           }
         }
       }
@@ -4567,8 +4379,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mv1x05u056",
-        "node_mv1x28ry58"
+        "node_mv3jwmb3c"
       ],
       "styles": {
         "base": {
@@ -4756,35 +4567,6 @@
       },
       "motions": []
     },
-    "node_mu3p6r3740": {
-      "id": "node_mu3p6r3740",
-      "type": "image",
-      "name": "pasted-artwork.svg",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmu3p620t-pasted-artwork.svg",
-        "alt": "",
-        "width": 881,
-        "height": 130,
-        "assetId": "asset_mu3p62dz3y"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "50%",
-            "borderRadius": "12px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "90%"
-          }
-        }
-      }
-    },
     "node_mu3p9t6j41": {
       "id": "node_mu3p9t6j41",
       "type": "box",
@@ -4834,78 +4616,6 @@
             "gap": "12px",
             "justifyContent": "center",
             "alignItems": "center"
-          }
-        }
-      }
-    },
-    "node_mu3pka2o44": {
-      "id": "node_mu3pka2o44",
-      "type": "box",
-      "name": "見出し",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mu3pmzi546"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "height": "100%",
-            "width": "100%",
-            "justifyContent": "center",
-            "alignItems": "center"
-          }
-        },
-        "sm": {
-          "default": {
-            "height": "100%"
-          }
-        },
-        "lg": {
-          "default": {
-            "height": "100%"
-          }
-        },
-        "md": {
-          "default": {
-            "height": "100%"
-          }
-        }
-      }
-    },
-    "node_mu3pmzi546": {
-      "id": "node_mu3pmzi546",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmu3pmyvr-pasted-artwork.svg",
-        "alt": "",
-        "width": 1159,
-        "height": 124,
-        "assetId": "asset_mu3pmzi545"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "60%",
-            "borderRadius": "0px",
-            "maxWidth": "100%",
-            "height": "100%"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "100%",
-            "height": "100%"
           }
         }
       }
@@ -4985,7 +4695,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "10%",
+            "width": "15%",
             "borderRadius": "12px"
           }
         },
@@ -5185,36 +4895,6 @@
         }
       }
     },
-    "node_mu3wp198g": {
-      "id": "node_mu3wp198g",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mu3wxrgnp"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "height": "300px",
-            "justifyContent": "center",
-            "alignItems": "center",
-            "width": "100%"
-          }
-        },
-        "sm": {
-          "default": {
-            "height": "100%"
-          }
-        }
-      }
-    },
     "node_mu3wp198i": {
       "id": "node_mu3wp198i",
       "type": "box",
@@ -5230,12 +4910,15 @@
           "default": {
             "display": "flex",
             "flexDirection": "column",
-            "padding": "20px",
             "gap": "12px",
             "height": "100%",
             "justifyContent": "center",
             "alignItems": "center",
-            "width": "100%"
+            "width": "100%",
+            "paddingTop": "0px",
+            "paddingRight": "20px",
+            "paddingBottom": "0px",
+            "paddingLeft": "20px"
           }
         },
         "sm": {
@@ -5313,36 +4996,6 @@
         }
       }
     },
-    "node_mu3wxrgnp": {
-      "id": "node_mu3wxrgnp",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmu3wxquf-pasted-artwork.svg",
-        "alt": "",
-        "width": 1081,
-        "height": 125,
-        "assetId": "asset_mu3wxrgno"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "60%",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "95%"
-          }
-        }
-      }
-    },
     "node_mu71xq01t": {
       "id": "node_mu71xq01t",
       "type": "image",
@@ -5386,9 +5039,10 @@
             "flexDirection": "row",
             "padding": "20px",
             "gap": "12px",
-            "height": "300px",
+            "height": "100%",
             "justifyContent": "center",
-            "alignItems": "center"
+            "alignItems": "center",
+            "width": "100%"
           }
         },
         "sm": {
@@ -5517,66 +5171,6 @@
         }
       }
     },
-    "node_mu727nyz16": {
-      "id": "node_mu727nyz16",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmu3wxquf-pasted-artwork.svg",
-        "alt": "",
-        "width": 1081,
-        "height": 125,
-        "assetId": "asset_mu3wxrgno"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "60%",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "95%"
-          }
-        }
-      }
-    },
-    "node_mu727nyz15": {
-      "id": "node_mu727nyz15",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mu727nyz16"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "height": "300px",
-            "justifyContent": "center",
-            "alignItems": "center",
-            "width": "100%"
-          }
-        },
-        "sm": {
-          "default": {
-            "height": "100%"
-          }
-        }
-      }
-    },
     "node_mu727nyz17": {
       "id": "node_mu727nyz17",
       "type": "box",
@@ -5592,12 +5186,15 @@
           "default": {
             "display": "flex",
             "flexDirection": "column",
-            "padding": "20px",
             "gap": "12px",
             "height": "100%",
             "justifyContent": "center",
             "alignItems": "center",
-            "width": "100%"
+            "width": "100%",
+            "paddingTop": "0px",
+            "paddingRight": "20px",
+            "paddingBottom": "0px",
+            "paddingLeft": "20px"
           }
         },
         "sm": {
@@ -5654,12 +5251,15 @@
           "default": {
             "display": "flex",
             "flexDirection": "row",
-            "padding": "20px",
             "gap": "12px",
-            "height": "300px",
+            "height": "100%",
             "justifyContent": "center",
             "alignItems": "center",
-            "width": "100%"
+            "width": "100%",
+            "paddingTop": "20px",
+            "paddingRight": "20px",
+            "paddingBottom": "20px",
+            "paddingLeft": "20px"
           }
         },
         "sm": {
@@ -5763,6 +5363,12 @@
             "paddingTop": "20px",
             "paddingBottom": "0px"
           }
+        },
+        "lg": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column"
+          }
         }
       }
     },
@@ -5781,11 +5387,14 @@
           "default": {
             "display": "flex",
             "flexDirection": "column",
-            "padding": "20px",
             "gap": "12px",
             "width": "40%",
             "justifyContent": "center",
-            "alignItems": "center"
+            "alignItems": "center",
+            "paddingTop": "0px",
+            "paddingRight": "20px",
+            "paddingBottom": "0px",
+            "paddingLeft": "20px"
           }
         }
       }
@@ -5805,11 +5414,14 @@
           "default": {
             "display": "flex",
             "flexDirection": "column",
-            "padding": "20px",
             "gap": "12px",
             "width": "40%",
             "justifyContent": "center",
-            "alignItems": "center"
+            "alignItems": "center",
+            "paddingTop": "0px",
+            "paddingRight": "20px",
+            "paddingBottom": "0px",
+            "paddingLeft": "20px"
           }
         }
       }
@@ -5921,11 +5533,14 @@
           "default": {
             "display": "flex",
             "flexDirection": "column",
-            "padding": "20px",
             "gap": "12px",
             "width": "40%",
             "justifyContent": "center",
-            "alignItems": "center"
+            "alignItems": "center",
+            "paddingTop": "0px",
+            "paddingRight": "20px",
+            "paddingBottom": "0px",
+            "paddingLeft": "20px"
           }
         }
       }
@@ -5945,11 +5560,14 @@
           "default": {
             "display": "flex",
             "flexDirection": "column",
-            "padding": "20px",
             "gap": "12px",
             "width": "40%",
             "justifyContent": "center",
-            "alignItems": "center"
+            "alignItems": "center",
+            "paddingTop": "0px",
+            "paddingRight": "20px",
+            "paddingBottom": "0px",
+            "paddingLeft": "20px"
           }
         }
       }
@@ -6416,67 +6034,6 @@
         }
       }
     },
-    "node_mu98rc7s3o": {
-      "id": "node_mu98rc7s3o",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmu3pmyvr-pasted-artwork.svg",
-        "alt": "",
-        "width": 1159,
-        "height": 124,
-        "assetId": "asset_mu3pmzi545"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "60%",
-            "borderRadius": "0px",
-            "maxWidth": "100%",
-            "height": "100%"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "100%"
-          }
-        }
-      }
-    },
-    "node_mu98rc7s3n": {
-      "id": "node_mu98rc7s3n",
-      "type": "box",
-      "name": "見出し",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mu98rc7s3o"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "height": "300px",
-            "width": "100%",
-            "justifyContent": "center",
-            "alignItems": "center"
-          }
-        },
-        "sm": {
-          "default": {
-            "height": "100px"
-          }
-        }
-      }
-    },
     "node_mu98rc7s3r": {
       "id": "node_mu98rc7s3r",
       "type": "box",
@@ -6485,13 +6042,8 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mue8anal1l",
-        "node_mv3d0ux78",
-        "node_mukz3phzb",
-        "node_mul5bqw9c",
-        "node_mue9jag92r",
-        "node_mul3k7nz3",
-        "node_mul5klbqj"
+        "node_mv3qwbqmu",
+        "node_mue8anal1l"
       ],
       "styles": {
         "base": {
@@ -6500,7 +6052,7 @@
             "flexDirection": "column",
             "padding": "20px",
             "gap": "12px",
-            "height": "2100%",
+            "height": "100%",
             "justifyContent": "center",
             "alignItems": "center"
           }
@@ -6508,13 +6060,14 @@
         "sm": {
           "default": {
             "justifyContent": "center",
-            "alignItems": "flex-start"
+            "alignItems": "flex-start",
+            "paddingRight": "20px",
+            "paddingLeft": "20px",
+            "paddingTop": "20px",
+            "paddingBottom": "20px"
           }
         }
-      },
-      "hiddenOn": [
-        "lg"
-      ]
+      }
     },
     "node_mu98rc7s3t": {
       "id": "node_mu98rc7s3t",
@@ -6642,67 +6195,6 @@
         }
       }
     },
-    "node_mu98rd4542": {
-      "id": "node_mu98rd4542",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmu3pmyvr-pasted-artwork.svg",
-        "alt": "",
-        "width": 1159,
-        "height": 124,
-        "assetId": "asset_mu3pmzi545"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "60%",
-            "borderRadius": "0px",
-            "maxWidth": "100%",
-            "height": "100%"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "100%"
-          }
-        }
-      }
-    },
-    "node_mu98rd4541": {
-      "id": "node_mu98rd4541",
-      "type": "box",
-      "name": "見出し",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mu98rd4542"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "height": "300px",
-            "width": "100%",
-            "justifyContent": "center",
-            "alignItems": "center"
-          }
-        },
-        "sm": {
-          "default": {
-            "height": "100px"
-          }
-        }
-      }
-    },
     "node_mu98rd4543": {
       "id": "node_mu98rd4543",
       "type": "box",
@@ -6722,12 +6214,14 @@
             "gap": "12px",
             "height": "100%",
             "justifyContent": "center",
-            "alignItems": "center"
+            "alignItems": "center",
+            "marginTop": "100px"
           }
         },
         "sm": {
           "default": {
-            "width": "auto"
+            "width": "auto",
+            "marginTop": "50px"
           }
         }
       }
@@ -6740,12 +6234,11 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mv3d31ar9",
+        "node_mv3na086m",
         "node_mumarvd31",
-        "node_mukz6fn9c",
         "node_mumavq0q4",
-        "node_muf37wwi4d",
-        "node_mumaxhs36"
+        "node_mumaxhs36",
+        "node_muf37wwi4d"
       ],
       "styles": {
         "base": {
@@ -7021,7 +6514,13 @@
             "gap": "12px",
             "height": "100%",
             "justifyContent": "center",
-            "alignItems": "center"
+            "alignItems": "center",
+            "marginTop": "100px"
+          }
+        },
+        "sm": {
+          "default": {
+            "marginTop": "50px"
           }
         }
       }
@@ -7075,12 +6574,14 @@
             "gap": "12px",
             "height": "100%",
             "justifyContent": "center",
-            "alignItems": "center"
+            "alignItems": "center",
+            "marginTop": "100px"
           }
         },
         "sm": {
           "default": {
-            "width": "100%"
+            "width": "100%",
+            "marginTop": "50px"
           }
         }
       }
@@ -7652,14 +7153,14 @@
             "width": "100%",
             "borderRadius": "12px",
             "position": "absolute",
-            "left": "0px",
-            "top": "290px"
+            "left": "0%",
+            "top": "18.5%"
           }
         },
         "sm": {
           "default": {
             "borderRadius": "0px",
-            "top": "530px"
+            "top": "15%"
           }
         }
       }
@@ -7687,12 +7188,13 @@
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "top": "810px"
+            "top": "42%"
           }
         },
         "sm": {
           "default": {
-            "top": "1360px"
+            "top": "40%",
+            "left": "0%"
           }
         }
       }
@@ -7720,13 +7222,14 @@
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "top": "910px"
+            "top": "46.5%"
           }
         },
         "sm": {
           "default": {
             "width": "100%",
-            "top": "1520px"
+            "top": "45%",
+            "left": "0%"
           }
         }
       }
@@ -7754,13 +7257,15 @@
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "bottom": "1120px"
+            "top": "51.1%"
           }
         },
         "sm": {
           "default": {
             "width": "100%",
-            "bottom": "1580px"
+            "bottom": "1580px",
+            "left": "0%",
+            "top": "50%"
           }
         }
       }
@@ -7782,11 +7287,11 @@
             "flexDirection": "column",
             "gap": "0px",
             "position": "absolute",
-            "top": "720px",
+            "top": "32.5%",
             "width": "17%",
             "justifyContent": "center",
             "alignItems": "center",
-            "left": "450px",
+            "left": "33%",
             "paddingTop": "0px",
             "paddingRight": "0px",
             "paddingBottom": "0px",
@@ -7795,10 +7300,10 @@
         },
         "sm": {
           "default": {
-            "width": "65%",
+            "width": "77%",
             "right": "450px",
-            "left": "120px",
-            "top": "1033px"
+            "left": "24%",
+            "top": "30.3%"
           }
         }
       },
@@ -7825,7 +7330,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
@@ -7884,13 +7389,14 @@
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "0px",
-            "top": "110px"
+            "left": "0%",
+            "top": "14%"
           }
         },
         "sm": {
           "default": {
-            "top": "335px"
+            "top": "10.5%",
+            "width": "100%"
           }
         }
       }
@@ -7917,13 +7423,14 @@
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "0px",
-            "top": "540px"
+            "left": "0%",
+            "top": "32.5%"
           }
         },
         "sm": {
           "default": {
-            "top": "1000px"
+            "top": "30.5%",
+            "width": "100%"
           }
         }
       }
@@ -7951,13 +7458,15 @@
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "top": "650px"
+            "top": "37.5%"
           }
         },
         "sm": {
           "default": {
             "bottom": "710px",
-            "top": "1165px"
+            "top": "35.5%",
+            "left": "0%",
+            "width": "100%"
           }
         }
       }
@@ -7985,12 +7494,14 @@
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "bottom": "420px"
+            "top": "75%"
           }
         },
         "sm": {
           "default": {
-            "bottom": "900px"
+            "bottom": "75%",
+            "left": "0%",
+            "top": "74.5%"
           }
         }
       }
@@ -8018,12 +7529,13 @@
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "bottom": "50px"
+            "bottom": "5%"
           }
         },
         "sm": {
           "default": {
-            "bottom": "300px"
+            "bottom": "4.5%",
+            "left": "0%"
           }
         }
       }
@@ -8050,13 +7562,13 @@
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "0px",
-            "bottom": "1140px"
+            "left": "0%",
+            "bottom": "50%"
           }
         },
         "sm": {
           "default": {
-            "top": "1490px"
+            "top": "45%"
           }
         }
       }
@@ -8083,13 +7595,13 @@
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "0px",
-            "bottom": "930px"
+            "left": "0%",
+            "bottom": "40.5%"
           }
         },
         "sm": {
           "default": {
-            "bottom": "1410px"
+            "bottom": "42%"
           }
         }
       }
@@ -8116,13 +7628,13 @@
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "0px",
-            "bottom": "700px"
+            "left": "0%",
+            "bottom": "30%"
           }
         },
         "sm": {
           "default": {
-            "bottom": "1040px"
+            "bottom": "30.7%"
           }
         }
       }
@@ -8149,13 +7661,14 @@
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "0px",
-            "top": "220px"
+            "left": "0%",
+            "top": "18.5%"
           }
         },
         "sm": {
           "default": {
-            "top": "500px"
+            "top": "15.5%",
+            "width": "100%"
           }
         }
       }
@@ -8177,26 +7690,24 @@
             "flexDirection": "column",
             "gap": "12px",
             "position": "absolute",
-            "right": "90px",
+            "right": "6%",
             "paddingTop": "0px",
             "paddingRight": "0px",
             "paddingBottom": "0px",
             "paddingLeft": "0px",
             "width": "17%",
-            "bottom": "950px"
+            "bottom": "42%"
           }
         },
         "sm": {
           "default": {
-            "width": "65%",
-            "right": "50px",
-            "bottom": "1475px"
+            "width": "70%",
+            "bottom": "44%",
+            "left": "24%"
           }
         }
       },
       "hiddenOn": [
-        "lg",
-        "md",
         "sm"
       ],
       "attrId": "committee15"
@@ -8219,7 +7730,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
@@ -8247,14 +7758,15 @@
             "width": "100%",
             "borderRadius": "12px",
             "position": "absolute",
-            "left": "0px",
-            "bottom": "880px"
+            "left": "0%",
+            "top": "51.1%"
           }
         },
         "sm": {
           "default": {
             "bottom": "1435px",
-            "width": "95%"
+            "width": "95%",
+            "top": "50%"
           }
         }
       }
@@ -8277,18 +7789,19 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "0px",
-            "bottom": "670px"
+            "left": "0%",
+            "top": "61%"
           }
         },
         "sm": {
           "default": {
             "bottom": "1105px",
-            "width": "95%"
+            "width": "95%",
+            "top": "60%"
           }
         }
       }
@@ -8316,13 +7829,14 @@
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "bottom": "260px"
+            "bottom": "13.5%"
           }
         },
         "sm": {
           "default": {
-            "bottom": "450px",
-            "width": "46%"
+            "bottom": "14%",
+            "width": "46%",
+            "left": "0%"
           }
         }
       }
@@ -8349,13 +7863,13 @@
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "0px",
-            "bottom": "55px"
+            "left": "0%",
+            "bottom": "4%"
           }
         },
         "sm": {
           "default": {
-            "bottom": "120px",
+            "bottom": "4.3%",
             "width": "46%"
           }
         }
@@ -8383,14 +7897,15 @@
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "bottom": "0px",
+            "bottom": "1%",
             "right": "0px"
           }
         },
         "sm": {
           "default": {
-            "bottom": "0px",
-            "width": "51%"
+            "bottom": "1%",
+            "width": "52%",
+            "right": "0%"
           }
         }
       }
@@ -8417,13 +7932,13 @@
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "0px",
-            "bottom": "220px"
+            "left": "0%",
+            "bottom": "11.5%"
           }
         },
         "sm": {
           "default": {
-            "bottom": "380px"
+            "bottom": "12%"
           }
         }
       }
@@ -8542,7 +8057,7 @@
             "padding": "20px",
             "gap": "200px",
             "height": "100%",
-            "justifyContent": "flex-start",
+            "justifyContent": "center",
             "alignItems": "center"
           }
         },
@@ -8634,14 +8149,14 @@
       "styles": {
         "base": {
           "default": {
-            "width": "40%",
+            "width": "60%",
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
         },
         "sm": {
           "default": {
-            "width": "70%"
+            "width": "90%"
           }
         }
       }
@@ -8664,10 +8179,10 @@
       "styles": {
         "base": {
           "default": {
-            "width": "50%",
+            "width": "70%",
             "borderRadius": "0px",
             "maxWidth": "100%",
-            "marginLeft": "150px"
+            "marginLeft": "0px"
           }
         },
         "sm": {
@@ -9521,37 +9036,6 @@
         }
       }
     },
-    "node_muf6exd68d": {
-      "id": "node_muf6exd68d",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_muxi7xaxg"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "height": "300px",
-            "justifyContent": "center",
-            "alignItems": "center",
-            "width": "auto"
-          }
-        },
-        "sm": {
-          "default": {
-            "height": "100%",
-            "width": "auto"
-          }
-        }
-      }
-    },
     "node_muf6exd68e": {
       "id": "node_muf6exd68e",
       "type": "image",
@@ -9673,13 +9157,16 @@
           "default": {
             "display": "flex",
             "flexDirection": "column",
-            "padding": "20px",
             "gap": "12px",
             "height": "100%",
             "justifyContent": "center",
             "alignItems": "flex-start",
             "width": "auto",
-            "marginTop": "200px"
+            "marginTop": "200px",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
           }
         },
         "sm": {
@@ -9752,7 +9239,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "40%",
+            "width": "50%",
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
@@ -9782,7 +9269,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "50%",
+            "width": "60%",
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
@@ -9812,7 +9299,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "50%",
+            "width": "70%",
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
@@ -9872,7 +9359,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "80%",
+            "width": "90%",
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
@@ -9945,6 +9432,12 @@
             "justifyContent": "flex-start",
             "alignItems": "center"
           }
+        },
+        "lg": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column"
+          }
         }
       }
     },
@@ -10016,11 +9509,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mufcijsn9j",
-        "node_mufmqwz79u",
-        "node_mufmqbol9q",
-        "node_mufmona99o",
-        "node_mufckovs9l"
+        "node_mv3zoapg13"
       ],
       "styles": {
         "base": {
@@ -10031,7 +9520,9 @@
             "gap": "12px",
             "justifyContent": "flex-end",
             "alignItems": "center",
-            "height": "800px"
+            "height": "100%",
+            "width": "100%",
+            "marginTop": "100px"
           }
         },
         "sm": {
@@ -10044,7 +9535,7 @@
     "node_mufcijsn9j": {
       "id": "node_mufcijsn9j",
       "type": "image",
-      "name": "貼り付けたSVG",
+      "name": "もくもく",
       "semantic": "auto",
       "text": null,
       "link": null,
@@ -10059,9 +9550,10 @@
       "styles": {
         "base": {
           "default": {
-            "width": "60%",
+            "width": "100%",
             "borderRadius": "0px",
-            "maxWidth": "100%"
+            "maxWidth": "100%",
+            "height": "100%"
           }
         },
         "sm": {
@@ -10119,15 +9611,15 @@
             "flexDirection": "column",
             "gap": "12px",
             "position": "absolute",
-            "left": "500px",
+            "left": "10%",
             "justifyContent": "center",
             "alignItems": "center",
-            "width": "20%",
+            "width": "50%",
             "paddingTop": "0px",
             "paddingRight": "0px",
             "paddingBottom": "0px",
             "paddingLeft": "0px",
-            "bottom": "340px"
+            "bottom": "10%"
           }
         },
         "sm": {
@@ -10194,7 +9686,8 @@
         }
       },
       "children": [
-        "node_mufmxqj19x"
+        "node_mufmxqj19x",
+        "node_mufckovs9l"
       ],
       "styles": {
         "base": {
@@ -10253,7 +9746,8 @@
         }
       },
       "children": [
-        "node_mufmyjcqa1"
+        "node_mufmyjcqa1",
+        "node_mufmona99o"
       ],
       "styles": {
         "base": {
@@ -10312,7 +9806,8 @@
         }
       },
       "children": [
-        "node_mufmy71h9z"
+        "node_mufmy71h9z",
+        "node_mufmqbol9q"
       ],
       "styles": {
         "base": {
@@ -10455,6 +9950,16 @@
         "sm": {
           "default": {
             "width": "20%"
+          }
+        },
+        "md": {
+          "default": {
+            "width": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "15%"
           }
         }
       },
@@ -12956,13 +12461,13 @@
       "styles": {
         "base": {
           "default": {
-            "width": "40%",
-            "borderRadius": "12px"
+            "width": "60%",
+            "borderRadius": "0px"
           }
         },
         "sm": {
           "default": {
-            "width": "70%"
+            "width": "80%"
           }
         }
       }
@@ -13217,7 +12722,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "40%",
+            "width": "60%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "60px"
@@ -13225,7 +12730,7 @@
         },
         "sm": {
           "default": {
-            "width": "70%",
+            "width": "80%",
             "marginLeft": "30px"
           }
         }
@@ -13270,7 +12775,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "25%",
+            "width": "40%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "60px"
@@ -13278,7 +12783,7 @@
         },
         "sm": {
           "default": {
-            "width": "40%",
+            "width": "60%",
             "marginLeft": "30px"
           }
         }
@@ -13366,68 +12871,15 @@
       "styles": {
         "base": {
           "default": {
-            "width": "30%",
-            "borderRadius": "12px",
+            "width": "40%",
+            "borderRadius": "0px",
             "marginLeft": "60px"
           }
         },
         "sm": {
           "default": {
             "borderRadius": "0px",
-            "width": "50%",
-            "marginLeft": "30px"
-          }
-        }
-      }
-    },
-    "node_muikyvrx4n": {
-      "id": "node_muikyvrx4n",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_muil0ai74p"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px"
-          }
-        }
-      }
-    },
-    "node_muil0ai74p": {
-      "id": "node_muil0ai74p",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmuil09sn-pasted-artwork.svg",
-        "alt": "",
-        "width": 501,
-        "height": 154,
-        "assetId": "asset_muil0ai74o"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "32%",
-            "borderRadius": "0px",
-            "maxWidth": "100%",
-            "marginLeft": "120px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "50%",
+            "width": "70%",
             "marginLeft": "30px"
           }
         }
@@ -13484,7 +12936,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "30%",
+            "width": "40%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "60px"
@@ -13492,61 +12944,8 @@
         },
         "sm": {
           "default": {
-            "width": "50%",
+            "width": "70%",
             "marginLeft": "30px"
-          }
-        }
-      }
-    },
-    "node_muil5kwi4u": {
-      "id": "node_muil5kwi4u",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_muil742q4x"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px"
-          }
-        }
-      }
-    },
-    "node_muil742q4x": {
-      "id": "node_muil742q4x",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmuil738g-pasted-artwork.svg",
-        "alt": "",
-        "width": 1028,
-        "height": 262,
-        "assetId": "asset_muil742p4w"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "65%",
-            "borderRadius": "0px",
-            "maxWidth": "100%",
-            "marginLeft": "120px"
-          }
-        },
-        "sm": {
-          "default": {
-            "marginLeft": "10px",
-            "width": "95%"
           }
         }
       }
@@ -13602,7 +13001,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "17%",
+            "width": "30%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "60px"
@@ -13610,7 +13009,7 @@
         },
         "sm": {
           "default": {
-            "width": "30%",
+            "width": "50%",
             "marginLeft": "30px"
           }
         }
@@ -13658,7 +13057,7 @@
             "padding": "20px",
             "gap": "12px",
             "fontFamily": "Zen Kaku Gothic New",
-            "fontSize": "22px",
+            "fontSize": "25px",
             "fontWeight": "600",
             "lineHeight": "1",
             "color": "#ffffff",
@@ -13699,7 +13098,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "30%",
+            "width": "40%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "60px"
@@ -13799,7 +13198,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "35%",
+            "width": "50%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "60px"
@@ -13807,7 +13206,7 @@
         },
         "sm": {
           "default": {
-            "width": "60%",
+            "width": "70%",
             "marginLeft": "30px"
           }
         }
@@ -13862,7 +13261,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "23%",
+            "width": "35%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "60px"
@@ -13870,7 +13269,7 @@
         },
         "sm": {
           "default": {
-            "width": "40%",
+            "width": "50%",
             "marginLeft": "30px"
           }
         }
@@ -13915,7 +13314,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "25%",
+            "width": "30%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "100px"
@@ -13923,7 +13322,7 @@
         },
         "sm": {
           "default": {
-            "width": "40%",
+            "width": "60%",
             "marginLeft": "50px"
           }
         }
@@ -13959,6 +13358,12 @@
             "display": "flex",
             "flexDirection": "column"
           }
+        },
+        "lg": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column"
+          }
         }
       }
     },
@@ -13985,6 +13390,11 @@
         "sm": {
           "default": {
             "width": "60%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "50%"
           }
         }
       }
@@ -14013,6 +13423,11 @@
           "default": {
             "width": "60%"
           }
+        },
+        "lg": {
+          "default": {
+            "width": "50%"
+          }
         }
       }
     },
@@ -14039,6 +13454,11 @@
         "sm": {
           "default": {
             "width": "60%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "50%"
           }
         }
       }
@@ -14142,6 +13562,11 @@
             "transform": "rotate(90deg)",
             "width": "18%"
           }
+        },
+        "lg": {
+          "default": {
+            "transform": "rotate(90deg)"
+          }
         }
       }
     },
@@ -14168,6 +13593,11 @@
           "default": {
             "transform": "rotate(90deg)",
             "width": "18%"
+          }
+        },
+        "lg": {
+          "default": {
+            "transform": "rotate(90deg)"
           }
         }
       }
@@ -14239,7 +13669,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "30%",
+            "width": "40%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "60px"
@@ -14354,7 +13784,7 @@
       "name": "ボックス",
       "semantic": "auto",
       "text": {
-        "content": "自分が投票した企画は「きみのしおり」から確認できるよ。\n\n\n5部門中3部門以上投票すると　豪華景品が当たる 「ちゅーせんかい」に 参加できるよ。",
+        "content": "自分が投票した企画は「きみのしおり」から確認できるよ。\n\n\n5部門中3部門以上投票すると　豪華景品が当たる 「ちゅ〜せんかい」に 参加できるよ。",
         "heading": 0
       },
       "link": null,
@@ -14402,7 +13832,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "35%",
+            "width": "50%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "60px"
@@ -14442,6 +13872,11 @@
             "width": "80%",
             "marginRight": "0px"
           }
+        },
+        "lg": {
+          "default": {
+            "width": "50%"
+          }
         }
       }
     },
@@ -14468,6 +13903,11 @@
         "sm": {
           "default": {
             "width": "50%"
+          }
+        },
+        "lg": {
+          "default": {
+            "paddingTop": "50px"
           }
         }
       },
@@ -14564,7 +14004,23 @@
             "display": "flex",
             "flexDirection": "column",
             "justifyContent": "center",
+            "alignItems": "center"
+          }
+        },
+        "lg": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
             "alignItems": "flex-end"
+          }
+        },
+        "md": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "flex-end",
+            "alignItems": "center"
           }
         }
       }
@@ -14587,14 +14043,21 @@
             "padding": "20px",
             "gap": "12px",
             "position": "absolute",
-            "left": "50px",
+            "left": "0px",
             "top": "0px",
-            "width": "60%"
+            "width": "60%",
+            "marginLeft": "50px"
           }
         },
         "sm": {
           "default": {
             "width": "100%",
+            "left": "0px",
+            "marginLeft": "0px"
+          }
+        },
+        "lg": {
+          "default": {
             "left": "0px"
           }
         }
@@ -15141,6 +14604,12 @@
             "paddingTop": "0px",
             "paddingBottom": "0px"
           }
+        },
+        "lg": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column"
+          }
         }
       }
     },
@@ -15573,7 +15042,7 @@
         },
         "sm": {
           "default": {
-            "width": "90%"
+            "width": "100%"
           }
         },
         "lg": {
@@ -15583,13 +15052,15 @@
         }
       },
       "hiddenOn": [
-        "base"
+        "base",
+        "lg",
+        "md"
       ]
     },
     "node_mukyxc077": {
       "id": "node_mukyxc077",
       "type": "box",
-      "name": "ボックス",
+      "name": "選択肢",
       "semantic": "auto",
       "text": null,
       "link": null,
@@ -15606,6 +15077,12 @@
           }
         },
         "sm": {
+          "default": {
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        },
+        "lg": {
           "default": {
             "justifyContent": "center",
             "alignItems": "center"
@@ -15653,7 +15130,9 @@
           "default": {
             "fontFamily": "Zen Maru Gothic",
             "color": "#9b7a81",
-            "fontWeight": "600"
+            "fontWeight": "600",
+            "paddingRight": "10px",
+            "paddingLeft": "10px"
           }
         }
       },
@@ -15801,7 +15280,7 @@
     "node_mukyya809": {
       "id": "node_mukyya809",
       "type": "box",
-      "name": "ボックス",
+      "name": "選択肢",
       "semantic": "auto",
       "text": null,
       "link": null,
@@ -16008,11 +15487,6 @@
           },
           "trigger": "click"
         }
-      ],
-      "hiddenOn": [
-        "lg",
-        "md",
-        "sm"
       ]
     },
     "node_mukz3phzb": {
@@ -16039,7 +15513,9 @@
         },
         "sm": {
           "default": {
-            "width": "90%"
+            "width": "100%",
+            "borderRadius": "0px",
+            "height": "100%"
           }
         }
       },
@@ -16052,7 +15528,7 @@
     "node_mukz6fn9c": {
       "id": "node_mukz6fn9c",
       "type": "image",
-      "name": "時間軸",
+      "name": "スマホ時間軸",
       "semantic": "auto",
       "text": null,
       "link": null,
@@ -16073,12 +15549,14 @@
         },
         "sm": {
           "default": {
-            "width": "90%"
+            "width": "100%"
           }
         }
       },
       "hiddenOn": [
-        "base"
+        "base",
+        "lg",
+        "md"
       ]
     },
     "node_mul3k7nz3": {
@@ -16103,8 +15581,8 @@
             "flexDirection": "column",
             "gap": "12px",
             "position": "absolute",
-            "top": "120px",
-            "right": "350px",
+            "top": "0%",
+            "right": "30%",
             "justifyContent": "center",
             "alignItems": "center",
             "paddingTop": "0px",
@@ -16117,9 +15595,9 @@
         },
         "sm": {
           "default": {
-            "width": "65%",
-            "top": "0px",
-            "right": "50px"
+            "width": "70%",
+            "top": "0%",
+            "left": "24%"
           }
         }
       },
@@ -16157,7 +15635,7 @@
             "flexDirection": "column",
             "gap": "12px",
             "position": "absolute",
-            "top": "120px",
+            "top": "0%",
             "justifyContent": "center",
             "alignItems": "center",
             "paddingTop": "0px",
@@ -16165,17 +15643,17 @@
             "paddingBottom": "0px",
             "paddingLeft": "0px",
             "width": "16%",
-            "height": "2029px",
-            "left": "180px"
+            "height": "100%",
+            "left": "12%"
           }
         },
         "sm": {
           "default": {
-            "width": "70%",
-            "height": "3418px",
+            "width": "80%",
+            "height": "100%",
             "right": "90px",
             "bottom": "120px",
-            "left": "110px"
+            "left": "21%"
           }
         }
       },
@@ -16206,30 +15684,30 @@
             "flexDirection": "column",
             "gap": "12px",
             "position": "absolute",
-            "top": "120px",
+            "top": "0%",
             "justifyContent": "center",
             "alignItems": "center",
             "paddingTop": "0px",
             "paddingRight": "0px",
             "paddingBottom": "0px",
             "paddingLeft": "0px",
-            "width": "17%",
-            "height": "2045px",
-            "right": "90px"
+            "width": "18%",
+            "height": "100%",
+            "right": "7%"
           }
         },
         "sm": {
           "default": {
-            "width": "70%",
-            "height": "3230px",
-            "right": "45px"
+            "width": "80%",
+            "height": "100%",
+            "left": "23%"
           }
         }
       },
+      "attrId": "committee14",
       "hiddenOn": [
         "sm"
-      ],
-      "attrId": "committee14"
+      ]
     },
     "node_mumarvd31": {
       "id": "node_mumarvd31",
@@ -16257,29 +15735,27 @@
             "flexDirection": "column",
             "gap": "12px",
             "position": "absolute",
-            "left": "180px",
+            "left": "13%",
             "paddingTop": "0px",
             "paddingRight": "0px",
             "paddingBottom": "0px",
             "paddingLeft": "0px",
             "width": "16%",
-            "bottom": "0px",
-            "height": "2075px"
+            "bottom": "0%",
+            "height": "100%"
           }
         },
         "sm": {
           "default": {
-            "width": "67%",
+            "width": "75%",
             "right": "180px",
-            "left": "120px",
-            "height": "3350px"
+            "left": "22%",
+            "height": "100%"
           }
         }
       },
       "attrId": "main15",
       "hiddenOn": [
-        "lg",
-        "md",
         "sm"
       ]
     },
@@ -16300,27 +15776,25 @@
             "flexDirection": "column",
             "gap": "12px",
             "position": "absolute",
-            "left": "450px",
+            "left": "34%",
             "paddingTop": "0px",
             "paddingRight": "0px",
             "paddingBottom": "0px",
             "paddingLeft": "0px",
-            "width": "16%",
-            "top": "640px"
+            "width": "17%",
+            "top": "28%"
           }
         },
         "sm": {
           "default": {
-            "width": "70%",
+            "width": "75%",
             "right": "450px",
-            "left": "110px",
-            "top": "870px"
+            "left": "22%",
+            "top": "25.5%"
           }
         }
       },
       "hiddenOn": [
-        "lg",
-        "md",
         "sm"
       ],
       "attrId": "center15"
@@ -16346,26 +15820,27 @@
             "gap": "12px",
             "position": "absolute",
             "bottom": "0px",
-            "right": "350px",
+            "right": "28.5%",
             "width": "16%",
             "paddingTop": "0px",
             "paddingRight": "0px",
             "paddingBottom": "0px",
             "paddingLeft": "0px",
-            "height": "2075px"
+            "height": "100%"
           }
         },
         "sm": {
           "default": {
-            "width": "65%",
-            "right": "50px",
-            "height": "3350px"
+            "width": "70%",
+            "height": "100%",
+            "bottom": "0%",
+            "left": "26%",
+            "justifyContent": "center",
+            "alignItems": "center"
           }
         }
       },
       "hiddenOn": [
-        "lg",
-        "md",
         "sm"
       ],
       "attrId": "street15"
@@ -16395,26 +15870,32 @@
             "paddingRight": "0px",
             "paddingBottom": "0px",
             "paddingLeft": "0px",
-            "left": "180px",
-            "bottom": "0px",
-            "height": "2075px"
+            "left": "12%",
+            "bottom": "0%",
+            "height": "100%"
           }
         },
         "sm": {
           "default": {
-            "width": "65%",
-            "right": "50px",
-            "left": "120px"
+            "width": "70%",
+            "right": "0%",
+            "bottom": "0%",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "left": "25%"
           }
         },
         "lg": {
           "default": {
-            "width": "65%",
-            "left": "300px"
+            "width": "16%",
+            "left": "12%"
           }
         }
       },
-      "attrId": "main"
+      "attrId": "main",
+      "hiddenOn": [
+        "sm"
+      ]
     },
     "node_muno2mf3g": {
       "id": "node_muno2mf3g",
@@ -16434,55 +15915,18 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "0px",
-            "bottom": "310px"
+            "left": "0%",
+            "bottom": "13.5%"
           }
         },
         "sm": {
           "default": {
-            "bottom": "480px"
-          }
-        },
-        "lg": {
-          "default": {
-            "width": "100%"
-          }
-        }
-      }
-    },
-    "node_muno2zdzi": {
-      "id": "node_muno2zdzi",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmuno2z3u-pasted-artwork.svg",
-        "alt": "",
-        "width": 306,
-        "height": 113,
-        "assetId": "asset_muno2zdzh"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "306px",
-            "borderRadius": "0px",
-            "maxWidth": "100%",
-            "position": "absolute",
-            "left": "0px",
-            "bottom": "210px"
-          }
-        },
-        "sm": {
-          "default": {
-            "bottom": "310px"
+            "bottom": "14%",
+            "left": "0%"
           }
         },
         "lg": {
@@ -16510,23 +15954,25 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "bottom": "550px"
+            "bottom": "24.5%"
           }
         },
         "sm": {
           "default": {
-            "bottom": "860px"
+            "bottom": "25.2%",
+            "left": "0%"
           }
         },
         "lg": {
           "default": {
             "width": "100%",
-            "bottom": "1920px"
+            "bottom": "24.5%",
+            "left": "0%"
           }
         }
       }
@@ -16549,23 +15995,25 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "bottom": "450px"
+            "bottom": "20%"
           }
         },
         "sm": {
           "default": {
-            "bottom": "700px"
+            "bottom": "20.2%",
+            "left": "0%"
           }
         },
         "lg": {
           "default": {
             "width": "100%",
-            "bottom": "1550px"
+            "bottom": "20%",
+            "left": "0%"
           }
         }
       }
@@ -16588,18 +16036,19 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "top": "220px"
+            "top": "15.5%"
           }
         },
         "sm": {
           "default": {
-            "top": "290px",
-            "width": "100%"
+            "top": "12%",
+            "width": "100%",
+            "left": "0%"
           }
         }
       }
@@ -16622,18 +16071,19 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "top": "320px"
+            "top": "20%"
           }
         },
         "sm": {
           "default": {
-            "top": "460px",
-            "width": "100%"
+            "top": "17%",
+            "width": "100%",
+            "left": "0%"
           }
         }
       }
@@ -16656,18 +16106,19 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "top": "430px"
+            "top": "25%"
           }
         },
         "sm": {
           "default": {
-            "top": "620px",
-            "width": "100%"
+            "top": "22%",
+            "width": "100%",
+            "left": "0%"
           }
         }
       }
@@ -16690,18 +16141,19 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "top": "535px"
+            "top": "29.5%"
           }
         },
         "sm": {
           "default": {
-            "top": "790px",
-            "width": "100%"
+            "top": "27%",
+            "width": "100%",
+            "left": "0%"
           }
         }
       }
@@ -16724,18 +16176,19 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "top": "740px"
+            "top": "39%"
           }
         },
         "sm": {
           "default": {
-            "top": "1120px",
-            "width": "100%"
+            "top": "36.5%",
+            "width": "100%",
+            "left": "0%"
           }
         }
       }
@@ -16758,18 +16211,19 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "top": "840px"
+            "top": "43.5%"
           }
         },
         "sm": {
           "default": {
-            "top": "1280px",
-            "width": "100%"
+            "top": "41.5%",
+            "width": "100%",
+            "left": "0%"
           }
         }
       }
@@ -16792,18 +16246,19 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "top": "940px"
+            "top": "48%"
           }
         },
         "sm": {
           "default": {
-            "top": "1450px",
-            "width": "100%"
+            "top": "46.5%",
+            "width": "100%",
+            "left": "0%"
           }
         }
       }
@@ -16826,18 +16281,20 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "bottom": "770px"
+            "top": "59.5%"
           }
         },
         "sm": {
           "default": {
-            "bottom": "1460px",
-            "width": "100%"
+            "bottom": "59.5%",
+            "width": "100%",
+            "left": "0%",
+            "top": "58%"
           }
         }
       }
@@ -16860,18 +16317,20 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "bottom": "660px"
+            "top": "64%"
           }
         },
         "sm": {
           "default": {
             "bottom": "1290px",
-            "width": "100%"
+            "width": "100%",
+            "left": "0%",
+            "top": "63%"
           }
         }
       }
@@ -16894,18 +16353,20 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "bottom": "560px"
+            "top": "68.5%"
           }
         },
         "sm": {
           "default": {
             "bottom": "1120px",
-            "width": "100%"
+            "width": "100%",
+            "left": "0%",
+            "top": "68%"
           }
         }
       }
@@ -16928,18 +16389,19 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "bottom": "910px"
+            "top": "53%"
           }
         },
         "sm": {
           "default": {
-            "top": "1620px",
-            "width": "100%"
+            "top": "51.5%",
+            "width": "100%",
+            "left": "0%"
           }
         }
       }
@@ -16962,17 +16424,17 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "0px",
-            "top": "5px"
+            "left": "0%",
+            "top": "9%"
           }
         },
         "sm": {
           "default": {
-            "top": "160px"
+            "top": "5.5%"
           }
         }
       }
@@ -16995,17 +16457,17 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "0px",
-            "top": "110px"
+            "left": "0%",
+            "top": "14%"
           }
         },
         "sm": {
           "default": {
-            "top": "330px"
+            "top": "10.5%"
           }
         }
       }
@@ -17028,17 +16490,17 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "0px",
-            "top": "220px"
+            "left": "0%",
+            "top": "18.5%"
           }
         },
         "sm": {
           "default": {
-            "top": "490px"
+            "top": "15%"
           }
         }
       }
@@ -17061,17 +16523,17 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "0px",
-            "top": "320px"
+            "left": "0%",
+            "top": "23%"
           }
         },
         "sm": {
           "default": {
-            "top": "660px"
+            "top": "20%"
           }
         }
       }
@@ -17094,17 +16556,17 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "0px",
-            "top": "540px"
+            "left": "0%",
+            "top": "32.5%"
           }
         },
         "sm": {
           "default": {
-            "top": "990px"
+            "top": "30%"
           }
         }
       }
@@ -17127,17 +16589,17 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "0px",
-            "top": "640px"
+            "left": "0%",
+            "top": "37%"
           }
         },
         "sm": {
           "default": {
-            "top": "1160px"
+            "top": "35%"
           }
         }
       }
@@ -17160,17 +16622,17 @@
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "0px",
-            "top": "750px"
+            "left": "0%",
+            "top": "42%"
           }
         },
         "sm": {
           "default": {
-            "top": "1320px"
+            "top": "40%"
           }
         }
       }
@@ -18713,7 +18175,7 @@
     "node_muqw3e066": {
       "id": "node_muqw3e066",
       "type": "box",
-      "name": "ボックス",
+      "name": "選択肢",
       "semantic": "auto",
       "text": null,
       "link": null,
@@ -18743,7 +18205,9 @@
         }
       },
       "hiddenOn": [
-        "base"
+        "base",
+        "lg",
+        "md"
       ]
     },
     "node_muqw3e067": {
@@ -18917,7 +18381,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "30%",
+            "width": "40%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "60px"
@@ -18976,7 +18440,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "30%",
+            "width": "40%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "60px"
@@ -19037,7 +18501,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "30%",
+            "width": "40%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "60px"
@@ -19418,7 +18882,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "25%",
+            "width": "40%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "60px"
@@ -19426,7 +18890,7 @@
         },
         "sm": {
           "default": {
-            "width": "40%",
+            "width": "60%",
             "marginLeft": "30px"
           }
         }
@@ -19458,6 +18922,12 @@
           }
         },
         "sm": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column"
+          }
+        },
+        "lg": {
           "default": {
             "display": "flex",
             "flexDirection": "column"
@@ -19832,6 +19302,11 @@
             "width": "30%",
             "marginLeft": "30px"
           }
+        },
+        "lg": {
+          "default": {
+            "marginLeft": "50px"
+          }
         }
       }
     },
@@ -19964,67 +19439,6 @@
           }
         }
       ]
-    },
-    "node_muw98f5037": {
-      "id": "node_muw98f5037",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_muw98gvg38"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px"
-          }
-        }
-      }
-    },
-    "node_muw98gvg38": {
-      "id": "node_muw98gvg38",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_muw98ixj39"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px"
-          }
-        }
-      }
-    },
-    "node_muw98ixj39": {
-      "id": "node_muw98ixj39",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px"
-          }
-        }
-      }
     },
     "node_muw98p703a": {
       "id": "node_muw98p703a",
@@ -20198,7 +19612,8 @@
             "paddingTop": "0px",
             "paddingRight": "20px",
             "paddingBottom": "20px",
-            "paddingLeft": "20px"
+            "paddingLeft": "20px",
+            "marginBottom": "100px"
           }
         },
         "sm": {
@@ -20227,7 +19642,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "20%",
+            "width": "30%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "180px"
@@ -20284,6 +19699,12 @@
           }
         },
         "sm": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column"
+          }
+        },
+        "lg": {
           "default": {
             "display": "flex",
             "flexDirection": "column"
@@ -20405,7 +19826,8 @@
             "paddingTop": "0px",
             "paddingRight": "20px",
             "paddingBottom": "20px",
-            "paddingLeft": "20px"
+            "paddingLeft": "20px",
+            "marginBottom": "100px"
           }
         },
         "sm": {
@@ -20434,7 +19856,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "20%",
+            "width": "30%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "180px"
@@ -20484,7 +19906,8 @@
             "paddingTop": "0px",
             "paddingRight": "20px",
             "paddingBottom": "20px",
-            "paddingLeft": "20px"
+            "paddingLeft": "20px",
+            "marginBottom": "100px"
           }
         },
         "sm": {
@@ -20513,7 +19936,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "20%",
+            "width": "30%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "180px"
@@ -20592,7 +20015,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "20%",
+            "width": "30%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "180px"
@@ -20631,7 +20054,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_muwbmxp34n",
+        "node_muwbp7xc51",
         "node_muwbmxp34p"
       ],
       "styles": {
@@ -20653,39 +20076,11 @@
             "display": "flex",
             "flexDirection": "column"
           }
-        }
-      }
-    },
-    "node_muwbmxp34n": {
-      "id": "node_muwbmxp34n",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_muwbp7xc51"
-      ],
-      "styles": {
-        "base": {
+        },
+        "lg": {
           "default": {
             "display": "flex",
-            "flexDirection": "row",
-            "gap": "12px",
-            "width": "40%",
-            "paddingTop": "0px",
-            "paddingRight": "0px",
-            "paddingBottom": "0px",
-            "paddingLeft": "0px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "70%",
-            "paddingTop": "0px",
-            "paddingRight": "0px",
-            "paddingBottom": "0px",
-            "paddingLeft": "0px"
+            "flexDirection": "column"
           }
         }
       }
@@ -20793,7 +20188,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_muwbn8bz4s",
+        "node_muwboor94z",
         "node_muwbn8bz4u"
       ],
       "styles": {
@@ -20815,39 +20210,11 @@
             "display": "flex",
             "flexDirection": "column"
           }
-        }
-      }
-    },
-    "node_muwbn8bz4s": {
-      "id": "node_muwbn8bz4s",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_muwboor94z"
-      ],
-      "styles": {
-        "base": {
+        },
+        "lg": {
           "default": {
             "display": "flex",
-            "flexDirection": "row",
-            "gap": "12px",
-            "width": "35%",
-            "paddingTop": "0px",
-            "paddingRight": "0px",
-            "paddingBottom": "0px",
-            "paddingLeft": "0px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "70%",
-            "paddingTop": "0px",
-            "paddingRight": "0px",
-            "paddingBottom": "0px",
-            "paddingLeft": "0px"
+            "flexDirection": "column"
           }
         }
       }
@@ -20965,14 +20332,14 @@
       "styles": {
         "base": {
           "default": {
-            "width": "562%",
+            "width": "50%",
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
         },
         "sm": {
           "default": {
-            "width": "100%"
+            "width": "70%"
           }
         }
       }
@@ -20995,9 +20362,14 @@
       "styles": {
         "base": {
           "default": {
-            "width": "674px",
+            "width": "50%",
             "borderRadius": "0px",
             "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "70%"
           }
         }
       }
@@ -21090,36 +20462,6 @@
         }
       }
     },
-    "node_muxi7xaxg": {
-      "id": "node_muxi7xaxg",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmuxi7wpp-pasted-artwork.svg",
-        "alt": "",
-        "width": 1183,
-        "height": 117,
-        "assetId": "asset_muxi7xawf"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "60%",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "90%"
-          }
-        }
-      }
-    },
     "node_muxi8ecoh": {
       "id": "node_muxi8ecoh",
       "type": "box",
@@ -21143,6 +20485,14 @@
           }
         },
         "sm": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "alignItems": "flex-start"
+          }
+        },
+        "lg": {
           "default": {
             "display": "flex",
             "flexDirection": "column",
@@ -21249,6 +20599,12 @@
             "justifyContent": "center",
             "alignItems": "flex-start"
           }
+        },
+        "lg": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column"
+          }
         }
       }
     },
@@ -21306,7 +20662,7 @@
             "paddingRight": "20px",
             "paddingBottom": "20px",
             "paddingLeft": "20px",
-            "marginLeft": "60px"
+            "marginLeft": "0px"
           }
         }
       }
@@ -21359,9 +20715,12 @@
           "default": {
             "display": "flex",
             "flexDirection": "column",
-            "padding": "20px",
             "gap": "12px",
-            "width": "90%"
+            "width": "100%",
+            "paddingTop": "0px",
+            "paddingRight": "20px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
           }
         },
         "sm": {
@@ -21390,8 +20749,12 @@
           "default": {
             "display": "flex",
             "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px"
+            "gap": "12px",
+            "width": "90%",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
           }
         }
       }
@@ -21411,9 +20774,12 @@
           "default": {
             "display": "flex",
             "flexDirection": "column",
-            "padding": "20px",
             "gap": "12px",
-            "width": "90%"
+            "width": "100%",
+            "paddingTop": "0px",
+            "paddingRight": "20px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
           }
         },
         "sm": {
@@ -21446,7 +20812,7 @@
         "base": {
           "default": {
             "width": "100%",
-            "borderRadius": "12px"
+            "borderRadius": "0px"
           }
         },
         "sm": {
@@ -21475,7 +20841,7 @@
         "base": {
           "default": {
             "width": "100%",
-            "borderRadius": "12px"
+            "borderRadius": "0px"
           }
         },
         "sm": {
@@ -21531,9 +20897,12 @@
           "default": {
             "display": "flex",
             "flexDirection": "column",
-            "padding": "20px",
             "gap": "12px",
-            "width": "80%"
+            "width": "100%",
+            "paddingTop": "20px",
+            "paddingRight": "20px",
+            "paddingBottom": "20px",
+            "paddingLeft": "0px"
           }
         },
         "sm": {
@@ -21562,9 +20931,12 @@
           "default": {
             "display": "flex",
             "flexDirection": "column",
-            "padding": "20px",
             "gap": "12px",
-            "width": "70%"
+            "width": "100%",
+            "paddingTop": "20px",
+            "paddingRight": "0px",
+            "paddingBottom": "20px",
+            "paddingLeft": "20px"
           }
         },
         "sm": {
@@ -21597,7 +20969,7 @@
         "base": {
           "default": {
             "width": "100%",
-            "borderRadius": "12px"
+            "borderRadius": "0px"
           }
         },
         "sm": {
@@ -21626,7 +20998,7 @@
         "base": {
           "default": {
             "width": "100%",
-            "borderRadius": "12px"
+            "borderRadius": "0px"
           }
         },
         "sm": {
@@ -21658,13 +21030,13 @@
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "0px",
-            "top": "390px"
+            "left": "0%",
+            "top": "23%"
           }
         },
         "sm": {
           "default": {
-            "top": "690px"
+            "top": "20%"
           }
         }
       }
@@ -21692,15 +21064,16 @@
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "top": "1220px"
+            "top": "60.5%"
           }
         },
         "sm": {
           "default": {
             "position": "absolute",
-            "left": "0px",
+            "left": "0%",
             "bottom": "0px",
-            "top": "2020px"
+            "top": "59.8%",
+            "width": "100%"
           }
         }
       }
@@ -21764,7 +21137,7 @@
     "node_muz2hxt46": {
       "id": "node_muz2hxt46",
       "type": "box",
-      "name": "ボックス",
+      "name": "アイコン",
       "semantic": "auto",
       "text": null,
       "link": null,
@@ -21790,12 +21163,12 @@
             "flexDirection": "column",
             "gap": "12px",
             "position": "absolute",
-            "top": "1150px",
+            "top": "40%",
             "paddingTop": "0px",
             "paddingRight": "0px",
             "paddingBottom": "0px",
             "paddingLeft": "0px",
-            "right": "200px",
+            "right": "10%",
             "width": "35%"
           }
         },
@@ -21811,7 +21184,7 @@
     "node_muz2jz0q7": {
       "id": "node_muz2jz0q7",
       "type": "image",
-      "name": "pasted-artwork.svg",
+      "name": "背景",
       "semantic": "auto",
       "text": null,
       "link": null,
@@ -21838,7 +21211,7 @@
       "name": "ボックス",
       "semantic": "auto",
       "text": {
-        "content": "木匠生のワッフル&雑貨屋さん",
+        "content": "出展名",
         "heading": 0
       },
       "link": null,
@@ -21850,8 +21223,8 @@
             "flexDirection": "column",
             "gap": "12px",
             "position": "absolute",
-            "left": "60px",
-            "top": "45px",
+            "left": "13%",
+            "top": "15%",
             "paddingTop": "0px",
             "paddingRight": "0px",
             "paddingBottom": "0px",
@@ -21879,7 +21252,7 @@
       "name": "ボックス",
       "semantic": "auto",
       "text": {
-        "content": "加子母木匠塾",
+        "content": "出展者名",
         "heading": 0
       },
       "link": null,
@@ -21891,8 +21264,7 @@
             "flexDirection": "column",
             "gap": "12px",
             "position": "absolute",
-            "left": "60px",
-            "top": "90px",
+            "top": "32%",
             "paddingTop": "0px",
             "paddingRight": "0px",
             "paddingBottom": "0px",
@@ -21902,7 +21274,8 @@
             "fontWeight": "500",
             "color": "#ffffff",
             "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.3)",
-            "width": "70%"
+            "width": "70%",
+            "left": "13%"
           }
         }
       }
@@ -21929,9 +21302,9 @@
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "60px",
+            "left": "13%",
             "boxShadow": "0px 4px 5px 0px rgba(0, 0, 0, 0.3)",
-            "bottom": "50px"
+            "bottom": "16%"
           }
         }
       }
@@ -21961,6 +21334,11 @@
             "color": "#ffffff",
             "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.5)"
           }
+        },
+        "sm": {
+          "default": {
+            "fontSize": "16px"
+          }
         }
       }
     },
@@ -21983,7 +21361,7 @@
         "base": {
           "default": {
             "width": "100%",
-            "borderRadius": "12px"
+            "borderRadius": "0px"
           }
         }
       }
@@ -22136,8 +21514,8 @@
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "top": "130px",
-            "left": "180px"
+            "top": "45%",
+            "left": "40%"
           }
         }
       }
@@ -22164,8 +21542,8 @@
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "183px",
-            "top": "160px"
+            "left": "40.5%",
+            "top": "55%"
           }
         }
       }
@@ -22188,8 +21566,8 @@
             "flexDirection": "column",
             "gap": "12px",
             "position": "absolute",
-            "left": "200px",
-            "top": "130px",
+            "left": "45%",
+            "top": "45%",
             "width": "40%",
             "fontFamily": "Zen Kaku Gothic New",
             "fontSize": "11px",
@@ -22222,8 +21600,8 @@
             "flexDirection": "column",
             "gap": "12px",
             "position": "absolute",
-            "left": "200px",
-            "top": "160px",
+            "left": "45%",
+            "top": "55%",
             "width": "20%",
             "fontFamily": "Zen Kaku Gothic New",
             "fontSize": "11px",
@@ -22316,8 +21694,8 @@
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "top": "40px",
-            "right": "55px"
+            "top": "13%",
+            "right": "10%"
           }
         }
       }
@@ -22596,8 +21974,8 @@
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "55px",
-            "top": "80px"
+            "left": "13%",
+            "top": "27%"
           }
         }
       }
@@ -23404,11 +22782,11 @@
             "gap": "12px",
             "position": "absolute",
             "backgroundColor": "#ffffff",
-            "right": "60px",
-            "bottom": "88px",
+            "right": "13%",
+            "bottom": "30%",
             "width": "25%",
             "height": "10%",
-            "paddingTop": "5px",
+            "paddingTop": "0px",
             "paddingRight": "0px",
             "paddingBottom": "0px",
             "paddingLeft": "0px",
@@ -23417,7 +22795,15 @@
             "fontSize": "12px",
             "fontWeight": "600",
             "color": "#9b7a81",
-            "textAlign": "center"
+            "textAlign": "center",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        },
+        "lg": {
+          "default": {
+            "justifyContent": "center",
+            "alignItems": "center"
           }
         }
       }
@@ -23441,11 +22827,11 @@
             "gap": "12px",
             "position": "absolute",
             "backgroundColor": "#ffffff",
-            "right": "60px",
-            "bottom": "50px",
+            "right": "13%",
+            "bottom": "17%",
             "width": "23%",
             "height": "10%",
-            "paddingTop": "5px",
+            "paddingTop": "0px",
             "paddingRight": "0px",
             "paddingBottom": "0px",
             "paddingLeft": "0px",
@@ -23454,7 +22840,9 @@
             "fontSize": "11px",
             "fontWeight": "600",
             "color": "#9b7a81",
-            "textAlign": "center"
+            "textAlign": "center",
+            "justifyContent": "center",
+            "alignItems": "center"
           }
         }
       }
@@ -23478,11 +22866,11 @@
             "gap": "12px",
             "position": "absolute",
             "backgroundColor": "#ffffff",
-            "right": "170px",
-            "bottom": "50px",
+            "right": "37%",
+            "bottom": "17%",
             "width": "20%",
             "height": "10%",
-            "paddingTop": "5px",
+            "paddingTop": "0px",
             "paddingRight": "0px",
             "paddingBottom": "0px",
             "paddingLeft": "0px",
@@ -23491,7 +22879,9 @@
             "fontSize": "11px",
             "fontWeight": "600",
             "color": "#9b7a81",
-            "textAlign": "center"
+            "textAlign": "center",
+            "justifyContent": "center",
+            "alignItems": "center"
           }
         },
         "sm": {
@@ -24168,7 +23558,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "35%",
+            "width": "50%",
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
@@ -24198,7 +23588,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "35%",
+            "width": "50%",
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
@@ -24206,32 +23596,6 @@
         "sm": {
           "default": {
             "width": "70%"
-          }
-        }
-      }
-    },
-    "node_mv1x05u056": {
-      "id": "node_mv1x05u056",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmv1x044n-pasted-artwork.svg",
-        "alt": "",
-        "width": 1704,
-        "height": 1867,
-        "assetId": "asset_mv1x05tz55"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "80%",
-            "borderRadius": "0px",
-            "maxWidth": "100%",
-            "marginLeft": "40px"
           }
         }
       }
@@ -24254,12 +23618,14 @@
       "styles": {
         "base": {
           "default": {
-            "width": "20%",
+            "width": "30%",
             "borderRadius": "0px",
-            "maxWidth": "100%",
-            "position": "absolute",
-            "left": "450px",
-            "bottom": "50px"
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "50%"
           }
         }
       },
@@ -24313,9 +23679,10 @@
       "styles": {
         "base": {
           "default": {
-            "width": "30%",
+            "width": "40%",
             "borderRadius": "0px",
-            "maxWidth": "100%"
+            "maxWidth": "100%",
+            "marginLeft": "60px"
           }
         }
       }
@@ -24362,7 +23729,12 @@
         "base": {
           "default": {
             "width": "80%",
-            "borderRadius": "12px"
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "borderRadius": "0px"
           }
         }
       }
@@ -24611,35 +23983,6 @@
         }
       }
     },
-    "node_mv3cy8qq7": {
-      "id": "node_mv3cy8qq7",
-      "type": "image",
-      "name": "時間軸",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmv3cy7xz-pasted-artwork.svg",
-        "alt": "",
-        "width": 1670,
-        "height": 3081,
-        "assetId": "asset_mv3cy8qq6"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "95%",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      },
-      "hiddenOn": [
-        "lg",
-        "sm"
-      ]
-    },
     "node_mv3d0ux78": {
       "id": "node_mv3d0ux78",
       "type": "image",
@@ -24670,7 +24013,7 @@
     "node_mv3d31ar9": {
       "id": "node_mv3d31ar9",
       "type": "image",
-      "name": "時間軸",
+      "name": "PC時間軸",
       "semantic": "auto",
       "text": null,
       "link": null,
@@ -24691,8 +24034,6 @@
         }
       },
       "hiddenOn": [
-        "lg",
-        "md",
         "sm"
       ]
     },
@@ -24733,6 +24074,826 @@
           "fillMode": "both"
         }
       ]
+    },
+    "node_mv3gcy3t1": {
+      "id": "node_mv3gcy3t1",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": {
+        "content": "第56回松ヶ崎祭を開催するにあたり、多くの方々にご協賛いただきました。\nここに深く御礼申し上げます。（敬称略・順不同）",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "12px",
+            "height": "100%",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "auto",
+            "textAlign": "center",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "25px",
+            "fontWeight": "600",
+            "color": "#ffffff",
+            "paddingTop": "50px",
+            "paddingRight": "20px",
+            "paddingBottom": "50px",
+            "paddingLeft": "20px"
+          }
+        },
+        "sm": {
+          "default": {
+            "height": "100%",
+            "width": "auto",
+            "fontSize": "15px"
+          }
+        },
+        "md": {
+          "default": {
+            "height": "100%",
+            "width": "100%",
+            "paddingTop": "50px",
+            "paddingBottom": "50px",
+            "textAlign": "center",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "20px"
+          }
+        },
+        "lg": {
+          "default": {
+            "fontSize": "20px"
+          }
+        }
+      }
+    },
+    "node_mv3h8d915": {
+      "id": "node_mv3h8d915",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": {
+        "content": "きみ専用の　ページだよ。\nお気に入りの企画を見たり　m-1グランプリに投票したりできるよ。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "12px",
+            "height": "100%",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "100%",
+            "textAlign": "center",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "25px",
+            "fontWeight": "600",
+            "color": "#ffffff",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.5)",
+            "paddingTop": "50px",
+            "paddingRight": "20px",
+            "paddingBottom": "50px",
+            "paddingLeft": "20px"
+          }
+        },
+        "sm": {
+          "default": {
+            "height": "100%",
+            "fontSize": "14px"
+          }
+        },
+        "lg": {
+          "default": {
+            "height": "100%"
+          }
+        },
+        "md": {
+          "default": {
+            "fontSize": "20px"
+          }
+        }
+      }
+    },
+    "node_mv3hhofk7": {
+      "id": "node_mv3hhofk7",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": {
+        "content": "きみ専用の　ページだよ。\nお気に入りの企画を見たり　m-1グランプリに投票したりできるよ。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "12px",
+            "height": "100%",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "100%",
+            "textAlign": "center",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "25px",
+            "fontWeight": "600",
+            "color": "#ffffff",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.5)",
+            "paddingTop": "50px",
+            "paddingRight": "20px",
+            "paddingBottom": "50px",
+            "paddingLeft": "20px"
+          }
+        },
+        "sm": {
+          "default": {
+            "height": "100%",
+            "fontSize": "14px"
+          }
+        },
+        "lg": {
+          "default": {
+            "height": "100%",
+            "fontSize": "20px"
+          }
+        },
+        "md": {
+          "default": {
+            "fontSize": "20px"
+          }
+        }
+      }
+    },
+    "node_mv3i72l38": {
+      "id": "node_mv3i72l38",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mv3i72l39"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        }
+      }
+    },
+    "node_mv3i72l39": {
+      "id": "node_mv3i72l39",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": {
+        "content": "本日は第56回松ヶ崎祭にご来場いただきありがとうございます。\n松ヶ崎祭実行委員会を代表しまして心より歓迎申し上げます。\n\nまた、松ヶ崎祭の開催にあたり、日頃より多大なるご支援・ご協力を賜りました、すべての関係者の皆さまに、深く御礼申し上げます。\n\n今年の松ヶ崎祭開催に向けて、出展者さまが安心して当日を迎えられるよう、そして松ヶ崎祭が無事に開催できるよう、準備に注力してきました。\n\n私たちが準備してきた過程は注目されにくいものがほとんどです。しかし、その成果として、構内の至る所に、私たちが無我夢中で創り上げた景色が広がっています。私たち松ヶ崎祭実行委員会は「松ヶ崎祭での時間に思わず熱中してしまうような最高の体験を、出展者の皆さま、そして来場される皆さまに届けたい」という一心で、松ヶ崎祭が終わる最後の時まで駆け抜けます。\n\n今年の松ヶ崎祭のテーマは「夢宙」です。松ヶ崎祭という無限の夢が宙がる空間に、時間を忘れて没入していただければ幸いです。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "25px",
+            "fontWeight": "600",
+            "lineHeight": "1.7",
+            "color": "#ffffff",
+            "width": "90%",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.5)"
+          }
+        },
+        "sm": {
+          "default": {
+            "fontSize": "16px"
+          }
+        }
+      }
+    },
+    "node_mv3j1k9ua": {
+      "id": "node_mv3j1k9ua",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mv1x28ry58"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        }
+      }
+    },
+    "node_mv3jwmb3c": {
+      "id": "node_mv3jwmb3c",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmv3jwlll-pasted-artwork.svg",
+        "alt": "",
+        "width": 1704,
+        "height": 1931,
+        "assetId": "asset_mv3jwmb3b"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "90%",
+            "borderRadius": "0px",
+            "maxWidth": "100%",
+            "marginLeft": "50px"
+          }
+        }
+      }
+    },
+    "node_mv3k6tjxg": {
+      "id": "node_mv3k6tjxg",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mv3k729sh"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px"
+          }
+        }
+      }
+    },
+    "node_mv3k729sh": {
+      "id": "node_mv3k729sh",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": {
+        "content": "・地下鉄烏丸線　松ヶ崎駅　8分\n\n・叡山電車　一乗寺駅　11分\n\n・叡山電車　修学院駅　14分",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "12px",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "25px",
+            "fontWeight": "600",
+            "color": "#ffffff",
+            "paddingTop": "20px",
+            "paddingRight": "20px",
+            "paddingBottom": "20px",
+            "paddingLeft": "20px"
+          }
+        },
+        "sm": {
+          "default": {
+            "fontSize": "16px"
+          }
+        }
+      }
+    },
+    "node_mv3k8co5i": {
+      "id": "node_mv3k8co5i",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mv3k8keej"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px"
+          }
+        }
+      }
+    },
+    "node_mv3k8keej": {
+      "id": "node_mv3k8keej",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": {
+        "content": "・市バス65号系統など　左京区総合庁舎・京都工芸繊維大学前　1分\n\n\n・京都バス17・43号系統など　高野泉町　4分\n\n\n・市バス松ヶ崎4号系統など　左京区総合庁舎前　5分\n\n\n・市バス北8・65号系統など　松ヶ崎海尻町　7分\n\n\n・市バス206・204号系統など　高木町　8分",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "12px",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "25px",
+            "lineHeight": "1",
+            "color": "#ffffff",
+            "fontWeight": "600",
+            "paddingTop": "20px",
+            "paddingRight": "20px",
+            "paddingBottom": "20px",
+            "paddingLeft": "20px"
+          }
+        },
+        "sm": {
+          "default": {
+            "fontSize": "16px"
+          }
+        }
+      }
+    },
+    "node_mv3na086m": {
+      "id": "node_mv3na086m",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mukz6fn9c",
+        "node_mv3d31ar9"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "12px",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mv3piez0o": {
+      "id": "node_mv3piez0o",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": {
+        "content": "1日の日程表を　見ることができるよ。\nメインステージでの催しや　音楽サークルの公演時間を　確認しよう。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "25px",
+            "color": "#ffffff",
+            "fontWeight": "600",
+            "textAlign": "center",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.5)"
+          }
+        },
+        "sm": {
+          "default": {
+            "fontSize": "13px"
+          }
+        },
+        "md": {
+          "default": {
+            "fontSize": "20px"
+          }
+        }
+      }
+    },
+    "node_mv3pku89p": {
+      "id": "node_mv3pku89p",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": {
+        "content": "1日の日程表を　見ることができるよ。\nメインステージでの催しや　音楽サークルの公演時間を　確認しよう。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "25px",
+            "color": "#ffffff",
+            "fontWeight": "600",
+            "textAlign": "center",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.5)"
+          }
+        },
+        "sm": {
+          "default": {
+            "fontSize": "13px"
+          }
+        },
+        "md": {
+          "default": {
+            "fontSize": "20px"
+          }
+        }
+      }
+    },
+    "node_mv3pl2vxq": {
+      "id": "node_mv3pl2vxq",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": {
+        "content": "1日の日程表を　見ることができるよ。\nメインステージでの催しや　音楽サークルの公演時間を　確認しよう。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "25px",
+            "color": "#ffffff",
+            "fontWeight": "600",
+            "textAlign": "center",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.5)"
+          }
+        },
+        "sm": {
+          "default": {
+            "fontSize": "13px"
+          }
+        },
+        "md": {
+          "default": {
+            "fontSize": "20px"
+          }
+        }
+      }
+    },
+    "node_mv3plg65r": {
+      "id": "node_mv3plg65r",
+      "type": "box",
+      "name": "説明",
+      "semantic": "auto",
+      "text": {
+        "content": "松ヶ崎祭には　企画がいっぱい。\n気になる言葉から　きみにぴったりの企画を見つけてね。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "25px",
+            "color": "#ffffff",
+            "fontWeight": "600",
+            "textAlign": "center",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.5)",
+            "width": "100%",
+            "height": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "fontSize": "16px"
+          }
+        }
+      }
+    },
+    "node_mv3q0vfks": {
+      "id": "node_mv3q0vfks",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_munnnh3xa",
+        "node_mukxj7cg1",
+        "node_mv3trpaov"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "12px",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingRight": "0px",
+            "paddingLeft": "0px",
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "width": "100%",
+            "justifyContent": "center",
+            "alignItems": "flex-start"
+          }
+        }
+      }
+    },
+    "node_muno2zdzi": {
+      "id": "node_muno2zdzi",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmuno2z3u-pasted-artwork.svg",
+        "alt": "",
+        "width": 306,
+        "height": 113,
+        "assetId": "asset_muno2zdzh"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%",
+            "position": "absolute",
+            "left": "0px",
+            "bottom": "8.5%"
+          }
+        },
+        "sm": {
+          "default": {
+            "bottom": "9%",
+            "left": "0%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mv3qwbqmu": {
+      "id": "node_mv3qwbqmu",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mul5bqw9c",
+        "node_mue9jag92r",
+        "node_mul3k7nz3",
+        "node_mul5klbqj",
+        "node_mukz3phzb",
+        "node_mv3d0ux78"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingRight": "0px",
+            "paddingLeft": "0px",
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mv3trpaov": {
+      "id": "node_mv3trpaov",
+      "type": "image",
+      "name": "時間軸",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmv3cy7xz-pasted-artwork.svg",
+        "alt": "",
+        "width": 1670,
+        "height": 3081,
+        "assetId": "asset_mv3cy8qq6"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "12px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
+    },
+    "node_mv3y7iajw": {
+      "id": "node_mv3y7iajw",
+      "type": "box",
+      "name": "検索バー",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mv3y9q4oy",
+        "node_mv3ygejd12"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "100%",
+            "height": "100%",
+            "marginTop": "50px"
+          }
+        }
+      }
+    },
+    "node_mv3ygejd12": {
+      "id": "node_mv3ygejd12",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmv3ygh4o-pasted-artwork.svg",
+        "alt": "",
+        "width": 1473,
+        "height": 195,
+        "assetId": "asset_mv3ygejc11"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "80%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        }
+      }
+    },
+    "node_mv3y9q4oy": {
+      "id": "node_mv3y9q4oy",
+      "type": "field",
+      "name": "インプット",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "field": {
+        "kind": "input",
+        "inputType": "text",
+        "placeholder": "ここに　言葉を　入力してみてね"
+      },
+      "attrId": "field",
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "60%",
+            "padding": "10px 14px",
+            "fontSize": "14px",
+            "borderWidth": "0px",
+            "borderStyle": "solid",
+            "borderRadius": "0px",
+            "position": "absolute",
+            "left": "20%",
+            "top": "40%",
+            "backgroundColor": "rgba(255, 255, 255, 0)",
+            "borderColor": "#e4e4e7",
+            "color": "#9b7a81",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontWeight": "500"
+          }
+        },
+        "lg": {
+          "default": {
+            "top": "36%"
+          }
+        },
+        "sm": {
+          "default": {
+            "top": "28%",
+            "fontSize": "10px"
+          }
+        }
+      }
+    },
+    "node_mv3zoapg13": {
+      "id": "node_mv3zoapg13",
+      "type": "box",
+      "name": "背景",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mufmqwz79u",
+        "node_mufcijsn9j"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "12px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "60%",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          }
+        }
+      }
     }
   },
   "assets": {
@@ -27543,6 +27704,33 @@
       "mimeType": "image/svg+xml",
       "width": 1670,
       "height": 3081
+    },
+    "asset_mv3jwmb3b": {
+      "id": "asset_mv3jwmb3b",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mv3jwlll-pasted-artwork.svg",
+      "bytes": 398225,
+      "mimeType": "image/svg+xml",
+      "width": 1704,
+      "height": 1931
+    },
+    "asset_mv3yewftz": {
+      "id": "asset_mv3yewftz",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mv3yeyvz-pasted-artwork.svg",
+      "bytes": 78706,
+      "mimeType": "image/svg+xml",
+      "width": 1078,
+      "height": 112
+    },
+    "asset_mv3ygejc11": {
+      "id": "asset_mv3ygejc11",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mv3ygh4o-pasted-artwork.svg",
+      "bytes": 590,
+      "mimeType": "image/svg+xml",
+      "width": 1473,
+      "height": 195
     }
   },
   "components": {},

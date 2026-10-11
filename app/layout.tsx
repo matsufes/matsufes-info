@@ -9,6 +9,12 @@ export const metadata: Metadata = {
     default: "第56回松ヶ崎祭",
     template: "%s | 第56回松ヶ崎祭",
   },
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: { index: false, follow: false, noimageindex: true },
+  },
 };
 
 const zenmarugothic = Zen_Maru_Gothic({ subsets: ["latin"], variable: "--font-zen-maru-gothic", weight: ["400","500","700"] });

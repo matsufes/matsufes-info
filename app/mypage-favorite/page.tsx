@@ -9,53 +9,47 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_mu3wp199l" />
-      <section data-inview className="el-107">
+      <section data-inview className="el-108">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-95"
+          className="svg-89"
         />
       </section>
-      <p className="box-29">
+      <p className="box-28">
         <Image
           src="/assets/pasted-artwork-74.svg"
           alt=""
           width={644}
           height={96}
-          className="svg-20"
+          className="svg-19"
         />
       </p>
-      <section className="box-30">
+      <section className="box-29">
         <Image
           src="/assets/pasted-artwork-138.svg"
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-25"
+          className="pasted-artwork-svg-23"
         />
       </section>
+      <p className="box-182">
+        {"きみ専用の　ページだよ。\nお気に入りの企画を見たり　m-1グランプリに投票したりできるよ。"}
+      </p>
       <section className="box-31">
-        <Image
-          src="/assets/pasted-artwork-75.svg"
-          alt=""
-          width={1081}
-          height={125}
-          className="svg-21"
-        />
-      </section>
-      <section className="box-33">
-        <div className="box-42">
+        <div className="box-39">
           <Image
             src="/assets/pasted-artwork-80.svg"
             alt=""
             width={306}
             height={236}
-            className="svg-26"
+            className="svg-23"
           />
         </div>
-        <div className="box-43">
+        <div className="box-40">
           <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/mypage-m-1\"}]}]"}
             src="/assets/pasted-artwork-81.svg"
             alt=""
@@ -65,16 +59,16 @@ export default function Page() {
           />
         </div>
       </section>
-      <section className="box-32">
+      <section className="box-30">
         <Image
           src="/assets/pasted-artwork-76.svg"
           alt=""
           width={1420}
           height={70}
-          className="svg-22"
+          className="svg-20"
         />
       </section>
-      <section className="box-34" />
+      <section className="box-32" />
       <Image data-inview
         src="/assets/image-6.svg"
         alt=""

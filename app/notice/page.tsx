@@ -9,31 +9,31 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_muf6flq18p" />
-      <section data-inview className="el-106">
+      <section data-inview className="el-107">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-94"
+          className="svg-88"
         />
       </section>
-      <p className="box-71">
+      <p className="box-67">
         <Image
           src="/assets/pasted-artwork-128.svg"
           alt=""
           width={412}
           height={123}
-          className="svg-73"
+          className="svg-68"
         />
       </p>
-      <section className="box-72">
+      <section className="box-68">
         <Image
           src="/assets/pasted-artwork-138.svg"
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-24"
+          className="pasted-artwork-svg-22"
         />
       </section>
       <section className="el-89">
@@ -42,23 +42,23 @@ export default function Page() {
           alt=""
           width={334}
           height={43}
-          className="svg-177"
+          className="svg-168"
         />
       </section>
-      <section className="box-141">
+      <section className="box-132">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"更新中身\"}]}]"}
           src="/assets/pasted-artwork-227.svg"
           alt=""
           width={1393}
           height={115}
-          className="el-153"
+          className="el-154"
         />
         <Image id="更新中身" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"更新中身\"}]}]"} data-toggle-show="block"
           src="/assets/pasted-artwork-228.svg"
           alt=""
           width={1393}
           height={391}
-          className="el-154"
+          className="el-155"
         />
       </section>
       <Image data-inview

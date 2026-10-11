@@ -16,7 +16,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="svg-81"
+          className="svg-75"
         />
       </section>
       <p className="el-28">
@@ -34,25 +34,19 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="svg-97"
+          className="svg-91"
         />
       </section>
-      <section className="heading-2">
-        <Image
-          src="/assets/pasted-artwork-72.svg"
-          alt=""
-          width={1159}
-          height={124}
-          className="svg-19"
-        />
-      </section>
+      <p className="box-191">
+        {"1日の日程表を　見ることができるよ。\nメインステージでの催しや　音楽サークルの公演時間を　確認しよう。"}
+      </p>
       <section className="el-76">
         <Image
           src="/assets/pasted-artwork-84.svg"
           alt=""
           width={430}
           height={64}
-          className="svg-35"
+          className="svg-30"
         />
       </section>
       <section className="el-81">
@@ -62,7 +56,7 @@ export default function Page() {
             alt=""
             width={268}
             height={84}
-            className="svg-37"
+            className="svg-32"
           />
         </div>
         <Link href="/timetable-14" className="el-83">
@@ -71,7 +65,7 @@ export default function Page() {
             alt=""
             width={268}
             height={84}
-            className="svg-38"
+            className="svg-33"
           />
         </Link>
         <Link href="/timetable-15" className="el-84">
@@ -80,12 +74,12 @@ export default function Page() {
             alt=""
             width={268}
             height={84}
-            className="svg-39"
+            className="svg-34"
           />
         </Link>
       </section>
-      <section className="box-132">
-        <select id="choice" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"メインステージ\"},\"then\":[{\"kind\":\"show\",\"target\":\"main\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"センターホール\"},\"then\":[{\"kind\":\"hide\",\"target\":\"main\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"ストリートパフォーマンス\"},\"then\":[{\"kind\":\"hide\",\"target\":\"main\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"委員会企画\"},\"then\":[{\"kind\":\"hide\",\"target\":\"main\"}]}]}]"} className="select-3" name="choice">
+      <section className="select-5">
+        <select id="choice" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"メインステージ\"},\"then\":[{\"kind\":\"show\",\"target\":\"main\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"センターホール\"},\"then\":[{\"kind\":\"hide\",\"target\":\"main\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"ストリートパフォーマンス\"},\"then\":[{\"kind\":\"hide\",\"target\":\"main\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"委員会企画\"},\"then\":[{\"kind\":\"hide\",\"target\":\"main\"}]}]}]"} className="select-6" name="choice">
           <option>場所を選んでね。</option>
           <option>メインステージ</option>
           <option>センターホール</option>
@@ -94,48 +88,50 @@ export default function Page() {
         </select>
       </section>
       <section className="el-29">
-        <Image
-          src="/assets/pasted-artwork-296.svg"
-          alt=""
-          width={1670}
-          height={3081}
-          className="el-199"
-        />
-        <Image
-          src="/assets/pasted-artwork-142.svg"
-          alt=""
-          width={295}
-          height={2502}
-          className="el-124"
-        />
-        <div id="main" data-toggle-show="flex" className="el-133">
+        <div className="box-194">
+          <div id="main" data-toggle-show="flex" className="el-134">
+            <Image
+              src="/assets/pasted-artwork-177.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-135"
+            />
+            <Image
+              src="/assets/pasted-artwork-178.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-192"
+            />
+            <Image
+              src="/assets/pasted-artwork-179.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-136"
+            />
+            <Image
+              src="/assets/pasted-artwork-180.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-137"
+            />
+          </div>
           <Image
-            src="/assets/pasted-artwork-177.svg"
+            src="/assets/pasted-artwork-142.svg"
             alt=""
-            width={306}
-            height={113}
-            className="svg-143"
+            width={295}
+            height={2502}
+            className="el-125"
           />
           <Image
-            src="/assets/pasted-artwork-178.svg"
+            src="/assets/pasted-artwork-296.svg"
             alt=""
-            width={306}
-            height={113}
-            className="svg-144"
-          />
-          <Image
-            src="/assets/pasted-artwork-179.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="svg-145"
-          />
-          <Image
-            src="/assets/pasted-artwork-180.svg"
-            alt=""
-            width={306}
-            height={113}
-            className="svg-146"
+            width={1670}
+            height={3081}
+            className="el-202"
           />
         </div>
       </section>
