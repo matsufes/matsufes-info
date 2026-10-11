@@ -8268,6 +8268,14 @@ body:has([data-page-body="page_muzoss702k"]) {
     padding-left: 0px;
     margin-top: 0px;
   }
+
+  .pasted-artwork-svg-48 {
+    width: 100%;
+  }
+
+  .pasted-artwork-svg-49 {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
