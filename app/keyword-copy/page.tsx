@@ -15,7 +15,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="svg-210"
+          className="svg-209"
         />
       </section>
       <p className="el-181">
@@ -59,7 +59,7 @@ export default function Page() {
             alt=""
             width={278}
             height={278}
-            className="svg-212"
+            className="svg-211"
           />
         </div>
         <div className="el-188">
@@ -68,7 +68,7 @@ export default function Page() {
             alt=""
             width={726}
             height={181}
-            className="svg-211"
+            className="svg-210"
           />
           <p className="box-182">
             {"紹介文あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ"}
@@ -118,7 +118,7 @@ export default function Page() {
             alt=""
             width={209}
             height={204}
-            className="svg-214"
+            className="svg-213"
           />
         </div>
         <div className="el-197">
@@ -127,7 +127,7 @@ export default function Page() {
             alt=""
             width={162}
             height={237}
-            className="svg-213"
+            className="svg-212"
           />
         </div>
         <p className="box-186">

@@ -190,7 +190,7 @@ export default function Page() {
           alt=""
           width={352}
           height={279}
-          className="svg-198"
+          className="svg-197"
         />
         <Image
           src="/assets/pasted-artwork-236.svg"

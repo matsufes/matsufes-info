@@ -218,7 +218,7 @@ export default function Page() {
           alt=""
           width={343}
           height={178}
-          className="svg-195"
+          className="svg-194"
         />
       </section>
       <Image data-inview
@@ -247,21 +247,21 @@ export default function Page() {
           alt=""
           width={119}
           height={119}
-          className="svg-202"
+          className="svg-201"
         />
         <Image
           src="/assets/pasted-artwork-260.svg"
           alt=""
           width={15}
           height={15}
-          className="svg-206"
+          className="svg-205"
         />
         <Image
           src="/assets/pasted-artwork-261.svg"
           alt=""
           width={13}
           height={20}
-          className="svg-207"
+          className="svg-206"
         />
         <p className="box-177">
           {"ああああああああああああちゅ〜"}
@@ -274,14 +274,14 @@ export default function Page() {
           alt=""
           width={35}
           height={34}
-          className="svg-208"
+          className="svg-207"
         />
         <Image
           src="/assets/pasted-artwork-276.svg"
           alt=""
           width={533}
           height={16}
-          className="svg-209"
+          className="svg-208"
         />
         <p className="box-183">
           {"m-1カテゴリ"}

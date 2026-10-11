@@ -51,7 +51,7 @@ export default function Page() {
           alt=""
           width={1704}
           height={1867}
-          className="svg-217"
+          className="svg-216"
         />
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://livepocket.jp/e/i1x36\"}]}]"}
           src="/assets/pasted-artwork-292.svg"

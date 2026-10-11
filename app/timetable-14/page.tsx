@@ -244,14 +244,14 @@ export default function Page() {
             alt=""
             width={306}
             height={113}
-            className="svg-200"
+            className="svg-199"
           />
           <Image
             src="/assets/pasted-artwork-243.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-201"
+            className="svg-200"
           />
         </div>
         <div id="committee14" data-toggle-show="flex" className="el-133">

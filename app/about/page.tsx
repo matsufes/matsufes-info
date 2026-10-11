@@ -56,7 +56,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-185"
+          className="svg-184"
         />
       </section>
       <section className="el-92">

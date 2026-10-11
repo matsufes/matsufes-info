@@ -70,7 +70,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-190"
+          className="svg-189"
         />
       </section>
       <section className="box-146">
@@ -84,7 +84,7 @@ export default function Page() {
           alt=""
           width={577}
           height={181}
-          className="svg-216"
+          className="svg-215"
         />
         <div className="box-140">
           <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://trias.link/2026/\"}]}]"}
@@ -111,7 +111,7 @@ export default function Page() {
           alt=""
           width={625}
           height={181}
-          className="svg-215"
+          className="svg-214"
         />
         <div className="box-150">
           <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://geidaisai2026.com/\"}]}]"}
@@ -139,7 +139,7 @@ export default function Page() {
             alt=""
             width={562}
             height={181}
-            className="svg-196"
+            className="svg-195"
           />
         </div>
         <div className="box-159">
@@ -168,7 +168,7 @@ export default function Page() {
             alt=""
             width={674}
             height={181}
-            className="svg-197"
+            className="svg-196"
           />
         </div>
         <div className="box-156">

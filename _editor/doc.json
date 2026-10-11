@@ -819,10 +819,6 @@
       "link": null,
       "children": [
         "node_mupgzw4w2i",
-        "node_msmvap102",
-        "node_msmzjgls8",
-        "node_msmzwzz3s",
-        "node_msn004akx",
         "node_mufoenyuai",
         "node_mslg5y5sc",
         "node_mupgvqo42f"
@@ -832,15 +828,18 @@
           "default": {
             "display": "flex",
             "flexDirection": "row",
-            "padding": "20px",
             "gap": "12px",
-            "height": "177px",
+            "height": "100%",
             "justifyContent": "flex-end",
             "alignItems": "center",
             "width": "100%",
             "position": "sticky",
             "top": "0px",
-            "zIndex": "5"
+            "zIndex": "5",
+            "paddingTop": "0px",
+            "paddingRight": "20px",
+            "paddingBottom": "0px",
+            "paddingLeft": "20px"
           }
         },
         "sm": {
@@ -850,6 +849,11 @@
             "paddingTop": "0px",
             "paddingBottom": "0px",
             "height": "100px"
+          }
+        },
+        "lg": {
+          "default": {
+            "justifyContent": "space-between"
           }
         }
       }
@@ -874,16 +878,14 @@
             "flexDirection": "row",
             "gap": "30px",
             "width": "100%",
-            "justifyContent": "flex-end",
+            "justifyContent": "center",
             "alignItems": "center",
-            "marginRight": "100px",
+            "marginRight": "0px",
             "height": "100%",
-            "paddingTop": "20px",
+            "paddingTop": "0px",
             "paddingRight": "20px",
-            "paddingBottom": "20px",
-            "paddingLeft": "20px",
-            "position": "sticky",
-            "top": "0px"
+            "paddingBottom": "0px",
+            "paddingLeft": "20px"
           }
         },
         "sm": {
@@ -894,6 +896,8 @@
       },
       "locked": false,
       "hiddenOn": [
+        "lg",
+        "md",
         "sm"
       ]
     },
@@ -908,7 +912,8 @@
       },
       "link": null,
       "children": [
-        "node_msq6l1ph7q"
+        "node_msq6l1ph7q",
+        "node_msmvap102"
       ],
       "styles": {
         "base": {
@@ -944,7 +949,7 @@
           "steps": [
             {
               "id": "st_mumjkz2vd",
-              "kind": "toggle",
+              "kind": "show",
               "target": "menu1"
             }
           ],
@@ -960,14 +965,15 @@
           "steps": [
             {
               "id": "st_muxwezz63",
-              "kind": "toggle",
+              "kind": "hide",
               "target": "menu1"
             }
           ],
           "pos": {
-            "x": 504,
-            "y": 12
-          }
+            "x": 1096,
+            "y": 19
+          },
+          "keepOnShown": true
         }
       ]
     },
@@ -982,7 +988,8 @@
       },
       "link": null,
       "children": [
-        "node_msq6sps03"
+        "node_msq6sps03",
+        "node_msn004akx"
       ],
       "styles": {
         "base": {
@@ -1016,7 +1023,7 @@
           "steps": [
             {
               "id": "st_mumjv94ci",
-              "kind": "toggle",
+              "kind": "show",
               "target": "menu4"
             }
           ],
@@ -1024,6 +1031,22 @@
             "x": 62,
             "y": 308
           }
+        },
+        {
+          "id": "sc_mv38ce964",
+          "trigger": "hover-end",
+          "steps": [
+            {
+              "id": "st_mv38d1ze7",
+              "kind": "hide",
+              "target": "menu4"
+            }
+          ],
+          "pos": {
+            "x": 1126,
+            "y": 316
+          },
+          "keepOnShown": true
         }
       ]
     },
@@ -1038,7 +1061,8 @@
       },
       "link": null,
       "children": [
-        "node_msq6lhvw7s"
+        "node_msq6lhvw7s",
+        "node_msmzjgls8"
       ],
       "styles": {
         "base": {
@@ -1077,10 +1101,26 @@
           "steps": [
             {
               "id": "st_mukz3qdd45",
-              "kind": "toggle",
+              "kind": "show",
               "target": "menu2"
             }
           ]
+        },
+        {
+          "id": "sc_mv38bb752",
+          "trigger": "hover-end",
+          "steps": [
+            {
+              "id": "st_mv38cjkf5",
+              "kind": "hide",
+              "target": "menu2"
+            }
+          ],
+          "pos": {
+            "x": 1113,
+            "y": 127
+          },
+          "keepOnShown": true
         }
       ]
     },
@@ -1171,8 +1211,8 @@
             "marginTop": "0px",
             "zIndex": "5",
             "position": "absolute",
-            "left": "400px",
-            "top": "120px"
+            "left": "0px",
+            "top": "80px"
           }
         }
       },
@@ -1380,7 +1420,7 @@
             "padding": "20px",
             "gap": "12px",
             "position": "absolute",
-            "top": "120px",
+            "top": "80px",
             "height": "294px",
             "width": "273px",
             "backgroundColor": "#282b37",
@@ -1390,7 +1430,7 @@
             "borderRadius": "20px",
             "marginTop": "0px",
             "zIndex": "2",
-            "left": "650px"
+            "left": "0px"
           }
         }
       },
@@ -1598,7 +1638,7 @@
             "padding": "20px",
             "gap": "12px",
             "position": "absolute",
-            "top": "120px",
+            "top": "80px",
             "height": "294px",
             "width": "284px",
             "backgroundColor": "#282b37",
@@ -1607,7 +1647,7 @@
             "borderRadius": "20px",
             "marginTop": "0px",
             "zIndex": "3",
-            "left": "830px"
+            "left": "0px"
           }
         }
       },
@@ -1814,7 +1854,7 @@
             "padding": "20px",
             "gap": "12px",
             "position": "absolute",
-            "top": "120px",
+            "top": "80px",
             "height": "228px",
             "width": "289px",
             "backgroundColor": "#282b37",
@@ -1824,7 +1864,7 @@
             "borderRadius": "20px",
             "marginTop": "0px",
             "zIndex": "3",
-            "right": "20px"
+            "right": "0px"
           }
         }
       },
@@ -3290,7 +3330,8 @@
       },
       "link": null,
       "children": [
-        "node_msq7jql85"
+        "node_msq7jql85",
+        "node_msmzwzz3s"
       ],
       "styles": {
         "base": {
@@ -3320,7 +3361,7 @@
           "steps": [
             {
               "id": "st_mumj0c6h1a",
-              "kind": "toggle",
+              "kind": "show",
               "target": "menu3"
             }
           ],
@@ -3328,6 +3369,22 @@
             "x": 63,
             "y": 218
           }
+        },
+        {
+          "id": "sc_mv38bxaj3",
+          "trigger": "hover-end",
+          "steps": [
+            {
+              "id": "st_mv38cssz6",
+              "kind": "hide",
+              "target": "menu3"
+            }
+          ],
+          "pos": {
+            "x": 1113,
+            "y": 225
+          },
+          "keepOnShown": true
         }
       ]
     },
@@ -7720,10 +7777,7 @@
             "top": "0px"
           }
         }
-      },
-      "hiddenOn": [
-        "sm"
-      ]
+      }
     },
     "node_mue8hqg61t": {
       "id": "node_mue8hqg61t",
@@ -11061,10 +11115,8 @@
       "styles": {
         "base": {
           "default": {
-            "width": "20%",
-            "borderRadius": "12px",
-            "position": "sticky",
-            "top": "0px"
+            "width": "10%",
+            "borderRadius": "12px"
           }
         },
         "sm": {
@@ -12461,8 +12513,7 @@
       "children": [
         "node_muh3msrhcf",
         "node_muh3g0u1c8",
-        "node_muh3iv1nca",
-        "node_muh3karucc"
+        "node_mv39ff0v1"
       ],
       "styles": {
         "base": {
@@ -12498,7 +12549,8 @@
             "paddingLeft": "0px",
             "marginLeft": "-100px",
             "zIndex": "0",
-            "position": "relative"
+            "position": "relative",
+            "marginTop": "-100px"
           }
         },
         "sm": {
@@ -12562,12 +12614,12 @@
           "default": {
             "display": "flex",
             "flexDirection": "column",
-            "padding": "20px",
             "gap": "12px",
-            "width": "70%",
-            "position": "absolute",
-            "top": "400px",
-            "right": "0px"
+            "width": "100%",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
           }
         },
         "sm": {
@@ -12620,12 +12672,12 @@
           "default": {
             "display": "flex",
             "flexDirection": "column",
-            "padding": "20px",
             "gap": "12px",
-            "width": "50%",
-            "position": "absolute",
-            "right": "80px",
-            "bottom": "300px"
+            "width": "68%",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
           }
         },
         "sm": {
@@ -16288,7 +16340,8 @@
       "hiddenOn": [
         "base",
         "lg",
-        "md"
+        "md",
+        "sm"
       ]
     },
     "node_mukyxc077": {
@@ -18010,7 +18063,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mupgvxbl2h"
+        "node_mv39ouse3"
       ],
       "styles": {
         "base": {
@@ -18073,36 +18126,6 @@
           "fillMode": "both"
         }
       ]
-    },
-    "node_mupgvxbl2h": {
-      "id": "node_mupgvxbl2h",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmupgvyhu-pasted-artwork.svg",
-        "alt": "",
-        "width": 42,
-        "height": 23,
-        "assetId": "asset_mupgvxbl2g"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "42px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "100%"
-          }
-        }
-      }
     },
     "node_mupgzw4w2i": {
       "id": "node_mupgzw4w2i",
@@ -18559,9 +18582,6 @@
           }
         }
       },
-      "hiddenOn": [
-        "sm"
-      ],
       "attrId": "mf-phone",
       "locked": false
     },
@@ -25060,6 +25080,58 @@
           }
         }
       }
+    },
+    "node_mv39ff0v1": {
+      "id": "node_mv39ff0v1",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_muh3iv1nca",
+        "node_muh3karucc"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "0px",
+            "position": "absolute",
+            "top": "-23px",
+            "right": "0px",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        }
+      }
+    },
+    "node_mv39ouse3": {
+      "id": "node_mv39ouse3",
+      "type": "image",
+      "name": "貼り付けた画像",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmv39ougb-image.png",
+        "alt": "",
+        "width": 84,
+        "height": 46,
+        "assetId": "asset_mv39ouse2"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "84px",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        }
+      }
     }
   },
   "assets": {
@@ -27834,6 +27906,15 @@
       "mimeType": "image/png",
       "width": 2162,
       "height": 1466
+    },
+    "asset_mv39ouse2": {
+      "id": "asset_mv39ouse2",
+      "name": "image.png",
+      "path": "assets/mv39ougb-image.png",
+      "bytes": 2906,
+      "mimeType": "image/png",
+      "width": 84,
+      "height": 46
     }
   },
   "components": {},
