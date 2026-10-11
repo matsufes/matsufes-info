@@ -9,13 +9,13 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_msoti2tux" />
-      <section data-inview className="el-103">
+      <section data-inview className="el-99">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-98"
+          className="svg-96"
         />
       </section>
       <p className="box-2">
@@ -33,7 +33,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-18"
+          className="pasted-artwork-svg-16"
         />
       </section>
       <section className="box-27" />

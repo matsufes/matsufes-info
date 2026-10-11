@@ -9,13 +9,13 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_mu3wp199l" />
-      <section data-inview className="el-113">
+      <section data-inview className="el-109">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-108"
+          className="svg-106"
         />
       </section>
       <p className="box-29">
@@ -33,7 +33,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-28"
+          className="pasted-artwork-svg-26"
         />
       </section>
       <section className="box-31">
@@ -56,7 +56,7 @@ export default function Page() {
           />
         </div>
         <div className="box-43">
-          <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"pageId\":\"page_mu727nz01e\",\"href\":\"/mypage-m-1\"}]}]"}
+          <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/mypage-m-1\"}]}]"}
             src="/assets/pasted-artwork-81.svg"
             alt=""
             width={306}

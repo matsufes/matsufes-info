@@ -9,13 +9,13 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_muiixvz340" />
-      <section data-inview className="el-129">
+      <section data-inview className="el-125">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-122"
+          className="svg-120"
         />
       </section>
       <p className="box-80">
@@ -24,7 +24,7 @@ export default function Page() {
           alt=""
           width={845}
           height={130}
-          className="pasted-artwork-svg-33"
+          className="pasted-artwork-svg-31"
         />
       </p>
       <section className="box-81">
@@ -33,7 +33,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-34"
+          className="pasted-artwork-svg-32"
         />
       </section>
       <section className="box-82">
@@ -42,7 +42,7 @@ export default function Page() {
           alt=""
           width={749}
           height={114}
-          className="svg-124"
+          className="svg-122"
         />
       </section>
       <section className="box-83">
@@ -56,7 +56,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-125"
+          className="svg-123"
         />
       </section>
       <section className="box-86">
@@ -70,7 +70,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-189"
+          className="svg-187"
         />
       </section>
       <section className="box-146">
@@ -84,7 +84,7 @@ export default function Page() {
           alt=""
           width={577}
           height={181}
-          className="svg-215"
+          className="svg-213"
         />
         <div className="box-140">
           <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://trias.link/2026/\"}]}]"}
@@ -92,7 +92,7 @@ export default function Page() {
             alt=""
             width={406}
             height={191}
-            className="el-151"
+            className="el-147"
           />
         </div>
       </section>
@@ -111,7 +111,7 @@ export default function Page() {
           alt=""
           width={625}
           height={181}
-          className="svg-214"
+          className="svg-212"
         />
         <div className="box-150">
           <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://geidaisai2026.com/\"}]}]"}
@@ -119,7 +119,7 @@ export default function Page() {
             alt=""
             width={406}
             height={191}
-            className="el-159"
+            className="el-155"
           />
         </div>
       </section>
@@ -139,7 +139,7 @@ export default function Page() {
             alt=""
             width={562}
             height={181}
-            className="svg-195"
+            className="svg-193"
           />
         </div>
         <div className="box-159">
@@ -148,7 +148,7 @@ export default function Page() {
             alt=""
             width={406}
             height={191}
-            className="el-161"
+            className="el-157"
           />
         </div>
       </section>
@@ -168,7 +168,7 @@ export default function Page() {
             alt=""
             width={674}
             height={181}
-            className="svg-196"
+            className="svg-194"
           />
         </div>
         <div className="box-156">
@@ -177,7 +177,7 @@ export default function Page() {
             alt=""
             width={406}
             height={191}
-            className="el-160"
+            className="el-156"
           />
         </div>
       </section>
@@ -202,14 +202,14 @@ export default function Page() {
         alt=""
         width={1337}
         height={415}
-        className="svg-123"
+        className="svg-121"
       />
       <Image
         src=""
         alt=""
         width={1420}
         height={45}
-        className="pasted-artwork-svg-35"
+        className="pasted-artwork-svg-33"
       />
     </>
   );

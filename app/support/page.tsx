@@ -9,13 +9,13 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_muf6exd68g" />
-      <section data-inview className="el-111">
+      <section data-inview className="el-107">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-106"
+          className="svg-104"
         />
       </section>
       <p className="box-68">
@@ -33,7 +33,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-26"
+          className="pasted-artwork-svg-24"
         />
       </section>
       <section className="box-70">
@@ -42,7 +42,7 @@ export default function Page() {
           alt=""
           width={1183}
           height={117}
-          className="svg-198"
+          className="svg-196"
         />
       </section>
       <section className="box-134">
@@ -51,7 +51,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-185"
+          className="svg-183"
         />
       </section>
       <section className="box-160">
@@ -68,7 +68,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-186"
+          className="svg-184"
         />
       </section>
       <section className="box-163">
@@ -85,7 +85,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-217"
+          className="svg-215"
         />
       </section>
       <section className="box-193">
@@ -104,7 +104,7 @@ export default function Page() {
             alt=""
             width={1024}
             height={727}
-            className="el-163"
+            className="el-159"
           />
         </div>
         <div className="box-169">
@@ -113,7 +113,7 @@ export default function Page() {
             alt=""
             width={1438}
             height={1035}
-            className="el-164"
+            className="el-160"
           />
         </div>
         <div className="box-168">
@@ -142,7 +142,7 @@ export default function Page() {
             alt=""
             width={1021}
             height={574}
-            className="el-165"
+            className="el-161"
           />
         </div>
       </section>

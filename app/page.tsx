@@ -11,29 +11,29 @@ export default function Page() {
     <>
       <span hidden data-page-body="page_msleaffe1" />
       <section className="el-3">
-        <div id="memu-p" data-toggle-show="flex" className="el-139">
-          <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-140">
+        <div id="memu-p" data-toggle-show="flex" className="el-135">
+          <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-136">
             <Image
               src="/assets/pasted-artwork-204.svg"
               alt=""
               width={43}
               height={31}
-              className="svg-183"
+              className="svg-181"
             />
           </div>
-          <p id="松ヶ崎祭について" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"mf-phone\"}]}]"} className="el-141">
+          <p id="松ヶ崎祭について" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"mf-phone\"}]}]"} className="el-137">
             {"松ヶ崎祭について"}
           </p>
-          <p id="企画さがし" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"kikaku-phone\"}]}]"} className="el-142">
+          <p id="企画さがし" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"kikaku-phone\"}]}]"} className="el-138">
             {"企画さがし"}
           </p>
-          <p id="ご案内" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"goannai-phone\"}]}]"} className="el-143">
+          <p id="ご案内" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"goannai-phone\"}]}]"} className="el-139">
             {"ご案内"}
           </p>
-          <p id="公式特集" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"koushiki-phone\"}]}]"} className="el-144">
+          <p id="公式特集" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"koushiki-phone\"}]}]"} className="el-140">
             {"公式特集"}
           </p>
-          <div id="mf-phone" data-toggle-show="flex" className="el-145">
+          <div id="mf-phone" data-toggle-show="flex" className="el-141">
             <Link href="/about" id="松ヶ崎祭とは-p" className="button-2">
               {"松ヶ崎祭とは"}
             </Link>
@@ -47,7 +47,7 @@ export default function Page() {
               {"お知らせ"}
             </Link>
           </div>
-          <div id="kikaku-phone" data-toggle-show="flex" className="el-146">
+          <div id="kikaku-phone" data-toggle-show="flex" className="el-142">
             <Link href="/keyword" id="言葉-p" className="button-6">
               {"言葉からさがす"}
             </Link>
@@ -61,7 +61,7 @@ export default function Page() {
               {"きみのしおり\n"}
             </Link>
           </div>
-          <div id="goannai-phone" data-toggle-show="flex" className="el-147">
+          <div id="goannai-phone" data-toggle-show="flex" className="el-143">
             <Link href="/attention" id="ご来場の-p" className="button-10">
               {"ご来場の皆さまへ"}
             </Link>
@@ -75,7 +75,7 @@ export default function Page() {
               {"よくあるご質問"}
             </Link>
           </div>
-          <div id="koushiki-phone" data-toggle-show="flex" className="el-148">
+          <div id="koushiki-phone" data-toggle-show="flex" className="el-144">
             <Link href="/committee" id="委員会企画-p" className="button-14">
               {"委員会企画"}
             </Link>
@@ -92,7 +92,7 @@ export default function Page() {
           alt=""
           width={213}
           height={213}
-          className="el-99"
+          className="el-95"
         />
         <div className="el-4">
           <p id="matsufes" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu1\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu1\"}],\"keep\":true}]"} className="el-5">
@@ -185,27 +185,27 @@ export default function Page() {
             </div>
           </p>
         </div>
-        <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"show\",\"target\":\"memu-p\"}]}]"} className="el-138">
+        <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"show\",\"target\":\"memu-p\"}]}]"} className="el-134">
           <Image
             src="/assets/image.png"
             alt=""
             width={84}
             height={46}
-            className="el-201"
+            className="el-197"
           />
         </div>
       </section>
-      <section className="el-115">
-        <div data-inview className="el-120">
+      <section className="el-111">
+        <div data-inview className="el-116">
           <Image
             src="/assets/image.svg"
             alt=""
             width={1920}
             height={1312}
-            className="svg-112"
+            className="svg-110"
           />
         </div>
-        <div data-inview className="el-116">
+        <div data-inview className="el-112">
           <Image
             src="/assets/IMG_3053.PNG"
             alt=""
@@ -215,114 +215,101 @@ export default function Page() {
           />
         </div>
         <div className="box-194">
-          <div className="el-117">
+          <div className="el-113">
             <Image
               src="/assets/56-.svg"
               alt=""
               width={267}
               height={150}
-              className="el-118"
+              className="el-114"
             />
           </div>
-          <div className="el-119">
+          <div className="el-115">
             <Image
               src="/assets/image-5.svg"
               alt=""
               width={677}
               height={352}
-              className="svg-111"
+              className="svg-109"
             />
           </div>
         </div>
       </section>
       <section className="el-8">
-        <div className="el-121">
+        <div className="el-117">
           <Image
             src="/assets/pasted-artwork-65.svg"
             alt=""
             width={674}
             height={215}
-            className="pasted-artwork-svg-30"
+            className="pasted-artwork-svg-28"
           />
         </div>
       </section>
       <section className="box-77">
-        <Link href="/map" className="el-122">
+        <Link href="/map" className="el-118">
           <Image
             src="/assets/pasted-artwork-139.svg"
             alt=""
             width={172}
             height={454}
-            className="svg-113"
+            className="svg-111"
           />
         </Link>
-        <Link href="/keyword" className="el-123">
+        <Link href="/keyword" className="el-119">
           <Image
             src="/assets/pasted-artwork-140.svg"
             alt=""
             width={371}
             height={461}
-            className="svg-114"
+            className="svg-112"
           />
         </Link>
-        <Link href="/timetable-13" className="el-124">
+        <Link href="/timetable-13" className="el-120">
           <Image
             src="/assets/pasted-artwork-141.svg"
             alt=""
             width={239}
             height={400}
-            className="svg-115"
+            className="svg-113"
           />
         </Link>
       </section>
       <section className="el-26">
-        <div className="el-125">
+        <div className="el-121">
           <Image
             src="/assets/pasted-artwork-66.svg"
             alt=""
             width={674}
             height={212}
-            className="pasted-artwork-svg-31"
+            className="pasted-artwork-svg-29"
           />
         </div>
       </section>
       <section className="el-54">
-        <Link href="/attention" className="el-96">
-          <Image
-            src="/assets/pasted-artwork-67.svg"
-            alt=""
-            width={1122}
-            height={862}
-            className="pasted-artwork-svg-13"
-          />
-        </Link>
-        <Link href="/comingsoon" className="el-97">
-          <Image
-            src="/assets/pasted-artwork-68.svg"
-            alt=""
-            width={999}
-            height={815}
-            className="pasted-artwork-svg-14"
-          />
-        </Link>
-        <Link href="/question" className="el-98">
-          <Image
-            src="/assets/pasted-artwork-137.svg"
-            alt=""
-            width={1112}
-            height={769}
-            className="svg-93"
-          />
-        </Link>
-        <Link href="/access" className="el-95">
-          <Image
-            src="/assets/pasted-artwork-136.svg"
-            alt=""
-            width={1051}
-            height={732}
-            className="svg-92"
-          />
-        </Link>
+        <Image
+          src="/assets/pasted-artwork-136.svg"
+          alt=""
+          width={1051}
+          height={732}
+          className="pasted-artwork-svg-47"
+        />
+        <Image
+          src="/assets/pasted-artwork-67.svg"
+          alt=""
+          width={1122}
+          height={862}
+          className="pasted-artwork-svg-46"
+        />
+      </section>
+      <section className="el-198">
+        <Image
+          src="/assets/pasted-artwork-68.svg"
+          alt=""
+          width={999}
+          height={815}
+          className="pasted-artwork-svg-48"
+        />
       </section>
       <section className="box-131">
         <Image
@@ -330,17 +317,17 @@ export default function Page() {
           alt=""
           width={1248}
           height={195}
-          className="svg-182"
+          className="svg-180"
         />
       </section>
       <section className="el-56">
-        <div className="el-126">
+        <div className="el-122">
           <Image
             src="/assets/pasted-artwork-69.svg"
             alt=""
             width={674}
             height={152}
-            className="pasted-artwork-svg-32"
+            className="pasted-artwork-svg-30"
           />
         </div>
       </section>
@@ -351,7 +338,7 @@ export default function Page() {
             alt=""
             width={738}
             height={565}
-            className="svg-116"
+            className="svg-114"
           />
         </div>
         <div className="box-26">
@@ -360,7 +347,7 @@ export default function Page() {
             alt=""
             width={929}
             height={438}
-            className="svg-117"
+            className="svg-115"
           />
         </div>
       </section>
@@ -370,15 +357,15 @@ export default function Page() {
           alt=""
           width={1920}
           height={1015}
-          className="pasted-artwork-svg-42"
+          className="pasted-artwork-svg-40"
         />
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-149">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-145">
           <Image
             src="/assets/pasted-artwork-208.svg"
             alt=""
             width={58}
             height={58}
-            className="svg-187"
+            className="svg-185"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x">
@@ -387,7 +374,7 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-188"
+            className="svg-186"
           />
         </a>
       </section>

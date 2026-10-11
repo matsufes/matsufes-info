@@ -9,13 +9,13 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_mu2t6c971l" />
-      <section data-inview className="el-106">
+      <section data-inview className="el-102">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-101"
+          className="svg-99"
         />
       </section>
       <p className="box-21">
@@ -33,7 +33,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-21"
+          className="pasted-artwork-svg-19"
         />
       </section>
       <section className="box-23">
@@ -51,14 +51,14 @@ export default function Page() {
           alt=""
           width={1704}
           height={1867}
-          className="svg-216"
+          className="svg-214"
         />
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://livepocket.jp/e/i1x36\"}]}]"}
           src="/assets/pasted-artwork-292.svg"
           alt=""
           width={380}
           height={176}
-          className="el-200"
+          className="el-196"
         />
       </section>
       <Image data-inview

@@ -10,13 +10,13 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_mu98rc7s3u" />
-      <section data-inview className="el-100">
+      <section data-inview className="el-96">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-95"
+          className="svg-93"
         />
       </section>
       <p className="el-62">
@@ -34,7 +34,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-15"
+          className="pasted-artwork-svg-13"
         />
       </section>
       <section className="heading-3">
@@ -106,9 +106,9 @@ export default function Page() {
           alt=""
           width={295}
           height={2502}
-          className="pasted-artwork-svg-41"
+          className="pasted-artwork-svg-39"
         />
-        <div id="main14" data-toggle-show="flex" className="el-132">
+        <div id="main14" data-toggle-show="flex" className="el-128">
           <Image
             src="/assets/pasted-artwork-104.svg"
             alt=""
@@ -128,77 +128,77 @@ export default function Page() {
             alt=""
             width={306}
             height={113}
-            className="svg-163"
+            className="svg-161"
           />
           <Image
             src="/assets/pasted-artwork-182.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-164"
+            className="svg-162"
           />
           <Image
             src="/assets/pasted-artwork-183.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-165"
+            className="svg-163"
           />
           <Image
             src="/assets/pasted-artwork-184.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-166"
+            className="svg-164"
           />
           <Image
             src="/assets/pasted-artwork-185.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-167"
+            className="svg-165"
           />
           <Image
             src="/assets/pasted-artwork-186.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-168"
+            className="svg-166"
           />
           <Image
             src="/assets/pasted-artwork-187.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-169"
+            className="svg-167"
           />
           <Image
             src="/assets/pasted-artwork-188.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-170"
+            className="svg-168"
           />
           <Image
             src="/assets/pasted-artwork-189.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-171"
+            className="svg-169"
           />
           <Image
             src="/assets/pasted-artwork-190.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-172"
+            className="svg-170"
           />
           <Image
             src="/assets/pasted-artwork-191.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-173"
+            className="svg-171"
           />
         </div>
         <div id="center14" data-toggle-show="flex" className="el-88">
@@ -210,7 +210,7 @@ export default function Page() {
             className="svg-51"
           />
         </div>
-        <div id="street14" data-toggle-show="flex" className="el-131">
+        <div id="street14" data-toggle-show="flex" className="el-127">
           <Image
             src="/assets/pasted-artwork-92.svg"
             alt=""
@@ -244,17 +244,17 @@ export default function Page() {
             alt=""
             width={306}
             height={113}
-            className="svg-199"
+            className="svg-197"
           />
           <Image
             src="/assets/pasted-artwork-243.svg"
             alt=""
             width={306}
             height={113}
-            className="svg-200"
+            className="svg-198"
           />
         </div>
-        <div id="committee14" data-toggle-show="flex" className="el-133">
+        <div id="committee14" data-toggle-show="flex" className="el-129">
           <Image
             src="/assets/pasted-artwork-110.svg"
             alt=""

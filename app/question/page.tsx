@@ -9,13 +9,13 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_muf67d6n7n" />
-      <section data-inview className="el-108">
+      <section data-inview className="el-104">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-103"
+          className="svg-101"
         />
       </section>
       <p className="box-59">
@@ -33,7 +33,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-23"
+          className="pasted-artwork-svg-21"
         />
       </section>
       <section className="box-61" />

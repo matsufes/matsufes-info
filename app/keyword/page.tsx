@@ -9,13 +9,13 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_msotieex1e" />
-      <section data-inview className="el-102">
+      <section data-inview className="el-98">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-97"
+          className="svg-95"
         />
       </section>
       <p className="el-31">
@@ -33,7 +33,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-17"
+          className="pasted-artwork-svg-15"
         />
       </section>
       <p className="heading">
@@ -213,12 +213,12 @@ export default function Page() {
         />
       </section>
       <section className="box-145">
-        <Image id="m-1" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"pageId\":\"page_mswzfiqry\",\"href\":\"/m-1\"}]}]"}
+        <Image id="m-1" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/m-1\"}]}]"}
           src="/assets/pasted-artwork-229.svg"
           alt=""
           width={343}
           height={178}
-          className="svg-194"
+          className="svg-192"
         />
       </section>
       <Image data-inview
@@ -234,7 +234,7 @@ export default function Page() {
           alt=""
           width={429}
           height={280}
-          className="pasted-artwork-svg-44"
+          className="pasted-artwork-svg-42"
         />
         <p className="box-174">
           {"木匠生のワッフル&雑貨屋さん"}
@@ -247,21 +247,21 @@ export default function Page() {
           alt=""
           width={119}
           height={119}
-          className="svg-201"
+          className="svg-199"
         />
         <Image
           src="/assets/pasted-artwork-260.svg"
           alt=""
           width={15}
           height={15}
-          className="svg-205"
+          className="svg-203"
         />
         <Image
           src="/assets/pasted-artwork-261.svg"
           alt=""
           width={13}
           height={20}
-          className="svg-206"
+          className="svg-204"
         />
         <p className="box-177">
           {"ああああああああああああちゅ〜"}
@@ -274,14 +274,14 @@ export default function Page() {
           alt=""
           width={35}
           height={34}
-          className="svg-207"
+          className="svg-205"
         />
         <Image
           src="/assets/pasted-artwork-276.svg"
           alt=""
           width={533}
           height={16}
-          className="svg-208"
+          className="svg-206"
         />
         <p className="box-183">
           {"m-1カテゴリ"}
