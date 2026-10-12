@@ -9,13 +9,13 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_msotieex1e" />
-      <section data-inview className="el-92">
+      <section data-inview className="el-91">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-73"
+          className="svg-72"
         />
       </section>
       <p className="el-30">
@@ -36,17 +36,17 @@ export default function Page() {
           className="pasted-artwork-svg-12"
         />
       </section>
-      <p className="el-195">
+      <p className="el-194">
         {"松ヶ崎祭には　企画がいっぱい。\n気になる言葉から　きみにぴったりの企画を見つけてね。"}
       </p>
-      <section className="el-197">
+      <section className="el-196">
         <input id="field" type="text" className="input-2" name="field" placeholder="ここに　言葉を　入力してみてね" />
         <Image
           src="/assets/pasted-artwork-245.svg"
           alt=""
           width={1473}
           height={195}
-          className="svg-188"
+          className="svg-187"
         />
       </section>
       <section className="el-33">
@@ -214,7 +214,7 @@ export default function Page() {
           alt=""
           width={343}
           height={178}
-          className="svg-164"
+          className="svg-163"
         />
       </section>
       <Image data-inview
@@ -230,7 +230,7 @@ export default function Page() {
           alt=""
           width={429}
           height={280}
-          className="el-160"
+          className="el-159"
         />
         <p className="box-158">
           {"出展名"}
@@ -243,21 +243,21 @@ export default function Page() {
           alt=""
           width={119}
           height={119}
-          className="svg-170"
+          className="svg-169"
         />
         <Image
           src="/assets/pasted-artwork-212.svg"
           alt=""
           width={15}
           height={15}
-          className="svg-174"
+          className="svg-173"
         />
         <Image
           src="/assets/pasted-artwork-213.svg"
           alt=""
           width={13}
           height={20}
-          className="svg-175"
+          className="svg-174"
         />
         <p className="box-161">
           {"ああああああああああああちゅ〜"}
@@ -270,14 +270,14 @@ export default function Page() {
           alt=""
           width={35}
           height={34}
-          className="svg-176"
+          className="svg-175"
         />
         <Image
           src="/assets/pasted-artwork-227.svg"
           alt=""
           width={533}
           height={16}
-          className="svg-177"
+          className="svg-176"
         />
         <p className="box-166">
           {"m-1カテゴリ"}

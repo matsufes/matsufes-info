@@ -9,13 +9,13 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_muf6flq18p" />
-      <section data-inview className="el-102">
+      <section data-inview className="el-101">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-83"
+          className="svg-82"
         />
       </section>
       <p className="box-67">
@@ -42,7 +42,7 @@ export default function Page() {
           alt=""
           width={334}
           height={43}
-          className="svg-163"
+          className="svg-162"
         />
       </section>
       <section className="box-132">
@@ -51,14 +51,14 @@ export default function Page() {
           alt=""
           width={1393}
           height={115}
-          className="el-149"
+          className="el-148"
         />
         <Image id="更新中身" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"更新中身\"}]}]"} data-toggle-show="block"
           src="/assets/pasted-artwork-190.svg"
           alt=""
           width={1393}
           height={391}
-          className="el-150"
+          className="el-149"
         />
       </section>
       <Image data-inview

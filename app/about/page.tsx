@@ -9,13 +9,13 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_muf6dx2a7y" />
-      <section data-inview className="el-99">
+      <section data-inview className="el-98">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-80"
+          className="svg-79"
         />
       </section>
       <p className="box-59">
@@ -42,7 +42,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-101"
+          className="svg-100"
         />
       </section>
       <section className="box-72">
@@ -56,7 +56,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-154"
+          className="svg-153"
         />
       </section>
       <section className="box-181">
@@ -73,10 +73,10 @@ export default function Page() {
             height={856}
             className="pasted-artwork-svg-39"
           />
-          <a href="https://mf55.matsufes.info/" className="el-198">
+          <a href="https://mf55.matsufes.info/" className="el-197">
             {"第55回松ヶ崎祭　「カイカセンゲン」"}
           </a>
-          <a href="https://mf54.matsufes.info/" className="el-199">
+          <a href="https://mf54.matsufes.info/" className="el-198">
             {"第54回松ヶ崎祭　「みちみち」"}
           </a>
           <a href="https://mf53.matsufes.info/" className="hello-world">

@@ -9,13 +9,13 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_muf67d6n7n" />
-      <section data-inview className="el-98">
+      <section data-inview className="el-97">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-79"
+          className="svg-78"
         />
       </section>
       <p className="box-56">
