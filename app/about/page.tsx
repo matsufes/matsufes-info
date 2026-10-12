@@ -9,13 +9,13 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_muf6dx2a7y" />
-      <section data-inview className="el-100">
+      <section data-inview className="el-99">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-81"
+          className="svg-80"
         />
       </section>
       <p className="box-59">
@@ -42,7 +42,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-102"
+          className="svg-101"
         />
       </section>
       <section className="box-72">
@@ -56,7 +56,7 @@ export default function Page() {
           alt=""
           width={438}
           height={114}
-          className="svg-155"
+          className="svg-154"
         />
       </section>
       <section className="box-181">
@@ -64,7 +64,7 @@ export default function Page() {
           {"本日は第56回松ヶ崎祭にご来場いただきありがとうございます。\n松ヶ崎祭実行委員会を代表しまして心より歓迎申し上げます。\n\nまた、松ヶ崎祭の開催にあたり、日頃より多大なるご支援・ご協力を賜りました、すべての関係者の皆さまに、深く御礼申し上げます。\n\n今年の松ヶ崎祭開催に向けて、出展者さまが安心して当日を迎えられるよう、そして松ヶ崎祭が無事に開催できるよう、準備に注力してきました。\n\n私たちが準備してきた過程は注目されにくいものがほとんどです。しかし、その成果として、構内の至る所に、私たちが無我夢中で創り上げた景色が広がっています。私たち松ヶ崎祭実行委員会は「松ヶ崎祭での時間に思わず熱中してしまうような最高の体験を、出展者の皆さま、そして来場される皆さまに届けたい」という一心で、松ヶ崎祭が終わる最後の時まで駆け抜けます。\n\n今年の松ヶ崎祭のテーマは「夢宙」です。松ヶ崎祭という無限の夢が宙がる空間に、時間を忘れて没入していただければ幸いです。"}
         </p>
       </section>
-      <section className="el-89">
+      <section className="el-88">
         <div className="box-194">
           <Image
             src="/assets/pasted-artwork-108.svg"
@@ -73,10 +73,10 @@ export default function Page() {
             height={856}
             className="pasted-artwork-svg-39"
           />
-          <a href="https://mf55.matsufes.info/" className="el-199">
+          <a href="https://mf55.matsufes.info/" className="el-198">
             {"第55回松ヶ崎祭　「カイカセンゲン」"}
           </a>
-          <a href="https://mf54.matsufes.info/" className="el-200">
+          <a href="https://mf54.matsufes.info/" className="el-199">
             {"第54回松ヶ崎祭　「みちみち」"}
           </a>
           <a href="https://mf53.matsufes.info/" className="hello-world">
