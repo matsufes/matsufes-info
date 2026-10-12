@@ -9,18 +9,18 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_mswzfiqry" />
-      <section data-inview className="el-99">
+      <section data-inview className="el-95">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-80"
+          className="svg-76"
         />
       </section>
       <p className="box-9">
         <Image
-          src="/assets/pasted-artwork-43.svg"
+          src="/assets/pasted-artwork-32.svg"
           alt=""
           width={779}
           height={139}
@@ -29,7 +29,7 @@ export default function Page() {
       </p>
       <section className="box-12">
         <Image
-          src="/assets/pasted-artwork-138.svg"
+          src="/assets/pasted-artwork-111.svg"
           alt=""
           width={1246}
           height={34}
@@ -38,11 +38,11 @@ export default function Page() {
       </section>
       <section className="box-10">
         <Image
-          src="/assets/pasted-artwork-151.svg"
+          src="/assets/pasted-artwork-122.svg"
           alt=""
           width={559}
           height={116}
-          className="svg-107"
+          className="svg-103"
         />
       </section>
       <section className="box-18">
@@ -52,53 +52,53 @@ export default function Page() {
       </section>
       <section className="box-90">
         <Image
-          src="/assets/pasted-artwork-152.svg"
+          src="/assets/pasted-artwork-123.svg"
           alt=""
           width={354}
           height={114}
-          className="svg-108"
+          className="svg-104"
         />
       </section>
       <section className="box-91">
         <Image
-          src="/assets/pasted-artwork-153.svg"
+          src="/assets/pasted-artwork-124.svg"
           alt=""
           width={390}
           height={59}
-          className="svg-109"
+          className="svg-105"
         />
       </section>
       <section className="box-92">
         <div className="box-93">
           <Image
-            src="/assets/pasted-artwork-154.svg"
+            src="/assets/pasted-artwork-125.svg"
             alt=""
             width={351}
             height={325}
-            className="svg-110"
+            className="svg-106"
           />
         </div>
         <div className="box-96">
           <Image
-            src="/assets/pasted-artwork-157.svg"
+            src="/assets/pasted-artwork-128.svg"
             alt=""
             width={49}
             height={57}
-            className="svg-113"
+            className="svg-109"
           />
         </div>
         <div className="box-94">
           <Image
-            src="/assets/pasted-artwork-155.svg"
+            src="/assets/pasted-artwork-126.svg"
             alt=""
             width={345}
             height={286}
-            className="svg-111"
+            className="svg-107"
           />
         </div>
         <div className="box-97">
           <Image
-            src="/assets/pasted-artwork-157.svg"
+            src="/assets/pasted-artwork-128.svg"
             alt=""
             width={49}
             height={57}
@@ -107,11 +107,11 @@ export default function Page() {
         </div>
         <div className="box-95">
           <Image
-            src="/assets/pasted-artwork-156.svg"
+            src="/assets/pasted-artwork-127.svg"
             alt=""
             width={343}
             height={286}
-            className="svg-112"
+            className="svg-108"
           />
         </div>
       </section>
@@ -134,21 +134,21 @@ export default function Page() {
           className="pasted-artwork-svg-2"
         />
         <Image
-          src="/assets/pasted-artwork-23.svg"
+          src="/assets/pasted-artwork-21.svg"
           alt=""
           width={138}
           height={49}
           className="pasted-artwork-svg-3"
         />
         <Image
-          src="/assets/pasted-artwork-24.svg"
+          src="/assets/pasted-artwork-22.svg"
           alt=""
           width={137}
           height={49}
           className="pasted-artwork-svg-4"
         />
         <Image
-          src="/assets/pasted-artwork-30.svg"
+          src="/assets/pasted-artwork-24.svg"
           alt=""
           width={137}
           height={49}
@@ -157,11 +157,11 @@ export default function Page() {
       </section>
       <section className="box-11">
         <Image
-          src="/assets/pasted-artwork-158.svg"
+          src="/assets/pasted-artwork-129.svg"
           alt=""
           width={457}
           height={114}
-          className="svg-114"
+          className="svg-110"
         />
       </section>
       <section className="box-20">
@@ -170,11 +170,11 @@ export default function Page() {
         </p>
         <div className="box-99">
           <Image
-            src="/assets/pasted-artwork-159.svg"
+            src="/assets/pasted-artwork-130.svg"
             alt=""
             width={989}
             height={171}
-            className="svg-115"
+            className="svg-111"
           />
         </div>
         <p className="box-100">
@@ -186,25 +186,25 @@ export default function Page() {
       </section>
       <p className="box-121">
         <Image
-          src="/assets/pasted-artwork-239.svg"
+          src="/assets/pasted-artwork-196.svg"
           alt=""
           width={352}
           height={279}
-          className="svg-172"
+          className="svg-168"
         />
         <Image
-          src="/assets/pasted-artwork-236.svg"
+          src="/assets/pasted-artwork-195.svg"
           alt=""
           width={1399}
           height={238}
           className="pasted-artwork-svg-35"
         />
         <Image
-          src="/assets/pasted-artwork-200.svg"
+          src="/assets/pasted-artwork-169.svg"
           alt=""
           width={1391}
           height={39}
-          className="svg-156"
+          className="svg-152"
         />
       </p>
       <Image data-inview

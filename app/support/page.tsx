@@ -9,18 +9,18 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_muf6exd68g" />
-      <section data-inview className="el-106">
+      <section data-inview className="el-102">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-87"
+          className="svg-83"
         />
       </section>
       <p className="box-65">
         <Image
-          src="/assets/pasted-artwork-126.svg"
+          src="/assets/pasted-artwork-104.svg"
           alt=""
           width={1064}
           height={131}
@@ -29,23 +29,23 @@ export default function Page() {
       </p>
       <section className="box-66">
         <Image
-          src="/assets/pasted-artwork-138.svg"
+          src="/assets/pasted-artwork-111.svg"
           alt=""
           width={1246}
           height={34}
           className="pasted-artwork-svg-21"
         />
       </section>
-      <p className="box-180">
+      <p className="box-179">
         {"第56回松ヶ崎祭を開催するにあたり、多くの方々にご協賛いただきました。\nここに深く御礼申し上げます。（敬称略・順不同）"}
       </p>
       <section className="box-125">
         <Image
-          src="/assets/pasted-artwork-206.svg"
+          src="/assets/pasted-artwork-173.svg"
           alt=""
           width={438}
           height={114}
-          className="svg-160"
+          className="svg-156"
         />
       </section>
       <section className="box-146">
@@ -58,11 +58,11 @@ export default function Page() {
       </section>
       <section className="box-126">
         <Image
-          src="/assets/pasted-artwork-207.svg"
+          src="/assets/pasted-artwork-174.svg"
           alt=""
           width={438}
           height={114}
-          className="svg-161"
+          className="svg-157"
         />
       </section>
       <section className="box-149">
@@ -75,14 +75,14 @@ export default function Page() {
       </section>
       <section className="box-151">
         <Image
-          src="/assets/pasted-artwork-293.svg"
+          src="/assets/pasted-artwork-242.svg"
           alt=""
           width={438}
           height={114}
-          className="svg-190"
+          className="svg-186"
         />
       </section>
-      <section className="box-178">
+      <section className="box-177">
         <Image
           src="/assets/HCD_mf56.png"
           alt=""
@@ -98,7 +98,7 @@ export default function Page() {
             alt=""
             width={1024}
             height={727}
-            className="el-160"
+            className="el-156"
           />
         </div>
         <div className="box-155">
@@ -107,7 +107,7 @@ export default function Page() {
             alt=""
             width={1438}
             height={1035}
-            className="el-161"
+            className="el-157"
           />
         </div>
         <div className="box-154">
@@ -136,7 +136,7 @@ export default function Page() {
             alt=""
             width={1021}
             height={574}
-            className="el-162"
+            className="el-158"
           />
         </div>
       </section>

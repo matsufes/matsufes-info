@@ -9,18 +9,18 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_muf6flq18p" />
-      <section data-inview className="el-107">
+      <section data-inview className="el-103">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-88"
+          className="svg-84"
         />
       </section>
       <p className="box-67">
         <Image
-          src="/assets/pasted-artwork-128.svg"
+          src="/assets/pasted-artwork-105.svg"
           alt=""
           width={412}
           height={123}
@@ -29,36 +29,36 @@ export default function Page() {
       </p>
       <section className="box-68">
         <Image
-          src="/assets/pasted-artwork-138.svg"
+          src="/assets/pasted-artwork-111.svg"
           alt=""
           width={1246}
           height={34}
           className="pasted-artwork-svg-22"
         />
       </section>
-      <section className="el-89">
+      <section className="el-88">
         <Image
-          src="/assets/pasted-artwork-222.svg"
+          src="/assets/pasted-artwork-188.svg"
           alt=""
           width={334}
           height={43}
-          className="svg-168"
+          className="svg-164"
         />
       </section>
       <section className="box-132">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"更新中身\"}]}]"}
-          src="/assets/pasted-artwork-227.svg"
+          src="/assets/pasted-artwork-189.svg"
           alt=""
           width={1393}
           height={115}
-          className="el-154"
+          className="el-150"
         />
         <Image id="更新中身" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"更新中身\"}]}]"} data-toggle-show="block"
-          src="/assets/pasted-artwork-228.svg"
+          src="/assets/pasted-artwork-190.svg"
           alt=""
           width={1393}
           height={391}
-          className="el-155"
+          className="el-151"
         />
       </section>
       <Image data-inview

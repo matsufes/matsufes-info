@@ -9,18 +9,18 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_mu2t6c971l" />
-      <section data-inview className="el-101">
+      <section data-inview className="el-97">
         <Image
           src="/assets/image-7.svg"
           alt=""
           width={1920}
           height={583}
-          className="svg-82"
+          className="svg-78"
         />
       </section>
       <p className="box-21">
         <Image
-          src="/assets/pasted-artwork-63.svg"
+          src="/assets/pasted-artwork-48.svg"
           alt=""
           width={562}
           height={167}
@@ -29,7 +29,7 @@ export default function Page() {
       </p>
       <section className="box-22">
         <Image
-          src="/assets/pasted-artwork-138.svg"
+          src="/assets/pasted-artwork-111.svg"
           alt=""
           width={1246}
           height={34}
@@ -38,20 +38,20 @@ export default function Page() {
       </section>
       <section className="box-23">
         <Image
-          src="/assets/pasted-artwork-297.svg"
+          src="/assets/pasted-artwork-244.svg"
           alt=""
           width={1704}
           height={1931}
-          className="svg-191"
+          className="svg-187"
         />
       </section>
-      <section className="box-185">
+      <section className="box-184">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://livepocket.jp/e/i1x36\"}]}]"}
-          src="/assets/pasted-artwork-292.svg"
+          src="/assets/pasted-artwork-241.svg"
           alt=""
           width={380}
           height={176}
-          className="el-198"
+          className="el-194"
         />
       </section>
       <Image data-inview

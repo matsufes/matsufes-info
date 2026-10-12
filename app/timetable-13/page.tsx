@@ -16,61 +16,61 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="svg-75"
+          className="svg-71"
         />
       </section>
       <p className="el-28">
         <Image
-          src="/assets/pasted-artwork-41.svg"
+          src="/assets/pasted-artwork-30.svg"
           alt=""
           width={719}
           height={157}
           className="el-53"
         />
       </p>
-      <section className="el-57">
+      <section className="el-56">
         <Image
-          src="/assets/pasted-artwork-138.svg"
+          src="/assets/pasted-artwork-111.svg"
           alt=""
           width={1246}
           height={34}
-          className="svg-91"
+          className="svg-87"
         />
       </section>
-      <p className="box-191">
+      <p className="box-190">
         {"1日の日程表を　見ることができるよ。\nメインステージでの催しや　音楽サークルの公演時間を　確認しよう。"}
       </p>
-      <section className="el-76">
+      <section className="el-75">
         <Image
-          src="/assets/pasted-artwork-84.svg"
+          src="/assets/pasted-artwork-64.svg"
           alt=""
           width={430}
           height={64}
           className="svg-30"
         />
       </section>
-      <section className="el-81">
-        <div className="el-82">
+      <section className="el-80">
+        <div className="el-81">
           <Image
-            src="/assets/pasted-artwork-85.svg"
+            src="/assets/pasted-artwork-65.svg"
             alt=""
             width={268}
             height={84}
             className="svg-32"
           />
         </div>
-        <Link href="/timetable-14" className="el-83">
+        <Link href="/timetable-14" className="el-82">
           <Image
-            src="/assets/pasted-artwork-86.svg"
+            src="/assets/pasted-artwork-66.svg"
             alt=""
             width={268}
             height={84}
             className="svg-33"
           />
         </Link>
-        <Link href="/timetable-15" className="el-84">
+        <Link href="/timetable-15" className="el-83">
           <Image
-            src="/assets/pasted-artwork-87.svg"
+            src="/assets/pasted-artwork-67.svg"
             alt=""
             width={268}
             height={84}
@@ -88,50 +88,50 @@ export default function Page() {
         </select>
       </section>
       <section className="el-29">
-        <div className="box-194">
-          <div id="main" data-toggle-show="flex" className="el-134">
+        <div className="box-193">
+          <div id="main" data-toggle-show="flex" className="el-130">
             <Image
-              src="/assets/pasted-artwork-177.svg"
+              src="/assets/pasted-artwork-147.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-135"
+              className="svg-131"
             />
             <Image
-              src="/assets/pasted-artwork-178.svg"
+              src="/assets/pasted-artwork-148.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-192"
+              className="svg-188"
             />
             <Image
-              src="/assets/pasted-artwork-179.svg"
+              src="/assets/pasted-artwork-149.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-136"
+              className="svg-132"
             />
             <Image
-              src="/assets/pasted-artwork-180.svg"
+              src="/assets/pasted-artwork-150.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-137"
+              className="svg-133"
             />
           </div>
           <Image
-            src="/assets/pasted-artwork-142.svg"
+            src="/assets/pasted-artwork-115.svg"
             alt=""
             width={295}
             height={2502}
-            className="el-125"
+            className="el-121"
           />
           <Image
-            src="/assets/pasted-artwork-296.svg"
+            src="/assets/pasted-artwork-243.svg"
             alt=""
             width={1670}
             height={3081}
-            className="el-202"
+            className="el-197"
           />
         </div>
       </section>
