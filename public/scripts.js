@@ -110,11 +110,6 @@ if (isHidden(el)) show(el);
 else hide(el);
 });
 break;
-case "scroll-to": {
-var el = find(self, st.target)[0];
-if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-break;
-}
 case "open-page":
 go(st.href, st.newTab);
 break;

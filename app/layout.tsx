@@ -30,7 +30,7 @@ export default function RootLayout({
       <body className={`${zenmarugothic.variable} ${zenkakugothicnew.variable}`}>
         {children}
         <div
-          dangerouslySetInnerHTML={{ __html: "<script src=\"/inview.js?v=16qqctc\" defer></script>\n<script src=\"/scripts.js?v=6kf54h\" defer></script>" }}
+          dangerouslySetInnerHTML={{ __html: "<script src=\"/inview.js?v=16qqctc\" defer></script>\n<script src=\"/scripts.js?v=23ay3f\" defer></script>" }}
         />
       </body>
     </html>
