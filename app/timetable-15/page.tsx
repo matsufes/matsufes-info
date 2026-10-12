@@ -37,7 +37,7 @@ export default function Page() {
           className="pasted-artwork-svg-11"
         />
       </section>
-      <p className="box-192">
+      <p className="box-191">
         {"1日の日程表を　見ることができるよ。\nメインステージでの催しや　音楽サークルの公演時間を　確認しよう。"}
       </p>
       <section className="el-67">
@@ -88,7 +88,7 @@ export default function Page() {
         </select>
       </section>
       <section className="el-68">
-        <div className="box-189">
+        <div className="box-188">
           <Image
             src="/assets/pasted-artwork-115.svg"
             alt=""

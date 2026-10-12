@@ -232,10 +232,10 @@ export default function Page() {
           height={280}
           className="el-161"
         />
-        <p className="box-159">
+        <p className="box-158">
           {"出展名"}
         </p>
-        <p className="box-160">
+        <p className="box-159">
           {"出展者名"}
         </p>
         <Image
@@ -259,10 +259,10 @@ export default function Page() {
           height={20}
           className="svg-176"
         />
-        <p className="box-162">
+        <p className="box-161">
           {"ああああああああああああちゅ〜"}
         </p>
-        <p className="box-163">
+        <p className="box-162">
           {"１のA"}
         </p>
         <Image
@@ -279,13 +279,13 @@ export default function Page() {
           height={16}
           className="svg-178"
         />
-        <p className="box-167">
+        <p className="box-166">
           {"m-1カテゴリ"}
         </p>
-        <p className="box-168">
+        <p className="box-167">
           {"中分類"}
         </p>
-        <p className="box-169">
+        <p className="box-168">
           {"大分類"}
         </p>
       </section>

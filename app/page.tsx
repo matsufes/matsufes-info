@@ -214,7 +214,7 @@ export default function Page() {
             className="img-3053-png"
           />
         </div>
-        <div className="box-178">
+        <div className="box-177">
           <div className="el-108">
             <Image
               src="/assets/56-.svg"
@@ -286,7 +286,7 @@ export default function Page() {
           />
         </div>
       </section>
-      <section className="box-196">
+      <section className="box-195">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/comingsoon\"}]}]"}
           src="/assets/pasted-artwork-52.svg"
           alt=""
@@ -302,7 +302,7 @@ export default function Page() {
           className="el-201"
         />
       </section>
-      <section className="box-197">
+      <section className="box-196">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/access\"}]}]"}
           src="/assets/pasted-artwork-109.svg"
           alt=""

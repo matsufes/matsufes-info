@@ -12041,7 +12041,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "60%",
+            "width": "50%",
             "borderRadius": "0px"
           }
         },
@@ -12281,6 +12281,11 @@
             "gap": "3px",
             "lineHeight": "1.3"
           }
+        },
+        "lg": {
+          "default": {
+            "fontSize": "20px"
+          }
         }
       }
     },
@@ -12302,7 +12307,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "60%",
+            "width": "50%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "60px"
@@ -12355,7 +12360,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "40%",
+            "width": "30%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "60px"
@@ -12429,6 +12434,11 @@
           "default": {
             "fontSize": "16px",
             "lineHeight": "1.3"
+          }
+        },
+        "lg": {
+          "default": {
+            "fontSize": "20px"
           }
         }
       }
@@ -18469,7 +18479,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "40%",
+            "width": "30%",
             "borderRadius": "0px",
             "maxWidth": "100%",
             "marginLeft": "60px"
@@ -19176,6 +19186,11 @@
         "sm": {
           "default": {
             "fontSize": "16px"
+          }
+        },
+        "lg": {
+          "default": {
+            "fontSize": "20px"
           }
         }
       }
@@ -19919,7 +19934,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "50%",
+            "width": "40%",
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
@@ -19949,7 +19964,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "50%",
+            "width": "40%",
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
@@ -20057,7 +20072,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_muxibetai",
+        "node_mv4yf50y1",
         "node_muxibhy8j"
       ],
       "styles": {
@@ -20085,40 +20100,6 @@
             "flexDirection": "column",
             "justifyContent": "center",
             "alignItems": "flex-start"
-          }
-        }
-      }
-    },
-    "node_muxibetai": {
-      "id": "node_muxibetai",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": {
-        "content": "・京お好み鉄平\n\n・中華そば 高安\n\n・(株)開晴亭\n\n・遊食邸 北山店\n\n・熟成麺屋 神来 一乗寺店\n\n・珍遊 一乗寺本店\n\n・麺家 澤希\n\n・麺屋 極鶏 一乗寺本店\n\n・家系ラーメン 斎藤家 一乗寺店\n\n・株式会社 バックス画材\n\n・天天有 一乗寺本店\n\n・ライフ 松ヶ崎店\n\n・EARTH CAFE",
-        "heading": 0
-      },
-      "link": null,
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "fontFamily": "Zen Kaku Gothic New",
-            "fontSize": "25px",
-            "fontWeight": "600",
-            "color": "#ffffff",
-            "lineHeight": "1",
-            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.5)"
-          }
-        },
-        "sm": {
-          "default": {
-            "fontSize": "16px",
-            "paddingBottom": "0px"
           }
         }
       }
@@ -20282,7 +20263,11 @@
           "default": {
             "paddingTop": "100px",
             "paddingRight": "20px",
-            "paddingLeft": "20px"
+            "paddingLeft": "20px",
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "alignItems": "center"
           }
         }
       }
@@ -20316,7 +20301,7 @@
             "paddingRight": "10px",
             "paddingBottom": "10px",
             "paddingLeft": "10px",
-            "width": "100%"
+            "width": "80%"
           }
         }
       }
@@ -20342,6 +20327,11 @@
             "paddingRight": "0px",
             "paddingBottom": "0px",
             "paddingLeft": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "80%"
           }
         }
       }
@@ -20375,7 +20365,7 @@
             "paddingRight": "10px",
             "paddingBottom": "10px",
             "paddingLeft": "10px",
-            "width": "100%"
+            "width": "80%"
           }
         }
       }
@@ -20464,7 +20454,11 @@
         "sm": {
           "default": {
             "paddingRight": "20px",
-            "paddingLeft": "20px"
+            "paddingLeft": "20px",
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "alignItems": "center"
           }
         }
       }
@@ -20498,7 +20492,7 @@
             "paddingRight": "10px",
             "paddingBottom": "10px",
             "paddingLeft": "10px",
-            "width": "100%"
+            "width": "80%"
           }
         }
       }
@@ -20532,7 +20526,7 @@
             "paddingRight": "10px",
             "paddingBottom": "10px",
             "paddingLeft": "10px",
-            "width": "100%"
+            "width": "80%"
           }
         }
       }
@@ -23203,7 +23197,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "50%",
+            "width": "40%",
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
@@ -23233,7 +23227,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "50%",
+            "width": "40%",
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
@@ -23845,7 +23839,8 @@
             "paddingTop": "20px",
             "paddingRight": "20px",
             "paddingBottom": "20px",
-            "paddingLeft": "20px"
+            "paddingLeft": "20px",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.5)"
           }
         },
         "sm": {
@@ -23901,7 +23896,8 @@
             "paddingTop": "20px",
             "paddingRight": "20px",
             "paddingBottom": "20px",
-            "paddingLeft": "20px"
+            "paddingLeft": "20px",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.5)"
           }
         },
         "sm": {
@@ -24921,6 +24917,39 @@
           "fillMode": "both"
         }
       ]
+    },
+    "node_mv4yf50y1": {
+      "id": "node_mv4yf50y1",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": {
+        "content": "・京お好み鉄平\n\n・中華そば 高安\n\n・(株)開晴亭\n\n・遊食邸 北山店\n\n・熟成麺屋 神来 一乗寺店\n\n・珍遊 一乗寺本店\n\n・麺家 澤希\n\n・麺屋 極鶏 一乗寺本店\n\n・家系ラーメン 斎藤家 一乗寺店\n\n・株式会社 バックス画材\n\n・天天有 一乗寺本店\n\n・ライフ 松ヶ崎店\n\n・EARTH CAFE\n\n・さいじき",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "25px",
+            "lineHeight": "1",
+            "color": "#ffffff",
+            "fontWeight": "600",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.5)"
+          }
+        },
+        "sm": {
+          "default": {
+            "fontSize": "16px"
+          }
+        }
+      }
     }
   },
   "assets": {

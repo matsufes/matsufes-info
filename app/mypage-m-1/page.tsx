@@ -36,7 +36,7 @@ export default function Page() {
           className="pasted-artwork-svg-24"
         />
       </section>
-      <p className="box-180">
+      <p className="box-179">
         {"きみ専用の　ページだよ。\nお気に入りの企画を見たり　m-1グランプリに投票したりできるよ。"}
       </p>
       <section className="box-37">

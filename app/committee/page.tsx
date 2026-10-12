@@ -45,7 +45,7 @@ export default function Page() {
           className="svg-187"
         />
       </section>
-      <section className="box-184">
+      <section className="box-183">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://livepocket.jp/e/i1x36\"}]}]"}
           src="/assets/pasted-artwork-241.svg"
           alt=""

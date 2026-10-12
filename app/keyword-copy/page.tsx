@@ -33,7 +33,7 @@ export default function Page() {
       <p className="el-177">
         {"出展者名"}
       </p>
-      <section className="box-164">
+      <section className="box-163">
         <div className="el-181">
           <Image
             src="/assets/pasted-artwork-229.svg"
@@ -42,7 +42,7 @@ export default function Page() {
             height={96}
             className="pasted-artwork-svg-37"
           />
-          <p className="box-166">
+          <p className="box-165">
             {"ああああああああああああちゅ〜"}
           </p>
         </div>
@@ -99,7 +99,7 @@ export default function Page() {
           className="el-185"
         />
       </section>
-      <section className="box-165">
+      <section className="box-164">
         <p className="m-1-3">
           {"m-1カテゴリ"}
         </p>
@@ -127,20 +127,20 @@ export default function Page() {
             className="svg-182"
           />
         </div>
-        <p className="box-170">
+        <p className="box-169">
           {"お気に入り"}
         </p>
-        <p className="box-171">
+        <p className="box-170">
           {"m-1グランプリに\n投票する"}
         </p>
       </section>
       <section className="el-193">
-        <div className="box-173" />
-        <p className="box-174">
+        <div className="box-172" />
+        <p className="box-173">
           {"紹介文あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ"}
         </p>
       </section>
-      <section className="box-175">
+      <section className="box-174">
         <Image
           src="/assets/pasted-artwork-235.svg"
           alt=""
@@ -163,7 +163,7 @@ export default function Page() {
           className="el-188"
         />
       </section>
-      <section className="box-172">
+      <section className="box-171">
         <Image
           src="/assets/pasted-artwork-238.svg"
           alt=""

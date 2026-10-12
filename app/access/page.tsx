@@ -45,8 +45,8 @@ export default function Page() {
           className="pasted-artwork-svg-30"
         />
       </section>
-      <section className="box-185">
-        <p className="box-186">
+      <section className="box-184">
+        <p className="box-185">
           {"・地下鉄烏丸線　松ヶ崎駅　8分\n\n・叡山電車　一乗寺駅　11分\n\n・叡山電車　修学院駅　14分"}
         </p>
       </section>
@@ -59,8 +59,8 @@ export default function Page() {
           className="svg-100"
         />
       </section>
-      <section className="box-187">
-        <p className="box-188">
+      <section className="box-186">
+        <p className="box-187">
           {"・市バス65号系統など　左京区総合庁舎・京都工芸繊維大学前　1分\n\n\n・京都バス17・43号系統など　高野泉町　4分\n\n\n・市バス松ヶ崎4号系統など　左京区総合庁舎前　5分\n\n\n・市バス北8・65号系統など　松ヶ崎海尻町　7分\n\n\n・市バス206・204号系統など　高木町　8分"}
         </p>
       </section>
