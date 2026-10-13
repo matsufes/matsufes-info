@@ -154,6 +154,9 @@
                       "出展カテゴリ": [
                         "物販"
                       ],
+                      "投票カテゴリ": [
+                        "物販"
+                      ],
                       "大分類": [
                         "かう"
                       ]
@@ -183,6 +186,9 @@
                     "type": "飲食",
                     "categories": {
                       "出展カテゴリ": [
+                        "飲食"
+                      ],
+                      "投票カテゴリ": [
                         "飲食"
                       ],
                       "大分類": [
@@ -219,6 +225,9 @@
                       "出展カテゴリ": [
                         "飲食"
                       ],
+                      "投票カテゴリ": [
+                        "飲食"
+                      ],
                       "大分類": [
                         "たべる"
                       ]
@@ -253,6 +262,9 @@
                       "出展カテゴリ": [
                         "物販"
                       ],
+                      "投票カテゴリ": [
+                        "物販"
+                      ],
                       "大分類": [
                         "かう"
                       ]
@@ -282,6 +294,9 @@
                     "type": "飲食",
                     "categories": {
                       "出展カテゴリ": [
+                        "飲食"
+                      ],
+                      "投票カテゴリ": [
                         "飲食"
                       ],
                       "大分類": [
@@ -318,6 +333,9 @@
                       "出展カテゴリ": [
                         "パフォーマンス"
                       ],
+                      "投票カテゴリ": [
+                        "パフォーマンス"
+                      ],
                       "大分類": [
                         "きく"
                       ]
@@ -350,6 +368,9 @@
                     "categories": {
                       "出展カテゴリ": [
                         "屋内パフォーマンス"
+                      ],
+                      "投票カテゴリ": [
+                        "パフォーマンス"
                       ],
                       "大分類": [
                         "きく"
@@ -385,6 +406,9 @@
                       "出展カテゴリ": [
                         "飲食"
                       ],
+                      "投票カテゴリ": [
+                        "飲食"
+                      ],
                       "大分類": [
                         "たべる"
                       ]
@@ -417,6 +441,10 @@
                     "type": "飲食",
                     "categories": {
                       "出展カテゴリ": [
+                        "飲食",
+                        "物販"
+                      ],
+                      "投票カテゴリ": [
                         "飲食",
                         "物販"
                       ],
@@ -455,6 +483,9 @@
                       "出展カテゴリ": [
                         "パフォーマンス"
                       ],
+                      "投票カテゴリ": [
+                        "パフォーマンス"
+                      ],
                       "大分類": [
                         "きく"
                       ]
@@ -484,6 +515,9 @@
                     "type": "飲食",
                     "categories": {
                       "出展カテゴリ": [
+                        "飲食"
+                      ],
+                      "投票カテゴリ": [
                         "飲食"
                       ],
                       "大分類": [
@@ -519,6 +553,9 @@
                       "出展カテゴリ": [
                         "屋内パフォーマンス"
                       ],
+                      "投票カテゴリ": [
+                        "パフォーマンス"
+                      ],
                       "大分類": [
                         "きく"
                       ]
@@ -552,6 +589,9 @@
                       "出展カテゴリ": [
                         "飲食"
                       ],
+                      "投票カテゴリ": [
+                        "飲食"
+                      ],
                       "大分類": [
                         "たべる"
                       ]
@@ -581,6 +621,9 @@
                     "type": "物販",
                     "categories": {
                       "出展カテゴリ": [
+                        "物販"
+                      ],
+                      "投票カテゴリ": [
                         "物販"
                       ],
                       "大分類": [
@@ -615,6 +658,9 @@
                     "type": "飲食",
                     "categories": {
                       "出展カテゴリ": [
+                        "飲食"
+                      ],
+                      "投票カテゴリ": [
                         "飲食"
                       ],
                       "大分類": [
@@ -652,6 +698,9 @@
                         "物販",
                         "体験"
                       ],
+                      "投票カテゴリ": [
+                        "物販"
+                      ],
                       "大分類": [
                         "かう",
                         "みる",
@@ -688,6 +737,9 @@
                       "出展カテゴリ": [
                         "パフォーマンス"
                       ],
+                      "投票カテゴリ": [
+                        "パフォーマンス"
+                      ],
                       "大分類": [
                         "きく"
                       ]
@@ -721,6 +773,9 @@
                       "出展カテゴリ": [
                         "屋内パフォーマンス"
                       ],
+                      "投票カテゴリ": [
+                        "パフォーマンス"
+                      ],
                       "大分類": [
                         "きく"
                       ]
@@ -753,6 +808,9 @@
                     "type": "体験",
                     "categories": {
                       "出展カテゴリ": [
+                        "体験"
+                      ],
+                      "投票カテゴリ": [
                         "体験"
                       ],
                       "大分類": [
@@ -789,6 +847,9 @@
                       "出展カテゴリ": [
                         "物販"
                       ],
+                      "投票カテゴリ": [
+                        "物販"
+                      ],
                       "大分類": [
                         "かう"
                       ]
@@ -805,7 +866,7 @@
                   }
                 ]
               },
-              "fetchedAt": 1791875300282
+              "fetchedAt": 1791882392163
             },
             {
               "id": "st_mv6cakp55",
@@ -827,8 +888,7 @@
           }
         }
       ],
-      "rawHtml": null,
-      "redirectTo": "https://map.matsufes.info/"
+      "rawHtml": null
     },
     "page_mswzfiqry": {
       "id": "page_mswzfiqry",
@@ -9334,7 +9394,7 @@
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "left": "0%",
+            "left": "35%",
             "bottom": "11.5%"
           }
         },
@@ -14030,7 +14090,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_muiot1im6l"
+        "node_mv6h283co"
       ],
       "styles": {
         "base": {
@@ -14095,36 +14155,6 @@
         }
       },
       "motions": []
-    },
-    "node_muiot1im6l": {
-      "id": "node_muiot1im6l",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmuiot0kt-pasted-artwork.svg",
-        "alt": "",
-        "width": 985,
-        "height": 748,
-        "assetId": "asset_muiot1il6k"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "985px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "100%"
-          }
-        }
-      }
     },
     "node_muiote586n": {
       "id": "node_muiote586n",
@@ -21282,8 +21312,8 @@
       "image": {
         "src": "{imageUrl}",
         "alt": "",
-        "width": 1200,
-        "height": 1200
+        "width": 1024,
+        "height": 1024
       },
       "children": [],
       "styles": {
@@ -80110,7 +80140,28 @@
         {
           "id": "sc_mv6dv8fz1",
           "trigger": "change",
-          "steps": [],
+          "steps": [
+            {
+              "id": "st_mv6g8qig1",
+              "kind": "filter-array",
+              "array": "data",
+              "field": "name",
+              "op": "contains",
+              "value": "{field}",
+              "or": [
+                {
+                  "field": "exhibitorName",
+                  "op": "contains",
+                  "value": "{field}"
+                },
+                {
+                  "field": "tags",
+                  "op": "contains",
+                  "value": "{field}"
+                }
+              ]
+            }
+          ],
           "pos": {
             "x": 120,
             "y": 2031
@@ -98651,6 +98702,31 @@
           }
         }
       }
+    },
+    "node_mv6h283co": {
+      "id": "node_mv6h283co",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmv6h27fh-pasted-artwork.svg",
+        "alt": "",
+        "width": 985,
+        "height": 748,
+        "assetId": "asset_mv6h283bn"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "985px",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        }
+      }
     }
   },
   "assets": {
@@ -101450,6 +101526,25 @@
       "mimeType": "image/png",
       "width": 1442,
       "height": 977
+    },
+    "asset_mv6fewlm1": {
+      "id": "asset_mv6fewlm1",
+      "name": "ogp.png",
+      "path": "assets/mv6fevlc-ogp.png",
+      "bytes": 1350605,
+      "mimeType": "image/png",
+      "width": 1200,
+      "height": 630
+    },
+    "asset_mv6h283bn": {
+      "id": "asset_mv6h283bn",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mv6h27fh-pasted-artwork.svg",
+      "bytes": 599289,
+      "mimeType": "image/svg+xml",
+      "width": 985,
+      "height": 748,
+      "svgFilter": true
     }
   },
   "components": {},
@@ -101463,5 +101558,8 @@
       ]
     }
   ],
-  "customCss": ""
+  "customCss": "",
+  "ogImage": {
+    "assetId": "asset_mv6fewlm1"
+  }
 }

@@ -13,6 +13,24 @@ cache.set(raw, v);
 }
 return v;
 }
+function has(o, k) {
+return Object.prototype.hasOwnProperty.call(o, k);
+}
+function dig(v, path) {
+var keys = String(path).split(".");
+for (var i = 0; i < keys.length; i++) {
+if (v == null || typeof v !== "object") return undefined;
+var k = keys[i];
+v = Array.isArray(v) && k === "-1" ? v[v.length - 1] : v[k];
+}
+return v;
+}
+function text(v) {
+if (v == null) return "";
+if (Array.isArray(v)) return v.map(text).filter(Boolean).join(", ");
+if (typeof v === "object") return "";
+return String(v);
+}
 function isHidden(el) {
 return getComputedStyle(el).display === "none";
 }
@@ -67,6 +85,10 @@ case "gt": return parseFloat(v) > parseFloat(w);
 case "lt": return parseFloat(v) < parseFloat(w);
 case "empty": return v === "";
 case "not-empty": return v !== "";
+case "in":
+return w.split(",").some(function (x) {
+return x.trim() === v;
+});
 default: return v === w;
 }
 }
@@ -78,23 +100,135 @@ setTimeout(res, Math.max(0, (Number(s) || 0) * 1000));
 return {
 install: function (root) {
 var alive = true;
+var vars = {};
+function getVar(name) {
+return has(vars, name) ? vars[name] : dig(vars, name);
+}
+function inTpl(el) {
+return !!(el.closest && el.closest("[data-tpl]"));
+}
 function find(self, target) {
 if (!target || target === "@self") return self ? [self] : [];
 try {
-return Array.prototype.slice.call(
-root.querySelectorAll("#" + CSS.escape(target))
-);
+return Array.prototype.slice
+.call(root.querySelectorAll("#" + CSS.escape(target)))
+.filter(function (el) {
+return !inTpl(el);
+});
 } catch (e) {
 return [];
 }
+}
+function lookup(name, self, item) {
+if (item) {
+var iv = has(item, name) ? item[name] : dig(item, name);
+if (iv !== undefined) return iv;
+}
+var v = getVar(name);
+if (v !== undefined) return v;
+var els = find(self, name.split(".")[0]);
+if (els.length) return valueOf(els);
+try {
+var q = new URLSearchParams(location.search).get(name);
+if (q != null) return q;
+} catch (e) {}
+return "";
+}
+function resolve(s, self, item) {
+return String(s == null ? "" : s).replace(/\{([^{}]+)\}/g, function (m, k) {
+return text(lookup(k.trim(), self, item));
+});
+}
+function resolveUrl(s, self, item) {
+return String(s == null ? "" : s).replace(
+/\{([^{}]+)\}|%7B(.*?)%7D/gi,
+function (m, a, b) {
+var k = a;
+if (k == null) {
+try {
+k = decodeURIComponent(b);
+} catch (e) {
+return m;
+}
+}
+return encodeURIComponent(text(lookup(k.trim(), self, item)));
+}
+);
+}
+function setVar(name, v) {
+if (!name) return;
+vars[name] = v;
 }
 function test(c, self) {
 var els = find(self, c.target);
 var r = false;
 if (c.subject === "value") {
-return cmp(valueOf(els), c.op, c.value == null ? "" : String(c.value));
+return cmp(valueOf(els), c.op, resolve(c.value, self));
 }
 return c.not ? !r : r;
+}
+var filters = new Map();
+function passes(fs, item) {
+return Object.keys(fs).every(function (k) {
+return fs[k].some(function (c) {
+return cmp(item[c.field] == null ? "" : String(item[c.field]), c.op, c.value);
+});
+});
+}
+var sorts = new Map();
+function itemOf(w) {
+try {
+return JSON.parse(w.getAttribute("data-item")) || {};
+} catch (e) {
+return {};
+}
+}
+function order(x, y) {
+return typeof x === "number" && typeof y === "number"
+? x - y
+: String(x == null ? "" : x).localeCompare(String(y == null ? "" : y), "ja", {
+numeric: true,
+});
+}
+function applySort(list) {
+var s = sorts.get(list.getAttribute("data-array"));
+if (!s) return;
+var dir = s.dir === "desc" ? -1 : 1;
+var rows = Array.prototype.filter
+.call(list.children, function (w) {
+return w.hasAttribute("data-item");
+})
+.map(function (w, i) {
+return { w: w, v: itemOf(w)[s.field], i: i };
+});
+rows.sort(function (a, b) {
+return order(a.v, b.v) * dir || a.i - b.i;
+});
+rows.forEach(function (r) {
+list.appendChild(r.w);
+});
+}
+function relist(name) {
+listsOf(name).forEach(function (list) {
+applySort(list);
+applyFilters(list);
+});
+}
+function applyFilters(list) {
+var fs = filters.get(list.getAttribute("data-array")) || {};
+Array.prototype.forEach.call(list.children, function (w) {
+if (!w.hasAttribute("data-item")) return;
+w.style.display = passes(fs, itemOf(w)) ? "contents" : "none";
+});
+}
+function listsOf(name) {
+try {
+return Array.prototype.slice.call(
+root.querySelectorAll('[data-array="' + CSS.escape(name) + '"]')
+);
+} catch (e) {
+return [];
+}
 }
 function exec(st, self) {
 switch (st.kind) {
@@ -113,8 +247,35 @@ break;
 case "open-page":
 go(st.href, st.newTab);
 break;
-case "open-url":
-go(st.url, st.newTab);
+case "open-url": {
+var url = resolveUrl(st.url, self);
+go(url, st.newTab);
+break;
+}
+case "filter-array": {
+if (!st.array || !st.conds || !st.conds.length) break;
+var fs = filters.get(st.array) || {};
+var fk = st.conds
+.map(function (c) {
+return c.field;
+})
+.sort()
+.join("|");
+fs[fk] = st.conds.map(function (c) {
+return { field: c.field, op: c.op, value: resolve(c.value, self) };
+});
+filters.set(st.array, fs);
+relist(st.array);
+break;
+}
+case "unfilter-array":
+filters.delete(st.array);
+relist(st.array);
+break;
+case "sort-array":
+if (!st.array || !st.field) break;
+sorts.set(st.array, { field: st.field, dir: st.dir });
+relist(st.array);
 break;
 }
 }
@@ -230,11 +391,23 @@ hovering.forEach(function (t, el) {
 if (t === null && done.indexOf(el) < 0) leaveLater(el);
 });
 }
+function onInput(e) {
+chain(e.target).forEach(function (el) {
+fire(el, "change");
+});
+}
 var seen = new WeakSet();
 function scan() {
 if (!alive) return;
+if (sorts.size || filters.size) {
+root.querySelectorAll("[data-array]").forEach(function (list) {
+if (list.hasAttribute("data-client-list")) return;
+applySort(list);
+applyFilters(list);
+});
+}
 root.querySelectorAll("[data-scripts]").forEach(function (el) {
-if (seen.has(el)) return;
+if (seen.has(el) || inTpl(el)) return;
 seen.add(el);
 var list = parse(el);
 if (list.some(function (s) { return s.trigger === "load"; })) {
@@ -261,8 +434,11 @@ scan();
 root.addEventListener("click", onClick);
 root.addEventListener("mouseover", onOver);
 root.addEventListener("mouseout", onOut);
+root.addEventListener("input", onInput);
 return function dispose() {
 alive = false;
+filters.clear();
+sorts.clear();
 hovering.forEach(function (t) {
 clearTimeout(t);
 });
@@ -271,7 +447,8 @@ mo.disconnect();
 root.removeEventListener("click", onClick);
 root.removeEventListener("mouseover", onOver);
 root.removeEventListener("mouseout", onOut);
+root.removeEventListener("input", onInput);
 };
 },
 };
-})().install(document);
+})({"sharedDomain":"matsufes.info"}).install(document);

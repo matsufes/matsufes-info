@@ -16,11 +16,6 @@ const nextConfig = {
   async redirects() {
     return [
     {
-        "source": "/search",
-        "destination": "https://map.matsufes.info/",
-        "statusCode": 301
-    },
-    {
         "source": "/navigation",
         "destination": "https://map.matsufes.info/",
         "statusCode": 301
