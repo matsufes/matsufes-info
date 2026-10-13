@@ -1288,7 +1288,7 @@
         "node_muhpllld2f",
         "node_muhpllld2g"
       ],
-      "unpublished": true,
+      "unpublished": false,
       "bodyStyles": {
         "base": {
           "default": {
@@ -98629,7 +98629,7 @@
             "padding": "20px",
             "gap": "12px",
             "fontFamily": "Zen Kaku Gothic New",
-            "fontSize": "25px",
+            "fontSize": "20px",
             "color": "#ffffff",
             "fontWeight": "600",
             "textAlign": "center",
