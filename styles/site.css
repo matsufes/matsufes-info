@@ -4327,7 +4327,7 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
 .pasted-artwork-svg-32 {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
   height: auto;
 }
 
@@ -4420,7 +4420,7 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
 .pasted-artwork-svg-33 {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
   height: auto;
 }
 
@@ -5509,6 +5509,10 @@ body:has([data-page-body="page_mv65ozjy1"]) {
   height: auto;
 }
 
+.footer.is-inview {
+  animation-play-state: running;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -5520,6 +5524,7 @@ body:has([data-page-body="page_mv65ozjy1"]) {
   width: auto;
   height: auto;
   position: relative;
+  animation: anim-fade-up 0.5s ease-out 0s 1 normal both paused;
 }
 
 .pasted-artwork-svg-34 {
@@ -32565,26 +32570,26 @@ body:has([data-page-body="page_mv65ozjy1"]) {
   }
 
   .el-176 {
-    left: 20%;
-    font-size: 10px;
+    left: 22%;
+    font-size: 9px;
     top: 35%;
   }
 
   .el-177 {
-    left: 20%;
-    font-size: 10px;
+    left: 22%;
+    font-size: 9px;
     top: 45%;
   }
 
   .hello-world {
-    left: 20%;
-    font-size: 10px;
+    left: 22%;
+    font-size: 9px;
     top: 55%;
   }
 
   .re-kit {
-    left: 20%;
-    font-size: 10px;
+    left: 22%;
+    font-size: 9px;
     top: 65%;
   }
 

@@ -13069,7 +13069,7 @@
         "base": {
           "default": {
             "width": "100%",
-            "borderRadius": "12px"
+            "borderRadius": "0px"
           }
         }
       }
@@ -13352,7 +13352,7 @@
         "base": {
           "default": {
             "width": "100%",
-            "borderRadius": "12px"
+            "borderRadius": "0px"
           }
         }
       }
@@ -17289,7 +17289,21 @@
             "paddingLeft": "0px"
           }
         }
-      }
+      },
+      "motions": [
+        {
+          "id": "motion_mv67ru2l1",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
     },
     "node_mutle5uk1i": {
       "id": "node_mutle5uk1i",
@@ -23281,8 +23295,8 @@
         },
         "sm": {
           "default": {
-            "left": "20%",
-            "fontSize": "10px",
+            "left": "22%",
+            "fontSize": "9px",
             "top": "35%"
           }
         }
@@ -23349,8 +23363,8 @@
         },
         "sm": {
           "default": {
-            "left": "20%",
-            "fontSize": "10px",
+            "left": "22%",
+            "fontSize": "9px",
             "top": "45%"
           }
         }
@@ -23417,8 +23431,8 @@
         },
         "sm": {
           "default": {
-            "left": "20%",
-            "fontSize": "10px",
+            "left": "22%",
+            "fontSize": "9px",
             "top": "55%"
           }
         }
@@ -23485,8 +23499,8 @@
         },
         "sm": {
           "default": {
-            "left": "20%",
-            "fontSize": "10px",
+            "left": "22%",
+            "fontSize": "9px",
             "top": "65%"
           }
         }
@@ -77336,7 +77350,7 @@
       },
       "link": {
         "kind": "page",
-        "pageId": "page_muf5w3hl70",
+        "pageId": "page_muhpllld2i",
         "pos": {
           "x": 37,
           "y": 1244
@@ -77376,7 +77390,7 @@
       },
       "link": {
         "kind": "page",
-        "pageId": "page_muf67d6n7n",
+        "pageId": "page_muhpllld2i",
         "pos": {
           "x": 35,
           "y": 1325

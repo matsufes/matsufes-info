@@ -15,8 +15,8 @@ export default function Page() {
           <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"show\",\"target\":\"memu-p\"}]}]"} className="el-777">
             <span
               className="crisp-svg pasted-artwork-svg-57"
-              style={{ aspectRatio: "230 / 142" }}
             >
+              <svg aria-hidden="true" width={230} height={142} viewBox="0 0 230 142" />
               <Image
                 src="/assets/pasted-artwork-247.svg"
                 alt=""
@@ -29,8 +29,8 @@ export default function Page() {
             <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-779">
               <span
                 className="crisp-svg svg-250"
-                style={{ aspectRatio: "43 / 31" }}
               >
+                <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                 <Image
                   src="/assets/pasted-artwork-171.svg"
                   alt=""
@@ -107,8 +107,8 @@ export default function Page() {
           </div>
           <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/\"}]}]"}
             className="crisp-svg el-788"
-            style={{ aspectRatio: "213 / 213" }}
           >
+            <svg aria-hidden="true" width={213} height={213} viewBox="0 0 213 213" />
             <Image
               src="/assets/pasted-artwork-248.svg"
               alt=""
@@ -120,8 +120,8 @@ export default function Page() {
             <p id="matsufes" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu1\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu1\"}],\"keep\":true}]"} className="el-790">
               <span
                 className="crisp-svg svg-251"
-                style={{ aspectRatio: "244 / 55" }}
               >
+                <svg aria-hidden="true" width={244} height={55} viewBox="0 0 244 55" />
                 <Image
                   src="/assets/pasted-artwork-25.svg"
                   alt=""
@@ -147,8 +147,8 @@ export default function Page() {
             <p id="kikaku" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu2\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu2\"}],\"keep\":true}]"} className="el-795">
               <span
                 className="crisp-svg svg-252"
-                style={{ aspectRatio: "153 / 55" }}
               >
+                <svg aria-hidden="true" width={153} height={55} viewBox="0 0 153 55" />
                 <Image
                   src="/assets/pasted-artwork-26.svg"
                   alt=""
@@ -174,8 +174,8 @@ export default function Page() {
             <p id="goannai" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu3\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu3\"}],\"keep\":true}]"} className="el-801">
               <span
                 className="crisp-svg svg-253"
-                style={{ aspectRatio: "93 / 61" }}
               >
+                <svg aria-hidden="true" width={93} height={61} viewBox="0 0 93 61" />
                 <Image
                   src="/assets/pasted-artwork-27.svg"
                   alt=""
@@ -201,8 +201,8 @@ export default function Page() {
             <p id="kousiki" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu4\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu4\"}],\"keep\":true}]"} className="el-807">
               <span
                 className="crisp-svg svg-254"
-                style={{ aspectRatio: "127 / 58" }}
               >
+                <svg aria-hidden="true" width={127} height={58} viewBox="0 0 127 58" />
                 <Image
                   src="/assets/pasted-artwork-28.svg"
                   alt=""
@@ -235,8 +235,8 @@ export default function Page() {
       <p className="box-33">
         <span
           className="crisp-svg svg-21"
-          style={{ aspectRatio: "644 / 96" }}
         >
+          <svg aria-hidden="true" width={644} height={96} viewBox="0 0 644 96" />
           <Image
             src="/assets/pasted-artwork-56.svg"
             alt=""
@@ -261,8 +261,8 @@ export default function Page() {
         <div className="box-42">
           <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/mypage-favorite\"}]}]"}
             className="crisp-svg el-57"
-            style={{ aspectRatio: "306 / 236" }}
           >
+            <svg aria-hidden="true" width={306} height={236} viewBox="0 0 306 236" />
             <Image
               src="/assets/pasted-artwork-62.svg"
               alt=""
@@ -274,8 +274,8 @@ export default function Page() {
         <div className="box-41">
           <span
             className="crisp-svg svg-24"
-            style={{ aspectRatio: "306 / 236" }}
           >
+            <svg aria-hidden="true" width={306} height={236} viewBox="0 0 306 236" />
             <Image
               src="/assets/pasted-artwork-63.svg"
               alt=""
@@ -288,8 +288,8 @@ export default function Page() {
       <section className="box-35">
         <span
           className="crisp-svg svg-22"
-          style={{ aspectRatio: "1352 / 75" }}
         >
+          <svg aria-hidden="true" width={1352} height={75} viewBox="0 0 1352 75" />
           <Image
             src="/assets/pasted-artwork-58.svg"
             alt=""
@@ -301,8 +301,8 @@ export default function Page() {
       <section className="box-36">
         <span
           className="crisp-svg svg-103"
-          style={{ aspectRatio: "430 / 72" }}
         >
+          <svg aria-hidden="true" width={430} height={72} viewBox="0 0 430 72" />
           <Image
             src="/assets/pasted-artwork-139.svg"
             alt=""
@@ -315,8 +315,8 @@ export default function Page() {
         <div className="box-108">
           <span
             className="crisp-svg svg-104"
-            style={{ aspectRatio: "413 / 257" }}
           >
+            <svg aria-hidden="true" width={413} height={257} viewBox="0 0 413 257" />
             <Image
               src="/assets/pasted-artwork-140.svg"
               alt=""
@@ -327,8 +327,8 @@ export default function Page() {
           <div className="box-110">
             <span
               className="crisp-svg svg-105"
-              style={{ aspectRatio: "86 / 59" }}
             >
+              <svg aria-hidden="true" width={86} height={59} viewBox="0 0 86 59" />
               <Image
                 src="/assets/pasted-artwork-141.svg"
                 alt=""
@@ -341,8 +341,8 @@ export default function Page() {
         <div className="box-109">
           <span
             className="crisp-svg pasted-artwork-svg-32"
-            style={{ aspectRatio: "413 / 257" }}
           >
+            <svg aria-hidden="true" width={413} height={257} viewBox="0 0 413 257" />
             <Image
               src="/assets/pasted-artwork-140.svg"
               alt=""
@@ -353,8 +353,8 @@ export default function Page() {
           <div className="box-111">
             <span
               className="crisp-svg svg-106"
-              style={{ aspectRatio: "85 / 59" }}
             >
+              <svg aria-hidden="true" width={85} height={59} viewBox="0 0 85 59" />
               <Image
                 src="/assets/pasted-artwork-142.svg"
                 alt=""
@@ -369,8 +369,8 @@ export default function Page() {
         <div className="box-113">
           <span
             className="crisp-svg svg-107"
-            style={{ aspectRatio: "413 / 257" }}
           >
+            <svg aria-hidden="true" width={413} height={257} viewBox="0 0 413 257" />
             <Image
               src="/assets/pasted-artwork-140.svg"
               alt=""
@@ -381,8 +381,8 @@ export default function Page() {
           <div className="box-114">
             <span
               className="crisp-svg svg-108"
-              style={{ aspectRatio: "85 / 59" }}
             >
+              <svg aria-hidden="true" width={85} height={59} viewBox="0 0 85 59" />
               <Image
                 src="/assets/pasted-artwork-143.svg"
                 alt=""
@@ -395,8 +395,8 @@ export default function Page() {
         <div className="box-115">
           <span
             className="crisp-svg pasted-artwork-svg-33"
-            style={{ aspectRatio: "413 / 257" }}
           >
+            <svg aria-hidden="true" width={413} height={257} viewBox="0 0 413 257" />
             <Image
               src="/assets/pasted-artwork-140.svg"
               alt=""
@@ -407,8 +407,8 @@ export default function Page() {
           <div className="box-116">
             <span
               className="crisp-svg svg-109"
-              style={{ aspectRatio: "86 / 59" }}
             >
+              <svg aria-hidden="true" width={86} height={59} viewBox="0 0 86 59" />
               <Image
                 src="/assets/pasted-artwork-144.svg"
                 alt=""
@@ -423,8 +423,8 @@ export default function Page() {
         <div className="box-118">
           <span
             className="crisp-svg svg-110"
-            style={{ aspectRatio: "413 / 257" }}
           >
+            <svg aria-hidden="true" width={413} height={257} viewBox="0 0 413 257" />
             <Image
               src="/assets/pasted-artwork-140.svg"
               alt=""
@@ -435,8 +435,8 @@ export default function Page() {
           <div className="box-119">
             <span
               className="crisp-svg svg-111"
-              style={{ aspectRatio: "292 / 39" }}
             >
+              <svg aria-hidden="true" width={292} height={39} viewBox="0 0 292 39" />
               <Image
                 src="/assets/pasted-artwork-145.svg"
                 alt=""
@@ -450,8 +450,8 @@ export default function Page() {
       <section className="box-120">
         <span
           className="crisp-svg svg-112"
-          style={{ aspectRatio: "690 / 314" }}
         >
+          <svg aria-hidden="true" width={690} height={314} viewBox="0 0 690 314" />
           <Image
             src="/assets/pasted-artwork-146.svg"
             alt=""
@@ -463,8 +463,8 @@ export default function Page() {
       <section className="box-127">
         <span
           className="crisp-svg el-125"
-          style={{ aspectRatio: "524 / 207" }}
         >
+          <svg aria-hidden="true" width={524} height={207} viewBox="0 0 524 207" />
           <Image
             src="/assets/pasted-artwork-177.svg"
             alt=""
