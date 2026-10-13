@@ -1632,7 +1632,7 @@ body:has([data-page-body="page_muzoss702k"]) {
 }
 
 .pasted-artwork-svg {
-  width: 15%;
+  width: 10%;
   border-radius: 12px;
   height: auto;
 }
@@ -3462,6 +3462,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   left: 0px;
   bottom: -150px;
   margin-top: 100px;
+  z-index: 1;
   width: auto;
   height: auto;
   animation: anim-fade-up 1s ease-out 1s 1 normal both paused;
@@ -3776,7 +3777,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
   color: #ffffff;
   text-align: left;
-  font-size: 25px;
+  font-size: 20px;
   width: 100%;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   height: auto;
@@ -3825,7 +3826,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   padding: 20px;
   gap: 12px;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1;
   color: #ffffff;
@@ -3835,7 +3836,7 @@ body:has([data-page-body="page_muzoss702k"]) {
 }
 
 .pasted-artwork-svg-30 {
-  width: 40%;
+  width: 30%;
   border-radius: 0px;
   margin-left: 60px;
   height: auto;
@@ -3854,7 +3855,7 @@ body:has([data-page-body="page_muzoss702k"]) {
 }
 
 .svg-82 {
-  width: 40%;
+  width: 30%;
   border-radius: 0px;
   max-width: 100%;
   margin-left: 60px;
@@ -3874,7 +3875,7 @@ body:has([data-page-body="page_muzoss702k"]) {
 }
 
 .svg-83 {
-  width: 30%;
+  width: 20%;
   border-radius: 0px;
   max-width: 100%;
   margin-left: 60px;
@@ -3898,7 +3899,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   padding: 20px;
   gap: 12px;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1;
   color: #ffffff;
@@ -3910,7 +3911,7 @@ body:has([data-page-body="page_muzoss702k"]) {
 }
 
 .svg-84 {
-  width: 40%;
+  width: 35%;
   border-radius: 0px;
   max-width: 100%;
   margin-left: 60px;
@@ -3923,7 +3924,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   padding: 20px;
   gap: 12px;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1;
   color: #ffffff;
@@ -3938,7 +3939,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   padding: 20px;
   gap: 12px;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1;
   color: #ffffff;
@@ -3948,7 +3949,7 @@ body:has([data-page-body="page_muzoss702k"]) {
 }
 
 .svg-85 {
-  width: 50%;
+  width: 40%;
   border-radius: 0px;
   max-width: 100%;
   margin-left: 60px;
@@ -3968,7 +3969,7 @@ body:has([data-page-body="page_muzoss702k"]) {
 }
 
 .svg-86 {
-  width: 35%;
+  width: 25%;
   border-radius: 0px;
   max-width: 100%;
   margin-left: 60px;
@@ -4083,7 +4084,7 @@ body:has([data-page-body="page_muzoss702k"]) {
 }
 
 .svg-92 {
-  width: 40%;
+  width: 30%;
   border-radius: 0px;
   max-width: 100%;
   margin-left: 60px;
@@ -4095,7 +4096,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   flex-direction: column;
   gap: 12px;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1;
   color: #ffffff;
@@ -4135,7 +4136,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   padding: 20px;
   gap: 12px;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1;
   color: #ffffff;
@@ -4939,7 +4940,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   gap: 12px;
   justify-content: center;
   align-items: center;
-  margin-top: 500px;
+  margin-top: 300px;
   margin-bottom: 200px;
   width: auto;
   height: auto;
@@ -5465,7 +5466,7 @@ body:has([data-page-body="page_muzoss702k"]) {
 }
 
 .svg-137 {
-  width: 40%;
+  width: 35%;
   border-radius: 0px;
   max-width: 100%;
   margin-left: 60px;
@@ -5482,7 +5483,7 @@ body:has([data-page-body="page_muzoss702k"]) {
 }
 
 .svg-138 {
-  width: 40%;
+  width: 35%;
   border-radius: 0px;
   max-width: 100%;
   margin-left: 60px;
@@ -5502,7 +5503,7 @@ body:has([data-page-body="page_muzoss702k"]) {
 }
 
 .svg-139 {
-  width: 40%;
+  width: 35%;
   border-radius: 0px;
   max-width: 100%;
   margin-left: 60px;
@@ -5776,11 +5777,11 @@ body:has([data-page-body="page_muzoss702k"]) {
 }
 
 .el-134 {
-  width: 74%;
+  width: 75%;
   border-radius: 0px;
   max-width: 100%;
   position: absolute;
-  left: 170px;
+  left: 12%;
   top: 0px;
   height: auto;
 }
@@ -6086,7 +6087,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   padding: 20px;
   gap: 12px;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 23px;
   line-height: 1;
   color: #ffffff;
   font-weight: 600;
@@ -6112,7 +6113,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   padding: 20px;
   gap: 12px;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 600;
   line-height: 1;
   color: #ffffff;
@@ -6360,7 +6361,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   padding: 20px;
   gap: 12px;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 600;
   line-height: 1;
   color: #ffffff;
@@ -7198,7 +7199,7 @@ body:has([data-page-body="page_muzoss702k"]) {
 }
 
 .svg-167 {
-  width: 40%;
+  width: 35%;
   border-radius: 0px;
   max-width: 100%;
   margin-left: 60px;
@@ -7269,7 +7270,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   width: auto;
   text-align: center;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   color: #ffffff;
   padding-top: 50px;
@@ -7288,7 +7289,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   width: 100%;
   text-align: center;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   color: #ffffff;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
@@ -7308,7 +7309,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   width: 100%;
   text-align: center;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   color: #ffffff;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
@@ -7335,7 +7336,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   padding: 20px;
   gap: 12px;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.7;
   color: #ffffff;
@@ -7377,7 +7378,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   flex-direction: column;
   gap: 12px;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   color: #ffffff;
   padding-top: 20px;
@@ -7403,7 +7404,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   flex-direction: column;
   gap: 12px;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1;
   color: #ffffff;
   font-weight: 600;
@@ -7434,7 +7435,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   padding: 20px;
   gap: 12px;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   color: #ffffff;
   font-weight: 600;
   text-align: center;
@@ -7449,7 +7450,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   padding: 20px;
   gap: 12px;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   color: #ffffff;
   font-weight: 600;
   text-align: center;
@@ -7464,7 +7465,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   padding: 20px;
   gap: 12px;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   color: #ffffff;
   font-weight: 600;
   text-align: center;
@@ -7479,7 +7480,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   padding: 20px;
   gap: 12px;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   color: #ffffff;
   font-weight: 600;
   text-align: center;
@@ -7733,7 +7734,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   padding: 20px;
   gap: 12px;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
-  font-size: 25px;
+  font-size: 23px;
   line-height: 1;
   color: #ffffff;
   font-weight: 600;
@@ -27203,6 +27204,278 @@ body:has([data-page-body="page_muzoss702k"]) {
   animation: anim-fade-down 1s ease-out 0s 1 normal both paused;
 }
 
+.box-198 {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 12px;
+  margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.box-199 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 40%;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  height: auto;
+}
+
+.box-200 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 40%;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  height: auto;
+}
+
+.svg-262 {
+  width: 100%;
+  border-radius: 0px;
+  max-width: 100%;
+  height: auto;
+}
+
+.svg-263 {
+  width: 100%;
+  border-radius: 0px;
+  max-width: 100%;
+  height: auto;
+}
+
+.box-201 {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 12px;
+  margin-top: 0px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.box-202 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 40%;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  height: auto;
+}
+
+.box-203 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 40%;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  height: auto;
+}
+
+.svg-264 {
+  width: 100%;
+  border-radius: 0px;
+  max-width: 100%;
+  height: auto;
+}
+
+.svg-265 {
+  width: 100%;
+  border-radius: 0px;
+  max-width: 100%;
+  height: auto;
+}
+
+.box-204 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  width: auto;
+  height: auto;
+}
+
+.box-205 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  width: 40%;
+  height: auto;
+}
+
+.box-206 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  width: 40%;
+  height: auto;
+}
+
+.svg-266 {
+  width: 100%;
+  border-radius: 0px;
+  max-width: 100%;
+  height: auto;
+}
+
+.svg-267 {
+  width: 100%;
+  border-radius: 0px;
+  max-width: 100%;
+  height: auto;
+}
+
+.box-207 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  width: auto;
+  height: auto;
+}
+
+.box-208 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  width: 40%;
+  height: auto;
+}
+
+.box-209 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  width: 40%;
+  height: auto;
+}
+
+.svg-268 {
+  width: 100%;
+  border-radius: 0px;
+  max-width: 100%;
+  height: auto;
+}
+
+.svg-269 {
+  width: 100%;
+  border-radius: 0px;
+  max-width: 100%;
+  height: auto;
+}
+
+.box-210 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  width: auto;
+  height: auto;
+}
+
+.box-211 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  width: 40%;
+  height: auto;
+}
+
+.box-212 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  width: 40%;
+  height: auto;
+}
+
+.svg-270 {
+  width: 100%;
+  border-radius: 0px;
+  max-width: 100%;
+  height: auto;
+}
+
+.svg-271 {
+  width: 100%;
+  border-radius: 0px;
+  max-width: 100%;
+  height: auto;
+}
+
+.box-213 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 12px;
+  text-align: center;
+  font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
+  font-size: 20px;
+  line-height: 0.7;
+  color: #ffffff;
+  font-weight: 600;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  width: auto;
+  height: auto;
+}
+
 @media (max-width: 1024px) {
   .el-3 {
     justify-content: space-between;
@@ -30645,6 +30918,10 @@ body:has([data-page-body="page_muzoss702k"]) {
     margin-left: -80px;
   }
 
+  .img-3053-png {
+    margin-left: 30px;
+  }
+
   .el-93 {
     top: 150px;
     padding-top: 0px;
@@ -30664,6 +30941,7 @@ body:has([data-page-body="page_muzoss702k"]) {
 
   .el-96 {
     bottom: -50px;
+    z-index: 0;
   }
 
   .el-97 {
@@ -32028,6 +32306,12 @@ body:has([data-page-body="page_muzoss702k"]) {
     border-radius: 0px;
   }
 
+  .box-177 {
+    top: 20%;
+    right: 0%;
+    width: 90%;
+  }
+
   .box-178 {
     height: 100%;
     width: auto;
@@ -32046,6 +32330,10 @@ body:has([data-page-body="page_muzoss702k"]) {
 
   .box-182 {
     font-size: 16px;
+  }
+
+  .svg-168 {
+    margin-left: 20px;
   }
 
   .box-185 {
@@ -36714,6 +37002,87 @@ body:has([data-page-body="page_muzoss702k"]) {
 
   .el-830 {
     margin-right: 0px;
+  }
+
+  .box-198 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .box-199 {
+    width: 80%;
+  }
+
+  .box-200 {
+    width: 80%;
+  }
+
+  .box-201 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .box-202 {
+    width: 80%;
+  }
+
+  .box-203 {
+    width: 80%;
+  }
+
+  .box-204 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .box-205 {
+    width: 100%;
+  }
+
+  .box-206 {
+    width: 100%;
+  }
+
+  .box-207 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .box-208 {
+    width: 100%;
+  }
+
+  .box-209 {
+    width: 100%;
+  }
+
+  .box-210 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .box-211 {
+    width: 100%;
+  }
+
+  .box-212 {
+    width: 100%;
+  }
+
+  .box-213 {
+    font-size: 12px;
+    line-height: 1;
   }
 }
 

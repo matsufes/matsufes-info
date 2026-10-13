@@ -13,23 +13,31 @@ export default function Page() {
       <section className="el-594">
         <div className="el-595">
           <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"show\",\"target\":\"memu-p\"}]}]"} className="el-596">
-            <Image
-              src="/assets/pasted-artwork-248.svg"
-              alt=""
-              width={230}
-              height={142}
-              className="pasted-artwork-svg-52"
-            />
+            <span
+              className="crisp-svg pasted-artwork-svg-52"
+              style={{ aspectRatio: "230 / 142" }}
+            >
+              <Image
+                src="/assets/pasted-artwork-248.svg"
+                alt=""
+                width={460}
+                height={284}
+              />
+            </span>
           </div>
           <div id="memu-p" data-toggle-show="flex" className="el-597">
             <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-598">
-              <Image
-                src="/assets/pasted-artwork-171.svg"
-                alt=""
-                width={43}
-                height={31}
-                className="svg-227"
-              />
+              <span
+                className="crisp-svg svg-227"
+                style={{ aspectRatio: "43 / 31" }}
+              >
+                <Image
+                  src="/assets/pasted-artwork-171.svg"
+                  alt=""
+                  width={86}
+                  height={62}
+                />
+              </span>
             </div>
             <p id="松ヶ崎祭について" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"mf-phone\"}]}]"} className="el-599">
               {"松ヶ崎祭について"}
@@ -97,22 +105,30 @@ export default function Page() {
               </Link>
             </div>
           </div>
-          <Image
-            src="/assets/pasted-artwork-249.svg"
-            alt=""
-            width={213}
-            height={213}
-            className="el-607"
-          />
+          <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/\"}]}]"}
+            className="crisp-svg el-607"
+            style={{ aspectRatio: "213 / 213" }}
+          >
+            <Image
+              src="/assets/pasted-artwork-249.svg"
+              alt=""
+              width={426}
+              height={426}
+            />
+          </span>
           <div className="el-608">
             <p id="matsufes" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu1\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu1\"}],\"keep\":true}]"} className="el-609">
-              <Image
-                src="/assets/pasted-artwork-25.svg"
-                alt=""
-                width={244}
-                height={55}
-                className="svg-228"
-              />
+              <span
+                className="crisp-svg svg-228"
+                style={{ aspectRatio: "244 / 55" }}
+              >
+                <Image
+                  src="/assets/pasted-artwork-25.svg"
+                  alt=""
+                  width={488}
+                  height={110}
+                />
+              </span>
               <div id="menu1" data-toggle-show="flex" data-inview className="el-610">
                 <Link href="/about" className="el-611">
                   {"松ヶ崎祭とは"}
@@ -129,13 +145,17 @@ export default function Page() {
               </div>
             </p>
             <p id="kikaku" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu2\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu2\"}],\"keep\":true}]"} className="el-614">
-              <Image
-                src="/assets/pasted-artwork-26.svg"
-                alt=""
-                width={153}
-                height={55}
-                className="svg-229"
-              />
+              <span
+                className="crisp-svg svg-229"
+                style={{ aspectRatio: "153 / 55" }}
+              >
+                <Image
+                  src="/assets/pasted-artwork-26.svg"
+                  alt=""
+                  width={306}
+                  height={110}
+                />
+              </span>
               <div id="menu2" data-toggle-show="flex" data-inview className="el-615">
                 <Link href="/keyword" className="el-616">
                   {"言葉からさがす"}
@@ -152,13 +172,17 @@ export default function Page() {
               </div>
             </p>
             <p id="goannai" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu3\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu3\"}],\"keep\":true}]"} className="el-620">
-              <Image
-                src="/assets/pasted-artwork-27.svg"
-                alt=""
-                width={93}
-                height={61}
-                className="svg-230"
-              />
+              <span
+                className="crisp-svg svg-230"
+                style={{ aspectRatio: "93 / 61" }}
+              >
+                <Image
+                  src="/assets/pasted-artwork-27.svg"
+                  alt=""
+                  width={186}
+                  height={122}
+                />
+              </span>
               <div id="menu3" data-toggle-show="flex" data-inview className="el-621">
                 <Link href="/attention" className="el-622">
                   {"ご来場の皆さまへ"}
@@ -166,22 +190,26 @@ export default function Page() {
                 <Link href="/access" className="el-623">
                   {"行き方・会場地図"}
                 </Link>
-                <Link href="/survey" className="el-624">
+                <Link href="/comingsoon" className="el-624">
                   {"来場者アンケ〜ト"}
                 </Link>
-                <Link href="/question" className="el-625">
+                <Link href="/comingsoon" className="el-625">
                   {"よくあるご質問"}
                 </Link>
               </div>
             </p>
             <p id="kousiki" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu4\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu4\"}],\"keep\":true}]"} className="el-626">
-              <Image
-                src="/assets/pasted-artwork-28.svg"
-                alt=""
-                width={127}
-                height={58}
-                className="svg-231"
-              />
+              <span
+                className="crisp-svg svg-231"
+                style={{ aspectRatio: "127 / 58" }}
+              >
+                <Image
+                  src="/assets/pasted-artwork-28.svg"
+                  alt=""
+                  width={254}
+                  height={116}
+                />
+              </span>
               <div id="menu4" data-toggle-show="flex" data-inview className="el-627">
                 <Link href="/committee" className="el-628">
                   {"委員会企画"}
@@ -205,13 +233,17 @@ export default function Page() {
         />
       </section>
       <p className="box-59">
-        <Image
-          src="/assets/pasted-artwork-102.svg"
-          alt=""
-          width={849}
-          height={131}
-          className="svg-65"
-        />
+        <span
+          className="crisp-svg svg-65"
+          style={{ aspectRatio: "849 / 131" }}
+        >
+          <Image
+            src="/assets/pasted-artwork-102.svg"
+            alt=""
+            width={1698}
+            height={262}
+          />
+        </span>
       </p>
       <section className="box-60">
         <Image
@@ -223,13 +255,17 @@ export default function Page() {
         />
       </section>
       <section className="box-61">
-        <Image
-          src="/assets/pasted-artwork-121.svg"
-          alt=""
-          width={438}
-          height={114}
-          className="svg-84"
-        />
+        <span
+          className="crisp-svg svg-84"
+          style={{ aspectRatio: "438 / 114" }}
+        >
+          <Image
+            src="/assets/pasted-artwork-121.svg"
+            alt=""
+            width={876}
+            height={228}
+          />
+        </span>
       </section>
       <section className="box-72">
         <p className="box-88">
@@ -237,13 +273,17 @@ export default function Page() {
         </p>
       </section>
       <section className="box-124">
-        <Image
-          src="/assets/pasted-artwork-172.svg"
-          alt=""
-          width={438}
-          height={114}
-          className="svg-137"
-        />
+        <span
+          className="crisp-svg svg-137"
+          style={{ aspectRatio: "438 / 114" }}
+        >
+          <Image
+            src="/assets/pasted-artwork-172.svg"
+            alt=""
+            width={876}
+            height={228}
+          />
+        </span>
       </section>
       <section className="box-181">
         <p className="box-182">

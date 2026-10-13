@@ -27,6 +27,25 @@ img, video {
   display: block;
 }
 
+/* シャドウ付きSVGのiOS Safari向けぼやけ対策（要素側のスタイルが優先されるよう詳細度0） */
+:where(.crisp-svg) {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.crisp-svg > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  max-width: none;
+  object-fit: inherit;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+}
+
 input, textarea, select, button {
   font: inherit;
   color: inherit;
