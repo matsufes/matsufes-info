@@ -233,7 +233,7 @@ export default function Page() {
           className="el-882"
         />
       </section>
-      <section className="box-219">
+      <section className="box-218">
         <span
           className="crisp-svg svg-274"
         >
@@ -245,7 +245,7 @@ export default function Page() {
             height={270}
           />
         </span>
-        <p className="box-217">
+        <p className="box-216">
           <span
             className="crisp-svg svg-275"
           >
@@ -258,7 +258,7 @@ export default function Page() {
             />
           </span>
         </p>
-        <div className="box-218">
+        <div className="box-217">
           <span
             className="crisp-svg svg-276"
           >

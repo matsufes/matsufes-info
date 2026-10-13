@@ -905,7 +905,7 @@
         "node_mv53jksof3",
         "node_mu2t6c9713",
         "node_mu2t6c9715",
-        "node_mv61wy141",
+        "node_mv6e8bnpk",
         "node_mu2tnfpk1v",
         "node_mv3j1k9ua",
         "node_mv5ib0lsu3",
@@ -976,7 +976,7 @@
         "node_mutsb42r1v",
         "node_mu727nz01c"
       ],
-      "unpublished": false,
+      "unpublished": true,
       "bodyStyles": {
         "base": {
           "default": {
@@ -1463,7 +1463,7 @@
     "page_mv6alv245p": {
       "id": "page_mv6alv245p",
       "name": "きみのしおり",
-      "slug": "comingsoon-copy",
+      "slug": "mypage",
       "title": "マイページ",
       "description": "松ヶ崎祭HPにてブックマークした出展などを確認できます。",
       "children": [
@@ -8830,7 +8830,7 @@
         },
         "sm": {
           "default": {
-            "top": "30.1%",
+            "top": "30%",
             "width": "100%"
           }
         }
@@ -8865,7 +8865,7 @@
         "sm": {
           "default": {
             "bottom": "710px",
-            "top": "35%",
+            "top": "35.2%",
             "left": "0%",
             "width": "100%"
           }
@@ -15835,7 +15835,7 @@
         },
         "sm": {
           "default": {
-            "width": "70%",
+            "width": "75%",
             "height": "100%",
             "bottom": "0%",
             "left": "26%",
@@ -15844,7 +15844,10 @@
           }
         }
       },
-      "attrId": "street15"
+      "attrId": "street15",
+      "hiddenOn": [
+        "sm"
+      ]
     },
     "node_munnnh3xa": {
       "id": "node_munnnh3xa",
@@ -79772,41 +79775,6 @@
         }
       }
     },
-    "node_mv61wy141": {
-      "id": "node_mv61wy141",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": {
-        "content": "みんなが松ヶ崎祭を　もっと楽しめるように　企画をいっぱい　用意したよ。\n\n\n今日しかできない　特別な体験を　お届けするね。",
-        "heading": 0
-      },
-      "link": null,
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "textAlign": "center",
-            "fontFamily": "Zen Kaku Gothic New",
-            "fontSize": "20px",
-            "lineHeight": "0.7",
-            "color": "#ffffff",
-            "fontWeight": "600",
-            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.5)"
-          }
-        },
-        "sm": {
-          "default": {
-            "fontSize": "12px",
-            "lineHeight": "1"
-          }
-        }
-      }
-    },
     "node_mv635ewd8": {
       "id": "node_mv635ewd8",
       "type": "box",
@@ -98641,6 +98609,44 @@
           "fillMode": "both"
         }
       ]
+    },
+    "node_mv6e8bnpk": {
+      "id": "node_mv6e8bnpk",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": {
+        "content": "みんなが松ヶ崎祭を　もっと楽しめるように　企画をいっぱい　用意したよ。\n今日しかできない　特別な体験を　お届けするね。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "25px",
+            "color": "#ffffff",
+            "fontWeight": "600",
+            "textAlign": "center",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.5)"
+          }
+        },
+        "sm": {
+          "default": {
+            "fontSize": "13px"
+          }
+        },
+        "md": {
+          "default": {
+            "fontSize": "20px"
+          }
+        }
+      }
     }
   },
   "assets": {

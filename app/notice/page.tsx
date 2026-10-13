@@ -255,11 +255,11 @@ export default function Page() {
           className="pasted-artwork-svg-22"
         />
       </section>
-      <section className="box-213">
-        <p className="box-214">
+      <section className="box-212">
+        <p className="box-213">
           {"2026/10/13"}
         </p>
-        <div className="box-215">
+        <div className="box-214">
           <Image
             src="/assets/pasted-artwork-260.svg"
             alt=""
@@ -269,7 +269,7 @@ export default function Page() {
           />
         </div>
       </section>
-      <section className="box-212">
+      <section className="box-211">
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"10/13中身\"}]}]"}
           className="crisp-svg el-845"
         >

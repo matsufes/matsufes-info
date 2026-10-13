@@ -255,8 +255,8 @@ export default function Page() {
           className="pasted-artwork-svg-16"
         />
       </section>
-      <p className="box-211">
-        {"みんなが松ヶ崎祭を　もっと楽しめるように　企画をいっぱい　用意したよ。\n\n\n今日しかできない　特別な体験を　お届けするね。"}
+      <p className="box-256">
+        {"みんなが松ヶ崎祭を　もっと楽しめるように　企画をいっぱい　用意したよ。\n今日しかできない　特別な体験を　お届けするね。"}
       </p>
       <section className="box-23">
         <span
