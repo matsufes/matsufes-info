@@ -27,8 +27,8 @@ export default async function Page({
   const q = typeof sp.q === "string" ? sp.q : typeof sp.field === "string" ? sp.field : "";
   const items: SearchItem[] = (await fetchExhibits()).map((e) => ({
     href: exhibitHref(e),
-    exhibitorName: e.exhibitorName,
-    groupName: e.groupName,
+    name: e.name,
+    exhibitorName: e.exhibitorName || e.groupName,
     imageUrl: e.imageUrl,
     message: e.customAnswers?.["皆さまへ"] ?? "",
     place: placeText(e),

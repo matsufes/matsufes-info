@@ -7,8 +7,8 @@ import { normalize } from "@/lib/exhibits";
 
 export type SearchItem = {
   href: string;
+  name: string;
   exhibitorName: string;
-  groupName: string;
   imageUrl: string;
   message: string;
   place: string;
@@ -177,8 +177,8 @@ export default function SearchList({ items, initialQuery }: { items: SearchItem[
                     <svg aria-hidden="true" width={429} height={280} viewBox="0 0 429 280" />
                     <Image src="/assets/pasted-artwork-202.svg" alt="" width={858} height={560} />
                   </span>
-                  <p className="box-157">{item.exhibitorName}</p>
-                  <p className="box-158">{item.groupName}</p>
+                  <p className="box-157">{item.name}</p>
+                  <p className="box-158">{item.exhibitorName}</p>
                   <Image
                     src={item.imageUrl || "data:image/gif;base64,R0lGODlhAQABAAAAACw="}
                     alt=""

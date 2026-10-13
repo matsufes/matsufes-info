@@ -54,7 +54,7 @@ export default async function Page({ params }: Props) {
       <section className="el-153">
         <Image src="/assets/pasted-artwork-111.svg" alt="" width={1246} height={34} className="pasted-artwork-svg-36" />
       </section>
-      <p className="el-154">{e.exhibitorName}</p>
+      <p className="el-154">{e.exhibitorName || e.groupName}</p>
       <section className="box-162">
         {message && (
           <div className="el-158">
