@@ -13,6 +13,24 @@ cache.set(raw, v);
 }
 return v;
 }
+function has(o, k) {
+return Object.prototype.hasOwnProperty.call(o, k);
+}
+function dig(v, path) {
+var keys = String(path).split(".");
+for (var i = 0; i < keys.length; i++) {
+if (v == null || typeof v !== "object") return undefined;
+var k = keys[i];
+v = Array.isArray(v) && k === "-1" ? v[v.length - 1] : v[k];
+}
+return v;
+}
+function text(v) {
+if (v == null) return "";
+if (Array.isArray(v)) return v.map(text).filter(Boolean).join(", ");
+if (typeof v === "object") return "";
+return String(v);
+}
 function isHidden(el) {
 return getComputedStyle(el).display === "none";
 }
@@ -67,6 +85,10 @@ case "gt": return parseFloat(v) > parseFloat(w);
 case "lt": return parseFloat(v) < parseFloat(w);
 case "empty": return v === "";
 case "not-empty": return v !== "";
+case "in":
+return w.split(",").some(function (x) {
+return x.trim() === v;
+});
 default: return v === w;
 }
 }
@@ -78,6 +100,10 @@ setTimeout(res, Math.max(0, (Number(s) || 0) * 1000));
 return {
 install: function (root) {
 var alive = true;
+var vars = {};
+function getVar(name) {
+return has(vars, name) ? vars[name] : dig(vars, name);
+}
 function find(self, target) {
 if (!target || target === "@self") return self ? [self] : [];
 try {
@@ -88,11 +114,51 @@ root.querySelectorAll("#" + CSS.escape(target))
 return [];
 }
 }
+function lookup(name, self, item) {
+if (item) {
+var iv = has(item, name) ? item[name] : dig(item, name);
+if (iv !== undefined) return iv;
+}
+var v = getVar(name);
+if (v !== undefined) return v;
+var els = find(self, name.split(".")[0]);
+if (els.length) return valueOf(els);
+try {
+var q = new URLSearchParams(location.search).get(name);
+if (q != null) return q;
+} catch (e) {}
+return "";
+}
+function resolve(s, self, item) {
+return String(s == null ? "" : s).replace(/\{([^{}]+)\}/g, function (m, k) {
+return text(lookup(k.trim(), self, item));
+});
+}
+function resolveUrl(s, self, item) {
+return String(s == null ? "" : s).replace(
+/\{([^{}]+)\}|%7B(.*?)%7D/gi,
+function (m, a, b) {
+var k = a;
+if (k == null) {
+try {
+k = decodeURIComponent(b);
+} catch (e) {
+return m;
+}
+}
+return encodeURIComponent(text(lookup(k.trim(), self, item)));
+}
+);
+}
+function setVar(name, v) {
+if (!name) return;
+vars[name] = v;
+}
 function test(c, self) {
 var els = find(self, c.target);
 var r = false;
 if (c.subject === "value") {
-return cmp(valueOf(els), c.op, c.value == null ? "" : String(c.value));
+return cmp(valueOf(els), c.op, resolve(c.value, self));
 }
 return c.not ? !r : r;
 }
@@ -113,9 +179,11 @@ break;
 case "open-page":
 go(st.href, st.newTab);
 break;
-case "open-url":
-go(st.url, st.newTab);
+case "open-url": {
+var url = resolveUrl(st.url, self);
+go(url, st.newTab);
 break;
+}
 }
 }
 function runSteps(steps, self) {
@@ -245,4 +313,4 @@ root.removeEventListener("mouseout", onOut);
 };
 },
 };
-})().install(document);
+})({"sharedDomain":"matsufes.info"}).install(document);

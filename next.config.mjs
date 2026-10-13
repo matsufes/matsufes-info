@@ -14,20 +14,22 @@ const nextConfig = {
     ];
   },
   async redirects() {
-    return [];
+    return [
+    {
+        "source": "/navigation",
+        "destination": "https://map.matsufes.info/",
+        "statusCode": 301
+    },
+    {
+        "source": "/booth",
+        "destination": "/search",
+        "statusCode": 301
+    }
+];
   },
   async rewrites() {
     return {
-      beforeFiles: [
-      {
-            "source": "/page-24",
-            "destination": "https://piyonavi.matsufes.info/map"
-      },
-      {
-            "source": "/page-24/:proxyPath*",
-            "destination": "https://piyonavi.matsufes.info/map/:proxyPath*"
-      }
-],
+      beforeFiles: [],
       afterFiles: [],
       fallback: [],
     };
