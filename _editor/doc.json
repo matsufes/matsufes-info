@@ -111,7 +111,7 @@
         "node_msotieex10",
         "node_mu3pep6z42",
         "node_mv3plg65r",
-        "node_mv3y7iajw",
+        "node_mv64stsrj",
         "node_msow9ld327",
         "node_msotieex1c",
         "node_mu98l3tk36",
@@ -133,7 +133,1377 @@
             "backgroundPosition": "center"
           }
         }
-      }
+      },
+      "pageScripts": [
+        {
+          "id": "sc_mv62m9878",
+          "trigger": "load",
+          "steps": [],
+          "pos": {
+            "x": 587,
+            "y": 287
+          }
+        },
+        {
+          "id": "sc_mv63f9io2",
+          "trigger": "load",
+          "steps": [
+            {
+              "id": "st_mv63f8su1",
+              "kind": "fetch",
+              "url": "",
+              "sample": {
+                "exhibits": [
+                  {
+                    "recordId": "74176cc6-ae48-47f9-8ee9-953434dcf281",
+                    "publicId": 63,
+                    "id": "3-21",
+                    "name": "fleur",
+                    "group": "fleur",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "物販"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "かう"
+                      ]
+                    },
+                    "color": "#f59e0b",
+                    "description": "編み物のお花を自由に選んで、自分だけのブーケ作り♡心を込めた手作りの小物も販売します⭐︎",
+                    "image": "https://api.matsufes.info/images/exhibits/74176cc6-ae48-47f9-8ee9-953434dcf281-6bb9a77a5edd.webp",
+                    "sns": {
+                      "instagram": "https://instagram.com/fleur._.crochet?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+                    },
+                    "exhibitorName": "fleur",
+                    "businessHours": [
+                      {
+                        "date": "2026-11-14",
+                        "open": false,
+                        "opensAt": "10:00",
+                        "closesAt": "20:30"
+                      },
+                      {
+                        "date": "2026-11-15",
+                        "open": false,
+                        "opensAt": "10:00",
+                        "closesAt": "16:00"
+                      }
+                    ],
+                    "customAnswers": {
+                      "custom_mtb9ylhp": "編み物",
+                      "custom_mtba0aa4": "編み物沼にどっぷりハマりちゅ〜"
+                    },
+                    "venue": "3",
+                    "lngLat": [
+                      135.7795376,
+                      35.0483223
+                    ],
+                    "searchWords": "編み物,フルール,Fleur,花束,はなたば,ブーケ,bouquet,お花,おはな,花,フラワー,flower,毛糸,けいと,ニット,knit,あみもの,手作り,手づくり,てづくり,ハンドメイド,handmade,小物,こもの,雑貨,ざっか,物販,グッズ"
+                  },
+                  {
+                    "recordId": "2f93616a-e201-41f7-93db-4985efe56d7e",
+                    "publicId": 9,
+                    "id": "1-09",
+                    "name": "お金がない炒飯",
+                    "group": "きっと26代",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "飲食"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "たべる"
+                      ]
+                    },
+                    "color": "#ef4444",
+                    "description": "鳥人間プロジェクト\"きっと、Flyers\"の26年度大会OBが松ヶ崎祭限定で運営する炒飯専門店です。シンプルながら究極の炒飯を目指して中華鍋を振ります！ぜひご賞味ください^ ^\"きっと、Flyers\"の方では公式に出展がありますので併せて応援してくださると嬉しいです！",
+                    "image": "https://api.matsufes.info/images/exhibits/2f93616a-e201-41f7-93db-4985efe56d7e-b967314c2f36.webp",
+                    "exhibitorName": "きっと、26代",
+                    "businessHours": [
+                      {
+                        "date": "2026-11-14",
+                        "open": false,
+                        "opensAt": "10:00",
+                        "closesAt": "20:30"
+                      },
+                      {
+                        "date": "2026-11-15",
+                        "open": false,
+                        "opensAt": "10:00",
+                        "closesAt": "16:00"
+                      }
+                    ],
+                    "customAnswers": {
+                      "custom_mtba0aa4": "筋肉ちゅ～(痛)で提供ちゅ〜",
+                      "custom_mtb9ylhp": "軽食"
+                    },
+                    "venue": "1",
+                    "lngLat": [
+                      135.782146,
+                      35.0486167
+                    ],
+                    "searchWords": "軽食,チャーハン,炒飯,焼き飯,焼飯,やきめし,中華,ちゅうか,中華料理,中華鍋,ご飯,ごはん,飯,めし,鳥人間,とりにんげん,きっと、Flyers,きっとFlyers,きっとフライヤーズ,フライヤーズ,flyers,OB,食べ物,たべもの,フード,food,飲食,屋台"
+                  },
+                  {
+                    "recordId": "78e76b08-f7bc-4a43-900f-27cef38a670e",
+                    "publicId": 10,
+                    "id": "1-10",
+                    "name": "itwoonたいやき",
+                    "group": "itwoon",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "飲食"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "たべる"
+                      ]
+                    },
+                    "color": "#ef4444",
+                    "description": "焼きたてふわふわのたいやきを販売します！ぜひ出来たての美味しさをお楽しみください！",
+                    "image": "https://api.matsufes.info/images/exhibits/78e76b08-f7bc-4a43-900f-27cef38a670e-a2897db90c0b.webp",
+                    "sns": {
+                      "instagram": "https://instagram.com/itwoon_badmin/",
+                      "x": "https://x.com/Itwoon_badmin"
+                    },
+                    "exhibitorName": "itwoon",
+                    "businessHours": [
+                      {
+                        "date": "2026-11-14",
+                        "open": true,
+                        "opensAt": "10:00",
+                        "closesAt": "20:30"
+                      },
+                      {
+                        "date": "2026-11-15",
+                        "open": true,
+                        "opensAt": "10:00",
+                        "closesAt": "16:00"
+                      }
+                    ],
+                    "customAnswers": {
+                      "custom_mtb9ylhp": "お菓子",
+                      "custom_mtba0aa4": "焼きたてのたいやき販売ちゅ〜"
+                    },
+                    "venue": "1",
+                    "lngLat": [
+                      135.7821473,
+                      35.0485819
+                    ],
+                    "searchWords": "お菓子,鯛焼き,鯛焼,たい焼き,タイヤキ,taiyaki,イトゥーン,itwoon,焼きたて,やきたて,ふわふわ,あんこ,餡子,和菓子,わがし,おやつ,スイーツ,sweets,甘いもの,あまいもの,おかし"
+                  },
+                  {
+                    "recordId": "b4368526-5ef1-4913-9dbb-a5a0d6b4786c",
+                    "publicId": 67,
+                    "id": "4-03",
+                    "name": "テクテク工房",
+                    "group": "テクテク工房",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "物販"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "かう"
+                      ]
+                    },
+                    "color": "#10b982",
+                    "description": "心ときめくハンドメイド作品をお届けします♡\r\n編み物でできたお花やふわふわのシュシュ、キラキラのビーズアクセサリーなど、個性豊かな作品がいっぱい！\r\nひとつひとつ心を込めて手作りしています。\r\nぜひお気に入りを見つけに来てください♪",
+                    "image": "https://api.matsufes.info/images/exhibits/b4368526-5ef1-4913-9dbb-a5a0d6b4786c-83f99196cd19.webp",
+                    "sns": {
+                      "instagram": "https://instagram.com/tech_tech_factory/"
+                    },
+                    "exhibitorName": "テクテク工房",
+                    "businessHours": [
+                      {
+                        "date": "2026-11-14",
+                        "open": true,
+                        "opensAt": "10:00",
+                        "closesAt": "20:30"
+                      },
+                      {
+                        "date": "2026-11-15",
+                        "open": true,
+                        "opensAt": "10:00",
+                        "closesAt": "16:00"
+                      }
+                    ],
+                    "customAnswers": {
+                      "custom_mtb9ylhp": "ハンドメイド",
+                      "custom_mtba0aa4": "ときめきをお届けちゅ〜"
+                    },
+                    "venue": "4",
+                    "lngLat": [
+                      135.7802168,
+                      35.048577
+                    ],
+                    "searchWords": "ハンドメイド,てくてく工房,てくてくこうぼう,tekuteku,編み物,あみもの,ニット,毛糸,お花,シュシュ,ヘアアクセ,ヘアゴム,ビーズ,アクセサリー,アクセ,手作り,手づくり,てづくり,雑貨,ざっか,小物,物販"
+                  },
+                  {
+                    "recordId": "0cd14942-a7b5-414e-a940-9e698065a825",
+                    "publicId": 24,
+                    "id": "2-02",
+                    "name": "アメ研のおでん",
+                    "group": "アメリカ民謡研究会",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "飲食"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "たべる"
+                      ]
+                    },
+                    "color": "#f97317",
+                    "description": "アメ研ではあったかいおでんを販売します！11月の寒空にぴったりです！",
+                    "image": "https://api.matsufes.info/images/exhibits/0cd14942-a7b5-414e-a940-9e698065a825-eecb24ebb117.webp",
+                    "sns": {
+                      "instagram": "https://instagram.com/kit_ameken_bbo/",
+                      "x": "https://x.com/ ameken_bbo",
+                      "web": "https://amekenismine.wixsite.com/mysite"
+                    },
+                    "exhibitorName": "アメリカ民謡研究会B&Bo",
+                    "customAnswers": {
+                      "custom_mtb9ylhp": "おでん",
+                      "custom_mtba0aa4": "アメ研のおでんでほっこりちゅ〜"
+                    },
+                    "venue": "2",
+                    "lngLat": [
+                      135.7813562,
+                      35.0483527
+                    ],
+                    "searchWords": "おでん,御田,お田,関東煮,かんとだき,煮物,あったか,温かい,あたたかい,アメリカ民謡研究会,アメ研,あめけん,B&Bo,ビーアンドボー,食べ物,フード,飲食,冬,寒い"
+                  },
+                  {
+                    "recordId": "63e5d4a0-8cf4-4565-bdb3-302c6f54fbac",
+                    "publicId": 102,
+                    "name": "アメリカ民謡研究会野外ライブ",
+                    "group": "アメリカ民謡研究会",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "パフォーマンス"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "きく"
+                      ]
+                    },
+                    "description": "メインステージにてライブを行います！野外でのライブは迫力満点！ぜひ見に来てください！",
+                    "image": "https://api.matsufes.info/images/exhibits/63e5d4a0-8cf4-4565-bdb3-302c6f54fbac-4d6b5ab205f0.webp",
+                    "sns": {
+                      "instagram": "https://instagram.com/ kit_ameken_bbo/",
+                      "x": "https://x.com/ ameken_bbo",
+                      "web": "https://amekenismine.wixsite.com/mysite"
+                    },
+                    "exhibitorName": "アメリカ民謡研究会B&Bo",
+                    "businessHours": [
+                      {
+                        "date": "2026-11-13",
+                        "open": true,
+                        "opensAt": "17:10",
+                        "closesAt": "18:00"
+                      },
+                      {
+                        "date": "2026-11-14",
+                        "open": true,
+                        "opensAt": "11:10",
+                        "closesAt": "13:00"
+                      }
+                    ],
+                    "customAnswers": {
+                      "custom_mtb9ylhp": "バンド",
+                      "custom_mtba0aa4": "メインステージにて演奏ちゅ〜"
+                    },
+                    "venue": "メインステージ",
+                    "lngLat": [
+                      135.7814899,
+                      35.0495645
+                    ],
+                    "searchWords": "バンド,アメ研,あめけん,B&Bo,ライブ,live,LIVE,音楽,おんがく,music,演奏,えんそう,軽音,バンド演奏,野外,屋外,メインステージ,ステージ,stage,フォーク,カントリー,ブルーグラス"
+                  },
+                  {
+                    "recordId": "305a60dd-33e5-4ea6-9867-363e8b74db36",
+                    "publicId": 103,
+                    "name": "アメリカ民謡研究会屋内ライブ",
+                    "group": "アメリカ民謡研究会",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "屋内パフォーマンス"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "きく"
+                      ]
+                    },
+                    "description": "普段のバンドメンバーとは違うメンバーとライブを行う企画バンドライブを行います！松ヶ崎祭でしか見れないバンドがたくさん出演するのでぜひ見に来てください！",
+                    "image": "https://api.matsufes.info/images/exhibits/305a60dd-33e5-4ea6-9867-363e8b74db36-2ea7040af994.webp",
+                    "sns": {
+                      "instagram": "https://instagram.com/kit_ameken_bbo/",
+                      "x": "https://x.com/ameken_bbo",
+                      "web": "https://amekenismine.wixsite.com/mysite"
+                    },
+                    "exhibitorName": "アメリカ民謡研究会B&Bo",
+                    "businessHours": [
+                      {
+                        "date": "",
+                        "open": true,
+                        "opensAt": "",
+                        "closesAt": "",
+                        "text": "出展者にお問い合わせください"
+                      }
+                    ],
+                    "customAnswers": {
+                      "custom_mtb9ylhp": "バンド",
+                      "custom_mtba0aa4": "屋内でもバンド演奏ちゅ〜"
+                    },
+                    "place": "K101",
+                    "venue": "東3号館",
+                    "lngLat": [
+                      135.7826075,
+                      35.0499619
+                    ],
+                    "searchWords": "バンド,アメ研,あめけん,B&Bo,ライブ,live,音楽,おんがく,演奏,企画バンド,屋内,室内,教室ライブ,ステージ,セッション,限定バンド"
+                  },
+                  {
+                    "recordId": "8314fa5d-f76b-4e2b-ba24-e087427cc6e1",
+                    "publicId": 18,
+                    "id": "1-18",
+                    "name": "KITchen ごちそう山",
+                    "group": "ワンダーフォーゲル部",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "飲食"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "たべる"
+                      ]
+                    },
+                    "color": "#ef4444",
+                    "description": "私たちワンダーフォーゲル部は、東北名物のきりたんぽ鍋を販売します！きりたんぽ、鶏肉、野菜を入れたほっとする一杯です。山で温かいものを食べると心も体も温まり幸せな気持ちになります。来ていただいた皆様にも、登山飯を食べているような気分になっていただけるように、心を込めて調理いたしますのでぜひお越しください！",
+                    "image": "https://api.matsufes.info/images/exhibits/8314fa5d-f76b-4e2b-ba24-e087427cc6e1-d4d2c09722eb.webp",
+                    "sns": {
+                      "instagram": "https://instagram.com/kit.wv/",
+                      "x": "https://x.com/kitwvblog"
+                    },
+                    "exhibitorName": "ワンダーフォーゲル部",
+                    "businessHours": [
+                      {
+                        "date": "2026-11-14",
+                        "open": true,
+                        "opensAt": "10:00",
+                        "closesAt": "20:30"
+                      },
+                      {
+                        "date": "2026-11-15",
+                        "open": true,
+                        "opensAt": "10:00",
+                        "closesAt": "16:00"
+                      }
+                    ],
+                    "customAnswers": {
+                      "custom_mtba0aa4": "きりたんぽ食べていってちゅ〜",
+                      "custom_mtb9ylhp": "鍋"
+                    },
+                    "venue": "1",
+                    "lngLat": [
+                      135.7817937,
+                      35.0483747
+                    ],
+                    "searchWords": "鍋,キッチン,kitchen,ごちそうさん,ご馳走山,ご馳走さん,ワンゲル,ワンダーフォーゲル,WV,登山部,山岳,きりたんぽ,切蒲英,きりたんぽ鍋,なべ,東北,秋田,鶏肉,とりにく,登山飯,山ごはん,山飯,あったか,汁物,フード,飲食"
+                  },
+                  {
+                    "recordId": "64cb0bf5-6537-4f61-8d64-8526cbfe0882",
+                    "publicId": 59,
+                    "id": "3-17",
+                    "name": "タマリバ",
+                    "group": "タマリバ",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "飲食",
+                        "物販"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "たべる",
+                        "かう"
+                      ]
+                    },
+                    "color": "#f59e0b",
+                    "description": "デザ建4回による、個性光る手づくり雑貨と白玉ぜんざい。心ときめく一点モノとの出会いを楽しんで！",
+                    "image": "https://api.matsufes.info/images/exhibits/64cb0bf5-6537-4f61-8d64-8526cbfe0882-2e83277ee9b8.webp",
+                    "sns": {
+                      "instagram": "https://instagram.com/tamariba.kit?stkn=MTJ6ZTNid255ZGtieQ%3D%3D&utm_source=qr"
+                    },
+                    "exhibitorName": "タマリバ",
+                    "businessHours": [
+                      {
+                        "date": "2026-11-14",
+                        "open": true,
+                        "opensAt": "10:00",
+                        "closesAt": "19:00"
+                      },
+                      {
+                        "date": "2026-11-15",
+                        "open": true,
+                        "opensAt": "10:00",
+                        "closesAt": "16:00"
+                      }
+                    ],
+                    "customAnswers": {
+                      "custom_mtb9ylhp": "手づくりのいろいろ",
+                      "custom_mtba0aa4": "甘い香りと可愛い雑貨にむちゅ〜"
+                    },
+                    "venue": "3",
+                    "lngLat": [
+                      135.7796995,
+                      35.0483279
+                    ],
+                    "searchWords": "手づくりのいろいろ,たまりば,溜まり場,たまり場,デザ建,デザイン建築,4回生,白玉,しらたま,ぜんざい,善哉,白玉ぜんざい,和菓子,スイーツ,雑貨,ざっか,手作り,手づくり,ハンドメイド,一点物,一点モノ"
+                  },
+                  {
+                    "recordId": "d059fe2d-554f-4e48-bf30-5fbd67192f83",
+                    "publicId": 104,
+                    "name": "音楽サークル Raccoon",
+                    "group": "音楽サークル Raccoon",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "パフォーマンス"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "きく"
+                      ]
+                    },
+                    "description": "音楽サークルRaccoonを代表するバンドが松ヶ崎祭を盛り上げます！\nいろんなアーティストの方の曲をカバーしているのでぜひ見に来て一緒に楽しみましょう〜",
+                    "image": "https://api.matsufes.info/images/exhibits/d059fe2d-554f-4e48-bf30-5fbd67192f83-4efa16e7bdff.webp",
+                    "sns": {
+                      "instagram": "https://instagram.com/raccoon_kit",
+                      "x": "https://x.com/raccoonkyoto"
+                    },
+                    "exhibitorName": "音楽サークル Raccoon",
+                    "businessHours": [
+                      {
+                        "date": "2026-11-14",
+                        "open": true,
+                        "opensAt": "15:50",
+                        "closesAt": "17:10"
+                      },
+                      {
+                        "date": "2026-11-15",
+                        "open": true,
+                        "opensAt": "13:00",
+                        "closesAt": "14:20"
+                      }
+                    ],
+                    "customAnswers": {
+                      "custom_mtb9ylhp": "バンド",
+                      "custom_mtba0aa4": "野外の時はラーメン休業ちゅ〜"
+                    },
+                    "venue": "メインステージ",
+                    "lngLat": [
+                      135.7814899,
+                      35.0495645
+                    ],
+                    "searchWords": "バンド,ラクーン,raccoon,RACCOON,音楽サークル,ライブ,live,カバー,コピーバンド,音楽,演奏,ステージ"
+                  },
+                  {
+                    "recordId": "c3ccae48-5c5b-4aec-9d8c-0740e30a9dfe",
+                    "publicId": 4,
+                    "id": "1-04",
+                    "name": "二郎系ラーメン　現実を見ろ",
+                    "group": "音楽サークル Raccoon",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "飲食"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "たべる"
+                      ]
+                    },
+                    "color": "#ef4444",
+                    "description": "音楽サークルRaccoonです！\r\n例年大好評をいただいている、太麺、濃厚スープに分厚いチャーシューが乗った二郎系ラーメンを提供します！\r\nお友達やご家族とraccoonのラーメンをお試しください！",
+                    "image": "https://api.matsufes.info/images/exhibits/c3ccae48-5c5b-4aec-9d8c-0740e30a9dfe-567365e4a2e0.webp",
+                    "sns": {
+                      "instagram": "https://instagram.com/raccoon_kit",
+                      "x": "https://x.com/raccoonkyoto"
+                    },
+                    "exhibitorName": "音楽サークル Raccoon",
+                    "customAnswers": {
+                      "custom_mtb9ylhp": "ラーメン",
+                      "custom_mtba0aa4": "全マシでお願いしまちゅ〜"
+                    },
+                    "venue": "1",
+                    "lngLat": [
+                      135.7820466,
+                      35.0488975
+                    ],
+                    "searchWords": "ラーメン,二郎,じろう,二郎系,じろうけい,二郎インスパイア,拉麺,ramen,太麺,極太麺,濃厚,豚骨,チャーシュー,叉焼,ニンニク,ヤサイマシ,ラクーン,raccoon,Raccoon,げんじつをみろ,麺,フード,飲食"
+                  },
+                  {
+                    "recordId": "848b081f-c045-4042-b1bb-8f603627f246",
+                    "publicId": 105,
+                    "name": "音楽サークル Raccoon",
+                    "group": "音楽サークル Raccoon",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "屋内パフォーマンス"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "きく"
+                      ]
+                    },
+                    "description": "音楽サークルRaccoonの教室ライブは2日間ずっと開催しています！\r\nタイムテーブルをInstagramやXで投稿しているので、ぜひチェックして気になるバンドを見に来てください！！",
+                    "image": "https://api.matsufes.info/images/exhibits/848b081f-c045-4042-b1bb-8f603627f246-13ff53d446d0.webp",
+                    "sns": {
+                      "instagram": "https://instagram.com/raccoon_kit",
+                      "x": "https://x.com/raccoonkyoto"
+                    },
+                    "exhibitorName": "音楽サークル Raccoon",
+                    "businessHours": [
+                      {
+                        "date": "",
+                        "open": true,
+                        "opensAt": "",
+                        "closesAt": "",
+                        "text": "出展者にお問い合わせください"
+                      }
+                    ],
+                    "customAnswers": {
+                      "custom_mtb9ylhp": "バンド",
+                      "custom_mtba0aa4": "ライブに向けて練習ちゅ〜"
+                    },
+                    "place": "K201,K202",
+                    "venue": "東3号館",
+                    "lngLat": [
+                      135.7826075,
+                      35.0499619
+                    ],
+                    "searchWords": "バンド,ラクーン,raccoon,教室ライブ,ライブ,live,タイムテーブル,タイテ,音楽,演奏,インスタ,Instagram,X,Twitter"
+                  },
+                  {
+                    "recordId": "529855f0-8f64-47dc-95ba-df0183f83688",
+                    "publicId": 2,
+                    "id": "1-02",
+                    "name": "さくっと亭",
+                    "group": "生協学生委員会",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "飲食"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "たべる"
+                      ]
+                    },
+                    "color": "#ef4444",
+                    "description": "揚げたてサクサクポテトと甘くておいしいドーナツを販売してます！小腹がすいたらぜひお立ち寄りください！🍟🍩",
+                    "image": "https://api.matsufes.info/images/exhibits/529855f0-8f64-47dc-95ba-df0183f83688-56e700555ab5.webp",
+                    "sns": {
+                      "instagram": "https://instagram.com/kit_coopgi?igsh=MndxMjBiMTl1azEz&utm_source=qr",
+                      "x": "https://x.com/kit_coopgi?s=11",
+                      "web": "https://kit.u-coop.net/student_committee/"
+                    },
+                    "exhibitorName": "生協学生委員会",
+                    "businessHours": [
+                      {
+                        "date": "2026-11-14",
+                        "open": false,
+                        "opensAt": "10:00",
+                        "closesAt": "20:30"
+                      },
+                      {
+                        "date": "2026-11-15",
+                        "open": true,
+                        "opensAt": "10:00",
+                        "closesAt": "16:00"
+                      }
+                    ],
+                    "customAnswers": {
+                      "custom_mtb9ylhp": "軽食",
+                      "custom_mtba0aa4": "アツアツ提供ちゅ〜"
+                    },
+                    "venue": "1",
+                    "lngLat": [
+                      135.782072,
+                      35.0490116
+                    ],
+                    "searchWords": "軽食,さくっとてい,生協,せいきょう,学生委員会,ポテト,フライドポテト,フライドポテ,フライ,potato,ドーナツ,ドーナッツ,donut,doughnut,揚げたて,あげたて,おやつ,スナック"
+                  },
+                  {
+                    "recordId": "15629848-6359-462f-b92f-990b9d0b9fb6",
+                    "publicId": 68,
+                    "id": "4-04",
+                    "name": "umu -ウム-",
+                    "group": "umu",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "物販"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "かう"
+                      ]
+                    },
+                    "color": "#10b982",
+                    "description": "はじめまして！雑貨屋「umu -ウム-」です。\nデザイン専攻の３回生３人でつくりました。\n手作りのアクセサリーや紙類、キーホルダーなど、可愛いものをたくさん生み出します。\nあなただけのお気に入りの１点を、ぜひ見つけに来てください！\nご来店お待ちしております♩",
+                    "image": "https://api.matsufes.info/images/exhibits/15629848-6359-462f-b92f-990b9d0b9fb6-bcfa15ebf2c8.webp",
+                    "sns": {
+                      "instagram": "https://instagram.com/umu.kit"
+                    },
+                    "exhibitorName": "umu -ウム-",
+                    "businessHours": [
+                      {
+                        "date": "2026-11-14",
+                        "open": false,
+                        "opensAt": "10:00",
+                        "closesAt": "20:30"
+                      }
+                    ],
+                    "customAnswers": {
+                      "custom_mtb9ylhp": "雑貨",
+                      "custom_mtba0aa4": "\"可愛い\"を生み出しちゅ〜"
+                    },
+                    "venue": "4",
+                    "lngLat": [
+                      135.780214,
+                      35.0486251
+                    ],
+                    "searchWords": "雑貨,ウム,umu,UMU,雑貨屋,ざっか,アクセサリー,紙もの,紙類,キーホルダー,キーホル,手作り,手づくり,ハンドメイド,デザイン,3回生,三回生,かわいい,可愛い"
+                  },
+                  {
+                    "recordId": "00a4393d-bb4b-4066-9980-ef5bf52df79a",
+                    "publicId": 12,
+                    "id": "1-12",
+                    "name": "精密加工研究室",
+                    "group": "精密加工研究室",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "飲食"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "たべる"
+                      ]
+                    },
+                    "color": "#ef4444",
+                    "description": "精密加工研究室特製！歯車のように噛み合う肉とタレの味わい。摩擦ゼロ級の滑らかな焼き鳥をどうぞ！",
+                    "image": "https://api.matsufes.info/images/exhibits/00a4393d-bb4b-4066-9980-ef5bf52df79a-5cc0a962b024.webp",
+                    "exhibitorName": "精密加工研究室",
+                    "businessHours": [
+                      {
+                        "date": "2026-11-14",
+                        "open": true,
+                        "opensAt": "10:00",
+                        "closesAt": "20:30"
+                      },
+                      {
+                        "date": "2026-11-15",
+                        "open": true,
+                        "opensAt": "10:00",
+                        "closesAt": "16:00"
+                      }
+                    ],
+                    "customAnswers": {
+                      "custom_mtb9ylhp": "焼き鳥",
+                      "custom_mtba0aa4": "焼き鳥製作ちゅ〜"
+                    },
+                    "venue": "1",
+                    "lngLat": [
+                      135.7821498,
+                      35.0485122
+                    ],
+                    "searchWords": "焼き鳥,せいみつかこう,精密加工研,研究室,焼鳥,やきとり,串,串焼き,鶏,とり,チキン,歯車,タレ,フード,飲食"
+                  },
+                  {
+                    "recordId": "7ed46c2d-8b4c-49d9-a082-18ed84ee4765",
+                    "publicId": 106,
+                    "name": "Xcape謎解きパーク",
+                    "group": "謎解き研究部Xcape",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "物販",
+                        "体験"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "かう",
+                        "みる",
+                        "あそぶ"
+                      ]
+                    },
+                    "description": "謎解きはどんな方でも「ひらめき」ひとつで楽しめるコンテンツです。\r\nXcapeでは謎解き初心者の方から謎解き好きの方まで幅広く楽しめるよう、コンテンツを多数ご用意しています！\r\n友達と一緒に脱出ゲームに挑戦したり、席に座ってゆっくり謎を解いたり、お土産の謎解きキットを自宅で解いてみたり…楽しみ方は様々です。謎解きでしか味わえない快感を体験してみませんか？\r\n公演の予約や最新情報は公式SNSから！",
+                    "image": "https://api.matsufes.info/images/exhibits/7ed46c2d-8b4c-49d9-a082-18ed84ee4765-c3c418124e96.webp",
+                    "sns": {
+                      "instagram": "https://instagram.com/_x.c.a.p.e_? stkn=aGJ6dDNmcnU0dWhy",
+                      "x": "https://x.com/_X_c_a_p_e_",
+                      "web": "https://sites.google.com/view/nazotokixcape/%E3%83%9B%E3%83%BC%E3%83%A0"
+                    },
+                    "exhibitorName": "謎解き研究部Xcape",
+                    "businessHours": [
+                      {
+                        "date": "2026-11-14",
+                        "open": true,
+                        "opensAt": "10:00",
+                        "closesAt": "20:30"
+                      },
+                      {
+                        "date": "2026-11-15",
+                        "open": true,
+                        "opensAt": "10:00",
+                        "closesAt": "16:00"
+                      }
+                    ],
+                    "customAnswers": {
+                      "custom_mtb9ylhp": "謎解き",
+                      "custom_mtba0aa4": "みんなにひらめき提供ちゅ〜"
+                    },
+                    "place": "NP11,NP12,NP21",
+                    "venue": "北部講義室(NP)",
+                    "lngLat": [
+                      135.7808544,
+                      35.0502986
+                    ],
+                    "searchWords": "謎解き,エックスケープ,エスケープ,Xcape,XCAPE,なぞとき,謎研,謎解き研究部,リアル脱出ゲーム,脱出ゲーム,だっしゅつ,パズル,クイズ,謎解きキット,ひらめき,体験,ゲーム,パーク"
+                  },
+                  {
+                    "recordId": "23b6749f-5dc5-4c98-847b-b4c3bc0b5f81",
+                    "publicId": 107,
+                    "name": "軽音楽部",
+                    "group": "軽音楽部",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "パフォーマンス"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "きく"
+                      ]
+                    },
+                    "description": "野外ライブには、部内でのオーディションを勝ち抜いた、くるり、ヨルシカをはじめとし、計６つのバンドが出演する予定です。軽音楽部は、日々それぞれが音楽に楽しく丁寧に向き合っています。松ヶ崎祭全体に音を響かせ、来場者の皆さんを包み込むような演奏ができるよう頑張ります。ぜひお越しください！",
+                    "image": "https://api.matsufes.info/images/exhibits/23b6749f-5dc5-4c98-847b-b4c3bc0b5f81-d12a39bb5567.webp",
+                    "sns": {
+                      "instagram": "https://instagram.com/kousen_keion?igsi=dGgxZzViYzk0MGwx&utm_source=qr",
+                      "x": "https://x.com/kousen_keion?s=11",
+                      "web": "youtube.com/channel/UCQnxT4lbLAcjwAqqEiU2tOA?si=y1MxWWXhZPVxoBk8"
+                    },
+                    "exhibitorName": "軽音楽部",
+                    "businessHours": [
+                      {
+                        "date": "2026-11-14",
+                        "open": true,
+                        "opensAt": "13:40",
+                        "closesAt": "15:30"
+                      },
+                      {
+                        "date": "2026-11-15",
+                        "open": true,
+                        "opensAt": "10:30",
+                        "closesAt": "11:20"
+                      }
+                    ],
+                    "customAnswers": {
+                      "custom_mtb9ylhp": "バンド",
+                      "custom_mtba0aa4": "迫力アリ、聴きごたえアリちゅ〜"
+                    },
+                    "venue": "メインステージ",
+                    "lngLat": [
+                      135.7814899,
+                      35.0495645
+                    ],
+                    "searchWords": "バンド,けいおん,けいおんがくぶ,軽音,野外ライブ,ライブ,live,オーディション,くるり,ヨルシカ,yorushika,音楽,演奏,ステージ,メインステージ"
+                  },
+                  {
+                    "recordId": "a9a569d8-e63e-40de-9f13-9a24665adad3",
+                    "publicId": 108,
+                    "name": "軽音楽部",
+                    "group": "軽音楽部",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "屋内パフォーマンス"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "きく"
+                      ]
+                    },
+                    "description": "部室ライブではj-popからヘビーなメタルまで色々な曲を演奏します！昨年も、Tempalay、東京事変、結束バンド、カネコアヤノ、Dream Theater、Red Hot Chili Peppers など、幅広いジャンルを演奏しました。松ヶ崎祭期間中、ほぼずっとライブをしておりますので、ぜひお越しください！",
+                    "image": "https://api.matsufes.info/images/exhibits/a9a569d8-e63e-40de-9f13-9a24665adad3-6398d54605ea.webp",
+                    "sns": {
+                      "instagram": "https://instagram.com/kousen_keion?igsi=dGgxZzViYzk0MGwx&utm_source=qr",
+                      "x": "https://x.com/kousen_keion?s=11",
+                      "web": "https://www.youtube.com/channel/UCQnxT4lbLAcjwAqqEiU2tOA"
+                    },
+                    "exhibitorName": "軽音楽部",
+                    "businessHours": [
+                      {
+                        "date": "",
+                        "open": true,
+                        "opensAt": "",
+                        "closesAt": "",
+                        "text": "出展者にお問い合わせください"
+                      }
+                    ],
+                    "customAnswers": {
+                      "custom_mtb9ylhp": "バンド",
+                      "custom_mtba0aa4": "誰でもウェルカムちゅ〜"
+                    },
+                    "place": "練習室1",
+                    "venue": "文化サークル合同利用施設",
+                    "lngLat": [
+                      135.7843851,
+                      35.0501877
+                    ],
+                    "searchWords": "バンド,けいおん,けいおんがくぶ,軽音,部室ライブ,ライブ,live,J-POP,JPOP,jpop,メタル,metal,Tempalay,テンパレイ,東京事変,結束バンド,ぼっち・ざ・ろっく,カネコアヤノ,Dream Theater,ドリームシアター,Red Hot Chili Peppers,レッチリ,音楽,演奏"
+                  },
+                  {
+                    "recordId": "7745f238-1d3b-40e1-861f-77e38524b3d4",
+                    "publicId": 109,
+                    "name": "参加･観笑自由の大喜利ライブ",
+                    "group": "大喜利サークルわらてん",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "体験"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "みる"
+                      ]
+                    },
+                    "description": "大喜利サークルわらてんの大喜利ライブ！参加・観笑大歓迎！\r\n普段は週に1回集まって活動しており、日々大喜利で鍛錬を積んでいます。今回は、そんなわらてんの活動の一部を皆さんに楽しんでもらえるようなライブをお届けします。大喜利を見るだけでも、実際に参加してみるのも大歓迎！一緒に笑って楽しみましょう！わらてんでは現在サークルメンバーも募集中です。大喜利やお笑いが好きな方はぜひ遊びに来てください！",
+                    "image": "https://api.matsufes.info/images/exhibits/7745f238-1d3b-40e1-861f-77e38524b3d4-948c54898ae0.webp",
+                    "sns": {
+                      "instagram": "https://instagram.com/waratenogiri",
+                      "x": "https://x.com/WaratenOgiri"
+                    },
+                    "exhibitorName": "大喜利サークルわらてん",
+                    "businessHours": [
+                      {
+                        "date": "2026-11-14",
+                        "open": true,
+                        "opensAt": "14:00",
+                        "closesAt": "15:30"
+                      },
+                      {
+                        "date": "2026-11-15",
+                        "open": true,
+                        "opensAt": "14:00",
+                        "closesAt": "15:30"
+                      }
+                    ],
+                    "customAnswers": {
+                      "custom_mtb9ylhp": "お笑い",
+                      "custom_mtba0aa4": "サークルメンバー募集ちゅ〜"
+                    },
+                    "place": "0313",
+                    "venue": "3号館",
+                    "lngLat": [
+                      135.7819602,
+                      35.0488362
+                    ],
+                    "searchWords": "お笑い,おおぎり,大喜利,わらてん,大喜利サークル,おわらい,笑い,ライブ,参加型,観覧,観笑,ボケ,ネタ,コメディ,comedy"
+                  },
+                  {
+                    "recordId": "26b22a25-f1f7-42bb-9caf-29b31cccee3b",
+                    "publicId": 66,
+                    "id": "4-02",
+                    "name": "まつだ",
+                    "group": "まつだ",
+                    "categoryValues": {
+                      "exhibit-categories": [
+                        "物販"
+                      ],
+                      "cbf45d15-494b-4952-ba4e-f397e4ab0b56": [
+                        "かう"
+                      ]
+                    },
+                    "color": "#10b982",
+                    "description": "雑貨と中古家具を販売します。ぜひお越しください！",
+                    "image": "https://api.matsufes.info/images/exhibits/26b22a25-f1f7-42bb-9caf-29b31cccee3b-21a544e06ef4.webp",
+                    "sns": {
+                      "instagram": "https://instagram.com/3er322fd8",
+                      "x": "https://x.com/matsudafqgu"
+                    },
+                    "exhibitorName": "まつだ",
+                    "businessHours": [
+                      {
+                        "date": "2026-11-14",
+                        "open": true,
+                        "opensAt": "10:00",
+                        "closesAt": "20:30"
+                      },
+                      {
+                        "date": "2026-11-15",
+                        "open": true,
+                        "opensAt": "10:00",
+                        "closesAt": "16:00"
+                      }
+                    ],
+                    "customAnswers": {
+                      "custom_mtb9ylhp": "雑貨",
+                      "custom_mtba0aa4": "工繊にむちゅ〜"
+                    },
+                    "venue": "4",
+                    "lngLat": [
+                      135.7802196,
+                      35.0485277
+                    ],
+                    "searchWords": "雑貨,マツダ,松田,matsuda,ざっか,家具,かぐ,中古,中古家具,古道具,アンティーク,ヴィンテージ,ビンテージ,インテリア,リサイクル"
+                  }
+                ],
+                "facilities": [
+                  {
+                    "id": "お手洗い3号館",
+                    "name": "3号館",
+                    "category": "お手洗い",
+                    "description": "",
+                    "image": null,
+                    "lngLat": [
+                      135.781884,
+                      35.04878388
+                    ]
+                  },
+                  {
+                    "id": "お手洗いセンターホール",
+                    "name": "センターホール",
+                    "category": "お手洗い",
+                    "description": "",
+                    "image": null,
+                    "lngLat": [
+                      135.7818556,
+                      35.04934394
+                    ]
+                  },
+                  {
+                    "id": "お手洗い6号館",
+                    "name": "6号館",
+                    "category": "お手洗い",
+                    "description": "1階は女性用、2・3階は男性用です",
+                    "image": null,
+                    "lngLat": [
+                      135.7804929,
+                      35.04858973
+                    ]
+                  },
+                  {
+                    "id": "お手洗い8号館",
+                    "name": "8号館",
+                    "category": "お手洗い",
+                    "description": "",
+                    "image": null,
+                    "lngLat": [
+                      135.7803612,
+                      35.04898351
+                    ]
+                  },
+                  {
+                    "id": "お手洗い大学会館",
+                    "name": "大学会館",
+                    "category": "お手洗い",
+                    "description": "",
+                    "image": null,
+                    "lngLat": [
+                      135.7798148,
+                      35.04851003
+                    ]
+                  },
+                  {
+                    "id": "お手洗いKIT HOUSE",
+                    "name": "KIT HOUSE 2階",
+                    "category": "お手洗い",
+                    "description": "",
+                    "image": null,
+                    "lngLat": [
+                      135.7798889,
+                      35.0490706
+                    ]
+                  },
+                  {
+                    "id": "お手洗い西実験棟",
+                    "name": "西実験棟",
+                    "category": "お手洗い",
+                    "description": "",
+                    "image": null,
+                    "lngLat": [
+                      135.7794575,
+                      35.04880291
+                    ]
+                  },
+                  {
+                    "id": "お手洗い14号館",
+                    "name": "15号館",
+                    "category": "お手洗い",
+                    "description": "",
+                    "image": null,
+                    "lngLat": [
+                      135.7797901,
+                      35.0503261
+                    ]
+                  },
+                  {
+                    "id": "お手洗い13号館",
+                    "name": "お手洗い13号館",
+                    "category": "お手洗い",
+                    "description": "",
+                    "image": null,
+                    "lngLat": [
+                      135.7806728,
+                      35.04987214
+                    ]
+                  },
+                  {
+                    "id": "お手洗い東3号館",
+                    "name": "東3号館",
+                    "category": "お手洗い",
+                    "description": "",
+                    "image": null,
+                    "lngLat": [
+                      135.7825737,
+                      35.05008679
+                    ]
+                  },
+                  {
+                    "id": "お手洗い東1号館",
+                    "name": "東1号館",
+                    "category": "お手洗い",
+                    "description": "",
+                    "image": null,
+                    "lngLat": [
+                      135.7834078,
+                      35.04949881
+                    ]
+                  },
+                  {
+                    "id": "分別ステーション10号館前",
+                    "name": "10号館前",
+                    "category": "分別所",
+                    "description": "",
+                    "image": null,
+                    "lngLat": [
+                      135.7801833,
+                      35.049197
+                    ]
+                  },
+                  {
+                    "id": "分別ステーション8号館横",
+                    "name": "8号館横",
+                    "category": "分別所",
+                    "description": "",
+                    "image": null,
+                    "lngLat": [
+                      135.7802776,
+                      35.04844922
+                    ]
+                  },
+                  {
+                    "id": "分別ステーション6号館前",
+                    "name": "休憩所横",
+                    "category": "分別所",
+                    "description": "",
+                    "image": null,
+                    "lngLat": [
+                      135.7808968,
+                      35.0483814
+                    ]
+                  },
+                  {
+                    "id": "分別ステーションストリートステージ向かい",
+                    "name": "ストリートステージ向かい",
+                    "category": "分別所",
+                    "description": "",
+                    "image": null,
+                    "lngLat": [
+                      135.7816009,
+                      35.0484309
+                    ]
+                  },
+                  {
+                    "id": "分別ステーション東門前",
+                    "name": "東門前",
+                    "category": "分別所",
+                    "description": "",
+                    "image": null,
+                    "lngLat": [
+                      135.7821086,
+                      35.0483936
+                    ]
+                  },
+                  {
+                    "id": "分別ステーションセンターホール前",
+                    "name": "センターホール前",
+                    "category": "分別所",
+                    "description": "",
+                    "image": null,
+                    "lngLat": [
+                      135.7820629,
+                      35.0495487
+                    ]
+                  },
+                  {
+                    "id": "分別ステーション東3号館前",
+                    "name": "東3号館前",
+                    "category": "分別所",
+                    "description": "",
+                    "image": null,
+                    "lngLat": [
+                      135.7825603,
+                      35.0498866
+                    ]
+                  },
+                  {
+                    "id": "中央門",
+                    "name": "中央門",
+                    "category": "入場門",
+                    "description": "",
+                    "image": null,
+                    "lngLat": [
+                      135.7823848,
+                      35.0497071
+                    ]
+                  },
+                  {
+                    "id": "東門",
+                    "name": "東門",
+                    "category": "入場門",
+                    "description": "",
+                    "image": null,
+                    "lngLat": [
+                      135.7823535,
+                      35.0483723
+                    ]
+                  }
+                ],
+                "labels": [],
+                "facilityCategories": [
+                  {
+                    "name": "テント",
+                    "color": "#3b82f6",
+                    "icon": "LuStore",
+                    "venue": true,
+                    "filterBar": true
+                  },
+                  {
+                    "name": "建物",
+                    "color": "#64748b",
+                    "icon": "LuUniversity",
+                    "venue": true,
+                    "filterBar": true
+                  },
+                  {
+                    "name": "お手洗い",
+                    "color": "#06b6d4",
+                    "icon": "https://api.matsufes.info/images/map/icons/file-223.svg"
+                  },
+                  {
+                    "name": "みんなのお手洗い",
+                    "color": "#06b6d4",
+                    "icon": "https://api.matsufes.info/images/map/icons/file-231.svg"
+                  },
+                  {
+                    "name": "分別所",
+                    "color": "#10b981",
+                    "icon": "https://api.matsufes.info/images/map/icons/file-225.svg"
+                  },
+                  {
+                    "name": "入場門",
+                    "color": "#f97316",
+                    "icon": "LuDoorOpen"
+                  },
+                  {
+                    "name": "休憩所",
+                    "color": "#f59e0b",
+                    "icon": "https://api.matsufes.info/images/map/icons/file-226.svg"
+                  },
+                  {
+                    "name": "のみもの販売",
+                    "color": "#ef4444",
+                    "icon": "https://api.matsufes.info/images/map/icons/file-230.svg"
+                  },
+                  {
+                    "name": "交通",
+                    "color": "#8b5cf6",
+                    "icon": "<svg stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\" viewBox=\"0 0 24 24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"fill:none\" data-lu=\"LuBusFront\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M4 6 2 7\"></path><path d=\"M10 6h4\"></path><path d=\"m22 7-2-1\"></path><rect width=\"16\" height=\"16\" x=\"4\" y=\"3\" rx=\"2\"></rect><path d=\"M4 11h16\"></path><path d=\"M8 15h.01\"></path><path d=\"M16 15h.01\"></path><path d=\"M6 19v2\"></path><path d=\"M18 21v-2\"></path></svg>"
+                  },
+                  {
+                    "name": "その他",
+                    "color": "#94a3b8",
+                    "icon": "https://api.matsufes.info/images/map/icons/file-228.svg"
+                  }
+                ],
+                "categoryGroups": [
+                  {
+                    "id": "exhibit-categories",
+                    "name": "出展カテゴリ",
+                    "items": [
+                      {
+                        "name": "飲食",
+                        "color": "#f97316",
+                        "icon": "LuUtensils"
+                      },
+                      {
+                        "name": "パフォーマンス",
+                        "color": "#8b5cf6",
+                        "icon": "LuSparkles"
+                      },
+                      {
+                        "name": "物販",
+                        "color": "#10b981",
+                        "icon": "LuShoppingBag"
+                      },
+                      {
+                        "name": "展示",
+                        "color": "#3b82f6",
+                        "icon": "LuCamera"
+                      },
+                      {
+                        "name": "体験",
+                        "color": "#ec4899",
+                        "icon": "<svg stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\" viewBox=\"0 0 24 24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"fill:none\" data-lu=\"LuDices\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"12\" height=\"12\" x=\"2\" y=\"10\" rx=\"2\" ry=\"2\"></rect><path d=\"m17.92 14 3.5-3.5a2.24 2.24 0 0 0 0-3l-5-4.92a2.24 2.24 0 0 0-3 0L10 6\"></path><path d=\"M6 18h.01\"></path><path d=\"M10 14h.01\"></path><path d=\"M15 6h.01\"></path><path d=\"M18 9h.01\"></path></svg>"
+                      },
+                      {
+                        "name": "手づくりテント",
+                        "color": "#f59e0b",
+                        "icon": "LuTent"
+                      },
+                      {
+                        "name": "ストリートパフォーマンス",
+                        "color": "#ef4444",
+                        "icon": "https://api.matsufes.info/images/map/icons/file-227.svg"
+                      },
+                      {
+                        "name": "屋内パフォーマンス",
+                        "color": "#a855f7",
+                        "icon": "LuMusic"
+                      },
+                      {
+                        "name": "個人出展",
+                        "color": "#6366f1",
+                        "icon": "LuUser"
+                      },
+                      {
+                        "name": "研究室展示",
+                        "color": "#06b6d4",
+                        "icon": "LuFlaskConical"
+                      },
+                      {
+                        "name": "委員会企画",
+                        "color": "#64748b",
+                        "icon": "https://api.matsufes.info/images/map/icons/file-229.svg"
+                      }
+                    ],
+                    "mapEnabled": true,
+                    "filterBarEnabled": false,
+                    "groupingEnabled": false
+                  },
+                  {
+                    "id": "cbf45d15-494b-4952-ba4e-f397e4ab0b56",
+                    "name": "大分類",
+                    "items": [
+                      {
+                        "name": "たべる",
+                        "color": "#ea580c",
+                        "icon": "LuPizza"
+                      },
+                      {
+                        "name": "のむ",
+                        "color": "#0284c7",
+                        "icon": "LuCoffee"
+                      },
+                      {
+                        "name": "かう",
+                        "color": "#059669",
+                        "icon": "LuShoppingBag"
+                      },
+                      {
+                        "name": "みる",
+                        "color": "#2563eb",
+                        "icon": "LuTv"
+                      },
+                      {
+                        "name": "あそぶ",
+                        "color": "#d946ef",
+                        "icon": "<svg stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\" viewBox=\"0 0 24 24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"fill:none\" data-lu=\"LuDices\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"12\" height=\"12\" x=\"2\" y=\"10\" rx=\"2\" ry=\"2\"></rect><path d=\"m17.92 14 3.5-3.5a2.24 2.24 0 0 0 0-3l-5-4.92a2.24 2.24 0 0 0-3 0L10 6\"></path><path d=\"M6 18h.01\"></path><path d=\"M10 14h.01\"></path><path d=\"M15 6h.01\"></path><path d=\"M18 9h.01\"></path></svg>"
+                      },
+                      {
+                        "name": "さわる",
+                        "color": "#14b8a6",
+                        "icon": "LuHand"
+                      },
+                      {
+                        "name": "つくる",
+                        "color": "#e11d48",
+                        "icon": "<svg stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\" viewBox=\"0 0 24 24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"fill:none\" data-lu=\"LuHammer\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"m15 12-8.373 8.373a1 1 0 1 1-3-3L12 9\"></path><path d=\"m18 15 4-4\"></path><path d=\"m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5\"></path></svg>"
+                      },
+                      {
+                        "name": "きく",
+                        "color": "#7c3aed",
+                        "icon": "LuHeadphones"
+                      },
+                      {
+                        "name": "手づくりテント",
+                        "color": "#f59e0b",
+                        "icon": "LuTent"
+                      }
+                    ],
+                    "mapEnabled": true,
+                    "filterBarEnabled": false,
+                    "groupingEnabled": false
+                  }
+                ],
+                "theme": {
+                  "font": "Noto Sans JP",
+                  "colors": {
+                    "paper": "#f2f2f0",
+                    "surface": "#ffffff",
+                    "ink": "#404040",
+                    "ink2": "#636363",
+                    "muted": "#8b8b88",
+                    "hairline": "#e3e3e0"
+                  },
+                  "icons": {
+                    "home": "LuHouse",
+                    "search": "LuSearch",
+                    "close": "LuX",
+                    "filter": "LuSlidersHorizontal",
+                    "bookmark": "LuBookmark",
+                    "bookmarked": "LuBookmarkCheck",
+                    "map2d": "LuMap",
+                    "map3d": "LuBox",
+                    "rotate3d": "LuRotate3D",
+                    "location": "LuMapPin",
+                    "back": "LuChevronLeft",
+                    "web": "LuGlobe",
+                    "timetable": "LuCalendarClock"
+                  }
+                },
+                "eventPeriods": [
+                  {
+                    "startsAt": "2026-11-14T10:00",
+                    "endsAt": "2026-11-14T20:30"
+                  },
+                  {
+                    "startsAt": "2026-11-15T10:00",
+                    "endsAt": "2026-11-15T16:00"
+                  }
+                ],
+                "webInfoForm": {
+                  "visibleFields": [
+                    "exhibit_name",
+                    "exhibitor_name",
+                    "business_hours",
+                    "description",
+                    "category",
+                    "custom_mtb9ylhp",
+                    "custom_mtba0aa4",
+                    "image",
+                    "sns"
+                  ],
+                  "fieldLabels": {
+                    "exhibit_name": "出展名（店名）",
+                    "exhibitor_name": "出展者名",
+                    "business_hours": "営業日時",
+                    "description": "Webページ掲載紹介文",
+                    "category": "大分類",
+                    "custom_mtb9ylhp": "中分類",
+                    "custom_mtba0aa4": "皆さまへ",
+                    "image": "団体アイコン",
+                    "sns": "SNS・Webサイト"
+                  }
+                }
+              },
+              "fetchedAt": 1791862571645
+            }
+          ],
+          "pos": {
+            "x": 555,
+            "y": 372
+          }
+        }
+      ]
     },
     "page_mswzfiqry": {
       "id": "page_mswzfiqry",
@@ -542,8 +1912,8 @@
         "node_mv53me5rnf",
         "node_muf6flq18i",
         "node_muf6flq18k",
-        "node_muf6flq18m",
-        "node_muv4oy9g2r",
+        "node_mv638ixeb",
+        "node_mv635ewd8",
         "node_muf6flq18n"
       ],
       "unpublished": false,
@@ -4123,7 +5493,7 @@
         },
         "sm": {
           "default": {
-            "height": "157%",
+            "height": "100%",
             "marginTop": "0px",
             "marginBottom": "0px"
           }
@@ -4164,7 +5534,11 @@
         "sm": {
           "default": {
             "height": "100%",
-            "fontSize": "10px"
+            "fontSize": "10px",
+            "width": "70%",
+            "paddingTop": "20px",
+            "paddingBottom": "20px",
+            "borderColor": "#9b7a81"
           }
         }
       }
@@ -4360,6 +5734,14 @@
             "width": "100%",
             "justifyContent": "center",
             "alignItems": "center"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingRight": "10px",
+            "paddingLeft": "10px",
+            "paddingTop": "10px",
+            "paddingBottom": "10px"
           }
         }
       }
@@ -4619,7 +6001,7 @@
         },
         "sm": {
           "default": {
-            "width": "20%",
+            "width": "30%",
             "marginLeft": "50px"
           }
         }
@@ -4649,7 +6031,7 @@
         },
         "sm": {
           "default": {
-            "width": "20%",
+            "width": "30%",
             "marginLeft": "50px"
           }
         }
@@ -4679,7 +6061,7 @@
         },
         "sm": {
           "default": {
-            "width": "20%",
+            "width": "30%",
             "marginLeft": "50px"
           }
         }
@@ -4709,7 +6091,7 @@
         },
         "sm": {
           "default": {
-            "width": "20%",
+            "width": "30%",
             "marginLeft": "50px"
           }
         }
@@ -4739,7 +6121,7 @@
         },
         "sm": {
           "default": {
-            "width": "20%",
+            "width": "30%",
             "marginLeft": "50px"
           }
         }
@@ -5314,6 +6696,11 @@
             "paddingBottom": "0px",
             "paddingLeft": "20px"
           }
+        },
+        "sm": {
+          "default": {
+            "width": "50%"
+          }
         }
       }
     },
@@ -5340,6 +6727,11 @@
             "paddingRight": "20px",
             "paddingBottom": "0px",
             "paddingLeft": "20px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "50%"
           }
         }
       }
@@ -5460,6 +6852,11 @@
             "paddingBottom": "0px",
             "paddingLeft": "20px"
           }
+        },
+        "sm": {
+          "default": {
+            "width": "50%"
+          }
         }
       }
     },
@@ -5486,6 +6883,11 @@
             "paddingRight": "20px",
             "paddingBottom": "0px",
             "paddingLeft": "20px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "50%"
           }
         }
       }
@@ -6241,7 +7643,7 @@
         },
         "sm": {
           "default": {
-            "width": "50%"
+            "width": "60%"
           }
         }
       }
@@ -6312,7 +7714,7 @@
         },
         "sm": {
           "default": {
-            "width": "25%"
+            "width": "30%"
           }
         }
       }
@@ -6351,7 +7753,7 @@
         },
         "sm": {
           "default": {
-            "width": "25%"
+            "width": "30%"
           }
         }
       }
@@ -6383,7 +7785,7 @@
         },
         "sm": {
           "default": {
-            "width": "25%"
+            "width": "30%"
           }
         }
       }
@@ -6468,7 +7870,7 @@
         },
         "sm": {
           "default": {
-            "width": "50%"
+            "width": "60%"
           }
         }
       }
@@ -6529,7 +7931,7 @@
         },
         "sm": {
           "default": {
-            "width": "50%"
+            "width": "60%"
           }
         }
       }
@@ -6600,7 +8002,7 @@
         },
         "sm": {
           "default": {
-            "width": "25%"
+            "width": "30%"
           }
         }
       }
@@ -6632,7 +8034,7 @@
         },
         "sm": {
           "default": {
-            "width": "25%"
+            "width": "30%"
           }
         }
       }
@@ -6671,7 +8073,7 @@
         },
         "sm": {
           "default": {
-            "width": "25%"
+            "width": "30%"
           }
         }
       }
@@ -6760,7 +8162,7 @@
         },
         "sm": {
           "default": {
-            "width": "25%"
+            "width": "30%"
           }
         }
       }
@@ -6824,7 +8226,7 @@
         },
         "sm": {
           "default": {
-            "width": "25%"
+            "width": "30%"
           }
         }
       }
@@ -6888,7 +8290,7 @@
         },
         "sm": {
           "default": {
-            "width": "25%"
+            "width": "30%"
           }
         }
       }
@@ -8106,7 +9508,7 @@
         "sm": {
           "default": {
             "marginLeft": "0px",
-            "width": "80%"
+            "width": "90%"
           }
         }
       }
@@ -9060,41 +10462,6 @@
         }
       }
     },
-    "node_muf6flq18m": {
-      "id": "node_muf6flq18m",
-      "type": "box",
-      "name": "10/10",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_muv4n0d72q"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "gap": "12px",
-            "height": "100%",
-            "justifyContent": "center",
-            "alignItems": "flex-start",
-            "width": "auto",
-            "marginTop": "200px",
-            "paddingTop": "0px",
-            "paddingRight": "0px",
-            "paddingBottom": "0px",
-            "paddingLeft": "0px"
-          }
-        },
-        "sm": {
-          "default": {
-            "marginTop": "100px",
-            "paddingBottom": "0px"
-          }
-        }
-      }
-    },
     "node_muf6flq18n": {
       "id": "node_muf6flq18n",
       "type": "image",
@@ -9691,6 +11058,11 @@
             "width": "90%",
             "borderRadius": "12px"
           }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
         }
       }
     },
@@ -10195,7 +11567,7 @@
           "property": "all",
           "keyframes": "fade-up",
           "duration": 1,
-          "delay": 1,
+          "delay": 0,
           "easing": "ease-out",
           "repeat": 1,
           "direction": "normal",
@@ -11210,7 +12582,7 @@
         "sm": {
           "default": {
             "width": "80%",
-            "marginLeft": "30px"
+            "marginLeft": "10px"
           }
         }
       }
@@ -11263,7 +12635,7 @@
         "sm": {
           "default": {
             "width": "60%",
-            "marginLeft": "30px"
+            "marginLeft": "10px"
           }
         }
       }
@@ -11364,7 +12736,7 @@
           "default": {
             "borderRadius": "0px",
             "width": "70%",
-            "marginLeft": "30px"
+            "marginLeft": "10px"
           }
         }
       }
@@ -11429,7 +12801,7 @@
         "sm": {
           "default": {
             "width": "70%",
-            "marginLeft": "30px"
+            "marginLeft": "10px"
           }
         }
       }
@@ -11494,7 +12866,7 @@
         "sm": {
           "default": {
             "width": "50%",
-            "marginLeft": "30px"
+            "marginLeft": "10px"
           }
         }
       }
@@ -11627,6 +12999,11 @@
           "default": {
             "fontSize": "16px"
           }
+        },
+        "lg": {
+          "default": {
+            "fontSize": "18px"
+          }
         }
       }
     },
@@ -11691,7 +13068,7 @@
         "sm": {
           "default": {
             "width": "70%",
-            "marginLeft": "30px"
+            "marginLeft": "10px"
           }
         }
       }
@@ -11754,7 +13131,7 @@
         "sm": {
           "default": {
             "width": "50%",
-            "marginLeft": "30px"
+            "marginLeft": "10px"
           }
         }
       }
@@ -12161,8 +13538,8 @@
         },
         "sm": {
           "default": {
-            "width": "50%",
-            "marginLeft": "30px"
+            "width": "60%",
+            "marginLeft": "10px"
           }
         }
       }
@@ -12530,7 +13907,8 @@
             "left": "0px",
             "top": "0px",
             "width": "60%",
-            "marginLeft": "50px"
+            "marginLeft": "50px",
+            "zIndex": "5"
           }
         },
         "sm": {
@@ -12838,7 +14216,7 @@
         },
         "sm": {
           "default": {
-            "width": "50%"
+            "width": "60%"
           }
         }
       }
@@ -15305,13 +16683,13 @@
             "paddingRight": "0px",
             "paddingBottom": "0px",
             "paddingLeft": "0px",
-            "width": "13%",
-            "top": "40%"
+            "width": "15%",
+            "top": "30%"
           }
         },
         "lg": {
           "default": {
-            "width": "13%",
+            "width": "15%",
             "position": "absolute",
             "top": "30%",
             "right": "5%"
@@ -17074,7 +18452,7 @@
         },
         "sm": {
           "default": {
-            "width": "50%",
+            "width": "60%",
             "marginLeft": "30px"
           }
         }
@@ -17135,7 +18513,7 @@
         },
         "sm": {
           "default": {
-            "width": "50%",
+            "width": "60%",
             "marginLeft": "30px"
           }
         }
@@ -17375,7 +18753,9 @@
         },
         "sm": {
           "default": {
-            "marginTop": "50px"
+            "marginTop": "50px",
+            "justifyContent": "center",
+            "alignItems": "center"
           }
         }
       }
@@ -17406,7 +18786,7 @@
         },
         "sm": {
           "default": {
-            "width": "40%",
+            "width": "70%",
             "marginRight": "40px"
           }
         }
@@ -17524,7 +18904,7 @@
         "sm": {
           "default": {
             "width": "60%",
-            "marginLeft": "30px"
+            "marginLeft": "10px"
           }
         }
       }
@@ -17597,7 +18977,7 @@
             "paddingTop": "20px",
             "paddingRight": "0px",
             "paddingBottom": "0px",
-            "width": "50%"
+            "width": "60%"
           }
         }
       }
@@ -17906,173 +19286,6 @@
         }
       }
     },
-    "node_muv4n0d72q": {
-      "id": "node_muv4n0d72q",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmuv4mzz2-pasted-artwork.svg",
-        "alt": "",
-        "width": 334,
-        "height": 43,
-        "assetId": "asset_muv4n0d62p"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "20%",
-            "borderRadius": "0px",
-            "maxWidth": "100%",
-            "marginLeft": "150px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "30%",
-            "marginLeft": "30px"
-          }
-        },
-        "lg": {
-          "default": {
-            "marginLeft": "50px"
-          }
-        }
-      }
-    },
-    "node_muv4oy9g2r": {
-      "id": "node_muv4oy9g2r",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_muv5y4p734",
-        "node_muv5yudc36"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "justifyContent": "center",
-            "alignItems": "center"
-          }
-        }
-      }
-    },
-    "node_muv5y4p734": {
-      "id": "node_muv5y4p734",
-      "type": "image",
-      "name": "更新",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmuv5y4aw-pasted-artwork.svg",
-        "alt": "",
-        "width": 1393,
-        "height": 115,
-        "assetId": "asset_muv5y4p633"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "75%",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "90%"
-          }
-        }
-      },
-      "scripts": [
-        {
-          "id": "sc_muv60j2437",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_muv60pi939",
-              "kind": "show",
-              "target": "更新中身"
-            }
-          ],
-          "pos": {
-            "x": 224,
-            "y": 173
-          }
-        }
-      ]
-    },
-    "node_muv5yudc36": {
-      "id": "node_muv5yudc36",
-      "type": "image",
-      "name": "更新中身",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmuv5yu2y-pasted-artwork.svg",
-        "alt": "",
-        "width": 1393,
-        "height": 391,
-        "assetId": "asset_muv5yudc35"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "75%",
-            "borderRadius": "0px",
-            "maxWidth": "100%",
-            "position": "absolute",
-            "left": "12%",
-            "top": "0px"
-          }
-        },
-        "sm": {
-          "default": {
-            "left": "40px",
-            "width": "83%",
-            "top": "23px"
-          }
-        }
-      },
-      "attrId": "更新中身",
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ],
-      "scripts": [
-        {
-          "id": "sc_muv6230x3a",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_muv625wl3b",
-              "kind": "hide",
-              "target": "更新中身"
-            }
-          ],
-          "pos": {
-            "x": 222,
-            "y": 281
-          }
-        }
-      ]
-    },
     "node_muw98p703a": {
       "id": "node_muw98p703a",
       "type": "box",
@@ -18257,7 +19470,7 @@
         "sm": {
           "default": {
             "paddingTop": "20px",
-            "paddingBottom": "40px"
+            "paddingBottom": "20px"
           }
         }
       }
@@ -18288,7 +19501,7 @@
         },
         "sm": {
           "default": {
-            "width": "40%",
+            "width": "50%",
             "marginLeft": "50px"
           }
         }
@@ -18379,7 +19592,7 @@
             "paddingTop": "20px",
             "paddingRight": "0px",
             "paddingBottom": "0px",
-            "width": "50%"
+            "width": "60%"
           }
         }
       }
@@ -18471,7 +19684,7 @@
         "sm": {
           "default": {
             "paddingTop": "20px",
-            "paddingBottom": "40px"
+            "paddingBottom": "20px"
           }
         }
       }
@@ -18503,7 +19716,7 @@
         "sm": {
           "default": {
             "marginLeft": "50px",
-            "width": "40%"
+            "width": "50%"
           }
         }
       },
@@ -18551,7 +19764,7 @@
         "sm": {
           "default": {
             "paddingTop": "20px",
-            "paddingBottom": "40px"
+            "paddingBottom": "20px"
           }
         }
       }
@@ -18582,7 +19795,7 @@
         },
         "sm": {
           "default": {
-            "width": "40%",
+            "width": "50%",
             "marginLeft": "50px"
           }
         }
@@ -18661,7 +19874,7 @@
         },
         "sm": {
           "default": {
-            "width": "40%",
+            "width": "50%",
             "marginLeft": "50px"
           }
         }
@@ -18752,7 +19965,7 @@
             "paddingTop": "20px",
             "paddingRight": "0px",
             "paddingBottom": "0px",
-            "width": "50%"
+            "width": "60%"
           }
         }
       }
@@ -18886,7 +20099,7 @@
             "paddingTop": "20px",
             "paddingRight": "0px",
             "paddingBottom": "0px",
-            "width": "50%"
+            "width": "60%"
           }
         }
       }
@@ -18977,7 +20190,7 @@
         },
         "sm": {
           "default": {
-            "width": "70%"
+            "width": "80%"
           }
         }
       }
@@ -19007,7 +20220,7 @@
         },
         "sm": {
           "default": {
-            "width": "70%"
+            "width": "80%"
           }
         }
       }
@@ -19064,7 +20277,7 @@
         },
         "sm": {
           "default": {
-            "width": "90%"
+            "width": "100%"
           }
         }
       },
@@ -19171,6 +20384,11 @@
             "fontSize": "16px",
             "paddingTop": "0px"
           }
+        },
+        "lg": {
+          "default": {
+            "fontSize": "20px"
+          }
         }
       }
     },
@@ -19242,6 +20460,11 @@
           "default": {
             "fontSize": "16px",
             "paddingTop": "0px"
+          }
+        },
+        "lg": {
+          "default": {
+            "fontSize": "20px"
           }
         }
       }
@@ -19955,6 +21178,11 @@
         "sm": {
           "default": {
             "fontSize": "16px"
+          }
+        },
+        "lg": {
+          "default": {
+            "fontSize": "20px"
           }
         }
       }
@@ -22187,7 +23415,7 @@
         },
         "sm": {
           "default": {
-            "width": "70%"
+            "width": "80%"
           }
         }
       }
@@ -22217,7 +23445,7 @@
         },
         "sm": {
           "default": {
-            "width": "70%"
+            "width": "80%"
           }
         }
       }
@@ -22306,6 +23534,12 @@
             "maxWidth": "100%",
             "marginLeft": "60px"
           }
+        },
+        "sm": {
+          "default": {
+            "width": "60%",
+            "marginLeft": "30px"
+          }
         }
       }
     },
@@ -22356,7 +23590,8 @@
         },
         "sm": {
           "default": {
-            "borderRadius": "0px"
+            "borderRadius": "0px",
+            "width": "90%"
           }
         }
       }
@@ -22677,7 +23912,7 @@
       "name": "ボックス",
       "semantic": "auto",
       "text": {
-        "content": "本日は第56回松ヶ崎祭にご来場いただきありがとうございます。\n松ヶ崎祭実行委員会を代表しまして心より歓迎申し上げます。\n\nまた、松ヶ崎祭の開催にあたり、日頃より多大なるご支援・ご協力を賜りました、すべての関係者の皆さまに、深く御礼申し上げます。\n\n今年の松ヶ崎祭開催に向けて、出展者さまが安心して当日を迎えられるよう、そして松ヶ崎祭が無事に開催できるよう、準備に注力してきました。\n\n私たちが準備してきた過程は注目されにくいものがほとんどです。しかし、その成果として、構内の至る所に、私たちが無我夢中で創り上げた景色が広がっています。私たち松ヶ崎祭実行委員会は「松ヶ崎祭での時間に思わず熱中してしまうような最高の体験を、出展者の皆さま、そして来場される皆さまに届けたい」という一心で、松ヶ崎祭が終わる最後の時まで駆け抜けます。\n\n今年の松ヶ崎祭のテーマは「夢宙」です。松ヶ崎祭という無限の夢が宙がる空間に、時間を忘れて没入していただければ幸いです。",
+        "content": "本日は第56回松ヶ崎祭にご来場いただきありがとうございます。\n\n松ヶ崎祭実行委員会を代表しまして心より歓迎申し上げます。\n\nまた、松ヶ崎祭の開催にあたり、日頃より多大なるご支援・ご協力を賜りました、\nすべての関係者の皆さまに、深く御礼申し上げます。\n\n今年度の松ヶ崎祭開催に向けて、出展者さまが安心して当日を迎えられるよう、\nそして松ヶ崎祭が無事に開催できるよう、準備に注力してきました。\n\n私たちが準備してきた過程は注目されにくいものがほとんどです。しかし、その成果として、構内の至る所に、私たちが無我夢中で創り上げた景色が広がっています。\n\n今年度の松ヶ崎祭のテーマは「夢宙」です。\n\n私たち松ヶ崎祭実行委員会は「松ヶ崎祭という無限の夢が宙がる空間での時間に思わず熱中してしまうような最高の体験を、出展者の皆さま、そして来場される皆さまに届けたい」という一心で、松ヶ崎祭が終わる最後の時まで駆け抜けます。",
         "heading": 0
       },
       "link": null,
@@ -22701,6 +23936,11 @@
         "sm": {
           "default": {
             "fontSize": "16px"
+          }
+        },
+        "lg": {
+          "default": {
+            "fontSize": "18px"
           }
         }
       }
@@ -22754,7 +23994,8 @@
         },
         "sm": {
           "default": {
-            "marginLeft": "20px"
+            "marginLeft": "20px",
+            "width": "100%"
           }
         }
       }
@@ -23189,104 +24430,6 @@
         "sm"
       ]
     },
-    "node_mv3y7iajw": {
-      "id": "node_mv3y7iajw",
-      "type": "box",
-      "name": "検索バー",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mv3y9q4oy",
-        "node_mv3ygejd12"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "justifyContent": "center",
-            "alignItems": "center",
-            "width": "100%",
-            "height": "100%",
-            "marginTop": "50px"
-          }
-        }
-      }
-    },
-    "node_mv3ygejd12": {
-      "id": "node_mv3ygejd12",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmv3ygh4o-pasted-artwork.svg",
-        "alt": "",
-        "width": 1473,
-        "height": 195,
-        "assetId": "asset_mv3ygejc11"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "80%",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      }
-    },
-    "node_mv3y9q4oy": {
-      "id": "node_mv3y9q4oy",
-      "type": "field",
-      "name": "インプット",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "field": {
-        "kind": "input",
-        "inputType": "text",
-        "placeholder": "ここに　言葉を　入力してみてね"
-      },
-      "attrId": "field",
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "60%",
-            "padding": "10px 14px",
-            "fontSize": "14px",
-            "borderWidth": "0px",
-            "borderStyle": "solid",
-            "borderRadius": "0px",
-            "position": "absolute",
-            "left": "20%",
-            "top": "40%",
-            "backgroundColor": "rgba(255, 255, 255, 0)",
-            "borderColor": "#e4e4e7",
-            "color": "#9b7a81",
-            "fontFamily": "Zen Kaku Gothic New",
-            "fontWeight": "500"
-          }
-        },
-        "lg": {
-          "default": {
-            "top": "36%"
-          }
-        },
-        "sm": {
-          "default": {
-            "top": "28%",
-            "fontSize": "10px"
-          }
-        }
-      }
-    },
     "node_mv4g6e6714": {
       "id": "node_mv4g6e6714",
       "type": "image",
@@ -23635,7 +24778,21 @@
             "alignItems": "center"
           }
         }
-      }
+      },
+      "motions": [
+        {
+          "id": "motion_mv62356u2",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
     },
     "node_mv4v93r71m": {
       "id": "node_mv4v93r71m",
@@ -23781,7 +24938,21 @@
             "marginTop": "-100px"
           }
         }
-      }
+      },
+      "motions": [
+        {
+          "id": "motion_mv623rjx3",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
     },
     "node_mv4vcei61r": {
       "id": "node_mv4vcei61r",
@@ -23923,6 +25094,11 @@
           "default": {
             "fontSize": "16px"
           }
+        },
+        "lg": {
+          "default": {
+            "fontSize": "20px"
+          }
         }
       }
     },
@@ -24018,7 +25194,7 @@
         },
         "sm": {
           "default": {
-            "width": "70%"
+            "width": "90%"
           }
         }
       }
@@ -24047,14 +25223,15 @@
         },
         "sm": {
           "default": {
-            "borderRadius": "0px"
+            "borderRadius": "0px",
+            "width": "100%"
           }
         },
         "lg": {
           "default": {
             "borderRadius": "0px",
-            "width": "93px",
-            "height": "57px"
+            "width": "100%",
+            "height": "100%"
           }
         }
       }
@@ -25727,6 +26904,11 @@
             "width": "15%",
             "borderRadius": "0px",
             "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "20%"
           }
         }
       },
@@ -28666,6 +29848,11 @@
             "width": "15%",
             "borderRadius": "0px",
             "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "20%"
           }
         }
       },
@@ -31644,6 +32831,11 @@
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
+        },
+        "sm": {
+          "default": {
+            "width": "20%"
+          }
         }
       },
       "scripts": [
@@ -34620,6 +35812,11 @@
             "width": "15%",
             "borderRadius": "0px",
             "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "20%"
           }
         }
       },
@@ -37598,6 +38795,11 @@
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
+        },
+        "sm": {
+          "default": {
+            "width": "20%"
+          }
         }
       },
       "scripts": [
@@ -40574,6 +41776,11 @@
             "width": "15%",
             "borderRadius": "0px",
             "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "20%"
           }
         }
       },
@@ -43552,6 +44759,11 @@
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
+        },
+        "sm": {
+          "default": {
+            "width": "20%"
+          }
         }
       },
       "scripts": [
@@ -46528,6 +47740,11 @@
             "width": "15%",
             "borderRadius": "0px",
             "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "20%"
           }
         }
       },
@@ -49506,6 +50723,11 @@
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
+        },
+        "sm": {
+          "default": {
+            "width": "20%"
+          }
         }
       },
       "scripts": [
@@ -52482,6 +53704,11 @@
             "width": "15%",
             "borderRadius": "0px",
             "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "20%"
           }
         }
       },
@@ -55460,6 +56687,11 @@
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
+        },
+        "sm": {
+          "default": {
+            "width": "20%"
+          }
         }
       },
       "scripts": [
@@ -58436,6 +59668,11 @@
             "width": "15%",
             "borderRadius": "0px",
             "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "20%"
           }
         }
       },
@@ -61414,6 +62651,11 @@
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
+        },
+        "sm": {
+          "default": {
+            "width": "20%"
+          }
         }
       },
       "scripts": [
@@ -64390,6 +65632,11 @@
             "width": "15%",
             "borderRadius": "0px",
             "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "20%"
           }
         }
       },
@@ -67368,6 +68615,11 @@
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
+        },
+        "sm": {
+          "default": {
+            "width": "20%"
+          }
         }
       },
       "scripts": [
@@ -70344,6 +71596,11 @@
             "width": "15%",
             "borderRadius": "0px",
             "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "20%"
           }
         }
       },
@@ -73322,6 +74579,11 @@
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
+        },
+        "sm": {
+          "default": {
+            "width": "20%"
+          }
         }
       },
       "scripts": [
@@ -76299,6 +77561,11 @@
             "borderRadius": "0px",
             "maxWidth": "100%"
           }
+        },
+        "sm": {
+          "default": {
+            "width": "20%"
+          }
         }
       },
       "scripts": [
@@ -78377,6 +79644,357 @@
           "default": {
             "fontSize": "12px",
             "lineHeight": "1"
+          }
+        }
+      }
+    },
+    "node_mv635ewd8": {
+      "id": "node_mv635ewd8",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mv635ewd9",
+        "node_mv635ewda"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "marginTop": "0px"
+          }
+        }
+      }
+    },
+    "node_mv635ewd9": {
+      "id": "node_mv635ewd9",
+      "type": "image",
+      "name": "更新",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmuv5y4aw-pasted-artwork.svg",
+        "alt": "",
+        "width": 1393,
+        "height": 115,
+        "assetId": "asset_muv5y4p633"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "75%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "90%"
+          }
+        }
+      },
+      "scripts": [
+        {
+          "id": "sc_muv60j2437",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_muv60pi939",
+              "kind": "show",
+              "target": "10/13中身"
+            }
+          ],
+          "pos": {
+            "x": 513,
+            "y": 159
+          }
+        }
+      ]
+    },
+    "node_mv635ewda": {
+      "id": "node_mv635ewda",
+      "type": "image",
+      "name": "10/13中身",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmv6325ab-pasted-artwork.svg",
+        "alt": "",
+        "width": 1393,
+        "height": 451,
+        "assetId": "asset_mv6325yx6"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "75%",
+            "borderRadius": "0px",
+            "maxWidth": "100%",
+            "position": "absolute",
+            "left": "12%",
+            "top": "0%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "75%",
+            "position": "absolute",
+            "top": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "84%",
+            "left": "8%"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ],
+      "attrId": "10/13中身",
+      "scripts": [
+        {
+          "id": "sc_mv634d2n1",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mv634i0p2",
+              "kind": "hide",
+              "target": "10/13中身"
+            }
+          ],
+          "pos": {
+            "x": 514,
+            "y": 244
+          }
+        }
+      ]
+    },
+    "node_mv638ixeb": {
+      "id": "node_mv638ixeb",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mv638yfqc",
+        "node_mv6391icd"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "gap": "12px",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "marginTop": "100px"
+          }
+        }
+      }
+    },
+    "node_mv638yfqc": {
+      "id": "node_mv638yfqc",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": {
+        "content": "2026/10/13",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "width": "15%",
+            "height": "100%",
+            "fontFamily": "Inter",
+            "fontSize": "25px",
+            "fontWeight": "700",
+            "color": "#ffffff",
+            "marginLeft": "100px"
+          }
+        },
+        "lg": {
+          "default": {
+            "fontSize": "20px"
+          }
+        },
+        "md": {
+          "default": {
+            "fontSize": "15px"
+          }
+        },
+        "sm": {
+          "default": {
+            "marginLeft": "50px",
+            "fontSize": "10px",
+            "paddingRight": "0px",
+            "paddingLeft": "0px",
+            "paddingTop": "10px",
+            "paddingBottom": "10px",
+            "width": "12%"
+          }
+        }
+      }
+    },
+    "node_mv6391icd": {
+      "id": "node_mv6391icd",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mv63b8h9g"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "12px",
+            "paddingTop": "20px",
+            "paddingRight": "0px",
+            "paddingBottom": "20px",
+            "paddingLeft": "0px"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "8%",
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        }
+      }
+    },
+    "node_mv63b8h9g": {
+      "id": "node_mv63b8h9g",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmv63b7pk-pasted-artwork.svg",
+        "alt": "",
+        "width": 112,
+        "height": 37,
+        "assetId": "asset_mv63b8h8f"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        }
+      }
+    },
+    "node_mv64stsrj": {
+      "id": "node_mv64stsrj",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mv64stsrk"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "height": "157px",
+            "backgroundImage": "url(\"/api/assets/file?path=assets%2Fmsov2b52-pasted-artwork.svg\")",
+            "backgroundSize": "cover",
+            "backgroundPosition": "center",
+            "backgroundRepeat": "no-repeat",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "100%",
+            "marginTop": "20px",
+            "marginBottom": "20px"
+          }
+        },
+        "sm": {
+          "default": {
+            "height": "100%",
+            "marginTop": "0px",
+            "marginBottom": "0px"
+          }
+        }
+      }
+    },
+    "node_mv64stsrk": {
+      "id": "node_mv64stsrk",
+      "type": "field",
+      "name": "インプット",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "field": {
+        "kind": "input",
+        "inputType": "text",
+        "placeholder": "ここに　言葉を　入力してみてね"
+      },
+      "attrId": "field",
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "60%",
+            "padding": "10px 14px",
+            "fontSize": "14px",
+            "borderRadius": "8px",
+            "backgroundColor": "rgba(255, 255, 255, 0)",
+            "backgroundSize": "cover",
+            "backgroundPosition": "center",
+            "backgroundRepeat": "no-repeat",
+            "borderStyle": "solid",
+            "borderWidth": "0px",
+            "borderColor": "#e4e4e7",
+            "height": "31%"
+          }
+        },
+        "sm": {
+          "default": {
+            "height": "100%",
+            "fontSize": "10px",
+            "width": "70%",
+            "paddingTop": "20px",
+            "paddingBottom": "20px",
+            "borderColor": "#9b7a81"
           }
         }
       }
@@ -81153,48 +82771,39 @@
       "width": 563,
       "height": 426,
       "svgFilter": true
+    },
+    "asset_mv6325yx6": {
+      "id": "asset_mv6325yx6",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mv6325ab-pasted-artwork.svg",
+      "bytes": 273436,
+      "mimeType": "image/svg+xml",
+      "width": 1393,
+      "height": 451,
+      "svgFilter": true
+    },
+    "asset_mv63b8h8f": {
+      "id": "asset_mv63b8h8f",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mv63b7pk-pasted-artwork.svg",
+      "bytes": 4251,
+      "mimeType": "image/svg+xml",
+      "width": 112,
+      "height": 37,
+      "svgFilter": false
+    },
+    "asset_mv64skq0h": {
+      "id": "asset_mv64skq0h",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mv64sk7f-pasted-artwork.svg",
+      "bytes": 4251,
+      "mimeType": "image/svg+xml",
+      "width": 112,
+      "height": 37,
+      "svgFilter": false
     }
   },
   "components": {},
-  "dataSources": {
-    "ds_mslbenpp11": {
-      "id": "ds_mslbenpp11",
-      "name": "商品詳細（デモ）",
-      "url": "https://dummyjson.com/products/{slug}",
-      "itemsPath": "reviews",
-      "fields": [
-        "rating",
-        "comment",
-        "date",
-        "reviewerName",
-        "reviewerEmail"
-      ],
-      "sample": [
-        {
-          "rating": 3,
-          "comment": "Would not recommend!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Eleanor Collins",
-          "reviewerEmail": "eleanor.collins@x.dummyjson.com"
-        },
-        {
-          "rating": 4,
-          "comment": "Very satisfied!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Lucas Gordon",
-          "reviewerEmail": "lucas.gordon@x.dummyjson.com"
-        },
-        {
-          "rating": 5,
-          "comment": "Highly impressed!",
-          "date": "2025-04-30T09:41:02.053Z",
-          "reviewerName": "Eleanor Collins",
-          "reviewerEmail": "eleanor.collins@x.dummyjson.com"
-        }
-      ],
-      "fetchedAt": 1788832276190
-    }
-  },
   "customFonts": [
     {
       "family": "Zen Kaku Gothic New",
