@@ -49,6 +49,8 @@ type MapData = {
   exhibits?: MapExhibit[];
   categoryGroups?: { id: string; name: string }[];
   webInfoForm?: { fieldLabels?: Record<string, string> };
+  /** 祭の開催時間（"2026-11-14T10:00" 形式） */
+  eventPeriods?: { startsAt: string; endsAt: string }[];
 };
 
 async function fetchJson<T>(url: string): Promise<T | undefined> {
@@ -62,6 +64,15 @@ async function fetchJson<T>(url: string): Promise<T | undefined> {
 
 function splitWords(s: string | undefined): string[] {
   return (s ?? "").split(/[,、]/).map((w) => w.trim()).filter(Boolean);
+}
+
+/** 開催時間を営業時間の形式（"11/14 10:00-20:30"）にする。営業時間未入力の企画は全日営業として扱う */
+function allDayHours(map: MapData | undefined): string[] {
+  return (map?.eventPeriods ?? []).flatMap((p) => {
+    const s = p.startsAt.match(/^\d{4}-(\d{2})-(\d{2})T(\d{2}:\d{2})/);
+    const e = p.endsAt.match(/T(\d{2}:\d{2})/);
+    return s && e ? [`${Number(s[1])}/${Number(s[2])} ${s[3]}-${e[1]}`] : [];
+  });
 }
 
 /** map.json の企画を web-info.json と同じ形に変換する */
@@ -116,11 +127,18 @@ export async function fetchExhibits(): Promise<Exhibit[]> {
   const data: Exhibit[] = Array.isArray(web?.data) ? web.data : [];
   const mapExhibits = map && Array.isArray(map.exhibits) ? map.exhibits : [];
   const byId = new Map(mapExhibits.map((m) => [m.publicId, m]));
+  const allDay = allDayHours(map);
   for (const e of data) {
-    e.tags = [...(e.tags ?? []), ...splitWords(byId.get(e.publicId)?.searchWords)];
+    const m = byId.get(e.publicId);
+    e.tags = [...(e.tags ?? []), ...splitWords(m?.searchWords)];
+    if (!e.businessHours?.some(Boolean) && !m?.businessHours?.length) e.businessHours = allDay;
     byId.delete(e.publicId);
   }
-  for (const m of byId.values()) data.push(fromMap(m, map!));
+  for (const m of byId.values()) {
+    const e = fromMap(m, map!);
+    if (!m.businessHours?.length) e.businessHours = allDay;
+    data.push(e);
+  }
   return data.sort((a, b) => a.publicId - b.publicId);
 }
 
