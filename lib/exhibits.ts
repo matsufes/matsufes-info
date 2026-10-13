@@ -1,3 +1,5 @@
+import type { CSSProperties } from "react";
+
 export const EXHIBITS_URL = "https://api.matsufes.info/data/web-info.json";
 
 export type Exhibit = {
@@ -183,3 +185,14 @@ export function normalize(s: string): string {
 export function mapHref(e: Pick<Exhibit, "publicId">): string {
   return `https://map.matsufes.info/?id=${e.publicId}&zoom=18.17`;
 }
+
+/** 画像未登録の出展に出す枠（画像と同じ正方形） */
+export const NO_IMAGE_STYLE: CSSProperties = {
+  aspectRatio: "1",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  background: "#e5e5e5",
+  color: "#888",
+  fontSize: "clamp(10px, 1.2vw, 16px)",
+};

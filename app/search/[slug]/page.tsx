@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { fetchExhibit, formatHours, mapHref, placeText } from "@/lib/exhibits";
+import { NO_IMAGE_STYLE, fetchExhibit, formatHours, mapHref, placeText } from "@/lib/exhibits";
 import SiteHeader from "../SiteHeader";
 import BookmarkButton from "./BookmarkButton";
 
@@ -64,7 +64,13 @@ export default async function Page({ params }: Props) {
         )}
         <div className="icon-2">
           <Crisp src="/assets/pasted-artwork-228.svg" w={351} h={351} className="pasted-artwork-svg-38" />
-          {e.imageUrl && <Image src={e.imageUrl} alt={e.name} width={278} height={278} className="svg-158" />}
+          {e.imageUrl ? (
+            <Image src={e.imageUrl} alt={e.name} width={278} height={278} className="svg-158" />
+          ) : (
+            <div className="svg-158" style={{ ...NO_IMAGE_STYLE, fontSize: 24 }}>
+              noimage
+            </div>
+          )}
         </div>
         <div className="el-159" />
         <Image src="/assets/pasted-artwork-2.svg" alt="いつ" width={150} height={150} className="el-155" />

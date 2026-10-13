@@ -3,7 +3,7 @@
 import { useMemo, useState, type CSSProperties } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { normalize } from "@/lib/exhibits";
+import { NO_IMAGE_STYLE, normalize } from "@/lib/exhibits";
 
 export type SearchItem = {
   href: string;
@@ -179,13 +179,13 @@ export default function SearchList({ items, initialQuery }: { items: SearchItem[
                   </span>
                   <p className="box-157">{item.name}</p>
                   <p className="box-158">{item.exhibitorName}</p>
-                  <Image
-                    src={item.imageUrl || "data:image/gif;base64,R0lGODlhAQABAAAAACw="}
-                    alt=""
-                    width={1024}
-                    height={1024}
-                    className="svg-150"
-                  />
+                  {item.imageUrl ? (
+                    <Image src={item.imageUrl} alt="" width={1024} height={1024} className="svg-150" />
+                  ) : (
+                    <div className="svg-150" style={NO_IMAGE_STYLE}>
+                      noimage
+                    </div>
+                  )}
                   <Image src="/assets/pasted-artwork-212.svg" alt="" width={15} height={15} className="svg-154" />
                   <Image src="/assets/pasted-artwork-213.svg" alt="" width={13} height={20} className="svg-155" />
                   <p className="box-160">{item.message}</p>
