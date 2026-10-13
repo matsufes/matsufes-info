@@ -7688,7 +7688,6 @@ body:has([data-page-body="page_mv65ozjy1"]) {
   z-index: 5;
   width: auto;
   height: 100%;
-  position: relative;
 }
 
 .el-183.is-inview {
@@ -30225,6 +30224,7 @@ body:has([data-page-body="page_mv65ozjy1"]) {
   .el-26 {
     padding-top: 0px;
     padding-bottom: 0px;
+    margin-top: 200px;
   }
 
   .el-28 {
@@ -30479,12 +30479,19 @@ body:has([data-page-body="page_mv65ozjy1"]) {
     margin-bottom: 100px;
   }
 
+  .box-24 {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   .box-25 {
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 55%;
+    width: 60%;
   }
 
   .el-54 {
@@ -31076,7 +31083,7 @@ body:has([data-page-body="page_mv65ozjy1"]) {
   }
 
   .el-91 {
-    width: 90%;
+    width: 100%;
     margin-left: -80px;
   }
 
@@ -31102,8 +31109,9 @@ body:has([data-page-body="page_mv65ozjy1"]) {
   }
 
   .el-95 {
-    bottom: -50px;
+    bottom: -20%;
     z-index: 0;
+    margin-top: 0px;
   }
 
   .el-96 {
@@ -31150,7 +31158,12 @@ body:has([data-page-body="page_mv65ozjy1"]) {
   }
 
   .el-101 {
-    width: 60%;
+    width: 70%;
+  }
+
+  .pasted-artwork-svg-27 {
+    width: 100%;
+    border-radius: 0px;
   }
 
   .pasted-artwork-svg-28 {
@@ -31652,7 +31665,7 @@ body:has([data-page-body="page_mv65ozjy1"]) {
   }
 
   .svg-135 {
-    width: 90%;
+    width: 100%;
   }
 
   .el-113 {
@@ -32470,7 +32483,7 @@ body:has([data-page-body="page_mv65ozjy1"]) {
   }
 
   .box-176 {
-    top: 20%;
+    top: 30%;
     right: 0%;
     width: 90%;
   }
@@ -32575,12 +32588,44 @@ body:has([data-page-body="page_mv65ozjy1"]) {
     top: 65%;
   }
 
+  .box-194 {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .el-178 {
+    width: 60%;
+  }
+
+  .el-179 {
+    width: 60%;
+  }
+
   .box-195 {
-    margin-top: -100px;
+    margin-top: -50px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .el-180 {
+    width: 60%;
+  }
+
+  .el-181 {
+    width: 60%;
   }
 
   .box-196 {
     font-size: 16px;
+  }
+
+  .el-182 {
+    position: sticky;
+    top: 0px;
   }
 
   .svg-169 {
@@ -32602,17 +32647,19 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
   .el-186 {
     position: absolute;
-    right: 10%;
+    right: 7%;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 13%;
-    top: 40%;
+    width: 15%;
+    top: 30%;
   }
 
   .pasted-artwork-svg-41 {
     border-radius: 0px;
+    width: 100%;
+    height: 100%;
   }
 
   .el-187 {
@@ -32860,17 +32907,19 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
   .el-222 {
     position: absolute;
-    right: 10%;
+    right: 7%;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 13%;
-    top: 40%;
+    width: 15%;
+    top: 30%;
   }
 
   .pasted-artwork-svg-42 {
     border-radius: 0px;
+    width: 100%;
+    height: 100%;
   }
 
   .el-223 {
@@ -33118,17 +33167,19 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
   .el-259 {
     position: absolute;
-    right: 10%;
+    right: 7%;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 13%;
-    top: 40%;
+    width: 15%;
+    top: 30%;
   }
 
   .pasted-artwork-svg-43 {
     border-radius: 0px;
+    width: 100%;
+    height: 100%;
   }
 
   .el-260 {
@@ -33376,17 +33427,19 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
   .el-296 {
     position: absolute;
-    right: 10%;
+    right: 7%;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 13%;
-    top: 40%;
+    width: 15%;
+    top: 30%;
   }
 
   .pasted-artwork-svg-44 {
     border-radius: 0px;
+    width: 100%;
+    height: 100%;
   }
 
   .el-297 {
@@ -33634,17 +33687,19 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
   .el-333 {
     position: absolute;
-    right: 10%;
+    right: 7%;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 13%;
-    top: 40%;
+    width: 15%;
+    top: 30%;
   }
 
   .pasted-artwork-svg-45 {
     border-radius: 0px;
+    width: 100%;
+    height: 100%;
   }
 
   .el-334 {
@@ -33892,17 +33947,19 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
   .el-370 {
     position: absolute;
-    right: 10%;
+    right: 7%;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 13%;
-    top: 40%;
+    width: 15%;
+    top: 30%;
   }
 
   .pasted-artwork-svg-46 {
     border-radius: 0px;
+    width: 100%;
+    height: 100%;
   }
 
   .el-371 {
@@ -34150,17 +34207,19 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
   .el-407 {
     position: absolute;
-    right: 10%;
+    right: 7%;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 13%;
-    top: 40%;
+    width: 15%;
+    top: 30%;
   }
 
   .pasted-artwork-svg-47 {
     border-radius: 0px;
+    width: 100%;
+    height: 100%;
   }
 
   .el-408 {
@@ -34408,17 +34467,19 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
   .el-444 {
     position: absolute;
-    right: 10%;
+    right: 7%;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 13%;
-    top: 40%;
+    width: 15%;
+    top: 30%;
   }
 
   .pasted-artwork-svg-48 {
     border-radius: 0px;
+    width: 100%;
+    height: 100%;
   }
 
   .el-445 {
@@ -34666,17 +34727,19 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
   .el-481 {
     position: absolute;
-    right: 10%;
+    right: 7%;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 13%;
-    top: 40%;
+    width: 15%;
+    top: 30%;
   }
 
   .pasted-artwork-svg-49 {
     border-radius: 0px;
+    width: 100%;
+    height: 100%;
   }
 
   .el-482 {
@@ -34924,17 +34987,19 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
   .el-518 {
     position: absolute;
-    right: 10%;
+    right: 7%;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 13%;
-    top: 40%;
+    width: 15%;
+    top: 30%;
   }
 
   .pasted-artwork-svg-50 {
     border-radius: 0px;
+    width: 100%;
+    height: 100%;
   }
 
   .el-519 {
@@ -35182,17 +35247,19 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
   .el-555 {
     position: absolute;
-    right: 10%;
+    right: 7%;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 13%;
-    top: 40%;
+    width: 15%;
+    top: 30%;
   }
 
   .pasted-artwork-svg-51 {
     border-radius: 0px;
+    width: 100%;
+    height: 100%;
   }
 
   .el-556 {
@@ -35440,17 +35507,19 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
   .el-592 {
     position: absolute;
-    right: 10%;
+    right: 7%;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 13%;
-    top: 40%;
+    width: 15%;
+    top: 30%;
   }
 
   .pasted-artwork-svg-52 {
     border-radius: 0px;
+    width: 100%;
+    height: 100%;
   }
 
   .el-593 {
@@ -35698,17 +35767,19 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
   .el-629 {
     position: absolute;
-    right: 10%;
+    right: 7%;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 13%;
-    top: 40%;
+    width: 15%;
+    top: 30%;
   }
 
   .pasted-artwork-svg-53 {
     border-radius: 0px;
+    width: 100%;
+    height: 100%;
   }
 
   .el-630 {
@@ -35956,17 +36027,19 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
   .el-666 {
     position: absolute;
-    right: 10%;
+    right: 7%;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 13%;
-    top: 40%;
+    width: 15%;
+    top: 30%;
   }
 
   .pasted-artwork-svg-54 {
     border-radius: 0px;
+    width: 100%;
+    height: 100%;
   }
 
   .el-667 {
@@ -36214,17 +36287,19 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
   .el-703 {
     position: absolute;
-    right: 10%;
+    right: 7%;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 13%;
-    top: 40%;
+    width: 15%;
+    top: 30%;
   }
 
   .pasted-artwork-svg-55 {
     border-radius: 0px;
+    width: 100%;
+    height: 100%;
   }
 
   .el-704 {
@@ -36472,17 +36547,19 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
   .el-740 {
     position: absolute;
-    right: 10%;
+    right: 7%;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 13%;
-    top: 40%;
+    width: 15%;
+    top: 30%;
   }
 
   .pasted-artwork-svg-56 {
     border-radius: 0px;
+    width: 100%;
+    height: 100%;
   }
 
   .el-741 {
@@ -36730,17 +36807,19 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
   .el-777 {
     position: absolute;
-    right: 10%;
+    right: 7%;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 13%;
-    top: 40%;
+    width: 15%;
+    top: 30%;
   }
 
   .pasted-artwork-svg-57 {
     border-radius: 0px;
+    width: 100%;
+    height: 100%;
   }
 
   .el-778 {
@@ -36988,17 +37067,19 @@ body:has([data-page-body="page_mv65ozjy1"]) {
 
   .el-814 {
     position: absolute;
-    right: 10%;
+    right: 7%;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    width: 13%;
-    top: 40%;
+    width: 15%;
+    top: 30%;
   }
 
   .pasted-artwork-svg-58 {
     border-radius: 0px;
+    width: 100%;
+    height: 100%;
   }
 
   .el-815 {
