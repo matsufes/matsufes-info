@@ -18,7 +18,7 @@ export default function Page() {
               style={{ aspectRatio: "230 / 142" }}
             >
               <Image
-                src="/assets/pasted-artwork-248.svg"
+                src="/assets/pasted-artwork-247.svg"
                 alt=""
                 width={460}
                 height={284}
@@ -110,7 +110,7 @@ export default function Page() {
             style={{ aspectRatio: "213 / 213" }}
           >
             <Image
-              src="/assets/pasted-artwork-249.svg"
+              src="/assets/pasted-artwork-248.svg"
               alt=""
               width={426}
               height={426}
@@ -290,7 +290,7 @@ export default function Page() {
             style={{ aspectRatio: "563 / 675" }}
           >
             <Image
-              src="/assets/pasted-artwork-251.svg"
+              src="/assets/pasted-artwork-249.svg"
               alt=""
               width={1126}
               height={1350}
@@ -303,7 +303,7 @@ export default function Page() {
             style={{ aspectRatio: "563 / 675" }}
           >
             <Image
-              src="/assets/pasted-artwork-252.svg"
+              src="/assets/pasted-artwork-250.svg"
               alt=""
               width={1126}
               height={1350}
@@ -318,7 +318,7 @@ export default function Page() {
             style={{ aspectRatio: "563 / 675" }}
           >
             <Image
-              src="/assets/pasted-artwork-254.svg"
+              src="/assets/pasted-artwork-251.svg"
               alt=""
               width={1126}
               height={1350}
@@ -331,7 +331,7 @@ export default function Page() {
             style={{ aspectRatio: "563 / 675" }}
           >
             <Image
-              src="/assets/pasted-artwork-255.svg"
+              src="/assets/pasted-artwork-252.svg"
               alt=""
               width={1126}
               height={1350}
@@ -346,7 +346,7 @@ export default function Page() {
             style={{ aspectRatio: "563 / 426" }}
           >
             <Image
-              src="/assets/pasted-artwork-256.svg"
+              src="/assets/pasted-artwork-253.svg"
               alt=""
               width={1126}
               height={852}
@@ -359,7 +359,7 @@ export default function Page() {
             style={{ aspectRatio: "563 / 426" }}
           >
             <Image
-              src="/assets/pasted-artwork-257.svg"
+              src="/assets/pasted-artwork-254.svg"
               alt=""
               width={1126}
               height={852}
@@ -374,7 +374,7 @@ export default function Page() {
             style={{ aspectRatio: "563 / 426" }}
           >
             <Image
-              src="/assets/pasted-artwork-259.svg"
+              src="/assets/pasted-artwork-255.svg"
               alt=""
               width={1126}
               height={852}
@@ -387,7 +387,7 @@ export default function Page() {
             style={{ aspectRatio: "563 / 426" }}
           >
             <Image
-              src="/assets/pasted-artwork-260.svg"
+              src="/assets/pasted-artwork-256.svg"
               alt=""
               width={1126}
               height={852}
@@ -402,7 +402,7 @@ export default function Page() {
             style={{ aspectRatio: "563 / 443" }}
           >
             <Image
-              src="/assets/pasted-artwork-261.svg"
+              src="/assets/pasted-artwork-257.svg"
               alt=""
               width={1126}
               height={886}
@@ -415,7 +415,7 @@ export default function Page() {
             style={{ aspectRatio: "563 / 426" }}
           >
             <Image
-              src="/assets/pasted-artwork-262.svg"
+              src="/assets/pasted-artwork-258.svg"
               alt=""
               width={1126}
               height={852}

@@ -18,7 +18,7 @@ export default function Page() {
               style={{ aspectRatio: "230 / 142" }}
             >
               <Image
-                src="/assets/pasted-artwork-248.svg"
+                src="/assets/pasted-artwork-247.svg"
                 alt=""
                 width={460}
                 height={284}
@@ -110,7 +110,7 @@ export default function Page() {
             style={{ aspectRatio: "213 / 213" }}
           >
             <Image
-              src="/assets/pasted-artwork-249.svg"
+              src="/assets/pasted-artwork-248.svg"
               alt=""
               width={426}
               height={426}
@@ -260,7 +260,7 @@ export default function Page() {
         </p>
         <div className="box-216">
           <Image
-            src="/assets/pasted-artwork-264.svg"
+            src="/assets/pasted-artwork-260.svg"
             alt=""
             width={112}
             height={37}
@@ -285,7 +285,7 @@ export default function Page() {
           style={{ aspectRatio: "1393 / 451" }}
         >
           <Image
-            src="/assets/pasted-artwork-263.svg"
+            src="/assets/pasted-artwork-259.svg"
             alt=""
             width={2786}
             height={902}

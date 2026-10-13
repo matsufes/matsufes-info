@@ -18,7 +18,16 @@ const nextConfig = {
   },
   async rewrites() {
     return {
-      beforeFiles: [],
+      beforeFiles: [
+      {
+            "source": "/page-24",
+            "destination": "https://piyonavi.matsufes.info/map"
+      },
+      {
+            "source": "/page-24/:proxyPath*",
+            "destination": "https://piyonavi.matsufes.info/map/:proxyPath*"
+      }
+],
       afterFiles: [],
       fallback: [],
     };

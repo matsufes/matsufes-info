@@ -3,6 +3,14 @@ body:has([data-page-body="page_mslbenpoz"]) {
   height: auto;
 }
 
+html:has([data-page-body="page_msleaffe1"]) {
+  background: #f5e9ef;
+}
+
+body:has([data-page-body="page_msleaffe1"]) {
+  min-height: 100vh;
+}
+
 body:has([data-page-body="page_msleaffe1"]) {
   background-repeat: no-repeat;
   background-size: cover;
@@ -196,6 +204,11 @@ body:has([data-page-body="page_muzoss702k"]) {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  width: auto;
+  height: auto;
+}
+
+body:has([data-page-body="page_mv65ozjy1"]) {
   width: auto;
   height: auto;
 }
@@ -30934,6 +30947,10 @@ body:has([data-page-body="page_muzoss702k"]) {
 
   .box-64 {
     height: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .box-65 {
@@ -30957,7 +30974,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   }
 
   .svg-65 {
-    width: 75%;
+    width: 80%;
   }
 
   .svg-66 {
@@ -30980,7 +30997,7 @@ body:has([data-page-body="page_muzoss702k"]) {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
   }
 
@@ -31002,7 +31019,59 @@ body:has([data-page-body="page_muzoss702k"]) {
     height: 100%;
   }
 
+  .pasted-artwork-svg-10 {
+    width: 100%;
+  }
+
+  .pasted-artwork-svg-11 {
+    width: 100%;
+  }
+
+  .pasted-artwork-svg-12 {
+    width: 100%;
+  }
+
+  .pasted-artwork-svg-13 {
+    width: 100%;
+  }
+
   .pasted-artwork-svg-14 {
+    width: 100%;
+  }
+
+  .pasted-artwork-svg-15 {
+    width: 100%;
+  }
+
+  .pasted-artwork-svg-16 {
+    width: 100%;
+  }
+
+  .pasted-artwork-svg-18 {
+    width: 100%;
+  }
+
+  .pasted-artwork-svg-19 {
+    width: 100%;
+  }
+
+  .pasted-artwork-svg-20 {
+    width: 100%;
+  }
+
+  .pasted-artwork-svg-21 {
+    width: 100%;
+  }
+
+  .pasted-artwork-svg-22 {
+    width: 100%;
+  }
+
+  .pasted-artwork-svg-23 {
+    width: 100%;
+  }
+
+  .pasted-artwork-svg-24 {
     width: 100%;
   }
 
@@ -31093,6 +31162,10 @@ body:has([data-page-body="page_muzoss702k"]) {
     width: 100%;
   }
 
+  .pasted-artwork-svg-29 {
+    width: 100%;
+  }
+
   .box-78 {
     height: 100%;
     width: 100%;
@@ -31168,8 +31241,8 @@ body:has([data-page-body="page_muzoss702k"]) {
   }
 
   .svg-84 {
-    width: 50%;
-    margin-left: 30px;
+    width: 60%;
+    margin-left: 10px;
   }
 
   .box-88 {
@@ -31249,11 +31322,11 @@ body:has([data-page-body="page_muzoss702k"]) {
 
   .svg-94 {
     width: 70%;
-    margin-left: 30px;
+    margin-left: 10px;
   }
 
   .box-101 {
-    width: 80%;
+    width: 90%;
     margin-right: 0px;
   }
 
@@ -31289,7 +31362,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   }
 
   .svg-99 {
-    width: 80%;
+    width: 90%;
   }
 
   .box-106 {
@@ -31584,7 +31657,7 @@ body:has([data-page-body="page_muzoss702k"]) {
 
   .el-113 {
     position: absolute;
-    right: 10%;
+    right: 7%;
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
@@ -31838,8 +31911,8 @@ body:has([data-page-body="page_muzoss702k"]) {
   }
 
   .svg-137 {
-    width: 50%;
-    margin-left: 30px;
+    width: 60%;
+    margin-left: 10px;
   }
 
   .box-125 {
@@ -31849,7 +31922,7 @@ body:has([data-page-body="page_muzoss702k"]) {
 
   .svg-138 {
     width: 60%;
-    margin-left: 30px;
+    margin-left: 10px;
   }
 
   .box-126 {
@@ -31858,7 +31931,7 @@ body:has([data-page-body="page_muzoss702k"]) {
 
   .svg-139 {
     width: 60%;
-    margin-left: 30px;
+    margin-left: 10px;
   }
 
   .el-124 {
@@ -32176,6 +32249,10 @@ body:has([data-page-body="page_muzoss702k"]) {
     padding-bottom: 0px;
   }
 
+  .pasted-artwork-svg-36 {
+    width: 100%;
+  }
+
   .el-156 {
     height: 100px;
     font-size: 20px;
@@ -32384,7 +32461,7 @@ body:has([data-page-body="page_muzoss702k"]) {
 
   .svg-166 {
     width: 60%;
-    margin-left: 30px;
+    margin-left: 10px;
   }
 
   .hcd-mf56-png {
@@ -32448,7 +32525,7 @@ body:has([data-page-body="page_muzoss702k"]) {
   }
 
   .el-174 {
-    font-size: 16px;
+    font-size: 13px;
   }
 
   .box-191 {
@@ -32475,25 +32552,25 @@ body:has([data-page-body="page_muzoss702k"]) {
   }
 
   .el-176 {
-    left: 25%;
+    left: 20%;
     font-size: 10px;
     top: 35%;
   }
 
   .el-177 {
-    left: 25%;
+    left: 20%;
     font-size: 10px;
     top: 45%;
   }
 
   .hello-world {
-    left: 25%;
+    left: 20%;
     font-size: 10px;
     top: 55%;
   }
 
   .re-kit {
-    left: 25%;
+    left: 20%;
     font-size: 10px;
     top: 65%;
   }
@@ -37241,22 +37318,26 @@ body:has([data-page-body="page_muzoss702k"]) {
   }
 
   .el-849 {
-    width: 90%;
+    width: 100%;
   }
 
   .el-850 {
-    width: 84%;
-    left: 8%;
+    width: 95%;
+    left: 3%;
   }
 
   .box-215 {
     margin-left: 50px;
-    font-size: 10px;
+    font-size: 15px;
     padding-right: 0px;
     padding-left: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 12%;
+    width: 18%;
+  }
+
+  .box-216 {
+    width: 10%;
   }
 
   .box-217 {
@@ -39486,6 +39567,10 @@ body:has([data-page-body="page_muzoss702k"]) {
     display: none;
   }
 
+  .box-102 {
+    display: none;
+  }
+
   .el-106 {
     display: none;
   }
@@ -40287,6 +40372,10 @@ body:has([data-page-body="page_muzoss702k"]) {
   }
 
   .el-845 {
+    display: none;
+  }
+
+  .el-850 {
     display: none;
   }
 }
