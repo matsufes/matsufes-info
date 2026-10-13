@@ -374,6 +374,25 @@ export default async function Page({
           {"中分類"}
         </p>
       </section>
+      <section className="box-231">
+        <Image
+          src="/assets/pasted-artwork-3.svg"
+          alt=""
+          width={158}
+          height={150}
+          className="pasted-artwork-svg-65"
+        />
+        <Image
+          src="/assets/pasted-artwork-2.svg"
+          alt=""
+          width={150}
+          height={150}
+          className="pasted-artwork-svg-66"
+        />
+        <p className="box-232">
+          {"11/14(土) 10:00〜20:30\n11/15(日) 10:00〜17:00"}
+        </p>
+      </section>
       <section className="el-168">
         <div className="box-170" />
         <p className="box-171">

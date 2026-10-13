@@ -657,6 +657,7 @@
         "node_muzoss6zx",
         "node_muzoss6zz",
         "node_muzpbcs72m",
+        "node_mv6blb04b",
         "node_muztrhrv4v",
         "node_mv6ag7qm4",
         "node_muzu2nfg4z",
@@ -21911,7 +21912,7 @@
         },
         "sm": {
           "default": {
-            "marginTop": "200px",
+            "marginTop": "100px",
             "justifyContent": "center",
             "alignItems": "center"
           }
@@ -88470,7 +88471,8 @@
         },
         "sm": {
           "default": {
-            "width": "15%"
+            "width": "15%",
+            "top": "65%"
           }
         }
       }
@@ -88504,10 +88506,10 @@
         },
         "sm": {
           "default": {
-            "left": "28%",
             "width": "12%",
             "justifyContent": "center",
-            "alignItems": "center"
+            "alignItems": "center",
+            "left": "25%"
           }
         }
       }
@@ -91817,6 +91819,129 @@
             "flexDirection": "column",
             "gap": "16px",
             "padding": "0px"
+          }
+        }
+      }
+    },
+    "node_mv6blb04b": {
+      "id": "node_mv6blb04b",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mv6bs8pec",
+        "node_mv6bsk7cd",
+        "node_mv6bt6h8e"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px"
+          }
+        }
+      }
+    },
+    "node_mv6bs8pec": {
+      "id": "node_mv6bs8pec",
+      "type": "image",
+      "name": "pasted-artwork.svg",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmsowk1uh-pasted-artwork.svg",
+        "alt": "",
+        "width": 158,
+        "height": 150,
+        "assetId": "asset_msowk2nj2u"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "12px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "12%",
+            "borderRadius": "0px",
+            "marginLeft": "10px"
+          }
+        }
+      }
+    },
+    "node_mv6bsk7cd": {
+      "id": "node_mv6bsk7cd",
+      "type": "image",
+      "name": "pasted-artwork.svg",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmsowe56q-pasted-artwork.svg",
+        "alt": "",
+        "width": 150,
+        "height": 150,
+        "assetId": "asset_msowe61f2d"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "12px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "9%",
+            "borderRadius": "0px",
+            "marginLeft": "10px"
+          }
+        }
+      }
+    },
+    "node_mv6bt6h8e": {
+      "id": "node_mv6bt6h8e",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": {
+        "content": "11/14(土) 10:00〜20:30\n11/15(日) 10:00〜17:00",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px"
+          }
+        },
+        "sm": {
+          "default": {
+            "color": "#ffffff",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "15px",
+            "paddingRight": "0px",
+            "paddingLeft": "0px",
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "width": "80%",
+            "fontWeight": "600",
+            "position": "absolute",
+            "top": "15%",
+            "right": "3%"
           }
         }
       }
