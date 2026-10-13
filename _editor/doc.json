@@ -1132,7 +1132,7 @@
     },
     "page_muf6dx2a7y": {
       "id": "page_muf6dx2a7y",
-      "name": "松ヶ崎祭について",
+      "name": "松ヶ崎祭とは",
       "slug": "about",
       "title": "松ヶ崎祭について",
       "description": "松ヶ崎祭とは？ 松ヶ崎祭についてご紹介します。",
@@ -12683,7 +12683,7 @@
         },
         "lg": {
           "default": {
-            "fontSize": "20px"
+            "fontSize": "17px"
           }
         }
       }
@@ -12837,7 +12837,7 @@
         },
         "lg": {
           "default": {
-            "fontSize": "20px"
+            "fontSize": "17px"
           }
         }
       }
@@ -20676,7 +20676,7 @@
         },
         "sm": {
           "default": {
-            "paddingTop": "100px",
+            "paddingTop": "200px",
             "paddingRight": "20px",
             "paddingLeft": "20px",
             "display": "flex",
@@ -23616,7 +23616,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mv1xdoa55e"
+        "node_mv6equj0m"
       ],
       "styles": {
         "base": {
@@ -23627,36 +23627,6 @@
             "gap": "12px",
             "justifyContent": "center",
             "alignItems": "center"
-          }
-        }
-      }
-    },
-    "node_mv1xdoa55e": {
-      "id": "node_mv1xdoa55e",
-      "type": "image",
-      "name": "HCD_mf56.png",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmv1xdni1-HCD_mf56.png",
-        "alt": "",
-        "width": 2162,
-        "height": 1466,
-        "assetId": "asset_mv1xdo735d"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "80%",
-            "borderRadius": "0px"
-          }
-        },
-        "sm": {
-          "default": {
-            "borderRadius": "0px",
-            "width": "90%"
           }
         }
       }
@@ -25043,6 +25013,11 @@
             "paddingLeft": "0px",
             "paddingTop": "0px",
             "paddingBottom": "0px"
+          }
+        },
+        "lg": {
+          "default": {
+            "marginTop": "-150px"
           }
         }
       },
@@ -98616,7 +98591,7 @@
       "name": "ボックス",
       "semantic": "auto",
       "text": {
-        "content": "みんなが松ヶ崎祭を　もっと楽しめるように　企画をいっぱい　用意したよ。\n今日しかできない　特別な体験を　お届けするね。",
+        "content": "みんなが松ヶ崎祭を　もっと楽しめるように　企画をいっぱい　用意したよ。\nここでしかできない　特別な体験を　お届けするね。",
         "heading": 0
       },
       "link": null,
@@ -98644,6 +98619,35 @@
         "md": {
           "default": {
             "fontSize": "20px"
+          }
+        }
+      }
+    },
+    "node_mv6equj0m": {
+      "id": "node_mv6equj0m",
+      "type": "image",
+      "name": "mf56_HCD.png",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmv6eqm3g-mf56_HCD.png",
+        "alt": "",
+        "width": 1442,
+        "height": 977,
+        "assetId": "asset_mv6eqmvil"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "80%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "90%"
           }
         }
       }
@@ -101437,6 +101441,15 @@
       "width": 636,
       "height": 130,
       "svgFilter": true
+    },
+    "asset_mv6eqmvil": {
+      "id": "asset_mv6eqmvil",
+      "name": "mf56_HCD.png",
+      "path": "assets/mv6eqm3g-mf56_HCD.png",
+      "bytes": 163902,
+      "mimeType": "image/png",
+      "width": 1442,
+      "height": 977
     }
   },
   "components": {},

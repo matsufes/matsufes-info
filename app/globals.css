@@ -34,12 +34,6 @@ img, video {
   overflow: hidden;
 }
 
-.crisp-svg > svg {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .crisp-svg > img {
   position: absolute;
   top: 0;
