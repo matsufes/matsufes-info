@@ -104,12 +104,17 @@ var vars = {};
 function getVar(name) {
 return has(vars, name) ? vars[name] : dig(vars, name);
 }
+function inTpl(el) {
+return !!(el.closest && el.closest("[data-tpl]"));
+}
 function find(self, target) {
 if (!target || target === "@self") return self ? [self] : [];
 try {
-return Array.prototype.slice.call(
-root.querySelectorAll("#" + CSS.escape(target))
-);
+return Array.prototype.slice
+.call(root.querySelectorAll("#" + CSS.escape(target)))
+.filter(function (el) {
+return !inTpl(el);
+});
 } catch (e) {
 return [];
 }
@@ -162,6 +167,67 @@ return cmp(valueOf(els), c.op, resolve(c.value, self));
 }
 return c.not ? !r : r;
 }
+var filters = new Map();
+var sorts = new Map();
+function itemOf(w) {
+try {
+return JSON.parse(w.getAttribute("data-item")) || {};
+} catch (e) {
+return {};
+}
+}
+function order(x, y) {
+return typeof x === "number" && typeof y === "number"
+? x - y
+: String(x == null ? "" : x).localeCompare(String(y == null ? "" : y), "ja", {
+numeric: true,
+});
+}
+function applySort(list) {
+var s = sorts.get(list.getAttribute("data-array"));
+if (!s) return;
+var dir = s.dir === "desc" ? -1 : 1;
+var rows = Array.prototype.filter
+.call(list.children, function (w) {
+return w.hasAttribute("data-item");
+})
+.map(function (w, i) {
+return { w: w, v: itemOf(w)[s.field], i: i };
+});
+rows.sort(function (a, b) {
+return order(a.v, b.v) * dir || a.i - b.i;
+});
+rows.forEach(function (r) {
+list.appendChild(r.w);
+});
+}
+function relist(name) {
+listsOf(name).forEach(function (list) {
+applySort(list);
+applyFilters(list);
+});
+}
+function applyFilters(list) {
+var fs = filters.get(list.getAttribute("data-array")) || {};
+Array.prototype.forEach.call(list.children, function (w) {
+if (!w.hasAttribute("data-item")) return;
+var item = itemOf(w);
+var ok = Object.keys(fs).every(function (f) {
+var v = item[f] == null ? "" : String(item[f]);
+return cmp(v, fs[f].op, fs[f].value);
+});
+w.style.display = ok ? "contents" : "none";
+});
+}
+function listsOf(name) {
+try {
+return Array.prototype.slice.call(
+root.querySelectorAll('[data-array="' + CSS.escape(name) + '"]')
+);
+} catch (e) {
+return [];
+}
+}
 function exec(st, self) {
 switch (st.kind) {
 case "show":
@@ -184,6 +250,23 @@ var url = resolveUrl(st.url, self);
 go(url, st.newTab);
 break;
 }
+case "filter-array": {
+if (!st.array || !st.field) break;
+var fs = filters.get(st.array) || {};
+fs[st.field] = { op: st.op, value: resolve(st.value, self) };
+filters.set(st.array, fs);
+relist(st.array);
+break;
+}
+case "unfilter-array":
+filters.delete(st.array);
+relist(st.array);
+break;
+case "sort-array":
+if (!st.array || !st.field) break;
+sorts.set(st.array, { field: st.field, dir: st.dir });
+relist(st.array);
+break;
 }
 }
 function runSteps(steps, self) {
@@ -298,15 +381,53 @@ hovering.forEach(function (t, el) {
 if (t === null && done.indexOf(el) < 0) leaveLater(el);
 });
 }
+var seen = new WeakSet();
+function scan() {
+if (!alive) return;
+if (sorts.size || filters.size) {
+root.querySelectorAll("[data-array]").forEach(function (list) {
+if (list.hasAttribute("data-client-list")) return;
+applySort(list);
+applyFilters(list);
+});
+}
+root.querySelectorAll("[data-scripts]").forEach(function (el) {
+if (seen.has(el) || inTpl(el)) return;
+seen.add(el);
+var list = parse(el);
+if (list.some(function (s) { return s.trigger === "load"; })) {
+fire(el, "load");
+}
+});
+}
+var queued = false;
+var mo = new MutationObserver(function () {
+if (queued) return;
+queued = true;
+requestAnimationFrame(function () {
+queued = false;
+scan();
+});
+});
+mo.observe(root, {
+childList: true,
+subtree: true,
+attributes: true,
+attributeFilter: ["data-scripts"],
+});
+scan();
 root.addEventListener("click", onClick);
 root.addEventListener("mouseover", onOver);
 root.addEventListener("mouseout", onOut);
 return function dispose() {
 alive = false;
+filters.clear();
+sorts.clear();
 hovering.forEach(function (t) {
 clearTimeout(t);
 });
 hovering.clear();
+mo.disconnect();
 root.removeEventListener("click", onClick);
 root.removeEventListener("mouseover", onOver);
 root.removeEventListener("mouseout", onOut);

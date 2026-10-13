@@ -10,11 +10,6 @@ export const metadata: Metadata = {
     template: "%s | 第56回松ヶ崎祭",
   },
   icons: { icon: "/assets/favicon.ico", apple: "/assets/apple-touch-icon.png" },
-  openGraph: {
-    siteName: "第56回松ヶ崎祭",
-    images: ["/assets/ogp.png"],
-  },
-  twitter: { card: "summary_large_image" },
   robots: {
     index: false,
     follow: false,
@@ -37,7 +32,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${zenmarugothic.variable} ${zenkakugothicnew.variable}`}>
         {children}
         <div
-          dangerouslySetInnerHTML={{ __html: "<script src=\"/inview.js?v=16qqctc\" defer></script>\n<script src=\"/scripts.js?v=bmhat1\" defer></script>" }}
+          dangerouslySetInnerHTML={{ __html: "<script src=\"/inview.js?v=16qqctc\" defer></script>\n<script src=\"/scripts.js?v=2g8i9z\" defer></script>" }}
         />
       </body>
     </html>

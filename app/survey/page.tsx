@@ -5,12 +5,6 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "来場者アンケート",
   description: "松ヶ崎祭にご来場の皆さまへのアンケートです。",
-  openGraph: {
-    title: "来場者アンケート",
-    description: "松ヶ崎祭にご来場の皆さまへのアンケートです。",
-    images: ["/assets/ogp.png"],
-  },
-  twitter: { card: "summary_large_image" },
 };
 
 export default function Page() {
@@ -35,7 +29,7 @@ export default function Page() {
           <div id="memu-p" data-toggle-show="flex" className="el-933">
             <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-924">
               <span
-                className="crisp-svg svg-284"
+                className="crisp-svg svg-283"
               >
                 <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                 <Image
@@ -66,7 +60,7 @@ export default function Page() {
                 {"mf56メインテ〜マ"}
               </Link>
               <Link href="/sponsor" id="協賛-p" className="button-319">
-                {"協賛いただいた皆さま"}
+                {"ご協賛いただいた皆さま"}
               </Link>
               <Link href="/notice" id="お知らせ-p" className="button-320">
                 {"お知らせ"}
@@ -126,7 +120,7 @@ export default function Page() {
           <div className="el-956">
             <p id="matsufes" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu1\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu1\"}],\"keep\":true}]"} className="el-939">
               <span
-                className="crisp-svg svg-285"
+                className="crisp-svg svg-284"
               >
                 <svg aria-hidden="true" width={244} height={55} viewBox="0 0 244 55" />
                 <Image
@@ -153,7 +147,7 @@ export default function Page() {
             </p>
             <p id="kikaku" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu2\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu2\"}],\"keep\":true}]"} className="el-945">
               <span
-                className="crisp-svg svg-286"
+                className="crisp-svg svg-285"
               >
                 <svg aria-hidden="true" width={153} height={55} viewBox="0 0 153 55" />
                 <Image
@@ -180,7 +174,7 @@ export default function Page() {
             </p>
             <p id="goannai" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu3\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu3\"}],\"keep\":true}]"} className="el-951">
               <span
-                className="crisp-svg svg-287"
+                className="crisp-svg svg-286"
               >
                 <svg aria-hidden="true" width={93} height={61} viewBox="0 0 93 61" />
                 <Image
@@ -207,7 +201,7 @@ export default function Page() {
             </p>
             <p id="kousiki" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu4\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu4\"}],\"keep\":true}]"} className="el-955">
               <span
-                className="crisp-svg svg-288"
+                className="crisp-svg svg-287"
               >
                 <svg aria-hidden="true" width={127} height={58} viewBox="0 0 127 58" />
                 <Image
@@ -241,7 +235,7 @@ export default function Page() {
       </section>
       <section className="box-226">
         <span
-          className="crisp-svg svg-289"
+          className="crisp-svg svg-288"
         >
           <svg aria-hidden="true" width={1113} height={135} viewBox="0 0 1113 135" />
           <Image
@@ -253,7 +247,7 @@ export default function Page() {
         </span>
         <p className="box-224">
           <span
-            className="crisp-svg svg-290"
+            className="crisp-svg svg-289"
           >
             <svg aria-hidden="true" width={371} height={38} viewBox="0 0 371 38" />
             <Image
@@ -266,7 +260,7 @@ export default function Page() {
         </p>
         <div className="box-225">
           <span
-            className="crisp-svg svg-291"
+            className="crisp-svg svg-290"
           >
             <svg aria-hidden="true" width={400} height={400} viewBox="0 0 400 400" />
             <Image

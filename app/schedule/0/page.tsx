@@ -5,12 +5,6 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "タイムテーブル",
   description: "今回の松ヶ崎祭のタイムテーブルです。",
-  openGraph: {
-    title: "タイムテーブル",
-    description: "今回の松ヶ崎祭のタイムテーブルです。",
-    images: ["/assets/ogp.png"],
-  },
-  twitter: { card: "summary_large_image" },
 };
 
 export default function Page() {
@@ -42,7 +36,7 @@ export default function Page() {
           <div id="memu-p" data-toggle-show="flex" className="el-183">
             <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-184">
               <span
-                className="crisp-svg svg-169"
+                className="crisp-svg svg-168"
               >
                 <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                 <Image
@@ -73,7 +67,7 @@ export default function Page() {
                 {"mf56メインテ〜マ"}
               </Link>
               <Link href="/sponsor" id="協賛-p" className="button-18">
-                {"協賛いただいた皆さま"}
+                {"ご協賛いただいた皆さま"}
               </Link>
               <Link href="/notice" id="お知らせ-p" className="button-19">
                 {"お知らせ"}
@@ -133,7 +127,7 @@ export default function Page() {
           <div className="el-194">
             <p id="matsufes" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu1\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu1\"}],\"keep\":true}]"} className="el-195">
               <span
-                className="crisp-svg svg-170"
+                className="crisp-svg svg-169"
               >
                 <svg aria-hidden="true" width={244} height={55} viewBox="0 0 244 55" />
                 <Image
@@ -160,7 +154,7 @@ export default function Page() {
             </p>
             <p id="kikaku" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu2\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu2\"}],\"keep\":true}]"} className="el-200">
               <span
-                className="crisp-svg svg-171"
+                className="crisp-svg svg-170"
               >
                 <svg aria-hidden="true" width={153} height={55} viewBox="0 0 153 55" />
                 <Image
@@ -187,7 +181,7 @@ export default function Page() {
             </p>
             <p id="goannai" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu3\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu3\"}],\"keep\":true}]"} className="el-206">
               <span
-                className="crisp-svg svg-172"
+                className="crisp-svg svg-171"
               >
                 <svg aria-hidden="true" width={93} height={61} viewBox="0 0 93 61" />
                 <Image
@@ -214,7 +208,7 @@ export default function Page() {
             </p>
             <p id="kousiki" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu4\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu4\"}],\"keep\":true}]"} className="el-212">
               <span
-                className="crisp-svg svg-173"
+                className="crisp-svg svg-172"
               >
                 <svg aria-hidden="true" width={127} height={58} viewBox="0 0 127 58" />
                 <Image
@@ -258,7 +252,7 @@ export default function Page() {
           alt=""
           width={1246}
           height={34}
-          className="svg-71"
+          className="svg-70"
         />
       </section>
       <p className="box-187">
@@ -335,28 +329,28 @@ export default function Page() {
               alt=""
               width={306}
               height={113}
-              className="svg-113"
+              className="svg-112"
             />
             <Image
               src="/assets/pasted-artwork-148.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-167"
+              className="svg-166"
             />
             <Image
               src="/assets/pasted-artwork-149.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-114"
+              className="svg-113"
             />
             <Image
               src="/assets/pasted-artwork-150.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-115"
+              className="svg-114"
             />
           </div>
           <Image

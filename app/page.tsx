@@ -3,14 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "トップ",
+  title: "第56回松ヶ崎祭 | 夢宙 むちゅ〜",
   description: "京都工芸繊維大学の学祭、松ヶ崎祭 公式サイトです！ 今年のメインテーマは「夢宙 むちゅ〜」 2026年11月13日(きん)〜11月15日(にち)開催",
-  openGraph: {
-    title: "トップ",
-    description: "京都工芸繊維大学の学祭、松ヶ崎祭 公式サイトです！ 今年のメインテーマは「夢宙 むちゅ〜」 2026年11月13日(きん)〜11月15日(にち)開催",
-    images: ["/assets/ogp.png"],
-  },
-  twitter: { card: "summary_large_image" },
 };
 
 export default function Page() {
@@ -34,7 +28,7 @@ export default function Page() {
         <div id="memu-p" data-toggle-show="flex" className="el-112">
           <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-113">
             <span
-              className="crisp-svg svg-136"
+              className="crisp-svg svg-135"
             >
               <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
               <Image
@@ -65,7 +59,7 @@ export default function Page() {
               {"mf56メインテ〜マ"}
             </Link>
             <Link href="/sponsor" id="協賛-p" className="button-3">
-              {"協賛いただいた皆さま"}
+              {"ご協賛いただいた皆さま"}
             </Link>
             <Link href="/notice" id="お知らせ-p" className="button-4">
               {"お知らせ"}
@@ -237,7 +231,7 @@ export default function Page() {
             alt=""
             width={1920}
             height={1312}
-            className="svg-73"
+            className="svg-72"
           />
         </div>
         <div data-inview className="el-89">
@@ -261,7 +255,7 @@ export default function Page() {
           </div>
           <div className="el-92">
             <span
-              className="crisp-svg svg-72"
+              className="crisp-svg svg-71"
             >
               <svg aria-hidden="true" width={677} height={352} viewBox="0 0 677 352" />
               <Image
@@ -292,7 +286,7 @@ export default function Page() {
       <section className="box-73">
         <Link href="/navigation" className="el-95">
           <span
-            className="crisp-svg svg-74"
+            className="crisp-svg svg-73"
           >
             <svg aria-hidden="true" width={172} height={454} viewBox="0 0 172 454" />
             <Image
@@ -305,7 +299,7 @@ export default function Page() {
         </Link>
         <Link href="/search" className="el-96">
           <span
-            className="crisp-svg svg-75"
+            className="crisp-svg svg-74"
           >
             <svg aria-hidden="true" width={371} height={461} viewBox="0 0 371 461" />
             <Image
@@ -318,7 +312,7 @@ export default function Page() {
         </Link>
         <Link href="/schedule/0" className="el-97">
           <span
-            className="crisp-svg svg-76"
+            className="crisp-svg svg-75"
           >
             <svg aria-hidden="true" width={239} height={400} viewBox="0 0 239 400" />
             <Image
@@ -395,7 +389,7 @@ export default function Page() {
       </section>
       <section className="box-123">
         <span
-          className="crisp-svg svg-135"
+          className="crisp-svg svg-134"
         >
           <svg aria-hidden="true" width={1248} height={195} viewBox="0 0 1248 195" />
           <Image
@@ -428,12 +422,12 @@ export default function Page() {
             alt=""
             width={738}
             height={565}
-            className="svg-77"
+            className="svg-76"
           />
         </div>
         <div className="box-25">
           <span
-            className="crisp-svg svg-78"
+            className="crisp-svg svg-77"
           >
             <svg aria-hidden="true" width={929} height={438} viewBox="0 0 929 438" />
             <Image
@@ -463,7 +457,7 @@ export default function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-140"
+            className="svg-139"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x">
@@ -472,7 +466,7 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-141"
+            className="svg-140"
           />
         </a>
       </section>
