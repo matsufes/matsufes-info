@@ -453,7 +453,7 @@ export default async function Page({
                 <div className="box-331">
                   <Image
                     src="/assets/_-_2.png"
-                    alt=""
+                    alt="いつ"
                     width={129}
                     height={129}
                     className="el-1133"
@@ -475,7 +475,7 @@ export default async function Page({
                   <div className="box-348">
                     <Image
                       src="/assets/image-5.png"
-                      alt=""
+                      alt="どこで"
                       width={85}
                       height={108}
                       className="png-35"
@@ -488,7 +488,7 @@ export default async function Page({
                     <div className="box-342">
                       <Image
                         src="/assets/image-4.png"
-                        alt=""
+                        alt="地図をひらくボタン"
                         width={300}
                         height={107}
                         className="png-37"
@@ -648,7 +648,7 @@ export default async function Page({
                 <div className="box-346">
                   <Image id="fav-svg" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"add","value":interpolate("{_1.publicId}", { ...vars, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...vars, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"fav-svg"},{"kind":"show","target":"favoff"}]}])} data-toggle-show="block"
                     src="/assets/fav.svg"
-                    alt=""
+                    alt="お気に入り登録済"
                     width={154}
                     height={150}
                     className="favon"
@@ -656,7 +656,7 @@ export default async function Page({
                   />
                   <Image id="favoff" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"remove","value":interpolate("{_1.publicId}", { ...vars, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...vars, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"favoff"},{"kind":"show","target":"fav-svg"}]}])} data-toggle-show="block"
                     src="/assets/pasted-artwork-214.svg"
-                    alt=""
+                    alt="お気に入り未登録"
                     width={209}
                     height={204}
                     className="favoff"
@@ -669,7 +669,7 @@ export default async function Page({
               <SmartLink href={interpolateUrl("https://vote.matsufes.info/?id={_1.publicId}", vars)} className="vote">
                 <Image
                   src="/assets/pasted-artwork-213.svg"
-                  alt=""
+                  alt="m-1グランプリ"
                   width={162}
                   height={237}
                   className="pasted-artwork-svg-70"
@@ -692,21 +692,21 @@ export default async function Page({
             <div className="box-338">
               <Image id="x" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{_1.snsX}", { ...vars, ...{"\u0000keepEscapes":true} }),"newTab":true}]}])}
                 src="/assets/pasted-artwork-212.svg"
-                alt=""
+                alt="X"
                 width={40}
                 height={37}
                 className="x-3"
               />
               <Image id="inst" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{_1.snsInstagram}", { ...vars, ...{"\u0000keepEscapes":true} }),"newTab":true}]}])}
                 src="/assets/pasted-artwork-211.svg"
-                alt=""
+                alt="Instagram"
                 width={44}
                 height={44}
                 className="inst"
               />
               <Image id="web" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{snsWeb}", { ...vars, ...{"snsWeb":"{snsWeb}","\u0000keepEscapes":true} }),"newTab":true}]}])}
                 src="/assets/pasted-artwork-210.svg"
-                alt=""
+                alt="外部サイト"
                 width={50}
                 height={51}
                 className="web"
@@ -717,7 +717,7 @@ export default async function Page({
             <Link href="/search" className="back">
               <Image
                 src="/assets/image-4.png"
-                alt=""
+                alt="一覧にもどるボタン"
                 width={300}
                 height={107}
                 className="png-36"
