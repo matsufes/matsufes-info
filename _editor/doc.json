@@ -102401,6 +102401,21 @@
                   "field": "place",
                   "op": "eq",
                   "value": ""
+                },
+                {
+                  "field": "place",
+                  "op": "contains",
+                  "value": "構内全体"
+                },
+                {
+                  "field": "place",
+                  "op": "ends-with",
+                  "value": "前"
+                },
+                {
+                  "field": "place",
+                  "op": "ends-with",
+                  "value": "横"
                 }
               ]
             },
@@ -102422,8 +102437,8 @@
             }
           ],
           "pos": {
-            "x": 59,
-            "y": 1881
+            "x": 1782,
+            "y": 1805
           }
         }
       ],
@@ -102753,6 +102768,24 @@
                   "op": "not-contains",
                   "value": "ストリートパフォーマンス",
                   "and": true
+                },
+                {
+                  "field": "place",
+                  "op": "not-contains",
+                  "value": "構内全体",
+                  "and": true
+                },
+                {
+                  "field": "place",
+                  "op": "not-contains",
+                  "value": "前",
+                  "and": true
+                },
+                {
+                  "field": "place",
+                  "op": "not-contains",
+                  "value": "横",
+                  "and": true
                 }
               ]
             },
@@ -102774,8 +102807,8 @@
             }
           ],
           "pos": {
-            "x": 444,
-            "y": 1875
+            "x": 1735,
+            "y": 1226
           }
         }
       ],
