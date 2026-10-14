@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Zen_Maru_Gothic, Zen_Kaku_Gothic_New } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import "../styles/site.css";
 
@@ -12,15 +13,9 @@ export const metadata: Metadata = {
   icons: { icon: "/assets/favicon.ico", apple: "/assets/apple-touch-icon.png" },
   openGraph: {
     siteName: "第56回松ヶ崎祭",
-    images: ["/assets/ogp-2.png"],
+    images: ["/assets/ogp.png"],
   },
   twitter: { card: "summary_large_image" },
-  robots: {
-    index: false,
-    follow: false,
-    nocache: true,
-    googleBot: { index: false, follow: false, noimageindex: true },
-  },
 };
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -36,9 +31,8 @@ export default function RootLayout({
     <html lang="ja">
       <body className={`${inter.variable} ${zenmarugothic.variable} ${zenkakugothicnew.variable}`}>
         {children}
-        <div
-          dangerouslySetInnerHTML={{ __html: "<script src=\"/inview.js?v=16qqctc\" defer></script>\n<script src=\"/scripts.js?v=steukf\" defer></script>" }}
-        />
+        <Script src="/inview.js?v=16qqctc" strategy="afterInteractive" />
+        <Script src="/scripts.js?v=kigbh7" strategy="afterInteractive" />
       </body>
     </html>
   );
