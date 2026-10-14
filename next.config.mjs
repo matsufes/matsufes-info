@@ -7,6 +7,11 @@ const nextConfig = {
   async redirects() {
     return [
     {
+        "source": "/search/:slug",
+        "destination": "/booth/:slug",
+        "statusCode": 301
+    },
+    {
         "source": "/navigation",
         "destination": "https://map.matsufes.info/",
         "statusCode": 301

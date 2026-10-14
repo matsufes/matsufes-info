@@ -74,7 +74,10 @@ location.hash = url;
 return;
 }
 var r = window.next && window.next.router;
-if (url.charAt(0) === "/" && r && r.push) r.push(url);
+var hard = ((env && env.hardNav) || []).some(function (re) {
+return new RegExp(re).test(url);
+});
+if (url.charAt(0) === "/" && url.charAt(1) !== "/" && !hard && r && r.push) r.push(url);
 else location.href = url;
 }
 function cmp(v, op, w) {
@@ -82,6 +85,8 @@ switch (op) {
 case "neq": return v !== w;
 case "contains": return v.indexOf(w) >= 0;
 case "not-contains": return v.indexOf(w) < 0;
+case "starts-with": return v.lastIndexOf(w, 0) === 0;
+case "ends-with": return v.length >= w.length && v.indexOf(w, v.length - w.length) >= 0;
 case "gt": return parseFloat(v) > parseFloat(w);
 case "lt": return parseFloat(v) < parseFloat(w);
 case "empty": return v === "";
@@ -234,14 +239,16 @@ if (q != null) return q;
 return "";
 }
 function resolve(s, self, item) {
-return String(s == null ? "" : s).replace(/\{([^{}]+)\}/g, function (m, k) {
+return String(s == null ? "" : s).replace(/\\\{|\{([^{}]+)\}/g, function (m, k) {
+if (k == null) return "{";
 return text(lookup(k.trim(), self, item));
 });
 }
 function resolveUrl(s, self, item) {
 return String(s == null ? "" : s).replace(
-/\{([^{}]+)\}|%7B(.*?)%7D/gi,
-function (m, a, b) {
+/\\\{|\{([^{}]+)\}|%7B(.*?)%7D/gi,
+function (m, a, b, at) {
+if (m === "\\{") return "{";
 var k = a;
 if (k == null) {
 try {
@@ -250,7 +257,10 @@ k = decodeURIComponent(b);
 return m;
 }
 }
-return encodeURIComponent(text(lookup(k.trim(), self, item)));
+var v = text(lookup(k.trim(), self, item));
+return at === 0 && (/^(https?:|mailto:|tel:)/i.test(v) || v.charAt(0) === "/" || v.charAt(0) === "#")
+? v
+: encodeURIComponent(v);
 }
 );
 }
@@ -267,14 +277,14 @@ el.insertBefore(t, el.firstChild);
 t.nodeValue = resolve(el.getAttribute("data-live"), el);
 });
 }
-function test(c, self) {
+function test(c, self, sc) {
 if (c.subject === "var") {
-return cmp(resolve(c.left, self), c.op, resolve(c.value, self));
+return cmp(resolve(c.left, self, sc), c.op, resolve(c.value, self, sc));
 }
 var els = find(self, c.target);
 var r = false;
 if (c.subject === "value") {
-return cmp(valueOf(els), c.op, resolve(c.value, self));
+return cmp(valueOf(els), c.op, resolve(c.value, self, sc));
 }
 return c.not ? !r : r;
 }
@@ -392,7 +402,21 @@ input.dispatchEvent(new Event("input", { bubbles: true }));
 input.dispatchEvent(new Event("change", { bubbles: true }));
 });
 }
-function exec(st, self) {
+function scopeOf(cx) {
+if (!cx) return undefined;
+var o = scopeOf(cx.up) || {};
+for (var k in cx.item) if (has(cx.item, k)) o[k] = cx.item[k];
+return o;
+}
+function merged(a, b) {
+var o = {};
+var k;
+for (k in a || {}) if (has(a, k)) o[k] = a[k];
+for (k in b || {}) if (has(b, k)) o[k] = b[k];
+return o;
+}
+function exec(st, self, cx) {
+var sc = scopeOf(cx);
 switch (st.kind) {
 case "show":
 find(self, st.target).forEach(show);
@@ -410,12 +434,12 @@ case "open-page":
 go(st.href, st.newTab);
 break;
 case "open-url": {
-var url = resolveUrl(st.url, self);
+var url = resolveUrl(st.url, self, sc);
 go(url, st.newTab);
 break;
 }
 case "set-value":
-setValue(self, st.target, resolve(st.value, self));
+setValue(self, st.target, resolve(st.value, self, sc));
 break;
 case "filter-array": {
 if (!st.array || !st.conds || !st.conds.length) break;
@@ -435,7 +459,7 @@ key: key,
 no: st.no,
 join: st.join,
 conds: st.conds.map(function (c) {
-return { field: c.field, op: c.op, value: resolve(c.value, self), and: c.and };
+return { field: c.field, op: c.op, value: resolve(c.value, self, sc), and: c.and };
 }),
 };
 var at = -1;
@@ -465,11 +489,20 @@ sorts.set(st.array, { field: st.field, dir: st.dir });
 relist(st.array);
 break;
 case "store-save":
-if (st.key) storeSet(st.key, resolve(st.value, self), !!st.shared);
+if (st.key) storeSet(st.key, resolve(st.value, self, sc), !!st.shared);
 break;
 case "store-load":
 setVar(st.into, st.key ? storeGet(st.key, !!st.shared) : "");
 break;
+case "set-var": {
+if ("raw" in st) {
+setVar(st.into, st.raw);
+break;
+}
+var sv = /^\{([^{}]+)\}$/.exec(String(st.value || "").trim());
+setVar(st.into, sv ? lookup(sv[1].trim(), self, sc) : resolve(st.value, self, sc));
+break;
+}
 case "list-edit": {
 if (!st.into) break;
 var lsep = st.sep || ",";
@@ -479,7 +512,7 @@ var parts = (Array.isArray(lcur) ? lcur.map(text) : text(lcur).split(lsep))
 return x.trim();
 })
 .filter(Boolean);
-var lv = resolve(st.value, self).trim();
+var lv = resolve(st.value, self, sc).trim();
 if (lv) {
 var lat = parts.indexOf(lv);
 if (st.op === "remove" || (st.op === "toggle" && lat >= 0)) {
@@ -491,14 +524,20 @@ return x !== lv;
 setVar(st.into, parts.join(lsep));
 break;
 }
-case "array-item": {
-var arr = getVar(st.array);
-setVar(st.into, st.path ? dig(arr, st.path) : arr);
+case "split":
+setVar(
+st.into,
+resolve(st.source, self, sc)
+.split(st.sep || ",")
+.map(function (x) {
+return x.trim();
+})
+.filter(Boolean)
+);
 break;
-}
 case "array-find": {
 var list = getVar(st.array);
-var key = resolve(st.value, self);
+var key = resolve(st.value, self, sc);
 var hit = null;
 if (Array.isArray(list) && st.field) {
 for (var fi = 0; fi < list.length; fi++) {
@@ -524,7 +563,8 @@ if (x == null || Array.isArray(x)) return x;
 var it = typeof x === "object" ? x : { "値": x };
 var ao = {};
 for (var ak in it) if (has(it, ak)) ao[ak] = it[ak];
-ao[st.field] = one ? lookup(one[1].trim(), self, it) : resolve(st.value, self, it);
+var am = merged(sc, it);
+ao[st.field] = one ? lookup(one[1].trim(), self, am) : resolve(st.value, self, am);
 return ao;
 })
 );
@@ -571,20 +611,20 @@ break;
 }
 }
 }
-function runSteps(steps, self) {
+function runSteps(steps, self, cx) {
 var i = 0;
 function next() {
 while (alive && i < steps.length) {
 var st = steps[i++];
 if (st.kind === "wait") return sleep(st.seconds).then(next);
 if (st.kind === "if") {
-var branch = test(st.cond, self) ? st.then : st.else;
+var branch = test(st.cond, self, scopeOf(cx)) ? st.then : st.else;
 if (branch && branch.length) {
-return runSteps(branch, self).then(next);
+return runSteps(branch, self, cx).then(next);
 }
 continue;
 }
-exec(st, self);
+exec(st, self, cx);
 }
 return Promise.resolve();
 }
@@ -623,7 +663,7 @@ if (t !== el && out.indexOf(t) < 0) out.push(t);
 } else if (st.kind === "if") {
 walk(st.then);
 walk(st.else);
-} else if (st.kind === "repeat") {
+} else if (st.kind === "repeat" || st.kind === "for-each") {
 walk(st.then);
 }
 });
@@ -745,4 +785,4 @@ root.removeEventListener("input", onInput);
 };
 },
 };
-})({"sharedDomain":"matsufes.info"}).install(document);
+})({"sharedDomain":"matsufes.info","hardNav":["^/navigation/?(?:[?#].*)?$","^/booth/?(?:[?#].*)?$","^/search/[^/]+/?(?:[?#].*)?$"]}).install(document);
