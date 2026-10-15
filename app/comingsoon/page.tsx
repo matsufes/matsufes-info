@@ -33,7 +33,7 @@ export default function Page() {
           <div id="memu-p" data-toggle-show="flex" className="el-1021">
             <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-1022">
               <span
-                className="crisp-svg svg-300"
+                className="crisp-svg svg-299"
               >
                 <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                 <Image
@@ -77,9 +77,9 @@ export default function Page() {
               <Link href="/schedule/0" id="日程表-p" className="button-369">
                 {"日程表からさがす"}
               </Link>
-              <a href="/navigation" id="地図-p" className="button-370">
+              <Link href="/navigation" id="地図-p" className="button-370">
                 {"地図からさがす"}
-              </a>
+              </Link>
               <Link href="/mypage" id="しおり-p" className="button-371">
                 {"きみのしおり\n"}
               </Link>
@@ -121,9 +121,9 @@ export default function Page() {
             className="el-1031"
           />
           <div className="el-1032">
-            <div id="matsufes" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu1\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu1\"}],\"keep\":true}]"} className="el-1033" data-p="">
+            <p id="matsufes" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu1\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu1\"}],\"keep\":true}]"} className="el-1033">
               <span
-                className="crisp-svg svg-301"
+                className="crisp-svg svg-300"
               >
                 <svg aria-hidden="true" width={244} height={55} viewBox="0 0 244 55" />
                 <Image
@@ -147,10 +147,10 @@ export default function Page() {
                   {"お知らせ"}
                 </Link>
               </div>
-            </div>
-            <div id="kikaku" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu2\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu2\"}],\"keep\":true}]"} className="el-1038" data-p="">
+            </p>
+            <p id="kikaku" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu2\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu2\"}],\"keep\":true}]"} className="el-1038">
               <span
-                className="crisp-svg svg-302"
+                className="crisp-svg svg-301"
               >
                 <svg aria-hidden="true" width={153} height={55} viewBox="0 0 153 55" />
                 <Image
@@ -167,17 +167,17 @@ export default function Page() {
                 <Link href="/schedule/0" className="el-1041">
                   {"日程表からさがす"}
                 </Link>
-                <a href="/navigation" className="el-1042">
+                <Link href="/navigation" className="el-1042">
                   {"地図からさがす"}
-                </a>
+                </Link>
                 <Link href="/mypage" className="el-1043">
                   {"きみのしおり"}
                 </Link>
               </div>
-            </div>
-            <div id="goannai" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu3\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu3\"}],\"keep\":true}]"} className="el-1044" data-p="">
+            </p>
+            <p id="goannai" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu3\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu3\"}],\"keep\":true}]"} className="el-1044">
               <span
-                className="crisp-svg svg-303"
+                className="crisp-svg svg-302"
               >
                 <svg aria-hidden="true" width={93} height={61} viewBox="0 0 93 61" />
                 <Image
@@ -204,10 +204,10 @@ export default function Page() {
                   {"相互リンク"}
                 </Link>
               </div>
-            </div>
-            <div id="kousiki" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu4\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu4\"}],\"keep\":true}]"} className="el-1051" data-p="">
+            </p>
+            <p id="kousiki" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu4\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu4\"}],\"keep\":true}]"} className="el-1051">
               <span
-                className="crisp-svg svg-304"
+                className="crisp-svg svg-303"
               >
                 <svg aria-hidden="true" width={127} height={58} viewBox="0 0 127 58" />
                 <Image
@@ -228,7 +228,7 @@ export default function Page() {
                   {"公式メンバ〜「まつぴよ」"}
                 </Link>
               </div>
-            </div>
+            </p>
           </div>
         </div>
         <Image
@@ -241,7 +241,7 @@ export default function Page() {
       </section>
       <section className="box-75">
         <span
-          className="crisp-svg svg-97"
+          className="crisp-svg svg-96"
         >
           <svg aria-hidden="true" width={1113} height={135} viewBox="0 0 1113 135" />
           <Image
@@ -253,7 +253,7 @@ export default function Page() {
         </span>
         <p className="box-106">
           <span
-            className="crisp-svg svg-98"
+            className="crisp-svg svg-97"
           >
             <svg aria-hidden="true" width={371} height={38} viewBox="0 0 371 38" />
             <Image
@@ -266,7 +266,7 @@ export default function Page() {
         </p>
         <div className="box-107">
           <span
-            className="crisp-svg svg-99"
+            className="crisp-svg svg-98"
           >
             <svg aria-hidden="true" width={400} height={400} viewBox="0 0 400 400" />
             <Image

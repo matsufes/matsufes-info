@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { cache } from "react";
 import Link from "next/link";
-import SmartLink from "@/components/SmartLink";
 import Image from "next/image";
 import { interpolate, interpolateUrl, lookupVar } from "@/lib/vars";
 
@@ -22,16 +21,17 @@ const fetchJson = cache(async (url: string): Promise<any> => {
 
 /** スクリプト「ページを開いたとき」のデータのブロックを上から順に実行する */
 async function loadData(vars: Vars) {
-  vars["_0"] = await fetchJson(interpolateUrl("https://api.matsufes.info/data/web-info.json", vars));
-  vars["_1"] = lookupVar(vars, "_0.data") ?? null;
+  let got: unknown = null;
+  got = await fetchJson(interpolateUrl("https://api.matsufes.info/data/web-info.json", vars));
+  vars["_0"] = got;
 }
 
-/** リストで並べる項目にする（オブジェクトはそのまま、文字や数値は {値} に入れる） */
-function toItems(v: unknown): Item[] {
-  if (!Array.isArray(v)) return [];
-  return v.flatMap((x): Item[] =>
-    x == null || Array.isArray(x) ? [] : typeof x === "object" ? [x as Item] : [{ "値": x }]
-  );
+/** ブラウザで並べるリストのお手本用: ページの変数に無い {名前} はそのまま残す */
+function templateVars(vars: Vars): Vars {
+  return new Proxy(vars, {
+    has: () => true,
+    get: (t, k) => (typeof k !== "string" ? undefined : k in t ? t[k] : `{${k}}`),
+  });
 }
 
 export const metadata: Metadata = {
@@ -90,7 +90,7 @@ export default async function Page() {
   vars["まつぴよ-p"] = "公式メンバ〜「まつぴよ」";
   return (
     <>
-      <span hidden data-page-body="page_mv6trtsz1" data-scripts={"[{\"trigger\":\"load\",\"steps\":[{\"kind\":\"store-load\",\"key\":\"mf_bookmarks\",\"into\":\"_2\",\"shared\":true}]},{\"trigger\":\"load\",\"steps\":[{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"sort-array\",\"array\":\"_1\",\"field\":\"publicId\",\"dir\":\"asc\"}]}]"} />
+      <span hidden data-page-body="page_mv6trtsz1" data-scripts={JSON.stringify([{"trigger":"load","steps":[{"kind":"store-load","key":"mf_bookmarks","into":"_2","shared":true}]},{"trigger":"load","steps":[{"kind":"set-var","into":"_1","raw":lookupVar(vars, "_0.data") ?? null},{"kind":"count","array":"_1","into":"_3"},{"kind":"sort-array","array":"_1","field":"publicId","dir":"asc"}]}])} />
       <Image
         src="/assets/image.png"
         alt=""
@@ -133,11 +133,11 @@ export default async function Page() {
           </span>
         </div>
         <div id="memu-p" data-toggle-show="flex" data-inview className="el-1117">
-          <div className="box-373">
+          <div className="box-372">
             <div className="el-1183">
               <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-1118">
                 <span
-                  className="crisp-svg svg-305"
+                  className="crisp-svg svg-304"
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
@@ -177,9 +177,9 @@ export default async function Page() {
                 <Link href="/schedule/0" id="日程表-p" className="button-385">
                   {"日程表からさがす"}
                 </Link>
-                <a href="/navigation" id="地図-p" className="button-386">
+                <Link href="/navigation" id="地図-p" className="button-386">
                   {"地図からさがす"}
-                </a>
+                </Link>
                 <Link href="/mypage" id="しおり-p" className="button-387">
                   {"きみのしおり"}
                 </Link>
@@ -225,7 +225,7 @@ export default async function Page() {
           <div className="container">
             <div data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-33\"},{\"kind\":\"show\",\"target\":\"div-34\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-33\"},{\"kind\":\"hide\",\"target\":\"div-34\"}]}]"} className="el-1147">
               <div className="el-1146">
-                <div className="box-366">
+                <div className="box-365">
                   <p className="text-103">
                     {"まつがさきさい"}
                   </p>
@@ -258,7 +258,7 @@ export default async function Page() {
             </div>
             <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-35\"},{\"kind\":\"hide\",\"target\":\"div-36\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-35\"},{\"kind\":\"show\",\"target\":\"div-36\"}]}]"} className="el-1155">
               <div className="el-1156">
-                <div className="box-367">
+                <div className="box-366">
                   <p className="text-106">
                     {"さがし"}
                   </p>
@@ -279,9 +279,9 @@ export default async function Page() {
                   <Link href="/schedule" className="el-1160">
                     {"日程表からさがす"}
                   </Link>
-                  <a href="/navigation" className="el-1161">
+                  <Link href="/navigation" className="el-1161">
                     {"地図からさがす"}
-                  </a>
+                  </Link>
                   <Link href="/mypage" className="el-1162">
                     {"きみのしおり"}
                   </Link>
@@ -294,7 +294,7 @@ export default async function Page() {
                 <p className="text-111">
                   {"ご"}
                 </p>
-                <div className="box-368">
+                <div className="box-367">
                   <p className="text-109">
                     {"あんない"}
                   </p>
@@ -327,7 +327,7 @@ export default async function Page() {
             </div>
             <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-40\"},{\"kind\":\"hide\",\"target\":\"div-38\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-40\"},{\"kind\":\"show\",\"target\":\"div-38\"}]}]"} className="el-1174">
               <div className="el-1175">
-                <div className="box-369">
+                <div className="box-368">
                   <p className="text-112">
                     {"こうしきとくしゅう"}
                   </p>
@@ -474,7 +474,7 @@ export default async function Page() {
                 className="png"
               />
             </div>
-            <input id="field" data-scripts={JSON.stringify([{"trigger":"change","steps":[{"kind":"filter-array","array":"_1","no":1,"conds":[{"field":"name","op":"contains","value":interpolate("{field}", { ...vars, ...{"field":"{field}","\u0000keepEscapes":true} })},{"field":"exhibitorName","op":"contains","value":interpolate("{field}", { ...vars, ...{"field":"{field}","\u0000keepEscapes":true} })},{"field":"customAnswers.中分類","op":"contains","value":interpolate("{field}", { ...vars, ...{"field":"{field}","\u0000keepEscapes":true} })},{"field":"searchWords","op":"contains","value":interpolate("{field}", { ...vars, ...{"field":"{field}","\u0000keepEscapes":true} })}]},{"kind":"count","array":"_1","into":"_3"}]}])} type="text" className="input-3" name="field" placeholder="ここに　言葉を　入力してみてね" />
+            <input id="field" data-scripts={JSON.stringify([{"trigger":"change","steps":[{"kind":"filter-array","array":"_1","no":1,"conds":[{"field":"name","op":"contains","value":interpolate("{field}", { ...vars, ...{"field":"{field}"} })},{"field":"exhibitorName","op":"contains","value":interpolate("{field}", { ...vars, ...{"field":"{field}"} })},{"field":"customAnswers.中分類","op":"contains","value":interpolate("{field}", { ...vars, ...{"field":"{field}"} })},{"field":"searchWords","op":"contains","value":interpolate("{field}", { ...vars, ...{"field":"{field}"} })}]},{"kind":"count","array":"_1","into":"_3"}]}])} type="text" className="input-3" name="field" placeholder="ここに　言葉を　入力してみてね" />
           </div>
         </div>
       </section>
@@ -494,7 +494,7 @@ export default async function Page() {
                       className="png-34"
                     />
                   </div>
-                  <input id="field-2" data-scripts={JSON.stringify([{"trigger":"change","steps":[{"kind":"filter-array","array":"_1","no":15,"conds":[{"field":"name","op":"contains","value":interpolate("{field-2}", { ...vars, ...{"field-2":"{field-2}","\u0000keepEscapes":true} })},{"field":"exhibitorName","op":"contains","value":interpolate("{field-2}", { ...vars, ...{"field-2":"{field-2}","\u0000keepEscapes":true} })},{"field":"customAnswers.中分類","op":"contains","value":interpolate("{field-2}", { ...vars, ...{"field-2":"{field-2}","\u0000keepEscapes":true} })},{"field":"searchWords","op":"contains","value":interpolate("{field-2}", { ...vars, ...{"field-2":"{field-2}","\u0000keepEscapes":true} })}]},{"kind":"count","array":"_1","into":"_3"}]}])} type="text" className="input-4" name="field-2" placeholder="ここに　言葉を　入力してみてね" />
+                  <input id="field-2" data-scripts={JSON.stringify([{"trigger":"change","steps":[{"kind":"filter-array","array":"_1","no":15,"conds":[{"field":"name","op":"contains","value":interpolate("{field-2}", { ...vars, ...{"field-2":"{field-2}"} })},{"field":"exhibitorName","op":"contains","value":interpolate("{field-2}", { ...vars, ...{"field-2":"{field-2}"} })},{"field":"customAnswers.中分類","op":"contains","value":interpolate("{field-2}", { ...vars, ...{"field-2":"{field-2}"} })},{"field":"searchWords","op":"contains","value":interpolate("{field-2}", { ...vars, ...{"field-2":"{field-2}"} })}]},{"kind":"count","array":"_1","into":"_3"}]}])} type="text" className="input-4" name="field-2" placeholder="ここに　言葉を　入力してみてね" />
                 </div>
               </div>
             </div>
@@ -1066,123 +1066,122 @@ export default async function Page() {
           </div>
           <div className="box-271">
             <div className="box-272">
-              <p className="text-44" data-live={interpolate("{_3}件の出展が見つかりました", { ...vars, ...{"_3":"{_3}","\u0000keepEscapes":true} })}>
+              <p className="text-44" data-live={interpolate("{_3}件の出展が見つかりました", { ...vars, ...{"_3":"{_3}"} })}>
                 {interpolate("{_3}件の出展が見つかりました", vars)}
               </p>
             </div>
             <div className="box-310">
-              <div data-array="_1" className="el-1067">
-                {toItems(lookupVar(vars, "_1")).map((item, i) => {
-                  const iv0 = { ...vars, ...item };
-                  return (
-                    <div key={i} style={{ display: "contents" }} data-row data-item={JSON.stringify({ "name": item["name"], "exhibitorName": item["exhibitorName"], "tags": item["tags"], "customAnswers.中分類": lookupVar(item, "customAnswers.中分類"), "searchWords": item["searchWords"], "businessHours": item["businessHours"], "venue": item["venue"], "place": item["place"], "categories.出展カテゴリ": lookupVar(item, "categories.出展カテゴリ"), "categories.大分類": lookupVar(item, "categories.大分類"), "publicId": item["publicId"] })}>
-                      <SmartLink href={interpolateUrl("/booth/{publicId}", iv0)} className="el-1068">
-                        <div className="box-318">
-                          <p className="text-64">
-                            {interpolate("{name}", iv0)}
-                          </p>
-                          <Image id="fav-on" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"remove","value":interpolate("{publicId}", { ...iv0, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...iv0, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"fav-on"},{"kind":"show","target":"fav-off"}]}])} data-toggle-show="block"
-                            src="/assets/bkonn.svg"
-                            alt="お気に入り登録済"
-                            width={35}
-                            height={34}
-                            className="bkonn-svg"
-                            priority
-                          />
-                          <Image id="fav-off" data-scripts={JSON.stringify([{"trigger":"load","steps":[{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_2}", { ...iv0, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"op":"contains","value":interpolate("{publicId}", { ...iv0, ...{"\u0000keepEscapes":true} })},"then":[{"kind":"show","target":"fav-on"},{"kind":"hide","target":"fav-off"}],"else":[{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}]}]},{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"add","value":interpolate("{publicId}", { ...iv0, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...iv0, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"fav-off"},{"kind":"show","target":"fav-on"}]}])} data-toggle-show="block"
-                            src="/assets/bkoff2.svg"
-                            alt="お気に入り未登録"
-                            width={35}
-                            height={34}
-                            className="bkoff2-svg"
-                          />
-                        </div>
-                        <span
-                          className="crisp-svg el-1112"
-                        >
-                          <svg aria-hidden="true" width={307} height={17} viewBox="0 0 307 17" />
-                          <Image
-                            src="/assets/1-.svg"
-                            alt=""
-                            width={614}
-                            height={34}
-                          />
-                        </span>
-                        <p className="text-65">
-                          {interpolate("{exhibitorName}", iv0)}
+              <div data-array="_1" data-client-list className="el-1067">
+                <div data-tpl hidden style={{ display: "none" }}>
+                  {((iv0: Vars) => (
+                    <>
+                    <Link href={interpolateUrl("/booth/{publicId}", iv0)} className="el-1068">
+                      <div className="box-318">
+                        <p className="text-64">
+                          {interpolate("{name}", iv0)}
                         </p>
-                        <div className="box-296">
-                          <div className="box-306">
-                            <div className="box-297">
-                              <Image
-                                src={interpolate("{imageUrl}", iv0) || "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"}
-                                alt=""
-                                width={1024}
-                                height={1024}
-                                className="image-23"
-                              />
-                              <p className="text-66">
-                                {"No Image"}
+                        <Image id="fav-on" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"remove","value":interpolate("{publicId}", iv0),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...iv0, ...{"_2":"{_2}"} }),"shared":true},{"kind":"hide","target":"fav-on"},{"kind":"show","target":"fav-off"}]}])} data-toggle-show="block"
+                          src="/assets/bkonn.svg"
+                          alt="お気に入り登録済"
+                          width={35}
+                          height={34}
+                          className="bkonn-svg"
+                          priority
+                        />
+                        <Image id="fav-off" data-scripts={JSON.stringify([{"trigger":"load","steps":[{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_2}", { ...iv0, ...{"_2":"{_2}"} }),"op":"contains","value":interpolate("{publicId}", iv0)},"then":[{"kind":"show","target":"fav-on"},{"kind":"hide","target":"fav-off"}],"else":[{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}]}]},{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"add","value":interpolate("{publicId}", iv0),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...iv0, ...{"_2":"{_2}"} }),"shared":true},{"kind":"hide","target":"fav-off"},{"kind":"show","target":"fav-on"}]}])} data-toggle-show="block"
+                          src="/assets/bkoff2.svg"
+                          alt="お気に入り未登録"
+                          width={35}
+                          height={34}
+                          className="bkoff2-svg"
+                        />
+                      </div>
+                      <span
+                        className="crisp-svg el-1112"
+                      >
+                        <svg aria-hidden="true" width={307} height={17} viewBox="0 0 307 17" />
+                        <Image
+                          src="/assets/1-.svg"
+                          alt=""
+                          width={614}
+                          height={34}
+                        />
+                      </span>
+                      <p className="text-65">
+                        {interpolate("{exhibitorName}", iv0)}
+                      </p>
+                      <div className="box-296">
+                        <div className="box-306">
+                          <div className="box-297">
+                            <Image
+                              src={interpolate("{imageUrl}", iv0) || "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"}
+                              alt=""
+                              width={1024}
+                              height={1024}
+                              className="image-23"
+                            />
+                            <p className="text-66">
+                              {"No Image"}
+                            </p>
+                          </div>
+                        </div>
+                        <div className="box-298">
+                          <div className="box-299">
+                            <Image
+                              src="/assets/Vector-4-.svg"
+                              alt=""
+                              width={15}
+                              height={15}
+                              className="vector-4-svg"
+                            />
+                            <p className="text-67">
+                              {interpolate("{customAnswers.皆さまへ}", iv0)}
+                            </p>
+                          </div>
+                          <div className="box-300">
+                            <Image
+                              src="/assets/Group-244.svg"
+                              alt=""
+                              width={13}
+                              height={20}
+                              className="group-244-svg"
+                            />
+                            <p className="text-68">
+                              {interpolate("{location}", iv0)}
+                            </p>
+                          </div>
+                          <div className="box-301">
+                            <div className="box-302">
+                              <p className="text-69">
+                                {interpolate("{categories.投票カテゴリ.0}", iv0)}
                               </p>
                             </div>
                           </div>
-                          <div className="box-298">
-                            <div className="box-299">
-                              <Image
-                                src="/assets/Vector-4-.svg"
-                                alt=""
-                                width={15}
-                                height={15}
-                                className="vector-4-svg"
-                              />
-                              <p className="text-67">
-                                {interpolate("{customAnswers.皆さまへ}", iv0)}
+                          <div className="box-303">
+                            <div className="box-304">
+                              <p className="text-70">
+                                {interpolate("{categories.大分類.0}", iv0)}
                               </p>
                             </div>
-                            <div className="box-300">
-                              <Image
-                                src="/assets/Group-244.svg"
-                                alt=""
-                                width={13}
-                                height={20}
-                                className="group-244-svg"
-                              />
-                              <p className="text-68">
-                                {interpolate("{location}", iv0)}
+                            <div className="box-305">
+                              <p className="text-71">
+                                {interpolate("{customAnswers.中分類}", iv0)}
                               </p>
-                            </div>
-                            <div className="box-301">
-                              <div className="box-302">
-                                <p className="text-69">
-                                  {interpolate("{categories.投票カテゴリ.0}", iv0)}
-                                </p>
-                              </div>
-                            </div>
-                            <div className="box-303">
-                              <div className="box-304">
-                                <p className="text-70">
-                                  {interpolate("{categories.大分類.0}", iv0)}
-                                </p>
-                              </div>
-                              <div className="box-305">
-                                <p className="text-71">
-                                  {interpolate("{customAnswers.中分類}", iv0)}
-                                </p>
-                              </div>
                             </div>
                           </div>
                         </div>
-                        <Image
-                          src="/assets/frame.png"
-                          alt=""
-                          width={750}
-                          height={468}
-                          className="frame-png"
-                        />
-                      </SmartLink>
-                    </div>
-                  );
-                })}
+                      </div>
+                      <Image
+                        src="/assets/frame.png"
+                        alt=""
+                        width={750}
+                        height={468}
+                        className="frame-png"
+                      />
+                    </Link>
+                    </>
+                  ))(templateVars(vars))}
+                </div>
               </div>
             </div>
           </div>

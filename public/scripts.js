@@ -74,10 +74,7 @@ location.hash = url;
 return;
 }
 var r = window.next && window.next.router;
-var hard = ((env && env.hardNav) || []).some(function (re) {
-return new RegExp(re).test(url);
-});
-if (url.charAt(0) === "/" && url.charAt(1) !== "/" && !hard && r && r.push) r.push(url);
+if (url.charAt(0) === "/" && r && r.push) r.push(url);
 else location.href = url;
 }
 function cmp(v, op, w) {
@@ -85,8 +82,6 @@ switch (op) {
 case "neq": return v !== w;
 case "contains": return v.indexOf(w) >= 0;
 case "not-contains": return v.indexOf(w) < 0;
-case "starts-with": return v.lastIndexOf(w, 0) === 0;
-case "ends-with": return v.length >= w.length && v.indexOf(w, v.length - w.length) >= 0;
 case "gt": return parseFloat(v) > parseFloat(w);
 case "lt": return parseFloat(v) < parseFloat(w);
 case "empty": return v === "";
@@ -239,16 +234,14 @@ if (q != null) return q;
 return "";
 }
 function resolve(s, self, item) {
-return String(s == null ? "" : s).replace(/\\\{|\{([^{}]+)\}/g, function (m, k) {
-if (k == null) return "{";
+return String(s == null ? "" : s).replace(/\{([^{}]+)\}/g, function (m, k) {
 return text(lookup(k.trim(), self, item));
 });
 }
 function resolveUrl(s, self, item) {
 return String(s == null ? "" : s).replace(
-/\\\{|\{([^{}]+)\}|%7B(.*?)%7D/gi,
-function (m, a, b, at) {
-if (m === "\\{") return "{";
+/\{([^{}]+)\}|%7B(.*?)%7D/gi,
+function (m, a, b) {
 var k = a;
 if (k == null) {
 try {
@@ -257,10 +250,7 @@ k = decodeURIComponent(b);
 return m;
 }
 }
-var v = text(lookup(k.trim(), self, item));
-return at === 0 && (/^(https?:|mailto:|tel:)/i.test(v) || v.charAt(0) === "/" || v.charAt(0) === "#")
-? v
-: encodeURIComponent(v);
+return encodeURIComponent(text(lookup(k.trim(), self, item)));
 }
 );
 }
@@ -275,6 +265,10 @@ t = document.createTextNode("");
 el.insertBefore(t, el.firstChild);
 }
 t.nodeValue = resolve(el.getAttribute("data-live"), el);
+});
+root.querySelectorAll("[data-client-list]").forEach(function (list) {
+var a = list.getAttribute("data-array") || "";
+if (a === name || a.indexOf(name + ".") === 0) renderList(list);
 });
 }
 function test(c, self, sc) {
@@ -356,6 +350,10 @@ list.appendChild(r.w);
 }
 function relist(name) {
 listsOf(name).forEach(function (list) {
+if (list.hasAttribute("data-client-list")) {
+renderList(list);
+return;
+}
 applySort(list);
 applyFilters(list);
 });
@@ -384,6 +382,86 @@ if (x == null || Array.isArray(x)) return;
 out.push(typeof x === "object" ? x : { "値": x });
 });
 return out;
+}
+var rendered = new WeakSet();
+function fillJson(v, item) {
+return v
+.replace(/\{([^{}"]+)\}/g, function (m, k) {
+return JSON.stringify(text(lookup(k.trim(), null, item))).slice(1, -1);
+})
+.replace(/%7B(.*?)%7D/gi, function (m, b) {
+try {
+return encodeURIComponent(text(lookup(decodeURIComponent(b).trim(), null, item)));
+} catch (e) {
+return m;
+}
+});
+}
+function fill(node, item) {
+var walker = document.createTreeWalker(node, 5);
+var n = node;
+while (n) {
+if (n.nodeType === 3) {
+if (n.nodeValue.indexOf("{") >= 0) n.nodeValue = resolve(n.nodeValue, null, item);
+} else if (n.nodeType === 1) {
+Array.prototype.slice.call(n.attributes).forEach(function (a) {
+var v = a.value;
+if (v.indexOf("{") < 0 && !/%7B/i.test(v)) return;
+n.setAttribute(
+a.name,
+a.name === "data-scripts"
+? fillJson(v, item)
+: a.name === "href" || a.name === "src"
+? resolveUrl(v, null, item)
+: resolve(v, null, item)
+);
+});
+}
+n = walker.nextNode();
+}
+}
+function renderList(list) {
+rendered.add(list);
+var tpl = null;
+Array.prototype.slice.call(list.children).forEach(function (c) {
+if (c.hasAttribute("data-row")) list.removeChild(c);
+else if (c.hasAttribute("data-tpl")) tpl = c;
+});
+if (!tpl) return;
+var items = itemsOf(getVar(list.getAttribute("data-array") || ""));
+var name = list.getAttribute("data-array") || "";
+var fs = filters.get(name) || [];
+items = items.filter(function (x) {
+return passes(fs, x);
+});
+var so = sorts.get(name);
+if (so) {
+var sd = so.dir === "desc" ? -1 : 1;
+items = items
+.map(function (x, i) {
+return { x: x, i: i };
+})
+.sort(function (a, b) {
+return order(fieldOf(a.x, so.field), fieldOf(b.x, so.field)) * sd || a.i - b.i;
+})
+.map(function (r) {
+return r.x;
+});
+}
+var lim = Number(list.getAttribute("data-limit")) || 0;
+if (lim > 0) items = items.slice(0, lim);
+items.forEach(function (item) {
+var row = document.createElement("div");
+row.setAttribute("data-row", "");
+row.setAttribute("data-item", JSON.stringify(item));
+row.style.display = "contents";
+Array.prototype.forEach.call(tpl.childNodes, function (c) {
+var copy = c.cloneNode(true);
+fill(copy, item);
+row.appendChild(copy);
+});
+list.appendChild(row);
+});
 }
 function setValue(self, id, v) {
 var els = find(self, id);
@@ -535,6 +613,11 @@ return x.trim();
 .filter(Boolean)
 );
 break;
+case "array-item": {
+var arr = getVar(st.array);
+setVar(st.into, st.path ? dig(arr, st.path) : arr);
+break;
+}
 case "array-find": {
 var list = getVar(st.array);
 var key = resolve(st.value, self, sc);
@@ -733,6 +816,9 @@ fire(el, "change");
 var seen = new WeakSet();
 function scan() {
 if (!alive) return;
+root.querySelectorAll("[data-client-list]").forEach(function (list) {
+if (!rendered.has(list)) renderList(list);
+});
 if (sorts.size || filters.size) {
 root.querySelectorAll("[data-array]").forEach(function (list) {
 if (list.hasAttribute("data-client-list")) return;
@@ -785,4 +871,4 @@ root.removeEventListener("input", onInput);
 };
 },
 };
-})({"sharedDomain":"matsufes.info","hardNav":["^/navigation/?(?:[?#].*)?$","^/booth/?(?:[?#].*)?$","^/search/[^/]+/?(?:[?#].*)?$"]}).install(document);
+})({"sharedDomain":"matsufes.info"}).install(document);

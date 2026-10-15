@@ -22,6 +22,7 @@
       "title": "第56回松ヶ崎祭 | 夢宙 むちゅ〜",
       "description": "京都工芸繊維大学の学祭、松ヶ崎祭 公式サイトです！ 今年のメインテーマは「夢宙 むちゅ〜」 2026年11月13日(きん)〜11月15日(にち)開催",
       "children": [
+        "node_mupgzw4w2i",
         "node_mslg4y6c9",
         "node_muh3flgtc7",
         "node_msmuwb2v11",
@@ -3315,8 +3316,7 @@
       "title": "ページ 14",
       "description": "",
       "children": [
-        "node_mv7xdign1",
-        "node_mv7xdignp"
+        "node_mv7xdign1"
       ],
       "unpublished": true,
       "bodyStyles": {
@@ -5157,7 +5157,6 @@
       "link": null,
       "children": [
         "node_mupgvqo42f",
-        "node_mupgzw4w2i",
         "node_mv51el22uo",
         "node_mslg5y5sc"
       ],
@@ -11516,41 +11515,6 @@
         }
       }
     },
-    "node_mue8w5u92i": {
-      "id": "node_mue8w5u92i",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmue8w592-pasted-artwork.svg",
-        "alt": "",
-        "width": 306,
-        "height": 113,
-        "assetId": "asset_mue8w5u92h"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "100%",
-            "borderRadius": "0px",
-            "maxWidth": "100%",
-            "position": "absolute",
-            "left": "0px",
-            "top": "46.5%"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "100%",
-            "top": "44.9%",
-            "left": "0%"
-          }
-        }
-      }
-    },
     "node_mue8xm3z2m": {
       "id": "node_mue8xm3z2m",
       "type": "image",
@@ -14764,9 +14728,15 @@
           "default": {
             "justifyContent": "center",
             "alignItems": "center",
-            "width": "23%",
+            "width": "24%",
             "left": "40px",
             "bottom": "-110px"
+          }
+        },
+        "md": {
+          "default": {
+            "width": "16%",
+            "left": "110px"
           }
         }
       },
@@ -14816,7 +14786,12 @@
         },
         "sm": {
           "default": {
-            "width": "40%"
+            "width": "45%"
+          }
+        },
+        "md": {
+          "default": {
+            "width": "30%"
           }
         }
       },
@@ -14869,9 +14844,15 @@
         },
         "sm": {
           "default": {
-            "width": "28%",
+            "width": "29%",
             "right": "35px",
             "bottom": "-100px"
+          }
+        },
+        "md": {
+          "default": {
+            "width": "19%",
+            "right": "110px"
           }
         }
       },
@@ -18455,7 +18436,6 @@
       "children": [
         "node_mue8pa6424",
         "node_mue8ucst2e",
-        "node_mue8w5u92i",
         "node_mue8xm3z2m",
         "node_muxuw76ej",
         "node_muxuzns5l"
@@ -18531,7 +18511,7 @@
             "paddingLeft": "0px",
             "width": "16%",
             "height": "100%",
-            "left": "12%",
+            "left": "11%",
             "zIndex": "5"
           }
         },
@@ -18581,7 +18561,7 @@
             "paddingLeft": "0px",
             "width": "18%",
             "height": "100%",
-            "right": "7%",
+            "right": "6%",
             "zIndex": "5"
           }
         },
@@ -18615,7 +18595,8 @@
         "node_muo6ur491m",
         "node_muo6v59m1o",
         "node_muo6wf3a1q",
-        "node_muo6wwc71s"
+        "node_muo6wwc71s",
+        "node_mv918ag5i"
       ],
       "styles": {
         "base": {
@@ -18624,7 +18605,7 @@
             "flexDirection": "column",
             "gap": "12px",
             "position": "absolute",
-            "left": "12%",
+            "left": "11%",
             "paddingTop": "0px",
             "paddingRight": "0px",
             "paddingBottom": "0px",
@@ -18701,7 +18682,8 @@
         "node_mueuk4mo38",
         "node_muf3539w4c",
         "node_mueuwa143g",
-        "node_mueuzctf3i"
+        "node_mueuzctf3i",
+        "node_mv90b25c3"
       ],
       "styles": {
         "base": {
@@ -18762,7 +18744,7 @@
             "paddingRight": "0px",
             "paddingBottom": "0px",
             "paddingLeft": "0px",
-            "left": "12%",
+            "left": "11%",
             "bottom": "0%",
             "height": "100%",
             "zIndex": "5"
@@ -19809,7 +19791,7 @@
             "fontSize": "22px",
             "position": "absolute",
             "top": "0px",
-            "zIndex": "5",
+            "zIndex": "6",
             "left": "0px"
           }
         },
@@ -19821,7 +19803,8 @@
             "left": "0px",
             "top": "0px",
             "backgroundColor": "#282b37",
-            "paddingTop": "150px"
+            "paddingTop": "150px",
+            "zIndex": "6"
           }
         }
       },
@@ -26142,6 +26125,7 @@
       "link": null,
       "children": [
         "node_munnnh3xa",
+        "node_mv90rbei6",
         "node_mukxj7cg1",
         "node_mv3trpaov"
       ],
@@ -26233,7 +26217,9 @@
             "paddingTop": "0px",
             "paddingRight": "0px",
             "paddingBottom": "0px",
-            "paddingLeft": "0px"
+            "paddingLeft": "0px",
+            "justifyContent": "center",
+            "alignItems": "flex-start"
           }
         },
         "sm": {
@@ -26265,7 +26251,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "100%",
+            "width": "95%",
             "borderRadius": "12px"
           }
         }
@@ -52746,6 +52732,8 @@
       "attrId": "mf-phone",
       "locked": false,
       "hiddenOn": [
+        "lg",
+        "md",
         "sm"
       ]
     },
@@ -55801,6 +55789,8 @@
       "attrId": "mf-phone",
       "locked": false,
       "hiddenOn": [
+        "lg",
+        "md",
         "sm"
       ]
     },
@@ -58460,6 +58450,11 @@
           "direction": "normal",
           "fillMode": "both"
         }
+      ],
+      "hiddenOn": [
+        "lg",
+        "md",
+        "sm"
       ]
     },
     "node_mv6r9wo93n": {
@@ -58856,6 +58851,8 @@
       "attrId": "mf-phone",
       "locked": false,
       "hiddenOn": [
+        "lg",
+        "md",
         "sm"
       ]
     },
@@ -64966,6 +64963,8 @@
       "attrId": "mf-phone",
       "locked": false,
       "hiddenOn": [
+        "lg",
+        "md",
         "sm"
       ]
     },
@@ -68021,6 +68020,8 @@
       "attrId": "mf-phone",
       "locked": false,
       "hiddenOn": [
+        "lg",
+        "md",
         "sm"
       ]
     },
@@ -71076,6 +71077,8 @@
       "attrId": "mf-phone",
       "locked": false,
       "hiddenOn": [
+        "lg",
+        "md",
         "sm"
       ]
     },
@@ -74131,6 +74134,8 @@
       "attrId": "mf-phone",
       "locked": false,
       "hiddenOn": [
+        "lg",
+        "md",
         "sm"
       ]
     },
@@ -80241,6 +80246,8 @@
       "attrId": "mf-phone",
       "locked": false,
       "hiddenOn": [
+        "lg",
+        "md",
         "sm"
       ]
     },
@@ -83296,6 +83303,8 @@
       "attrId": "mf-phone",
       "locked": false,
       "hiddenOn": [
+        "lg",
+        "md",
         "sm"
       ]
     },
@@ -86351,6 +86360,8 @@
       "attrId": "mf-phone",
       "locked": false,
       "hiddenOn": [
+        "lg",
+        "md",
         "sm"
       ]
     },
@@ -89406,6 +89417,8 @@
       "attrId": "mf-phone",
       "locked": false,
       "hiddenOn": [
+        "lg",
+        "md",
         "sm"
       ]
     },
@@ -92461,6 +92474,8 @@
       "attrId": "mf-phone",
       "locked": false,
       "hiddenOn": [
+        "lg",
+        "md",
         "sm"
       ]
     },
@@ -95516,6 +95531,8 @@
       "attrId": "mf-phone",
       "locked": false,
       "hiddenOn": [
+        "lg",
+        "md",
         "sm"
       ]
     },
@@ -98571,6 +98588,8 @@
       "attrId": "mf-phone",
       "locked": false,
       "hiddenOn": [
+        "lg",
+        "md",
         "sm"
       ]
     },
@@ -99060,6 +99079,8 @@
       },
       "attrId": "goannai-phone",
       "hiddenOn": [
+        "lg",
+        "md",
         "sm"
       ]
     },
@@ -113453,32 +113474,6 @@
         "sm"
       ]
     },
-    "node_mv7xdignp": {
-      "id": "node_mv7xdignp",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "height": "389px"
-          }
-        }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ]
-    },
     "node_mv7zu7q04": {
       "id": "node_mv7zu7q04",
       "type": "list",
@@ -119358,6 +119353,8 @@
       "attrId": "mf-phone",
       "locked": false,
       "hiddenOn": [
+        "lg",
+        "md",
         "sm"
       ]
     },
@@ -119896,6 +119893,8 @@
       },
       "attrId": "goannai-phone",
       "hiddenOn": [
+        "lg",
+        "md",
         "sm"
       ]
     },
@@ -148081,6 +148080,141 @@
           "default": {}
         }
       }
+    },
+    "node_mv90b25c3": {
+      "id": "node_mv90b25c3",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmv90b1x8-pasted-artwork.svg",
+        "alt": "",
+        "width": 306,
+        "height": 113,
+        "assetId": "asset_mv90b25c2"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "position": "absolute",
+            "left": "0%",
+            "top": "27.5%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%",
+            "top": "25%"
+          }
+        }
+      }
+    },
+    "node_mv90rbei6": {
+      "id": "node_mv90rbei6",
+      "type": "box",
+      "name": "委員会企画",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mv912woke"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "12px",
+            "position": "absolute",
+            "top": "0%",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "width": "18%",
+            "height": "100%",
+            "right": "6%",
+            "zIndex": "5"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "80%",
+            "height": "100%",
+            "left": "23%"
+          }
+        }
+      },
+      "attrId": "committee14",
+      "hiddenOn": [
+        "sm"
+      ]
+    },
+    "node_mv912woke": {
+      "id": "node_mv912woke",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmv912wgk-pasted-artwork.svg",
+        "alt": "",
+        "width": 306,
+        "height": 537,
+        "assetId": "asset_mv912wojd"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "306px",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "position": "absolute",
+            "left": "0px",
+            "bottom": "11.5%"
+          }
+        }
+      }
+    },
+    "node_mv918ag5i": {
+      "id": "node_mv918ag5i",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmv918a9u-pasted-artwork.svg",
+        "alt": "",
+        "width": 175,
+        "height": 63,
+        "assetId": "asset_mv918ag5h"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "70%",
+            "maxWidth": "100%",
+            "borderRadius": "12px",
+            "position": "absolute",
+            "left": "0px",
+            "bottom": "29.5%",
+            "boxShadow": "0px 4px 16px 0px rgba(0, 0, 0, 0.4)",
+            "zIndex": "2"
+          }
+        }
+      }
     }
   },
   "assets": {
@@ -150855,6 +150989,56 @@
       "mimeType": "image/svg+xml",
       "width": 154,
       "height": 150,
+      "svgFilter": false
+    },
+    "asset_mv90b25c2": {
+      "id": "asset_mv90b25c2",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mv90b1x8-pasted-artwork.svg",
+      "bytes": 23825,
+      "mimeType": "image/svg+xml",
+      "width": 306,
+      "height": 113,
+      "svgFilter": false
+    },
+    "asset_mv90p6l44": {
+      "id": "asset_mv90p6l44",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mv90p6e9-pasted-artwork.svg",
+      "bytes": 19029,
+      "mimeType": "image/svg+xml",
+      "width": 306,
+      "height": 537,
+      "svgFilter": false
+    },
+    "asset_mv912wojd": {
+      "id": "asset_mv912wojd",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mv912wgk-pasted-artwork.svg",
+      "bytes": 19029,
+      "mimeType": "image/svg+xml",
+      "width": 306,
+      "height": 537,
+      "svgFilter": false
+    },
+    "asset_mv915s9sf": {
+      "id": "asset_mv915s9sf",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mv915rxn-pasted-artwork.svg",
+      "bytes": 16049,
+      "mimeType": "image/svg+xml",
+      "width": 175,
+      "height": 63,
+      "svgFilter": false
+    },
+    "asset_mv918ag5h": {
+      "id": "asset_mv918ag5h",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mv918a9u-pasted-artwork.svg",
+      "bytes": 16049,
+      "mimeType": "image/svg+xml",
+      "width": 175,
+      "height": 63,
       "svgFilter": false
     }
   },

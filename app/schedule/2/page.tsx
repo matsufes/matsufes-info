@@ -35,7 +35,7 @@ export default function Page() {
           <div id="memu-p" data-toggle-show="flex" className="el-489">
             <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-490">
               <span
-                className="crisp-svg svg-230"
+                className="crisp-svg svg-229"
               >
                 <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                 <Image
@@ -79,9 +79,9 @@ export default function Page() {
               <Link href="/schedule/0" id="日程表-p" className="button-145">
                 {"日程表からさがす"}
               </Link>
-              <a href="/navigation" id="地図-p" className="button-146">
+              <Link href="/navigation" id="地図-p" className="button-146">
                 {"地図からさがす"}
-              </a>
+              </Link>
               <Link href="/mypage" id="しおり-p" className="button-147">
                 {"きみのしおり\n"}
               </Link>
@@ -123,9 +123,9 @@ export default function Page() {
             className="el-499"
           />
           <div className="el-500">
-            <div id="matsufes" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu1\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu1\"}],\"keep\":true}]"} className="el-501" data-p="">
+            <p id="matsufes" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu1\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu1\"}],\"keep\":true}]"} className="el-501">
               <span
-                className="crisp-svg svg-231"
+                className="crisp-svg svg-230"
               >
                 <svg aria-hidden="true" width={244} height={55} viewBox="0 0 244 55" />
                 <Image
@@ -149,10 +149,10 @@ export default function Page() {
                   {"お知らせ"}
                 </Link>
               </div>
-            </div>
-            <div id="kikaku" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu2\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu2\"}],\"keep\":true}]"} className="el-506" data-p="">
+            </p>
+            <p id="kikaku" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu2\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu2\"}],\"keep\":true}]"} className="el-506">
               <span
-                className="crisp-svg svg-232"
+                className="crisp-svg svg-231"
               >
                 <svg aria-hidden="true" width={153} height={55} viewBox="0 0 153 55" />
                 <Image
@@ -169,17 +169,17 @@ export default function Page() {
                 <Link href="/schedule/0" className="el-509">
                   {"日程表からさがす"}
                 </Link>
-                <a href="/navigation" className="el-510">
+                <Link href="/navigation" className="el-510">
                   {"地図からさがす"}
-                </a>
+                </Link>
                 <Link href="/mypage" className="el-511">
                   {"きみのしおり"}
                 </Link>
               </div>
-            </div>
-            <div id="goannai" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu3\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu3\"}],\"keep\":true}]"} className="el-512" data-p="">
+            </p>
+            <p id="goannai" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu3\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu3\"}],\"keep\":true}]"} className="el-512">
               <span
-                className="crisp-svg svg-233"
+                className="crisp-svg svg-232"
               >
                 <svg aria-hidden="true" width={93} height={61} viewBox="0 0 93 61" />
                 <Image
@@ -206,10 +206,10 @@ export default function Page() {
                   {"相互リンク"}
                 </Link>
               </div>
-            </div>
-            <div id="kousiki" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu4\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu4\"}],\"keep\":true}]"} className="el-519" data-p="">
+            </p>
+            <p id="kousiki" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu4\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu4\"}],\"keep\":true}]"} className="el-519">
               <span
-                className="crisp-svg svg-234"
+                className="crisp-svg svg-233"
               >
                 <svg aria-hidden="true" width={127} height={58} viewBox="0 0 127 58" />
                 <Image
@@ -230,7 +230,7 @@ export default function Page() {
                   {"公式メンバ〜「まつぴよ」"}
                 </Link>
               </div>
-            </div>
+            </p>
           </div>
         </div>
         <Image
@@ -337,70 +337,77 @@ export default function Page() {
               alt=""
               width={306}
               height={113}
-              className="svg-49"
+              className="svg-48"
             />
             <Image
               src="/assets/pasted-artwork-77.svg"
               alt=""
               width={306}
               height={224}
-              className="svg-50"
+              className="svg-49"
             />
             <Image
               src="/assets/pasted-artwork-78.svg"
               alt=""
               width={306}
               height={299}
-              className="svg-51"
+              className="svg-50"
             />
             <Image
               src="/assets/pasted-artwork-151.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-125"
+              className="svg-124"
             />
             <Image
               src="/assets/pasted-artwork-152.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-126"
+              className="svg-125"
             />
             <Image
               src="/assets/pasted-artwork-153.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-127"
+              className="svg-126"
             />
             <Image
               src="/assets/pasted-artwork-154.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-128"
+              className="svg-127"
             />
             <Image
               src="/assets/pasted-artwork-155.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-129"
+              className="svg-128"
             />
             <Image
               src="/assets/pasted-artwork-156.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-130"
+              className="svg-129"
             />
             <Image
               src="/assets/pasted-artwork-157.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-131"
+              className="svg-130"
+            />
+            <Image
+              src="/assets/pasted-artwork-244.svg"
+              alt=""
+              width={175}
+              height={63}
+              className="svg-318"
             />
           </div>
           <div id="center15" data-toggle-show="flex" className="el-108">
@@ -409,7 +416,7 @@ export default function Page() {
               alt=""
               width={306}
               height={801}
-              className="svg-43"
+              className="svg-42"
             />
           </div>
           <div id="street15" data-toggle-show="flex" className="el-109">
@@ -418,28 +425,35 @@ export default function Page() {
               alt=""
               width={306}
               height={113}
-              className="svg-44"
+              className="svg-43"
             />
             <Image
               src="/assets/pasted-artwork-79.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-52"
+              className="svg-51"
             />
             <Image
               src="/assets/pasted-artwork-72.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-45"
+              className="svg-44"
             />
             <Image
               src="/assets/pasted-artwork-73.svg"
               alt=""
               width={306}
               height={202}
-              className="svg-46"
+              className="svg-45"
+            />
+            <Image
+              src="/assets/pasted-artwork-240.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-316"
             />
           </div>
           <div id="committee15" data-toggle-show="flex" className="el-83">

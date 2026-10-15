@@ -29,16 +29,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-75BCG9JTXY" />
-        <script
-          dangerouslySetInnerHTML={{ __html: "\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-75BCG9JTXY');\n" }}
-        />
-      </head>
+      <head
+        dangerouslySetInnerHTML={{ __html: "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-75BCG9JTXY\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-75BCG9JTXY');\n</script>" }}
+      />
       <body className={`${inter.variable} ${zenmarugothic.variable} ${zenkakugothicnew.variable}`}>
         {children}
         <Script src="/inview.js?v=16qqctc" strategy="afterInteractive" />
-        <Script src="/scripts.js?v=1286jns" strategy="afterInteractive" />
+        <Script src="/scripts.js?v=jckjqp" strategy="afterInteractive" />
       </body>
     </html>
   );

@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Fragment, cache } from "react";
+import { cache } from "react";
 import Link from "next/link";
-import SmartLink from "@/components/SmartLink";
 import Image from "next/image";
 import { interpolate, interpolateUrl, lookupVar } from "@/lib/vars";
 
@@ -40,31 +39,20 @@ function findIn(list: unknown, field: string, key: string): unknown {
   );
 }
 
-/** 文字列を区切り文字で分解する（前後の空白を除き、空の要素は捨てる） */
-function splitText(text: string, sep: string): string[] {
-  return text
-    .split(sep)
-    .map((x) => x.trim())
-    .filter(Boolean);
-}
-
 /** スクリプト「ページを開いたとき」のデータのブロックを上から順に実行する */
 async function loadData(vars: Vars) {
-  vars["_0"] = await fetchJson(interpolateUrl("https://api.matsufes.info/data/web-info.json", vars));
+  let got: unknown = null;
+  got = await fetchJson(interpolateUrl("https://api.matsufes.info/data/web-info.json", vars));
+  vars["_0"] = got;
   vars["_1"] = findIn(lookupVar(vars, "_0.data"), "publicId", interpolate("{slug}", vars));
-  vars["_4"] = lookupVar(vars, "_1.categories.投票カテゴリ") ?? null;
-  vars["_5"] = lookupVar(vars, "_1.customAnswers.中分類") ?? null;
-  vars["_6"] = lookupVar(vars, "_1.categories.大分類") ?? null;
-  vars["businessHours"] = lookupVar(vars, "_1.businessHours") ?? null;
-  vars["_7"] = splitText(interpolate("{businessHours}", vars), "、");
 }
 
-/** リストで並べる項目にする（オブジェクトはそのまま、文字や数値は {値} に入れる） */
-function toItems(v: unknown): Item[] {
-  if (!Array.isArray(v)) return [];
-  return v.flatMap((x): Item[] =>
-    x == null || Array.isArray(x) ? [] : typeof x === "object" ? [x as Item] : [{ "値": x }]
-  );
+/** ブラウザで並べるリストのお手本用: ページの変数に無い {名前} はそのまま残す */
+function templateVars(vars: Vars): Vars {
+  return new Proxy(vars, {
+    has: () => true,
+    get: (t, k) => (typeof k !== "string" ? undefined : k in t ? t[k] : `{${k}}`),
+  });
 }
 
 export async function generateMetadata({
@@ -132,7 +120,7 @@ export default async function Page({
   vars["まつぴよ-p"] = "公式メンバ〜「まつぴよ」";
   return (
     <>
-      <span hidden data-page-body="page_mv7ucj3ccc" data-scripts={JSON.stringify([{"trigger":"load","steps":[{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsX}", { ...vars, ...{"\u0000keepEscapes":true} }),"op":"empty","value":""},"then":[{"kind":"hide","target":"x"}]},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsInstagram}", { ...vars, ...{"\u0000keepEscapes":true} }),"op":"empty","value":""},"then":[{"kind":"hide","target":"inst"}]},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsWeb}", { ...vars, ...{"\u0000keepEscapes":true} }),"op":"empty","value":""},"then":[{"kind":"hide","target":"web"}],"else":[{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsWeb}", { ...vars, ...{"\u0000keepEscapes":true} }),"op":"starts-with","value":"http"},"then":[{"kind":"set-var","into":"snsWeb","raw":lookupVar(vars, "_1.snsWeb") ?? null}],"else":[{"kind":"set-var","into":"snsWeb","value":interpolate("https://{_1.snsWeb}", { ...vars, ...{"\u0000keepEscapes":true} })}]}]},{"kind":"store-load","key":"mf_bookmarks","into":"_2","shared":true},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_2}", { ...vars, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"op":"contains","value":interpolate("{_1.publicId}", { ...vars, ...{"\u0000keepEscapes":true} })},"then":[{"kind":"hide","target":"favoff"},{"kind":"show","target":"fav-svg"}]}]}])} />
+      <span hidden data-page-body="page_mv7ucj3ccc" data-scripts={JSON.stringify([{"trigger":"load","steps":[{"kind":"set-var","into":"_4","raw":lookupVar(vars, "_1.categories.投票カテゴリ") ?? null},{"kind":"set-var","into":"_5","raw":lookupVar(vars, "_1.customAnswers.中分類") ?? null},{"kind":"set-var","into":"_6","raw":lookupVar(vars, "_1.categories.大分類") ?? null},{"kind":"set-var","into":"businessHours","raw":lookupVar(vars, "_1.businessHours") ?? null},{"kind":"split","source":interpolate("{businessHours}", { ...vars, ...{"businessHours":"{businessHours}"} }),"sep":"、","into":"_7"},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsX}", vars),"op":"empty","value":""},"then":[{"kind":"hide","target":"x"}]},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsInstagram}", vars),"op":"empty","value":""},"then":[{"kind":"hide","target":"inst"}]},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsWeb}", vars),"op":"empty","value":""},"then":[{"kind":"hide","target":"web"}],"else":[{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsWeb}", vars),"op":"starts-with","value":"http"},"then":[{"kind":"set-var","into":"snsWeb","raw":lookupVar(vars, "_1.snsWeb") ?? null}],"else":[{"kind":"set-var","into":"snsWeb","value":interpolate("https://{_1.snsWeb}", vars)}]}]},{"kind":"store-load","key":"mf_bookmarks","into":"_2","shared":true},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_2}", { ...vars, ...{"_2":"{_2}"} }),"op":"contains","value":interpolate("{_1.publicId}", vars)},"then":[{"kind":"hide","target":"favoff"},{"kind":"show","target":"fav-svg"}]}]}])} />
       <nav className="header-2">
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/\"}]}]"}
           className="crisp-svg el-1222"
@@ -159,11 +147,11 @@ export default async function Page({
           </span>
         </div>
         <div id="memu-p" data-toggle-show="flex" data-inview className="el-1224">
-          <div className="box-374">
+          <div className="box-373">
             <div className="el-1225">
               <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-1226">
                 <span
-                  className="crisp-svg svg-314"
+                  className="crisp-svg svg-313"
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
@@ -203,9 +191,9 @@ export default async function Page({
                 <Link href="/schedule/0" id="日程表-p" className="button-417">
                   {"日程表からさがす"}
                 </Link>
-                <a href="/navigation" id="地図-p" className="button-418">
+                <Link href="/navigation" id="地図-p" className="button-418">
                   {"地図からさがす"}
-                </a>
+                </Link>
                 <Link href="/mypage" id="しおり-p" className="button-419">
                   {"きみのしおり"}
                 </Link>
@@ -251,7 +239,7 @@ export default async function Page({
           <div className="container-8">
             <div data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-33\"},{\"kind\":\"show\",\"target\":\"div-34\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-33\"},{\"kind\":\"hide\",\"target\":\"div-34\"}]}]"} className="el-1236">
               <div className="el-1237">
-                <div className="box-375">
+                <div className="box-374">
                   <p className="text-114">
                     {"まつがさきさい"}
                   </p>
@@ -284,7 +272,7 @@ export default async function Page({
             </div>
             <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-35\"},{\"kind\":\"hide\",\"target\":\"div-36\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-35\"},{\"kind\":\"show\",\"target\":\"div-36\"}]}]"} className="el-1245">
               <div className="el-1246">
-                <div className="box-376">
+                <div className="box-375">
                   <p className="text-117">
                     {"さがし"}
                   </p>
@@ -305,9 +293,9 @@ export default async function Page({
                   <Link href="/schedule" className="el-1250">
                     {"日程表からさがす"}
                   </Link>
-                  <a href="/navigation" className="el-1251">
+                  <Link href="/navigation" className="el-1251">
                     {"地図からさがす"}
-                  </a>
+                  </Link>
                   <Link href="/mypage" className="el-1252">
                     {"きみのしおり"}
                   </Link>
@@ -320,7 +308,7 @@ export default async function Page({
                 <p className="text-120">
                   {"ご"}
                 </p>
-                <div className="box-377">
+                <div className="box-376">
                   <p className="text-121">
                     {"あんない"}
                   </p>
@@ -353,7 +341,7 @@ export default async function Page({
             </div>
             <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-40\"},{\"kind\":\"hide\",\"target\":\"div-38\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-40\"},{\"kind\":\"show\",\"target\":\"div-38\"}]}]"} className="el-1264">
               <div className="el-1265">
-                <div className="box-378">
+                <div className="box-377">
                   <p className="text-123">
                     {"こうしきとくしゅう"}
                   </p>
@@ -418,7 +406,7 @@ export default async function Page({
         </h2>
       </section>
       <section className="el-1138">
-        <div className="box-347">
+        <div className="box-346">
           <div className="box-322">
             <div className="el-1131">
               <div className="box-323">
@@ -458,21 +446,20 @@ export default async function Page({
                     height={129}
                     className="el-1133"
                   />
-                  <div className="text-92">
-                    {toItems(lookupVar(vars, "_7")).map((item, i) => {
-                      const iv0 = { ...vars, ...item };
-                      return (
-                        <Fragment key={i}>
-                          <p className="text-78">
-                            {interpolate("{値}", iv0)}
-                          </p>
-                        </Fragment>
-                      );
-                    })}
+                  <div data-array="_7" data-client-list className="text-92">
+                    <div data-tpl hidden style={{ display: "none" }}>
+                      {((iv0: Vars) => (
+                        <>
+                        <p className="text-78">
+                          {interpolate("{値}", iv0)}
+                        </p>
+                        </>
+                      ))(templateVars(vars))}
+                    </div>
                   </div>
                 </div>
                 <div className="box-332">
-                  <div className="box-348">
+                  <div className="box-347">
                     <Image
                       src="/assets/image-5.png"
                       alt="どこで"
@@ -484,8 +471,8 @@ export default async function Page({
                       {interpolate("{_1.location}", vars)}
                     </h2>
                   </div>
-                  <div className="box-349">
-                    <div className="box-342">
+                  <div className="box-348">
+                    <div className="box-341">
                       <Image
                         src="/assets/image-4.png"
                         alt="地図をひらくボタン"
@@ -493,8 +480,8 @@ export default async function Page({
                         height={107}
                         className="png-37"
                       />
-                      <div className="box-343">
-                        <div className="box-344">
+                      <div className="box-342">
+                        <div className="box-343">
                           <p className="text-84">
                             {"ちず"}
                           </p>
@@ -505,7 +492,7 @@ export default async function Page({
                         <p className="text-86">
                           {"を"}
                         </p>
-                        <div className="box-345">
+                        <div className="box-344">
                           <p className="text-87">
                             {"ひら"}
                           </p>
@@ -523,46 +510,44 @@ export default async function Page({
               </div>
             </div>
           </div>
-          <div className="box-350">
-            <div className="el-1134">
-              {toItems(lookupVar(vars, "_4")).map((item, i) => {
-                const iv1 = { ...vars, ...item };
-                return (
-                  <Fragment key={i}>
-                    <div className="el-1135">
-                      <p className="el-1136">
-                        {interpolate("{値}", iv1)}
-                      </p>
-                    </div>
-                  </Fragment>
-                );
-              })}
+          <div className="box-349">
+            <div data-array="_4" data-client-list className="el-1134">
+              <div data-tpl hidden style={{ display: "none" }}>
+                {((iv1: Vars) => (
+                  <>
+                  <div className="el-1135">
+                    <p className="el-1136">
+                      {interpolate("{値}", iv1)}
+                    </p>
+                  </div>
+                  </>
+                ))(templateVars(vars))}
+              </div>
             </div>
-            <div className="el-1139">
-              {toItems(lookupVar(vars, "_6")).map((item, i) => {
-                const iv2 = { ...vars, ...item };
-                return (
-                  <Fragment key={i}>
-                    <div className="el-1140">
-                      <p className="el-1141">
-                        {interpolate("{値}", iv2)}
-                      </p>
-                    </div>
-                  </Fragment>
-                );
-              })}
+            <div data-array="_6" data-client-list className="el-1139">
+              <div data-tpl hidden style={{ display: "none" }}>
+                {((iv2: Vars) => (
+                  <>
+                  <div className="el-1140">
+                    <p className="el-1141">
+                      {interpolate("{値}", iv2)}
+                    </p>
+                  </div>
+                  </>
+                ))(templateVars(vars))}
+              </div>
             </div>
             <div className="el-1137">
               <div className="el-1142">
-                <p className="el-1143">
+                <p className="el-1143" data-live={interpolate("{_5}", { ...vars, ...{"_5":"{_5}"} })}>
                   {interpolate("{_5}", vars)}
                 </p>
               </div>
             </div>
           </div>
-          <div className="box-354">
-            <div className="box-365">
-              <div className="box-355">
+          <div className="box-353">
+            <div className="box-364">
+              <div className="box-354">
                 <Image
                   src="/assets/_-_2.png"
                   alt=""
@@ -570,21 +555,20 @@ export default async function Page({
                   height={129}
                   className="el-1144"
                 />
-                <div className="text-93">
-                  {toItems(lookupVar(vars, "_7")).map((item, i) => {
-                    const iv3 = { ...vars, ...item };
-                    return (
-                      <Fragment key={i}>
-                        <p className="text-94">
-                          {interpolate("{値}", iv3)}
-                        </p>
-                      </Fragment>
-                    );
-                  })}
+                <div data-array="_7" data-client-list className="text-93">
+                  <div data-tpl hidden style={{ display: "none" }}>
+                    {((iv3: Vars) => (
+                      <>
+                      <p className="text-94">
+                        {interpolate("{値}", iv3)}
+                      </p>
+                      </>
+                    ))(templateVars(vars))}
+                  </div>
                 </div>
               </div>
-              <div className="box-356">
-                <div className="box-357">
+              <div className="box-355">
+                <div className="box-356">
                   <Image
                     src="/assets/image-5.png"
                     alt=""
@@ -598,8 +582,8 @@ export default async function Page({
                 </div>
               </div>
             </div>
-            <div className="box-358">
-              <SmartLink href={interpolateUrl("https://map.matsufes.info/?id={_1.publicId}", vars)} className="el-1145">
+            <div className="box-357">
+              <a href={interpolateUrl("https://map.matsufes.info/?id={_1.publicId}", vars)} className="el-1145">
                 <Image
                   src="/assets/image-4.png"
                   alt=""
@@ -607,8 +591,8 @@ export default async function Page({
                   height={107}
                   className="png-39"
                 />
-                <div className="box-359">
-                  <div className="box-360">
+                <div className="box-358">
+                  <div className="box-359">
                     <p className="text-96">
                       {"ちず"}
                     </p>
@@ -619,7 +603,7 @@ export default async function Page({
                   <p className="text-98">
                     {"を"}
                   </p>
-                  <div className="box-361">
+                  <div className="box-360">
                     <p className="text-99">
                       {"ひら"}
                     </p>
@@ -631,22 +615,22 @@ export default async function Page({
                     {"く"}
                   </p>
                 </div>
-              </SmartLink>
+              </a>
             </div>
           </div>
-          <div className="box-335">
-            <div className="box-362">
-              <div className="box-363">
+          <div className="box-334">
+            <div className="box-361">
+              <div className="box-362">
                 <p className="text-102">
                   {interpolate("{_1.description}", vars)}
                 </p>
-                <div className="box-364" />
+                <div className="box-363" />
               </div>
             </div>
-            <div className="box-351">
+            <div className="box-350">
               <div className="fav">
-                <div className="box-346">
-                  <Image id="fav-svg" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"add","value":interpolate("{_1.publicId}", { ...vars, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...vars, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"fav-svg"},{"kind":"show","target":"favoff"}]}])} data-toggle-show="block"
+                <div className="box-345">
+                  <Image id="fav-svg" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"add","value":interpolate("{_1.publicId}", vars),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...vars, ...{"_2":"{_2}"} }),"shared":true},{"kind":"hide","target":"fav-svg"},{"kind":"show","target":"favoff"}]}])} data-toggle-show="block"
                     src="/assets/fav.svg"
                     alt="お気に入り登録済"
                     width={154}
@@ -654,7 +638,7 @@ export default async function Page({
                     className="favon"
                     priority
                   />
-                  <Image id="favoff" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"remove","value":interpolate("{_1.publicId}", { ...vars, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...vars, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"favoff"},{"kind":"show","target":"fav-svg"}]}])} data-toggle-show="block"
+                  <Image id="favoff" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"remove","value":interpolate("{_1.publicId}", vars),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...vars, ...{"_2":"{_2}"} }),"shared":true},{"kind":"hide","target":"favoff"},{"kind":"show","target":"fav-svg"}]}])} data-toggle-show="block"
                     src="/assets/pasted-artwork-214.svg"
                     alt="お気に入り未登録"
                     width={209}
@@ -666,7 +650,7 @@ export default async function Page({
                   {"お気に入り"}
                 </p>
               </div>
-              <SmartLink href={interpolateUrl("https://vote.matsufes.info/?id={_1.publicId}", vars)} className="vote">
+              <a href={interpolateUrl("https://vote.matsufes.info/?id={_1.publicId}", vars)} className="vote">
                 <Image
                   src="/assets/pasted-artwork-213.svg"
                   alt="m-1グランプリ"
@@ -677,34 +661,34 @@ export default async function Page({
                 <p className="text-91">
                   {"m-1グランプリに\n投票する"}
                 </p>
-              </SmartLink>
+              </a>
             </div>
-            <div className="box-352">
-              <div className="box-336">
+            <div className="box-351">
+              <div className="box-335">
                 <p className="text-80">
                   {interpolate("{_1.description}", vars)}
                 </p>
-                <div className="box-337" />
+                <div className="box-336" />
               </div>
             </div>
           </div>
-          <div className="box-353">
-            <div className="box-338">
-              <Image id="x" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{_1.snsX}", { ...vars, ...{"\u0000keepEscapes":true} }),"newTab":true}]}])}
+          <div className="box-352">
+            <div className="box-337">
+              <Image id="x" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{_1.snsX}", vars),"newTab":true}]}])}
                 src="/assets/pasted-artwork-212.svg"
                 alt="X"
                 width={40}
                 height={37}
                 className="x-3"
               />
-              <Image id="inst" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{_1.snsInstagram}", { ...vars, ...{"\u0000keepEscapes":true} }),"newTab":true}]}])}
+              <Image id="inst" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{_1.snsInstagram}", vars),"newTab":true}]}])}
                 src="/assets/pasted-artwork-211.svg"
                 alt="Instagram"
                 width={44}
                 height={44}
                 className="inst"
               />
-              <Image id="web" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{snsWeb}", { ...vars, ...{"snsWeb":"{snsWeb}","\u0000keepEscapes":true} }),"newTab":true}]}])}
+              <Image id="web" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{snsWeb}", { ...vars, ...{"snsWeb":"{snsWeb}"} }),"newTab":true}]}])}
                 src="/assets/pasted-artwork-210.svg"
                 alt="外部サイト"
                 width={50}
@@ -713,7 +697,7 @@ export default async function Page({
               />
             </div>
           </div>
-          <div className="box-339">
+          <div className="box-338">
             <Link href="/search" className="back">
               <Image
                 src="/assets/image-4.png"
@@ -722,8 +706,8 @@ export default async function Page({
                 height={107}
                 className="png-36"
               />
-              <div className="box-340">
-                <div className="box-341">
+              <div className="box-339">
+                <div className="box-340">
                   <p className="text-81">
                     {"いちらん"}
                   </p>
