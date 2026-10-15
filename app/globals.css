@@ -18,7 +18,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol {
+h1, h2, h3, h4, h5, h6, p, [data-p], ul, ol {
   margin: 0;
   white-space: pre-wrap;
 }
@@ -30,6 +30,20 @@ img, video {
 /* エディタのキャンバスと同じく、画像は親の幅を超えない */
 img {
   max-width: 100%;
+}
+
+/* 端末で「視差効果を減らす」を選んでいる人には、動きをすぐ終わらせる（最後の見た目は保つ） */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* シャドウ付きSVGのiOS Safari向けぼやけ対策（要素側のスタイルが優先されるよう詳細度0）。

@@ -79,9 +79,9 @@ export default function Page() {
               <Link href="/schedule/0" id="日程表-p" className="button-193">
                 {"日程表からさがす"}
               </Link>
-              <Link href="/navigation" id="地図-p" className="button-194">
+              <a href="/navigation" id="地図-p" className="button-194">
                 {"地図からさがす"}
-              </Link>
+              </a>
               <Link href="/mypage" id="しおり-p" className="button-195">
                 {"きみのしおり\n"}
               </Link>
@@ -123,7 +123,7 @@ export default function Page() {
             className="el-613"
           />
           <div className="el-614">
-            <p id="matsufes" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu1\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu1\"}],\"keep\":true}]"} className="el-615">
+            <div id="matsufes" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu1\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu1\"}],\"keep\":true}]"} className="el-615" data-p="">
               <span
                 className="crisp-svg svg-245"
               >
@@ -149,8 +149,8 @@ export default function Page() {
                   {"お知らせ"}
                 </Link>
               </div>
-            </p>
-            <p id="kikaku" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu2\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu2\"}],\"keep\":true}]"} className="el-620">
+            </div>
+            <div id="kikaku" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu2\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu2\"}],\"keep\":true}]"} className="el-620" data-p="">
               <span
                 className="crisp-svg svg-246"
               >
@@ -169,15 +169,15 @@ export default function Page() {
                 <Link href="/schedule/0" className="el-623">
                   {"日程表からさがす"}
                 </Link>
-                <Link href="/navigation" className="el-624">
+                <a href="/navigation" className="el-624">
                   {"地図からさがす"}
-                </Link>
+                </a>
                 <Link href="/mypage" className="el-625">
                   {"きみのしおり"}
                 </Link>
               </div>
-            </p>
-            <p id="goannai" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu3\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu3\"}],\"keep\":true}]"} className="el-626">
+            </div>
+            <div id="goannai" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu3\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu3\"}],\"keep\":true}]"} className="el-626" data-p="">
               <span
                 className="crisp-svg svg-247"
               >
@@ -206,8 +206,8 @@ export default function Page() {
                   {"相互リンク"}
                 </Link>
               </div>
-            </p>
-            <p id="kousiki" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu4\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu4\"}],\"keep\":true}]"} className="el-633">
+            </div>
+            <div id="kousiki" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu4\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu4\"}],\"keep\":true}]"} className="el-633" data-p="">
               <span
                 className="crisp-svg svg-248"
               >
@@ -230,7 +230,7 @@ export default function Page() {
                   {"公式メンバ〜「まつぴよ」"}
                 </Link>
               </div>
-            </p>
+            </div>
           </div>
         </div>
         <Image

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { cache } from "react";
+import { Fragment, cache } from "react";
 import Link from "next/link";
+import SmartLink from "@/components/SmartLink";
 import Image from "next/image";
 import { interpolate, interpolateUrl, lookupVar } from "@/lib/vars";
 
@@ -39,20 +40,31 @@ function findIn(list: unknown, field: string, key: string): unknown {
   );
 }
 
-/** スクリプト「ページを開いたとき」のデータのブロックを上から順に実行する */
-async function loadData(vars: Vars) {
-  let got: unknown = null;
-  got = await fetchJson(interpolateUrl("https://api.matsufes.info/data/web-info.json", vars));
-  vars["_0"] = got;
-  vars["_1"] = findIn(lookupVar(vars, "_0.data"), "publicId", interpolate("{slug}", vars));
+/** 文字列を区切り文字で分解する（前後の空白を除き、空の要素は捨てる） */
+function splitText(text: string, sep: string): string[] {
+  return text
+    .split(sep)
+    .map((x) => x.trim())
+    .filter(Boolean);
 }
 
-/** ブラウザで並べるリストのお手本用: ページの変数に無い {名前} はそのまま残す */
-function templateVars(vars: Vars): Vars {
-  return new Proxy(vars, {
-    has: () => true,
-    get: (t, k) => (typeof k !== "string" ? undefined : k in t ? t[k] : `{${k}}`),
-  });
+/** スクリプト「ページを開いたとき」のデータのブロックを上から順に実行する */
+async function loadData(vars: Vars) {
+  vars["_0"] = await fetchJson(interpolateUrl("https://api.matsufes.info/data/web-info.json", vars));
+  vars["_1"] = findIn(lookupVar(vars, "_0.data"), "publicId", interpolate("{slug}", vars));
+  vars["_4"] = lookupVar(vars, "_1.categories.投票カテゴリ") ?? null;
+  vars["_5"] = lookupVar(vars, "_1.customAnswers.中分類") ?? null;
+  vars["_6"] = lookupVar(vars, "_1.categories.大分類") ?? null;
+  vars["businessHours"] = lookupVar(vars, "_1.businessHours") ?? null;
+  vars["_7"] = splitText(interpolate("{businessHours}", vars), "、");
+}
+
+/** リストで並べる項目にする（オブジェクトはそのまま、文字や数値は {値} に入れる） */
+function toItems(v: unknown): Item[] {
+  if (!Array.isArray(v)) return [];
+  return v.flatMap((x): Item[] =>
+    x == null || Array.isArray(x) ? [] : typeof x === "object" ? [x as Item] : [{ "値": x }]
+  );
 }
 
 export async function generateMetadata({
@@ -120,7 +132,7 @@ export default async function Page({
   vars["まつぴよ-p"] = "公式メンバ〜「まつぴよ」";
   return (
     <>
-      <span hidden data-page-body="page_mv7ucj3ccc" data-scripts={JSON.stringify([{"trigger":"load","steps":[{"kind":"set-var","into":"_4","raw":lookupVar(vars, "_1.categories.投票カテゴリ") ?? null},{"kind":"set-var","into":"_5","raw":lookupVar(vars, "_1.customAnswers.中分類") ?? null},{"kind":"set-var","into":"_6","raw":lookupVar(vars, "_1.categories.大分類") ?? null},{"kind":"set-var","into":"businessHours","raw":lookupVar(vars, "_1.businessHours") ?? null},{"kind":"split","source":interpolate("{businessHours}", { ...vars, ...{"businessHours":"{businessHours}"} }),"sep":"、","into":"_7"},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsX}", vars),"op":"empty","value":""},"then":[{"kind":"hide","target":"x"}]},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsInstagram}", vars),"op":"empty","value":""},"then":[{"kind":"hide","target":"inst"}]},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsWeb}", vars),"op":"empty","value":""},"then":[{"kind":"hide","target":"web"}],"else":[{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsWeb}", vars),"op":"starts-with","value":"http"},"then":[{"kind":"set-var","into":"snsWeb","raw":lookupVar(vars, "_1.snsWeb") ?? null}],"else":[{"kind":"set-var","into":"snsWeb","value":interpolate("https://{_1.snsWeb}", vars)}]}]},{"kind":"store-load","key":"mf_bookmarks","into":"_2","shared":true},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_2}", { ...vars, ...{"_2":"{_2}"} }),"op":"contains","value":interpolate("{_1.publicId}", vars)},"then":[{"kind":"hide","target":"favoff"},{"kind":"show","target":"fav-svg"}]}]}])} />
+      <span hidden data-page-body="page_mv7ucj3ccc" data-scripts={JSON.stringify([{"trigger":"load","steps":[{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsX}", { ...vars, ...{"\u0000keepEscapes":true} }),"op":"empty","value":""},"then":[{"kind":"hide","target":"x"}]},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsInstagram}", { ...vars, ...{"\u0000keepEscapes":true} }),"op":"empty","value":""},"then":[{"kind":"hide","target":"inst"}]},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsWeb}", { ...vars, ...{"\u0000keepEscapes":true} }),"op":"empty","value":""},"then":[{"kind":"hide","target":"web"}],"else":[{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsWeb}", { ...vars, ...{"\u0000keepEscapes":true} }),"op":"starts-with","value":"http"},"then":[{"kind":"set-var","into":"snsWeb","raw":lookupVar(vars, "_1.snsWeb") ?? null}],"else":[{"kind":"set-var","into":"snsWeb","value":interpolate("https://{_1.snsWeb}", { ...vars, ...{"\u0000keepEscapes":true} })}]}]},{"kind":"store-load","key":"mf_bookmarks","into":"_2","shared":true},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_2}", { ...vars, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"op":"contains","value":interpolate("{_1.publicId}", { ...vars, ...{"\u0000keepEscapes":true} })},"then":[{"kind":"hide","target":"favoff"},{"kind":"show","target":"fav-svg"}]}]}])} />
       <nav className="header-2">
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/\"}]}]"}
           className="crisp-svg el-1222"
@@ -191,9 +203,9 @@ export default async function Page({
                 <Link href="/schedule/0" id="日程表-p" className="button-417">
                   {"日程表からさがす"}
                 </Link>
-                <Link href="/navigation" id="地図-p" className="button-418">
+                <a href="/navigation" id="地図-p" className="button-418">
                   {"地図からさがす"}
-                </Link>
+                </a>
                 <Link href="/mypage" id="しおり-p" className="button-419">
                   {"きみのしおり"}
                 </Link>
@@ -293,9 +305,9 @@ export default async function Page({
                   <Link href="/schedule" className="el-1250">
                     {"日程表からさがす"}
                   </Link>
-                  <Link href="/navigation" className="el-1251">
+                  <a href="/navigation" className="el-1251">
                     {"地図からさがす"}
-                  </Link>
+                  </a>
                   <Link href="/mypage" className="el-1252">
                     {"きみのしおり"}
                   </Link>
@@ -446,16 +458,17 @@ export default async function Page({
                     height={129}
                     className="el-1133"
                   />
-                  <div data-array="_7" data-client-list className="text-92">
-                    <div data-tpl hidden style={{ display: "none" }}>
-                      {((iv0: Vars) => (
-                        <>
-                        <p className="text-78">
-                          {interpolate("{値}", iv0)}
-                        </p>
-                        </>
-                      ))(templateVars(vars))}
-                    </div>
+                  <div className="text-92">
+                    {toItems(lookupVar(vars, "_7")).map((item, i) => {
+                      const iv0 = { ...vars, ...item };
+                      return (
+                        <Fragment key={i}>
+                          <p className="text-78">
+                            {interpolate("{値}", iv0)}
+                          </p>
+                        </Fragment>
+                      );
+                    })}
                   </div>
                 </div>
                 <div className="box-332">
@@ -511,35 +524,37 @@ export default async function Page({
             </div>
           </div>
           <div className="box-349">
-            <div data-array="_4" data-client-list className="el-1134">
-              <div data-tpl hidden style={{ display: "none" }}>
-                {((iv1: Vars) => (
-                  <>
-                  <div className="el-1135">
-                    <p className="el-1136">
-                      {interpolate("{値}", iv1)}
-                    </p>
-                  </div>
-                  </>
-                ))(templateVars(vars))}
-              </div>
+            <div className="el-1134">
+              {toItems(lookupVar(vars, "_4")).map((item, i) => {
+                const iv1 = { ...vars, ...item };
+                return (
+                  <Fragment key={i}>
+                    <div className="el-1135">
+                      <p className="el-1136">
+                        {interpolate("{値}", iv1)}
+                      </p>
+                    </div>
+                  </Fragment>
+                );
+              })}
             </div>
-            <div data-array="_6" data-client-list className="el-1139">
-              <div data-tpl hidden style={{ display: "none" }}>
-                {((iv2: Vars) => (
-                  <>
-                  <div className="el-1140">
-                    <p className="el-1141">
-                      {interpolate("{値}", iv2)}
-                    </p>
-                  </div>
-                  </>
-                ))(templateVars(vars))}
-              </div>
+            <div className="el-1139">
+              {toItems(lookupVar(vars, "_6")).map((item, i) => {
+                const iv2 = { ...vars, ...item };
+                return (
+                  <Fragment key={i}>
+                    <div className="el-1140">
+                      <p className="el-1141">
+                        {interpolate("{値}", iv2)}
+                      </p>
+                    </div>
+                  </Fragment>
+                );
+              })}
             </div>
             <div className="el-1137">
               <div className="el-1142">
-                <p className="el-1143" data-live={interpolate("{_5}", { ...vars, ...{"_5":"{_5}"} })}>
+                <p className="el-1143">
                   {interpolate("{_5}", vars)}
                 </p>
               </div>
@@ -555,16 +570,17 @@ export default async function Page({
                   height={129}
                   className="el-1144"
                 />
-                <div data-array="_7" data-client-list className="text-93">
-                  <div data-tpl hidden style={{ display: "none" }}>
-                    {((iv3: Vars) => (
-                      <>
-                      <p className="text-94">
-                        {interpolate("{値}", iv3)}
-                      </p>
-                      </>
-                    ))(templateVars(vars))}
-                  </div>
+                <div className="text-93">
+                  {toItems(lookupVar(vars, "_7")).map((item, i) => {
+                    const iv3 = { ...vars, ...item };
+                    return (
+                      <Fragment key={i}>
+                        <p className="text-94">
+                          {interpolate("{値}", iv3)}
+                        </p>
+                      </Fragment>
+                    );
+                  })}
                 </div>
               </div>
               <div className="box-355">
@@ -583,7 +599,7 @@ export default async function Page({
               </div>
             </div>
             <div className="box-357">
-              <a href={interpolateUrl("https://map.matsufes.info/?id={_1.publicId}", vars)} className="el-1145">
+              <SmartLink href={interpolateUrl("https://map.matsufes.info/?id={_1.publicId}", vars)} className="el-1145">
                 <Image
                   src="/assets/image-4.png"
                   alt=""
@@ -615,7 +631,7 @@ export default async function Page({
                     {"く"}
                   </p>
                 </div>
-              </a>
+              </SmartLink>
             </div>
           </div>
           <div className="box-334">
@@ -630,7 +646,7 @@ export default async function Page({
             <div className="box-350">
               <div className="fav">
                 <div className="box-345">
-                  <Image id="fav-svg" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"add","value":interpolate("{_1.publicId}", vars),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...vars, ...{"_2":"{_2}"} }),"shared":true},{"kind":"hide","target":"fav-svg"},{"kind":"show","target":"favoff"}]}])} data-toggle-show="block"
+                  <Image id="fav-svg" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"add","value":interpolate("{_1.publicId}", { ...vars, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...vars, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"fav-svg"},{"kind":"show","target":"favoff"}]}])} data-toggle-show="block"
                     src="/assets/fav.svg"
                     alt="お気に入り登録済"
                     width={154}
@@ -638,7 +654,7 @@ export default async function Page({
                     className="favon"
                     priority
                   />
-                  <Image id="favoff" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"remove","value":interpolate("{_1.publicId}", vars),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...vars, ...{"_2":"{_2}"} }),"shared":true},{"kind":"hide","target":"favoff"},{"kind":"show","target":"fav-svg"}]}])} data-toggle-show="block"
+                  <Image id="favoff" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"remove","value":interpolate("{_1.publicId}", { ...vars, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...vars, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"favoff"},{"kind":"show","target":"fav-svg"}]}])} data-toggle-show="block"
                     src="/assets/pasted-artwork-214.svg"
                     alt="お気に入り未登録"
                     width={209}
@@ -650,7 +666,7 @@ export default async function Page({
                   {"お気に入り"}
                 </p>
               </div>
-              <a href={interpolateUrl("https://vote.matsufes.info/?id={_1.publicId}", vars)} className="vote">
+              <SmartLink href={interpolateUrl("https://vote.matsufes.info/?id={_1.publicId}", vars)} className="vote">
                 <Image
                   src="/assets/pasted-artwork-213.svg"
                   alt="m-1グランプリ"
@@ -661,7 +677,7 @@ export default async function Page({
                 <p className="text-91">
                   {"m-1グランプリに\n投票する"}
                 </p>
-              </a>
+              </SmartLink>
             </div>
             <div className="box-351">
               <div className="box-335">
@@ -674,21 +690,21 @@ export default async function Page({
           </div>
           <div className="box-352">
             <div className="box-337">
-              <Image id="x" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{_1.snsX}", vars),"newTab":true}]}])}
+              <Image id="x" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{_1.snsX}", { ...vars, ...{"\u0000keepEscapes":true} }),"newTab":true}]}])}
                 src="/assets/pasted-artwork-212.svg"
                 alt="X"
                 width={40}
                 height={37}
                 className="x-3"
               />
-              <Image id="inst" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{_1.snsInstagram}", vars),"newTab":true}]}])}
+              <Image id="inst" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{_1.snsInstagram}", { ...vars, ...{"\u0000keepEscapes":true} }),"newTab":true}]}])}
                 src="/assets/pasted-artwork-211.svg"
                 alt="Instagram"
                 width={44}
                 height={44}
                 className="inst"
               />
-              <Image id="web" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{snsWeb}", { ...vars, ...{"snsWeb":"{snsWeb}"} }),"newTab":true}]}])}
+              <Image id="web" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{snsWeb}", { ...vars, ...{"snsWeb":"{snsWeb}","\u0000keepEscapes":true} }),"newTab":true}]}])}
                 src="/assets/pasted-artwork-210.svg"
                 alt="外部サイト"
                 width={50}
