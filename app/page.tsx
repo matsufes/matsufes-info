@@ -292,17 +292,17 @@ export default function Page() {
         </div>
       </section>
       <section className="box-514">
-        <Link href="/search" className="el-1489">
+        <Link href="/search" className="el-1490">
           <Image
             src="/assets/pasted-artwork-248.svg"
             alt=""
             width={93}
             height={82}
-            className="svg-316"
+            className="svg-315"
           />
           <p className="box-515">
             <span
-              className="crisp-svg svg-318"
+              className="crisp-svg svg-317"
             >
               <svg aria-hidden="true" width={164} height={119} viewBox="0 0 164 119" />
               <Image
@@ -316,7 +316,7 @@ export default function Page() {
         </Link>
       </section>
       <section className="box-516">
-        <a href="/navigation" className="el-1490">
+        <a href="/navigation" className="el-1491">
           <Image
             src="/assets/pasted-artwork-249.svg"
             alt=""
@@ -326,7 +326,7 @@ export default function Page() {
           />
           <p className="box-517">
             <span
-              className="crisp-svg svg-319"
+              className="crisp-svg svg-318"
             >
               <svg aria-hidden="true" width={164} height={119} viewBox="0 0 164 119" />
               <Image
@@ -338,17 +338,17 @@ export default function Page() {
             </span>
           </p>
         </a>
-        <Link href="/schedule/0" className="el-1491">
+        <Link href="/schedule/0" className="el-1492">
           <Image
             src="/assets/pasted-artwork-250.svg"
             alt=""
             width={60}
             height={60}
-            className="svg-317"
+            className="svg-316"
           />
           <p className="box-518">
             <span
-              className="crisp-svg svg-320"
+              className="crisp-svg svg-319"
             >
               <svg aria-hidden="true" width={202} height={112} viewBox="0 0 202 112" />
               <Image
@@ -389,9 +389,9 @@ export default function Page() {
           />
         </span>
       </section>
-      <section data-inview className="el-1492">
+      <section data-inview className="el-1493">
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/access\"}]}]"}
-          className="crisp-svg el-1493"
+          className="crisp-svg el-1494"
         >
           <svg aria-hidden="true" width={1051} height={732} viewBox="0 0 1051 732" />
           <Image
@@ -402,9 +402,9 @@ export default function Page() {
           />
         </span>
       </section>
-      <section data-inview className="el-1494">
+      <section data-inview className="el-1495">
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/comingsoon\"}]}]"}
-          className="crisp-svg el-1495"
+          className="crisp-svg el-1496"
         >
           <svg aria-hidden="true" width={1112} height={769} viewBox="0 0 1112 769" />
           <Image
@@ -415,9 +415,9 @@ export default function Page() {
           />
         </span>
       </section>
-      <section data-inview className="el-1496">
+      <section data-inview className="el-1497">
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/survey\"}]}]"}
-          className="crisp-svg el-1497"
+          className="crisp-svg el-1498"
         >
           <svg aria-hidden="true" width={999} height={815} viewBox="0 0 999 815" />
           <Image
@@ -492,13 +492,13 @@ export default function Page() {
             height={2030}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1499">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1500">
           <Image
             src="/assets/pasted-artwork-164.svg"
             alt=""
             width={58}
             height={58}
-            className="svg-322"
+            className="svg-321"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-5">
@@ -507,11 +507,11 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-323"
+            className="svg-322"
           />
         </a>
       </section>
-      <section className="el-1498">
+      <section className="el-1499">
         <a href="https://www.instagram.com/kit_matsufes/" className="el-120">
           <Image
             src="/assets/pasted-artwork-164.svg"
@@ -535,7 +535,7 @@ export default function Page() {
           alt=""
           width={375}
           height={347}
-          className="svg-321"
+          className="svg-320"
         />
       </section>
     </>

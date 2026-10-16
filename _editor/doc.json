@@ -110208,8 +110208,7 @@
         "base": {
           "default": {
             "width": "32px",
-            "zIndex": "2",
-            "marginRight": "4px"
+            "zIndex": "2"
           }
         }
       },
@@ -110306,8 +110305,7 @@
       "link": null,
       "children": [
         "node_mv7hpuwi3",
-        "node_mv7s7fk49",
-        "node_mv7rlzrr6"
+        "node_mvapy65f1"
       ],
       "styles": {
         "base": {
@@ -110342,8 +110340,7 @@
             "width": "32px",
             "flexShrink": "0",
             "zIndex": "2",
-            "position": "relative",
-            "marginRight": "4px"
+            "position": "relative"
           }
         }
       },
@@ -147989,13 +147986,16 @@
       },
       "attrId": "committee14",
       "hiddenOn": [
+        "base",
+        "lg",
+        "md",
         "sm"
       ]
     },
     "node_mv9pbe1m2": {
       "id": "node_mv9pbe1m2",
       "type": "image",
-      "name": "貼り付けたSVG",
+      "name": "キッチンカー",
       "semantic": "auto",
       "text": null,
       "link": null,
@@ -150538,6 +150538,34 @@
         "sm": {
           "default": {
             "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvapy65f1": {
+      "id": "node_mvapy65f1",
+      "type": "box",
+      "name": "お気に入り登録",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mv7s7fk49",
+        "node_mv7rlzrr6"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "35px",
+            "flexShrink": "0",
+            "height": "35px",
+            "marginRight": "4px",
+            "justifyContent": "center",
+            "alignItems": "center"
           }
         }
       }

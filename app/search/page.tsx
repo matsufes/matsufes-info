@@ -1081,21 +1081,23 @@ export default async function Page() {
                           <p className="text-64">
                             {interpolate("{name}", iv0)}
                           </p>
-                          <Image id="fav-on" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"remove","value":interpolate("{publicId}", { ...iv0, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...iv0, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"fav-on"},{"kind":"show","target":"fav-off"}]}])} data-toggle-show="block"
-                            src="/assets/bkonn.svg"
-                            alt="お気に入り登録済"
-                            width={35}
-                            height={34}
-                            className="bkonn-svg"
-                            priority
-                          />
-                          <Image id="fav-off" data-scripts={JSON.stringify([{"trigger":"load","steps":[{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_2}", { ...iv0, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"op":"contains","value":interpolate("{publicId}", { ...iv0, ...{"\u0000keepEscapes":true} })},"then":[{"kind":"show","target":"fav-on"},{"kind":"hide","target":"fav-off"}],"else":[{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}]}]},{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"add","value":interpolate("{publicId}", { ...iv0, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...iv0, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"fav-off"},{"kind":"show","target":"fav-on"}]}])} data-toggle-show="block"
-                            src="/assets/bkoff2.svg"
-                            alt="お気に入り未登録"
-                            width={35}
-                            height={34}
-                            className="bkoff2-svg"
-                          />
+                          <div className="el-1501">
+                            <Image id="fav-on" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"remove","value":interpolate("{publicId}", { ...iv0, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...iv0, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"fav-on"},{"kind":"show","target":"fav-off"}]}])} data-toggle-show="block"
+                              src="/assets/bkonn.svg"
+                              alt="お気に入り登録済"
+                              width={35}
+                              height={34}
+                              className="bkonn-svg"
+                              priority
+                            />
+                            <Image id="fav-off" data-scripts={JSON.stringify([{"trigger":"load","steps":[{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_2}", { ...iv0, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"op":"contains","value":interpolate("{publicId}", { ...iv0, ...{"\u0000keepEscapes":true} })},"then":[{"kind":"show","target":"fav-on"},{"kind":"hide","target":"fav-off"}],"else":[{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}]}]},{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"add","value":interpolate("{publicId}", { ...iv0, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...iv0, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"fav-off"},{"kind":"show","target":"fav-on"}]}])} data-toggle-show="block"
+                              src="/assets/bkoff2.svg"
+                              alt="お気に入り未登録"
+                              width={35}
+                              height={34}
+                              className="bkoff2-svg"
+                            />
+                          </div>
                         </div>
                         <span
                           className="crisp-svg el-1107"
