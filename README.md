@@ -1,6 +1,6 @@
 # 第56回松ヶ崎祭
 
-サイトエディタから書き出された Next.js プロジェクトです。
+オープンソースのビジュアルWebサイトビルダー [Tsumu](https://github.com/matsufes/site-editor) から書き出された Next.js プロジェクトです。
 エディタに依存しない普通の Next.js アプリなので、Next.js が動く場所ならどこでも公開できます。
 
 ## 開発

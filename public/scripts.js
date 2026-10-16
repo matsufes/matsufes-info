@@ -264,9 +264,7 @@ return at === 0 && (/^(https?:|mailto:|tel:)/i.test(v) || v.charAt(0) === "/" ||
 }
 );
 }
-function setVar(name, v) {
-if (!name) return;
-vars[name] = v;
+function refreshLive() {
 root.querySelectorAll("[data-live]").forEach(function (el) {
 if (inTpl(el)) return;
 var t = el.firstChild;
@@ -274,8 +272,23 @@ if (!t || t.nodeType !== 3) {
 t = document.createTextNode("");
 el.insertBefore(t, el.firstChild);
 }
-t.nodeValue = resolve(el.getAttribute("data-live"), el);
+var next = resolve(el.getAttribute("data-live"), el);
+if (t.nodeValue !== next) t.nodeValue = next;
 });
+root.querySelectorAll("[data-live-placeholder]").forEach(function (el) {
+if (inTpl(el)) return;
+el.placeholder = resolve(el.getAttribute("data-live-placeholder"), el);
+});
+root.querySelectorAll("[data-live-value]").forEach(function (el) {
+if (inTpl(el) || el.hasAttribute("data-edited")) return;
+var nv = resolve(el.getAttribute("data-live-value"), el);
+if (el.value !== nv) el.value = nv;
+});
+}
+function setVar(name, v) {
+if (!name) return;
+vars[name] = v;
+refreshLive();
 }
 function test(c, self, sc) {
 if (c.subject === "var") {
@@ -284,7 +297,11 @@ return cmp(resolve(c.left, self, sc), c.op, resolve(c.value, self, sc));
 var els = find(self, c.target);
 var r = false;
 if (c.subject === "value") {
-return cmp(valueOf(els), c.op, resolve(c.value, self, sc));
+var w = resolve(c.value, self, sc);
+var v = valueOf(els);
+var box = els.length ? inputOf(els[0]) : null;
+if (w === "off" && v === "" && box && box.type === "checkbox") v = "off";
+return cmp(v, c.op, w);
 }
 return c.not ? !r : r;
 }
@@ -387,15 +404,21 @@ return out;
 }
 function setValue(self, id, v) {
 var els = find(self, id);
+var first = els.length ? inputOf(els[0]) : null;
+if (first && first.type === "checkbox") {
+v = v !== "" && v !== "off" && v !== "false" && v !== "0" ? "on" : "";
+}
 if (valueOf(els) === v) return;
 els.forEach(function (el) {
 var input = inputOf(el);
 if (!input) return;
-if (input.type === "checkbox") {
-input.checked = v !== "" && v !== "off" && v !== "false";
-} else if (input.type === "radio") {
-input.checked = input.value === v;
+if (input.type === "checkbox" || input.type === "radio") {
+var on = input.type === "checkbox" ? v === "on" : input.value === v;
+if (input.checked === on) return;
+input.checked = on;
+if (!on && input.type === "radio") return;
 } else {
+if (input.value === v || (input.type === "file" && v !== "")) return;
 input.value = v;
 }
 input.dispatchEvent(new Event("input", { bubbles: true }));

@@ -49,3 +49,27 @@ export function interpolateUrl(template: string, vars: Vars): string {
 function isWholeUrl(v: string): boolean {
   return /^(https?:|mailto:|tel:)/i.test(v) || v.charAt(0) === "/" || v.charAt(0) === "#";
 }
+
+/** JSON の本文用の置換（文字列の中は JSON 用にエスケープ、外は値そのものの JSON） */
+export function interpolateJson(template: string, vars: Vars): string {
+  let out = "";
+  let inString = false;
+  let last = 0;
+  for (const m of template.matchAll(TOKEN_RE)) {
+    const at = m.index ?? 0;
+    const chunk = template.slice(last, at);
+    for (let i = 0; i < chunk.length; i++) {
+      if (chunk[i] === "\\") i++;
+      else if (chunk[i] === '"') inString = !inString;
+    }
+    out += chunk;
+    last = at + m[0].length;
+    if (m[0] === ESCAPED_BRACE) {
+      out += "{";
+      continue;
+    }
+    const v = lookupVar(vars, m[1] ?? "slug");
+    out += inString ? JSON.stringify(varText(v)).slice(1, -1) : JSON.stringify(v === undefined ? null : v);
+  }
+  return out + template.slice(last);
+}

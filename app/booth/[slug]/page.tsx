@@ -14,9 +14,9 @@ type Vars = Record<string, unknown>;
 
 /** 同じリクエスト内（メタデータとページ本体）では、同じURLを1回だけ取得する */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const fetchJson = cache(async (url: string): Promise<any> => {
+const fetchJson = cache(async (url: string, init?: string): Promise<any> => {
   // 取得に失敗したら作り直しをやめ、前に作ったページを配信し続ける
-  const res = await fetch(url, { next: { revalidate: 60 } });
+  const res = await fetch(url, { ...(init ? JSON.parse(init) : {}), next: { revalidate: 60 } });
   if (!res.ok) throw new Error(`${url} の取得に失敗しました（${res.status}）`);
   return await res.json();
 });
@@ -135,7 +135,7 @@ export default async function Page({
       <span hidden data-page-body="page_mv7ucj3ccc" data-scripts={JSON.stringify([{"trigger":"load","steps":[{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsX}", { ...vars, ...{"\u0000keepEscapes":true} }),"op":"empty","value":""},"then":[{"kind":"hide","target":"x"}]},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsInstagram}", { ...vars, ...{"\u0000keepEscapes":true} }),"op":"empty","value":""},"then":[{"kind":"hide","target":"inst"}]},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsWeb}", { ...vars, ...{"\u0000keepEscapes":true} }),"op":"empty","value":""},"then":[{"kind":"hide","target":"web"}],"else":[{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsWeb}", { ...vars, ...{"\u0000keepEscapes":true} }),"op":"starts-with","value":"http"},"then":[{"kind":"set-var","into":"snsWeb","raw":lookupVar(vars, "_1.snsWeb") ?? null}],"else":[{"kind":"set-var","into":"snsWeb","value":interpolate("https://{_1.snsWeb}", { ...vars, ...{"\u0000keepEscapes":true} })}]}]},{"kind":"store-load","key":"mf_bookmarks","into":"_2","shared":true},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_2}", { ...vars, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"op":"contains","value":interpolate("{_1.publicId}", { ...vars, ...{"\u0000keepEscapes":true} })},"then":[{"kind":"hide","target":"favoff"},{"kind":"show","target":"fav-svg"}]}]}])} />
       <nav className="header-2">
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/\"}]}]"}
-          className="crisp-svg el-1222"
+          className="crisp-svg el-1217"
         >
           <svg aria-hidden="true" width={213} height={213} viewBox="0 0 213 213" />
           <Image
@@ -145,7 +145,7 @@ export default async function Page({
             height={426}
           />
         </span>
-        <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"memu-p\"}]}]"} className="el-1223">
+        <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"memu-p\"}]}]"} className="el-1218">
           <span
             className="crisp-svg pasted-artwork-svg-72"
           >
@@ -158,12 +158,12 @@ export default async function Page({
             />
           </span>
         </div>
-        <div id="memu-p" data-toggle-show="flex" data-inview className="el-1224">
-          <div className="box-373">
-            <div className="el-1225">
-              <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-1226">
+        <div id="memu-p" data-toggle-show="flex" data-inview className="el-1219">
+          <div className="box-370">
+            <div className="el-1220">
+              <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-1221">
                 <span
-                  className="crisp-svg svg-313"
+                  className="crisp-svg svg-310"
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
@@ -176,10 +176,10 @@ export default async function Page({
               </div>
             </div>
             <div className="container-7">
-              <p id="松ヶ崎祭について" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"mf-phone\"}]}]"} className="el-1227">
+              <p id="松ヶ崎祭について" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"mf-phone\"}]}]"} className="el-1222">
                 {"松ヶ崎祭について"}
               </p>
-              <div id="mf-phone" data-toggle-show="flex" data-inview className="el-1228">
+              <div id="mf-phone" data-toggle-show="flex" data-inview className="el-1223">
                 <Link href="/about" id="松ヶ崎祭とは-p" className="button-412">
                   {"松ヶ崎祭とは"}
                 </Link>
@@ -193,10 +193,10 @@ export default async function Page({
                   {"お知らせ"}
                 </Link>
               </div>
-              <p id="企画さがし" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"kikaku-phone\"}]}]"} className="el-1229">
+              <p id="企画さがし" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"kikaku-phone\"}]}]"} className="el-1224">
                 {"企画さがし"}
               </p>
-              <div id="kikaku-phone" data-toggle-show="flex" data-inview className="el-1230">
+              <div id="kikaku-phone" data-toggle-show="flex" data-inview className="el-1225">
                 <Link href="/search" id="言葉-p" className="button-416">
                   {"言葉からさがす"}
                 </Link>
@@ -210,10 +210,10 @@ export default async function Page({
                   {"きみのしおり"}
                 </Link>
               </div>
-              <p id="ご案内" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"goannai-phone\"}]}]"} className="el-1231">
+              <p id="ご案内" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"goannai-phone\"}]}]"} className="el-1226">
                 {"ご案内"}
               </p>
-              <div id="goannai-phone" data-toggle-show="flex" data-inview className="el-1232">
+              <div id="goannai-phone" data-toggle-show="flex" data-inview className="el-1227">
                 <Link href="/attention" id="ご来場の-p" className="button-420">
                   {"ご来場の皆さまへ"}
                 </Link>
@@ -230,10 +230,10 @@ export default async function Page({
                   {"相互リンク"}
                 </Link>
               </div>
-              <p id="公式特集" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"koushiki-phone\"}]}]"} className="el-1233">
+              <p id="公式特集" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"koushiki-phone\"}]}]"} className="el-1228">
                 {"公式特集"}
               </p>
-              <div id="koushiki-phone" data-toggle-show="flex" data-inview className="el-1234">
+              <div id="koushiki-phone" data-toggle-show="flex" data-inview className="el-1229">
                 <Link href="/committee" id="委員会企画-p" className="button-425">
                   {"委員会企画"}
                 </Link>
@@ -247,11 +247,11 @@ export default async function Page({
             </div>
           </div>
         </div>
-        <div className="el-1235">
+        <div className="el-1230">
           <div className="container-8">
-            <div data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-33\"},{\"kind\":\"show\",\"target\":\"div-34\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-33\"},{\"kind\":\"hide\",\"target\":\"div-34\"}]}]"} className="el-1236">
-              <div className="el-1237">
-                <div className="box-374">
+            <div data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-33\"},{\"kind\":\"show\",\"target\":\"div-34\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-33\"},{\"kind\":\"hide\",\"target\":\"div-34\"}]}]"} className="el-1231">
+              <div className="el-1232">
+                <div className="box-371">
                   <p className="text-114">
                     {"まつがさきさい"}
                   </p>
@@ -263,28 +263,28 @@ export default async function Page({
                   {"について"}
                 </p>
               </div>
-              <div id="div-33" data-toggle-show="flex" data-inview className="el-1238" />
-              <div id="div-34" data-toggle-show="flex" className="el-1239">
+              <div id="div-33" data-toggle-show="flex" data-inview className="el-1233" />
+              <div id="div-34" data-toggle-show="flex" className="el-1234">
                 <div id="menu1-2" data-inview className="container-9">
-                  <Link href="/about" className="el-1240">
+                  <Link href="/about" className="el-1235">
                     {"松ヶ崎祭とは"}
                   </Link>
-                  <Link href="/theme" className="el-1241">
+                  <Link href="/theme" className="el-1236">
                     {"mf56メインテ〜マ"}
                   </Link>
-                  <Link href="/sponsor" className="el-1242">
+                  <Link href="/sponsor" className="el-1237">
                     {"ご協賛いただいた皆さま"}
                   </Link>
-                  <Link href="/notice" className="el-1243">
+                  <Link href="/notice" className="el-1238">
                     {"お知らせ"}
                   </Link>
-                  <div id="menu1-3" className="el-1244" />
+                  <div id="menu1-3" className="el-1239" />
                 </div>
               </div>
             </div>
-            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-35\"},{\"kind\":\"hide\",\"target\":\"div-36\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-35\"},{\"kind\":\"show\",\"target\":\"div-36\"}]}]"} className="el-1245">
-              <div className="el-1246">
-                <div className="box-375">
+            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-35\"},{\"kind\":\"hide\",\"target\":\"div-36\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-35\"},{\"kind\":\"show\",\"target\":\"div-36\"}]}]"} className="el-1240">
+              <div className="el-1241">
+                <div className="box-372">
                   <p className="text-117">
                     {"さがし"}
                   </p>
@@ -296,31 +296,31 @@ export default async function Page({
                   {"さがし"}
                 </p>
               </div>
-              <div id="div-35" data-toggle-show="flex" data-inview className="el-1247" />
-              <div id="div-36" data-toggle-show="flex" className="el-1248">
+              <div id="div-35" data-toggle-show="flex" data-inview className="el-1242" />
+              <div id="div-36" data-toggle-show="flex" className="el-1243">
                 <div id="menu1-4" data-inview className="container-10">
-                  <Link href="/search" className="el-1249">
+                  <Link href="/search" className="el-1244">
                     {"言葉からさがす"}
                   </Link>
-                  <Link href="/schedule" className="el-1250">
+                  <Link href="/schedule" className="el-1245">
                     {"日程表からさがす"}
                   </Link>
-                  <a href="/navigation" className="el-1251">
+                  <a href="/navigation" className="el-1246">
                     {"地図からさがす"}
                   </a>
-                  <Link href="/mypage" className="el-1252">
+                  <Link href="/mypage" className="el-1247">
                     {"きみのしおり"}
                   </Link>
-                  <div id="menu1-5" className="el-1253" />
+                  <div id="menu1-5" className="el-1248" />
                 </div>
               </div>
             </div>
-            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-37\"},{\"kind\":\"hide\",\"target\":\"div-39\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-37\"},{\"kind\":\"show\",\"target\":\"div-39\"}]}]"} className="el-1254">
-              <div className="el-1255">
+            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-37\"},{\"kind\":\"hide\",\"target\":\"div-39\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-37\"},{\"kind\":\"show\",\"target\":\"div-39\"}]}]"} className="el-1249">
+              <div className="el-1250">
                 <p className="text-120">
                   {"ご"}
                 </p>
-                <div className="box-376">
+                <div className="box-373">
                   <p className="text-121">
                     {"あんない"}
                   </p>
@@ -329,31 +329,31 @@ export default async function Page({
                   </p>
                 </div>
               </div>
-              <div id="div-37" data-toggle-show="flex" data-inview className="el-1256" />
-              <div id="div-39" data-toggle-show="flex" className="el-1257">
+              <div id="div-37" data-toggle-show="flex" data-inview className="el-1251" />
+              <div id="div-39" data-toggle-show="flex" className="el-1252">
                 <div id="menu1-6" data-inview className="container-11">
-                  <Link href="/attention" className="el-1258">
+                  <Link href="/attention" className="el-1253">
                     {"ご来場の皆さまへ"}
                   </Link>
-                  <Link href="/access" className="el-1259">
+                  <Link href="/access" className="el-1254">
                     {"行き方・会場地図"}
                   </Link>
-                  <Link href="/survey" className="el-1260">
+                  <Link href="/survey" className="el-1255">
                     {"来場者アンケ〜ト"}
                   </Link>
-                  <Link href="/question" className="el-1261">
+                  <Link href="/question" className="el-1256">
                     {"よくあるご質問"}
                   </Link>
-                  <Link href="/links" className="el-1262">
+                  <Link href="/links" className="el-1257">
                     {"相互リンク"}
                   </Link>
-                  <div id="menu1-7" className="el-1263" />
+                  <div id="menu1-7" className="el-1258" />
                 </div>
               </div>
             </div>
-            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-40\"},{\"kind\":\"hide\",\"target\":\"div-38\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-40\"},{\"kind\":\"show\",\"target\":\"div-38\"}]}]"} className="el-1264">
-              <div className="el-1265">
-                <div className="box-377">
+            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-40\"},{\"kind\":\"hide\",\"target\":\"div-38\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-40\"},{\"kind\":\"show\",\"target\":\"div-38\"}]}]"} className="el-1259">
+              <div className="el-1260">
+                <div className="box-374">
                   <p className="text-123">
                     {"こうしきとくしゅう"}
                   </p>
@@ -362,47 +362,47 @@ export default async function Page({
                   </p>
                 </div>
               </div>
-              <div id="div-40" data-toggle-show="flex" data-inview className="el-1266" />
-              <div id="div-38" data-toggle-show="flex" className="el-1267">
+              <div id="div-40" data-toggle-show="flex" data-inview className="el-1261" />
+              <div id="div-38" data-toggle-show="flex" className="el-1262">
                 <div id="menu1-8" data-inview className="container-12">
-                  <Link href="/committee" className="el-1268">
+                  <Link href="/committee" className="el-1263">
                     {"委員会企画"}
                   </Link>
-                  <Link href="/m-1" className="el-1269">
+                  <Link href="/m-1" className="el-1264">
                     {"m-1グランプリ"}
                   </Link>
-                  <Link href="/matsupiyo" className="el-1270">
+                  <Link href="/matsupiyo" className="el-1265">
                     {"公式メンバ〜「まつぴよ」"}
                   </Link>
-                  <div id="menu1-9" className="el-1271" />
+                  <div id="menu1-9" className="el-1266" />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </nav>
-      <Image
+      <Image data-inview
         src="/assets/image.png"
         alt=""
         width={477}
         height={374}
-        className="el-1128"
+        className="el-1123"
         priority
       />
-      <Image
+      <Image data-inview
         src="/assets/image-2.png"
         alt=""
         width={476}
         height={374}
-        className="el-1129"
+        className="el-1124"
         priority
       />
-      <section className="el-1130">
+      <section className="el-1125">
         <h1 className="text-74">
           {interpolate("{_1.name}", vars)}
         </h1>
       </section>
-      <section className="box-319">
+      <section className="box-316">
         <Image
           src="/assets/main-thema-soshoku.svg"
           alt=""
@@ -412,29 +412,29 @@ export default async function Page({
           priority
         />
       </section>
-      <section className="box-320">
+      <section className="box-317">
         <h2 className="text-75">
           {interpolate("{_1.exhibitorName}", vars)}
         </h2>
       </section>
-      <section className="el-1138">
-        <div className="box-346">
-          <div className="box-322">
-            <div className="el-1131">
-              <div className="box-323">
+      <section className="el-1133">
+        <div className="box-343">
+          <div className="box-319">
+            <div className="el-1126">
+              <div className="box-320">
                 <p className="text-76">
                   {interpolate("{_1.customAnswers.皆さまへ}", vars)}
                 </p>
-                <div className="box-326">
-                  <div className="box-325" />
+                <div className="box-323">
+                  <div className="box-322" />
                 </div>
-                <div className="box-324" />
+                <div className="box-321" />
               </div>
             </div>
-            <div className="el-1132">
+            <div className="el-1127">
               <div className="icon-4">
-                <div className="box-329">
-                  <div className="box-327">
+                <div className="box-326">
+                  <div className="box-324">
                     <p className="text-77">
                       {"No Image"}
                     </p>
@@ -447,16 +447,16 @@ export default async function Page({
                     className="image-24"
                   />
                 </div>
-                <div className="box-328" />
+                <div className="box-325" />
               </div>
-              <div className="box-330">
-                <div className="box-331">
+              <div className="box-327">
+                <div className="box-328">
                   <Image
                     src="/assets/_-_2.png"
                     alt="いつ"
                     width={129}
                     height={129}
-                    className="el-1133"
+                    className="el-1128"
                   />
                   <div className="text-92">
                     {toItems(lookupVar(vars, "_7")).map((item, i) => {
@@ -471,8 +471,8 @@ export default async function Page({
                     })}
                   </div>
                 </div>
-                <div className="box-332">
-                  <div className="box-347">
+                <div className="box-329">
+                  <div className="box-344">
                     <Image
                       src="/assets/image-5.png"
                       alt="どこで"
@@ -484,8 +484,8 @@ export default async function Page({
                       {interpolate("{_1.location}", vars)}
                     </h2>
                   </div>
-                  <div className="box-348">
-                    <div className="box-341">
+                  <div className="box-345">
+                    <div className="box-338">
                       <Image
                         src="/assets/image-4.png"
                         alt="地図をひらくボタン"
@@ -493,8 +493,8 @@ export default async function Page({
                         height={107}
                         className="png-37"
                       />
-                      <div className="box-342">
-                        <div className="box-343">
+                      <div className="box-339">
+                        <div className="box-340">
                           <p className="text-84">
                             {"ちず"}
                           </p>
@@ -505,7 +505,7 @@ export default async function Page({
                         <p className="text-86">
                           {"を"}
                         </p>
-                        <div className="box-344">
+                        <div className="box-341">
                           <p className="text-87">
                             {"ひら"}
                           </p>
@@ -523,14 +523,14 @@ export default async function Page({
               </div>
             </div>
           </div>
-          <div className="box-349">
-            <div className="el-1134">
+          <div className="box-346">
+            <div className="el-1129">
               {toItems(lookupVar(vars, "_4")).map((item, i) => {
                 const iv1 = { ...vars, ...item };
                 return (
                   <Fragment key={i}>
-                    <div className="el-1135">
-                      <p className="el-1136">
+                    <div className="el-1130">
+                      <p className="el-1131">
                         {interpolate("{値}", iv1)}
                       </p>
                     </div>
@@ -538,13 +538,13 @@ export default async function Page({
                 );
               })}
             </div>
-            <div className="el-1139">
+            <div className="el-1134">
               {toItems(lookupVar(vars, "_6")).map((item, i) => {
                 const iv2 = { ...vars, ...item };
                 return (
                   <Fragment key={i}>
-                    <div className="el-1140">
-                      <p className="el-1141">
+                    <div className="el-1135">
+                      <p className="el-1136">
                         {interpolate("{値}", iv2)}
                       </p>
                     </div>
@@ -552,23 +552,23 @@ export default async function Page({
                 );
               })}
             </div>
-            <div className="el-1137">
-              <div className="el-1142">
-                <p className="el-1143">
+            <div className="el-1132">
+              <div className="el-1137">
+                <p className="el-1138">
                   {interpolate("{_5}", vars)}
                 </p>
               </div>
             </div>
           </div>
-          <div className="box-353">
-            <div className="box-364">
-              <div className="box-354">
+          <div className="box-350">
+            <div className="box-361">
+              <div className="box-351">
                 <Image
                   src="/assets/_-_2.png"
                   alt=""
                   width={129}
                   height={129}
-                  className="el-1144"
+                  className="el-1139"
                 />
                 <div className="text-93">
                   {toItems(lookupVar(vars, "_7")).map((item, i) => {
@@ -583,8 +583,8 @@ export default async function Page({
                   })}
                 </div>
               </div>
-              <div className="box-355">
-                <div className="box-356">
+              <div className="box-352">
+                <div className="box-353">
                   <Image
                     src="/assets/image-5.png"
                     alt=""
@@ -598,8 +598,8 @@ export default async function Page({
                 </div>
               </div>
             </div>
-            <div className="box-357">
-              <SmartLink href={interpolateUrl("https://map.matsufes.info/?id={_1.publicId}", vars)} className="el-1145">
+            <div className="box-354">
+              <SmartLink href={interpolateUrl("https://map.matsufes.info/?id={_1.publicId}", vars)} className="el-1140">
                 <Image
                   src="/assets/image-4.png"
                   alt=""
@@ -607,8 +607,8 @@ export default async function Page({
                   height={107}
                   className="png-39"
                 />
-                <div className="box-358">
-                  <div className="box-359">
+                <div className="box-355">
+                  <div className="box-356">
                     <p className="text-96">
                       {"ちず"}
                     </p>
@@ -619,7 +619,7 @@ export default async function Page({
                   <p className="text-98">
                     {"を"}
                   </p>
-                  <div className="box-360">
+                  <div className="box-357">
                     <p className="text-99">
                       {"ひら"}
                     </p>
@@ -634,18 +634,18 @@ export default async function Page({
               </SmartLink>
             </div>
           </div>
-          <div className="box-334">
-            <div className="box-361">
-              <div className="box-362">
+          <div className="box-331">
+            <div className="box-358">
+              <div className="box-359">
                 <p className="text-102">
                   {interpolate("{_1.description}", vars)}
                 </p>
-                <div className="box-363" />
+                <div className="box-360" />
               </div>
             </div>
-            <div className="box-350">
+            <div className="box-347">
               <div className="fav">
-                <div className="box-345">
+                <div className="box-342">
                   <Image id="fav-svg" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"add","value":interpolate("{_1.publicId}", { ...vars, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...vars, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"fav-svg"},{"kind":"show","target":"favoff"}]}])} data-toggle-show="block"
                     src="/assets/fav.svg"
                     alt="お気に入り登録済"
@@ -679,17 +679,17 @@ export default async function Page({
                 </p>
               </SmartLink>
             </div>
-            <div className="box-351">
-              <div className="box-335">
+            <div className="box-348">
+              <div className="box-332">
                 <p className="text-80">
                   {interpolate("{_1.description}", vars)}
                 </p>
-                <div className="box-336" />
+                <div className="box-333" />
               </div>
             </div>
           </div>
-          <div className="box-352">
-            <div className="box-337">
+          <div className="box-349">
+            <div className="box-334">
               <Image id="x" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{_1.snsX}", { ...vars, ...{"\u0000keepEscapes":true} }),"newTab":true}]}])}
                 src="/assets/pasted-artwork-212.svg"
                 alt="X"
@@ -713,7 +713,7 @@ export default async function Page({
               />
             </div>
           </div>
-          <div className="box-338">
+          <div className="box-335">
             <Link href="/search" className="back">
               <Image
                 src="/assets/image-4.png"
@@ -722,8 +722,8 @@ export default async function Page({
                 height={107}
                 className="png-36"
               />
-              <div className="box-339">
-                <div className="box-340">
+              <div className="box-336">
+                <div className="box-337">
                   <p className="text-81">
                     {"いちらん"}
                   </p>
@@ -739,7 +739,7 @@ export default async function Page({
           </div>
         </div>
       </section>
-      <section className="box-321">
+      <section className="box-318">
         <Image
           src="/assets/Group-264.png"
           alt=""
