@@ -374,7 +374,7 @@ export default function Page() {
               alt=""
               width={306}
               height={537}
-              className="svg-314"
+              className="el-1446"
             />
           </div>
           <Image

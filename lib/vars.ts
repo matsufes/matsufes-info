@@ -47,7 +47,7 @@ export function interpolateUrl(template: string, vars: Vars): string {
 
 /** 値がURLそのものか（リンク先の先頭に置いた変数をエンコードせずに使う） */
 function isWholeUrl(v: string): boolean {
-  return /^(https?:|mailto:|tel:)/i.test(v) || v.charAt(0) === "/" || v.charAt(0) === "#";
+  return /^(https?:|mailto:|tel:|data:)/i.test(v) || v.charAt(0) === "/" || v.charAt(0) === "#";
 }
 
 /** JSON の本文用の置換（文字列の中は JSON 用にエスケープ、外は値そのものの JSON） */

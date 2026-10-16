@@ -76,8 +76,17 @@ export async function generateMetadata({
   const vars: Vars = { slug };
   await loadData(vars);
   const data = vars["_1"] as Item | null;
-  if (data) return { title: String(data["name"] ?? "") };
-  return { title: "出展情報" };
+  const title = data ? String(data["name"] ?? "") : "出展情報";
+  return {
+    title,
+    description: "松ヶ崎祭の出展情報をご覧いただけます。",
+    openGraph: {
+      title,
+      description: "松ヶ崎祭の出展情報をご覧いただけます。",
+      images: ["/assets/ogp.png"],
+    },
+    twitter: { card: "summary_large_image" },
+  };
 }
 
 export default async function Page({

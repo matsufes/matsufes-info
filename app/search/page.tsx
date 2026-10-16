@@ -1081,7 +1081,7 @@ export default async function Page() {
                           <p className="text-64">
                             {interpolate("{name}", iv0)}
                           </p>
-                          <div className="el-1611">
+                          <div className="el-1501">
                             <Image id="fav-on" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"remove","value":interpolate("{publicId}", { ...iv0, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...iv0, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"fav-on"},{"kind":"show","target":"fav-off"}]}])} data-toggle-show="block"
                               src="/assets/bkonn.svg"
                               alt="お気に入り登録済"
