@@ -233,7 +233,7 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <Image
+        <Image data-inview
           src="/assets/image-6.svg"
           alt=""
           width={1920}

@@ -91,7 +91,7 @@ export default async function Page() {
   return (
     <>
       <span hidden data-page-body="page_mv6trtsz1" data-scripts={"[{\"trigger\":\"load\",\"steps\":[{\"kind\":\"store-load\",\"key\":\"mf_bookmarks\",\"into\":\"_2\",\"shared\":true}]},{\"trigger\":\"load\",\"steps\":[{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"sort-array\",\"array\":\"_1\",\"field\":\"publicId\",\"dir\":\"asc\"}]}]"} />
-      <Image
+      <Image data-inview
         src="/assets/image.png"
         alt=""
         width={477}
@@ -99,7 +99,7 @@ export default async function Page() {
         className="el-1052"
         priority
       />
-      <Image
+      <Image data-inview
         src="/assets/image-2.png"
         alt=""
         width={476}

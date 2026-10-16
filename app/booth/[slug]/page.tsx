@@ -381,7 +381,7 @@ export default async function Page({
           </div>
         </div>
       </nav>
-      <Image
+      <Image data-inview
         src="/assets/image.png"
         alt=""
         width={477}
@@ -389,7 +389,7 @@ export default async function Page({
         className="el-1123"
         priority
       />
-      <Image
+      <Image data-inview
         src="/assets/image-2.png"
         alt=""
         width={476}
