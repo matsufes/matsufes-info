@@ -14,6 +14,24 @@
   "ogImage": {
     "assetId": "asset_mv6fewlm1"
   },
+  "customFonts": [
+    {
+      "family": "Zen Kaku Gothic New",
+      "weights": [
+        "400",
+        "500",
+        "700"
+      ]
+    }
+  ],
+  "customCss": "",
+  "customHeadHtml": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-75BCG9JTXY\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-75BCG9JTXY');\n</script>",
+  "pageFolders": [
+    {
+      "id": "folder_mv9nleld1",
+      "name": "バックアップ"
+    }
+  ],
   "pages": {
     "page_msleaffe1": {
       "id": "page_msleaffe1",
@@ -26,14 +44,18 @@
         "node_mslg4y6c9",
         "node_muh3flgtc7",
         "node_msmuwb2v11",
-        "node_muh5leuy3",
+        "node_mvaawykd8",
+        "node_mvab71wvh",
         "node_msn383mql",
         "node_mv4i3zbp1h",
-        "node_mv4vba981o",
+        "node_mvacbxfru",
+        "node_mvaci3sux",
+        "node_mvacjogmz",
         "node_mupd3j0w26",
         "node_mu3o50te3q",
         "node_mu3o27ns3l",
-        "node_mutl9bhm1h"
+        "node_mutl9bhm1h",
+        "node_mvaigxp51s"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -4294,7 +4316,8 @@
         }
       ],
       "htmlBackground": "#4d4c51",
-      "unpublished": true
+      "unpublished": true,
+      "folderId": "folder_mv9nleld1"
     },
     "page_mv8n8sk0fg": {
       "id": "page_mv8n8sk0fg",
@@ -5106,7 +5129,34 @@
         }
       ],
       "htmlBackground": "#4d4c51",
-      "unpublished": true
+      "unpublished": true,
+      "folderId": "folder_mv9nleld1"
+    },
+    "page_mva9voxq1": {
+      "id": "page_mva9voxq1",
+      "name": "プライバシーポリシー",
+      "slug": "page-37",
+      "title": "プライバシーポリシー | 第56回松ヶ崎祭",
+      "description": "第56回松ヶ崎祭公式サイトにおける個人情報の取り扱いおよびプライバシーポリシーについてご案内します。",
+      "children": [
+        "node_ai6e9dad7735",
+        "node_aia5297ff095",
+        "node_aicc80475cb9"
+      ],
+      "bodyStyles": {
+        "base": {
+          "default": {
+            "backgroundColor": "#f8f7f6",
+            "fontFamily": "'Zen Kaku Gothic New', sans-serif",
+            "color": "#2d3748",
+            "lineHeight": "1.8",
+            "margin": "0",
+            "minHeight": "100vh",
+            "display": "flex",
+            "flexDirection": "column"
+          }
+        }
+      }
     }
   },
   "pageOrder": [
@@ -5145,7 +5195,8 @@
     "page_mv6a54dc1",
     "page_mv8b51ub1",
     "page_mv8n8sk0fg",
-    "page_mv8n8kse5m"
+    "page_mv8n8kse5m",
+    "page_mva9voxq1"
   ],
   "nodes": {
     "node_mslg4y6c9": {
@@ -5518,7 +5569,10 @@
         },
         "lg": {
           "default": {
-            "marginTop": "400px"
+            "marginTop": "400px",
+            "justifyContent": "flex-end",
+            "alignItems": "center",
+            "paddingBottom": "0px"
           }
         }
       }
@@ -14499,7 +14553,9 @@
             "paddingBottom": "0px",
             "paddingLeft": "0px",
             "right": "20px",
-            "bottom": "150px"
+            "bottom": "150px",
+            "width": "60%",
+            "marginLeft": "60px"
           }
         }
       }
@@ -14559,7 +14615,8 @@
           "default": {
             "bottom": "-20%",
             "zIndex": "0",
-            "marginTop": "0px"
+            "marginTop": "0px",
+            "width": "100%"
           }
         }
       },
@@ -14631,7 +14688,12 @@
             "paddingRight": "0px",
             "paddingLeft": "0px",
             "paddingBottom": "0px",
-            "width": "60%"
+            "width": "70%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "50%"
           }
         }
       }
@@ -14660,297 +14722,6 @@
         }
       }
     },
-    "node_muh5leuy3": {
-      "id": "node_muh5leuy3",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_muh5nb4b11",
-        "node_muh5nfrf12",
-        "node_muh5njlu13"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "row",
-            "padding": "20px",
-            "gap": "12px",
-            "justifyContent": "center",
-            "alignItems": "center"
-          }
-        },
-        "sm": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "row",
-            "marginBottom": "200px"
-          }
-        }
-      }
-    },
-    "node_muh5nb4b11": {
-      "id": "node_muh5nb4b11",
-      "type": "box",
-      "name": "地図からさがす",
-      "semantic": "auto",
-      "text": null,
-      "link": {
-        "kind": "page",
-        "pageId": "page_msoti2tux",
-        "pos": {
-          "x": 513,
-          "y": 202
-        }
-      },
-      "children": [
-        "node_muh5nw6c15"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "width": "13%",
-            "justifyContent": "center",
-            "alignItems": "center",
-            "position": "absolute",
-            "left": "150px",
-            "bottom": "-100px"
-          }
-        },
-        "sm": {
-          "default": {
-            "justifyContent": "center",
-            "alignItems": "center",
-            "width": "24%",
-            "left": "40px",
-            "bottom": "-110px"
-          }
-        },
-        "md": {
-          "default": {
-            "width": "16%",
-            "left": "110px"
-          }
-        }
-      },
-      "motions": [
-        {
-          "id": "motion_mumkb7983",
-          "trigger": "hover",
-          "property": "all",
-          "keyframes": "bounce",
-          "duration": 1,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 1,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ]
-    },
-    "node_muh5nfrf12": {
-      "id": "node_muh5nfrf12",
-      "type": "box",
-      "name": "言葉からさがす",
-      "semantic": "auto",
-      "text": null,
-      "link": {
-        "kind": "page",
-        "pageId": "page_msotieex1e",
-        "pos": {
-          "x": 510,
-          "y": 119
-        }
-      },
-      "children": [
-        "node_muh5z2bd17"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "width": "24%",
-            "justifyContent": "center",
-            "alignItems": "center"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "45%"
-          }
-        },
-        "md": {
-          "default": {
-            "width": "30%"
-          }
-        }
-      },
-      "motions": [
-        {
-          "id": "motion_mumkc32l4",
-          "trigger": "hover",
-          "property": "all",
-          "keyframes": "bounce",
-          "duration": 1,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 1,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ]
-    },
-    "node_muh5njlu13": {
-      "id": "node_muh5njlu13",
-      "type": "box",
-      "name": "日程表からさがす",
-      "semantic": "auto",
-      "text": null,
-      "link": {
-        "kind": "page",
-        "pageId": "page_msmxmtrg5",
-        "pos": {
-          "x": 515,
-          "y": 285
-        }
-      },
-      "children": [
-        "node_muh5zepz19"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "width": "16%",
-            "position": "absolute",
-            "right": "130px",
-            "justifyContent": "center",
-            "alignItems": "center",
-            "bottom": "-90px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "29%",
-            "right": "35px",
-            "bottom": "-100px"
-          }
-        },
-        "md": {
-          "default": {
-            "width": "19%",
-            "right": "110px"
-          }
-        }
-      },
-      "motions": [
-        {
-          "id": "motion_mumkcdo25",
-          "trigger": "hover",
-          "property": "all",
-          "keyframes": "bounce",
-          "duration": 1,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 1,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ]
-    },
-    "node_muh5nw6c15": {
-      "id": "node_muh5nw6c15",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmuh5ntda-pasted-artwork.svg",
-        "alt": "",
-        "width": 172,
-        "height": 454,
-        "assetId": "asset_muh5nw6c14"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "100%",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "100%"
-          }
-        }
-      }
-    },
-    "node_muh5z2bd17": {
-      "id": "node_muh5z2bd17",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmuh5z0sv-pasted-artwork.svg",
-        "alt": "",
-        "width": 371,
-        "height": 461,
-        "assetId": "asset_muh5z2bc16"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "100%",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      }
-    },
-    "node_muh5zepz19": {
-      "id": "node_muh5zepz19",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmuh5zcw9-pasted-artwork.svg",
-        "alt": "",
-        "width": 239,
-        "height": 400,
-        "assetId": "asset_muh5zepz18"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "100%",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      }
-    },
     "node_muh6l3rx1b": {
       "id": "node_muh6l3rx1b",
       "type": "box",
@@ -14973,10 +14744,15 @@
         },
         "sm": {
           "default": {
-            "width": "70%",
+            "width": "80%",
             "paddingTop": "0px",
             "paddingRight": "20px",
             "paddingBottom": "0px"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "50%"
           }
         }
       }
@@ -15028,6 +14804,11 @@
         "sm": {
           "default": {
             "width": "70%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "50%"
           }
         }
       }
@@ -18596,7 +18377,7 @@
         "node_muo6v59m1o",
         "node_muo6wf3a1q",
         "node_muo6wwc71s",
-        "node_mv918ag5i"
+        "node_mv9plm4w6"
       ],
       "styles": {
         "base": {
@@ -18730,7 +18511,8 @@
         "node_muno2mf3g",
         "node_muno2zdzi",
         "node_munorwank",
-        "node_munoszedo"
+        "node_munoszedo",
+        "node_mv9prb627"
       ],
       "styles": {
         "base": {
@@ -18875,7 +18657,7 @@
             "maxWidth": "100%",
             "position": "absolute",
             "left": "0px",
-            "bottom": "20%"
+            "bottom": "19.7%"
           }
         },
         "sm": {
@@ -19628,7 +19410,7 @@
             "gap": "12px",
             "justifyContent": "center",
             "alignItems": "center",
-            "marginTop": "300px",
+            "marginTop": "200px",
             "marginBottom": "200px"
           }
         },
@@ -21549,8 +21331,8 @@
       "link": null,
       "children": [
         "node_mutle5uk1i",
-        "node_mutlf1ld1k",
-        "node_mutlfxpj1l"
+        "node_mvajlfgz1v",
+        "node_mvajlk961x"
       ],
       "styles": {
         "base": {
@@ -21578,6 +21360,9 @@
           "direction": "normal",
           "fillMode": "both"
         }
+      ],
+      "hiddenOn": [
+        "sm"
       ]
     },
     "node_mutle5uk1i": {
@@ -21642,8 +21427,8 @@
             "paddingBottom": "5px",
             "paddingRight": "5px",
             "paddingLeft": "5px",
-            "right": "80px",
-            "bottom": "30px"
+            "right": "20%",
+            "bottom": "15%"
           }
         },
         "lg": {
@@ -21693,8 +21478,8 @@
             "justifyContent": "center",
             "alignItems": "center",
             "width": "8%",
-            "right": "30px",
-            "bottom": "30px"
+            "right": "9%",
+            "bottom": "15%"
           }
         },
         "lg": {
@@ -25440,7 +25225,13 @@
           "default": {
             "top": "30%",
             "right": "0%",
-            "width": "90%"
+            "width": "100%",
+            "paddingRight": "0px",
+            "paddingLeft": "0px",
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "justifyContent": "center",
+            "alignItems": "center"
           }
         }
       }
@@ -26601,12 +26392,11 @@
     "node_mv4i3zbp1h": {
       "id": "node_mv4i3zbp1h",
       "type": "box",
-      "name": "ボックス",
+      "name": "ご来場",
       "semantic": "auto",
       "text": null,
       "link": null,
       "children": [
-        "node_mv4v9icp1n",
         "node_mv4v93r71m"
       ],
       "styles": {
@@ -26617,7 +26407,7 @@
             "padding": "20px",
             "gap": "12px",
             "width": "100%",
-            "justifyContent": "center",
+            "justifyContent": "flex-end",
             "alignItems": "center"
           }
         },
@@ -26626,7 +26416,10 @@
             "paddingRight": "0px",
             "paddingLeft": "0px",
             "paddingTop": "0px",
-            "paddingBottom": "0px"
+            "paddingBottom": "0px",
+            "justifyContent": "flex-end",
+            "alignItems": "center",
+            "marginTop": "50px"
           }
         }
       },
@@ -26648,7 +26441,7 @@
     "node_mv4v93r71m": {
       "id": "node_mv4v93r71m",
       "type": "image",
-      "name": "皆さまへ",
+      "name": "ご来場くも",
       "semantic": "auto",
       "text": null,
       "link": null,
@@ -26663,13 +26456,13 @@
       "styles": {
         "base": {
           "default": {
-            "width": "60%",
+            "width": "70%",
             "borderRadius": "12px"
           }
         },
         "sm": {
           "default": {
-            "width": "60%"
+            "width": "80%"
           }
         }
       },
@@ -26685,253 +26478,14 @@
             }
           ],
           "pos": {
-            "x": 619,
-            "y": 486
+            "x": 591,
+            "y": 457
           }
         }
       ],
       "motions": [
         {
           "id": "motion_mv4vl78k1u",
-          "trigger": "hover",
-          "property": "all",
-          "keyframes": "pulse",
-          "duration": 0.5,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 1,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ]
-    },
-    "node_mv4v9icp1n": {
-      "id": "node_mv4v9icp1n",
-      "type": "image",
-      "name": "来場者",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmu3njmg4-pasted-artwork.svg",
-        "alt": "",
-        "width": 999,
-        "height": 815,
-        "assetId": "asset_mu3njn9k3e"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "60%",
-            "borderRadius": "12px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "60%"
-          }
-        }
-      },
-      "scripts": [
-        {
-          "id": "sc_mv4vjw4yh",
-          "trigger": "click",
-          "pos": {
-            "x": 620,
-            "y": 396
-          },
-          "steps": [
-            {
-              "id": "st_mv4vjw4zi",
-              "kind": "open-page",
-              "pageId": "page_muhpllld2i"
-            }
-          ]
-        }
-      ],
-      "motions": [
-        {
-          "id": "motion_mv4vku5c1t",
-          "trigger": "hover",
-          "property": "all",
-          "keyframes": "pulse",
-          "duration": 0.5,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 1,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ]
-    },
-    "node_mv4vba981o": {
-      "id": "node_mv4vba981o",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mv4vcei61r",
-        "node_mv4vd0dp1s"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "row",
-            "padding": "20px",
-            "gap": "12px",
-            "width": "100%",
-            "justifyContent": "center",
-            "alignItems": "center",
-            "marginTop": "-200px"
-          }
-        },
-        "md": {
-          "default": {
-            "marginTop": "-150px"
-          }
-        },
-        "sm": {
-          "default": {
-            "marginTop": "-50px",
-            "paddingRight": "0px",
-            "paddingLeft": "0px",
-            "paddingTop": "0px",
-            "paddingBottom": "0px"
-          }
-        },
-        "lg": {
-          "default": {
-            "marginTop": "-150px"
-          }
-        }
-      },
-      "motions": [
-        {
-          "id": "motion_mv623rjx3",
-          "trigger": "in-view",
-          "property": "all",
-          "keyframes": "fade-up",
-          "duration": 0.5,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 1,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ]
-    },
-    "node_mv4vcei61r": {
-      "id": "node_mv4vcei61r",
-      "type": "image",
-      "name": "行き方",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmufn8s43-pasted-artwork.svg",
-        "alt": "",
-        "width": 1051,
-        "height": 732,
-        "assetId": "asset_mufn8sqpa5"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "60%",
-            "borderRadius": "12px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "60%"
-          }
-        }
-      },
-      "scripts": [
-        {
-          "id": "sc_mv4vjn4hf",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_mv4vjos6g",
-              "kind": "open-page",
-              "pageId": "page_muf53mtd6j"
-            }
-          ],
-          "pos": {
-            "x": 615,
-            "y": 670
-          }
-        }
-      ],
-      "motions": [
-        {
-          "id": "motion_mv4vlgpa1v",
-          "trigger": "hover",
-          "property": "all",
-          "keyframes": "pulse",
-          "duration": 0.5,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 1,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ]
-    },
-    "node_mv4vd0dp1s": {
-      "id": "node_mv4vd0dp1s",
-      "type": "image",
-      "name": "ご質問",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmufnmmnm-pasted-artwork.svg",
-        "alt": "",
-        "width": 1112,
-        "height": 769,
-        "assetId": "asset_mufnmngtaf"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "60%",
-            "borderRadius": "12px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "60%"
-          }
-        }
-      },
-      "scripts": [
-        {
-          "id": "sc_mv4vjh16d",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_mv4vjitre",
-              "kind": "open-page",
-              "pageId": "page_muhpllld2i"
-            }
-          ],
-          "pos": {
-            "x": 618,
-            "y": 580
-          }
-        }
-      ],
-      "motions": [
-        {
-          "id": "motion_mv4vlrr01w",
           "trigger": "hover",
           "property": "all",
           "keyframes": "pulse",
@@ -102747,7 +102301,8 @@
             "gap": "0px"
           }
         }
-      }
+      },
+      "locked": false
     },
     "node_mv6zdokud": {
       "id": "node_mv6zdokud",
@@ -117870,7 +117425,6 @@
             "cursor": "pointer",
             "fontFamily": "Zen Kaku Gothic New",
             "zIndex": "11",
-            "position": "relative",
             "width": "100%"
           },
           "hover": {
@@ -148123,7 +147677,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mv912woke"
+        "node_mv9pbe1m2"
       ],
       "styles": {
         "base": {
@@ -148158,47 +147712,55 @@
         "sm"
       ]
     },
-    "node_mv912woke": {
-      "id": "node_mv912woke",
+    "node_mv9pbe1m2": {
+      "id": "node_mv9pbe1m2",
       "type": "image",
       "name": "貼り付けたSVG",
       "semantic": "auto",
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmv912wgk-pasted-artwork.svg",
+        "src": "/api/assets/file?path=assets%2Fmv9pbdh2-pasted-artwork.svg",
         "alt": "",
         "width": 306,
         "height": 537,
-        "assetId": "asset_mv912wojd"
+        "assetId": "asset_mv9pbe1l1"
       },
       "children": [],
       "styles": {
         "base": {
           "default": {
-            "width": "306px",
+            "width": "100%",
             "maxWidth": "100%",
             "borderRadius": "0px",
             "position": "absolute",
             "left": "0px",
             "bottom": "11.5%"
           }
+        },
+        "lg": {
+          "default": {
+            "position": "absolute",
+            "left": "0px",
+            "bottom": "11.5%",
+            "width": "100%"
+          }
         }
       }
     },
-    "node_mv918ag5i": {
-      "id": "node_mv918ag5i",
+    "node_mv9plm4w6": {
+      "id": "node_mv9plm4w6",
       "type": "image",
       "name": "貼り付けたSVG",
       "semantic": "auto",
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmv918a9u-pasted-artwork.svg",
+        "src": "/api/assets/file?path=assets%2Fmv9plloq-pasted-artwork.svg",
         "alt": "",
         "width": 175,
         "height": 63,
-        "assetId": "asset_mv918ag5h"
+        "assetId": "asset_mv9plm4w5"
       },
       "children": [],
       "styles": {
@@ -148210,8 +147772,2490 @@
             "position": "absolute",
             "left": "0px",
             "bottom": "29.5%",
-            "boxShadow": "0px 4px 16px 0px rgba(0, 0, 0, 0.4)",
-            "zIndex": "2"
+            "boxShadow": "0px 4px 16px 0px rgba(0, 0, 0, 0.4)"
+          }
+        },
+        "sm": {
+          "default": {
+            "bottom": "30.2%",
+            "width": "60%",
+            "borderRadius": "12px"
+          }
+        },
+        "lg": {
+          "default": {
+            "borderRadius": "8px"
+          }
+        },
+        "md": {
+          "default": {
+            "borderRadius": "5px"
+          }
+        }
+      }
+    },
+    "node_mv9prb627": {
+      "id": "node_mv9prb627",
+      "type": "image",
+      "name": "pasted-artwork.svg",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmv9pcd07-pasted-artwork.svg",
+        "alt": "",
+        "width": 175,
+        "height": 63,
+        "assetId": "asset_mv9pcdsz3"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "65%",
+            "position": "absolute",
+            "bottom": "27.8%",
+            "right": "0px",
+            "boxShadow": "0px 4px 16px 0px rgba(0, 0, 0, 0.2)"
+          }
+        },
+        "lg": {
+          "default": {
+            "boxShadow": "0px 4px 16px 0px rgba(0, 0, 0, 0.2)"
+          }
+        },
+        "sm": {
+          "default": {
+            "bottom": "28.3%"
+          }
+        }
+      }
+    },
+    "node_ai6e9dad7735": {
+      "id": "node_ai6e9dad7735",
+      "semantic": "header",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_ai52a0d6a918"
+      ],
+      "type": "box",
+      "name": "ヘッダー",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "100%",
+            "backgroundColor": "#ffffff",
+            "borderBottom": "1px solid #e2e8f0",
+            "position": "sticky",
+            "top": "0",
+            "zIndex": "100",
+            "boxSizing": "border-box"
+          }
+        }
+      }
+    },
+    "node_aia5297ff095": {
+      "id": "node_aia5297ff095",
+      "semantic": "main",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_ai1b4c9c55e9"
+      ],
+      "type": "box",
+      "name": "メインコンテンツ",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "48px 24px 80px",
+            "gap": "0px",
+            "flex": "1",
+            "alignItems": "center",
+            "width": "100%",
+            "boxSizing": "border-box"
+          }
+        },
+        "md": {
+          "default": {
+            "padding": "24px 16px 60px"
+          }
+        }
+      }
+    },
+    "node_aicc80475cb9": {
+      "id": "node_aicc80475cb9",
+      "semantic": "footer",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_ai5a6fd16c40"
+      ],
+      "type": "box",
+      "name": "フッター",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "28px 24px",
+            "gap": "0px",
+            "width": "100%",
+            "backgroundColor": "#ffffff",
+            "borderTop": "1px solid #e2e8f0",
+            "textAlign": "center",
+            "boxSizing": "border-box",
+            "marginTop": "auto"
+          }
+        }
+      }
+    },
+    "node_ai52a0d6a918": {
+      "id": "node_ai52a0d6a918",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_ai022d39af65",
+        "node_ai4639cc9549"
+      ],
+      "type": "box",
+      "name": "ヘッダーコンテナ",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "16px 32px",
+            "gap": "0px",
+            "maxWidth": "1040px",
+            "margin": "0 auto",
+            "alignItems": "center",
+            "justifyContent": "space-between",
+            "boxSizing": "border-box"
+          }
+        },
+        "md": {
+          "default": {
+            "padding": "14px 20px"
+          }
+        }
+      }
+    },
+    "node_ai1b4c9c55e9": {
+      "id": "node_ai1b4c9c55e9",
+      "semantic": "article",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_aiebe6cb62ed",
+        "node_ai7ce728602b",
+        "node_ai49f6a9d3c2",
+        "node_ai1849fa5fa7",
+        "node_ai545574cca4",
+        "node_ai49e2deb6e0",
+        "node_ai6ad7655cb8",
+        "node_ai53723f2b5d",
+        "node_ai2b719ea087",
+        "node_aia78d10995f"
+      ],
+      "type": "box",
+      "name": "記事コンテナ",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "56px 48px",
+            "gap": "0px",
+            "maxWidth": "820px",
+            "width": "100%",
+            "backgroundColor": "#ffffff",
+            "borderRadius": "16px",
+            "boxShadow": "0 4px 24px rgba(155, 122, 129, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04)",
+            "boxSizing": "border-box",
+            "border": "1px solid #f1eeed"
+          }
+        },
+        "md": {
+          "default": {
+            "padding": "32px 20px",
+            "borderRadius": "12px"
+          }
+        }
+      }
+    },
+    "node_ai5a6fd16c40": {
+      "id": "node_ai5a6fd16c40",
+      "semantic": "auto",
+      "text": {
+        "content": "© 第56回松ヶ崎祭実行委員会 All Rights Reserved.",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "コピーライト",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "13px",
+            "lineHeight": "1.7",
+            "color": "#94a3b8",
+            "margin": "0"
+          }
+        }
+      }
+    },
+    "node_ai022d39af65": {
+      "id": "node_ai022d39af65",
+      "semantic": "div",
+      "text": null,
+      "link": {
+        "kind": "page",
+        "pageId": "page_msleaffe1"
+      },
+      "children": [
+        "node_ai9df90d83ad",
+        "node_aidc77f6bb69"
+      ],
+      "type": "box",
+      "name": "サイト名ロゴ",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "10px",
+            "alignItems": "center",
+            "textDecoration": "none",
+            "color": "#1a202c",
+            "cursor": "pointer"
+          }
+        }
+      }
+    },
+    "node_ai9df90d83ad": {
+      "id": "node_ai9df90d83ad",
+      "semantic": "auto",
+      "text": {
+        "content": "第56回",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "祭バッジ",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "11px",
+            "lineHeight": "1.7",
+            "backgroundColor": "#9b7a81",
+            "color": "#ffffff",
+            "fontWeight": "700",
+            "padding": "3px 8px",
+            "borderRadius": "6px",
+            "letterSpacing": "0.05em"
+          }
+        }
+      }
+    },
+    "node_aidc77f6bb69": {
+      "id": "node_aidc77f6bb69",
+      "semantic": "auto",
+      "text": {
+        "content": "松ヶ崎祭",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "祭名テキスト",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "17px",
+            "lineHeight": "1.7",
+            "fontWeight": "700",
+            "letterSpacing": "0.05em"
+          }
+        }
+      }
+    },
+    "node_ai4639cc9549": {
+      "id": "node_ai4639cc9549",
+      "semantic": "auto",
+      "text": {
+        "content": "← トップページへ戻る",
+        "heading": 0
+      },
+      "link": {
+        "kind": "page",
+        "pageId": "page_msleaffe1"
+      },
+      "children": [],
+      "type": "box",
+      "name": "トップへ戻るボタン",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "inline-flex",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "padding": "6px 14px",
+            "borderRadius": "20px",
+            "backgroundColor": "#f8fafc",
+            "color": "#64748b",
+            "fontSize": "13px",
+            "fontWeight": "500",
+            "textDecoration": "none",
+            "border": "1px solid #e2e8f0",
+            "cursor": "pointer"
+          }
+        }
+      }
+    },
+    "node_aiebe6cb62ed": {
+      "id": "node_aiebe6cb62ed",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_aibff4243839",
+        "node_ai43df65413b",
+        "node_aiaa389a3152"
+      ],
+      "type": "box",
+      "name": "タイトルエリア",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "marginBottom": "32px",
+            "paddingBottom": "24px",
+            "borderBottom": "2px solid #f1eeed"
+          }
+        }
+      }
+    },
+    "node_aibff4243839": {
+      "id": "node_aibff4243839",
+      "semantic": "auto",
+      "text": {
+        "content": "PRIVACY POLICY",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "サブタイトル英語",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "12px",
+            "lineHeight": "1.7",
+            "fontWeight": "700",
+            "color": "#9b7a81",
+            "letterSpacing": "0.15em",
+            "textTransform": "uppercase",
+            "marginBottom": "8px"
+          }
+        }
+      }
+    },
+    "node_ai43df65413b": {
+      "id": "node_ai43df65413b",
+      "semantic": "auto",
+      "text": {
+        "content": "プライバシーポリシー",
+        "heading": 1
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "ページタイトル",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "30px",
+            "fontWeight": "700",
+            "lineHeight": "1.3",
+            "color": "#1a202c",
+            "marginTop": "0",
+            "marginBottom": "12px"
+          }
+        },
+        "md": {
+          "default": {
+            "fontSize": "24px"
+          }
+        }
+      }
+    },
+    "node_aiaa389a3152": {
+      "id": "node_aiaa389a3152",
+      "semantic": "auto",
+      "text": {
+        "content": "第56回松ヶ崎祭実行委員会 / 最終改定日: 2024年10月1日",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "制定情報",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "13px",
+            "lineHeight": "1.6",
+            "color": "#718096"
+          }
+        }
+      }
+    },
+    "node_ai7ce728602b": {
+      "id": "node_ai7ce728602b",
+      "semantic": "auto",
+      "text": {
+        "content": "第56回松ヶ崎祭実行委員会（以下「当委員会」といいます。）は、松ヶ崎祭（以下「本学園祭」といいます。）の開催および公式ウェブサイト（以下「当サイト」といいます。）の運営にあたり、来場者・出展者および利用者の皆様（以下「利用者」といいます。）の個人情報を適切に保護・管理するため、以下のとおりプライバシーポリシーを定めます。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "前文",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "15px",
+            "lineHeight": "1.9",
+            "color": "#4a5568",
+            "marginBottom": "36px",
+            "backgroundColor": "#faf9f8",
+            "padding": "20px",
+            "borderRadius": "8px",
+            "borderLeft": "4px solid #9b7a81"
+          }
+        }
+      }
+    },
+    "node_ai49f6a9d3c2": {
+      "id": "node_ai49f6a9d3c2",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_aic4197a1cde",
+        "node_ai086ecc57ed"
+      ],
+      "type": "box",
+      "name": "セクション1",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "marginBottom": "36px"
+          }
+        }
+      }
+    },
+    "node_aic4197a1cde": {
+      "id": "node_aic4197a1cde",
+      "semantic": "auto",
+      "text": {
+        "content": "1. 個人情報の定義",
+        "heading": 2
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "見出し1",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "19px",
+            "fontWeight": "700",
+            "lineHeight": "1.3",
+            "color": "#2d3748",
+            "marginBottom": "12px",
+            "display": "flex",
+            "alignItems": "center",
+            "gap": "8px"
+          }
+        }
+      }
+    },
+    "node_ai086ecc57ed": {
+      "id": "node_ai086ecc57ed",
+      "semantic": "auto",
+      "text": {
+        "content": "本プライバシーポリシーにおいて個人情報とは、生存する個人に関する情報であって、氏名、生年月日、住所、電話番号、メールアドレス、その他の記述等により特定の個人を識別できる情報（他の情報と容易に照合することができ、それにより特定の個人を識別することができるものを含む）を指します。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "本文1",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "15px",
+            "lineHeight": "1.85",
+            "color": "#4a5568",
+            "margin": "0"
+          }
+        }
+      }
+    },
+    "node_ai1849fa5fa7": {
+      "id": "node_ai1849fa5fa7",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_ai0917f17e32",
+        "node_ai89a7412c7c",
+        "node_aibd24219438"
+      ],
+      "type": "box",
+      "name": "セクション2",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "marginBottom": "36px"
+          }
+        }
+      }
+    },
+    "node_ai0917f17e32": {
+      "id": "node_ai0917f17e32",
+      "semantic": "auto",
+      "text": {
+        "content": "2. 取得する情報とその取得方法",
+        "heading": 2
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "見出し2",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "19px",
+            "fontWeight": "700",
+            "lineHeight": "1.3",
+            "color": "#2d3748",
+            "marginBottom": "12px"
+          }
+        }
+      }
+    },
+    "node_ai89a7412c7c": {
+      "id": "node_ai89a7412c7c",
+      "semantic": "auto",
+      "text": {
+        "content": "当委員会は、業務上必要な範囲で適法かつ公正な手段によって利用者の個人情報を取得します。取得する情報には以下のものが含まれます。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "本文2-リード",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "15px",
+            "lineHeight": "1.85",
+            "color": "#4a5568",
+            "marginBottom": "12px"
+          }
+        }
+      }
+    },
+    "node_aibd24219438": {
+      "id": "node_aibd24219438",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_aif792d028c2",
+        "node_ai60380c5851",
+        "node_ai4250244da1"
+      ],
+      "type": "box",
+      "name": "取得情報リスト",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "8px",
+            "margin": "0",
+            "paddingLeft": "0"
+          }
+        }
+      }
+    },
+    "node_ai545574cca4": {
+      "id": "node_ai545574cca4",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_ai6c0da41889",
+        "node_aic5a3dcca5d",
+        "node_aifcdf27286a"
+      ],
+      "type": "box",
+      "name": "セクション3",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "marginBottom": "36px"
+          }
+        }
+      }
+    },
+    "node_ai6c0da41889": {
+      "id": "node_ai6c0da41889",
+      "semantic": "auto",
+      "text": {
+        "content": "3. 個人情報の利用目的",
+        "heading": 2
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "見出し3",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "19px",
+            "fontWeight": "700",
+            "lineHeight": "1.3",
+            "color": "#2d3748",
+            "marginBottom": "12px"
+          }
+        }
+      }
+    },
+    "node_aic5a3dcca5d": {
+      "id": "node_aic5a3dcca5d",
+      "semantic": "auto",
+      "text": {
+        "content": "取得した個人情報は、以下の目的のために利用し、本人の同意なく目的外の利用は行いません。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "本文3-リード",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "15px",
+            "lineHeight": "1.85",
+            "color": "#4a5568",
+            "marginBottom": "12px"
+          }
+        }
+      }
+    },
+    "node_aifcdf27286a": {
+      "id": "node_aifcdf27286a",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_aidf340da1db",
+        "node_ai1510c4389c",
+        "node_ai9cf592f06b",
+        "node_aicdcffcf8d7"
+      ],
+      "type": "box",
+      "name": "利用目的リスト",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "8px",
+            "margin": "0"
+          }
+        }
+      }
+    },
+    "node_aif792d028c2": {
+      "id": "node_aif792d028c2",
+      "semantic": "auto",
+      "text": {
+        "content": "・ お問い合わせ・ご意見の際にご入力いただく氏名、メールアドレス、所属、お問い合わせ内容",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "取得情報項目1",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "14.5px",
+            "lineHeight": "1.7",
+            "color": "#4a5568",
+            "paddingLeft": "12px"
+          }
+        }
+      }
+    },
+    "node_ai60380c5851": {
+      "id": "node_ai60380c5851",
+      "semantic": "auto",
+      "text": {
+        "content": "・ 来場者アンケートや各種投票企画（m-1グランプリ等）にご参加いただく際にご回答いただく年代・ご意見などの情報",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "取得情報項目2",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "14.5px",
+            "lineHeight": "1.7",
+            "color": "#4a5568",
+            "paddingLeft": "12px"
+          }
+        }
+      }
+    },
+    "node_ai4250244da1": {
+      "id": "node_ai4250244da1",
+      "semantic": "auto",
+      "text": {
+        "content": "・ 当サイトの閲覧に伴い自動的に生成・記録されるアクセスログ情報（IPアドレス、閲覧日時、端末情報、ブラウザ種別等）",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "取得情報項目3",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "14.5px",
+            "lineHeight": "1.7",
+            "color": "#4a5568",
+            "paddingLeft": "12px"
+          }
+        }
+      }
+    },
+    "node_aidf340da1db": {
+      "id": "node_aidf340da1db",
+      "semantic": "auto",
+      "text": {
+        "content": "・ お問い合わせ・ご意見に対する回答およびご連絡のため",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "利用目的1",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "14.5px",
+            "lineHeight": "1.7",
+            "color": "#4a5568",
+            "paddingLeft": "12px"
+          }
+        }
+      }
+    },
+    "node_ai1510c4389c": {
+      "id": "node_ai1510c4389c",
+      "semantic": "auto",
+      "text": {
+        "content": "・ 企画投票における重複投票の防止および集計・結果発表のため",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "利用目的2",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "14.5px",
+            "lineHeight": "1.7",
+            "color": "#4a5568",
+            "paddingLeft": "12px"
+          }
+        }
+      }
+    },
+    "node_ai9cf592f06b": {
+      "id": "node_ai9cf592f06b",
+      "semantic": "auto",
+      "text": {
+        "content": "・ アンケート結果の集計・分析を通じた学園祭運営の改善および次回開催への反映のため（個人を特定できない統計情報として取り扱います）",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "利用目的3",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "14.5px",
+            "lineHeight": "1.7",
+            "color": "#4a5568",
+            "paddingLeft": "12px"
+          }
+        }
+      }
+    },
+    "node_aicdcffcf8d7": {
+      "id": "node_aicdcffcf8d7",
+      "semantic": "auto",
+      "text": {
+        "content": "・ 当サイトの利用状況分析、保守および不正アクセスの防止のため",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "利用目的4",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "14.5px",
+            "lineHeight": "1.7",
+            "color": "#4a5568",
+            "paddingLeft": "12px"
+          }
+        }
+      }
+    },
+    "node_ai49e2deb6e0": {
+      "id": "node_ai49e2deb6e0",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_aie9e63928ae",
+        "node_aiaf69bfc19e"
+      ],
+      "type": "box",
+      "name": "セクション4",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "marginBottom": "36px"
+          }
+        }
+      }
+    },
+    "node_aie9e63928ae": {
+      "id": "node_aie9e63928ae",
+      "semantic": "auto",
+      "text": {
+        "content": "4. 個人情報の第三者への提供",
+        "heading": 2
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "見出し4",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "19px",
+            "fontWeight": "700",
+            "lineHeight": "1.3",
+            "color": "#2d3748",
+            "marginBottom": "12px"
+          }
+        }
+      }
+    },
+    "node_aiaf69bfc19e": {
+      "id": "node_aiaf69bfc19e",
+      "semantic": "auto",
+      "text": {
+        "content": "当委員会は、法令に基づく場合や人の生命・身体・財産の保護のために必要があり本人の同意を得ることが困難な場合を除き、あらかじめご本人の同意を得ることなく個人情報を第三者に提供・開示することはありません。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "本文4",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "15px",
+            "lineHeight": "1.85",
+            "color": "#4a5568",
+            "margin": "0"
+          }
+        }
+      }
+    },
+    "node_ai6ad7655cb8": {
+      "id": "node_ai6ad7655cb8",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_ai6e6f827a11",
+        "node_ai081b892224"
+      ],
+      "type": "box",
+      "name": "セクション5",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "marginBottom": "36px"
+          }
+        }
+      }
+    },
+    "node_ai6e6f827a11": {
+      "id": "node_ai6e6f827a11",
+      "semantic": "auto",
+      "text": {
+        "content": "5. Cookieおよびアクセス解析ツールの利用",
+        "heading": 2
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "見出し5",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "19px",
+            "fontWeight": "700",
+            "lineHeight": "1.3",
+            "color": "#2d3748",
+            "marginBottom": "12px"
+          }
+        }
+      }
+    },
+    "node_ai081b892224": {
+      "id": "node_ai081b892224",
+      "semantic": "auto",
+      "text": {
+        "content": "当サイトでは、利用者の利便性向上やサイトの改善・分析を目的としてCookie（クッキー）およびアクセス解析ツールを使用する場合があります。これらのデータは匿名で収集されており、個人を特定する情報は含まれません。利用者はブラウザの設定によりCookieの受け入れを拒否することができます。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "本文5",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "15px",
+            "lineHeight": "1.85",
+            "color": "#4a5568",
+            "margin": "0"
+          }
+        }
+      }
+    },
+    "node_ai53723f2b5d": {
+      "id": "node_ai53723f2b5d",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_ai84da7a57e3",
+        "node_ai5cedfaf77f"
+      ],
+      "type": "box",
+      "name": "セクション6",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "marginBottom": "36px"
+          }
+        }
+      }
+    },
+    "node_ai84da7a57e3": {
+      "id": "node_ai84da7a57e3",
+      "semantic": "auto",
+      "text": {
+        "content": "6. 安全管理措置",
+        "heading": 2
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "見出し6",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "19px",
+            "fontWeight": "700",
+            "lineHeight": "1.3",
+            "color": "#2d3748",
+            "marginBottom": "12px"
+          }
+        }
+      }
+    },
+    "node_ai5cedfaf77f": {
+      "id": "node_ai5cedfaf77f",
+      "semantic": "auto",
+      "text": {
+        "content": "当委員会は、取り扱う個人情報の漏えい、滅失または毀損の防止その他の安全管理のために、アクセス権限の適切な管理をはじめとする必要かつ適切な措置を講じ、厳重に保管・管理いたします。また、利用目的を終えた個人情報は速やかに適切な方法で廃棄・消去します。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "本文6",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "15px",
+            "lineHeight": "1.85",
+            "color": "#4a5568",
+            "margin": "0"
+          }
+        }
+      }
+    },
+    "node_ai2b719ea087": {
+      "id": "node_ai2b719ea087",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_aibb403321d4",
+        "node_aie5ea31b319"
+      ],
+      "type": "box",
+      "name": "セクション7",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "marginBottom": "40px"
+          }
+        }
+      }
+    },
+    "node_aibb403321d4": {
+      "id": "node_aibb403321d4",
+      "semantic": "auto",
+      "text": {
+        "content": "7. プライバシーポリシーの改定",
+        "heading": 2
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "見出し7",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "19px",
+            "fontWeight": "700",
+            "lineHeight": "1.3",
+            "color": "#2d3748",
+            "marginBottom": "12px"
+          }
+        }
+      }
+    },
+    "node_aie5ea31b319": {
+      "id": "node_aie5ea31b319",
+      "semantic": "auto",
+      "text": {
+        "content": "当委員会は、社会情勢の変化や法令の改正等に応じて、本プライバシーポリシーの内容を事前の予告なく改定することがあります。改定後のプライバシーポリシーは、当サイト上に掲載した時点より効力を生じるものとします。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "本文7",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "15px",
+            "lineHeight": "1.85",
+            "color": "#4a5568",
+            "margin": "0"
+          }
+        }
+      }
+    },
+    "node_aia78d10995f": {
+      "id": "node_aia78d10995f",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_ai0bd8d73580",
+        "node_aibd21203cad",
+        "node_aie27d57c7ef"
+      ],
+      "type": "box",
+      "name": "お問い合わせボックス",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "28px 24px",
+            "gap": "0px",
+            "backgroundColor": "#fdfbfc",
+            "border": "1px solid #ebd8dc",
+            "borderRadius": "12px",
+            "boxSizing": "border-box"
+          }
+        }
+      }
+    },
+    "node_ai0bd8d73580": {
+      "id": "node_ai0bd8d73580",
+      "semantic": "auto",
+      "text": {
+        "content": "8. お問い合わせ窓口",
+        "heading": 2
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "お問い合わせ見出し",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "18px",
+            "fontWeight": "700",
+            "lineHeight": "1.3",
+            "color": "#9b7a81",
+            "marginTop": "0",
+            "marginBottom": "12px"
+          }
+        }
+      }
+    },
+    "node_aibd21203cad": {
+      "id": "node_aibd21203cad",
+      "semantic": "auto",
+      "text": {
+        "content": "個人情報の取り扱いに関するご質問、確認、開示・訂正等のご請求は、以下の窓口までお問い合わせください。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "お問い合わせ本文",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "14.5px",
+            "lineHeight": "1.8",
+            "color": "#4a5568",
+            "marginBottom": "16px"
+          }
+        }
+      }
+    },
+    "node_aie27d57c7ef": {
+      "id": "node_aie27d57c7ef",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_ai507fa63665",
+        "node_aifb9960b34c",
+        "node_ai24889d75a1",
+        "node_aieff0c894b9"
+      ],
+      "type": "box",
+      "name": "窓口詳細ブロック",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "16px 20px",
+            "gap": "8px",
+            "backgroundColor": "#ffffff",
+            "borderRadius": "8px",
+            "border": "1px solid #f1eeed"
+          }
+        }
+      }
+    },
+    "node_ai507fa63665": {
+      "id": "node_ai507fa63665",
+      "semantic": "auto",
+      "text": {
+        "content": "第56回松ヶ崎祭実行委員会 総務部",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "窓口組織名",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "15px",
+            "lineHeight": "1.7",
+            "fontWeight": "700",
+            "color": "#2d3748"
+          }
+        }
+      }
+    },
+    "node_aifb9960b34c": {
+      "id": "node_aifb9960b34c",
+      "semantic": "auto",
+      "text": {
+        "content": "京都府京都市左京区松ヶ崎橋上町（京都工芸繊維大学構内）",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "窓口所在地",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "13.5px",
+            "lineHeight": "1.7",
+            "color": "#64748b"
+          }
+        }
+      }
+    },
+    "node_ai24889d75a1": {
+      "id": "node_ai24889d75a1",
+      "semantic": "auto",
+      "text": {
+        "content": "お問い合わせは公式サイトの「よくあるご質問」または公式SNS等よりご連絡ください。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "type": "box",
+      "name": "窓口連絡先",
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "13.5px",
+            "lineHeight": "1.7",
+            "color": "#64748b"
+          }
+        }
+      }
+    },
+    "node_aieff0c894b9": {
+      "id": "node_aieff0c894b9",
+      "semantic": "auto",
+      "text": {
+        "content": "よくあるご質問ページへ →",
+        "heading": 0
+      },
+      "link": {
+        "kind": "page",
+        "pageId": "page_muf67d6n7n"
+      },
+      "children": [],
+      "type": "box",
+      "name": "お問い合わせリンクボタン",
+      "styles": {
+        "base": {
+          "default": {
+            "display": "inline-flex",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "padding": "12px 24px",
+            "borderRadius": "8px",
+            "backgroundColor": "#18181b",
+            "color": "#9b7a81",
+            "fontSize": "13px",
+            "fontWeight": "700",
+            "textDecoration": "none",
+            "alignSelf": "flex-start",
+            "marginTop": "8px",
+            "border": "none",
+            "borderBottom": "1px dashed #9b7a81",
+            "paddingBottom": "2px",
+            "cursor": "pointer",
+            "background": "transparent",
+            "paddingLeft": "0",
+            "paddingRight": "0"
+          }
+        }
+      }
+    },
+    "node_mvaawykd8": {
+      "id": "node_mvaawykd8",
+      "type": "box",
+      "name": "言葉からさがすbox",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvaaxhq79"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "marginTop": "100px"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingRight": "20px",
+            "paddingLeft": "20px",
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "marginTop": "100px"
+          }
+        },
+        "lg": {
+          "default": {
+            "marginTop": "50px"
+          }
+        }
+      }
+    },
+    "node_mvaaxhq79": {
+      "id": "node_mvaaxhq79",
+      "type": "box",
+      "name": "言葉からさがす",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "page",
+        "pageId": "page_mv6trtsz1",
+        "pos": {
+          "x": 599,
+          "y": 125
+        }
+      },
+      "children": [
+        "node_mvaaxvpgb",
+        "node_mvaay342c"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "25%",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        },
+        "sm": {
+          "default": {
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "40%"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mvac3zgep",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "bounce",
+          "duration": 1,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvaaxvpgb": {
+      "id": "node_mvaaxvpgb",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvaaxto7-pasted-artwork.svg",
+        "alt": "",
+        "width": 93,
+        "height": 82,
+        "assetId": "asset_mvaaxvpfa"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "marginBottom": "20px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvaay342c": {
+      "id": "node_mvaay342c",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": {
+        "content": "",
+        "heading": 0
+      },
+      "link": null,
+      "children": [
+        "node_mvahirvr1n"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "30px",
+            "fontWeight": "900",
+            "color": "#ffffff",
+            "letterSpacing": "3px",
+            "textAlign": "center",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.8)",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "50%"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingRight": "0px",
+            "paddingLeft": "0px",
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "textAlign": "center",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "23px",
+            "fontWeight": "600",
+            "color": "#ffffff",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.5)",
+            "letterSpacing": "3px",
+            "width": "60%"
+          }
+        },
+        "lg": {
+          "default": {
+            "fontSize": "25px"
+          }
+        }
+      }
+    },
+    "node_mvab71wvh": {
+      "id": "node_mvab71wvh",
+      "type": "box",
+      "name": "地図と日程表box",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvab8g11i",
+        "node_mvab8j8sj"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "padding": "0px",
+            "gap": "0px",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingRight": "20px",
+            "paddingLeft": "20px",
+            "paddingTop": "20px",
+            "paddingBottom": "20px",
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "alignItems": "center",
+            "marginTop": "0px"
+          }
+        }
+      }
+    },
+    "node_mvab8g11i": {
+      "id": "node_mvab8g11i",
+      "type": "box",
+      "name": "地図からさがす",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "page",
+        "pageId": "page_msoti2tux",
+        "pos": {
+          "x": 597,
+          "y": 205
+        }
+      },
+      "children": [
+        "node_mvab8unlk",
+        "node_mvab99gvl"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "13%",
+            "marginRight": "500px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "40%",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "marginRight": "80px"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "13%",
+            "marginRight": "300px",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        },
+        "md": {
+          "default": {
+            "marginRight": "250px"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mvac4mqcq",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "bounce",
+          "duration": 1,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvab8j8sj": {
+      "id": "node_mvab8j8sj",
+      "type": "box",
+      "name": "日程表からさがす",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "page",
+        "pageId": "page_msmxmtrg5",
+        "pos": {
+          "x": 596,
+          "y": 290
+        }
+      },
+      "children": [
+        "node_mvabmjvxn",
+        "node_mvabmzm3o"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "20%",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        },
+        "sm": {
+          "default": {
+            "justifyContent": "center",
+            "alignItems": "center",
+            "marginTop": "0px",
+            "width": "30%"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mvac4wj5r",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "bounce",
+          "duration": 1,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvab8unlk": {
+      "id": "node_mvab8unlk",
+      "type": "image",
+      "name": "pasted-artwork.svg",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvab39ii-pasted-artwork.svg",
+        "alt": "",
+        "width": 42,
+        "height": 75,
+        "assetId": "asset_mvab3b88f"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "marginBottom": "20px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "50%",
+            "marginBottom": "0px"
+          }
+        }
+      }
+    },
+    "node_mvab99gvl": {
+      "id": "node_mvab99gvl",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": {
+        "content": "",
+        "heading": 0
+      },
+      "link": null,
+      "children": [
+        "node_mvahjhf01p"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "30px",
+            "color": "#ffffff",
+            "fontWeight": "900",
+            "textAlign": "center",
+            "letterSpacing": "3px",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.8)",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "90%"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingRight": "0px",
+            "paddingLeft": "0px",
+            "paddingTop": "20px",
+            "paddingBottom": "20px",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "23px",
+            "letterSpacing": "3px",
+            "color": "#ffffff",
+            "textAlign": "center",
+            "fontWeight": "600",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.5)",
+            "width": "60%"
+          }
+        },
+        "lg": {
+          "default": {
+            "fontSize": "25px",
+            "width": "90%"
+          }
+        }
+      }
+    },
+    "node_mvabmjvxn": {
+      "id": "node_mvabmjvxn",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvabmhfa-pasted-artwork.svg",
+        "alt": "",
+        "width": 60,
+        "height": 60,
+        "assetId": "asset_mvabmjvxm"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "marginBottom": "20px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvabmzm3o": {
+      "id": "node_mvabmzm3o",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": {
+        "content": "",
+        "heading": 0
+      },
+      "link": null,
+      "children": [
+        "node_mvahk5nf1r"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "30px",
+            "fontWeight": "900",
+            "letterSpacing": "3px",
+            "color": "#ffffff",
+            "textAlign": "center",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.8)",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "70%"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingRight": "0px",
+            "paddingLeft": "0px",
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "23px",
+            "fontWeight": "600",
+            "letterSpacing": "3px",
+            "color": "#ffffff",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.5)",
+            "textAlign": "center",
+            "width": "90%"
+          }
+        },
+        "lg": {
+          "default": {
+            "fontSize": "25px",
+            "width": "70%"
+          }
+        }
+      }
+    },
+    "node_mvacbxfru": {
+      "id": "node_mvacbxfru",
+      "type": "box",
+      "name": "行き方",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvaceykjw"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "marginTop": "-200px"
+          }
+        },
+        "sm": {
+          "default": {
+            "marginTop": "-100px"
+          }
+        },
+        "lg": {
+          "default": {
+            "marginTop": "-150px"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mvad2ocg14",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvaceykjw": {
+      "id": "node_mvaceykjw",
+      "type": "image",
+      "name": "行き方くも",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmufn8s43-pasted-artwork.svg",
+        "alt": "",
+        "width": 1051,
+        "height": 732,
+        "assetId": "asset_mufn8sqpa5"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "70%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "90%"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mvad13c911",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ],
+      "scripts": [
+        {
+          "id": "sc_mvajhaal2",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mvajhmlf3",
+              "kind": "open-page",
+              "pageId": "page_muf53mtd6j"
+            }
+          ],
+          "pos": {
+            "x": 590,
+            "y": 540
+          }
+        }
+      ]
+    },
+    "node_mvaci3sux": {
+      "id": "node_mvaci3sux",
+      "type": "box",
+      "name": "ご質問",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvaci78yy"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "justifyContent": "center",
+            "alignItems": "flex-end",
+            "marginTop": "-200px"
+          }
+        },
+        "sm": {
+          "default": {
+            "justifyContent": "center",
+            "alignItems": "flex-end",
+            "marginTop": "-100px"
+          }
+        },
+        "lg": {
+          "default": {
+            "marginTop": "-150px"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mvad3chx16",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvaci78yy": {
+      "id": "node_mvaci78yy",
+      "type": "image",
+      "name": "ご質問くも",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmufnmmnm-pasted-artwork.svg",
+        "alt": "",
+        "width": 1112,
+        "height": 769,
+        "assetId": "asset_mufnmngtaf"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "70%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "90%"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mvad1p8413",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ],
+      "scripts": [
+        {
+          "id": "sc_mvajipld4",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mvajir5n5",
+              "kind": "open-page",
+              "pageId": "page_muhpllld2i"
+            }
+          ],
+          "pos": {
+            "x": 590,
+            "y": 623
+          }
+        }
+      ]
+    },
+    "node_mvacjogmz": {
+      "id": "node_mvacjogmz",
+      "type": "box",
+      "name": "アンケート",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvack1eo10"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "marginTop": "-200px"
+          }
+        },
+        "sm": {
+          "default": {
+            "marginTop": "-70px"
+          }
+        },
+        "lg": {
+          "default": {
+            "marginTop": "-150px"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mvad35tn15",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvack1eo10": {
+      "id": "node_mvack1eo10",
+      "type": "image",
+      "name": "アンケートくも",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmu3njmg4-pasted-artwork.svg",
+        "alt": "",
+        "width": 999,
+        "height": 815,
+        "assetId": "asset_mu3njn9k3e"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "70%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "90%"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mvad1g2h12",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ],
+      "scripts": [
+        {
+          "id": "sc_mvajivyi6",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mvajixtf7",
+              "kind": "open-page",
+              "pageId": "page_mv6ai6be3t"
+            }
+          ],
+          "pos": {
+            "x": 590,
+            "y": 705
+          }
+        }
+      ]
+    },
+    "node_mvahirvr1n": {
+      "id": "node_mvahirvr1n",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvahirj0-pasted-artwork.svg",
+        "alt": "",
+        "width": 164,
+        "height": 119,
+        "assetId": "asset_mvahirvn1m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      }
+    },
+    "node_mvahjhf01p": {
+      "id": "node_mvahjhf01p",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvahjh1s-pasted-artwork.svg",
+        "alt": "",
+        "width": 164,
+        "height": 119,
+        "assetId": "asset_mvahjhex1o"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      }
+    },
+    "node_mvahk5nf1r": {
+      "id": "node_mvahk5nf1r",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvahk53q-pasted-artwork.svg",
+        "alt": "",
+        "width": 202,
+        "height": 112,
+        "assetId": "asset_mvahk5nc1q"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      }
+    },
+    "node_mvaigxp51s": {
+      "id": "node_mvaigxp51s",
+      "type": "box",
+      "name": "スマホ版フッター",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mutlf1ld1k",
+        "node_mutlfxpj1l",
+        "node_mvaih8ou1u"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ]
+    },
+    "node_mvaih8ou1u": {
+      "id": "node_mvaih8ou1u",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvaih88m-pasted-artwork.svg",
+        "alt": "",
+        "width": 375,
+        "height": 347,
+        "assetId": "asset_mvaih8ot1t"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "375px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvajlfgz1v": {
+      "id": "node_mvajlfgz1v",
+      "type": "box",
+      "name": "インスタ",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://www.instagram.com/kit_matsufes/",
+        "newTab": false,
+        "pos": {
+          "x": 40,
+          "y": 1705
+        }
+      },
+      "children": [
+        "node_mvajlfgz1w"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "17%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "8%",
+            "paddingTop": "5px",
+            "paddingBottom": "5px",
+            "paddingRight": "5px",
+            "paddingLeft": "5px",
+            "right": "20%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvajlfgz1w": {
+      "id": "node_mvajlfgz1w",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlg9d0-pasted-artwork.svg",
+        "alt": "",
+        "width": 58,
+        "height": 58,
+        "assetId": "asset_mutlg9na1m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvajlk961x": {
+      "id": "node_mvajlk961x",
+      "type": "box",
+      "name": "X",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://x.com/matsufes_info",
+        "newTab": false,
+        "pos": {
+          "x": 37,
+          "y": 1792
+        }
+      },
+      "children": [
+        "node_mvajlk961y"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "7%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingTop": "5px",
+            "paddingRight": "5px",
+            "paddingBottom": "5px",
+            "paddingLeft": "5px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "8%",
+            "right": "9%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvajlk961y": {
+      "id": "node_mvajlk961y",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlgm4j-pasted-artwork.svg",
+        "alt": "",
+        "width": 54,
+        "height": 49,
+        "assetId": "asset_mutlgmgm1o"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
           }
         }
       }
@@ -151040,19 +153084,107 @@
       "width": 175,
       "height": 63,
       "svgFilter": false
+    },
+    "asset_mv9pbe1l1": {
+      "id": "asset_mv9pbe1l1",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mv9pbdh2-pasted-artwork.svg",
+      "bytes": 32193,
+      "mimeType": "image/svg+xml",
+      "width": 306,
+      "height": 537,
+      "svgFilter": false
+    },
+    "asset_mv9pcdsz3": {
+      "id": "asset_mv9pcdsz3",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mv9pcd07-pasted-artwork.svg",
+      "bytes": 13517,
+      "mimeType": "image/svg+xml",
+      "width": 175,
+      "height": 63,
+      "svgFilter": false
+    },
+    "asset_mv9plm4w5": {
+      "id": "asset_mv9plm4w5",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mv9plloq-pasted-artwork.svg",
+      "bytes": 16383,
+      "mimeType": "image/svg+xml",
+      "width": 175,
+      "height": 63,
+      "svgFilter": false
+    },
+    "asset_mvaaxvpfa": {
+      "id": "asset_mvaaxvpfa",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mvaaxto7-pasted-artwork.svg",
+      "bytes": 5723414,
+      "mimeType": "image/svg+xml",
+      "width": 93,
+      "height": 82,
+      "svgFilter": false
+    },
+    "asset_mvab3b88f": {
+      "id": "asset_mvab3b88f",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mvab39ii-pasted-artwork.svg",
+      "bytes": 10368416,
+      "mimeType": "image/svg+xml",
+      "width": 42,
+      "height": 75,
+      "svgFilter": false
+    },
+    "asset_mvabmjvxm": {
+      "id": "asset_mvabmjvxm",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mvabmhfa-pasted-artwork.svg",
+      "bytes": 8613377,
+      "mimeType": "image/svg+xml",
+      "width": 60,
+      "height": 60,
+      "svgFilter": false
+    },
+    "asset_mvahirvn1m": {
+      "id": "asset_mvahirvn1m",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mvahirj0-pasted-artwork.svg",
+      "bytes": 18284,
+      "mimeType": "image/svg+xml",
+      "width": 164,
+      "height": 119,
+      "svgFilter": true
+    },
+    "asset_mvahjhex1o": {
+      "id": "asset_mvahjhex1o",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mvahjh1s-pasted-artwork.svg",
+      "bytes": 18571,
+      "mimeType": "image/svg+xml",
+      "width": 164,
+      "height": 119,
+      "svgFilter": true
+    },
+    "asset_mvahk5nc1q": {
+      "id": "asset_mvahk5nc1q",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mvahk53q-pasted-artwork.svg",
+      "bytes": 24214,
+      "mimeType": "image/svg+xml",
+      "width": 202,
+      "height": 112,
+      "svgFilter": true
+    },
+    "asset_mvaih8ot1t": {
+      "id": "asset_mvaih8ot1t",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mvaih88m-pasted-artwork.svg",
+      "bytes": 150749,
+      "mimeType": "image/svg+xml",
+      "width": 375,
+      "height": 347,
+      "svgFilter": true
     }
   },
-  "components": {},
-  "customFonts": [
-    {
-      "family": "Zen Kaku Gothic New",
-      "weights": [
-        "400",
-        "500",
-        "700"
-      ]
-    }
-  ],
-  "customCss": "",
-  "customHeadHtml": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-75BCG9JTXY\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-75BCG9JTXY');\n</script>"
+  "components": {}
 }

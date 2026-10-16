@@ -17,9 +17,9 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_msmxmtrg5" />
-      <section className="el-410">
-        <div className="el-412">
-          <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"show\",\"target\":\"memu-p\"}]}]"} className="el-413">
+      <section className="el-405">
+        <div className="el-407">
+          <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"show\",\"target\":\"memu-p\"}]}]"} className="el-408">
             <span
               className="crisp-svg pasted-artwork-svg-52"
             >
@@ -32,10 +32,10 @@ export default function Page() {
               />
             </span>
           </div>
-          <div id="memu-p" data-toggle-show="flex" className="el-414">
-            <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-415">
+          <div id="memu-p" data-toggle-show="flex" className="el-409">
+            <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-410">
               <span
-                className="crisp-svg svg-219"
+                className="crisp-svg svg-216"
               >
                 <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                 <Image
@@ -46,19 +46,19 @@ export default function Page() {
                 />
               </span>
             </div>
-            <p id="松ヶ崎祭について" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"mf-phone\"}]}]"} className="el-416">
+            <p id="松ヶ崎祭について" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"mf-phone\"}]}]"} className="el-411">
               {"松ヶ崎祭について"}
             </p>
-            <p id="企画さがし" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"kikaku-phone\"}]}]"} className="el-417">
+            <p id="企画さがし" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"kikaku-phone\"}]}]"} className="el-412">
               {"企画さがし"}
             </p>
-            <p id="ご案内" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"goannai-phone\"}]}]"} className="el-418">
+            <p id="ご案内" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"goannai-phone\"}]}]"} className="el-413">
               {"ご案内"}
             </p>
-            <p id="公式特集" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"koushiki-phone\"}]}]"} className="el-419">
+            <p id="公式特集" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"koushiki-phone\"}]}]"} className="el-414">
               {"公式特集"}
             </p>
-            <div id="mf-phone" data-toggle-show="flex" className="el-420">
+            <div id="mf-phone" data-toggle-show="flex" className="el-415">
               <Link href="/about" id="松ヶ崎祭とは-p" className="button-108">
                 {"松ヶ崎祭とは"}
               </Link>
@@ -72,7 +72,7 @@ export default function Page() {
                 {"お知らせ"}
               </Link>
             </div>
-            <div id="kikaku-phone" data-toggle-show="flex" className="el-421">
+            <div id="kikaku-phone" data-toggle-show="flex" className="el-416">
               <Link href="/search" id="言葉-p" className="button-112">
                 {"言葉からさがす"}
               </Link>
@@ -86,7 +86,7 @@ export default function Page() {
                 {"きみのしおり\n"}
               </Link>
             </div>
-            <div id="goannai-phone" data-toggle-show="flex" className="el-422">
+            <div id="goannai-phone" data-toggle-show="flex" className="el-417">
               <Link href="/attention" id="ご来場の-p" className="button-116">
                 {"ご来場の皆さまへ"}
               </Link>
@@ -103,7 +103,7 @@ export default function Page() {
                 {"相互リンク"}
               </Link>
             </div>
-            <div id="koushiki-phone" data-toggle-show="flex" className="el-423">
+            <div id="koushiki-phone" data-toggle-show="flex" className="el-418">
               <Link href="/committee" id="委員会企画-p" className="button-121">
                 {"委員会企画"}
               </Link>
@@ -120,12 +120,12 @@ export default function Page() {
             alt=""
             width={213}
             height={213}
-            className="el-424"
+            className="el-419"
           />
-          <div className="el-425">
-            <div id="matsufes" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu1\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu1\"}],\"keep\":true}]"} className="el-426" data-p="">
+          <div className="el-420">
+            <div id="matsufes" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu1\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu1\"}],\"keep\":true}]"} className="el-421" data-p="">
               <span
-                className="crisp-svg svg-220"
+                className="crisp-svg svg-217"
               >
                 <svg aria-hidden="true" width={244} height={55} viewBox="0 0 244 55" />
                 <Image
@@ -135,24 +135,24 @@ export default function Page() {
                   height={110}
                 />
               </span>
-              <div id="menu1" data-toggle-show="flex" data-inview className="el-427">
-                <Link href="/about" className="el-428">
+              <div id="menu1" data-toggle-show="flex" data-inview className="el-422">
+                <Link href="/about" className="el-423">
                   {"松ヶ崎祭とは"}
                 </Link>
                 <Link href="/theme" className="mf56-8">
                   {"mf56メインテ〜マ"}
                 </Link>
-                <Link href="/sponsor" className="el-429">
+                <Link href="/sponsor" className="el-424">
                   {"ご協賛いただいた皆さま"}
                 </Link>
-                <Link href="/notice" className="el-430">
+                <Link href="/notice" className="el-425">
                   {"お知らせ"}
                 </Link>
               </div>
             </div>
-            <div id="kikaku" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu2\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu2\"}],\"keep\":true}]"} className="el-431" data-p="">
+            <div id="kikaku" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu2\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu2\"}],\"keep\":true}]"} className="el-426" data-p="">
               <span
-                className="crisp-svg svg-221"
+                className="crisp-svg svg-218"
               >
                 <svg aria-hidden="true" width={153} height={55} viewBox="0 0 153 55" />
                 <Image
@@ -162,24 +162,24 @@ export default function Page() {
                   height={110}
                 />
               </span>
-              <div id="menu2" data-toggle-show="flex" data-inview className="el-432">
-                <Link href="/search" className="el-433">
+              <div id="menu2" data-toggle-show="flex" data-inview className="el-427">
+                <Link href="/search" className="el-428">
                   {"言葉からさがす"}
                 </Link>
-                <Link href="/schedule/0" className="el-434">
+                <Link href="/schedule/0" className="el-429">
                   {"日程表からさがす"}
                 </Link>
-                <a href="/navigation" className="el-435">
+                <a href="/navigation" className="el-430">
                   {"地図からさがす"}
                 </a>
-                <Link href="/mypage" className="el-436">
+                <Link href="/mypage" className="el-431">
                   {"きみのしおり"}
                 </Link>
               </div>
             </div>
-            <div id="goannai" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu3\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu3\"}],\"keep\":true}]"} className="el-437" data-p="">
+            <div id="goannai" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu3\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu3\"}],\"keep\":true}]"} className="el-432" data-p="">
               <span
-                className="crisp-svg svg-222"
+                className="crisp-svg svg-219"
               >
                 <svg aria-hidden="true" width={93} height={61} viewBox="0 0 93 61" />
                 <Image
@@ -189,27 +189,27 @@ export default function Page() {
                   height={122}
                 />
               </span>
-              <div id="menu3" data-toggle-show="flex" data-inview className="el-438">
-                <Link href="/attention" className="el-439">
+              <div id="menu3" data-toggle-show="flex" data-inview className="el-433">
+                <Link href="/attention" className="el-434">
                   {"ご来場の皆さまへ"}
                 </Link>
-                <Link href="/access" className="el-440">
+                <Link href="/access" className="el-435">
                   {"行き方・会場地図"}
                 </Link>
-                <Link href="/comingsoon" className="el-441">
+                <Link href="/comingsoon" className="el-436">
                   {"来場者アンケ〜ト"}
                 </Link>
-                <Link href="/comingsoon" className="el-442">
+                <Link href="/comingsoon" className="el-437">
                   {"よくあるご質問"}
                 </Link>
-                <Link href="/links" className="el-443">
+                <Link href="/links" className="el-438">
                   {"相互リンク"}
                 </Link>
               </div>
             </div>
-            <div id="kousiki" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu4\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu4\"}],\"keep\":true}]"} className="el-444" data-p="">
+            <div id="kousiki" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu4\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu4\"}],\"keep\":true}]"} className="el-439" data-p="">
               <span
-                className="crisp-svg svg-223"
+                className="crisp-svg svg-220"
               >
                 <svg aria-hidden="true" width={127} height={58} viewBox="0 0 127 58" />
                 <Image
@@ -219,14 +219,14 @@ export default function Page() {
                   height={116}
                 />
               </span>
-              <div id="menu4" data-toggle-show="flex" data-inview className="el-445">
-                <Link href="/committee" className="el-446">
+              <div id="menu4" data-toggle-show="flex" data-inview className="el-440">
+                <Link href="/committee" className="el-441">
                   {"委員会企画"}
                 </Link>
                 <Link href="/m-1" className="m-1-11">
                   {"m-1グランプリ"}
                 </Link>
-                <Link href="/comingsoon" className="el-447">
+                <Link href="/comingsoon" className="el-442">
                   {"公式メンバ〜「まつぴよ」"}
                 </Link>
               </div>
@@ -238,7 +238,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={583}
-          className="el-411"
+          className="el-406"
         />
       </section>
       <p className="el-25">
@@ -263,7 +263,7 @@ export default function Page() {
           className="svg-69"
         />
       </section>
-      <p className="box-170">
+      <p className="box-169">
         {"1日の日程表を　見ることができるよ。\nメインステージでの催しや　音楽サークルの公演時間を　確認しよう。"}
       </p>
       <section className="el-72">
@@ -330,44 +330,51 @@ export default function Page() {
         </select>
       </section>
       <section className="el-26">
-        <div className="box-173">
-          <div id="main" data-toggle-show="flex" className="el-110">
+        <div className="box-172">
+          <div id="main" data-toggle-show="flex" className="el-107">
             <Image
               src="/assets/pasted-artwork-136.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-110"
+              className="svg-107"
             />
             <Image
               src="/assets/pasted-artwork-137.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-159"
+              className="svg-156"
             />
             <Image
               src="/assets/pasted-artwork-138.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-111"
+              className="svg-108"
             />
             <Image
               src="/assets/pasted-artwork-139.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-112"
+              className="svg-109"
+            />
+            <Image
+              src="/assets/pasted-artwork-246.svg"
+              alt=""
+              width={175}
+              height={63}
+              className="pasted-artwork-svg-76"
             />
           </div>
-          <div id="committee14" data-toggle-show="flex" className="el-1450">
+          <div id="committee14" data-toggle-show="flex" className="el-1445">
             <Image
-              src="/assets/pasted-artwork-242.svg"
+              src="/assets/pasted-artwork-245.svg"
               alt=""
               width={306}
               height={537}
-              className="svg-317"
+              className="svg-314"
             />
           </div>
           <Image
@@ -375,10 +382,10 @@ export default function Page() {
             alt=""
             width={295}
             height={2502}
-            className="el-101"
+            className="el-98"
           />
           <span
-            className="crisp-svg el-169"
+            className="crisp-svg el-166"
           >
             <svg aria-hidden="true" width={1670} height={3081} viewBox="0 0 1670 3081" />
             <Image
