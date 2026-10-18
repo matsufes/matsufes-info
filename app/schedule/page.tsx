@@ -35,7 +35,7 @@ export default function Page() {
           <div id="memu-p" data-toggle-show="flex" className="el-446">
             <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-447">
               <span
-                className="crisp-svg svg-221"
+                className="crisp-svg svg-219"
               >
                 <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                 <Image
@@ -125,7 +125,7 @@ export default function Page() {
           <div className="el-457">
             <div id="matsufes" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu1\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu1\"}],\"keep\":true}]"} className="el-458" data-p="">
               <span
-                className="crisp-svg svg-222"
+                className="crisp-svg svg-220"
               >
                 <svg aria-hidden="true" width={244} height={55} viewBox="0 0 244 55" />
                 <Image
@@ -152,7 +152,7 @@ export default function Page() {
             </div>
             <div id="kikaku" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu2\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu2\"}],\"keep\":true}]"} className="el-463" data-p="">
               <span
-                className="crisp-svg svg-223"
+                className="crisp-svg svg-221"
               >
                 <svg aria-hidden="true" width={153} height={55} viewBox="0 0 153 55" />
                 <Image
@@ -179,7 +179,7 @@ export default function Page() {
             </div>
             <div id="goannai" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu3\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu3\"}],\"keep\":true}]"} className="el-469" data-p="">
               <span
-                className="crisp-svg svg-224"
+                className="crisp-svg svg-222"
               >
                 <svg aria-hidden="true" width={93} height={61} viewBox="0 0 93 61" />
                 <Image
@@ -209,7 +209,7 @@ export default function Page() {
             </div>
             <div id="kousiki" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu4\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu4\"}],\"keep\":true}]"} className="el-476" data-p="">
               <span
-                className="crisp-svg svg-225"
+                className="crisp-svg svg-223"
               >
                 <svg aria-hidden="true" width={127} height={58} viewBox="0 0 127 58" />
                 <Image
@@ -321,7 +321,7 @@ export default function Page() {
         </Link>
       </section>
       <section className="select">
-        <select id="choice" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"ストリートパフォーマンス\"},\"then\":[{\"kind\":\"show\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"committee14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"メインステージ\"},\"then\":[{\"kind\":\"show\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"committee14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"センターホール\"},\"then\":[{\"kind\":\"show\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"committee14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"委員会企画\"},\"then\":[{\"kind\":\"show\",\"target\":\"committee14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"main14\"}]}]}]"} className="select-2" name="choice">
+        <select id="choice" data-scripts={"[{\"trigger\":\"change\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"ストリートパフォーマンス\"},\"then\":[{\"kind\":\"show\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"committee14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"メインステージ\"},\"then\":[{\"kind\":\"show\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"committee14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"センターホール\"},\"then\":[{\"kind\":\"show\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"committee14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"委員会企画\"},\"then\":[{\"kind\":\"show\",\"target\":\"committee14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"main14\"}]}]}]"} className="select-2" name="choice">
           <option>場所を選んでね。</option>
           <option>メインステージ</option>
           <option>センターホール</option>
@@ -351,77 +351,77 @@ export default function Page() {
               alt=""
               width={306}
               height={113}
-              className="svg-110"
+              className="svg-109"
             />
             <Image
               src="/assets/pasted-artwork-141.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-111"
+              className="svg-110"
             />
             <Image
               src="/assets/pasted-artwork-142.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-112"
+              className="svg-111"
             />
             <Image
               src="/assets/pasted-artwork-143.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-113"
+              className="svg-112"
             />
             <Image
               src="/assets/pasted-artwork-144.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-114"
+              className="svg-113"
             />
             <Image
               src="/assets/pasted-artwork-145.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-115"
+              className="svg-114"
             />
             <Image
               src="/assets/pasted-artwork-146.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-116"
+              className="svg-115"
             />
             <Image
               src="/assets/pasted-artwork-147.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-117"
+              className="svg-116"
             />
             <Image
               src="/assets/pasted-artwork-148.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-118"
+              className="svg-117"
             />
             <Image
               src="/assets/pasted-artwork-149.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-119"
+              className="svg-118"
             />
             <Image
               src="/assets/pasted-artwork-150.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-120"
+              className="svg-119"
             />
           </div>
           <div id="center14" data-toggle-show="flex" className="el-82">
@@ -460,14 +460,14 @@ export default function Page() {
               alt=""
               width={306}
               height={113}
-              className="svg-141"
+              className="svg-140"
             />
             <Image
               src="/assets/pasted-artwork-183.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-142"
+              className="svg-141"
             />
           </div>
           <div id="committee14" data-toggle-show="flex" className="el-103">

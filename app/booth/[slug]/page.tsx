@@ -163,7 +163,7 @@ export default async function Page({
             <div className="el-1220">
               <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-1221">
                 <span
-                  className="crisp-svg svg-310"
+                  className="crisp-svg svg-308"
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image

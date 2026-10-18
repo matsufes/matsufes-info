@@ -35,7 +35,7 @@ export default function Page() {
           <div id="memu-p" data-toggle-show="flex" className="el-1189">
             <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-1180">
               <span
-                className="crisp-svg svg-302"
+                className="crisp-svg svg-300"
               >
                 <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                 <Image
@@ -125,7 +125,7 @@ export default function Page() {
           <div className="el-1213">
             <div id="matsufes" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu1\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu1\"}],\"keep\":true}]"} className="el-1195" data-p="">
               <span
-                className="crisp-svg svg-303"
+                className="crisp-svg svg-301"
               >
                 <svg aria-hidden="true" width={244} height={55} viewBox="0 0 244 55" />
                 <Image
@@ -152,7 +152,7 @@ export default function Page() {
             </div>
             <div id="kikaku" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu2\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu2\"}],\"keep\":true}]"} className="el-1201" data-p="">
               <span
-                className="crisp-svg svg-304"
+                className="crisp-svg svg-302"
               >
                 <svg aria-hidden="true" width={153} height={55} viewBox="0 0 153 55" />
                 <Image
@@ -179,7 +179,7 @@ export default function Page() {
             </div>
             <div id="goannai" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu3\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu3\"}],\"keep\":true}]"} className="el-1208" data-p="">
               <span
-                className="crisp-svg svg-305"
+                className="crisp-svg svg-303"
               >
                 <svg aria-hidden="true" width={93} height={61} viewBox="0 0 93 61" />
                 <Image
@@ -209,7 +209,7 @@ export default function Page() {
             </div>
             <div id="kousiki" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu4\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu4\"}],\"keep\":true}]"} className="el-1212" data-p="">
               <span
-                className="crisp-svg svg-306"
+                className="crisp-svg svg-304"
               >
                 <svg aria-hidden="true" width={127} height={58} viewBox="0 0 127 58" />
                 <Image
@@ -243,7 +243,7 @@ export default function Page() {
       </section>
       <section className="box-368">
         <span
-          className="crisp-svg svg-307"
+          className="crisp-svg svg-305"
         >
           <svg aria-hidden="true" width={1113} height={135} viewBox="0 0 1113 135" />
           <Image
@@ -255,7 +255,7 @@ export default function Page() {
         </span>
         <p className="box-366">
           <span
-            className="crisp-svg svg-308"
+            className="crisp-svg svg-306"
           >
             <svg aria-hidden="true" width={371} height={38} viewBox="0 0 371 38" />
             <Image
@@ -268,7 +268,7 @@ export default function Page() {
         </p>
         <div className="box-367">
           <span
-            className="crisp-svg svg-309"
+            className="crisp-svg svg-307"
           >
             <svg aria-hidden="true" width={400} height={400} viewBox="0 0 400 400" />
             <Image

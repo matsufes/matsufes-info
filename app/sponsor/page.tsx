@@ -35,7 +35,7 @@ export default function Page() {
           <div id="memu-p" data-toggle-show="flex" className="el-902">
             <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"wait\",\"seconds\":0.5},{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-903">
               <span
-                className="crisp-svg svg-281"
+                className="crisp-svg svg-279"
               >
                 <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                 <Image
@@ -125,7 +125,7 @@ export default function Page() {
           <div className="el-913">
             <div id="matsufes" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu1\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu1\"}],\"keep\":true}]"} className="el-914" data-p="">
               <span
-                className="crisp-svg svg-282"
+                className="crisp-svg svg-280"
               >
                 <svg aria-hidden="true" width={244} height={55} viewBox="0 0 244 55" />
                 <Image
@@ -152,7 +152,7 @@ export default function Page() {
             </div>
             <div id="kikaku" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu2\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu2\"}],\"keep\":true}]"} className="el-919" data-p="">
               <span
-                className="crisp-svg svg-283"
+                className="crisp-svg svg-281"
               >
                 <svg aria-hidden="true" width={153} height={55} viewBox="0 0 153 55" />
                 <Image
@@ -179,7 +179,7 @@ export default function Page() {
             </div>
             <div id="goannai" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu3\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu3\"}],\"keep\":true}]"} className="el-925" data-p="">
               <span
-                className="crisp-svg svg-284"
+                className="crisp-svg svg-282"
               >
                 <svg aria-hidden="true" width={93} height={61} viewBox="0 0 93 61" />
                 <Image
@@ -209,7 +209,7 @@ export default function Page() {
             </div>
             <div id="kousiki" data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"menu4\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"menu4\"}],\"keep\":true}]"} className="el-932" data-p="">
               <span
-                className="crisp-svg svg-285"
+                className="crisp-svg svg-283"
               >
                 <svg aria-hidden="true" width={127} height={58} viewBox="0 0 127 58" />
                 <Image
@@ -244,7 +244,7 @@ export default function Page() {
       <section data-inview className="el-87" />
       <p className="box-65">
         <span
-          className="crisp-svg svg-157"
+          className="crisp-svg svg-156"
         >
           <svg aria-hidden="true" width={1161} height={131} viewBox="0 0 1161 131" />
           <Image
@@ -269,7 +269,7 @@ export default function Page() {
       </p>
       <section className="box-123">
         <span
-          className="crisp-svg svg-132"
+          className="crisp-svg svg-131"
         >
           <svg aria-hidden="true" width={438} height={114} viewBox="0 0 438 114" />
           <Image
@@ -290,7 +290,7 @@ export default function Page() {
       </section>
       <section className="box-124">
         <span
-          className="crisp-svg svg-133"
+          className="crisp-svg svg-132"
         >
           <svg aria-hidden="true" width={438} height={114} viewBox="0 0 438 114" />
           <Image
@@ -311,7 +311,7 @@ export default function Page() {
       </section>
       <section className="box-132">
         <span
-          className="crisp-svg svg-154"
+          className="crisp-svg svg-153"
         >
           <svg aria-hidden="true" width={438} height={114} viewBox="0 0 438 114" />
           <Image

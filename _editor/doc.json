@@ -13243,7 +13243,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mufautx993"
+        "node_mvdpzq5jp"
       ],
       "styles": {
         "base": {
@@ -13583,36 +13583,6 @@
         "sm": {
           "default": {
             "width": "50%"
-          }
-        }
-      }
-    },
-    "node_mufautx993": {
-      "id": "node_mufautx993",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmufaut8i-pasted-artwork.svg",
-        "alt": "",
-        "width": 1383,
-        "height": 304,
-        "assetId": "asset_mufautx992"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "90%",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "100%"
           }
         }
       }
@@ -16710,7 +16680,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mv6h283co"
+        "node_mvdpwbs4n"
       ],
       "styles": {
         "base": {
@@ -17921,7 +17891,7 @@
             "x": 132,
             "y": 544
           },
-          "trigger": "click"
+          "trigger": "change"
         }
       ]
     },
@@ -18133,7 +18103,7 @@
             "x": 147,
             "y": 42
           },
-          "trigger": "click"
+          "trigger": "change"
         }
       ]
     },
@@ -21053,7 +21023,7 @@
       "scripts": [
         {
           "id": "sc_munr7288l",
-          "trigger": "click",
+          "trigger": "change",
           "steps": [
             {
               "id": "st_munr7734m",
@@ -21069,6 +21039,11 @@
                   "id": "st_munr7j2jn",
                   "kind": "show",
                   "target": "main"
+                },
+                {
+                  "id": "st_mvdqsyb51",
+                  "kind": "hide",
+                  "target": "committee14"
                 }
               ]
             },
@@ -21086,6 +21061,11 @@
                   "id": "st_munr8xqlr",
                   "kind": "hide",
                   "target": "main"
+                },
+                {
+                  "id": "st_mvdr03da2",
+                  "kind": "hide",
+                  "target": "committee14"
                 }
               ]
             },
@@ -21103,6 +21083,11 @@
                   "id": "st_munr8z88s",
                   "kind": "hide",
                   "target": "main"
+                },
+                {
+                  "id": "st_mvdr0cju3",
+                  "kind": "hide",
+                  "target": "committee14"
                 }
               ]
             },
@@ -21116,6 +21101,11 @@
                 "value": "委員会企画"
               },
               "then": [
+                {
+                  "id": "st_mvdr0krg4",
+                  "kind": "show",
+                  "target": "committee14"
+                },
                 {
                   "id": "st_munr90o3t",
                   "kind": "hide",
@@ -47161,31 +47151,6 @@
         "sm": {
           "default": {
             "width": "90%"
-          }
-        }
-      }
-    },
-    "node_mv6h283co": {
-      "id": "node_mv6h283co",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmv6h27fh-pasted-artwork.svg",
-        "alt": "",
-        "width": 985,
-        "height": 748,
-        "assetId": "asset_mv6h283bn"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "985px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
           }
         }
       }
@@ -110208,7 +110173,8 @@
         "base": {
           "default": {
             "width": "32px",
-            "zIndex": "2"
+            "zIndex": "2",
+            "display": "block"
           }
         }
       },
@@ -113367,7 +113333,8 @@
             "fontSize": "1.3rem",
             "fontWeight": "700",
             "color": "#9b7a81",
-            "textAlign": "center"
+            "textAlign": "center",
+            "fontFamily": "Zen Kaku Gothic New"
           }
         },
         "md": {
@@ -114990,7 +114957,8 @@
             "fontSize": "1.3rem",
             "fontWeight": "700",
             "color": "#9b7a81",
-            "textAlign": "center"
+            "textAlign": "center",
+            "fontFamily": "Zen Kaku Gothic New"
           }
         },
         "md": {
@@ -115050,7 +115018,8 @@
           "default": {
             "fontSize": "1.3rem",
             "fontWeight": "700",
-            "color": "#9b7a81"
+            "color": "#9b7a81",
+            "fontFamily": "Zen Kaku Gothic New"
           }
         },
         "md": {
@@ -147954,7 +147923,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mv9pbe1m2"
+        "node_mvdqkqder"
       ],
       "styles": {
         "base": {
@@ -147978,55 +147947,16 @@
         },
         "sm": {
           "default": {
-            "width": "80%",
+            "width": "85%",
             "height": "100%",
-            "left": "23%"
+            "left": "20%"
           }
         }
       },
       "attrId": "committee14",
       "hiddenOn": [
-        "base",
-        "lg",
-        "md",
         "sm"
       ]
-    },
-    "node_mv9pbe1m2": {
-      "id": "node_mv9pbe1m2",
-      "type": "image",
-      "name": "キッチンカー",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmv9pbdh2-pasted-artwork.svg",
-        "alt": "",
-        "width": 306,
-        "height": 537,
-        "assetId": "asset_mv9pbe1l1"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "100%",
-            "maxWidth": "100%",
-            "borderRadius": "0px",
-            "position": "absolute",
-            "left": "0px",
-            "bottom": "11.5%"
-          }
-        },
-        "lg": {
-          "default": {
-            "position": "absolute",
-            "left": "0px",
-            "bottom": "11.5%",
-            "width": "100%"
-          }
-        }
-      }
     },
     "node_mv9plm4w6": {
       "id": "node_mv9plm4w6",
@@ -150350,6 +150280,20 @@
         "base",
         "lg",
         "md"
+      ],
+      "motions": [
+        {
+          "id": "motion_mvdm3jnil",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
       ]
     },
     "node_mvaih8ou1u": {
@@ -150557,15 +150501,101 @@
         "base": {
           "default": {
             "display": "flex",
-            "flexDirection": "column",
             "padding": "0px",
             "gap": "0px",
             "width": "35px",
             "flexShrink": "0",
             "height": "35px",
             "marginRight": "4px",
+            "pointerEvents": "auto",
+            "zIndex": "2",
             "justifyContent": "center",
-            "alignItems": "center"
+            "alignItems": "center",
+            "gridTemplateColumns": "repeat(2, 1fr)",
+            "flexDirection": "column"
+          }
+        }
+      }
+    },
+    "node_mvdpwbs4n": {
+      "id": "node_mvdpwbs4n",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvdpwb8f-pasted-artwork.svg",
+        "alt": "",
+        "width": 985,
+        "height": 748,
+        "assetId": "asset_mvdpwbs1m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "985px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      }
+    },
+    "node_mvdpzq5jp": {
+      "id": "node_mvdpzq5jp",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvdpzpj6-pasted-artwork.svg",
+        "alt": "",
+        "width": 1383,
+        "height": 304,
+        "assetId": "asset_mvdpzq5jo"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "1383px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      }
+    },
+    "node_mvdqkqder": {
+      "id": "node_mvdqkqder",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvdqkq35-pasted-artwork.svg",
+        "alt": "",
+        "width": 306,
+        "height": 537,
+        "assetId": "asset_mvdqkqdeq"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "position": "absolute",
+            "left": "0px",
+            "bottom": "11.5%"
+          }
+        },
+        "sm": {
+          "default": {
+            "bottom": "12.5%"
           }
         }
       }
@@ -153494,6 +153524,36 @@
       "width": 375,
       "height": 347,
       "svgFilter": true
+    },
+    "asset_mvdpwbs1m": {
+      "id": "asset_mvdpwbs1m",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mvdpwb8f-pasted-artwork.svg",
+      "bytes": 600293,
+      "mimeType": "image/svg+xml",
+      "width": 985,
+      "height": 748,
+      "svgFilter": true
+    },
+    "asset_mvdpzq5jo": {
+      "id": "asset_mvdpzq5jo",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mvdpzpj6-pasted-artwork.svg",
+      "bytes": 33386,
+      "mimeType": "image/svg+xml",
+      "width": 1383,
+      "height": 304,
+      "svgFilter": false
+    },
+    "asset_mvdqkqdeq": {
+      "id": "asset_mvdqkqdeq",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mvdqkq35-pasted-artwork.svg",
+      "bytes": 44303,
+      "mimeType": "image/svg+xml",
+      "width": 306,
+      "height": 537,
+      "svgFilter": false
     }
   },
   "components": {}
