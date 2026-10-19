@@ -1,4 +1,13 @@
 (function (env) {
+function safeNavigationUrl(value) {
+var url = value.trim();
+if (!url || /[\u0000-\u001f\u007f\\]/.test(url) || url.indexOf("//") === 0) return "#";
+var match = /^([a-z][a-z0-9+.-]*):/i.exec(url);
+var scheme = match && match[1].toLowerCase();
+if (scheme && ["http", "https", "mailto", "tel"].indexOf(scheme) < 0) return "#";
+if ((scheme === "http" || scheme === "https") && !/^https?:\/\//i.test(url)) return "#";
+return url;
+}
 var cache = new Map();
 function parse(el) {
 var raw = el.getAttribute("data-scripts") || "[]";
@@ -50,13 +59,57 @@ return el.matches("input,select,textarea")
 ? el
 : el.querySelector("input,select,textarea");
 }
+function radiosOf(input) {
+if (!input.name) return [input];
+try {
+return Array.prototype.slice.call(
+document.querySelectorAll('input[type="radio"][name="' + CSS.escape(input.name) + '"]')
+);
+} catch (e) {
+return [input];
+}
+}
+function truthy(v) {
+v = String(v == null ? "" : v).trim().toLowerCase();
+return v !== "" && v !== "off" && v !== "false" && v !== "0" && v !== "no";
+}
+function isRadioItem(el, input) {
+return !!input && input.type === "radio" && !!el.id && el.id !== input.name;
+}
+function stateOf(els, prop) {
+var input = els.length ? inputOf(els[0]) : null;
+if (!input && els.length && els[0].matches("button")) input = els[0];
+if (!input) return undefined;
+var radios = input.type === "radio" ? radiosOf(input) : null;
+switch (prop) {
+case "disabled":
+return String(!!input.disabled);
+case "length":
+return String(valueOf(els).length);
+case "index":
+if (input.tagName === "SELECT") return String(input.selectedIndex + 1);
+if (radios) {
+var at = -1;
+radios.forEach(function (r, i) {
+if (r.checked) at = i;
+});
+return at < 0 ? "" : String(at + 1);
+}
+return undefined;
+default:
+return undefined;
+}
+}
 function valueOf(els) {
 for (var i = 0; i < els.length; i++) {
 var input = inputOf(els[i]);
 if (!input) return (els[i].textContent || "").trim();
-if (input.type === "checkbox") return input.checked ? "on" : "";
+if (input.type === "checkbox" || isRadioItem(els[i], input)) return input.checked ? "true" : "false";
 if (input.type === "radio") {
-if (input.checked) return input.value;
+var hit = radiosOf(input).filter(function (r) {
+return r.checked;
+})[0];
+if (hit) return hit.value;
 continue;
 }
 return input.value;
@@ -64,7 +117,8 @@ return input.value;
 return "";
 }
 function go(url, newTab) {
-if (!url) return;
+if (!url || safeNavigationUrl(url) === "#") return;
+url = safeNavigationUrl(url);
 if (newTab) {
 window.open(url, "_blank", "noopener");
 return;
@@ -199,8 +253,41 @@ var vars = {};
 function getVar(name) {
 return has(vars, name) ? vars[name] : dig(vars, name);
 }
+function writeVar(name, v) {
+if (!name) return;
+if (name.indexOf(".") < 0 || has(vars, name)) {
+vars[name] = v;
+return;
+}
+var ks = name.split(".");
+var cur = vars;
+for (var i = 0; i < ks.length - 1; i++) {
+var k = ks[i].trim();
+var nx = cur[k];
+if (nx == null || typeof nx !== "object" || Array.isArray(nx)) {
+vars[name] = v;
+return;
+}
+var cp = {};
+for (var ok in nx) if (has(nx, ok)) cp[ok] = nx[ok];
+cur[k] = cp;
+cur = cp;
+}
+cur[ks[ks.length - 1].trim()] = v;
+}
 function inTpl(el) {
 return !!(el.closest && el.closest("[data-tpl]"));
+}
+function groupOf(name) {
+try {
+return Array.prototype.slice
+.call(root.querySelectorAll('input[type="radio"][name="' + CSS.escape(name) + '"]'))
+.filter(function (el) {
+return !inTpl(el);
+});
+} catch (e) {
+return [];
+}
 }
 function find(self, target) {
 if (!target || target === "@self") return self ? [self] : [];
@@ -230,8 +317,15 @@ if (iv !== undefined) return iv;
 }
 var v = getVar(name);
 if (v !== undefined) return v;
-var els = find(self, name.split(".")[0]);
-if (els.length) return valueOf(els);
+var dot = name.indexOf(".");
+var head = dot < 0 ? name : name.slice(0, dot);
+var prop = dot < 0 ? "" : name.slice(dot + 1);
+var els = find(self, head);
+if (!els.length) els = groupOf(head);
+if (els.length) {
+var state = prop ? stateOf(els, prop) : undefined;
+return state !== undefined ? state : valueOf(els);
+}
 try {
 var q = new URLSearchParams(location.search).get(name);
 if (q != null) return q;
@@ -239,14 +333,14 @@ if (q != null) return q;
 return "";
 }
 function resolve(s, self, item) {
-return String(s == null ? "" : s).replace(/\\\{|\{([^{}]+)\}/g, function (m, k) {
+return String(s == null ? "" : s).replace(/\\\{|\{([^{}\s"'<>`]+)\}/g, function (m, k) {
 if (k == null) return "{";
 return text(lookup(k.trim(), self, item));
 });
 }
 function resolveUrl(s, self, item) {
 return String(s == null ? "" : s).replace(
-/\\\{|\{([^{}]+)\}|%7B(.*?)%7D/gi,
+/\\\{|\{([^{}\s"'<>`]+)\}|%7B(.*?)%7D/gi,
 function (m, a, b, at) {
 if (m === "\\{") return "{";
 var k = a;
@@ -256,17 +350,16 @@ k = decodeURIComponent(b);
 } catch (e) {
 return m;
 }
+if (!/^[^{}\s"'<>`]+$/.test(k)) return m;
 }
 var v = text(lookup(k.trim(), self, item));
-return at === 0 && (/^(https?:|mailto:|tel:)/i.test(v) || v.charAt(0) === "/" || v.charAt(0) === "#")
+return at === 0 && (/^(?:https?:|mailto:|tel:|data:image/(?:png|jpe?g|gif|webp|avif|bmp|x-icon|vnd.microsoft.icon)[;,])/i.test(v) || (v.charAt(0) === "/" && v.charAt(1) !== "/") || v.charAt(0) === "#")
 ? v
 : encodeURIComponent(v);
 }
 );
 }
-function setVar(name, v) {
-if (!name) return;
-vars[name] = v;
+function refreshLive() {
 root.querySelectorAll("[data-live]").forEach(function (el) {
 if (inTpl(el)) return;
 var t = el.firstChild;
@@ -274,8 +367,27 @@ if (!t || t.nodeType !== 3) {
 t = document.createTextNode("");
 el.insertBefore(t, el.firstChild);
 }
-t.nodeValue = resolve(el.getAttribute("data-live"), el);
+var next = resolve(el.getAttribute("data-live"), el);
+if (t.nodeValue !== next) t.nodeValue = next;
 });
+root.querySelectorAll("[data-live-placeholder]").forEach(function (el) {
+if (inTpl(el)) return;
+el.placeholder = resolve(el.getAttribute("data-live-placeholder"), el);
+});
+root.querySelectorAll("[data-live-value]").forEach(function (el) {
+if (inTpl(el) || el.hasAttribute("data-edited")) return;
+var nv = resolve(el.getAttribute("data-live-value"), el);
+if (el.value !== nv) el.value = nv;
+});
+}
+function onLiveInput(e) {
+if (e.isTrusted && e.target && e.target.setAttribute) e.target.setAttribute("data-edited", "");
+refreshLive();
+}
+function setVar(name, v) {
+if (!name) return;
+writeVar(name, v);
+refreshLive();
 }
 function test(c, self, sc) {
 if (c.subject === "var") {
@@ -284,7 +396,18 @@ return cmp(resolve(c.left, self, sc), c.op, resolve(c.value, self, sc));
 var els = find(self, c.target);
 var r = false;
 if (c.subject === "value") {
-return cmp(valueOf(els), c.op, resolve(c.value, self, sc));
+var w = resolve(c.value, self, sc);
+var box = els.length ? inputOf(els[0]) : null;
+if (box && (box.type === "checkbox" || isRadioItem(els[0], box))) {
+var on = !!box.checked;
+if (c.op === "empty") return !on;
+if (c.op === "not-empty") return on;
+if (!c.op || c.op === "eq" || c.op === "neq") {
+var same = truthy(w) === on;
+return c.op === "neq" ? !same : same;
+}
+}
+return cmp(valueOf(els), c.op, w);
 }
 return c.not ? !r : r;
 }
@@ -387,17 +510,28 @@ return out;
 }
 function setValue(self, id, v) {
 var els = find(self, id);
+if (!els.length) els = groupOf(id);
+var first = els.length ? inputOf(els[0]) : null;
+var toggle = !!first && (first.type === "checkbox" || isRadioItem(els[0], first));
+if (toggle) v = truthy(v) ? "true" : "false";
+else if (first && first.type === "radio") els = radiosOf(first);
 if (valueOf(els) === v) return;
+var changed = [];
 els.forEach(function (el) {
 var input = inputOf(el);
 if (!input) return;
-if (input.type === "checkbox") {
-input.checked = v !== "" && v !== "off" && v !== "false";
-} else if (input.type === "radio") {
-input.checked = input.value === v;
+if (input.type === "checkbox" || input.type === "radio") {
+var on = toggle ? v === "true" : input.value === v;
+if (input.checked === on) return;
+input.checked = on;
+if (!on && input.type === "radio") return;
 } else {
+if (input.value === v || (input.type === "file" && v !== "")) return;
 input.value = v;
 }
+changed.push(input);
+});
+changed.forEach(function (input) {
 input.dispatchEvent(new Event("input", { bubbles: true }));
 input.dispatchEvent(new Event("change", { bubbles: true }));
 });
@@ -440,6 +574,17 @@ break;
 }
 case "set-value":
 setValue(self, st.target, resolve(st.value, self, sc));
+break;
+case "set-enabled":
+(find(self, st.target).length ? find(self, st.target) : groupOf(st.target)).forEach(function (el) {
+var ctl = el.matches("button") ? el : inputOf(el);
+if (!ctl) return;
+var list = ctl.type === "radio" && !isRadioItem(el, ctl) ? radiosOf(ctl) : [ctl];
+list.forEach(function (c) {
+c.disabled = st.op === "toggle" ? !c.disabled : st.op === "disable";
+});
+});
+refreshLive();
 break;
 case "filter-array": {
 if (!st.array || !st.conds || !st.conds.length) break;
@@ -573,6 +718,16 @@ break;
 case "count": {
 var ca = getVar(st.array);
 var cn = Array.isArray(ca) ? ca.length : 0;
+if (!Array.isArray(ca)) {
+try {
+var cl0 = root.querySelector('[data-array="' + CSS.escape(st.array) + '"]:not([data-client-list])');
+if (cl0) {
+cn = Array.prototype.filter.call(cl0.children, function (w) {
+return w.hasAttribute("data-item");
+}).length;
+}
+} catch (e) {}
+}
 var cf = filters.get(st.array) || [];
 if (Array.isArray(ca)) {
 cn = itemsOf(ca).filter(function (x) {
@@ -598,7 +753,7 @@ st.into,
 Array.isArray(src)
 ? src
 .map(function (x) {
-var v = st.field ? dig(x, st.field) : x;
+var v = st.field && x && typeof x === "object" ? dig(x, st.field) : x;
 return v == null || typeof v === "object" ? "" : String(v);
 })
 .filter(function (x) {
@@ -647,9 +802,34 @@ el = el.parentElement && el.parentElement.closest("[data-scripts]");
 }
 return out;
 }
+function clickSteps(el) {
+return parse(el).filter(function (s) {
+return s.trigger === "click";
+});
+}
+function opensPage(steps) {
+return (steps || []).some(function (st) {
+return st.kind === "open-page" || st.kind === "open-url" ||
+opensPage(st.then) || opensPage(st.else);
+});
+}
+function innerClick(t) {
+var els = chain(t);
+for (var i = 0; i < els.length; i++) if (clickSteps(els[i]).length) return els[i];
+return null;
+}
+function onClickCapture(e) {
+var inner = innerClick(e.target);
+var a = inner && inner.parentElement && inner.parentElement.closest("a[href]");
+if (a && root.contains(a)) e.preventDefault();
+}
 function onClick(e) {
+var inner = null;
 chain(e.target).forEach(function (el) {
+var steps = clickSteps(el);
+if (inner && steps.some(function (s) { return opensPage(s.steps); })) return;
 fire(el, "click");
+if (!inner && steps.length) inner = el;
 });
 }
 function shownByHover(el) {
@@ -731,8 +911,19 @@ fire(el, "change");
 });
 }
 var seen = new WeakSet();
+var pageId = null;
 function scan() {
 if (!alive) return;
+var body = root.querySelector("[data-page-body]");
+var pid = body ? body.getAttribute("data-page-body") : null;
+if (pid !== pageId) {
+if (pageId !== null) {
+vars = {};
+filters.clear();
+sorts.clear();
+}
+pageId = pid;
+}
 if (sorts.size || filters.size) {
 root.querySelectorAll("[data-array]").forEach(function (list) {
 if (list.hasAttribute("data-client-list")) return;
@@ -765,10 +956,13 @@ attributes: true,
 attributeFilter: ["data-scripts"],
 });
 scan();
+root.addEventListener("click", onClickCapture, true);
 root.addEventListener("click", onClick);
 root.addEventListener("mouseover", onOver);
 root.addEventListener("mouseout", onOut);
 root.addEventListener("input", onInput);
+root.addEventListener("input", onLiveInput);
+refreshLive();
 return function dispose() {
 alive = false;
 filters.clear();
@@ -778,10 +972,12 @@ clearTimeout(t);
 });
 hovering.clear();
 mo.disconnect();
+root.removeEventListener("click", onClickCapture, true);
 root.removeEventListener("click", onClick);
 root.removeEventListener("mouseover", onOver);
 root.removeEventListener("mouseout", onOut);
 root.removeEventListener("input", onInput);
+root.removeEventListener("input", onLiveInput);
 };
 },
 };
