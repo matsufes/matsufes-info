@@ -152,7 +152,7 @@ export default function Page() {
           </div>
         </article>
       </main>
-      <footer className="footer-2">
+      <footer className="footer">
         <p className="el-763">
           {"© 第56回松ヶ崎祭実行委員会 All Rights Reserved."}
         </p>

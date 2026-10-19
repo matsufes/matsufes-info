@@ -129,7 +129,7 @@ export default async function Page() {
         </span>
         <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"memu-p\"}]}]"} className="el-464">
           <span
-            className="crisp-svg pasted-artwork-svg-52"
+            className="crisp-svg pasted-artwork-svg-51"
           >
             <svg aria-hidden="true" width={230} height={142} viewBox="0 0 230 142" />
             <Image
@@ -141,7 +141,7 @@ export default async function Page() {
           </span>
         </div>
         <div id="memu-p" data-toggle-show="flex" data-inview className="el-465">
-          <div className="box-369">
+          <div className="box-368">
             <div className="el-531">
               <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-466">
                 <span
@@ -233,7 +233,7 @@ export default async function Page() {
           <div className="container">
             <div data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-33\"},{\"kind\":\"show\",\"target\":\"div-34\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-33\"},{\"kind\":\"hide\",\"target\":\"div-34\"}]}]"} className="el-495">
               <div className="el-494">
-                <div className="box-362">
+                <div className="box-361">
                   <p className="text-103">
                     {"まつがさきさい"}
                   </p>
@@ -266,7 +266,7 @@ export default async function Page() {
             </div>
             <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-35\"},{\"kind\":\"hide\",\"target\":\"div-36\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-35\"},{\"kind\":\"show\",\"target\":\"div-36\"}]}]"} className="el-503">
               <div className="el-504">
-                <div className="box-363">
+                <div className="box-362">
                   <p className="text-106">
                     {"さがし"}
                   </p>
@@ -302,7 +302,7 @@ export default async function Page() {
                 <p className="text-111">
                   {"ご"}
                 </p>
-                <div className="box-364">
+                <div className="box-363">
                   <p className="text-109">
                     {"あんない"}
                   </p>
@@ -335,7 +335,7 @@ export default async function Page() {
             </div>
             <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-40\"},{\"kind\":\"hide\",\"target\":\"div-38\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-40\"},{\"kind\":\"show\",\"target\":\"div-38\"}]}]"} className="el-522">
               <div className="el-523">
-                <div className="box-365">
+                <div className="box-364">
                   <p className="text-112">
                     {"こうしきとくしゅう"}
                   </p>
@@ -1089,7 +1089,7 @@ export default async function Page() {
                           <p className="text-64">
                             {interpolate("{name}", iv0)}
                           </p>
-                          <div className="el-815">
+                          <div className="el-814">
                             <Image id="fav-on" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"remove","value":interpolate("{publicId}", { ...iv0, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...iv0, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"fav-on"},{"kind":"show","target":"fav-off"}]}])} data-toggle-show="block"
                               src="/assets/bkonn.svg"
                               alt="お気に入り登録済"
@@ -1207,9 +1207,9 @@ export default async function Page() {
           className="group-264-png"
         />
       </section>
-      <section data-inview className="footer-7">
+      <section data-inview className="footer-6">
         <span
-          className="crisp-svg pasted-artwork-svg-82"
+          className="crisp-svg pasted-artwork-svg-81"
         >
           <svg aria-hidden="true" width={1920} height={1015} viewBox="0 0 1920 1015" />
           <Image
@@ -1219,22 +1219,22 @@ export default async function Page() {
             height={2030}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1736">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1735">
           <Image
             src="/assets/pasted-artwork-164.svg"
             alt=""
             width={58}
             height={58}
-            className="svg-260"
+            className="svg-258"
           />
         </a>
-        <a href="https://x.com/matsufes_info" className="x-10">
+        <a href="https://x.com/matsufes_info" className="x-9">
           <Image
             src="/assets/pasted-artwork-165.svg"
             alt=""
             width={54}
             height={49}
-            className="svg-261"
+            className="svg-259"
           />
         </a>
       </section>

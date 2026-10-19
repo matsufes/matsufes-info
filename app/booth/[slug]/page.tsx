@@ -189,7 +189,7 @@ export default async function Page({
         </span>
         <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"memu-p\"}]}]"} className="el-533">
           <span
-            className="crisp-svg pasted-artwork-svg-54"
+            className="crisp-svg pasted-artwork-svg-53"
           >
             <svg aria-hidden="true" width={230} height={142} viewBox="0 0 230 142" />
             <Image
@@ -201,7 +201,7 @@ export default async function Page({
           </span>
         </div>
         <div id="memu-p" data-toggle-show="flex" data-inview className="el-534">
-          <div className="box-370">
+          <div className="box-369">
             <div className="el-535">
               <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-536">
                 <span
@@ -293,7 +293,7 @@ export default async function Page({
           <div className="container-8">
             <div data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-33\"},{\"kind\":\"show\",\"target\":\"div-34\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-33\"},{\"kind\":\"hide\",\"target\":\"div-34\"}]}]"} className="el-546">
               <div className="el-547">
-                <div className="box-371">
+                <div className="box-370">
                   <p className="text-114">
                     {"まつがさきさい"}
                   </p>
@@ -326,7 +326,7 @@ export default async function Page({
             </div>
             <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-35\"},{\"kind\":\"hide\",\"target\":\"div-36\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-35\"},{\"kind\":\"show\",\"target\":\"div-36\"}]}]"} className="el-555">
               <div className="el-556">
-                <div className="box-372">
+                <div className="box-371">
                   <p className="text-117">
                     {"さがし"}
                   </p>
@@ -362,7 +362,7 @@ export default async function Page({
                 <p className="text-120">
                   {"ご"}
                 </p>
-                <div className="box-373">
+                <div className="box-372">
                   <p className="text-121">
                     {"あんない"}
                   </p>
@@ -395,7 +395,7 @@ export default async function Page({
             </div>
             <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-40\"},{\"kind\":\"hide\",\"target\":\"div-38\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-40\"},{\"kind\":\"show\",\"target\":\"div-38\"}]}]"} className="el-574">
               <div className="el-575">
-                <div className="box-374">
+                <div className="box-373">
                   <p className="text-123">
                     {"こうしきとくしゅう"}
                   </p>
@@ -460,7 +460,7 @@ export default async function Page({
         </h2>
       </section>
       <section className="el-486">
-        <div className="box-343">
+        <div className="box-342">
           <div className="box-319">
             <div className="el-479">
               <div className="box-320">
@@ -514,7 +514,7 @@ export default async function Page({
                   </div>
                 </div>
                 <div className="box-329">
-                  <div className="box-344">
+                  <div className="box-343">
                     <Image
                       src="/assets/image-5.png"
                       alt="どこで"
@@ -526,8 +526,8 @@ export default async function Page({
                       {interpolate("{_1.location}", vars)}
                     </h2>
                   </div>
-                  <div className="box-345">
-                    <div className="box-338">
+                  <div className="box-344">
+                    <div className="box-337">
                       <Image
                         src="/assets/image-4.png"
                         alt="地図をひらくボタン"
@@ -535,8 +535,8 @@ export default async function Page({
                         height={107}
                         className="png-37"
                       />
-                      <div className="box-339">
-                        <div className="box-340">
+                      <div className="box-338">
+                        <div className="box-339">
                           <p className="text-84">
                             {"ちず"}
                           </p>
@@ -547,7 +547,7 @@ export default async function Page({
                         <p className="text-86">
                           {"を"}
                         </p>
-                        <div className="box-341">
+                        <div className="box-340">
                           <p className="text-87">
                             {"ひら"}
                           </p>
@@ -565,7 +565,7 @@ export default async function Page({
               </div>
             </div>
           </div>
-          <div className="box-346">
+          <div className="box-345">
             <div className="el-482">
               {toItems(lookupVar(vars, "_4")).map((item, i) => {
                 const iv1 = { ...vars, ...item };
@@ -602,9 +602,9 @@ export default async function Page({
               </div>
             </div>
           </div>
-          <div className="box-350">
-            <div className="box-361">
-              <div className="box-351">
+          <div className="box-349">
+            <div className="box-360">
+              <div className="box-350">
                 <Image
                   src="/assets/_-_2.png"
                   alt=""
@@ -625,8 +625,8 @@ export default async function Page({
                   })}
                 </div>
               </div>
-              <div className="box-352">
-                <div className="box-353">
+              <div className="box-351">
+                <div className="box-352">
                   <Image
                     src="/assets/image-5.png"
                     alt=""
@@ -640,7 +640,7 @@ export default async function Page({
                 </div>
               </div>
             </div>
-            <div className="box-354">
+            <div className="box-353">
               <SmartLink href={safeNavigationUrl(interpolateUrl("https://map.matsufes.info/?id={_1.publicId}", vars))} className="el-493">
                 <Image
                   src="/assets/image-4.png"
@@ -649,8 +649,8 @@ export default async function Page({
                   height={107}
                   className="png-39"
                 />
-                <div className="box-355">
-                  <div className="box-356">
+                <div className="box-354">
+                  <div className="box-355">
                     <p className="text-96">
                       {"ちず"}
                     </p>
@@ -661,7 +661,7 @@ export default async function Page({
                   <p className="text-98">
                     {"を"}
                   </p>
-                  <div className="box-357">
+                  <div className="box-356">
                     <p className="text-99">
                       {"ひら"}
                     </p>
@@ -676,18 +676,18 @@ export default async function Page({
               </SmartLink>
             </div>
           </div>
-          <div className="box-331">
-            <div className="box-358">
-              <div className="box-359">
+          <div className="box-330">
+            <div className="box-357">
+              <div className="box-358">
                 <p className="text-102">
                   {interpolate("{_1.description}", vars)}
                 </p>
-                <div className="box-360" />
+                <div className="box-359" />
               </div>
             </div>
-            <div className="box-347">
+            <div className="box-346">
               <div className="fav">
-                <div className="box-342">
+                <div className="box-341">
                   <Image id="fav-svg" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"add","value":interpolate("{_1.publicId}", { ...vars, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...vars, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"fav-svg"},{"kind":"show","target":"favoff"}]}])} data-toggle-show="block"
                     src="/assets/fav.svg"
                     alt="お気に入り登録済"
@@ -714,24 +714,24 @@ export default async function Page({
                   alt="m-1グランプリ"
                   width={162}
                   height={237}
-                  className="pasted-artwork-svg-53"
+                  className="pasted-artwork-svg-52"
                 />
                 <p className="text-91">
                   {"m-1グランプリに\n投票する"}
                 </p>
               </SmartLink>
             </div>
-            <div className="box-348">
-              <div className="box-332">
+            <div className="box-347">
+              <div className="box-331">
                 <p className="text-80">
                   {interpolate("{_1.description}", vars)}
                 </p>
-                <div className="box-333" />
+                <div className="box-332" />
               </div>
             </div>
           </div>
-          <div className="box-349">
-            <div className="box-334">
+          <div className="box-348">
+            <div className="box-333">
               <Image id="x" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{_1.snsX}", { ...vars, ...{"\u0000keepEscapes":true} }),"newTab":true}]}])}
                 src="/assets/pasted-artwork-212.svg"
                 alt="X"
@@ -755,7 +755,7 @@ export default async function Page({
               />
             </div>
           </div>
-          <div className="box-335">
+          <div className="box-334">
             <Link href="/search" className="back">
               <Image
                 src="/assets/image-4.png"
@@ -764,8 +764,8 @@ export default async function Page({
                 height={107}
                 className="png-36"
               />
-              <div className="box-336">
-                <div className="box-337">
+              <div className="box-335">
+                <div className="box-336">
                   <p className="text-81">
                     {"いちらん"}
                   </p>
@@ -790,9 +790,9 @@ export default async function Page({
           className="group-264-png-2"
         />
       </section>
-      <section data-inview className="footer-11">
+      <section data-inview className="footer-10">
         <span
-          className="crisp-svg pasted-artwork-svg-87"
+          className="crisp-svg pasted-artwork-svg-86"
         >
           <svg aria-hidden="true" width={1920} height={1015} viewBox="0 0 1920 1015" />
           <Image
@@ -802,22 +802,22 @@ export default async function Page({
             height={2030}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1791">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1790">
           <Image
             src="/assets/pasted-artwork-164.svg"
             alt=""
             width={58}
             height={58}
-            className="svg-272"
+            className="svg-270"
           />
         </a>
-        <a href="https://x.com/matsufes_info" className="x-14">
+        <a href="https://x.com/matsufes_info" className="x-13">
           <Image
             src="/assets/pasted-artwork-165.svg"
             alt=""
             width={54}
             height={49}
-            className="svg-273"
+            className="svg-271"
           />
         </a>
       </section>
