@@ -1,4 +1,13 @@
 (function (env) {
+function safeNavigationUrl(value) {
+var url = value.trim();
+if (!url || /[\u0000-\u001f\u007f\\]/.test(url) || url.indexOf("//") === 0) return "#";
+var match = /^([a-z][a-z0-9+.-]*):/i.exec(url);
+var scheme = match && match[1].toLowerCase();
+if (scheme && ["http", "https", "mailto", "tel"].indexOf(scheme) < 0) return "#";
+if ((scheme === "http" || scheme === "https") && !/^https?:\/\//i.test(url)) return "#";
+return url;
+}
 var cache = new Map();
 function parse(el) {
 var raw = el.getAttribute("data-scripts") || "[]";
@@ -65,7 +74,7 @@ v = String(v == null ? "" : v).trim().toLowerCase();
 return v !== "" && v !== "off" && v !== "false" && v !== "0" && v !== "no";
 }
 function isRadioItem(el, input) {
-return !!input && input.type === "radio" && !!input.name && !!el.id && el.id !== input.name;
+return !!input && input.type === "radio" && !!el.id && el.id !== input.name;
 }
 function stateOf(els, prop) {
 var input = els.length ? inputOf(els[0]) : null;
@@ -108,7 +117,8 @@ return input.value;
 return "";
 }
 function go(url, newTab) {
-if (!url) return;
+if (!url || safeNavigationUrl(url) === "#") return;
+url = safeNavigationUrl(url);
 if (newTab) {
 window.open(url, "_blank", "noopener");
 return;
@@ -323,14 +333,14 @@ if (q != null) return q;
 return "";
 }
 function resolve(s, self, item) {
-return String(s == null ? "" : s).replace(/\\\{|\{([^{}]+)\}/g, function (m, k) {
+return String(s == null ? "" : s).replace(/\\\{|\{([^{}\s"'<>`]+)\}/g, function (m, k) {
 if (k == null) return "{";
 return text(lookup(k.trim(), self, item));
 });
 }
 function resolveUrl(s, self, item) {
 return String(s == null ? "" : s).replace(
-/\\\{|\{([^{}]+)\}|%7B(.*?)%7D/gi,
+/\\\{|\{([^{}\s"'<>`]+)\}|%7B(.*?)%7D/gi,
 function (m, a, b, at) {
 if (m === "\\{") return "{";
 var k = a;
@@ -340,9 +350,10 @@ k = decodeURIComponent(b);
 } catch (e) {
 return m;
 }
+if (!/^[^{}\s"'<>`]+$/.test(k)) return m;
 }
 var v = text(lookup(k.trim(), self, item));
-return at === 0 && (/^(https?:|mailto:|tel:|data:)/i.test(v) || v.charAt(0) === "/" || v.charAt(0) === "#")
+return at === 0 && (/^(?:https?:|mailto:|tel:|data:image/(?:png|jpe?g|gif|webp|avif|bmp|x-icon|vnd.microsoft.icon)[;,])/i.test(v) || (v.charAt(0) === "/" && v.charAt(1) !== "/") || v.charAt(0) === "#")
 ? v
 : encodeURIComponent(v);
 }
@@ -505,6 +516,7 @@ var toggle = !!first && (first.type === "checkbox" || isRadioItem(els[0], first)
 if (toggle) v = truthy(v) ? "true" : "false";
 else if (first && first.type === "radio") els = radiosOf(first);
 if (valueOf(els) === v) return;
+var changed = [];
 els.forEach(function (el) {
 var input = inputOf(el);
 if (!input) return;
@@ -517,6 +529,9 @@ if (!on && input.type === "radio") return;
 if (input.value === v || (input.type === "file" && v !== "")) return;
 input.value = v;
 }
+changed.push(input);
+});
+changed.forEach(function (input) {
 input.dispatchEvent(new Event("input", { bubbles: true }));
 input.dispatchEvent(new Event("change", { bubbles: true }));
 });
@@ -564,7 +579,7 @@ case "set-enabled":
 (find(self, st.target).length ? find(self, st.target) : groupOf(st.target)).forEach(function (el) {
 var ctl = el.matches("button") ? el : inputOf(el);
 if (!ctl) return;
-var list = ctl.type === "radio" ? radiosOf(ctl) : [ctl];
+var list = ctl.type === "radio" && !isRadioItem(el, ctl) ? radiosOf(ctl) : [ctl];
 list.forEach(function (c) {
 c.disabled = st.op === "toggle" ? !c.disabled : st.op === "disable";
 });
@@ -787,9 +802,34 @@ el = el.parentElement && el.parentElement.closest("[data-scripts]");
 }
 return out;
 }
+function clickSteps(el) {
+return parse(el).filter(function (s) {
+return s.trigger === "click";
+});
+}
+function opensPage(steps) {
+return (steps || []).some(function (st) {
+return st.kind === "open-page" || st.kind === "open-url" ||
+opensPage(st.then) || opensPage(st.else);
+});
+}
+function innerClick(t) {
+var els = chain(t);
+for (var i = 0; i < els.length; i++) if (clickSteps(els[i]).length) return els[i];
+return null;
+}
+function onClickCapture(e) {
+var inner = innerClick(e.target);
+var a = inner && inner.parentElement && inner.parentElement.closest("a[href]");
+if (a && root.contains(a)) e.preventDefault();
+}
 function onClick(e) {
+var inner = null;
 chain(e.target).forEach(function (el) {
+var steps = clickSteps(el);
+if (inner && steps.some(function (s) { return opensPage(s.steps); })) return;
 fire(el, "click");
+if (!inner && steps.length) inner = el;
 });
 }
 function shownByHover(el) {
@@ -871,8 +911,19 @@ fire(el, "change");
 });
 }
 var seen = new WeakSet();
+var pageId = null;
 function scan() {
 if (!alive) return;
+var body = root.querySelector("[data-page-body]");
+var pid = body ? body.getAttribute("data-page-body") : null;
+if (pid !== pageId) {
+if (pageId !== null) {
+vars = {};
+filters.clear();
+sorts.clear();
+}
+pageId = pid;
+}
 if (sorts.size || filters.size) {
 root.querySelectorAll("[data-array]").forEach(function (list) {
 if (list.hasAttribute("data-client-list")) return;
@@ -905,6 +956,7 @@ attributes: true,
 attributeFilter: ["data-scripts"],
 });
 scan();
+root.addEventListener("click", onClickCapture, true);
 root.addEventListener("click", onClick);
 root.addEventListener("mouseover", onOver);
 root.addEventListener("mouseout", onOut);
@@ -920,6 +972,7 @@ clearTimeout(t);
 });
 hovering.clear();
 mo.disconnect();
+root.removeEventListener("click", onClickCapture, true);
 root.removeEventListener("click", onClick);
 root.removeEventListener("mouseover", onOver);
 root.removeEventListener("mouseout", onOut);

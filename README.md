@@ -1,6 +1,6 @@
 # 第56回松ヶ崎祭
 
-オープンソースのビジュアルWebサイトビルダー [Tsumu](https://github.com/matsufes/site-editor) から書き出された Next.js プロジェクトです。
+オープンソースのビジュアルWebサイトビルダー [Tsumu](https://github.com/abshrimp/tsumu) から書き出された Next.js プロジェクトです。
 エディタに依存しない普通の Next.js アプリなので、Next.js が動く場所ならどこでも公開できます。
 
 ## 開発
@@ -30,3 +30,10 @@ Cloudflare ダッシュボード → Workers & Pages → Create でこのリポ�
 - Non-production branch deploy command: `npx opennextjs-cloudflare upload`（プレビュー用ブランチにプレビューURLが付きます）
 
 以後、エディタの「公開」（= このリポジトリへの push）のたびに自動でビルド・公開されます。
+
+## このリポジトリでの編集
+
+エディタの「公開」は、エディタが書き出すファイル（一覧は `_tsumu/generated.json`）をエディタの内容で書き換えます。
+
+- 書き出したファイルを GitHub 上で直接編集した場合は、次の公開の前に確認が出て、エディタの内容で上書きされます（上書き前の内容は Git の履歴に残ります）。
+- エディタが書き出さない名前で手で追加したファイルは、公開してもそのまま残ります。

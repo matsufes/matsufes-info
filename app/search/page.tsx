@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { fetchPublic, readTextLimited } from "@/lib/safe-fetch";
 import { cache } from "react";
 import Link from "next/link";
 import SmartLink from "@/components/SmartLink";
 import Image from "next/image";
-import { interpolate, interpolateUrl, lookupVar } from "@/lib/vars";
+import { safeNavigationUrl, interpolate, interpolateUrl, lookupVar } from "@/lib/vars";
 
 // 60秒ごとにJSONを取得し直してページを作り直す（その間は作ったページを配信する）
 export const revalidate = 60;
@@ -13,12 +14,19 @@ type Vars = Record<string, unknown>;
 
 /** 同じリクエスト内（メタデータとページ本体）では、同じURLを1回だけ取得する */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const fetchJson = cache(async (url: string, init?: string): Promise<any> => {
+const fetchJson = cache(async (url: string, init?: string, origin?: string): Promise<any> => {
+  if (!safeRequestOrigin(url, init, origin)) return null;
+  const res = await fetchPublic(url, { ...(init ? JSON.parse(init) : {}), next: { revalidate: 60 } });
   // 取得に失敗したら作り直しをやめ、前に作ったページを配信し続ける
-  const res = await fetch(url, { ...(init ? JSON.parse(init) : {}), next: { revalidate: 60 } });
-  if (!res.ok) throw new Error(`${url} の取得に失敗しました（${res.status}）`);
-  return await res.json();
+  if (!res.ok) throw new Error(`データの取得に失敗しました（${res.status}）`);
+  return JSON.parse(await readTextLimited(res, 5 * 1024 * 1024));
 });
+
+/** 認証情報や本文のある取得は、編集時に決めたオリジンに限る。 */
+function safeRequestOrigin(url: string, init?: string, origin?: string): boolean {
+  try { return !!url && (!init || (!!origin && new URL(url).origin === origin)); }
+  catch { return false; }
+}
 
 /** スクリプト「ページを開いたとき」のデータのブロックを上から順に実行する */
 async function loadData(vars: Vars) {
@@ -96,7 +104,7 @@ export default async function Page() {
         alt=""
         width={477}
         height={374}
-        className="el-1052"
+        className="el-405"
         priority
       />
       <Image data-inview
@@ -104,12 +112,12 @@ export default async function Page() {
         alt=""
         width={476}
         height={374}
-        className="el-1053"
+        className="el-406"
         priority
       />
       <nav className="header">
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/\"}]}]"}
-          className="crisp-svg el-1122"
+          className="crisp-svg el-475"
         >
           <svg aria-hidden="true" width={213} height={213} viewBox="0 0 213 213" />
           <Image
@@ -119,9 +127,9 @@ export default async function Page() {
             height={426}
           />
         </span>
-        <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"memu-p\"}]}]"} className="el-1111">
+        <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"memu-p\"}]}]"} className="el-464">
           <span
-            className="crisp-svg pasted-artwork-svg-69"
+            className="crisp-svg pasted-artwork-svg-51"
           >
             <svg aria-hidden="true" width={230} height={142} viewBox="0 0 230 142" />
             <Image
@@ -132,12 +140,12 @@ export default async function Page() {
             />
           </span>
         </div>
-        <div id="memu-p" data-toggle-show="flex" data-inview className="el-1112">
-          <div className="box-369">
-            <div className="el-1178">
-              <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-1113">
+        <div id="memu-p" data-toggle-show="flex" data-inview className="el-465">
+          <div className="box-368">
+            <div className="el-531">
+              <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-466">
                 <span
-                  className="crisp-svg svg-301"
+                  className="crisp-svg svg-214"
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
@@ -150,82 +158,82 @@ export default async function Page() {
               </div>
             </div>
             <div className="container-6">
-              <p id="松ヶ崎祭について" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"mf-phone\"}]}]"} className="el-1114">
+              <p id="松ヶ崎祭について" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"mf-phone\"}]}]"} className="el-467">
                 {"松ヶ崎祭について"}
               </p>
-              <div id="mf-phone" data-toggle-show="flex" data-inview className="el-1118">
-                <Link href="/about" id="松ヶ崎祭とは-p" className="button-380">
+              <div id="mf-phone" data-toggle-show="flex" data-inview className="el-471">
+                <Link href="/about" id="松ヶ崎祭とは-p" className="button-108">
                   {"松ヶ崎祭とは"}
                 </Link>
-                <Link href="/theme" id="mf56-p" className="button-381">
+                <Link href="/theme" id="mf56-p" className="button-109">
                   {"mf56メインテ〜マ"}
                 </Link>
-                <Link href="/sponsor" id="協賛-p" className="button-382">
+                <Link href="/sponsor" id="協賛-p" className="button-110">
                   {"ご協賛いただいた皆さま"}
                 </Link>
-                <Link href="/notice" id="お知らせ-p" className="button-383">
+                <Link href="/notice" id="お知らせ-p" className="button-111">
                   {"お知らせ"}
                 </Link>
               </div>
-              <p id="企画さがし" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"kikaku-phone\"}]}]"} className="el-1115">
+              <p id="企画さがし" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"kikaku-phone\"}]}]"} className="el-468">
                 {"企画さがし"}
               </p>
-              <div id="kikaku-phone" data-toggle-show="flex" data-inview className="el-1119">
-                <Link href="/search" id="言葉-p" className="button-384">
+              <div id="kikaku-phone" data-toggle-show="flex" data-inview className="el-472">
+                <Link href="/search" id="言葉-p" className="button-112">
                   {"言葉からさがす"}
                 </Link>
-                <Link href="/schedule/0" id="日程表-p" className="button-385">
+                <Link href="/schedule/0" id="日程表-p" className="button-113">
                   {"日程表からさがす"}
                 </Link>
-                <a href="/navigation" id="地図-p" className="button-386">
+                <a href="/navigation" id="地図-p" className="button-114">
                   {"地図からさがす"}
                 </a>
-                <Link href="/mypage" id="しおり-p" className="button-387">
+                <Link href="/mypage" id="しおり-p" className="button-115">
                   {"きみのしおり"}
                 </Link>
               </div>
-              <p id="ご案内" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"goannai-phone\"}]}]"} className="el-1116">
+              <p id="ご案内" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"goannai-phone\"}]}]"} className="el-469">
                 {"ご案内"}
               </p>
-              <div id="goannai-phone" data-toggle-show="flex" data-inview className="el-1120">
-                <Link href="/attention" id="ご来場の-p" className="button-388">
+              <div id="goannai-phone" data-toggle-show="flex" data-inview className="el-473">
+                <Link href="/attention" id="ご来場の-p" className="button-116">
                   {"ご来場の皆さまへ"}
                 </Link>
-                <Link href="/access" id="行き方-p" className="button-389">
+                <Link href="/access" id="行き方-p" className="button-117">
                   {"行き方・会場地図"}
                 </Link>
-                <Link href="/comingsoon" id="アンケ〜ト-p" className="button-390">
+                <Link href="/comingsoon" id="アンケ〜ト-p" className="button-118">
                   {"来場者アンケ〜ト"}
                 </Link>
-                <Link href="/comingsoon" id="ご質問-p" className="button-391">
+                <Link href="/comingsoon" id="ご質問-p" className="button-119">
                   {"よくあるご質問"}
                 </Link>
-                <Link href="/links" id="相互リンク-p" className="button-392">
+                <Link href="/links" id="相互リンク-p" className="button-120">
                   {"相互リンク"}
                 </Link>
               </div>
-              <p id="公式特集" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"koushiki-phone\"}]}]"} className="el-1117">
+              <p id="公式特集" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"koushiki-phone\"}]}]"} className="el-470">
                 {"公式特集"}
               </p>
-              <div id="koushiki-phone" data-toggle-show="flex" data-inview className="el-1121">
-                <Link href="/committee" id="委員会企画-p" className="button-393">
+              <div id="koushiki-phone" data-toggle-show="flex" data-inview className="el-474">
+                <Link href="/committee" id="委員会企画-p" className="button-121">
                   {"委員会企画"}
                 </Link>
-                <Link href="/m-1" id="m-1-p" className="button-394">
+                <Link href="/m-1" id="m-1-p" className="button-122">
                   {"m-1グランプリ"}
                 </Link>
-                <Link href="/comingsoon" id="まつぴよ-p" className="button-395">
+                <Link href="/comingsoon" id="まつぴよ-p" className="button-123">
                   {"公式メンバ〜「まつぴよ」"}
                 </Link>
               </div>
             </div>
           </div>
         </div>
-        <div className="el-1177">
+        <div className="el-530">
           <div className="container">
-            <div data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-33\"},{\"kind\":\"show\",\"target\":\"div-34\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-33\"},{\"kind\":\"hide\",\"target\":\"div-34\"}]}]"} className="el-1142">
-              <div className="el-1141">
-                <div className="box-362">
+            <div data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-33\"},{\"kind\":\"show\",\"target\":\"div-34\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-33\"},{\"kind\":\"hide\",\"target\":\"div-34\"}]}]"} className="el-495">
+              <div className="el-494">
+                <div className="box-361">
                   <p className="text-103">
                     {"まつがさきさい"}
                   </p>
@@ -237,28 +245,28 @@ export default async function Page() {
                   {"について"}
                 </p>
               </div>
-              <div id="div-33" data-toggle-show="flex" data-inview className="el-1143" />
-              <div id="div-34" data-toggle-show="flex" className="el-1148">
+              <div id="div-33" data-toggle-show="flex" data-inview className="el-496" />
+              <div id="div-34" data-toggle-show="flex" className="el-501">
                 <div id="menu1-2" data-inview className="container-2">
-                  <Link href="/about" className="el-1144">
+                  <Link href="/about" className="el-497">
                     {"松ヶ崎祭とは"}
                   </Link>
-                  <Link href="/theme" className="el-1145">
+                  <Link href="/theme" className="el-498">
                     {"mf56メインテ〜マ"}
                   </Link>
-                  <Link href="/sponsor" className="el-1146">
+                  <Link href="/sponsor" className="el-499">
                     {"ご協賛いただいた皆さま"}
                   </Link>
-                  <Link href="/notice" className="el-1147">
+                  <Link href="/notice" className="el-500">
                     {"お知らせ"}
                   </Link>
-                  <div id="menu1-3" className="el-1149" />
+                  <div id="menu1-3" className="el-502" />
                 </div>
               </div>
             </div>
-            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-35\"},{\"kind\":\"hide\",\"target\":\"div-36\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-35\"},{\"kind\":\"show\",\"target\":\"div-36\"}]}]"} className="el-1150">
-              <div className="el-1151">
-                <div className="box-363">
+            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-35\"},{\"kind\":\"hide\",\"target\":\"div-36\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-35\"},{\"kind\":\"show\",\"target\":\"div-36\"}]}]"} className="el-503">
+              <div className="el-504">
+                <div className="box-362">
                   <p className="text-106">
                     {"さがし"}
                   </p>
@@ -270,31 +278,31 @@ export default async function Page() {
                   {"さがし"}
                 </p>
               </div>
-              <div id="div-35" data-toggle-show="flex" data-inview className="el-1152" />
-              <div id="div-36" data-toggle-show="flex" className="el-1153">
+              <div id="div-35" data-toggle-show="flex" data-inview className="el-505" />
+              <div id="div-36" data-toggle-show="flex" className="el-506">
                 <div id="menu1-4" data-inview className="container-3">
-                  <Link href="/search" className="el-1154">
+                  <Link href="/search" className="el-507">
                     {"言葉からさがす"}
                   </Link>
-                  <Link href="/schedule" className="el-1155">
+                  <Link href="/schedule" className="el-508">
                     {"日程表からさがす"}
                   </Link>
-                  <a href="/navigation" className="el-1156">
+                  <a href="/navigation" className="el-509">
                     {"地図からさがす"}
                   </a>
-                  <Link href="/mypage" className="el-1157">
+                  <Link href="/mypage" className="el-510">
                     {"きみのしおり"}
                   </Link>
-                  <div id="menu1-5" className="el-1158" />
+                  <div id="menu1-5" className="el-511" />
                 </div>
               </div>
             </div>
-            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-37\"},{\"kind\":\"hide\",\"target\":\"div-39\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-37\"},{\"kind\":\"show\",\"target\":\"div-39\"}]}]"} className="el-1159">
-              <div className="el-1160">
+            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-37\"},{\"kind\":\"hide\",\"target\":\"div-39\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-37\"},{\"kind\":\"show\",\"target\":\"div-39\"}]}]"} className="el-512">
+              <div className="el-513">
                 <p className="text-111">
                   {"ご"}
                 </p>
-                <div className="box-364">
+                <div className="box-363">
                   <p className="text-109">
                     {"あんない"}
                   </p>
@@ -303,31 +311,31 @@ export default async function Page() {
                   </p>
                 </div>
               </div>
-              <div id="div-37" data-toggle-show="flex" data-inview className="el-1161" />
-              <div id="div-39" data-toggle-show="flex" className="el-1162">
+              <div id="div-37" data-toggle-show="flex" data-inview className="el-514" />
+              <div id="div-39" data-toggle-show="flex" className="el-515">
                 <div id="menu1-6" data-inview className="container-4">
-                  <Link href="/attention" className="el-1163">
+                  <Link href="/attention" className="el-516">
                     {"ご来場の皆さまへ"}
                   </Link>
-                  <Link href="/access" className="el-1164">
+                  <Link href="/access" className="el-517">
                     {"行き方・会場地図"}
                   </Link>
-                  <Link href="/survey" className="el-1165">
+                  <Link href="/survey" className="el-518">
                     {"来場者アンケ〜ト"}
                   </Link>
-                  <Link href="/question" className="el-1166">
+                  <Link href="/question" className="el-519">
                     {"よくあるご質問"}
                   </Link>
-                  <Link href="/links" className="el-1168">
+                  <Link href="/links" className="el-521">
                     {"相互リンク"}
                   </Link>
-                  <div id="menu1-7" className="el-1167" />
+                  <div id="menu1-7" className="el-520" />
                 </div>
               </div>
             </div>
-            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-40\"},{\"kind\":\"hide\",\"target\":\"div-38\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-40\"},{\"kind\":\"show\",\"target\":\"div-38\"}]}]"} className="el-1169">
-              <div className="el-1170">
-                <div className="box-365">
+            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-40\"},{\"kind\":\"hide\",\"target\":\"div-38\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-40\"},{\"kind\":\"show\",\"target\":\"div-38\"}]}]"} className="el-522">
+              <div className="el-523">
+                <div className="box-364">
                   <p className="text-112">
                     {"こうしきとくしゅう"}
                   </p>
@@ -336,26 +344,26 @@ export default async function Page() {
                   </p>
                 </div>
               </div>
-              <div id="div-40" data-toggle-show="flex" data-inview className="el-1171" />
-              <div id="div-38" data-toggle-show="flex" className="el-1172">
+              <div id="div-40" data-toggle-show="flex" data-inview className="el-524" />
+              <div id="div-38" data-toggle-show="flex" className="el-525">
                 <div id="menu1-8" data-inview className="container-5">
-                  <Link href="/committee" className="el-1173">
+                  <Link href="/committee" className="el-526">
                     {"委員会企画"}
                   </Link>
-                  <Link href="/m-1" className="el-1174">
+                  <Link href="/m-1" className="el-527">
                     {"m-1グランプリ"}
                   </Link>
-                  <Link href="/matsupiyo" className="el-1175">
+                  <Link href="/matsupiyo" className="el-528">
                     {"公式メンバ〜「まつぴよ」"}
                   </Link>
-                  <div id="menu1-9" className="el-1176" />
+                  <div id="menu1-9" className="el-529" />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </nav>
-      <section className="el-1054">
+      <section className="el-407">
         <div className="box-232">
           <p className="text-4">
             {"ことば"}
@@ -379,7 +387,7 @@ export default async function Page() {
         />
       </section>
       <section className="box-234">
-        <div className="el-1055">
+        <div className="el-408">
           <div className="box-235">
             <p className="text-5">
               {"まつがさきさい"}
@@ -403,7 +411,7 @@ export default async function Page() {
             {"がいっぱい。"}
           </p>
         </div>
-        <div className="el-1056">
+        <div className="el-409">
           <div className="box-237">
             <p className="text-11">
               {"き"}
@@ -478,7 +486,7 @@ export default async function Page() {
           </div>
         </div>
       </section>
-      <section className="el-1051">
+      <section className="el-404">
         <div className="box-248">
           <div className="box-309">
             <div className="box-314">
@@ -499,8 +507,8 @@ export default async function Page() {
               </div>
             </div>
             <div className="box-304">
-              <div className="el-1108">
-                <div id="div-30" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-30\"},{\"kind\":\"show\",\"target\":\"div-32\"},{\"kind\":\"show\",\"target\":\"div-31\"}]}]"} data-toggle-show="flex" className="el-1109">
+              <div className="el-461">
+                <div id="div-30" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-30\"},{\"kind\":\"show\",\"target\":\"div-32\"},{\"kind\":\"show\",\"target\":\"div-31\"}]}]"} data-toggle-show="flex" className="el-462">
                   <Image
                     src="/assets/image-4.png"
                     alt=""
@@ -514,7 +522,7 @@ export default async function Page() {
                     </p>
                   </div>
                 </div>
-                <div id="div-31" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-31\"},{\"kind\":\"show\",\"target\":\"div-30\"},{\"kind\":\"hide\",\"target\":\"div-32\"}]}]"} data-toggle-show="flex" data-inview className="el-1110">
+                <div id="div-31" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-31\"},{\"kind\":\"show\",\"target\":\"div-30\"},{\"kind\":\"hide\",\"target\":\"div-32\"}]}]"} data-toggle-show="flex" data-inview className="el-463">
                   <Image
                     src="/assets/image-124-1-.png"
                     alt=""
@@ -531,22 +539,22 @@ export default async function Page() {
                 </div>
               </div>
             </div>
-            <div id="div-32" data-toggle-show="flex" data-inview className="el-1057">
+            <div id="div-32" data-toggle-show="flex" data-inview className="el-410">
               <div className="box-247">
                 <Image
                   src="/assets/_-_2.png"
                   alt="いつ"
                   width={129}
                   height={129}
-                  className="el-1058"
+                  className="el-411"
                 />
                 <p className="text-26">
                   {"いつ"}
                 </p>
               </div>
               <div className="box-249">
-                <div className="el-1060">
-                  <div id="div-2" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":16,\"conds\":[{\"field\":\"businessHours\",\"op\":\"contains\",\"value\":\"11/13\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-2\"},{\"kind\":\"show\",\"target\":\"div\"}]}]"} data-toggle-show="flex" className="el-1059">
+                <div className="el-413">
+                  <div id="div-2" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":16,\"conds\":[{\"field\":\"businessHours\",\"op\":\"contains\",\"value\":\"11/13\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-2\"},{\"kind\":\"show\",\"target\":\"div\"}]}]"} data-toggle-show="flex" className="el-412">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -560,7 +568,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":16},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div\"},{\"kind\":\"show\",\"target\":\"div-2\"}]}]"} data-toggle-show="flex" data-inview className="el-1061">
+                  <div id="div" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":16},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div\"},{\"kind\":\"show\",\"target\":\"div-2\"}]}]"} data-toggle-show="flex" data-inview className="el-414">
                     <Image
                       src="/assets/image-124-1-.png"
                       alt=""
@@ -575,8 +583,8 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div className="el-1064">
-                  <div id="div-3" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":2,\"conds\":[{\"field\":\"businessHours\",\"op\":\"contains\",\"value\":\"11/14\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-3\"},{\"kind\":\"show\",\"target\":\"div-4\"}]}]"} data-toggle-show="flex" className="el-1065">
+                <div className="el-417">
+                  <div id="div-3" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":2,\"conds\":[{\"field\":\"businessHours\",\"op\":\"contains\",\"value\":\"11/14\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-3\"},{\"kind\":\"show\",\"target\":\"div-4\"}]}]"} data-toggle-show="flex" className="el-418">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -590,7 +598,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-4" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":2},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-4\"},{\"kind\":\"show\",\"target\":\"div-3\"}]}]"} data-toggle-show="flex" data-inview className="el-1066">
+                  <div id="div-4" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":2},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-4\"},{\"kind\":\"show\",\"target\":\"div-3\"}]}]"} data-toggle-show="flex" data-inview className="el-419">
                     <Image
                       src="/assets/image-124-1-.png"
                       alt=""
@@ -605,8 +613,8 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div className="el-1067">
-                  <div id="div-5" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":3,\"conds\":[{\"field\":\"businessHours\",\"op\":\"contains\",\"value\":\"11/14\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-5\"},{\"kind\":\"show\",\"target\":\"div-6\"}]}]"} data-toggle-show="flex" className="el-1068">
+                <div className="el-420">
+                  <div id="div-5" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":3,\"conds\":[{\"field\":\"businessHours\",\"op\":\"contains\",\"value\":\"11/14\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-5\"},{\"kind\":\"show\",\"target\":\"div-6\"}]}]"} data-toggle-show="flex" className="el-421">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -620,7 +628,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-6" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":3},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-6\"},{\"kind\":\"show\",\"target\":\"div-5\"}]}]"} data-toggle-show="flex" data-inview className="el-1069">
+                  <div id="div-6" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":3},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-6\"},{\"kind\":\"show\",\"target\":\"div-5\"}]}]"} data-toggle-show="flex" data-inview className="el-422">
                     <Image
                       src="/assets/image-124-1-.png"
                       alt=""
@@ -649,8 +657,8 @@ export default async function Page() {
                 </p>
               </div>
               <div className="box-257">
-                <div className="el-1070">
-                  <div id="div-7" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":4,\"conds\":[{\"field\":\"venue\",\"op\":\"eq\",\"value\":\"1\"},{\"field\":\"venue\",\"op\":\"eq\",\"value\":\"2\"},{\"field\":\"venue\",\"op\":\"eq\",\"value\":\"3\"},{\"field\":\"venue\",\"op\":\"eq\",\"value\":\"4\"},{\"field\":\"venue\",\"op\":\"eq\",\"value\":\"5\"},{\"field\":\"venue\",\"op\":\"eq\",\"value\":\"6\"},{\"field\":\"place\",\"op\":\"eq\",\"value\":\"\"},{\"field\":\"place\",\"op\":\"contains\",\"value\":\"構内全体\"},{\"field\":\"place\",\"op\":\"ends-with\",\"value\":\"前\"},{\"field\":\"place\",\"op\":\"ends-with\",\"value\":\"横\"},{\"field\":\"place\",\"op\":\"contains\",\"value\":\"武道場\"},{\"field\":\"place\",\"op\":\"contains\",\"value\":\"和楽庵\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-7\"},{\"kind\":\"show\",\"target\":\"div-8\"}]}]"} data-toggle-show="flex" className="el-1071">
+                <div className="el-423">
+                  <div id="div-7" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":4,\"conds\":[{\"field\":\"venue\",\"op\":\"eq\",\"value\":\"1\"},{\"field\":\"venue\",\"op\":\"eq\",\"value\":\"2\"},{\"field\":\"venue\",\"op\":\"eq\",\"value\":\"3\"},{\"field\":\"venue\",\"op\":\"eq\",\"value\":\"4\"},{\"field\":\"venue\",\"op\":\"eq\",\"value\":\"5\"},{\"field\":\"venue\",\"op\":\"eq\",\"value\":\"6\"},{\"field\":\"place\",\"op\":\"eq\",\"value\":\"\"},{\"field\":\"place\",\"op\":\"contains\",\"value\":\"構内全体\"},{\"field\":\"place\",\"op\":\"ends-with\",\"value\":\"前\"},{\"field\":\"place\",\"op\":\"ends-with\",\"value\":\"横\"},{\"field\":\"place\",\"op\":\"contains\",\"value\":\"武道場\"},{\"field\":\"place\",\"op\":\"contains\",\"value\":\"和楽庵\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-7\"},{\"kind\":\"show\",\"target\":\"div-8\"}]}]"} data-toggle-show="flex" className="el-424">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -669,7 +677,7 @@ export default async function Page() {
                       </div>
                     </div>
                   </div>
-                  <div id="div-8" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":4},{\"kind\":\"hide\",\"target\":\"div-8\"},{\"kind\":\"show\",\"target\":\"div-7\"}]}]"} data-toggle-show="flex" className="el-1072">
+                  <div id="div-8" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":4},{\"kind\":\"hide\",\"target\":\"div-8\"},{\"kind\":\"show\",\"target\":\"div-7\"}]}]"} data-toggle-show="flex" className="el-425">
                     <Image
                       src="/assets/image-124-1-.png"
                       alt=""
@@ -689,8 +697,8 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div className="el-1073">
-                  <div id="div-9" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":5,\"conds\":[{\"field\":\"venue\",\"op\":\"neq\",\"value\":\"1\"},{\"field\":\"venue\",\"op\":\"neq\",\"value\":\"2\",\"and\":true},{\"field\":\"venue\",\"op\":\"neq\",\"value\":\"3\",\"and\":true},{\"field\":\"venue\",\"op\":\"neq\",\"value\":\"4\",\"and\":true},{\"field\":\"venue\",\"op\":\"neq\",\"value\":\"5\",\"and\":true},{\"field\":\"venue\",\"op\":\"neq\",\"value\":\"6\",\"and\":true},{\"field\":\"place\",\"op\":\"not-empty\",\"value\":\"\",\"and\":true},{\"field\":\"categories.出展カテゴリ\",\"op\":\"not-contains\",\"value\":\"パフォーマンス\",\"and\":true},{\"field\":\"categories.出展カテゴリ\",\"op\":\"not-contains\",\"value\":\"ストリートパフォーマンス\",\"and\":true},{\"field\":\"place\",\"op\":\"not-contains\",\"value\":\"構内全体\",\"and\":true},{\"field\":\"place\",\"op\":\"not-contains\",\"value\":\"前\",\"and\":true},{\"field\":\"place\",\"op\":\"not-contains\",\"value\":\"横\",\"and\":true},{\"field\":\"place\",\"op\":\"not-contains\",\"value\":\"武道場\",\"and\":true},{\"field\":\"place\",\"op\":\"not-contains\",\"value\":\"和楽庵\",\"and\":true}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-9\"},{\"kind\":\"show\",\"target\":\"div-10\"}]}]"} data-toggle-show="flex" className="el-1074">
+                <div className="el-426">
+                  <div id="div-9" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":5,\"conds\":[{\"field\":\"venue\",\"op\":\"neq\",\"value\":\"1\"},{\"field\":\"venue\",\"op\":\"neq\",\"value\":\"2\",\"and\":true},{\"field\":\"venue\",\"op\":\"neq\",\"value\":\"3\",\"and\":true},{\"field\":\"venue\",\"op\":\"neq\",\"value\":\"4\",\"and\":true},{\"field\":\"venue\",\"op\":\"neq\",\"value\":\"5\",\"and\":true},{\"field\":\"venue\",\"op\":\"neq\",\"value\":\"6\",\"and\":true},{\"field\":\"place\",\"op\":\"not-empty\",\"value\":\"\",\"and\":true},{\"field\":\"categories.出展カテゴリ\",\"op\":\"not-contains\",\"value\":\"パフォーマンス\",\"and\":true},{\"field\":\"categories.出展カテゴリ\",\"op\":\"not-contains\",\"value\":\"ストリートパフォーマンス\",\"and\":true},{\"field\":\"place\",\"op\":\"not-contains\",\"value\":\"構内全体\",\"and\":true},{\"field\":\"place\",\"op\":\"not-contains\",\"value\":\"前\",\"and\":true},{\"field\":\"place\",\"op\":\"not-contains\",\"value\":\"横\",\"and\":true},{\"field\":\"place\",\"op\":\"not-contains\",\"value\":\"武道場\",\"and\":true},{\"field\":\"place\",\"op\":\"not-contains\",\"value\":\"和楽庵\",\"and\":true}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-9\"},{\"kind\":\"show\",\"target\":\"div-10\"}]}]"} data-toggle-show="flex" className="el-427">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -709,7 +717,7 @@ export default async function Page() {
                       </div>
                     </div>
                   </div>
-                  <div id="div-10" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":5},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-10\"},{\"kind\":\"show\",\"target\":\"div-9\"}]}]"} data-toggle-show="flex" className="el-1075">
+                  <div id="div-10" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":5},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-10\"},{\"kind\":\"show\",\"target\":\"div-9\"}]}]"} data-toggle-show="flex" className="el-428">
                     <Image
                       src="/assets/image-124-1-.png"
                       alt=""
@@ -729,8 +737,8 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div className="el-1076">
-                  <div id="div-11" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":6,\"conds\":[{\"field\":\"categories.出展カテゴリ\",\"op\":\"contains\",\"value\":\"パフォーマンス\"},{\"field\":\"categories.出展カテゴリ\",\"op\":\"contains\",\"value\":\"ストリートパフォーマンス\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-11\"},{\"kind\":\"show\",\"target\":\"div-12\"}]}]"} data-toggle-show="flex" className="el-1077">
+                <div className="el-429">
+                  <div id="div-11" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":6,\"conds\":[{\"field\":\"categories.出展カテゴリ\",\"op\":\"contains\",\"value\":\"パフォーマンス\"},{\"field\":\"categories.出展カテゴリ\",\"op\":\"contains\",\"value\":\"ストリートパフォーマンス\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-11\"},{\"kind\":\"show\",\"target\":\"div-12\"}]}]"} data-toggle-show="flex" className="el-430">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -744,7 +752,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-12" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":6},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-12\"},{\"kind\":\"show\",\"target\":\"div-11\"}]}]"} data-toggle-show="flex" className="el-1078">
+                  <div id="div-12" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":6},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-12\"},{\"kind\":\"show\",\"target\":\"div-11\"}]}]"} data-toggle-show="flex" className="el-431">
                     <Image
                       src="/assets/image-124-1-.png"
                       alt=""
@@ -766,15 +774,15 @@ export default async function Page() {
                   alt="どんなことがしたい？"
                   width={82}
                   height={104}
-                  className="el-1079"
+                  className="el-432"
                 />
                 <p className="text-45">
                   {"どんなことがしたい？"}
                 </p>
               </div>
               <div className="box-271">
-                <div className="el-1080">
-                  <div id="div-13" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":7,\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"たべる\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-13\"},{\"kind\":\"show\",\"target\":\"div-14\"}]}]"} data-toggle-show="flex" className="el-1081">
+                <div className="el-433">
+                  <div id="div-13" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":7,\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"たべる\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-13\"},{\"kind\":\"show\",\"target\":\"div-14\"}]}]"} data-toggle-show="flex" className="el-434">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -788,7 +796,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-14" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":7},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-14\"},{\"kind\":\"show\",\"target\":\"div-13\"}]}]"} data-toggle-show="flex" className="el-1082">
+                  <div id="div-14" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":7},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-14\"},{\"kind\":\"show\",\"target\":\"div-13\"}]}]"} data-toggle-show="flex" className="el-435">
                     <Image
                       src="/assets/image-124-1-.png"
                       alt=""
@@ -803,8 +811,8 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div className="el-1083">
-                  <div id="div-15" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":8,\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"あそぶ\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-15\"},{\"kind\":\"show\",\"target\":\"div-16\"}]}]"} data-toggle-show="flex" className="el-1084">
+                <div className="el-436">
+                  <div id="div-15" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":8,\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"あそぶ\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-15\"},{\"kind\":\"show\",\"target\":\"div-16\"}]}]"} data-toggle-show="flex" className="el-437">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -818,7 +826,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-16" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":8},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-16\"},{\"kind\":\"show\",\"target\":\"div-15\"}]}]"} data-toggle-show="flex" className="el-1085">
+                  <div id="div-16" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":8},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-16\"},{\"kind\":\"show\",\"target\":\"div-15\"}]}]"} data-toggle-show="flex" className="el-438">
                     <Image
                       src="/assets/image-124-1-.png"
                       alt=""
@@ -833,8 +841,8 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div className="el-1086">
-                  <div id="div-17" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":9,\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"のむ\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-17\"},{\"kind\":\"show\",\"target\":\"div-18\"}]}]"} data-toggle-show="flex" className="el-1087">
+                <div className="el-439">
+                  <div id="div-17" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":9,\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"のむ\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-17\"},{\"kind\":\"show\",\"target\":\"div-18\"}]}]"} data-toggle-show="flex" className="el-440">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -848,7 +856,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-18" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":9},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-18\"},{\"kind\":\"show\",\"target\":\"div-17\"}]}]"} data-toggle-show="flex" data-inview className="el-1088">
+                  <div id="div-18" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":9},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-18\"},{\"kind\":\"show\",\"target\":\"div-17\"}]}]"} data-toggle-show="flex" data-inview className="el-441">
                     <Image
                       src="/assets/image-124-1-.png"
                       alt=""
@@ -863,8 +871,8 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div className="el-1089">
-                  <div id="div-19" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":10,\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"みる\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-19\"},{\"kind\":\"show\",\"target\":\"div-20\"}]}]"} data-toggle-show="flex" className="el-1090">
+                <div className="el-442">
+                  <div id="div-19" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":10,\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"みる\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-19\"},{\"kind\":\"show\",\"target\":\"div-20\"}]}]"} data-toggle-show="flex" className="el-443">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -878,7 +886,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-20" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":10},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-20\"},{\"kind\":\"show\",\"target\":\"div-19\"}]}]"} data-toggle-show="flex" data-inview className="el-1091">
+                  <div id="div-20" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":10},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-20\"},{\"kind\":\"show\",\"target\":\"div-19\"}]}]"} data-toggle-show="flex" data-inview className="el-444">
                     <Image
                       src="/assets/image-124-1-.png"
                       alt=""
@@ -893,8 +901,8 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div className="el-1092">
-                  <div id="div-21" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":11,\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"かう\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-21\"},{\"kind\":\"show\",\"target\":\"div-22\"}]}]"} data-toggle-show="flex" className="el-1093">
+                <div className="el-445">
+                  <div id="div-21" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":11,\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"かう\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-21\"},{\"kind\":\"show\",\"target\":\"div-22\"}]}]"} data-toggle-show="flex" className="el-446">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -908,7 +916,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-22" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":11},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-22\"},{\"kind\":\"show\",\"target\":\"div-21\"}]}]"} data-toggle-show="flex" data-inview className="el-1094">
+                  <div id="div-22" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":11},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-22\"},{\"kind\":\"show\",\"target\":\"div-21\"}]}]"} data-toggle-show="flex" data-inview className="el-447">
                     <Image
                       src="/assets/image-124-1-.png"
                       alt=""
@@ -923,8 +931,8 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div className="el-1095">
-                  <div id="div-23" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":12,\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"さわる\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-23\"},{\"kind\":\"show\",\"target\":\"div-24\"}]}]"} data-toggle-show="flex" className="el-1096">
+                <div className="el-448">
+                  <div id="div-23" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":12,\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"さわる\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-23\"},{\"kind\":\"show\",\"target\":\"div-24\"}]}]"} data-toggle-show="flex" className="el-449">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -938,7 +946,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-24" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":12},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-24\"},{\"kind\":\"show\",\"target\":\"div-23\"}]}]"} data-toggle-show="flex" data-inview className="el-1097">
+                  <div id="div-24" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":12},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-24\"},{\"kind\":\"show\",\"target\":\"div-23\"}]}]"} data-toggle-show="flex" data-inview className="el-450">
                     <Image
                       src="/assets/image-124-1-.png"
                       alt=""
@@ -953,8 +961,8 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div className="el-1098">
-                  <div id="div-25" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":13,\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"つくる\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-25\"},{\"kind\":\"show\",\"target\":\"div-26\"}]}]"} data-toggle-show="flex" className="el-1099">
+                <div className="el-451">
+                  <div id="div-25" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":13,\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"つくる\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-25\"},{\"kind\":\"show\",\"target\":\"div-26\"}]}]"} data-toggle-show="flex" className="el-452">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -968,7 +976,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-26" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":13},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-26\"},{\"kind\":\"show\",\"target\":\"div-25\"}]}]"} data-toggle-show="flex" data-inview className="el-1100">
+                  <div id="div-26" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":13},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-26\"},{\"kind\":\"show\",\"target\":\"div-25\"}]}]"} data-toggle-show="flex" data-inview className="el-453">
                     <Image
                       src="/assets/image-124-1-.png"
                       alt=""
@@ -983,8 +991,8 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div className="el-1101">
-                  <div id="div-27" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":14,\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"きく\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-27\"},{\"kind\":\"show\",\"target\":\"div-28\"}]}]"} data-toggle-show="flex" className="el-1102">
+                <div className="el-454">
+                  <div id="div-27" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"filter-array\",\"array\":\"_1\",\"no\":14,\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"きく\"}]},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-27\"},{\"kind\":\"show\",\"target\":\"div-28\"}]}]"} data-toggle-show="flex" className="el-455">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -998,7 +1006,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-28" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":14},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-28\"},{\"kind\":\"show\",\"target\":\"div-27\"}]}]"} data-toggle-show="flex" data-inview className="el-1103">
+                  <div id="div-28" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\",\"no\":14},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div-28\"},{\"kind\":\"show\",\"target\":\"div-27\"}]}]"} data-toggle-show="flex" data-inview className="el-456">
                     <Image
                       src="/assets/image-124-1-.png"
                       alt="絞り込みボタン"
@@ -1014,8 +1022,8 @@ export default async function Page() {
                   </div>
                 </div>
               </div>
-              <div className="el-1104">
-                <div id="div-29" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\"},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div\"},{\"kind\":\"hide\",\"target\":\"div-4\"},{\"kind\":\"hide\",\"target\":\"div-6\"},{\"kind\":\"hide\",\"target\":\"div-8\"},{\"kind\":\"hide\",\"target\":\"div-10\"},{\"kind\":\"hide\",\"target\":\"div-12\"},{\"kind\":\"hide\",\"target\":\"div-14\"},{\"kind\":\"hide\",\"target\":\"div-16\"},{\"kind\":\"hide\",\"target\":\"div-18\"},{\"kind\":\"hide\",\"target\":\"div-20\"},{\"kind\":\"hide\",\"target\":\"div-22\"},{\"kind\":\"hide\",\"target\":\"div-24\"},{\"kind\":\"hide\",\"target\":\"div-26\"},{\"kind\":\"hide\",\"target\":\"div-28\"},{\"kind\":\"show\",\"target\":\"div-2\"},{\"kind\":\"show\",\"target\":\"div-3\"},{\"kind\":\"show\",\"target\":\"div-5\"},{\"kind\":\"show\",\"target\":\"div-7\"},{\"kind\":\"show\",\"target\":\"div-9\"},{\"kind\":\"show\",\"target\":\"div-11\"},{\"kind\":\"show\",\"target\":\"div-13\"},{\"kind\":\"show\",\"target\":\"div-15\"},{\"kind\":\"show\",\"target\":\"div-17\"},{\"kind\":\"show\",\"target\":\"div-19\"},{\"kind\":\"show\",\"target\":\"div-21\"},{\"kind\":\"show\",\"target\":\"div-23\"},{\"kind\":\"show\",\"target\":\"div-25\"},{\"kind\":\"show\",\"target\":\"div-27\"},{\"kind\":\"show\",\"target\":\"div-29\"},{\"kind\":\"set-value\",\"target\":\"field\",\"value\":\"\"},{\"kind\":\"set-value\",\"target\":\"field-2\",\"value\":\"\"}]}]"} data-toggle-show="flex" className="el-1105">
+              <div className="el-457">
+                <div id="div-29" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"unfilter-array\",\"array\":\"_1\"},{\"kind\":\"count\",\"array\":\"_1\",\"into\":\"_3\"},{\"kind\":\"hide\",\"target\":\"div\"},{\"kind\":\"hide\",\"target\":\"div-4\"},{\"kind\":\"hide\",\"target\":\"div-6\"},{\"kind\":\"hide\",\"target\":\"div-8\"},{\"kind\":\"hide\",\"target\":\"div-10\"},{\"kind\":\"hide\",\"target\":\"div-12\"},{\"kind\":\"hide\",\"target\":\"div-14\"},{\"kind\":\"hide\",\"target\":\"div-16\"},{\"kind\":\"hide\",\"target\":\"div-18\"},{\"kind\":\"hide\",\"target\":\"div-20\"},{\"kind\":\"hide\",\"target\":\"div-22\"},{\"kind\":\"hide\",\"target\":\"div-24\"},{\"kind\":\"hide\",\"target\":\"div-26\"},{\"kind\":\"hide\",\"target\":\"div-28\"},{\"kind\":\"show\",\"target\":\"div-2\"},{\"kind\":\"show\",\"target\":\"div-3\"},{\"kind\":\"show\",\"target\":\"div-5\"},{\"kind\":\"show\",\"target\":\"div-7\"},{\"kind\":\"show\",\"target\":\"div-9\"},{\"kind\":\"show\",\"target\":\"div-11\"},{\"kind\":\"show\",\"target\":\"div-13\"},{\"kind\":\"show\",\"target\":\"div-15\"},{\"kind\":\"show\",\"target\":\"div-17\"},{\"kind\":\"show\",\"target\":\"div-19\"},{\"kind\":\"show\",\"target\":\"div-21\"},{\"kind\":\"show\",\"target\":\"div-23\"},{\"kind\":\"show\",\"target\":\"div-25\"},{\"kind\":\"show\",\"target\":\"div-27\"},{\"kind\":\"show\",\"target\":\"div-29\"},{\"kind\":\"set-value\",\"target\":\"field\",\"value\":\"\"},{\"kind\":\"set-value\",\"target\":\"field-2\",\"value\":\"\"}]}]"} data-toggle-show="flex" className="el-458">
                   <Image
                     src="/assets/image-4.png"
                     alt="やり直しボタン"
@@ -1029,7 +1037,7 @@ export default async function Page() {
                       alt="やり直し"
                       width={50}
                       height={58}
-                      className="el-1106"
+                      className="el-459"
                     />
                     <p className="text-62">
                       {"やりなおす"}
@@ -1071,17 +1079,17 @@ export default async function Page() {
               </p>
             </div>
             <div className="box-307">
-              <div data-array="_1" className="el-1062">
+              <div data-array="_1" className="el-415">
                 {toItems(lookupVar(vars, "_1")).map((item, i) => {
                   const iv0 = { ...vars, ...item };
                   return (
                     <div key={i} style={{ display: "contents" }} data-row data-item={JSON.stringify({ "name": item["name"], "exhibitorName": item["exhibitorName"], "tags": item["tags"], "customAnswers.中分類": lookupVar(item, "customAnswers.中分類"), "searchWords": item["searchWords"], "businessHours": item["businessHours"], "venue": item["venue"], "place": item["place"], "categories.出展カテゴリ": lookupVar(item, "categories.出展カテゴリ"), "categories.大分類": lookupVar(item, "categories.大分類"), "publicId": item["publicId"] })}>
-                      <SmartLink href={interpolateUrl("/booth/{publicId}", iv0)} className="el-1063">
+                      <SmartLink href={safeNavigationUrl(interpolateUrl("/booth/{publicId}", iv0))} className="el-416">
                         <div className="box-315">
                           <p className="text-64">
                             {interpolate("{name}", iv0)}
                           </p>
-                          <div className="el-1501">
+                          <div className="el-814">
                             <Image id="fav-on" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"remove","value":interpolate("{publicId}", { ...iv0, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...iv0, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"fav-on"},{"kind":"show","target":"fav-off"}]}])} data-toggle-show="block"
                               src="/assets/bkonn.svg"
                               alt="お気に入り登録済"
@@ -1100,7 +1108,7 @@ export default async function Page() {
                           </div>
                         </div>
                         <span
-                          className="crisp-svg el-1107"
+                          className="crisp-svg el-460"
                         >
                           <svg aria-hidden="true" width={307} height={17} viewBox="0 0 307 17" />
                           <Image
@@ -1121,7 +1129,7 @@ export default async function Page() {
                                 alt=""
                                 width={1024}
                                 height={1024}
-                                className="image-23"
+                                className="image-14"
                               />
                               <p className="text-66">
                                 {"No Image"}
@@ -1198,6 +1206,37 @@ export default async function Page() {
           height={652}
           className="group-264-png"
         />
+      </section>
+      <section data-inview className="footer-6">
+        <span
+          className="crisp-svg pasted-artwork-svg-81"
+        >
+          <svg aria-hidden="true" width={1920} height={1015} viewBox="0 0 1920 1015" />
+          <Image
+            src="/assets/pasted-artwork-46.svg"
+            alt=""
+            width={3840}
+            height={2030}
+          />
+        </span>
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1735">
+          <Image
+            src="/assets/pasted-artwork-164.svg"
+            alt=""
+            width={58}
+            height={58}
+            className="svg-258"
+          />
+        </a>
+        <a href="https://x.com/matsufes_info" className="x-9">
+          <Image
+            src="/assets/pasted-artwork-165.svg"
+            alt=""
+            width={54}
+            height={49}
+            className="svg-259"
+          />
+        </a>
       </section>
     </>
   );
