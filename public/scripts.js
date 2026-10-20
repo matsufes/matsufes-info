@@ -380,10 +380,6 @@ var nv = resolve(el.getAttribute("data-live-value"), el);
 if (el.value !== nv) el.value = nv;
 });
 }
-function onLiveInput(e) {
-if (e.isTrusted && e.target && e.target.setAttribute) e.target.setAttribute("data-edited", "");
-refreshLive();
-}
 function setVar(name, v) {
 if (!name) return;
 writeVar(name, v);
@@ -961,8 +957,6 @@ root.addEventListener("click", onClick);
 root.addEventListener("mouseover", onOver);
 root.addEventListener("mouseout", onOut);
 root.addEventListener("input", onInput);
-root.addEventListener("input", onLiveInput);
-refreshLive();
 return function dispose() {
 alive = false;
 filters.clear();
@@ -977,7 +971,6 @@ root.removeEventListener("click", onClick);
 root.removeEventListener("mouseover", onOver);
 root.removeEventListener("mouseout", onOut);
 root.removeEventListener("input", onInput);
-root.removeEventListener("input", onLiveInput);
 };
 },
 };

@@ -152,7 +152,7 @@
         "node_mverdgk41gd",
         "node_mvg8ukrxkdysv"
       ],
-      "unpublished": true,
+      "unpublished": false,
       "bodyStyles": {
         "base": {
           "default": {
@@ -2440,7 +2440,8 @@
           }
         }
       ],
-      "htmlBackground": "#4d4c51"
+      "htmlBackground": "#4d4c51",
+      "unpublished": true
     },
     "page_mv7ucj3ccc": {
       "id": "page_mv7ucj3ccc",
