@@ -121,7 +121,7 @@ export default async function Page() {
         >
           <svg aria-hidden="true" width={213} height={213} viewBox="0 0 213 213" />
           <Image
-            src="/assets/pasted-artwork-224.svg"
+            src="/assets/pasted-artwork-219.svg"
             alt="トップへ戻る"
             width={426}
             height={426}
@@ -133,7 +133,7 @@ export default async function Page() {
           >
             <svg aria-hidden="true" width={230} height={142} viewBox="0 0 230 142" />
             <Image
-              src="/assets/pasted-artwork-223.svg"
+              src="/assets/pasted-artwork-218.svg"
               alt="メニューを開く"
               width={460}
               height={284}
@@ -149,7 +149,7 @@ export default async function Page() {
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
-                    src="/assets/pasted-artwork-160.svg"
+                    src="/assets/pasted-artwork-155.svg"
                     alt="メニューを閉じる"
                     width={86}
                     height={62}
@@ -1129,7 +1129,7 @@ export default async function Page() {
                                 alt=""
                                 width={1024}
                                 height={1024}
-                                className="image-14"
+                                className="image-13"
                               />
                               <p className="text-66">
                                 {"No Image"}
@@ -1221,7 +1221,7 @@ export default async function Page() {
         </span>
         <a href="https://www.instagram.com/kit_matsufes/" className="el-1735">
           <Image
-            src="/assets/pasted-artwork-164.svg"
+            src="/assets/pasted-artwork-159.svg"
             alt=""
             width={58}
             height={58}
@@ -1230,13 +1230,40 @@ export default async function Page() {
         </a>
         <a href="https://x.com/matsufes_info" className="x-9">
           <Image
-            src="/assets/pasted-artwork-165.svg"
+            src="/assets/pasted-artwork-160.svg"
             alt=""
             width={54}
             height={49}
             className="svg-259"
           />
         </a>
+      </section>
+      <section data-inview className="el-1820">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1821">
+          <Image
+            src="/assets/pasted-artwork-159.svg"
+            alt=""
+            width={58}
+            height={58}
+            className="svg-297"
+          />
+        </a>
+        <a href="https://x.com/matsufes_info" className="x-24">
+          <Image
+            src="/assets/pasted-artwork-160.svg"
+            alt=""
+            width={54}
+            height={49}
+            className="svg-298"
+          />
+        </a>
+        <Image
+          src="/assets/pasted-artwork-243.svg"
+          alt=""
+          width={375}
+          height={347}
+          className="svg-299"
+        />
       </section>
     </>
   );

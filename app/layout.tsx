@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Zen_Maru_Gothic, Zen_Kaku_Gothic_New, Oswald } from "next/font/google";
+import { Inter, Zen_Maru_Gothic, Zen_Kaku_Gothic_New } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import "../styles/site.css";
@@ -27,7 +27,6 @@ export const metadata: Metadata = {
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const zenmarugothic = Zen_Maru_Gothic({ subsets: ["latin"], variable: "--font-zen-maru-gothic", weight: ["400","500","700"] });
 const zenkakugothicnew = Zen_Kaku_Gothic_New({ subsets: ["latin"], variable: "--font-zen-kaku-gothic-new", weight: ["400","500","700"] });
-const oswald = Oswald({ subsets: ["latin"], variable: "--font-oswald", weight: ["400","500","600","700"] });
 
 export default function RootLayout({
   children,
@@ -42,7 +41,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: "\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-75BCG9JTXY');\n" }}
         />
       </head>
-      <body className={`${inter.variable} ${zenmarugothic.variable} ${zenkakugothicnew.variable} ${oswald.variable}`}>
+      <body className={`${inter.variable} ${zenmarugothic.variable} ${zenkakugothicnew.variable}`}>
         {children}
         <Script src="/inview.js?v=16qqctc" strategy="afterInteractive" />
         <Script src="/scripts.js?v=1o8rszc" strategy="afterInteractive" />

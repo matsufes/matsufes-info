@@ -23,7 +23,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={213} height={213} viewBox="0 0 213 213" />
           <Image
-            src="/assets/pasted-artwork-224.svg"
+            src="/assets/pasted-artwork-219.svg"
             alt="トップへ戻る"
             width={426}
             height={426}
@@ -35,7 +35,7 @@ export default function Page() {
           >
             <svg aria-hidden="true" width={230} height={142} viewBox="0 0 230 142" />
             <Image
-              src="/assets/pasted-artwork-223.svg"
+              src="/assets/pasted-artwork-218.svg"
               alt="メニューを開く"
               width={460}
               height={284}
@@ -51,7 +51,7 @@ export default function Page() {
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
-                    src="/assets/pasted-artwork-160.svg"
+                    src="/assets/pasted-artwork-155.svg"
                     alt="メニューを閉じる"
                     width={86}
                     height={62}
@@ -283,7 +283,7 @@ export default function Page() {
       </p>
       <section className="el-37">
         <Image
-          src="/assets/pasted-artwork-101.svg"
+          src="/assets/pasted-artwork-99.svg"
           alt=""
           width={1246}
           height={34}
@@ -344,77 +344,77 @@ export default function Page() {
         <div className="box-168">
           <div id="main15" data-toggle-show="flex" className="el-77">
             <Image
-              src="/assets/pasted-artwork-76.svg"
+              src="/assets/pasted-artwork-75.svg"
               alt=""
               width={306}
               height={113}
               className="svg-44"
             />
             <Image
-              src="/assets/pasted-artwork-77.svg"
+              src="/assets/pasted-artwork-76.svg"
               alt=""
               width={306}
               height={224}
               className="svg-45"
             />
             <Image
-              src="/assets/pasted-artwork-78.svg"
+              src="/assets/pasted-artwork-77.svg"
               alt=""
               width={306}
               height={299}
               className="svg-46"
             />
             <Image
-              src="/assets/pasted-artwork-151.svg"
+              src="/assets/pasted-artwork-146.svg"
               alt=""
               width={306}
               height={113}
               className="svg-116"
             />
             <Image
-              src="/assets/pasted-artwork-152.svg"
+              src="/assets/pasted-artwork-147.svg"
               alt=""
               width={306}
               height={113}
               className="svg-117"
             />
             <Image
-              src="/assets/pasted-artwork-153.svg"
+              src="/assets/pasted-artwork-148.svg"
               alt=""
               width={306}
               height={113}
               className="svg-118"
             />
             <Image
-              src="/assets/pasted-artwork-154.svg"
+              src="/assets/pasted-artwork-149.svg"
               alt=""
               width={306}
               height={113}
               className="svg-119"
             />
             <Image
-              src="/assets/pasted-artwork-155.svg"
+              src="/assets/pasted-artwork-150.svg"
               alt=""
               width={306}
               height={113}
               className="svg-120"
             />
             <Image
-              src="/assets/pasted-artwork-156.svg"
+              src="/assets/pasted-artwork-151.svg"
               alt=""
               width={306}
               height={113}
               className="svg-121"
             />
             <Image
-              src="/assets/pasted-artwork-157.svg"
+              src="/assets/pasted-artwork-152.svg"
               alt=""
               width={306}
               height={113}
               className="svg-122"
             />
             <Image
-              src="/assets/pasted-artwork-247.svg"
+              src="/assets/pasted-artwork-236.svg"
               alt=""
               width={175}
               height={63}
@@ -423,7 +423,7 @@ export default function Page() {
           </div>
           <div id="center15" data-toggle-show="flex" className="el-78">
             <Image
-              src="/assets/pasted-artwork-70.svg"
+              src="/assets/pasted-artwork-69.svg"
               alt=""
               width={306}
               height={801}
@@ -432,35 +432,35 @@ export default function Page() {
           </div>
           <div id="street15" data-toggle-show="flex" className="el-79">
             <Image
-              src="/assets/pasted-artwork-71.svg"
+              src="/assets/pasted-artwork-70.svg"
               alt=""
               width={306}
               height={113}
               className="svg-39"
             />
             <Image
-              src="/assets/pasted-artwork-79.svg"
+              src="/assets/pasted-artwork-78.svg"
               alt=""
               width={306}
               height={113}
               className="svg-47"
             />
             <Image
-              src="/assets/pasted-artwork-72.svg"
+              src="/assets/pasted-artwork-71.svg"
               alt=""
               width={306}
               height={113}
               className="svg-40"
             />
             <Image
-              src="/assets/pasted-artwork-73.svg"
+              src="/assets/pasted-artwork-72.svg"
               alt=""
               width={306}
               height={202}
               className="svg-41"
             />
             <Image
-              src="/assets/pasted-artwork-240.svg"
+              src="/assets/pasted-artwork-234.svg"
               alt=""
               width={306}
               height={113}
@@ -469,15 +469,15 @@ export default function Page() {
           </div>
           <div id="committee15" data-toggle-show="flex" className="el-56">
             <Image
-              src="/assets/pasted-artwork-80.svg"
+              src="/assets/pasted-artwork-79.svg"
               alt=""
               width={306}
               height={212}
-              className="image-6"
+              className="image-5"
             />
           </div>
           <Image
-            src="/assets/pasted-artwork-105.svg"
+            src="/assets/pasted-artwork-100.svg"
             alt=""
             width={295}
             height={2502}
@@ -488,7 +488,7 @@ export default function Page() {
           >
             <svg aria-hidden="true" width={1670} height={3081} viewBox="0 0 1670 3081" />
             <Image
-              src="/assets/pasted-artwork-220.svg"
+              src="/assets/pasted-artwork-215.svg"
               alt=""
               width={3340}
               height={6162}
@@ -510,7 +510,7 @@ export default function Page() {
         </span>
         <a href="https://www.instagram.com/kit_matsufes/" className="el-1733">
           <Image
-            src="/assets/pasted-artwork-164.svg"
+            src="/assets/pasted-artwork-159.svg"
             alt=""
             width={58}
             height={58}
@@ -519,13 +519,40 @@ export default function Page() {
         </a>
         <a href="https://x.com/matsufes_info" className="x-7">
           <Image
-            src="/assets/pasted-artwork-165.svg"
+            src="/assets/pasted-artwork-160.svg"
             alt=""
             width={54}
             height={49}
             className="svg-255"
           />
         </a>
+      </section>
+      <section data-inview className="el-1816">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1817">
+          <Image
+            src="/assets/pasted-artwork-159.svg"
+            alt=""
+            width={58}
+            height={58}
+            className="svg-291"
+          />
+        </a>
+        <a href="https://x.com/matsufes_info" className="x-22">
+          <Image
+            src="/assets/pasted-artwork-160.svg"
+            alt=""
+            width={54}
+            height={49}
+            className="svg-292"
+          />
+        </a>
+        <Image
+          src="/assets/pasted-artwork-243.svg"
+          alt=""
+          width={375}
+          height={347}
+          className="svg-293"
+        />
       </section>
     </>
   );

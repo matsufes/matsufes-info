@@ -23,7 +23,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={213} height={213} viewBox="0 0 213 213" />
           <Image
-            src="/assets/pasted-artwork-224.svg"
+            src="/assets/pasted-artwork-219.svg"
             alt="トップへ戻る"
             width={426}
             height={426}
@@ -35,7 +35,7 @@ export default function Page() {
           >
             <svg aria-hidden="true" width={230} height={142} viewBox="0 0 230 142" />
             <Image
-              src="/assets/pasted-artwork-223.svg"
+              src="/assets/pasted-artwork-218.svg"
               alt="メニューを開く"
               width={460}
               height={284}
@@ -51,7 +51,7 @@ export default function Page() {
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
-                    src="/assets/pasted-artwork-160.svg"
+                    src="/assets/pasted-artwork-155.svg"
                     alt="メニューを閉じる"
                     width={86}
                     height={62}
@@ -274,7 +274,7 @@ export default function Page() {
       />
       <p className="box-67">
         <Image
-          src="/assets/pasted-artwork-95.svg"
+          src="/assets/pasted-artwork-94.svg"
           alt=""
           width={412}
           height={123}
@@ -283,7 +283,7 @@ export default function Page() {
       </p>
       <section className="box-68">
         <Image
-          src="/assets/pasted-artwork-101.svg"
+          src="/assets/pasted-artwork-99.svg"
           alt=""
           width={1246}
           height={34}
@@ -296,7 +296,7 @@ export default function Page() {
         </p>
         <div className="box-194">
           <Image
-            src="/assets/pasted-artwork-236.svg"
+            src="/assets/pasted-artwork-231.svg"
             alt=""
             width={112}
             height={37}
@@ -310,7 +310,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={1393} height={115} viewBox="0 0 1393 115" />
           <Image
-            src="/assets/pasted-artwork-174.svg"
+            src="/assets/pasted-artwork-169.svg"
             alt=""
             width={2786}
             height={230}
@@ -321,7 +321,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={1393} height={451} viewBox="0 0 1393 451" />
           <Image
-            src="/assets/pasted-artwork-235.svg"
+            src="/assets/pasted-artwork-230.svg"
             alt=""
             width={2786}
             height={902}
@@ -342,7 +342,7 @@ export default function Page() {
         </span>
         <a href="https://www.instagram.com/kit_matsufes/" className="el-1795">
           <Image
-            src="/assets/pasted-artwork-164.svg"
+            src="/assets/pasted-artwork-159.svg"
             alt=""
             width={58}
             height={58}
@@ -351,13 +351,40 @@ export default function Page() {
         </a>
         <a href="https://x.com/matsufes_info" className="x-18">
           <Image
-            src="/assets/pasted-artwork-165.svg"
+            src="/assets/pasted-artwork-160.svg"
             alt=""
             width={54}
             height={49}
             className="svg-281"
           />
         </a>
+      </section>
+      <section data-inview className="el-1840">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1841">
+          <Image
+            src="/assets/pasted-artwork-159.svg"
+            alt=""
+            width={58}
+            height={58}
+            className="svg-327"
+          />
+        </a>
+        <a href="https://x.com/matsufes_info" className="x-34">
+          <Image
+            src="/assets/pasted-artwork-160.svg"
+            alt=""
+            width={54}
+            height={49}
+            className="svg-328"
+          />
+        </a>
+        <Image
+          src="/assets/pasted-artwork-243.svg"
+          alt=""
+          width={375}
+          height={347}
+          className="svg-329"
+        />
       </section>
     </>
   );

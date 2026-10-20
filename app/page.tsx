@@ -23,7 +23,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={213} height={213} viewBox="0 0 213 213" />
           <Image
-            src="/assets/pasted-artwork-224.svg"
+            src="/assets/pasted-artwork-219.svg"
             alt="トップへ戻る"
             width={426}
             height={426}
@@ -35,7 +35,7 @@ export default function Page() {
           >
             <svg aria-hidden="true" width={230} height={142} viewBox="0 0 230 142" />
             <Image
-              src="/assets/pasted-artwork-223.svg"
+              src="/assets/pasted-artwork-218.svg"
               alt="メニューを開く"
               width={460}
               height={284}
@@ -51,7 +51,7 @@ export default function Page() {
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
-                    src="/assets/pasted-artwork-160.svg"
+                    src="/assets/pasted-artwork-155.svg"
                     alt="メニューを閉じる"
                     width={86}
                     height={62}
@@ -133,7 +133,7 @@ export default function Page() {
         </div>
         <div className="el-1541">
           <div className="container-110">
-            <div data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-33\"},{\"kind\":\"show\",\"target\":\"div-34\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-33\"},{\"kind\":\"hide\",\"target\":\"div-34\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-34\"}]}]"} className="el-1542">
+            <div data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-33\"},{\"kind\":\"show\",\"target\":\"div-34\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-33\"},{\"kind\":\"hide\",\"target\":\"div-34\"}]}]"} className="el-1542">
               <div className="el-1543">
                 <div className="box-589">
                   <p className="text-402">
@@ -166,7 +166,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-35\"},{\"kind\":\"hide\",\"target\":\"div-36\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-35\"},{\"kind\":\"show\",\"target\":\"div-36\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-36\"}]}]"} className="el-1551">
+            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-35\"},{\"kind\":\"hide\",\"target\":\"div-36\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-35\"},{\"kind\":\"show\",\"target\":\"div-36\"}]}]"} className="el-1551">
               <div className="el-1552">
                 <div className="box-590">
                   <p className="text-405">
@@ -199,7 +199,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-37\"},{\"kind\":\"hide\",\"target\":\"div-39\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-37\"},{\"kind\":\"show\",\"target\":\"div-39\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-39\"}]}]"} className="el-1560">
+            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-37\"},{\"kind\":\"hide\",\"target\":\"div-39\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-37\"},{\"kind\":\"show\",\"target\":\"div-39\"}]}]"} className="el-1560">
               <div className="el-1561">
                 <p className="text-408">
                   {"ご"}
@@ -235,7 +235,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-40\"},{\"kind\":\"hide\",\"target\":\"div-38\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-40\"},{\"kind\":\"show\",\"target\":\"div-38\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-38\"}]}]"} className="el-1570">
+            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-40\"},{\"kind\":\"hide\",\"target\":\"div-38\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-40\"},{\"kind\":\"show\",\"target\":\"div-38\"}]}]"} className="el-1570">
               <div className="el-1571">
                 <div className="box-592">
                   <p className="text-411">
@@ -327,7 +327,7 @@ export default function Page() {
       <section className="box-513">
         <Link href="/search" className="el-804">
           <Image
-            src="/assets/pasted-artwork-248.svg"
+            src="/assets/pasted-artwork-237.svg"
             alt=""
             width={93}
             height={82}
@@ -339,7 +339,7 @@ export default function Page() {
             >
               <svg aria-hidden="true" width={164} height={119} viewBox="0 0 164 119" />
               <Image
-                src="/assets/pasted-artwork-251.svg"
+                src="/assets/pasted-artwork-240.svg"
                 alt=""
                 width={328}
                 height={238}
@@ -351,7 +351,7 @@ export default function Page() {
       <section className="box-515">
         <a href="/navigation" className="el-805">
           <Image
-            src="/assets/pasted-artwork-249.svg"
+            src="/assets/pasted-artwork-238.svg"
             alt=""
             width={42}
             height={75}
@@ -363,7 +363,7 @@ export default function Page() {
             >
               <svg aria-hidden="true" width={164} height={119} viewBox="0 0 164 119" />
               <Image
-                src="/assets/pasted-artwork-252.svg"
+                src="/assets/pasted-artwork-241.svg"
                 alt=""
                 width={328}
                 height={238}
@@ -373,7 +373,7 @@ export default function Page() {
         </a>
         <Link href="/schedule/0" className="el-806">
           <Image
-            src="/assets/pasted-artwork-250.svg"
+            src="/assets/pasted-artwork-239.svg"
             alt=""
             width={60}
             height={60}
@@ -385,7 +385,7 @@ export default function Page() {
             >
               <svg aria-hidden="true" width={202} height={112} viewBox="0 0 202 112" />
               <Image
-                src="/assets/pasted-artwork-253.svg"
+                src="/assets/pasted-artwork-242.svg"
                 alt=""
                 width={404}
                 height={224}
@@ -428,7 +428,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={1051} height={732} viewBox="0 0 1051 732" />
           <Image
-            src="/assets/pasted-artwork-99.svg"
+            src="/assets/pasted-artwork-97.svg"
             alt=""
             width={2102}
             height={1464}
@@ -441,7 +441,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={1112} height={769} viewBox="0 0 1112 769" />
           <Image
-            src="/assets/pasted-artwork-100.svg"
+            src="/assets/pasted-artwork-98.svg"
             alt=""
             width={2224}
             height={1538}
@@ -467,7 +467,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={1248} height={195} viewBox="0 0 1248 195" />
           <Image
-            src="/assets/pasted-artwork-159.svg"
+            src="/assets/pasted-artwork-154.svg"
             alt=""
             width={2496}
             height={390}
@@ -516,7 +516,7 @@ export default function Page() {
       <section data-inview className="el-813">
         <a href="https://www.instagram.com/kit_matsufes/" className="el-82">
           <Image
-            src="/assets/pasted-artwork-164.svg"
+            src="/assets/pasted-artwork-159.svg"
             alt=""
             width={58}
             height={58}
@@ -525,7 +525,7 @@ export default function Page() {
         </a>
         <a href="https://x.com/matsufes_info" className="x">
           <Image
-            src="/assets/pasted-artwork-165.svg"
+            src="/assets/pasted-artwork-160.svg"
             alt=""
             width={54}
             height={49}
@@ -533,7 +533,7 @@ export default function Page() {
           />
         </a>
         <Image
-          src="/assets/pasted-artwork-254.svg"
+          src="/assets/pasted-artwork-243.svg"
           alt=""
           width={375}
           height={347}
@@ -552,22 +552,22 @@ export default function Page() {
             height={2030}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1796">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1801">
           <Image
-            src="/assets/pasted-artwork-164.svg"
+            src="/assets/pasted-artwork-159.svg"
             alt=""
             width={58}
             height={58}
-            className="svg-289"
+            className="svg-283"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-19">
           <Image
-            src="/assets/pasted-artwork-165.svg"
+            src="/assets/pasted-artwork-160.svg"
             alt=""
             width={54}
             height={49}
-            className="svg-290"
+            className="svg-284"
           />
         </a>
       </section>
