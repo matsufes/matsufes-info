@@ -3997,6 +3997,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   justify-content: center;
   align-items: center;
   width: 70%;
+  z-index: 5;
 }
 
 .pc,
@@ -17134,7 +17135,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   max-width: 100%;
   border-radius: 0px;
   position: absolute;
-  top: 2%;
+  top: 8%;
   right: 0%;
   height: auto;
 }
@@ -20060,7 +20061,8 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   }
 
   body:has([data-page-body="page_mv7xdigo16"]) {
-    height: auto;
+    height: 874px;
+    width: 402px;
   }
 
   .el {
@@ -23768,9 +23770,6 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   .el-1778,
   .el-1781,
   .el-1786,
-  .el-1799,
-  .el-1804,
-  .el-1809,
   .el-1812,
   .el-1814,
   .el-1816,
@@ -24247,9 +24246,6 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   .el-1781,
   .el-1786,
   .el-1788,
-  .el-1799,
-  .el-1804,
-  .el-1809,
   .el-1812,
   .el-1814,
   .el-1816,
@@ -24726,9 +24722,6 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   .el-1781,
   .el-1786,
   .el-1788,
-  .el-1799,
-  .el-1804,
-  .el-1809,
   .el-1812,
   .el-1814,
   .el-1816,
@@ -25233,11 +25226,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   .footer-13,
   .footer-14,
   .footer-15,
-  .el-1799,
-  .footer-16,
-  .el-1804,
-  .el-1809,
-  .el-1811 {
+  .footer-16 {
     display: none;
   }
 }

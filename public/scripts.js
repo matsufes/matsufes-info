@@ -1,7 +1,8 @@
 (function (env) {
 function safeNavigationUrl(value) {
 var url = value.trim();
-if (!url || /[\u0000-\u001f\u007f\\]/.test(url) || url.indexOf("//") === 0) return "#";
+var beforeQuery = url.split(/[?#]/, 1)[0];
+if (!url || /[\u0000-\u001f\u007f\\]/.test(beforeQuery) || url.indexOf("//") === 0) return "#";
 var match = /^([a-z][a-z0-9+.-]*):/i.exec(url);
 var scheme = match && match[1].toLowerCase();
 if (scheme && ["http", "https", "mailto", "tel"].indexOf(scheme) < 0) return "#";
@@ -353,7 +354,7 @@ return m;
 if (!/^[^{}\s"'<>`]+$/.test(k)) return m;
 }
 var v = text(lookup(k.trim(), self, item));
-return at === 0 && (/^(?:https?:|mailto:|tel:|data:image/(?:png|jpe?g|gif|webp|avif|bmp|x-icon|vnd.microsoft.icon)[;,])/i.test(v) || (v.charAt(0) === "/" && v.charAt(1) !== "/") || v.charAt(0) === "#")
+return at === 0 && (/^(?:https?:|mailto:|tel:|data:image\/(?:png|jpe?g|gif|webp|avif|bmp|x-icon|vnd\.microsoft\.icon)[;,])/i.test(v) || (v.charAt(0) === "/" && v.charAt(1) !== "/") || v.charAt(0) === "#")
 ? v
 : encodeURIComponent(v);
 }
@@ -379,6 +380,10 @@ if (inTpl(el) || el.hasAttribute("data-edited")) return;
 var nv = resolve(el.getAttribute("data-live-value"), el);
 if (el.value !== nv) el.value = nv;
 });
+}
+function onLiveInput(e) {
+if (e.isTrusted && e.target && e.target.setAttribute) e.target.setAttribute("data-edited", "");
+refreshLive();
 }
 function setVar(name, v) {
 if (!name) return;
@@ -803,12 +808,6 @@ return parse(el).filter(function (s) {
 return s.trigger === "click";
 });
 }
-function opensPage(steps) {
-return (steps || []).some(function (st) {
-return st.kind === "open-page" || st.kind === "open-url" ||
-opensPage(st.then) || opensPage(st.else);
-});
-}
 function innerClick(t) {
 var els = chain(t);
 for (var i = 0; i < els.length; i++) if (clickSteps(els[i]).length) return els[i];
@@ -820,13 +819,8 @@ var a = inner && inner.parentElement && inner.parentElement.closest("a[href]");
 if (a && root.contains(a)) e.preventDefault();
 }
 function onClick(e) {
-var inner = null;
-chain(e.target).forEach(function (el) {
-var steps = clickSteps(el);
-if (inner && steps.some(function (s) { return opensPage(s.steps); })) return;
-fire(el, "click");
-if (!inner && steps.length) inner = el;
-});
+var inner = innerClick(e.target);
+if (inner) fire(inner, "click");
 }
 function shownByHover(el) {
 var out = [];
@@ -957,6 +951,8 @@ root.addEventListener("click", onClick);
 root.addEventListener("mouseover", onOver);
 root.addEventListener("mouseout", onOut);
 root.addEventListener("input", onInput);
+root.addEventListener("input", onLiveInput);
+refreshLive();
 return function dispose() {
 alive = false;
 filters.clear();
@@ -971,6 +967,7 @@ root.removeEventListener("click", onClick);
 root.removeEventListener("mouseover", onOver);
 root.removeEventListener("mouseout", onOut);
 root.removeEventListener("input", onInput);
+root.removeEventListener("input", onLiveInput);
 };
 },
 };

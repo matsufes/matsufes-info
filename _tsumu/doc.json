@@ -152,7 +152,7 @@
         "node_mverdgk41gd",
         "node_mvg8ukrxkdysv"
       ],
-      "unpublished": false,
+      "unpublished": true,
       "bodyStyles": {
         "base": {
           "default": {
@@ -2441,7 +2441,7 @@
         }
       ],
       "htmlBackground": "#4d4c51",
-      "unpublished": true
+      "unpublished": false
     },
     "page_mv7ucj3ccc": {
       "id": "page_mv7ucj3ccc",
@@ -3400,7 +3400,8 @@
         },
         "sm": {
           "default": {
-            "height": "auto"
+            "height": "874px",
+            "width": "402px"
           }
         }
       }
@@ -21911,7 +21912,8 @@
             "right": "0px",
             "justifyContent": "center",
             "alignItems": "center",
-            "width": "70%"
+            "width": "70%",
+            "zIndex": "5"
           }
         },
         "sm": {
@@ -23159,23 +23161,6 @@
           }
         }
       },
-      "scripts": [
-        {
-          "id": "sc_mv4vj48kb",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_mv4vj6gec",
-              "kind": "open-page",
-              "pageId": "page_muiixvz340"
-            }
-          ],
-          "pos": {
-            "x": 591,
-            "y": 457
-          }
-        }
-      ],
       "motions": [
         {
           "id": "motion_mv4vl78k1u",
@@ -23188,6 +23173,23 @@
           "repeat": 1,
           "direction": "normal",
           "fillMode": "both"
+        }
+      ],
+      "scripts": [
+        {
+          "id": "sc_mv4vj48kb",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mv4vj6gec",
+              "kind": "open-page",
+              "pageId": "page_muiixvz340"
+            }
+          ],
+          "pos": {
+            "x": 587,
+            "y": 432
+          }
         }
       ]
     },
@@ -180560,13 +180562,7 @@
         "lg": {
           "default": {}
         }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ]
+      }
     },
     "node_mvezo9k6pxpfk": {
       "id": "node_mvezo9k6pxpfk",
@@ -181038,13 +181034,7 @@
             "left": "auto"
           }
         }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ]
+      }
     },
     "node_mvf529k6d3ecg": {
       "id": "node_mvf529k6d3ecg",
@@ -181184,7 +181174,7 @@
             "maxWidth": "100%",
             "borderRadius": "0px",
             "position": "absolute",
-            "top": "2%",
+            "top": "8%",
             "right": "0%"
           }
         },
@@ -181267,13 +181257,7 @@
             "top": "100%"
           }
         }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ]
+      }
     },
     "node_mvf9skbx65c83": {
       "id": "node_mvf9skbx65c83",
@@ -181352,10 +181336,7 @@
             "borderRadius": "0px"
           }
         }
-      },
-      "hiddenOn": [
-        "sm"
-      ]
+      }
     },
     "node_mvg8q0dj273nu": {
       "id": "node_mvg8q0dj273nu",
