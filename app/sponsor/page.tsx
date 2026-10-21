@@ -18,29 +18,21 @@ export default function Page() {
     <>
       <span hidden data-page-body="page_muf6exd68g" />
       <nav className="header-17">
-        <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/\"}]}]"}
-          className="crisp-svg el-1324"
-        >
-          <svg aria-hidden="true" width={213} height={213} viewBox="0 0 213 213" />
-          <Image
-            src="/assets/pasted-artwork-219.svg"
-            alt="トップへ戻る"
-            width={426}
-            height={426}
-          />
-        </span>
+        <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/\"}]}]"}
+          src="/assets/home.png"
+          alt="トップへ戻る"
+          width={426}
+          height={426}
+          className="el-1324"
+        />
         <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"memu-p-2\"}]}]"} className="el-1325">
-          <span
-            className="crisp-svg pasted-artwork-svg-69"
-          >
-            <svg aria-hidden="true" width={230} height={142} viewBox="0 0 230 142" />
-            <Image
-              src="/assets/pasted-artwork-218.svg"
-              alt="メニューを開く"
-              width={460}
-              height={284}
-            />
-          </span>
+          <Image
+            src="/assets/menu.png"
+            alt="メニューを開く"
+            width={460}
+            height={284}
+            className="pasted-artwork-svg-69"
+          />
         </div>
         <div id="memu-p-2" data-toggle-show="flex" data-inview className="el-1326">
           <div className="box-568">
@@ -51,7 +43,7 @@ export default function Page() {
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
-                    src="/assets/pasted-artwork-155.svg"
+                    src="/assets/pasted-artwork-151.svg"
                     alt="メニューを閉じる"
                     width={86}
                     height={62}
@@ -266,7 +258,7 @@ export default function Page() {
         </div>
       </nav>
       <Image data-inview
-        src="/assets/image-6.svg"
+        src="/assets/image-5.svg"
         alt=""
         width={1920}
         height={583}
@@ -275,7 +267,7 @@ export default function Page() {
       <section data-inview className="el-60" />
       <p className="box-65">
         <Image
-          src="/assets/pasted-artwork-217.svg"
+          src="/assets/pasted-artwork-213.svg"
           alt=""
           width={1161}
           height={131}
@@ -284,7 +276,7 @@ export default function Page() {
       </p>
       <section className="box-66">
         <Image
-          src="/assets/pasted-artwork-99.svg"
+          src="/assets/pasted-artwork-95.svg"
           alt=""
           width={1246}
           height={34}
@@ -296,7 +288,7 @@ export default function Page() {
       </p>
       <section className="box-123">
         <Image
-          src="/assets/pasted-artwork-157.svg"
+          src="/assets/pasted-artwork-153.svg"
           alt=""
           width={438}
           height={114}
@@ -313,7 +305,7 @@ export default function Page() {
       </section>
       <section className="box-124">
         <Image
-          src="/assets/pasted-artwork-158.svg"
+          src="/assets/pasted-artwork-154.svg"
           alt=""
           width={438}
           height={114}
@@ -330,7 +322,7 @@ export default function Page() {
       </section>
       <section className="box-132">
         <Image
-          src="/assets/pasted-artwork-214.svg"
+          src="/assets/pasted-artwork-210.svg"
           alt=""
           width={438}
           height={114}
@@ -401,7 +393,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={1920} height={1015} viewBox="0 0 1920 1015" />
           <Image
-            src="/assets/pasted-artwork-46.svg"
+            src="/assets/pasted-artwork-44.svg"
             alt=""
             width={3840}
             height={2030}
@@ -409,7 +401,7 @@ export default function Page() {
         </span>
         <a href="https://www.instagram.com/kit_matsufes/" className="el-1794">
           <Image
-            src="/assets/pasted-artwork-159.svg"
+            src="/assets/pasted-artwork-155.svg"
             alt=""
             width={58}
             height={58}
@@ -418,7 +410,7 @@ export default function Page() {
         </a>
         <a href="https://x.com/matsufes_info" className="x-17">
           <Image
-            src="/assets/pasted-artwork-160.svg"
+            src="/assets/pasted-artwork-156.svg"
             alt=""
             width={54}
             height={49}
@@ -429,7 +421,7 @@ export default function Page() {
       <section data-inview className="el-1838">
         <a href="https://www.instagram.com/kit_matsufes/" className="el-1839">
           <Image
-            src="/assets/pasted-artwork-159.svg"
+            src="/assets/pasted-artwork-155.svg"
             alt=""
             width={58}
             height={58}
@@ -438,7 +430,7 @@ export default function Page() {
         </a>
         <a href="https://x.com/matsufes_info" className="x-33">
           <Image
-            src="/assets/pasted-artwork-160.svg"
+            src="/assets/pasted-artwork-156.svg"
             alt=""
             width={54}
             height={49}
@@ -446,7 +438,7 @@ export default function Page() {
           />
         </a>
         <Image
-          src="/assets/pasted-artwork-243.svg"
+          src="/assets/pasted-artwork-236.svg"
           alt=""
           width={375}
           height={347}
