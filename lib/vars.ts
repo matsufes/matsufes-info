@@ -1,6 +1,7 @@
 export function safeNavigationUrl(value: string): string {
   var url = value.trim();
-  if (!url || /[\u0000-\u001f\u007f\\]/.test(url) || url.indexOf("//") === 0) return "#";
+  var beforeQuery = url.split(/[?#]/, 1)[0];
+  if (!url || /[\u0000-\u001f\u007f\\]/.test(beforeQuery) || url.indexOf("//") === 0) return "#";
   var match = /^([a-z][a-z0-9+.-]*):/i.exec(url);
   var scheme = match && match[1].toLowerCase();
   if (scheme && ["http", "https", "mailto", "tel"].indexOf(scheme) < 0) return "#";

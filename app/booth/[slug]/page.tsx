@@ -181,7 +181,7 @@ export default async function Page({
         >
           <svg aria-hidden="true" width={213} height={213} viewBox="0 0 213 213" />
           <Image
-            src="/assets/pasted-artwork-224.svg"
+            src="/assets/pasted-artwork-219.svg"
             alt="トップへ戻る"
             width={426}
             height={426}
@@ -193,7 +193,7 @@ export default async function Page({
           >
             <svg aria-hidden="true" width={230} height={142} viewBox="0 0 230 142" />
             <Image
-              src="/assets/pasted-artwork-223.svg"
+              src="/assets/pasted-artwork-218.svg"
               alt="メニューを開く"
               width={460}
               height={284}
@@ -209,7 +209,7 @@ export default async function Page({
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
-                    src="/assets/pasted-artwork-160.svg"
+                    src="/assets/pasted-artwork-155.svg"
                     alt="メニューを閉じる"
                     width={86}
                     height={62}
@@ -486,7 +486,7 @@ export default async function Page({
                     alt=""
                     width={1024}
                     height={1024}
-                    className="image-15"
+                    className="image-14"
                   />
                 </div>
                 <div className="box-325" />
@@ -697,7 +697,7 @@ export default async function Page({
                     priority
                   />
                   <Image id="favoff" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"remove","value":interpolate("{_1.publicId}", { ...vars, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...vars, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"favoff"},{"kind":"show","target":"fav-svg"}]}])} data-toggle-show="block"
-                    src="/assets/pasted-artwork-214.svg"
+                    src="/assets/pasted-artwork-209.svg"
                     alt="お気に入り未登録"
                     width={209}
                     height={204}
@@ -710,7 +710,7 @@ export default async function Page({
               </div>
               <SmartLink href={safeNavigationUrl(interpolateUrl("https://vote.matsufes.info/?id={_1.publicId}", vars))} className="vote">
                 <Image
-                  src="/assets/pasted-artwork-213.svg"
+                  src="/assets/pasted-artwork-208.svg"
                   alt="m-1グランプリ"
                   width={162}
                   height={237}
@@ -733,21 +733,21 @@ export default async function Page({
           <div className="box-348">
             <div className="box-333">
               <Image id="x" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{_1.snsX}", { ...vars, ...{"\u0000keepEscapes":true} }),"newTab":true}]}])}
-                src="/assets/pasted-artwork-212.svg"
+                src="/assets/pasted-artwork-207.svg"
                 alt="X"
                 width={40}
                 height={37}
                 className="x-3"
               />
               <Image id="inst" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{_1.snsInstagram}", { ...vars, ...{"\u0000keepEscapes":true} }),"newTab":true}]}])}
-                src="/assets/pasted-artwork-211.svg"
+                src="/assets/pasted-artwork-206.svg"
                 alt="Instagram"
                 width={44}
                 height={44}
                 className="inst"
               />
               <Image id="web" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{snsWeb}", { ...vars, ...{"snsWeb":"{snsWeb}","\u0000keepEscapes":true} }),"newTab":true}]}])}
-                src="/assets/pasted-artwork-210.svg"
+                src="/assets/pasted-artwork-205.svg"
                 alt="外部サイト"
                 width={50}
                 height={51}
@@ -804,7 +804,7 @@ export default async function Page({
         </span>
         <a href="https://www.instagram.com/kit_matsufes/" className="el-1790">
           <Image
-            src="/assets/pasted-artwork-164.svg"
+            src="/assets/pasted-artwork-159.svg"
             alt=""
             width={58}
             height={58}
@@ -813,13 +813,40 @@ export default async function Page({
         </a>
         <a href="https://x.com/matsufes_info" className="x-13">
           <Image
-            src="/assets/pasted-artwork-165.svg"
+            src="/assets/pasted-artwork-160.svg"
             alt=""
             width={54}
             height={49}
             className="svg-271"
           />
         </a>
+      </section>
+      <section data-inview className="el-1822">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1823">
+          <Image
+            src="/assets/pasted-artwork-159.svg"
+            alt=""
+            width={58}
+            height={58}
+            className="svg-300"
+          />
+        </a>
+        <a href="https://x.com/matsufes_info" className="x-25">
+          <Image
+            src="/assets/pasted-artwork-160.svg"
+            alt=""
+            width={54}
+            height={49}
+            className="svg-301"
+          />
+        </a>
+        <Image
+          src="/assets/pasted-artwork-243.svg"
+          alt=""
+          width={375}
+          height={347}
+          className="svg-302"
+        />
       </section>
     </>
   );

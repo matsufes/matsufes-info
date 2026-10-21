@@ -23,7 +23,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={213} height={213} viewBox="0 0 213 213" />
           <Image
-            src="/assets/pasted-artwork-224.svg"
+            src="/assets/pasted-artwork-219.svg"
             alt="トップへ戻る"
             width={426}
             height={426}
@@ -35,7 +35,7 @@ export default function Page() {
           >
             <svg aria-hidden="true" width={230} height={142} viewBox="0 0 230 142" />
             <Image
-              src="/assets/pasted-artwork-223.svg"
+              src="/assets/pasted-artwork-218.svg"
               alt="メニューを開く"
               width={460}
               height={284}
@@ -51,7 +51,7 @@ export default function Page() {
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
-                    src="/assets/pasted-artwork-160.svg"
+                    src="/assets/pasted-artwork-155.svg"
                     alt="メニューを閉じる"
                     width={86}
                     height={62}
@@ -274,7 +274,7 @@ export default function Page() {
       />
       <section className="box-205">
         <Image
-          src="/assets/pasted-artwork-124.svg"
+          src="/assets/pasted-artwork-119.svg"
           alt=""
           width={1113}
           height={135}
@@ -282,7 +282,7 @@ export default function Page() {
         />
         <p className="box-203">
           <Image
-            src="/assets/pasted-artwork-125.svg"
+            src="/assets/pasted-artwork-120.svg"
             alt=""
             width={371}
             height={38}
@@ -291,7 +291,7 @@ export default function Page() {
         </p>
         <div className="box-204">
           <Image
-            src="/assets/pasted-artwork-126.svg"
+            src="/assets/pasted-artwork-121.svg"
             alt=""
             width={400}
             height={400}
@@ -304,7 +304,7 @@ export default function Page() {
         alt=""
         width={1920}
         height={713}
-        className="image-12"
+        className="image-11"
       />
     </>
   );

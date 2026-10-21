@@ -1,12 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="351" height="351" viewBox="0 0 351 351" fill="none">
-<g filter="url(#filter0_f_619_287)">
-<rect x="20" y="20" width="311" height="311" fill="#F7E9EF"/>
-</g>
-<defs>
-<filter id="filter0_f_619_287" x="0" y="0" width="351" height="351" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="10" result="effect1_foregroundBlur_619_287"/>
-</filter>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="51" viewBox="0 0 50 51" fill="none">
+<rect x="1.875" y="1.875" width="42.25" height="31.25" rx="2.625" stroke="#F8F6E5" stroke-width="3.75"/>
+<rect x="2.375" y="3.375" width="41.25" height="8.25" fill="#F8F6E5" stroke="#F8F6E5" stroke-width="0.75"/>
+<path d="M20.4005 15.9175L40.7797 26.5217L23.1985 38.7195L20.4005 15.9175Z" fill="#F8F6E5"/>
+<rect x="28.6812" y="32.853" width="5.70198" height="15.2471" transform="rotate(-34.7529 28.6812 32.853)" fill="#F8F6E5"/>
 </svg>

@@ -94,7 +94,8 @@
         "node_mu9aozby4y",
         "node_muqw3e066",
         "node_msotdahne",
-        "node_mvercrgh1fv"
+        "node_mvercrgh1fv",
+        "node_mvg8q0dj273nu"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -148,7 +149,8 @@
         "node_mv3plg65r",
         "node_mv64stsrj",
         "node_mv6ciu0n2",
-        "node_mverdgk41gd"
+        "node_mverdgk41gd",
+        "node_mvg8ukrxkdysv"
       ],
       "unpublished": true,
       "bodyStyles": {
@@ -1010,9 +1012,9 @@
         "node_mv5ikjokup",
         "node_mv5ipbrzuz",
         "node_mv5iqji3vf",
-        "node_mu2t6c971j"
+        "node_mvg8zm8l1kmfwu"
       ],
-      "unpublished": false,
+      "unpublished": true,
       "bodyStyles": {
         "base": {
           "default": {
@@ -1101,7 +1103,8 @@
         "node_mu9anw834r",
         "node_mukyxc077",
         "node_mu98rc7s3r",
-        "node_mverd04v1g1"
+        "node_mverd04v1g1",
+        "node_mvg8qhmr8p5co"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -1131,7 +1134,8 @@
         "node_mu9ab4a74b",
         "node_mukyya809",
         "node_mu98rd4645",
-        "node_mverd8lf1g7"
+        "node_mverd8lf1g7",
+        "node_mvg8quydekt1v"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -1164,7 +1168,8 @@
         "node_muildk7n54",
         "node_muf53mtd6b",
         "node_muf53mtd6d",
-        "node_mveuupuc1h7"
+        "node_mveuupuc1h7",
+        "node_mvg8zbhm1el6d4"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -1217,7 +1222,8 @@
         "node_muf67d6m7b",
         "node_muf67d6m7d",
         "node_muf67d6n7f",
-        "node_mvexegzt1ts07f"
+        "node_mvexegzt1ts07f",
+        "node_mvg8zs2e1qfsjh"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -1247,7 +1253,8 @@
         "node_muqx666i3",
         "node_mv3i72l38",
         "node_mufcie7f9h",
-        "node_mvexekt71zfehc"
+        "node_mvexekt71zfehc",
+        "node_mvg8zu1p1wzibo"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -1277,7 +1284,8 @@
         "node_mufb30sa97",
         "node_muiosizo6h",
         "node_mufb5xl29c",
-        "node_mvexeorx252was"
+        "node_mvexeorx252was",
+        "node_mvg8zvog22mj8b"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -1312,7 +1320,8 @@
         "node_mv1xa5mk5c",
         "node_muxpz65a1",
         "node_muxq3j9sa",
-        "node_mvexeu062b9htr"
+        "node_mvexeu062b9htr",
+        "node_mvg8zxwl28e7cz"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -1344,7 +1353,8 @@
         "node_muf6flq18k",
         "node_mv638ixeb",
         "node_mv635ewd8",
-        "node_mvexex1k2hkb1p"
+        "node_mvexex1k2hkb1p",
+        "node_mvg8zzvd2e0ez3"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -1421,7 +1431,8 @@
         "node_muij55ln41",
         "node_muik5x774b",
         "node_muikbdni4e",
-        "node_mveutll51gv"
+        "node_mveutll51gv",
+        "node_mvg8yz1712irc6"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -1603,7 +1614,8 @@
         "node_mv6o9vxe2l",
         "node_mv6o9vxe2n",
         "node_mv6o9vxe2r",
-        "node_mveutwd41h1"
+        "node_mveutwd41h1",
+        "node_mvg8z5it18yyrc"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -1633,7 +1645,8 @@
         "node_mv6w4mw51j",
         "node_mv6ua5v07",
         "node_mv7mhqm75",
-        "node_mverjuyj1gj"
+        "node_mverjuyj1gj",
+        "node_mvg8ycyyq6wh6"
       ],
       "bodyStyles": {
         "base": {
@@ -2427,7 +2440,8 @@
           }
         }
       ],
-      "htmlBackground": "#4d4c51"
+      "htmlBackground": "#4d4c51",
+      "unpublished": false
     },
     "page_mv7ucj3ccc": {
       "id": "page_mv7ucj3ccc",
@@ -2444,7 +2458,8 @@
         "node_mv7ucj395b",
         "node_mv85v1elv",
         "node_mv7ucj3cca",
-        "node_mvews92d1ngog9"
+        "node_mvews92d1ngog9",
+        "node_mvg8yk86w51h7"
       ],
       "bodyStyles": {
         "base": {
@@ -3385,7 +3400,8 @@
         },
         "sm": {
           "default": {
-            "height": "auto"
+            "height": "874px",
+            "width": "402px"
           }
         }
       }
@@ -5204,7 +5220,7 @@
         "node_mvevfzus1l3",
         "node_mvevgwge1lf"
       ],
-      "unpublished": true,
+      "unpublished": false,
       "bodyStyles": {
         "base": {
           "default": {
@@ -7343,44 +7359,6 @@
           }
         }
       }
-    },
-    "node_mu2t6c971j": {
-      "id": "node_mu2t6c971j",
-      "type": "image",
-      "name": "画像",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmsoqcrmb--.svg",
-        "alt": "",
-        "width": 1920,
-        "height": 713,
-        "assetId": "asset_msoqcsen1p"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "100%",
-            "borderRadius": "0px"
-          }
-        }
-      },
-      "motions": [
-        {
-          "id": "motion_msote2mqg",
-          "trigger": "in-view",
-          "property": "all",
-          "keyframes": "fade-up",
-          "duration": 1,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 1,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ]
     },
     "node_mu2td1rh1r": {
       "id": "node_mu2td1rh1r",
@@ -21934,7 +21912,8 @@
             "right": "0px",
             "justifyContent": "center",
             "alignItems": "center",
-            "width": "70%"
+            "width": "70%",
+            "zIndex": "5"
           }
         },
         "sm": {
@@ -23182,23 +23161,6 @@
           }
         }
       },
-      "scripts": [
-        {
-          "id": "sc_mv4vj48kb",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_mv4vj6gec",
-              "kind": "open-page",
-              "pageId": "page_muiixvz340"
-            }
-          ],
-          "pos": {
-            "x": 591,
-            "y": 457
-          }
-        }
-      ],
       "motions": [
         {
           "id": "motion_mv4vl78k1u",
@@ -23211,6 +23173,23 @@
           "repeat": 1,
           "direction": "normal",
           "fillMode": "both"
+        }
+      ],
+      "scripts": [
+        {
+          "id": "sc_mv4vj48kb",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mv4vj6gec",
+              "kind": "open-page",
+              "pageId": "page_muiixvz340"
+            }
+          ],
+          "pos": {
+            "x": 587,
+            "y": 432
+          }
         }
       ]
     },
@@ -180583,13 +180562,7 @@
         "lg": {
           "default": {}
         }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ]
+      }
     },
     "node_mvezo9k6pxpfk": {
       "id": "node_mvezo9k6pxpfk",
@@ -181061,13 +181034,7 @@
             "left": "auto"
           }
         }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ]
+      }
     },
     "node_mvf529k6d3ecg": {
       "id": "node_mvf529k6d3ecg",
@@ -181207,7 +181174,7 @@
             "maxWidth": "100%",
             "borderRadius": "0px",
             "position": "absolute",
-            "top": "2%",
+            "top": "8%",
             "right": "0%"
           }
         },
@@ -181290,13 +181257,7 @@
             "top": "100%"
           }
         }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ]
+      }
     },
     "node_mvf9skbx65c83": {
       "id": "node_mvf9skbx65c83",
@@ -181375,10 +181336,3487 @@
             "borderRadius": "0px"
           }
         }
+      }
+    },
+    "node_mvg8q0dj273nu": {
+      "id": "node_mvg8q0dj273nu",
+      "type": "box",
+      "name": "スマホ版フッター",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvg8q0dk3nled",
+        "node_mvg8q0dk59mqn",
+        "node_mvg8q0dk7nwpm"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        }
       },
       "hiddenOn": [
-        "sm"
+        "base",
+        "lg",
+        "md"
+      ],
+      "motions": [
+        {
+          "id": "motion_mvdm3jnil",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
       ]
+    },
+    "node_mvg8q0dk3nled": {
+      "id": "node_mvg8q0dk3nled",
+      "type": "box",
+      "name": "インスタ",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://www.instagram.com/kit_matsufes/",
+        "newTab": false,
+        "pos": {
+          "x": 40,
+          "y": 1855
+        }
+      },
+      "children": [
+        "node_mvg8q0dk4e2q6"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "17%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "8%",
+            "paddingTop": "5px",
+            "paddingBottom": "5px",
+            "paddingRight": "5px",
+            "paddingLeft": "5px",
+            "right": "20%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8q0dk4e2q6": {
+      "id": "node_mvg8q0dk4e2q6",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlg9d0-pasted-artwork.svg",
+        "alt": "",
+        "width": 58,
+        "height": 58,
+        "assetId": "asset_mutlg9na1m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8q0dk59mqn": {
+      "id": "node_mvg8q0dk59mqn",
+      "type": "box",
+      "name": "X",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://x.com/matsufes_info",
+        "newTab": false,
+        "pos": {
+          "x": 37,
+          "y": 1942
+        }
+      },
+      "children": [
+        "node_mvg8q0dk68erf"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "7%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingTop": "5px",
+            "paddingRight": "5px",
+            "paddingBottom": "5px",
+            "paddingLeft": "5px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "8%",
+            "right": "9%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8q0dk68erf": {
+      "id": "node_mvg8q0dk68erf",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlgm4j-pasted-artwork.svg",
+        "alt": "",
+        "width": 54,
+        "height": 49,
+        "assetId": "asset_mutlgmgm1o"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8q0dk7nwpm": {
+      "id": "node_mvg8q0dk7nwpm",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvaih88m-pasted-artwork.svg",
+        "alt": "",
+        "width": 375,
+        "height": 347,
+        "assetId": "asset_mvaih8ot1t"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "375px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8qhmr8p5co": {
+      "id": "node_mvg8qhmr8p5co",
+      "type": "box",
+      "name": "スマホ版フッター",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvg8qhms9hi76",
+        "node_mvg8qhmsby51a",
+        "node_mvg8qhmsd8jh0"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ],
+      "motions": [
+        {
+          "id": "motion_mvdm3jnil",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvg8qhms9hi76": {
+      "id": "node_mvg8qhms9hi76",
+      "type": "box",
+      "name": "インスタ",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://www.instagram.com/kit_matsufes/",
+        "newTab": false,
+        "pos": {
+          "x": 40,
+          "y": 1855
+        }
+      },
+      "children": [
+        "node_mvg8qhmsaddus"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "17%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "8%",
+            "paddingTop": "5px",
+            "paddingBottom": "5px",
+            "paddingRight": "5px",
+            "paddingLeft": "5px",
+            "right": "20%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8qhmsaddus": {
+      "id": "node_mvg8qhmsaddus",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlg9d0-pasted-artwork.svg",
+        "alt": "",
+        "width": 58,
+        "height": 58,
+        "assetId": "asset_mutlg9na1m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8qhmsby51a": {
+      "id": "node_mvg8qhmsby51a",
+      "type": "box",
+      "name": "X",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://x.com/matsufes_info",
+        "newTab": false,
+        "pos": {
+          "x": 37,
+          "y": 1942
+        }
+      },
+      "children": [
+        "node_mvg8qhmscmigi"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "7%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingTop": "5px",
+            "paddingRight": "5px",
+            "paddingBottom": "5px",
+            "paddingLeft": "5px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "8%",
+            "right": "9%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8qhmscmigi": {
+      "id": "node_mvg8qhmscmigi",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlgm4j-pasted-artwork.svg",
+        "alt": "",
+        "width": 54,
+        "height": 49,
+        "assetId": "asset_mutlgmgm1o"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8qhmsd8jh0": {
+      "id": "node_mvg8qhmsd8jh0",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvaih88m-pasted-artwork.svg",
+        "alt": "",
+        "width": 375,
+        "height": 347,
+        "assetId": "asset_mvaih8ot1t"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "375px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8quydekt1v": {
+      "id": "node_mvg8quydekt1v",
+      "type": "box",
+      "name": "スマホ版フッター",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvg8quydfly6a",
+        "node_mvg8quydhhthd",
+        "node_mvg8quydj2nqt"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ],
+      "motions": [
+        {
+          "id": "motion_mvdm3jnil",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvg8quydfly6a": {
+      "id": "node_mvg8quydfly6a",
+      "type": "box",
+      "name": "インスタ",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://www.instagram.com/kit_matsufes/",
+        "newTab": false,
+        "pos": {
+          "x": 40,
+          "y": 1855
+        }
+      },
+      "children": [
+        "node_mvg8quydgudj6"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "17%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "8%",
+            "paddingTop": "5px",
+            "paddingBottom": "5px",
+            "paddingRight": "5px",
+            "paddingLeft": "5px",
+            "right": "20%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8quydgudj6": {
+      "id": "node_mvg8quydgudj6",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlg9d0-pasted-artwork.svg",
+        "alt": "",
+        "width": 58,
+        "height": 58,
+        "assetId": "asset_mutlg9na1m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8quydhhthd": {
+      "id": "node_mvg8quydhhthd",
+      "type": "box",
+      "name": "X",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://x.com/matsufes_info",
+        "newTab": false,
+        "pos": {
+          "x": 37,
+          "y": 1942
+        }
+      },
+      "children": [
+        "node_mvg8quydiy077"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "7%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingTop": "5px",
+            "paddingRight": "5px",
+            "paddingBottom": "5px",
+            "paddingLeft": "5px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "8%",
+            "right": "9%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8quydiy077": {
+      "id": "node_mvg8quydiy077",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlgm4j-pasted-artwork.svg",
+        "alt": "",
+        "width": 54,
+        "height": 49,
+        "assetId": "asset_mutlgmgm1o"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8quydj2nqt": {
+      "id": "node_mvg8quydj2nqt",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvaih88m-pasted-artwork.svg",
+        "alt": "",
+        "width": 375,
+        "height": 347,
+        "assetId": "asset_mvaih8ot1t"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "375px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8ukrxkdysv": {
+      "id": "node_mvg8ukrxkdysv",
+      "type": "box",
+      "name": "スマホ版フッター",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvg8ukryl6kt2",
+        "node_mvg8ukrynb8au",
+        "node_mvg8ukryp0opb"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ],
+      "motions": [
+        {
+          "id": "motion_mvdm3jnil",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvg8ukryl6kt2": {
+      "id": "node_mvg8ukryl6kt2",
+      "type": "box",
+      "name": "インスタ",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://www.instagram.com/kit_matsufes/",
+        "newTab": false,
+        "pos": {
+          "x": 40,
+          "y": 1855
+        }
+      },
+      "children": [
+        "node_mvg8ukrymiyvn"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "17%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "8%",
+            "paddingTop": "5px",
+            "paddingBottom": "5px",
+            "paddingRight": "5px",
+            "paddingLeft": "5px",
+            "right": "20%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8ukrymiyvn": {
+      "id": "node_mvg8ukrymiyvn",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlg9d0-pasted-artwork.svg",
+        "alt": "",
+        "width": 58,
+        "height": 58,
+        "assetId": "asset_mutlg9na1m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8ukrynb8au": {
+      "id": "node_mvg8ukrynb8au",
+      "type": "box",
+      "name": "X",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://x.com/matsufes_info",
+        "newTab": false,
+        "pos": {
+          "x": 37,
+          "y": 1942
+        }
+      },
+      "children": [
+        "node_mvg8ukryoh0v2"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "7%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingTop": "5px",
+            "paddingRight": "5px",
+            "paddingBottom": "5px",
+            "paddingLeft": "5px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "8%",
+            "right": "9%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8ukryoh0v2": {
+      "id": "node_mvg8ukryoh0v2",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlgm4j-pasted-artwork.svg",
+        "alt": "",
+        "width": 54,
+        "height": 49,
+        "assetId": "asset_mutlgmgm1o"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8ukryp0opb": {
+      "id": "node_mvg8ukryp0opb",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvaih88m-pasted-artwork.svg",
+        "alt": "",
+        "width": 375,
+        "height": 347,
+        "assetId": "asset_mvaih8ot1t"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "375px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8ycyyq6wh6": {
+      "id": "node_mvg8ycyyq6wh6",
+      "type": "box",
+      "name": "スマホ版フッター",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvg8ycyzre4i9",
+        "node_mvg8ycyzt8qcj",
+        "node_mvg8ycyzvlsfb"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ],
+      "motions": [
+        {
+          "id": "motion_mvdm3jnil",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvg8ycyzre4i9": {
+      "id": "node_mvg8ycyzre4i9",
+      "type": "box",
+      "name": "インスタ",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://www.instagram.com/kit_matsufes/",
+        "newTab": false,
+        "pos": {
+          "x": 40,
+          "y": 1855
+        }
+      },
+      "children": [
+        "node_mvg8ycyzsblto"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "17%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "8%",
+            "paddingTop": "5px",
+            "paddingBottom": "5px",
+            "paddingRight": "5px",
+            "paddingLeft": "5px",
+            "right": "20%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8ycyzsblto": {
+      "id": "node_mvg8ycyzsblto",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlg9d0-pasted-artwork.svg",
+        "alt": "",
+        "width": 58,
+        "height": 58,
+        "assetId": "asset_mutlg9na1m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8ycyzt8qcj": {
+      "id": "node_mvg8ycyzt8qcj",
+      "type": "box",
+      "name": "X",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://x.com/matsufes_info",
+        "newTab": false,
+        "pos": {
+          "x": 37,
+          "y": 1942
+        }
+      },
+      "children": [
+        "node_mvg8ycyzuly8r"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "7%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingTop": "5px",
+            "paddingRight": "5px",
+            "paddingBottom": "5px",
+            "paddingLeft": "5px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "8%",
+            "right": "9%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8ycyzuly8r": {
+      "id": "node_mvg8ycyzuly8r",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlgm4j-pasted-artwork.svg",
+        "alt": "",
+        "width": 54,
+        "height": 49,
+        "assetId": "asset_mutlgmgm1o"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8ycyzvlsfb": {
+      "id": "node_mvg8ycyzvlsfb",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvaih88m-pasted-artwork.svg",
+        "alt": "",
+        "width": 375,
+        "height": 347,
+        "assetId": "asset_mvaih8ot1t"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "375px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8yk86w51h7": {
+      "id": "node_mvg8yk86w51h7",
+      "type": "box",
+      "name": "スマホ版フッター",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvg8yk86x3q7s",
+        "node_mvg8yk86z5y04",
+        "node_mvg8yk8611a0za"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ],
+      "motions": [
+        {
+          "id": "motion_mvdm3jnil",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvg8yk86x3q7s": {
+      "id": "node_mvg8yk86x3q7s",
+      "type": "box",
+      "name": "インスタ",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://www.instagram.com/kit_matsufes/",
+        "newTab": false,
+        "pos": {
+          "x": 40,
+          "y": 1855
+        }
+      },
+      "children": [
+        "node_mvg8yk86y5c6b"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "17%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "8%",
+            "paddingTop": "5px",
+            "paddingBottom": "5px",
+            "paddingRight": "5px",
+            "paddingLeft": "5px",
+            "right": "20%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8yk86y5c6b": {
+      "id": "node_mvg8yk86y5c6b",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlg9d0-pasted-artwork.svg",
+        "alt": "",
+        "width": 58,
+        "height": 58,
+        "assetId": "asset_mutlg9na1m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8yk86z5y04": {
+      "id": "node_mvg8yk86z5y04",
+      "type": "box",
+      "name": "X",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://x.com/matsufes_info",
+        "newTab": false,
+        "pos": {
+          "x": 37,
+          "y": 1942
+        }
+      },
+      "children": [
+        "node_mvg8yk86101bin"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "7%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingTop": "5px",
+            "paddingRight": "5px",
+            "paddingBottom": "5px",
+            "paddingLeft": "5px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "8%",
+            "right": "9%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8yk86101bin": {
+      "id": "node_mvg8yk86101bin",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlgm4j-pasted-artwork.svg",
+        "alt": "",
+        "width": 54,
+        "height": 49,
+        "assetId": "asset_mutlgmgm1o"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8yk8611a0za": {
+      "id": "node_mvg8yk8611a0za",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvaih88m-pasted-artwork.svg",
+        "alt": "",
+        "width": 375,
+        "height": 347,
+        "assetId": "asset_mvaih8ot1t"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "375px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8yz1712irc6": {
+      "id": "node_mvg8yz1712irc6",
+      "type": "box",
+      "name": "スマホ版フッター",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvg8yz1713nlj0",
+        "node_mvg8yz1715w4uv",
+        "node_mvg8yz1717bizz"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ],
+      "motions": [
+        {
+          "id": "motion_mvdm3jnil",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvg8yz1713nlj0": {
+      "id": "node_mvg8yz1713nlj0",
+      "type": "box",
+      "name": "インスタ",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://www.instagram.com/kit_matsufes/",
+        "newTab": false,
+        "pos": {
+          "x": 40,
+          "y": 1855
+        }
+      },
+      "children": [
+        "node_mvg8yz17148gxo"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "17%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "8%",
+            "paddingTop": "5px",
+            "paddingBottom": "5px",
+            "paddingRight": "5px",
+            "paddingLeft": "5px",
+            "right": "20%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8yz17148gxo": {
+      "id": "node_mvg8yz17148gxo",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlg9d0-pasted-artwork.svg",
+        "alt": "",
+        "width": 58,
+        "height": 58,
+        "assetId": "asset_mutlg9na1m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8yz1715w4uv": {
+      "id": "node_mvg8yz1715w4uv",
+      "type": "box",
+      "name": "X",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://x.com/matsufes_info",
+        "newTab": false,
+        "pos": {
+          "x": 37,
+          "y": 1942
+        }
+      },
+      "children": [
+        "node_mvg8yz1716grdi"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "7%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingTop": "5px",
+            "paddingRight": "5px",
+            "paddingBottom": "5px",
+            "paddingLeft": "5px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "8%",
+            "right": "9%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8yz1716grdi": {
+      "id": "node_mvg8yz1716grdi",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlgm4j-pasted-artwork.svg",
+        "alt": "",
+        "width": 54,
+        "height": 49,
+        "assetId": "asset_mutlgmgm1o"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8yz1717bizz": {
+      "id": "node_mvg8yz1717bizz",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvaih88m-pasted-artwork.svg",
+        "alt": "",
+        "width": 375,
+        "height": 347,
+        "assetId": "asset_mvaih8ot1t"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "375px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8z5it18yyrc": {
+      "id": "node_mvg8z5it18yyrc",
+      "type": "box",
+      "name": "スマホ版フッター",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvg8z5it192vnr",
+        "node_mvg8z5it1brwan",
+        "node_mvg8z5it1dvb6f"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ],
+      "motions": [
+        {
+          "id": "motion_mvdm3jnil",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvg8z5it192vnr": {
+      "id": "node_mvg8z5it192vnr",
+      "type": "box",
+      "name": "インスタ",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://www.instagram.com/kit_matsufes/",
+        "newTab": false,
+        "pos": {
+          "x": 40,
+          "y": 1855
+        }
+      },
+      "children": [
+        "node_mvg8z5it1afyey"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "17%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "8%",
+            "paddingTop": "5px",
+            "paddingBottom": "5px",
+            "paddingRight": "5px",
+            "paddingLeft": "5px",
+            "right": "20%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8z5it1afyey": {
+      "id": "node_mvg8z5it1afyey",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlg9d0-pasted-artwork.svg",
+        "alt": "",
+        "width": 58,
+        "height": 58,
+        "assetId": "asset_mutlg9na1m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8z5it1brwan": {
+      "id": "node_mvg8z5it1brwan",
+      "type": "box",
+      "name": "X",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://x.com/matsufes_info",
+        "newTab": false,
+        "pos": {
+          "x": 37,
+          "y": 1942
+        }
+      },
+      "children": [
+        "node_mvg8z5it1cmaox"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "7%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingTop": "5px",
+            "paddingRight": "5px",
+            "paddingBottom": "5px",
+            "paddingLeft": "5px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "8%",
+            "right": "9%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8z5it1cmaox": {
+      "id": "node_mvg8z5it1cmaox",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlgm4j-pasted-artwork.svg",
+        "alt": "",
+        "width": 54,
+        "height": 49,
+        "assetId": "asset_mutlgmgm1o"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8z5it1dvb6f": {
+      "id": "node_mvg8z5it1dvb6f",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvaih88m-pasted-artwork.svg",
+        "alt": "",
+        "width": 375,
+        "height": 347,
+        "assetId": "asset_mvaih8ot1t"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "375px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zbhm1el6d4": {
+      "id": "node_mvg8zbhm1el6d4",
+      "type": "box",
+      "name": "スマホ版フッター",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvg8zbhm1f9for",
+        "node_mvg8zbhm1hmmm4",
+        "node_mvg8zbhm1jt926"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ],
+      "motions": [
+        {
+          "id": "motion_mvdm3jnil",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvg8zbhm1f9for": {
+      "id": "node_mvg8zbhm1f9for",
+      "type": "box",
+      "name": "インスタ",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://www.instagram.com/kit_matsufes/",
+        "newTab": false,
+        "pos": {
+          "x": 40,
+          "y": 1855
+        }
+      },
+      "children": [
+        "node_mvg8zbhm1g22ws"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "17%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "8%",
+            "paddingTop": "5px",
+            "paddingBottom": "5px",
+            "paddingRight": "5px",
+            "paddingLeft": "5px",
+            "right": "20%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8zbhm1g22ws": {
+      "id": "node_mvg8zbhm1g22ws",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlg9d0-pasted-artwork.svg",
+        "alt": "",
+        "width": 58,
+        "height": 58,
+        "assetId": "asset_mutlg9na1m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zbhm1hmmm4": {
+      "id": "node_mvg8zbhm1hmmm4",
+      "type": "box",
+      "name": "X",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://x.com/matsufes_info",
+        "newTab": false,
+        "pos": {
+          "x": 37,
+          "y": 1942
+        }
+      },
+      "children": [
+        "node_mvg8zbhm1ioi7s"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "7%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingTop": "5px",
+            "paddingRight": "5px",
+            "paddingBottom": "5px",
+            "paddingLeft": "5px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "8%",
+            "right": "9%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8zbhm1ioi7s": {
+      "id": "node_mvg8zbhm1ioi7s",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlgm4j-pasted-artwork.svg",
+        "alt": "",
+        "width": 54,
+        "height": 49,
+        "assetId": "asset_mutlgmgm1o"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zbhm1jt926": {
+      "id": "node_mvg8zbhm1jt926",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvaih88m-pasted-artwork.svg",
+        "alt": "",
+        "width": 375,
+        "height": 347,
+        "assetId": "asset_mvaih8ot1t"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "375px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zm8l1kmfwu": {
+      "id": "node_mvg8zm8l1kmfwu",
+      "type": "box",
+      "name": "スマホ版フッター",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvg8zm8l1l6plu",
+        "node_mvg8zm8l1nofj7",
+        "node_mvg8zm8l1pzuui"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ],
+      "motions": [
+        {
+          "id": "motion_mvdm3jnil",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvg8zm8l1l6plu": {
+      "id": "node_mvg8zm8l1l6plu",
+      "type": "box",
+      "name": "インスタ",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://www.instagram.com/kit_matsufes/",
+        "newTab": false,
+        "pos": {
+          "x": 40,
+          "y": 1855
+        }
+      },
+      "children": [
+        "node_mvg8zm8l1mwy0y"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "17%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "8%",
+            "paddingTop": "5px",
+            "paddingBottom": "5px",
+            "paddingRight": "5px",
+            "paddingLeft": "5px",
+            "right": "20%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8zm8l1mwy0y": {
+      "id": "node_mvg8zm8l1mwy0y",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlg9d0-pasted-artwork.svg",
+        "alt": "",
+        "width": 58,
+        "height": 58,
+        "assetId": "asset_mutlg9na1m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zm8l1nofj7": {
+      "id": "node_mvg8zm8l1nofj7",
+      "type": "box",
+      "name": "X",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://x.com/matsufes_info",
+        "newTab": false,
+        "pos": {
+          "x": 37,
+          "y": 1942
+        }
+      },
+      "children": [
+        "node_mvg8zm8l1ooneu"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "7%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingTop": "5px",
+            "paddingRight": "5px",
+            "paddingBottom": "5px",
+            "paddingLeft": "5px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "8%",
+            "right": "9%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8zm8l1ooneu": {
+      "id": "node_mvg8zm8l1ooneu",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlgm4j-pasted-artwork.svg",
+        "alt": "",
+        "width": 54,
+        "height": 49,
+        "assetId": "asset_mutlgmgm1o"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zm8l1pzuui": {
+      "id": "node_mvg8zm8l1pzuui",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvaih88m-pasted-artwork.svg",
+        "alt": "",
+        "width": 375,
+        "height": 347,
+        "assetId": "asset_mvaih8ot1t"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "375px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zs2e1qfsjh": {
+      "id": "node_mvg8zs2e1qfsjh",
+      "type": "box",
+      "name": "スマホ版フッター",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvg8zs2e1rph8q",
+        "node_mvg8zs2e1t4nja",
+        "node_mvg8zs2e1vp90a"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ],
+      "motions": [
+        {
+          "id": "motion_mvdm3jnil",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvg8zs2e1rph8q": {
+      "id": "node_mvg8zs2e1rph8q",
+      "type": "box",
+      "name": "インスタ",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://www.instagram.com/kit_matsufes/",
+        "newTab": false,
+        "pos": {
+          "x": 40,
+          "y": 1855
+        }
+      },
+      "children": [
+        "node_mvg8zs2e1sp3n2"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "17%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "8%",
+            "paddingTop": "5px",
+            "paddingBottom": "5px",
+            "paddingRight": "5px",
+            "paddingLeft": "5px",
+            "right": "20%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8zs2e1sp3n2": {
+      "id": "node_mvg8zs2e1sp3n2",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlg9d0-pasted-artwork.svg",
+        "alt": "",
+        "width": 58,
+        "height": 58,
+        "assetId": "asset_mutlg9na1m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zs2e1t4nja": {
+      "id": "node_mvg8zs2e1t4nja",
+      "type": "box",
+      "name": "X",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://x.com/matsufes_info",
+        "newTab": false,
+        "pos": {
+          "x": 37,
+          "y": 1942
+        }
+      },
+      "children": [
+        "node_mvg8zs2e1ug6ec"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "7%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingTop": "5px",
+            "paddingRight": "5px",
+            "paddingBottom": "5px",
+            "paddingLeft": "5px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "8%",
+            "right": "9%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8zs2e1ug6ec": {
+      "id": "node_mvg8zs2e1ug6ec",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlgm4j-pasted-artwork.svg",
+        "alt": "",
+        "width": 54,
+        "height": 49,
+        "assetId": "asset_mutlgmgm1o"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zs2e1vp90a": {
+      "id": "node_mvg8zs2e1vp90a",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvaih88m-pasted-artwork.svg",
+        "alt": "",
+        "width": 375,
+        "height": 347,
+        "assetId": "asset_mvaih8ot1t"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "375px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zu1p1wzibo": {
+      "id": "node_mvg8zu1p1wzibo",
+      "type": "box",
+      "name": "スマホ版フッター",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvg8zu1p1xttv9",
+        "node_mvg8zu1p1z18l4",
+        "node_mvg8zu1p21ez99"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ],
+      "motions": [
+        {
+          "id": "motion_mvdm3jnil",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvg8zu1p1xttv9": {
+      "id": "node_mvg8zu1p1xttv9",
+      "type": "box",
+      "name": "インスタ",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://www.instagram.com/kit_matsufes/",
+        "newTab": false,
+        "pos": {
+          "x": 40,
+          "y": 1855
+        }
+      },
+      "children": [
+        "node_mvg8zu1p1yu1ok"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "17%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "8%",
+            "paddingTop": "5px",
+            "paddingBottom": "5px",
+            "paddingRight": "5px",
+            "paddingLeft": "5px",
+            "right": "20%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8zu1p1yu1ok": {
+      "id": "node_mvg8zu1p1yu1ok",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlg9d0-pasted-artwork.svg",
+        "alt": "",
+        "width": 58,
+        "height": 58,
+        "assetId": "asset_mutlg9na1m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zu1p1z18l4": {
+      "id": "node_mvg8zu1p1z18l4",
+      "type": "box",
+      "name": "X",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://x.com/matsufes_info",
+        "newTab": false,
+        "pos": {
+          "x": 37,
+          "y": 1942
+        }
+      },
+      "children": [
+        "node_mvg8zu1p203qqs"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "7%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingTop": "5px",
+            "paddingRight": "5px",
+            "paddingBottom": "5px",
+            "paddingLeft": "5px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "8%",
+            "right": "9%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8zu1p203qqs": {
+      "id": "node_mvg8zu1p203qqs",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlgm4j-pasted-artwork.svg",
+        "alt": "",
+        "width": 54,
+        "height": 49,
+        "assetId": "asset_mutlgmgm1o"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zu1p21ez99": {
+      "id": "node_mvg8zu1p21ez99",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvaih88m-pasted-artwork.svg",
+        "alt": "",
+        "width": 375,
+        "height": 347,
+        "assetId": "asset_mvaih8ot1t"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "375px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zvog22mj8b": {
+      "id": "node_mvg8zvog22mj8b",
+      "type": "box",
+      "name": "スマホ版フッター",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvg8zvog239oqp",
+        "node_mvg8zvog25i2mv",
+        "node_mvg8zvog27n6up"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ],
+      "motions": [
+        {
+          "id": "motion_mvdm3jnil",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvg8zvog239oqp": {
+      "id": "node_mvg8zvog239oqp",
+      "type": "box",
+      "name": "インスタ",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://www.instagram.com/kit_matsufes/",
+        "newTab": false,
+        "pos": {
+          "x": 40,
+          "y": 1855
+        }
+      },
+      "children": [
+        "node_mvg8zvog24oqd4"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "17%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "8%",
+            "paddingTop": "5px",
+            "paddingBottom": "5px",
+            "paddingRight": "5px",
+            "paddingLeft": "5px",
+            "right": "20%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8zvog24oqd4": {
+      "id": "node_mvg8zvog24oqd4",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlg9d0-pasted-artwork.svg",
+        "alt": "",
+        "width": 58,
+        "height": 58,
+        "assetId": "asset_mutlg9na1m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zvog25i2mv": {
+      "id": "node_mvg8zvog25i2mv",
+      "type": "box",
+      "name": "X",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://x.com/matsufes_info",
+        "newTab": false,
+        "pos": {
+          "x": 37,
+          "y": 1942
+        }
+      },
+      "children": [
+        "node_mvg8zvog26a142"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "7%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingTop": "5px",
+            "paddingRight": "5px",
+            "paddingBottom": "5px",
+            "paddingLeft": "5px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "8%",
+            "right": "9%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8zvog26a142": {
+      "id": "node_mvg8zvog26a142",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlgm4j-pasted-artwork.svg",
+        "alt": "",
+        "width": 54,
+        "height": 49,
+        "assetId": "asset_mutlgmgm1o"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zvog27n6up": {
+      "id": "node_mvg8zvog27n6up",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvaih88m-pasted-artwork.svg",
+        "alt": "",
+        "width": 375,
+        "height": 347,
+        "assetId": "asset_mvaih8ot1t"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "375px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zxwl28e7cz": {
+      "id": "node_mvg8zxwl28e7cz",
+      "type": "box",
+      "name": "スマホ版フッター",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvg8zxwl29k3a8",
+        "node_mvg8zxwl2bmbvi",
+        "node_mvg8zxwl2d1fg4"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ],
+      "motions": [
+        {
+          "id": "motion_mvdm3jnil",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvg8zxwl29k3a8": {
+      "id": "node_mvg8zxwl29k3a8",
+      "type": "box",
+      "name": "インスタ",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://www.instagram.com/kit_matsufes/",
+        "newTab": false,
+        "pos": {
+          "x": 40,
+          "y": 1855
+        }
+      },
+      "children": [
+        "node_mvg8zxwl2a4z0t"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "17%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "8%",
+            "paddingTop": "5px",
+            "paddingBottom": "5px",
+            "paddingRight": "5px",
+            "paddingLeft": "5px",
+            "right": "20%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8zxwl2a4z0t": {
+      "id": "node_mvg8zxwl2a4z0t",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlg9d0-pasted-artwork.svg",
+        "alt": "",
+        "width": 58,
+        "height": 58,
+        "assetId": "asset_mutlg9na1m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zxwl2bmbvi": {
+      "id": "node_mvg8zxwl2bmbvi",
+      "type": "box",
+      "name": "X",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://x.com/matsufes_info",
+        "newTab": false,
+        "pos": {
+          "x": 37,
+          "y": 1942
+        }
+      },
+      "children": [
+        "node_mvg8zxwl2clveq"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "7%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingTop": "5px",
+            "paddingRight": "5px",
+            "paddingBottom": "5px",
+            "paddingLeft": "5px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "8%",
+            "right": "9%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8zxwl2clveq": {
+      "id": "node_mvg8zxwl2clveq",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlgm4j-pasted-artwork.svg",
+        "alt": "",
+        "width": 54,
+        "height": 49,
+        "assetId": "asset_mutlgmgm1o"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zxwl2d1fg4": {
+      "id": "node_mvg8zxwl2d1fg4",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvaih88m-pasted-artwork.svg",
+        "alt": "",
+        "width": 375,
+        "height": 347,
+        "assetId": "asset_mvaih8ot1t"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "375px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zzvd2e0ez3": {
+      "id": "node_mvg8zzvd2e0ez3",
+      "type": "box",
+      "name": "スマホ版フッター",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvg8zzvd2ftuab",
+        "node_mvg8zzvd2hpcnn",
+        "node_mvg8zzvd2j5xy1"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ],
+      "motions": [
+        {
+          "id": "motion_mvdm3jnil",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-up",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mvg8zzvd2ftuab": {
+      "id": "node_mvg8zzvd2ftuab",
+      "type": "box",
+      "name": "インスタ",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://www.instagram.com/kit_matsufes/",
+        "newTab": false,
+        "pos": {
+          "x": 40,
+          "y": 1855
+        }
+      },
+      "children": [
+        "node_mvg8zzvd2gyki8"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "17%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "8%",
+            "paddingTop": "5px",
+            "paddingBottom": "5px",
+            "paddingRight": "5px",
+            "paddingLeft": "5px",
+            "right": "20%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8zzvd2gyki8": {
+      "id": "node_mvg8zzvd2gyki8",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlg9d0-pasted-artwork.svg",
+        "alt": "",
+        "width": 58,
+        "height": 58,
+        "assetId": "asset_mutlg9na1m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zzvd2hpcnn": {
+      "id": "node_mvg8zzvd2hpcnn",
+      "type": "box",
+      "name": "X",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://x.com/matsufes_info",
+        "newTab": false,
+        "pos": {
+          "x": 37,
+          "y": 1942
+        }
+      },
+      "children": [
+        "node_mvg8zzvd2idtky"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "position": "absolute",
+            "right": "7%",
+            "bottom": "15%",
+            "width": "8%"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingTop": "5px",
+            "paddingRight": "5px",
+            "paddingBottom": "5px",
+            "paddingLeft": "5px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "8%",
+            "right": "9%",
+            "bottom": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "9%"
+          }
+        }
+      }
+    },
+    "node_mvg8zzvd2idtky": {
+      "id": "node_mvg8zzvd2idtky",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmutlgm4j-pasted-artwork.svg",
+        "alt": "",
+        "width": 54,
+        "height": 49,
+        "assetId": "asset_mutlgmgm1o"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "maxWidth": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mvg8zzvd2j5xy1": {
+      "id": "node_mvg8zzvd2j5xy1",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvaih88m-pasted-artwork.svg",
+        "alt": "",
+        "width": 375,
+        "height": 347,
+        "assetId": "asset_mvaih8ot1t"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "375px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
     }
   },
   "assets": {
@@ -182120,16 +185558,6 @@
       "height": 113,
       "svgFilter": false
     },
-    "asset_mue8w5u92h": {
-      "id": "asset_mue8w5u92h",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mue8w592-pasted-artwork.svg",
-      "bytes": 22141,
-      "mimeType": "image/svg+xml",
-      "width": 306,
-      "height": 113,
-      "svgFilter": false
-    },
     "asset_mue8xm3z2l": {
       "id": "asset_mue8xm3z2l",
       "name": "pasted-artwork.svg",
@@ -182410,16 +185838,6 @@
       "height": 123,
       "svgFilter": true
     },
-    "asset_mufautx992": {
-      "id": "asset_mufautx992",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mufaut8i-pasted-artwork.svg",
-      "bytes": 35300,
-      "mimeType": "image/svg+xml",
-      "width": 1383,
-      "height": 304,
-      "svgFilter": false
-    },
     "asset_mufbw8d79f": {
       "id": "asset_mufbw8d79f",
       "name": "pasted-artwork.svg",
@@ -182469,36 +185887,6 @@
       "width": 1246,
       "height": 34,
       "svgFilter": false
-    },
-    "asset_muh5nw6c14": {
-      "id": "asset_muh5nw6c14",
-      "name": "pasted-artwork.svg",
-      "path": "assets/muh5ntda-pasted-artwork.svg",
-      "bytes": 10387132,
-      "mimeType": "image/svg+xml",
-      "width": 172,
-      "height": 454,
-      "svgFilter": true
-    },
-    "asset_muh5z2bc16": {
-      "id": "asset_muh5z2bc16",
-      "name": "pasted-artwork.svg",
-      "path": "assets/muh5z0sv-pasted-artwork.svg",
-      "bytes": 5742103,
-      "mimeType": "image/svg+xml",
-      "width": 371,
-      "height": 461,
-      "svgFilter": true
-    },
-    "asset_muh5zepz18": {
-      "id": "asset_muh5zepz18",
-      "name": "pasted-artwork.svg",
-      "path": "assets/muh5zcw9-pasted-artwork.svg",
-      "bytes": 8637946,
-      "mimeType": "image/svg+xml",
-      "width": 239,
-      "height": 400,
-      "svgFilter": true
     },
     "asset_muihy46w3e": {
       "id": "asset_muihy46w3e",
@@ -183911,16 +187299,6 @@
       "width": 1200,
       "height": 630
     },
-    "asset_mv6h283bn": {
-      "id": "asset_mv6h283bn",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mv6h27fh-pasted-artwork.svg",
-      "bytes": 599289,
-      "mimeType": "image/svg+xml",
-      "width": 985,
-      "height": 748,
-      "svgFilter": true
-    },
     "asset_mv6od85b2v": {
       "id": "asset_mv6od85b2v",
       "name": "pasted-artwork.svg",
@@ -184118,33 +187496,6 @@
       "height": 34,
       "svgFilter": false
     },
-    "asset_mv83y3gdd": {
-      "id": "asset_mv83y3gdd",
-      "name": "image 22 (2).png",
-      "path": "assets/mv83y2yw-image-22-2.png",
-      "bytes": 4844,
-      "mimeType": "image/png",
-      "width": 100,
-      "height": 146
-    },
-    "asset_mv84o73fh": {
-      "id": "asset_mv84o73fh",
-      "name": "d9e5d1d7-8249-41ce-b2a5-9ec8c47ad5c8.png",
-      "path": "assets/mv84o6f5-d9e5d1d7-8249-41ce-b2a5-9ec8c47ad5c8.png",
-      "bytes": 655000,
-      "mimeType": "image/png",
-      "width": 1254,
-      "height": 1254
-    },
-    "asset_mv85m1vyp": {
-      "id": "asset_mv85m1vyp",
-      "name": "fav.png",
-      "path": "assets/mv85m16l-fav.png",
-      "bytes": 690663,
-      "mimeType": "image/png",
-      "width": 1269,
-      "height": 1239
-    },
     "asset_mv85ojw0r": {
       "id": "asset_mv85ojw0r",
       "name": "fav.svg",
@@ -184163,56 +187514,6 @@
       "mimeType": "image/svg+xml",
       "width": 306,
       "height": 113,
-      "svgFilter": false
-    },
-    "asset_mv90p6l44": {
-      "id": "asset_mv90p6l44",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mv90p6e9-pasted-artwork.svg",
-      "bytes": 19029,
-      "mimeType": "image/svg+xml",
-      "width": 306,
-      "height": 537,
-      "svgFilter": false
-    },
-    "asset_mv912wojd": {
-      "id": "asset_mv912wojd",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mv912wgk-pasted-artwork.svg",
-      "bytes": 19029,
-      "mimeType": "image/svg+xml",
-      "width": 306,
-      "height": 537,
-      "svgFilter": false
-    },
-    "asset_mv915s9sf": {
-      "id": "asset_mv915s9sf",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mv915rxn-pasted-artwork.svg",
-      "bytes": 16049,
-      "mimeType": "image/svg+xml",
-      "width": 175,
-      "height": 63,
-      "svgFilter": false
-    },
-    "asset_mv918ag5h": {
-      "id": "asset_mv918ag5h",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mv918a9u-pasted-artwork.svg",
-      "bytes": 16049,
-      "mimeType": "image/svg+xml",
-      "width": 175,
-      "height": 63,
-      "svgFilter": false
-    },
-    "asset_mv9pbe1l1": {
-      "id": "asset_mv9pbe1l1",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mv9pbdh2-pasted-artwork.svg",
-      "bytes": 32193,
-      "mimeType": "image/svg+xml",
-      "width": 306,
-      "height": 537,
       "svgFilter": false
     },
     "asset_mv9pcdsz3": {
@@ -184345,16 +187646,6 @@
       "height": 213,
       "svgFilter": false
     },
-    "asset_mvexoq6c47t6v": {
-      "id": "asset_mvexoq6c47t6v",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mvexor5a-pasted-artwork.svg",
-      "bytes": 165,
-      "mimeType": "image/svg+xml",
-      "width": 1280,
-      "height": 318,
-      "svgFilter": false
-    },
     "asset_mveypch763rag": {
       "id": "asset_mveypch763rag",
       "name": "pasted-artwork.svg",
@@ -184364,26 +187655,6 @@
       "width": 522,
       "height": 516,
       "svgFilter": true
-    },
-    "asset_mveys3k39gbta": {
-      "id": "asset_mveys3k39gbta",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mveys4q3-pasted-artwork.svg",
-      "bytes": 23099,
-      "mimeType": "image/svg+xml",
-      "width": 220,
-      "height": 139,
-      "svgFilter": false
-    },
-    "asset_mvezaek2fyjol": {
-      "id": "asset_mvezaek2fyjol",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mvezafe4-pasted-artwork.svg",
-      "bytes": 633793,
-      "mimeType": "image/svg+xml",
-      "width": 1280,
-      "height": 1010,
-      "svgFilter": false
     },
     "asset_mvezekhchy1x0": {
       "id": "asset_mvezekhchy1x0",
@@ -184423,46 +187694,6 @@
       "mimeType": "image/svg+xml",
       "width": 1280,
       "height": 312,
-      "svgFilter": false
-    },
-    "asset_mveztpwisd6v6": {
-      "id": "asset_mveztpwisd6v6",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mveztqty-pasted-artwork.svg",
-      "bytes": 82093,
-      "mimeType": "image/svg+xml",
-      "width": 423,
-      "height": 236,
-      "svgFilter": false
-    },
-    "asset_mvf05ss8wdams": {
-      "id": "asset_mvf05ss8wdams",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mvf05trg-pasted-artwork.svg",
-      "bytes": 83004,
-      "mimeType": "image/svg+xml",
-      "width": 440,
-      "height": 236,
-      "svgFilter": false
-    },
-    "asset_mvf0o2k21mciq": {
-      "id": "asset_mvf0o2k21mciq",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mvf0o3jr-pasted-artwork.svg",
-      "bytes": 75748,
-      "mimeType": "image/svg+xml",
-      "width": 442,
-      "height": 238,
-      "svgFilter": false
-    },
-    "asset_mvf0t0ja3e4b7": {
-      "id": "asset_mvf0t0ja3e4b7",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mvf0t004-pasted-artwork.svg",
-      "bytes": 83004,
-      "mimeType": "image/svg+xml",
-      "width": 440,
-      "height": 236,
       "svgFilter": false
     },
     "asset_mvf105d855q3e": {
@@ -184505,36 +187736,6 @@
       "height": 105,
       "svgFilter": false
     },
-    "asset_mvf55y29efkb0": {
-      "id": "asset_mvf55y29efkb0",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mvf55xq6-pasted-artwork.svg",
-      "bytes": 13835,
-      "mimeType": "image/svg+xml",
-      "width": 175,
-      "height": 80,
-      "svgFilter": false
-    },
-    "asset_mvf57rn5hb3w3": {
-      "id": "asset_mvf57rn5hb3w3",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mvf57rbb-pasted-artwork.svg",
-      "bytes": 4042,
-      "mimeType": "image/svg+xml",
-      "width": 52,
-      "height": 52,
-      "svgFilter": false
-    },
-    "asset_mvf5bj5cjg28w": {
-      "id": "asset_mvf5bj5cjg28w",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mvf5bisl-pasted-artwork.svg",
-      "bytes": 1006,
-      "mimeType": "image/svg+xml",
-      "width": 50,
-      "height": 44,
-      "svgFilter": false
-    },
     "asset_mvf5dpizm8058": {
       "id": "asset_mvf5dpizm8058",
       "name": "pasted-artwork.svg",
@@ -184573,26 +187774,6 @@
       "mimeType": "image/svg+xml",
       "width": 414,
       "height": 25,
-      "svgFilter": false
-    },
-    "asset_mvf9pz3j1uxaj": {
-      "id": "asset_mvf9pz3j1uxaj",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mvf9pyvn-pasted-artwork.svg",
-      "bytes": 610854,
-      "mimeType": "image/svg+xml",
-      "width": 1280,
-      "height": 1010,
-      "svgFilter": false
-    },
-    "asset_mvf9qs9031vki": {
-      "id": "asset_mvf9qs9031vki",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mvf9qs4j-pasted-artwork.svg",
-      "bytes": 633793,
-      "mimeType": "image/svg+xml",
-      "width": 1280,
-      "height": 1010,
       "svgFilter": false
     },
     "asset_mvf9skbx50ukc": {
