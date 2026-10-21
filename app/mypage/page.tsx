@@ -265,30 +265,42 @@ export default function Page() {
         className="el-1476"
       />
       <section className="box-208">
-        <Image
-          src="/assets/pasted-artwork-115.svg"
-          alt=""
-          width={1113}
-          height={135}
-          className="svg-200"
-        />
-        <p className="box-206">
+        <span
+          className="crisp-svg svg-200"
+        >
+          <svg aria-hidden="true" width={1113} height={135} viewBox="0 0 1113 135" />
           <Image
-            src="/assets/pasted-artwork-116.svg"
+            src="/assets/pasted-artwork-115.svg"
             alt=""
-            width={371}
-            height={38}
-            className="svg-201"
+            width={2226}
+            height={270}
           />
+        </span>
+        <p className="box-206">
+          <span
+            className="crisp-svg svg-201"
+          >
+            <svg aria-hidden="true" width={371} height={38} viewBox="0 0 371 38" />
+            <Image
+              src="/assets/pasted-artwork-116.svg"
+              alt=""
+              width={742}
+              height={76}
+            />
+          </span>
         </p>
         <div className="box-207">
-          <Image
-            src="/assets/pasted-artwork-117.svg"
-            alt=""
-            width={400}
-            height={400}
-            className="svg-202"
-          />
+          <span
+            className="crisp-svg svg-202"
+          >
+            <svg aria-hidden="true" width={400} height={400} viewBox="0 0 400 400" />
+            <Image
+              src="/assets/pasted-artwork-117.svg"
+              alt=""
+              width={800}
+              height={800}
+            />
+          </span>
         </div>
       </section>
       <Image data-inview

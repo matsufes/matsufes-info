@@ -265,13 +265,17 @@ export default function Page() {
         className="el-1068"
       />
       <p className="box-216">
-        <Image
-          src="/assets/pasted-artwork-229.svg"
-          alt=""
-          width={522}
-          height={122}
-          className="svg-208"
-        />
+        <span
+          className="crisp-svg svg-208"
+        >
+          <svg aria-hidden="true" width={522} height={122} viewBox="0 0 522 122" />
+          <Image
+            src="/assets/pasted-artwork-229.svg"
+            alt=""
+            width={1044}
+            height={244}
+          />
+        </span>
       </p>
       <section className="box-217">
         <Image
@@ -288,21 +292,29 @@ export default function Page() {
         </p>
       </section>
       <section className="box-221">
-        <Image
-          src="/assets/pasted-artwork-208.svg"
-          alt=""
-          width={577}
-          height={181}
-          className="svg-204"
-        />
-        <div className="box-220">
-          <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://trias.link/2026/\"}]}]"}
-            src="/assets/pasted-artwork-158.svg"
+        <span
+          className="crisp-svg svg-204"
+        >
+          <svg aria-hidden="true" width={577} height={181} viewBox="0 0 577 181" />
+          <Image
+            src="/assets/pasted-artwork-208.svg"
             alt=""
-            width={406}
-            height={191}
-            className="el-361"
+            width={1154}
+            height={362}
           />
+        </span>
+        <div className="box-220">
+          <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://trias.link/2026/\"}]}]"}
+            className="crisp-svg el-361"
+          >
+            <svg aria-hidden="true" width={406} height={191} viewBox="0 0 406 191" />
+            <Image
+              src="/assets/pasted-artwork-158.svg"
+              alt=""
+              width={812}
+              height={382}
+            />
+          </span>
         </div>
       </section>
       <section className="box-222">
@@ -315,21 +327,29 @@ export default function Page() {
         />
       </section>
       <section className="box-224">
-        <Image
-          src="/assets/pasted-artwork-207.svg"
-          alt=""
-          width={625}
-          height={181}
-          className="svg-205"
-        />
-        <div className="box-223">
-          <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://geidaisai2026.com/\"}]}]"}
-            src="/assets/pasted-artwork-158.svg"
+        <span
+          className="crisp-svg svg-205"
+        >
+          <svg aria-hidden="true" width={625} height={181} viewBox="0 0 625 181" />
+          <Image
+            src="/assets/pasted-artwork-207.svg"
             alt=""
-            width={406}
-            height={191}
-            className="el-362"
+            width={1250}
+            height={362}
           />
+        </span>
+        <div className="box-223">
+          <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://geidaisai2026.com/\"}]}]"}
+            className="crisp-svg el-362"
+          >
+            <svg aria-hidden="true" width={406} height={191} viewBox="0 0 406 191" />
+            <Image
+              src="/assets/pasted-artwork-158.svg"
+              alt=""
+              width={812}
+              height={382}
+            />
+          </span>
         </div>
       </section>
       <section className="box-225">
@@ -342,21 +362,29 @@ export default function Page() {
         />
       </section>
       <section className="box-227">
-        <Image
-          src="/assets/pasted-artwork-168.svg"
-          alt=""
-          width={562}
-          height={181}
-          className="svg-206"
-        />
-        <div className="box-226">
-          <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://kpufes.com/\"}]}]"}
-            src="/assets/pasted-artwork-158.svg"
+        <span
+          className="crisp-svg svg-206"
+        >
+          <svg aria-hidden="true" width={562} height={181} viewBox="0 0 562 181" />
+          <Image
+            src="/assets/pasted-artwork-168.svg"
             alt=""
-            width={406}
-            height={191}
-            className="el-363"
+            width={1124}
+            height={362}
           />
+        </span>
+        <div className="box-226">
+          <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://kpufes.com/\"}]}]"}
+            className="crisp-svg el-363"
+          >
+            <svg aria-hidden="true" width={406} height={191} viewBox="0 0 406 191" />
+            <Image
+              src="/assets/pasted-artwork-158.svg"
+              alt=""
+              width={812}
+              height={382}
+            />
+          </span>
         </div>
       </section>
       <section className="box-228">
@@ -369,21 +397,29 @@ export default function Page() {
         />
       </section>
       <section className="box-230">
-        <Image
-          src="/assets/pasted-artwork-169.svg"
-          alt=""
-          width={674}
-          height={181}
-          className="svg-207"
-        />
-        <div className="box-229">
-          <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://nf.la/\"}]}]"}
-            src="/assets/pasted-artwork-158.svg"
+        <span
+          className="crisp-svg svg-207"
+        >
+          <svg aria-hidden="true" width={674} height={181} viewBox="0 0 674 181" />
+          <Image
+            src="/assets/pasted-artwork-169.svg"
             alt=""
-            width={406}
-            height={191}
-            className="el-364"
+            width={1348}
+            height={362}
           />
+        </span>
+        <div className="box-229">
+          <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://nf.la/\"}]}]"}
+            className="crisp-svg el-364"
+          >
+            <svg aria-hidden="true" width={406} height={191} viewBox="0 0 406 191" />
+            <Image
+              src="/assets/pasted-artwork-158.svg"
+              alt=""
+              width={812}
+              height={382}
+            />
+          </span>
         </div>
       </section>
       <section className="box-231">
@@ -445,13 +481,17 @@ export default function Page() {
             className="svg-307"
           />
         </a>
-        <Image
-          src="/assets/pasted-artwork-236.svg"
-          alt=""
-          width={375}
-          height={347}
-          className="svg-308"
-        />
+        <span
+          className="crisp-svg svg-308"
+        >
+          <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
+          <Image
+            src="/assets/pasted-artwork-236.svg"
+            alt=""
+            width={750}
+            height={694}
+          />
+        </span>
       </section>
     </>
   );

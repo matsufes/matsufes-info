@@ -265,13 +265,17 @@ export default function Page() {
         className="el-1119"
       />
       <p className="box-47">
-        <Image
-          src="/assets/pasted-artwork-84.svg"
-          alt=""
-          width={854}
-          height={131}
-          className="svg-53"
-        />
+        <span
+          className="crisp-svg svg-53"
+        >
+          <svg aria-hidden="true" width={854} height={131} viewBox="0 0 854 131" />
+          <Image
+            src="/assets/pasted-artwork-84.svg"
+            alt=""
+            width={1708}
+            height={262}
+          />
+        </span>
       </p>
       <section className="box-48">
         <Image
@@ -283,13 +287,17 @@ export default function Page() {
         />
       </section>
       <section className="box-49">
-        <Image
-          src="/assets/pasted-artwork-99.svg"
-          alt=""
-          width={510}
-          height={109}
-          className="pasted-artwork-svg-30"
-        />
+        <span
+          className="crisp-svg pasted-artwork-svg-30"
+        >
+          <svg aria-hidden="true" width={510} height={109} viewBox="0 0 510 109" />
+          <Image
+            src="/assets/pasted-artwork-99.svg"
+            alt=""
+            width={1020}
+            height={218}
+          />
+        </span>
       </section>
       <section className="box-164">
         <p className="box-165">
@@ -297,13 +305,17 @@ export default function Page() {
         </p>
       </section>
       <section className="box-83">
-        <Image
-          src="/assets/pasted-artwork-100.svg"
-          alt=""
-          width={510}
-          height={101}
-          className="svg-72"
-        />
+        <span
+          className="crisp-svg svg-72"
+        >
+          <svg aria-hidden="true" width={510} height={101} viewBox="0 0 510 101" />
+          <Image
+            src="/assets/pasted-artwork-100.svg"
+            alt=""
+            width={1020}
+            height={202}
+          />
+        </span>
       </section>
       <section className="box-166">
         <p className="box-167">
@@ -311,13 +323,17 @@ export default function Page() {
         </p>
       </section>
       <section className="box-84">
-        <Image
-          src="/assets/pasted-artwork-101.svg"
-          alt=""
-          width={298}
-          height={106}
-          className="svg-73"
-        />
+        <span
+          className="crisp-svg svg-73"
+        >
+          <svg aria-hidden="true" width={298} height={106} viewBox="0 0 298 106" />
+          <Image
+            src="/assets/pasted-artwork-101.svg"
+            alt=""
+            width={596}
+            height={212}
+          />
+        </span>
       </section>
       <section className="box-85">
         <p className="box-86">
@@ -325,13 +341,17 @@ export default function Page() {
         </p>
       </section>
       <section className="box-50">
-        <Image
-          src="/assets/pasted-artwork-85.svg"
-          alt=""
-          width={1089}
-          height={710}
-          className="svg-54"
-        />
+        <span
+          className="crisp-svg svg-54"
+        >
+          <svg aria-hidden="true" width={1089} height={710} viewBox="0 0 1089 710" />
+          <Image
+            src="/assets/pasted-artwork-85.svg"
+            alt=""
+            width={2178}
+            height={1420}
+          />
+        </span>
       </section>
       <section className="box-51" />
       <section data-inview className="footer-9">
@@ -384,13 +404,17 @@ export default function Page() {
             className="svg-310"
           />
         </a>
-        <Image
-          src="/assets/pasted-artwork-236.svg"
-          alt=""
-          width={375}
-          height={347}
-          className="svg-311"
-        />
+        <span
+          className="crisp-svg svg-311"
+        >
+          <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
+          <Image
+            src="/assets/pasted-artwork-236.svg"
+            alt=""
+            width={750}
+            height={694}
+          />
+        </span>
       </section>
     </>
   );

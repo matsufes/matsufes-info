@@ -265,13 +265,17 @@ export default function Page() {
         className="el-1323"
       />
       <p className="box-62">
-        <Image
-          src="/assets/pasted-artwork-91.svg"
-          alt=""
-          width={917}
-          height={87}
-          className="svg-60"
-        />
+        <span
+          className="crisp-svg svg-60"
+        >
+          <svg aria-hidden="true" width={917} height={87} viewBox="0 0 917 87" />
+          <Image
+            src="/assets/pasted-artwork-91.svg"
+            alt=""
+            width={1834}
+            height={174}
+          />
+        </span>
       </p>
       <section className="box-63">
         <Image
@@ -292,13 +296,17 @@ export default function Page() {
         />
       </section>
       <section className="box-69">
-        <Image
-          src="/assets/pasted-artwork-112.svg"
-          alt=""
-          width={541}
-          height={114}
-          className="svg-84"
-        />
+        <span
+          className="crisp-svg svg-84"
+        >
+          <svg aria-hidden="true" width={541} height={114} viewBox="0 0 541 114" />
+          <Image
+            src="/assets/pasted-artwork-112.svg"
+            alt=""
+            width={1082}
+            height={228}
+          />
+        </span>
       </section>
       <section className="box-70">
         <div className="box-100">
@@ -407,13 +415,17 @@ export default function Page() {
             className="svg-322"
           />
         </a>
-        <Image
-          src="/assets/pasted-artwork-236.svg"
-          alt=""
-          width={375}
-          height={347}
-          className="svg-323"
-        />
+        <span
+          className="crisp-svg svg-323"
+        >
+          <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
+          <Image
+            src="/assets/pasted-artwork-236.svg"
+            alt=""
+            width={750}
+            height={694}
+          />
+        </span>
       </section>
     </>
   );

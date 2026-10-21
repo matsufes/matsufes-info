@@ -1057,13 +1057,17 @@ export default async function Page() {
                       />
                     </div>
                   </div>
-                  <Image
-                    src="/assets/Vector-3-.svg"
-                    alt="m-1グランプリに投票する"
-                    width={343}
-                    height={178}
-                    className="vector-3-svg"
-                  />
+                  <span
+                    className="crisp-svg vector-3-svg"
+                  >
+                    <svg aria-hidden="true" width={343} height={178} viewBox="0 0 343 178" />
+                    <Image
+                      src="/assets/Vector-3-.svg"
+                      alt="m-1グランプリに投票する"
+                      width={686}
+                      height={356}
+                    />
+                  </span>
                 </Link>
               </div>
             </div>
@@ -1254,13 +1258,17 @@ export default async function Page() {
             className="svg-298"
           />
         </a>
-        <Image
-          src="/assets/pasted-artwork-236.svg"
-          alt=""
-          width={375}
-          height={347}
-          className="svg-299"
-        />
+        <span
+          className="crisp-svg svg-299"
+        >
+          <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
+          <Image
+            src="/assets/pasted-artwork-236.svg"
+            alt=""
+            width={750}
+            height={694}
+          />
+        </span>
       </section>
     </>
   );

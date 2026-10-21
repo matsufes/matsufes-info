@@ -2112,37 +2112,31 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
 .box-154,
 .box-164,
 .box-166,
-.el-135,
 .el-137,
 .el-142,
 .el-143,
 .el-144,
 .el-145,
-.el-172,
 .el-174,
 .el-179,
 .el-180,
 .el-181,
 .el-182,
-.el-209,
 .el-211,
 .el-216,
 .el-217,
 .el-218,
 .el-219,
-.el-246,
 .el-248,
 .el-253,
 .el-254,
 .el-255,
 .el-256,
-.el-283,
 .el-285,
 .el-290,
 .el-291,
 .el-292,
 .el-293,
-.el-320,
 .el-321,
 .el-326,
 .el-327,
@@ -2150,7 +2144,6 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
 .el-329,
 .box-210,
 .box-211,
-.el-368,
 .el-370,
 .el-375,
 .el-376,
@@ -2947,6 +2940,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   right: 17%;
   bottom: 15%;
   width: 8%;
+  z-index: 1;
 }
 
 .x,
@@ -2988,6 +2982,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   right: 7%;
   bottom: 15%;
   width: 8%;
+  z-index: 1;
 }
 
 .box-125,
@@ -3333,6 +3328,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
   width: 65%;
   height: 10%;
+  z-index: 1;
 }
 
 .box-141 {
@@ -3352,6 +3348,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
   width: 70%;
   left: 13%;
+  z-index: 1;
 }
 
 .svg-137 {
@@ -3362,6 +3359,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   left: 13%;
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
   bottom: 16%;
+  z-index: 1;
   height: auto;
 }
 
@@ -3415,6 +3413,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   position: absolute;
   top: 45%;
   left: 40%;
+  z-index: 1;
   height: auto;
 }
 
@@ -3425,6 +3424,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   position: absolute;
   left: 40.5%;
   top: 55%;
+  z-index: 1;
   height: auto;
 }
 
@@ -3445,6 +3445,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   padding-bottom: 0px;
   padding-left: 0px;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .box-144 {
@@ -3464,6 +3465,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   padding-bottom: 0px;
   padding-left: 0px;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .el-97 {
@@ -3493,6 +3495,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   position: absolute;
   top: 13%;
   right: 10%;
+  z-index: 1;
   height: auto;
 }
 
@@ -3593,6 +3596,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   position: absolute;
   left: 13%;
   top: 27%;
+  z-index: 1;
   height: auto;
 }
 
@@ -3764,6 +3768,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
+  z-index: 1;
 }
 
 .svg-145 {
@@ -3773,6 +3778,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   position: absolute;
   left: 13%;
   top: 13%;
+  z-index: 1;
   height: auto;
 }
 
@@ -3798,6 +3804,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   text-align: center;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .box-148 {
@@ -3822,6 +3829,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   text-align: center;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .box-149 {
@@ -3846,6 +3854,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   text-align: center;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .m-1-2,
@@ -4319,6 +4328,20 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
 .el-135:active {
   animation: anim-swing 1s ease-out 0s 1 normal both;
   transform-origin: top center;
+}
+
+.el-135,
+.el-172,
+.el-209,
+.el-246,
+.el-283,
+.el-320,
+.el-368 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 12px;
+  z-index: 1;
 }
 
 .el-136,
@@ -6412,6 +6435,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   position: absolute;
   left: 12%;
   top: 0%;
+  z-index: 1;
   height: auto;
 }
 
@@ -6735,6 +6759,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   font-weight: 500;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
   font-size: 17px;
+  z-index: 1;
 }
 
 .icon-3 {
@@ -6916,6 +6941,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   position: absolute;
   left: 0%;
   top: 0%;
+  z-index: 1;
   height: auto;
   animation: anim-fade-down 1s ease-out 0s 1 normal both paused;
 }
@@ -8252,6 +8278,7 @@ body:has([data-page-body="page_mvevcuks1kw"]) {
   height: 80%;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .box-292,

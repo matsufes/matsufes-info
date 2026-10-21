@@ -265,13 +265,17 @@ export default function Page() {
         className="el-1221"
       />
       <p className="box-56">
-        <Image
-          src="/assets/pasted-artwork-90.svg"
-          alt=""
-          width={735}
-          height={130}
-          className="svg-59"
-        />
+        <span
+          className="crisp-svg svg-59"
+        >
+          <svg aria-hidden="true" width={735} height={130} viewBox="0 0 735 130" />
+          <Image
+            src="/assets/pasted-artwork-90.svg"
+            alt=""
+            width={1470}
+            height={260}
+          />
+        </span>
       </p>
       <section className="box-57">
         <Image
@@ -333,13 +337,17 @@ export default function Page() {
             className="svg-316"
           />
         </a>
-        <Image
-          src="/assets/pasted-artwork-236.svg"
-          alt=""
-          width={375}
-          height={347}
-          className="svg-317"
-        />
+        <span
+          className="crisp-svg svg-317"
+        >
+          <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
+          <Image
+            src="/assets/pasted-artwork-236.svg"
+            alt=""
+            width={750}
+            height={694}
+          />
+        </span>
       </section>
     </>
   );

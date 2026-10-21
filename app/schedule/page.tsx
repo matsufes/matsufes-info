@@ -265,13 +265,17 @@ export default function Page() {
         className="el-915"
       />
       <p className="el-33">
-        <Image
-          src="/assets/pasted-artwork-30.svg"
-          alt=""
-          width={719}
-          height={157}
-          className="svg-21"
-        />
+        <span
+          className="crisp-svg svg-21"
+        >
+          <svg aria-hidden="true" width={719} height={157} viewBox="0 0 719 157" />
+          <Image
+            src="/assets/pasted-artwork-30.svg"
+            alt=""
+            width={1438}
+            height={314}
+          />
+        </span>
       </p>
       <section className="el-34">
         <Image
@@ -286,41 +290,57 @@ export default function Page() {
         {"1日の日程表を　見ることができるよ。\nメインステージでの催しや　音楽サークルの公演時間を　確認しよう。"}
       </p>
       <section className="el-44">
-        <Image
-          src="/assets/pasted-artwork-54.svg"
-          alt=""
-          width={430}
-          height={64}
-          className="svg-25"
-        />
+        <span
+          className="crisp-svg svg-25"
+        >
+          <svg aria-hidden="true" width={430} height={64} viewBox="0 0 430 64" />
+          <Image
+            src="/assets/pasted-artwork-54.svg"
+            alt=""
+            width={860}
+            height={128}
+          />
+        </span>
       </section>
       <section className="el-46">
         <Link href="/schedule/0" className="el-47">
-          <Image
-            src="/assets/pasted-artwork-59.svg"
-            alt=""
-            width={268}
-            height={84}
-            className="svg-32"
-          />
+          <span
+            className="crisp-svg svg-32"
+          >
+            <svg aria-hidden="true" width={268} height={84} viewBox="0 0 268 84" />
+            <Image
+              src="/assets/pasted-artwork-59.svg"
+              alt=""
+              width={536}
+              height={168}
+            />
+          </span>
         </Link>
         <div className="el-48">
-          <Image
-            src="/assets/pasted-artwork-58.svg"
-            alt=""
-            width={268}
-            height={84}
-            className="svg-31"
-          />
+          <span
+            className="crisp-svg svg-31"
+          >
+            <svg aria-hidden="true" width={268} height={84} viewBox="0 0 268 84" />
+            <Image
+              src="/assets/pasted-artwork-58.svg"
+              alt=""
+              width={536}
+              height={168}
+            />
+          </span>
         </div>
         <Link href="/schedule/2" className="el-49">
-          <Image
-            src="/assets/pasted-artwork-57.svg"
-            alt=""
-            width={268}
-            height={84}
-            className="svg-27"
-          />
+          <span
+            className="crisp-svg svg-27"
+          >
+            <svg aria-hidden="true" width={268} height={84} viewBox="0 0 268 84" />
+            <Image
+              src="/assets/pasted-artwork-57.svg"
+              alt=""
+              width={536}
+              height={168}
+            />
+          </span>
         </Link>
       </section>
       <section className="select">
@@ -598,13 +618,17 @@ export default function Page() {
             className="svg-289"
           />
         </a>
-        <Image
-          src="/assets/pasted-artwork-236.svg"
-          alt=""
-          width={375}
-          height={347}
-          className="svg-290"
-        />
+        <span
+          className="crisp-svg svg-290"
+        >
+          <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
+          <Image
+            src="/assets/pasted-artwork-236.svg"
+            alt=""
+            width={750}
+            height={694}
+          />
+        </span>
       </section>
     </>
   );

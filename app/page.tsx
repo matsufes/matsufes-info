@@ -512,13 +512,17 @@ export default function Page() {
             className="svg-129"
           />
         </a>
-        <Image
-          src="/assets/pasted-artwork-236.svg"
-          alt=""
-          width={375}
-          height={347}
-          className="svg-228"
-        />
+        <span
+          className="crisp-svg svg-228"
+        >
+          <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
+          <Image
+            src="/assets/pasted-artwork-236.svg"
+            alt=""
+            width={750}
+            height={694}
+          />
+        </span>
       </section>
       <section data-inview className="footer-16">
         <span

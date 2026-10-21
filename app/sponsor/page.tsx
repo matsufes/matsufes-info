@@ -266,13 +266,17 @@ export default function Page() {
       />
       <section data-inview className="el-60" />
       <p className="box-65">
-        <Image
-          src="/assets/pasted-artwork-213.svg"
-          alt=""
-          width={1161}
-          height={131}
-          className="svg-151"
-        />
+        <span
+          className="crisp-svg svg-151"
+        >
+          <svg aria-hidden="true" width={1161} height={131} viewBox="0 0 1161 131" />
+          <Image
+            src="/assets/pasted-artwork-213.svg"
+            alt=""
+            width={2322}
+            height={262}
+          />
+        </span>
       </p>
       <section className="box-66">
         <Image
@@ -287,13 +291,17 @@ export default function Page() {
         {"第56回松ヶ崎祭を開催するにあたり、多くの方々にご協賛いただきました。\nここに深く御礼申し上げます。（敬称略・順不同）"}
       </p>
       <section className="box-123">
-        <Image
-          src="/assets/pasted-artwork-153.svg"
-          alt=""
-          width={438}
-          height={114}
-          className="svg-126"
-        />
+        <span
+          className="crisp-svg svg-126"
+        >
+          <svg aria-hidden="true" width={438} height={114} viewBox="0 0 438 114" />
+          <Image
+            src="/assets/pasted-artwork-153.svg"
+            alt=""
+            width={876}
+            height={228}
+          />
+        </span>
       </section>
       <section className="box-128">
         <p className="box-175">
@@ -304,13 +312,17 @@ export default function Page() {
         </p>
       </section>
       <section className="box-124">
-        <Image
-          src="/assets/pasted-artwork-154.svg"
-          alt=""
-          width={438}
-          height={114}
-          className="svg-127"
-        />
+        <span
+          className="crisp-svg svg-127"
+        >
+          <svg aria-hidden="true" width={438} height={114} viewBox="0 0 438 114" />
+          <Image
+            src="/assets/pasted-artwork-154.svg"
+            alt=""
+            width={876}
+            height={228}
+          />
+        </span>
       </section>
       <section className="box-130">
         <p className="box-142">
@@ -321,13 +333,17 @@ export default function Page() {
         </p>
       </section>
       <section className="box-132">
-        <Image
-          src="/assets/pasted-artwork-210.svg"
-          alt=""
-          width={438}
-          height={114}
-          className="svg-148"
-        />
+        <span
+          className="crisp-svg svg-148"
+        >
+          <svg aria-hidden="true" width={438} height={114} viewBox="0 0 438 114" />
+          <Image
+            src="/assets/pasted-artwork-210.svg"
+            alt=""
+            width={876}
+            height={228}
+          />
+        </span>
       </section>
       <section className="box-157">
         <Image
@@ -437,13 +453,17 @@ export default function Page() {
             className="svg-325"
           />
         </a>
-        <Image
-          src="/assets/pasted-artwork-236.svg"
-          alt=""
-          width={375}
-          height={347}
-          className="svg-326"
-        />
+        <span
+          className="crisp-svg svg-326"
+        >
+          <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
+          <Image
+            src="/assets/pasted-artwork-236.svg"
+            alt=""
+            width={750}
+            height={694}
+          />
+        </span>
       </section>
     </>
   );
