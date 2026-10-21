@@ -176,29 +176,21 @@ export default async function Page({
     <>
       <span hidden data-page-body="page_mv7ucj3ccc" data-scripts={JSON.stringify([{"trigger":"load","steps":[{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsX}", { ...vars, ...{"\u0000keepEscapes":true} }),"op":"empty","value":""},"then":[{"kind":"hide","target":"x"}]},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsInstagram}", { ...vars, ...{"\u0000keepEscapes":true} }),"op":"empty","value":""},"then":[{"kind":"hide","target":"inst"}]},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsWeb}", { ...vars, ...{"\u0000keepEscapes":true} }),"op":"empty","value":""},"then":[{"kind":"hide","target":"web"}],"else":[{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_1.snsWeb}", { ...vars, ...{"\u0000keepEscapes":true} }),"op":"starts-with","value":"http"},"then":[{"kind":"set-var","into":"snsWeb","raw":lookupVar(vars, "_1.snsWeb") ?? null}],"else":[{"kind":"set-var","into":"snsWeb","value":interpolate("https://{_1.snsWeb}", { ...vars, ...{"\u0000keepEscapes":true} })}]}]},{"kind":"store-load","key":"mf_bookmarks","into":"_2","shared":true},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_2}", { ...vars, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"op":"contains","value":interpolate("{_1.publicId}", { ...vars, ...{"\u0000keepEscapes":true} })},"then":[{"kind":"hide","target":"favoff"},{"kind":"show","target":"fav-svg"}]}]}])} />
       <nav className="header-2">
-        <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/\"}]}]"}
-          className="crisp-svg el-532"
-        >
-          <svg aria-hidden="true" width={213} height={213} viewBox="0 0 213 213" />
-          <Image
-            src="/assets/pasted-artwork-219.svg"
-            alt="トップへ戻る"
-            width={426}
-            height={426}
-          />
-        </span>
+        <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/\"}]}]"}
+          src="/assets/home.png"
+          alt="トップへ戻る"
+          width={426}
+          height={426}
+          className="el-532"
+        />
         <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"memu-p\"}]}]"} className="el-533">
-          <span
-            className="crisp-svg pasted-artwork-svg-53"
-          >
-            <svg aria-hidden="true" width={230} height={142} viewBox="0 0 230 142" />
-            <Image
-              src="/assets/pasted-artwork-218.svg"
-              alt="メニューを開く"
-              width={460}
-              height={284}
-            />
-          </span>
+          <Image
+            src="/assets/menu.png"
+            alt="メニューを開く"
+            width={460}
+            height={284}
+            className="pasted-artwork-svg-53"
+          />
         </div>
         <div id="memu-p" data-toggle-show="flex" data-inview className="el-534">
           <div className="box-369">

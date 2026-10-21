@@ -18,29 +18,21 @@ export default function Page() {
     <>
       <span hidden data-page-body="page_mu98rd4648" />
       <nav className="header-9">
-        <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/\"}]}]"}
-          className="crisp-svg el-916"
-        >
-          <svg aria-hidden="true" width={213} height={213} viewBox="0 0 213 213" />
-          <Image
-            src="/assets/pasted-artwork-219.svg"
-            alt="トップへ戻る"
-            width={426}
-            height={426}
-          />
-        </span>
+        <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/\"}]}]"}
+          src="/assets/home.png"
+          alt="トップへ戻る"
+          width={426}
+          height={426}
+          className="el-916"
+        />
         <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"memu-p-2\"}]}]"} className="el-917">
-          <span
-            className="crisp-svg pasted-artwork-svg-61"
-          >
-            <svg aria-hidden="true" width={230} height={142} viewBox="0 0 230 142" />
-            <Image
-              src="/assets/pasted-artwork-218.svg"
-              alt="メニューを開く"
-              width={460}
-              height={284}
-            />
-          </span>
+          <Image
+            src="/assets/menu.png"
+            alt="メニューを開く"
+            width={460}
+            height={284}
+            className="pasted-artwork-svg-61"
+          />
         </div>
         <div id="memu-p-2" data-toggle-show="flex" data-inview className="el-918">
           <div className="box-528">

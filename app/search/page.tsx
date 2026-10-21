@@ -116,29 +116,21 @@ export default async function Page() {
         priority
       />
       <nav className="header">
-        <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/\"}]}]"}
-          className="crisp-svg el-475"
-        >
-          <svg aria-hidden="true" width={213} height={213} viewBox="0 0 213 213" />
-          <Image
-            src="/assets/pasted-artwork-219.svg"
-            alt="トップへ戻る"
-            width={426}
-            height={426}
-          />
-        </span>
+        <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/\"}]}]"}
+          src="/assets/home.png"
+          alt="トップへ戻る"
+          width={426}
+          height={426}
+          className="el-475"
+        />
         <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"memu-p\"}]}]"} className="el-464">
-          <span
-            className="crisp-svg pasted-artwork-svg-51"
-          >
-            <svg aria-hidden="true" width={230} height={142} viewBox="0 0 230 142" />
-            <Image
-              src="/assets/pasted-artwork-218.svg"
-              alt="メニューを開く"
-              width={460}
-              height={284}
-            />
-          </span>
+          <Image
+            src="/assets/menu.png"
+            alt="メニューを開く"
+            width={460}
+            height={284}
+            className="pasted-artwork-svg-51"
+          />
         </div>
         <div id="memu-p" data-toggle-show="flex" data-inview className="el-465">
           <div className="box-368">
