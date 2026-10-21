@@ -105,7 +105,8 @@ export default async function Page() {
         width={477}
         height={374}
         className="el-405"
-        priority
+        preload
+        fetchPriority="high"
       />
       <Image data-inview
         src="/assets/image-2.png"
@@ -113,7 +114,8 @@ export default async function Page() {
         width={476}
         height={374}
         className="el-406"
-        priority
+        preload
+        fetchPriority="high"
       />
       <nav className="header">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/\"}]}]"}
@@ -375,7 +377,8 @@ export default async function Page() {
           width={1240}
           height={34}
           className="main-thema-soshoku-svg"
-          priority
+          preload
+          fetchPriority="high"
         />
       </section>
       <section className="box-234">
@@ -521,7 +524,8 @@ export default async function Page() {
                     width={274}
                     height={98}
                     className="png-33"
-                    priority
+                    preload
+                    fetchPriority="high"
                   />
                   <div className="box-306">
                     <p className="text-73">
@@ -1088,7 +1092,8 @@ export default async function Page() {
                               width={35}
                               height={34}
                               className="bkonn-svg"
-                              priority
+                              preload
+                              fetchPriority="high"
                             />
                             <Image id="fav-off" data-scripts={JSON.stringify([{"trigger":"load","steps":[{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_2}", { ...iv0, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"op":"contains","value":interpolate("{publicId}", { ...iv0, ...{"\u0000keepEscapes":true} })},"then":[{"kind":"show","target":"fav-on"},{"kind":"hide","target":"fav-off"}],"else":[{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}]}]},{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"add","value":interpolate("{publicId}", { ...iv0, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...iv0, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"fav-off"},{"kind":"show","target":"fav-on"}]}])} data-toggle-show="block"
                               src="/assets/bkoff2.svg"

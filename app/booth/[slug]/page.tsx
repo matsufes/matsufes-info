@@ -421,7 +421,8 @@ export default async function Page({
         width={477}
         height={374}
         className="el-476"
-        priority
+        preload
+        fetchPriority="high"
       />
       <Image data-inview
         src="/assets/image-2.png"
@@ -429,7 +430,8 @@ export default async function Page({
         width={476}
         height={374}
         className="el-477"
-        priority
+        preload
+        fetchPriority="high"
       />
       <section className="el-478">
         <h1 className="text-74">
@@ -443,7 +445,8 @@ export default async function Page({
           width={1240}
           height={34}
           className="main-thema-soshoku-svg-2"
-          priority
+          preload
+          fetchPriority="high"
         />
       </section>
       <section className="box-317">
@@ -686,7 +689,8 @@ export default async function Page({
                     width={154}
                     height={150}
                     className="favon"
-                    priority
+                    preload
+                    fetchPriority="high"
                   />
                   <Image id="favoff" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"list-edit","into":"_2","op":"remove","value":interpolate("{_1.publicId}", { ...vars, ...{"\u0000keepEscapes":true} }),"sep":"."},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...vars, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"favoff"},{"kind":"show","target":"fav-svg"}]}])} data-toggle-show="block"
                     src="/assets/pasted-artwork-205.svg"

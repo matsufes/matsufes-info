@@ -271,8 +271,8 @@ export default function Page() {
           <Image
             src="/assets/chikyu.png"
             alt="ちきゅ〜くん"
-            width={1000}
-            height={1415}
+            width={800}
+            height={1132}
             className="img-3053-png"
           />
         </div>
@@ -284,7 +284,8 @@ export default function Page() {
               width={1500}
               height={844}
               className="el-64"
-              priority
+              preload
+              fetchPriority="high"
             />
           </div>
           <div className="el-65">
@@ -297,7 +298,8 @@ export default function Page() {
                 alt="11/13(きん)17:00-19:10、11/14(ど)10:00-20:00、11/15(にち)10:00-17:00"
                 width={1354}
                 height={704}
-                priority
+                preload
+                fetchPriority="high"
               />
             </span>
           </div>

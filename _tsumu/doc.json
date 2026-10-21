@@ -12747,11 +12747,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhqacdde110ff-chikyu.png",
+        "src": "/api/assets/file?path=assets%2Fmvhrpser68d5db-chikyu.png",
         "alt": "ちきゅ〜くん",
-        "width": 1000,
-        "height": 1415,
-        "assetId": "asset_mvhqacufdq31d"
+        "width": 800,
+        "height": 1132,
+        "assetId": "asset_mvhrpsw4jy6r5"
       },
       "children": [],
       "styles": {
@@ -187776,15 +187776,6 @@
       "width": 186,
       "height": 164
     },
-    "asset_mvhqacufdq31d": {
-      "id": "asset_mvhqacufdq31d",
-      "name": "chikyu.png",
-      "path": "assets/mvhqacdde110ff-chikyu.png",
-      "bytes": 413965,
-      "mimeType": "image/png",
-      "width": 1000,
-      "height": 1415
-    },
     "asset_mvhqcm9newkqc": {
       "id": "asset_mvhqcm9newkqc",
       "name": "map.png",
@@ -187820,6 +187811,15 @@
       "mimeType": "image/png",
       "width": 298,
       "height": 298
+    },
+    "asset_mvhrpsw4jy6r5": {
+      "id": "asset_mvhrpsw4jy6r5",
+      "name": "chikyu.png",
+      "path": "assets/mvhrpser68d5db-chikyu.png",
+      "bytes": 264803,
+      "mimeType": "image/png",
+      "width": 800,
+      "height": 1132
     }
   },
   "components": {}
