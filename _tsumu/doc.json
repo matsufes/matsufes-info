@@ -72,8 +72,11 @@
             "backgroundRepeat": "no-repeat",
             "backgroundSize": "cover",
             "backgroundPosition": "center",
-            "backgroundImage": "url(\"/api/assets/file?path=assets%2Fmu3vey7f-pasted-artwork.svg\")"
+            "backgroundImage": "url(\"/api/assets/file?path=assets%2Fmvhqvl2qf56e2a-haikei.jpg\")"
           }
+        },
+        "lg": {
+          "default": {}
         }
       },
       "htmlBackground": "#f5e9ef"
@@ -5206,7 +5209,8 @@
             "flexDirection": "column"
           }
         }
-      }
+      },
+      "unpublished": true
     },
     "page_mvevcuks1kw": {
       "id": "page_mvevcuks1kw",
@@ -57887,11 +57891,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7ea3c47380-menu.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 460,
-        "height": 284,
-        "assetId": "asset_mvhq7er4atft7"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -59556,11 +59560,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7dqq517ff7-home.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 426,
-        "height": 426,
-        "assetId": "asset_mvhq7e649ua03"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -66049,11 +66053,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7dqq517ff7-home.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 426,
-        "height": 426,
-        "assetId": "asset_mvhq7e649ua03"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -66206,11 +66210,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7ea3c47380-menu.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 460,
-        "height": 284,
-        "assetId": "asset_mvhq7er4atft7"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -94843,11 +94847,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7dqq517ff7-home.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 426,
-        "height": 426,
-        "assetId": "asset_mvhq7e649ua03"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -94996,11 +95000,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7ea3c47380-menu.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 460,
-        "height": 284,
-        "assetId": "asset_mvhq7er4atft7"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -99129,11 +99133,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7dqq517ff7-home.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 426,
-        "height": 426,
-        "assetId": "asset_mvhq7e649ua03"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -99282,11 +99286,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7ea3c47380-menu.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 460,
-        "height": 284,
-        "assetId": "asset_mvhq7er4atft7"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -103457,11 +103461,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7dqq517ff7-home.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 426,
-        "height": 426,
-        "assetId": "asset_mvhq7e649ua03"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -103610,11 +103614,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7ea3c47380-menu.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 460,
-        "height": 284,
-        "assetId": "asset_mvhq7er4atft7"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -107784,11 +107788,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7dqq517ff7-home.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 426,
-        "height": 426,
-        "assetId": "asset_mvhq7e649ua03"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -107937,11 +107941,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7ea3c47380-menu.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 460,
-        "height": 284,
-        "assetId": "asset_mvhq7er4atft7"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -112111,11 +112115,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7dqq517ff7-home.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 426,
-        "height": 426,
-        "assetId": "asset_mvhq7e649ua03"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -112264,11 +112268,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7ea3c47380-menu.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 460,
-        "height": 284,
-        "assetId": "asset_mvhq7er4atft7"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -116438,11 +116442,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7dqq517ff7-home.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 426,
-        "height": 426,
-        "assetId": "asset_mvhq7e649ua03"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -116591,11 +116595,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7ea3c47380-menu.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 460,
-        "height": 284,
-        "assetId": "asset_mvhq7er4atft7"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -125092,11 +125096,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7dqq517ff7-home.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 426,
-        "height": 426,
-        "assetId": "asset_mvhq7e649ua03"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -125245,11 +125249,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7ea3c47380-menu.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 460,
-        "height": 284,
-        "assetId": "asset_mvhq7er4atft7"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -129419,11 +129423,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7dqq517ff7-home.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 426,
-        "height": 426,
-        "assetId": "asset_mvhq7e649ua03"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -129572,11 +129576,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7ea3c47380-menu.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 460,
-        "height": 284,
-        "assetId": "asset_mvhq7er4atft7"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -133746,11 +133750,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmv51ekep-pasted-artwork.svg",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 213,
-        "height": 213,
-        "assetId": "asset_mv51el22un"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -133899,11 +133903,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmv517b89-pasted-artwork.svg",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 230,
-        "height": 142,
-        "assetId": "asset_mv517bkvug"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -138073,11 +138077,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmv51ekep-pasted-artwork.svg",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 213,
-        "height": 213,
-        "assetId": "asset_mv51el22un"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -138226,11 +138230,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmv517b89-pasted-artwork.svg",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 230,
-        "height": 142,
-        "assetId": "asset_mv517bkvug"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -142400,11 +142404,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmv51ekep-pasted-artwork.svg",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 213,
-        "height": 213,
-        "assetId": "asset_mv51el22un"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -142553,11 +142557,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmv517b89-pasted-artwork.svg",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 230,
-        "height": 142,
-        "assetId": "asset_mv517bkvug"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -146727,11 +146731,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmv51ekep-pasted-artwork.svg",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 213,
-        "height": 213,
-        "assetId": "asset_mv51el22un"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -146880,11 +146884,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmv517b89-pasted-artwork.svg",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 230,
-        "height": 142,
-        "assetId": "asset_mv517bkvug"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -151054,11 +151058,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmv51ekep-pasted-artwork.svg",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 213,
-        "height": 213,
-        "assetId": "asset_mv51el22un"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -151207,11 +151211,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmv517b89-pasted-artwork.svg",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 230,
-        "height": 142,
-        "assetId": "asset_mv517bkvug"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -155381,11 +155385,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7dqq517ff7-home.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 426,
-        "height": 426,
-        "assetId": "asset_mvhq7e649ua03"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -155534,11 +155538,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7ea3c47380-menu.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 460,
-        "height": 284,
-        "assetId": "asset_mvhq7er4atft7"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -159667,11 +159671,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7dqq517ff7-home.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 426,
-        "height": 426,
-        "assetId": "asset_mvhq7e649ua03"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -159820,11 +159824,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7ea3c47380-menu.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 460,
-        "height": 284,
-        "assetId": "asset_mvhq7er4atft7"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -163994,11 +163998,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7dqq517ff7-home.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 426,
-        "height": 426,
-        "assetId": "asset_mvhq7e649ua03"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -164147,11 +164151,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7ea3c47380-menu.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 460,
-        "height": 284,
-        "assetId": "asset_mvhq7er4atft7"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -168321,11 +168325,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmv51ekep-pasted-artwork.svg",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 213,
-        "height": 213,
-        "assetId": "asset_mv51el22un"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -168474,11 +168478,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmv517b89-pasted-artwork.svg",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 230,
-        "height": 142,
-        "assetId": "asset_mv517bkvug"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -174405,11 +174409,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7dqq517ff7-home.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3npk07f6f9-home.png",
         "alt": "トップへ戻る",
-        "width": 426,
-        "height": 426,
-        "assetId": "asset_mvhq7e649ua03"
+        "width": 298,
+        "height": 298,
+        "assetId": "asset_mvhr3o6fhgpsc"
       },
       "children": [],
       "styles": {
@@ -174480,11 +174484,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhq7ea3c47380-menu.png",
+        "src": "/api/assets/file?path=assets%2Fmvhr3mr44919eb-menu.png",
         "alt": "メニューを開く",
-        "width": 460,
-        "height": 284,
-        "assetId": "asset_mvhq7er4atft7"
+        "width": 322,
+        "height": 199,
+        "assetId": "asset_mvhr3njag9acz"
       },
       "children": [],
       "styles": {
@@ -184823,35 +184827,6 @@
     }
   },
   "assets": {
-    "asset_mslfbvdqe": {
-      "id": "asset_mslfbvdqe",
-      "name": "IMG_3053.PNG",
-      "path": "assets/mslfbswe-IMG_3053.PNG",
-      "bytes": 7077869,
-      "mimeType": "image/png",
-      "width": 2480,
-      "height": 3508
-    },
-    "asset_mslh1ihnj": {
-      "id": "asset_mslh1ihnj",
-      "name": "-56-.svg",
-      "path": "assets/mslh1hn2--56-.svg",
-      "bytes": 702022,
-      "mimeType": "image/svg+xml",
-      "width": 267,
-      "height": 150,
-      "svgFilter": false
-    },
-    "asset_mslhx7ct4": {
-      "id": "asset_mslhx7ct4",
-      "name": "-.svg",
-      "path": "assets/mslhx4j8--.svg",
-      "bytes": 10745889,
-      "mimeType": "image/svg+xml",
-      "width": 1920,
-      "height": 1312,
-      "svgFilter": false
-    },
     "asset_msn3o2o2p": {
       "id": "asset_msn3o2o2p",
       "name": "-.svg",
@@ -185320,26 +185295,6 @@
       "mimeType": "image/svg+xml",
       "width": 674,
       "height": 212,
-      "svgFilter": true
-    },
-    "asset_mu3krjq62m": {
-      "id": "asset_mu3krjq62m",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mu3krj0j-pasted-artwork.svg",
-      "bytes": 1245092,
-      "mimeType": "image/svg+xml",
-      "width": 1122,
-      "height": 862,
-      "svgFilter": true
-    },
-    "asset_mu3njn9k3e": {
-      "id": "asset_mu3njn9k3e",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mu3njmg4-pasted-artwork.svg",
-      "bytes": 1027942,
-      "mimeType": "image/svg+xml",
-      "width": 999,
-      "height": 815,
       "svgFilter": true
     },
     "asset_mu3o6y8l3r": {
@@ -185860,26 +185815,6 @@
       "width": 1091,
       "height": 856,
       "svgFilter": false
-    },
-    "asset_mufn8sqpa5": {
-      "id": "asset_mufn8sqpa5",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mufn8s43-pasted-artwork.svg",
-      "bytes": 844260,
-      "mimeType": "image/svg+xml",
-      "width": 1051,
-      "height": 732,
-      "svgFilter": true
-    },
-    "asset_mufnmngtaf": {
-      "id": "asset_mufnmngtaf",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mufnmmnm-pasted-artwork.svg",
-      "bytes": 1084483,
-      "mimeType": "image/svg+xml",
-      "width": 1112,
-      "height": 769,
-      "svgFilter": true
     },
     "asset_muh2dulfbi": {
       "id": "asset_muh2dulfbi",
@@ -187539,36 +187474,6 @@
       "height": 63,
       "svgFilter": false
     },
-    "asset_mvaaxvpfa": {
-      "id": "asset_mvaaxvpfa",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mvaaxto7-pasted-artwork.svg",
-      "bytes": 5723414,
-      "mimeType": "image/svg+xml",
-      "width": 93,
-      "height": 82,
-      "svgFilter": false
-    },
-    "asset_mvab3b88f": {
-      "id": "asset_mvab3b88f",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mvab39ii-pasted-artwork.svg",
-      "bytes": 10368416,
-      "mimeType": "image/svg+xml",
-      "width": 42,
-      "height": 75,
-      "svgFilter": false
-    },
-    "asset_mvabmjvxm": {
-      "id": "asset_mvabmjvxm",
-      "name": "pasted-artwork.svg",
-      "path": "assets/mvabmhfa-pasted-artwork.svg",
-      "bytes": 8613377,
-      "mimeType": "image/svg+xml",
-      "width": 60,
-      "height": 60,
-      "svgFilter": false
-    },
     "asset_mvahirvn1m": {
       "id": "asset_mvahirvn1m",
       "name": "pasted-artwork.svg",
@@ -187799,15 +187704,6 @@
       "height": 164,
       "svgFilter": false
     },
-    "asset_mvhq75qw2fw0e": {
-      "id": "asset_mvhq75qw2fw0e",
-      "name": "haikei.jpg",
-      "path": "assets/mvhq750t44464f-haikei.jpg",
-      "bytes": 806415,
-      "mimeType": "image/jpeg",
-      "width": 1000,
-      "height": 5048
-    },
     "asset_mvhq76y2302sq": {
       "id": "asset_mvhq76y2302sq",
       "name": "minasama.png",
@@ -187915,6 +187811,33 @@
       "mimeType": "image/png",
       "width": 84,
       "height": 150
+    },
+    "asset_mvhqvlmjf6c60": {
+      "id": "asset_mvhqvlmjf6c60",
+      "name": "haikei.jpg",
+      "path": "assets/mvhqvl2qf56e2a-haikei.jpg",
+      "bytes": 806415,
+      "mimeType": "image/jpeg",
+      "width": 1000,
+      "height": 5048
+    },
+    "asset_mvhr3njag9acz": {
+      "id": "asset_mvhr3njag9acz",
+      "name": "menu.png",
+      "path": "assets/mvhr3mr44919eb-menu.png",
+      "bytes": 11298,
+      "mimeType": "image/png",
+      "width": 322,
+      "height": 199
+    },
+    "asset_mvhr3o6fhgpsc": {
+      "id": "asset_mvhr3o6fhgpsc",
+      "name": "home.png",
+      "path": "assets/mvhr3npk07f6f9-home.png",
+      "bytes": 16309,
+      "mimeType": "image/png",
+      "width": 298,
+      "height": 298
     }
   },
   "components": {}

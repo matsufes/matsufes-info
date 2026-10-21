@@ -19,18 +19,18 @@ export default function Page() {
       <span hidden data-page-body="page_muf6dx2a7y" />
       <nav className="header-15">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/\"}]}]"}
-          src="/assets/home.png"
+          src="/assets/home-2.png"
           alt="トップへ戻る"
-          width={426}
-          height={426}
+          width={298}
+          height={298}
           className="el-1222"
         />
         <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"memu-p-2\"}]}]"} className="el-1223">
           <Image
-            src="/assets/menu.png"
+            src="/assets/menu-2.png"
             alt="メニューを開く"
-            width={460}
-            height={284}
+            width={322}
+            height={199}
             className="pasted-artwork-svg-67"
           />
         </div>
@@ -43,7 +43,7 @@ export default function Page() {
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
-                    src="/assets/pasted-artwork-155.svg"
+                    src="/assets/pasted-artwork-151.svg"
                     alt="メニューを閉じる"
                     width={86}
                     height={62}
@@ -258,7 +258,7 @@ export default function Page() {
         </div>
       </nav>
       <Image data-inview
-        src="/assets/image-6.svg"
+        src="/assets/image-5.svg"
         alt=""
         width={1920}
         height={583}
@@ -266,7 +266,7 @@ export default function Page() {
       />
       <p className="box-59">
         <Image
-          src="/assets/pasted-artwork-232.svg"
+          src="/assets/pasted-artwork-228.svg"
           alt=""
           width={636}
           height={130}
@@ -275,7 +275,7 @@ export default function Page() {
       </p>
       <section className="box-60">
         <Image
-          src="/assets/pasted-artwork-99.svg"
+          src="/assets/pasted-artwork-95.svg"
           alt=""
           width={1246}
           height={34}
@@ -284,7 +284,7 @@ export default function Page() {
       </section>
       <section className="box-61">
         <Image
-          src="/assets/pasted-artwork-106.svg"
+          src="/assets/pasted-artwork-102.svg"
           alt=""
           width={438}
           height={114}
@@ -298,7 +298,7 @@ export default function Page() {
       </section>
       <section className="el-81">
         <Image
-          src="/assets/pasted-artwork-156.svg"
+          src="/assets/pasted-artwork-152.svg"
           alt=""
           width={438}
           height={114}
@@ -313,7 +313,7 @@ export default function Page() {
       <section className="el-58">
         <div className="box-174">
           <Image
-            src="/assets/pasted-artwork-96.svg"
+            src="/assets/pasted-artwork-94.svg"
             alt=""
             width={1091}
             height={856}
@@ -339,7 +339,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={1920} height={1015} viewBox="0 0 1920 1015" />
           <Image
-            src="/assets/pasted-artwork-46.svg"
+            src="/assets/pasted-artwork-44.svg"
             alt=""
             width={3840}
             height={2030}
@@ -347,7 +347,7 @@ export default function Page() {
         </span>
         <a href="https://www.instagram.com/kit_matsufes/" className="el-1792">
           <Image
-            src="/assets/pasted-artwork-159.svg"
+            src="/assets/pasted-artwork-155.svg"
             alt=""
             width={58}
             height={58}
@@ -356,7 +356,7 @@ export default function Page() {
         </a>
         <a href="https://x.com/matsufes_info" className="x-15">
           <Image
-            src="/assets/pasted-artwork-160.svg"
+            src="/assets/pasted-artwork-156.svg"
             alt=""
             width={54}
             height={49}
@@ -367,7 +367,7 @@ export default function Page() {
       <section data-inview className="el-1834">
         <a href="https://www.instagram.com/kit_matsufes/" className="el-1835">
           <Image
-            src="/assets/pasted-artwork-159.svg"
+            src="/assets/pasted-artwork-155.svg"
             alt=""
             width={58}
             height={58}
@@ -376,7 +376,7 @@ export default function Page() {
         </a>
         <a href="https://x.com/matsufes_info" className="x-31">
           <Image
-            src="/assets/pasted-artwork-160.svg"
+            src="/assets/pasted-artwork-156.svg"
             alt=""
             width={54}
             height={49}
@@ -384,7 +384,7 @@ export default function Page() {
           />
         </a>
         <Image
-          src="/assets/pasted-artwork-243.svg"
+          src="/assets/pasted-artwork-236.svg"
           alt=""
           width={375}
           height={347}
