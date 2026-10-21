@@ -19,7 +19,7 @@ export default function Page() {
       <span hidden data-page-body="page_msmxmtrg5" />
       <nav className="header-7">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/\"}]}]"}
-          src="/assets/home-2.png"
+          src="/assets/home.png"
           alt="トップへ戻る"
           width={298}
           height={298}
@@ -27,7 +27,7 @@ export default function Page() {
         />
         <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"memu-p-2\"}]}]"} className="el-816">
           <Image
-            src="/assets/menu-2.png"
+            src="/assets/menu.png"
             alt="メニューを開く"
             width={322}
             height={199}

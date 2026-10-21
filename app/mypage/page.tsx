@@ -21,16 +21,16 @@ export default function Page() {
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/\"}]}]"}
           src="/assets/home.png"
           alt="トップへ戻る"
-          width={426}
-          height={426}
+          width={298}
+          height={298}
           className="el-1426"
         />
         <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"memu-p-2\"}]}]"} className="el-1427">
           <Image
             src="/assets/menu.png"
             alt="メニューを開く"
-            width={460}
-            height={284}
+            width={322}
+            height={199}
             className="pasted-artwork-svg-71"
           />
         </div>
