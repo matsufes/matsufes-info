@@ -250,6 +250,32 @@ mem[k] = v;
 return {
 install: function (root) {
 var alive = true;
+var pageGeneration = 0;
+var pageBody = null;
+var pageId = null;
+function syncPage() {
+var body = root.querySelector("[data-page-body]");
+var pid = body ? body.getAttribute("data-page-body") : null;
+if (body !== pageBody || pid !== pageId) {
+pageGeneration++;
+pageBody = body;
+}
+if (pid !== pageId) {
+if (pageId !== null) {
+vars = {};
+filters.clear();
+sorts.clear();
+}
+pageId = pid;
+}
+return pageGeneration;
+}
+function activeRun() {
+var generation = syncPage();
+return function () {
+return alive && generation === syncPage();
+};
+}
 var vars = {};
 function getVar(name) {
 return has(vars, name) ? vars[name] : dig(vars, name);
@@ -767,16 +793,16 @@ break;
 }
 }
 }
-function runSteps(steps, self, cx) {
+function runSteps(steps, self, cx, active) {
 var i = 0;
 function next() {
-while (alive && i < steps.length) {
+while (active() && i < steps.length) {
 var st = steps[i++];
 if (st.kind === "wait") return sleep(st.seconds).then(next);
 if (st.kind === "if") {
 var branch = test(st.cond, self, scopeOf(cx)) ? st.then : st.else;
 if (branch && branch.length) {
-return runSteps(branch, self, cx).then(next);
+return runSteps(branch, self, cx, active).then(next);
 }
 continue;
 }
@@ -790,7 +816,7 @@ function fire(el, trigger, keep) {
 parse(el).forEach(function (s) {
 if (s.trigger !== trigger) return;
 if (keep !== undefined && !!s.keep !== keep) return;
-runSteps(s.steps || [], el);
+runSteps(s.steps || [], el, undefined, activeRun());
 });
 }
 function chain(t) {
@@ -901,19 +927,10 @@ fire(el, "change");
 });
 }
 var seen = new WeakSet();
-var pageId = null;
 function scan() {
 if (!alive) return;
-var body = root.querySelector("[data-page-body]");
-var pid = body ? body.getAttribute("data-page-body") : null;
-if (pid !== pageId) {
-if (pageId !== null) {
-vars = {};
-filters.clear();
-sorts.clear();
-}
-pageId = pid;
-}
+syncPage();
+refreshLive();
 if (sorts.size || filters.size) {
 root.querySelectorAll("[data-array]").forEach(function (list) {
 if (list.hasAttribute("data-client-list")) return;
@@ -932,6 +949,7 @@ fire(el, "load");
 }
 var queued = false;
 var mo = new MutationObserver(function () {
+syncPage();
 if (queued) return;
 queued = true;
 requestAnimationFrame(function () {
@@ -943,7 +961,7 @@ mo.observe(root, {
 childList: true,
 subtree: true,
 attributes: true,
-attributeFilter: ["data-scripts"],
+attributeFilter: ["data-scripts", "data-page-body"],
 });
 scan();
 root.addEventListener("click", onClickCapture, true);
