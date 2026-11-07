@@ -482,13 +482,6 @@ export default function Page() {
           />
         </span>
       </section>
-      <Image
-        src="/assets/pasted-artwork-403.svg"
-        alt=""
-        width={1920}
-        height={10254}
-        className="svg-602"
-      />
     </>
   );
 }

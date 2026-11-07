@@ -99,8 +99,7 @@
         "node_muqw3e066",
         "node_msotdahne",
         "node_mvercrgh1fv",
-        "node_mvg8q0dj273nu",
-        "node_mw5soisviic1m"
+        "node_mvg8q0dj273nu"
       ],
       "unpublished": false,
       "bodyStyles": {
@@ -306453,31 +306452,6 @@
           "fillMode": "both"
         }
       ]
-    },
-    "node_mw5soisviic1m": {
-      "id": "node_mw5soisviic1m",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmw5soggi8f1c6d-pasted-artwork.svg",
-        "alt": "",
-        "width": 1920,
-        "height": 10254,
-        "assetId": "asset_mw5soisuhuekv"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1920px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        }
-      }
     },
     "node_mw5sx7wukqoxs": {
       "id": "node_mw5sx7wukqoxs",
