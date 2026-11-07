@@ -12906,7 +12906,7 @@
             "borderRadius": "0px",
             "maxWidth": "100%",
             "position": "absolute",
-            "bottom": "1%",
+            "bottom": "2%",
             "right": "0px"
           }
         },
@@ -17841,7 +17841,7 @@
                 "subject": "value",
                 "target": "choice",
                 "op": "eq",
-                "value": "ストリートパフォーマンス"
+                "value": "ストリ〜トパフォ〜マンス"
               },
               "then": [
                 {
@@ -17873,7 +17873,7 @@
                 "subject": "value",
                 "target": "choice",
                 "op": "eq",
-                "value": "メインステージ"
+                "value": "メインステ〜ジ"
               },
               "then": [
                 {
@@ -17905,7 +17905,7 @@
                 "subject": "value",
                 "target": "choice",
                 "op": "eq",
-                "value": "センターホール"
+                "value": "センタ〜ホ〜ル"
               },
               "then": [
                 {
@@ -18053,7 +18053,7 @@
                 "subject": "value",
                 "target": "choice",
                 "op": "eq",
-                "value": "メインステージ"
+                "value": "メインステ〜ジ"
               },
               "then": [
                 {
@@ -18085,7 +18085,7 @@
                 "subject": "value",
                 "target": "choice",
                 "op": "eq",
-                "value": "センターホール"
+                "value": "センタ〜ホ〜ル"
               },
               "then": [
                 {
@@ -18117,7 +18117,7 @@
                 "subject": "value",
                 "target": "choice",
                 "op": "eq",
-                "value": "ストリートパフォーマンス"
+                "value": "ストリ〜トパフォ〜マンス"
               },
               "then": [
                 {
@@ -19586,7 +19586,7 @@
                 "subject": "value",
                 "target": "choice",
                 "op": "eq",
-                "value": "メインステージ"
+                "value": "メインステ〜ジ"
               },
               "then": [
                 {
@@ -19608,7 +19608,7 @@
                 "subject": "value",
                 "target": "choice",
                 "op": "eq",
-                "value": "センターホール"
+                "value": "センタ〜ホ〜ル"
               },
               "then": [
                 {
@@ -19630,7 +19630,7 @@
                 "subject": "value",
                 "target": "choice",
                 "op": "eq",
-                "value": "ストリートパフォーマンス"
+                "value": "ストリ〜トパフォ〜マンス"
               },
               "then": [
                 {
@@ -212748,7 +212748,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "1670px",
+            "width": "100%",
             "maxWidth": "100%",
             "borderRadius": "0px"
           }

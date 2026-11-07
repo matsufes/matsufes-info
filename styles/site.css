@@ -1826,7 +1826,7 @@ body:has([data-page-body="page_mw2c6tvu4arwk4"]) {
   border-radius: 0px;
   max-width: 100%;
   position: absolute;
-  bottom: 1%;
+  bottom: 2%;
   right: 0px;
   height: auto;
 }
@@ -14902,6 +14902,7 @@ body:has([data-page-body="page_mw2c6tvu4arwk4"]) {
 .svg-202,
 .el-1737,
 .el-1740,
+.pc-2,
 .svg-370,
 .svg-413,
 .svg-414,
@@ -20580,14 +20581,6 @@ body:has([data-page-body="page_mw2c6tvu4arwk4"]) {
   height: auto;
 }
 
-.pc-2,
-.pc-5 {
-  width: 1670px;
-  max-width: 100%;
-  border-radius: 0px;
-  height: auto;
-}
-
 .svg-360,
 .svg-361,
 .svg-362,
@@ -25456,6 +25449,13 @@ body:has([data-page-body="page_mw2c6tvu4arwk4"]) {
 
 .el-2983:hover {
   animation: anim-pulse 0.5s ease-out 0s 1 normal both;
+}
+
+.pc-5 {
+  width: 1670px;
+  max-width: 100%;
+  border-radius: 0px;
+  height: auto;
 }
 
 .box-974,
