@@ -39,7 +39,7 @@ export default function Page() {
             <div className="el-1266">
               <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p-2\"}]}]"} className="el-1267">
                 <span
-                  className="crisp-svg svg-216"
+                  className="crisp-svg svg-214"
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
@@ -292,7 +292,7 @@ export default function Page() {
           alt=""
           width={1383}
           height={304}
-          className="svg-205"
+          className="svg-203"
         />
       </section>
       <section className="box-68">
@@ -331,7 +331,7 @@ export default function Page() {
       <section className="box-101">
         <div className="box-102">
           <span
-            className="crisp-svg svg-204"
+            className="crisp-svg svg-202"
           >
             <svg aria-hidden="true" width={985} height={748} viewBox="0 0 985 748" />
             <Image
@@ -383,7 +383,7 @@ export default function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-247"
+            className="svg-245"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-16">
@@ -392,7 +392,7 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-248"
+            className="svg-246"
           />
         </a>
       </section>
@@ -403,7 +403,7 @@ export default function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-292"
+            className="svg-290"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-32">
@@ -412,11 +412,11 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-293"
+            className="svg-291"
           />
         </a>
         <span
-          className="crisp-svg svg-294"
+          className="crisp-svg svg-292"
         >
           <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
           <Image

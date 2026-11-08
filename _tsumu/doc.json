@@ -18416,14 +18416,14 @@
         "node_muewihzk40",
         "node_muewlo0244",
         "node_munzyopg1e",
-        "node_muo6tsyc1i",
         "node_muo6ubgz1k",
         "node_muo6ur491m",
         "node_muo6v59m1o",
         "node_muo6wf3a1q",
         "node_muo6wwc71s",
         "node_mv9plm4w6",
-        "node_mvkbzmni4kb67"
+        "node_mvkbzmni4kb67",
+        "node_mw7xo5bap25ct"
       ],
       "styles": {
         "base": {
@@ -19142,39 +19142,6 @@
         }
       }
     },
-    "node_muo6tsyc1i": {
-      "id": "node_muo6tsyc1i",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmuo6tsdi-pasted-artwork.svg",
-        "alt": "",
-        "width": 306,
-        "height": 113,
-        "assetId": "asset_muo6tsyc1h"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "100%",
-            "borderRadius": "0px",
-            "maxWidth": "100%",
-            "position": "absolute",
-            "left": "0%",
-            "top": "13%"
-          }
-        },
-        "sm": {
-          "default": {
-            "top": "10.1%"
-          }
-        }
-      }
-    },
     "node_muo6ubgz1k": {
       "id": "node_muo6ubgz1k",
       "type": "image",
@@ -19683,7 +19650,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_muqx6ul18"
+        "node_mw7yxd8trenv5"
       ],
       "styles": {
         "base": {
@@ -19704,38 +19671,6 @@
             "height": "100%",
             "width": "100%",
             "marginTop": "50px"
-          }
-        }
-      }
-    },
-    "node_muqx6ul18": {
-      "id": "node_muqx6ul18",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmuqx6u0u-pasted-artwork.svg",
-        "alt": "",
-        "width": 438,
-        "height": 114,
-        "assetId": "asset_muqx6ul07"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "30%",
-            "borderRadius": "0px",
-            "maxWidth": "100%",
-            "marginLeft": "60px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "60%",
-            "marginLeft": "10px"
           }
         }
       }
@@ -194284,7 +194219,8 @@
       "link": null,
       "children": [
         "node_mvhve1zlapw2x6",
-        "node_mvhve1zlaqbsbh"
+        "node_mvhve1zlaqbsbh",
+        "node_mw5y14bdek6ks"
       ],
       "styles": {
         "base": {
@@ -194485,30 +194421,6 @@
         }
       }
     },
-    "node_mvhve1zlb0aj53": {
-      "id": "node_mvhve1zlb0aj53",
-      "type": "image",
-      "name": "Vector (4).svg",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmv7j2ir7-Vector-4.svg",
-        "alt": "",
-        "width": 15,
-        "height": 15,
-        "assetId": "asset_mv7j2jcp5"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "12px",
-            "flexShrink": "0"
-          }
-        }
-      }
-    },
     "node_mvhve1zlb15qg7": {
       "id": "node_mvhve1zlb15qg7",
       "type": "box",
@@ -194547,7 +194459,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mvhve1zlb0aj53",
+        "node_mw5xj4io45lbd",
         "node_mvhve1zlb15qg7"
       ],
       "styles": {
@@ -194562,29 +194474,6 @@
             "paddingRight": "12px",
             "paddingBottom": "0px",
             "paddingLeft": "12px"
-          }
-        }
-      }
-    },
-    "node_mvhve1zlb3xvd2": {
-      "id": "node_mvhve1zlb3xvd2",
-      "type": "image",
-      "name": "Group 244.svg",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmv7j7tqc-Group-244.svg",
-        "alt": "",
-        "width": 13,
-        "height": 20,
-        "assetId": "asset_mv7j7u389"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "12px"
           }
         }
       }
@@ -194627,7 +194516,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mvhve1zlb3xvd2",
+        "node_mw5xva0e8mx9y",
         "node_mvhve1zlb4cisk"
       ],
       "styles": {
@@ -239303,7 +239192,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mvzcv95a60qf4w"
+        "node_mw7wwzrqg449d"
       ],
       "styles": {
         "base": {
@@ -239606,7 +239495,7 @@
           "trigger": "hover",
           "property": "all",
           "keyframes": "bounce",
-          "duration": 1,
+          "duration": 0.8,
           "delay": 0,
           "easing": "ease-out",
           "repeat": 1,
@@ -239793,7 +239682,7 @@
           "trigger": "hover",
           "property": "all",
           "keyframes": "bounce",
-          "duration": 1,
+          "duration": 0.8,
           "delay": 0,
           "easing": "ease-out",
           "repeat": 1,
@@ -239904,7 +239793,7 @@
           "trigger": "hover",
           "property": "all",
           "keyframes": "bounce",
-          "duration": 1,
+          "duration": 0.8,
           "delay": 0,
           "easing": "ease-out",
           "repeat": 1,
@@ -240742,31 +240631,6 @@
         "sm"
       ]
     },
-    "node_mvzcv95a60qf4w": {
-      "id": "node_mvzcv95a60qf4w",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmvzcv8m3a8b1a7-pasted-artwork.svg",
-        "alt": "",
-        "width": 651,
-        "height": 321,
-        "assetId": "asset_mvzcv9555zy883"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "100%",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        }
-      }
-    },
     "node_mvzd0mb51c2wh": {
       "id": "node_mvzd0mb51c2wh",
       "type": "image",
@@ -240970,7 +240834,21 @@
             "width": "90%"
           }
         }
-      }
+      },
+      "motions": [
+        {
+          "id": "motion_mw7x6in8ja1t6",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.3,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 2,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
     },
     "node_mvzef17v18fzzb": {
       "id": "node_mvzef17v18fzzb",
@@ -241186,7 +241064,24 @@
             "marginLeft": "3px"
           }
         }
-      }
+      },
+      "scripts": [
+        {
+          "id": "sc_mw7x4p0w1rvz",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mw7x4qxz2q8c",
+              "kind": "open-page",
+              "pageId": "page_mvzcltff5ss5c7"
+            }
+          ],
+          "pos": {
+            "x": 1120,
+            "y": 279
+          }
+        }
+      ]
     },
     "node_mw0g1m5o25bix7": {
       "id": "node_mw0g1m5o25bix7",
@@ -306559,7 +306454,21 @@
             "width": "90%"
           }
         }
-      }
+      },
+      "motions": [
+        {
+          "id": "motion_mw7x5v2whzmtw",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.3,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 2,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
     },
     "node_mw5tmgvitviob": {
       "id": "node_mw5tmgvitviob",
@@ -306589,7 +306498,21 @@
             "width": "90%"
           }
         }
-      }
+      },
+      "motions": [
+        {
+          "id": "motion_mw7x6apkiv7q6",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.3,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 2,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
     },
     "node_mw5tmvucvz6w4": {
       "id": "node_mw5tmvucvz6w4",
@@ -306619,7 +306542,21 @@
             "width": "90%"
           }
         }
-      }
+      },
+      "motions": [
+        {
+          "id": "motion_mw7x6s1okohgg",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.3,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 2,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
     },
     "node_mw5tomlaxw163": {
       "id": "node_mw5tomlaxw163",
@@ -306724,6 +306661,173 @@
             "width": "563px",
             "maxWidth": "100%",
             "borderRadius": "0px"
+          }
+        }
+      }
+    },
+    "node_mw5xj4io45lbd": {
+      "id": "node_mw5xj4io45lbd",
+      "type": "image",
+      "name": "キラキラ",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw5xj43r33cd95-pasted-artwork.svg",
+        "alt": "",
+        "width": 60,
+        "height": 60,
+        "assetId": "asset_mw5xj4in3841a"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "12px",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "flexShrink": "0"
+          }
+        }
+      }
+    },
+    "node_mw5xva0e8mx9y": {
+      "id": "node_mw5xva0e8mx9y",
+      "type": "image",
+      "name": "ピン",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw5xv9nw48f891-pasted-artwork.svg",
+        "alt": "",
+        "width": 49,
+        "height": 79,
+        "assetId": "asset_mw5xva0d7oet0"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "12px",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "flexShrink": "0"
+          }
+        }
+      }
+    },
+    "node_mw5y14bdek6ks": {
+      "id": "node_mw5y14bdek6ks",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw5y13yr8cd52c-pasted-artwork.svg",
+        "alt": "",
+        "width": 160,
+        "height": 149,
+        "assetId": "asset_mw5y14bcdaej6"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "160px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      }
+    },
+    "node_mw7wwzrqg449d": {
+      "id": "node_mw7wwzrqg449d",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw7wwzanfa86bb-pasted-artwork.svg",
+        "alt": "",
+        "width": 659,
+        "height": 329,
+        "assetId": "asset_mw7wwzrofdqel"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "659px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      }
+    },
+    "node_mw7xo5bap25ct": {
+      "id": "node_mw7xo5bap25ct",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw7xo4vu9eb960-pasted-artwork.svg",
+        "alt": "",
+        "width": 306,
+        "height": 113,
+        "assetId": "asset_mw7xo5baocvsc"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "position": "absolute",
+            "left": "0%",
+            "top": "13%"
+          }
+        },
+        "sm": {
+          "default": {
+            "top": "10%"
+          }
+        }
+      }
+    },
+    "node_mw7yxd8trenv5": {
+      "id": "node_mw7yxd8trenv5",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw7yxcug1340e5-pasted-artwork.svg",
+        "alt": "",
+        "width": 438,
+        "height": 114,
+        "assetId": "asset_mw7yxd8rqq3ib"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "30%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "marginLeft": "60px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "60%",
+            "marginLeft": "10px"
           }
         }
       }
@@ -311266,6 +311370,116 @@
       "mimeType": "image/svg+xml",
       "width": 563,
       "height": 675,
+      "svgFilter": true
+    },
+    "asset_mw5xfh241c4it": {
+      "id": "asset_mw5xfh241c4it",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mw5xfgoxef7355-pasted-artwork.svg",
+      "bytes": 810,
+      "mimeType": "image/svg+xml",
+      "width": 60,
+      "height": 60,
+      "svgFilter": false
+    },
+    "asset_mw5xj4in3841a": {
+      "id": "asset_mw5xj4in3841a",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mw5xj43r33cd95-pasted-artwork.svg",
+      "bytes": 810,
+      "mimeType": "image/svg+xml",
+      "width": 60,
+      "height": 60,
+      "svgFilter": false
+    },
+    "asset_mw5xuqd15wgpo": {
+      "id": "asset_mw5xuqd15wgpo",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mw5xupxb69b1d1-pasted-artwork.svg",
+      "bytes": 968,
+      "mimeType": "image/svg+xml",
+      "width": 49,
+      "height": 79,
+      "svgFilter": false
+    },
+    "asset_mw5xva0d7oet0": {
+      "id": "asset_mw5xva0d7oet0",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mw5xv9nw48f891-pasted-artwork.svg",
+      "bytes": 879,
+      "mimeType": "image/svg+xml",
+      "width": 49,
+      "height": 79,
+      "svgFilter": false
+    },
+    "asset_mw5xzbko9ygym": {
+      "id": "asset_mw5xzbko9ygym",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mw5xzb6pd1bc8e-pasted-artwork.svg",
+      "bytes": 596,
+      "mimeType": "image/svg+xml",
+      "width": 160,
+      "height": 149,
+      "svgFilter": false
+    },
+    "asset_mw5y0aixbzzah": {
+      "id": "asset_mw5y0aixbzzah",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mw5y0a6l9f8dde-pasted-artwork.svg",
+      "bytes": 597,
+      "mimeType": "image/svg+xml",
+      "width": 160,
+      "height": 149,
+      "svgFilter": false
+    },
+    "asset_mw5y14bcdaej6": {
+      "id": "asset_mw5y14bcdaej6",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mw5y13yr8cd52c-pasted-artwork.svg",
+      "bytes": 597,
+      "mimeType": "image/svg+xml",
+      "width": 160,
+      "height": 149,
+      "svgFilter": false
+    },
+    "asset_mw7wwzrofdqel": {
+      "id": "asset_mw7wwzrofdqel",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mw7wwzanfa86bb-pasted-artwork.svg",
+      "bytes": 53840,
+      "mimeType": "image/svg+xml",
+      "width": 659,
+      "height": 329,
+      "svgFilter": true
+    },
+    "asset_mw7xlshilh0jb": {
+      "id": "asset_mw7xlshilh0jb",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mw7xlrzgb3a6af-pasted-artwork.svg",
+      "bytes": 36305,
+      "mimeType": "image/svg+xml",
+      "width": 306,
+      "height": 113,
+      "svgFilter": false
+    },
+    "asset_mw7xo5baocvsc": {
+      "id": "asset_mw7xo5baocvsc",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mw7xo4vu9eb960-pasted-artwork.svg",
+      "bytes": 42137,
+      "mimeType": "image/svg+xml",
+      "width": 306,
+      "height": 113,
+      "svgFilter": false
+    },
+    "asset_mw7yxd8rqq3ib": {
+      "id": "asset_mw7yxd8rqq3ib",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mw7yxcug1340e5-pasted-artwork.svg",
+      "bytes": 30712,
+      "mimeType": "image/svg+xml",
+      "width": 438,
+      "height": 114,
       "svgFilter": true
     }
   },
