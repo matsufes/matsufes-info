@@ -26529,7 +26529,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
 }
 
 .text-785 {
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.7;
   font-family: var(--font-zen-kaku-gothic-new), "Zen Kaku Gothic New", sans-serif;
   font-weight: 900;
@@ -32400,7 +32400,8 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .box-888,
   .box-915,
   .box-919,
-  .box-983 {
+  .box-983,
+  .text-785 {
     font-size: 16px;
   }
 
@@ -36288,11 +36289,6 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .svg-346,
   .el-1985,
   .el-1990,
-  .el-1991,
-  .el-1993,
-  .el-1994,
-  .el-1995,
-  .el-1996,
   .el-1998,
   .el-2002,
   .el-2004,
@@ -37268,11 +37264,6 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .svg-346,
   .el-1985,
   .el-1990,
-  .el-1991,
-  .el-1993,
-  .el-1994,
-  .el-1995,
-  .el-1996,
   .el-2002,
   .el-2004,
   .el-2006,
@@ -37664,6 +37655,23 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-3100,
   .checkbox-14,
   .el-3103 {
+    display: none;
+  }
+}
+
+@media (min-width: 767.02px) and (max-width: 860px) {
+  .el-1985,
+  .el-1990,
+  .box-790,
+  .box-951,
+  .el-2944,
+  .el-2947,
+  .el-3001,
+  .el-3007,
+  .el-3064,
+  .el-3065,
+  .el-3066,
+  .el-3068 {
     display: none;
   }
 }
@@ -38232,11 +38240,6 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .svg-346,
   .el-1985,
   .el-1990,
-  .el-1991,
-  .el-1993,
-  .el-1994,
-  .el-1995,
-  .el-1996,
   .el-2002,
   .el-2004,
   .el-2006,
@@ -38628,6 +38631,20 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-3100,
   .checkbox-14,
   .el-3103 {
+    display: none;
+  }
+}
+
+@media (min-width: 560.02px) and (max-width: 680px) {
+  .el-1985,
+  .el-1990 {
+    display: none;
+  }
+}
+
+@media (min-width: 478.02px) and (max-width: 560px) {
+  .el-1985,
+  .el-1990 {
     display: none;
   }
 }
@@ -39210,11 +39227,6 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .pc-2,
   .pc-3,
   .pc-4,
-  .el-1991,
-  .el-1993,
-  .el-1994,
-  .el-1995,
-  .el-1996,
   .el-2002,
   .el-2004,
   .el-2006,
