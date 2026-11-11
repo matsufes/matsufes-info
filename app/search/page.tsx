@@ -150,7 +150,7 @@ export default async function Page() {
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
-                    src="/assets/pasted-artwork-132.svg"
+                    src="/assets/pasted-artwork-131.svg"
                     alt="メニューを閉じる"
                     width={86}
                     height={62}
@@ -1285,7 +1285,7 @@ export default async function Page() {
         </span>
         <a href="https://www.instagram.com/kit_matsufes/" className="el-1660">
           <Image
-            src="/assets/pasted-artwork-136.svg"
+            src="/assets/pasted-artwork-134.svg"
             alt=""
             width={58}
             height={58}
@@ -1294,7 +1294,7 @@ export default async function Page() {
         </a>
         <a href="https://x.com/matsufes_info" className="x-9">
           <Image
-            src="/assets/pasted-artwork-137.svg"
+            src="/assets/pasted-artwork-135.svg"
             alt=""
             width={54}
             height={49}
@@ -1305,7 +1305,7 @@ export default async function Page() {
       <section data-inview className="el-1685">
         <a href="https://www.instagram.com/kit_matsufes/" className="el-1686">
           <Image
-            src="/assets/pasted-artwork-136.svg"
+            src="/assets/pasted-artwork-134.svg"
             alt=""
             width={58}
             height={58}
@@ -1314,7 +1314,7 @@ export default async function Page() {
         </a>
         <a href="https://x.com/matsufes_info" className="x-24">
           <Image
-            src="/assets/pasted-artwork-137.svg"
+            src="/assets/pasted-artwork-135.svg"
             alt=""
             width={54}
             height={49}
@@ -1326,7 +1326,7 @@ export default async function Page() {
         >
           <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
           <Image
-            src="/assets/pasted-artwork-198.svg"
+            src="/assets/pasted-artwork-196.svg"
             alt=""
             width={750}
             height={694}

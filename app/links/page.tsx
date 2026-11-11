@@ -44,7 +44,7 @@ export default function Page() {
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
-                    src="/assets/pasted-artwork-132.svg"
+                    src="/assets/pasted-artwork-131.svg"
                     alt="メニューを閉じる"
                     width={86}
                     height={62}
@@ -271,7 +271,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={522} height={122} viewBox="0 0 522 122" />
           <Image
-            src="/assets/pasted-artwork-370.svg"
+            src="/assets/pasted-artwork-360.svg"
             alt=""
             width={1044}
             height={244}
@@ -298,7 +298,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={577} height={181} viewBox="0 0 577 181" />
           <Image
-            src="/assets/pasted-artwork-184.svg"
+            src="/assets/pasted-artwork-182.svg"
             alt=""
             width={1154}
             height={362}
@@ -310,7 +310,7 @@ export default function Page() {
           >
             <svg aria-hidden="true" width={406} height={191} viewBox="0 0 406 191" />
             <Image
-              src="/assets/pasted-artwork-139.svg"
+              src="/assets/pasted-artwork-137.svg"
               alt=""
               width={812}
               height={382}
@@ -320,7 +320,7 @@ export default function Page() {
       </section>
       <section className="box-218">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://maps.app.goo.gl/akv65Tn4vQnYoEfP8?g_st=ic\"}]}]"}
-          src="/assets/pasted-artwork-147.svg"
+          src="/assets/pasted-artwork-145.svg"
           alt=""
           width={326}
           height={66}
@@ -333,7 +333,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={625} height={181} viewBox="0 0 625 181" />
           <Image
-            src="/assets/pasted-artwork-183.svg"
+            src="/assets/pasted-artwork-181.svg"
             alt=""
             width={1250}
             height={362}
@@ -345,7 +345,7 @@ export default function Page() {
           >
             <svg aria-hidden="true" width={406} height={191} viewBox="0 0 406 191" />
             <Image
-              src="/assets/pasted-artwork-139.svg"
+              src="/assets/pasted-artwork-137.svg"
               alt=""
               width={812}
               height={382}
@@ -355,7 +355,7 @@ export default function Page() {
       </section>
       <section className="box-221">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://maps.app.goo.gl/ZnEXceuCtfmEXqbUA?g_st=il\"}]}]"}
-          src="/assets/pasted-artwork-147.svg"
+          src="/assets/pasted-artwork-145.svg"
           alt=""
           width={326}
           height={66}
@@ -368,7 +368,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={562} height={181} viewBox="0 0 562 181" />
           <Image
-            src="/assets/pasted-artwork-148.svg"
+            src="/assets/pasted-artwork-146.svg"
             alt=""
             width={1124}
             height={362}
@@ -380,7 +380,7 @@ export default function Page() {
           >
             <svg aria-hidden="true" width={406} height={191} viewBox="0 0 406 191" />
             <Image
-              src="/assets/pasted-artwork-139.svg"
+              src="/assets/pasted-artwork-137.svg"
               alt=""
               width={812}
               height={382}
@@ -390,7 +390,7 @@ export default function Page() {
       </section>
       <section className="box-224">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://maps.app.goo.gl/q7N6d7AU35q5W2HC7?g_st=in\"}]}]"}
-          src="/assets/pasted-artwork-147.svg"
+          src="/assets/pasted-artwork-145.svg"
           alt=""
           width={326}
           height={66}
@@ -403,7 +403,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={674} height={181} viewBox="0 0 674 181" />
           <Image
-            src="/assets/pasted-artwork-149.svg"
+            src="/assets/pasted-artwork-147.svg"
             alt=""
             width={1348}
             height={362}
@@ -415,7 +415,7 @@ export default function Page() {
           >
             <svg aria-hidden="true" width={406} height={191} viewBox="0 0 406 191" />
             <Image
-              src="/assets/pasted-artwork-139.svg"
+              src="/assets/pasted-artwork-137.svg"
               alt=""
               width={812}
               height={382}
@@ -425,7 +425,7 @@ export default function Page() {
       </section>
       <section className="box-227">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://www.google.co.jp/maps/place/%E4%BA%AC%E9%83%BD%E5%A4%A7%E5%AD%A6+%E5%90%89%E7%94%B0%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9+%E6%9C%AC%E9%83%A8%E6%A7%8B%E5%86%85/@35.0271195,135.7786612,17z/data=!3m2!4b1!5s0x60010857f2d5c407:0xa51ccd9fd0612078!4m6!3m5!1s0x600108562446b2bb:0x17026e2b02f706d9!8m2!3d35.0271151!4d135.7812361!16s%2Fg%2F120x68zh?entry=ttu\\u0026g_ep=EgoyMDI2MTAwNC4wIKXMDSoASAFQAw%3D%3D\"}]}]"}
-          src="/assets/pasted-artwork-147.svg"
+          src="/assets/pasted-artwork-145.svg"
           alt=""
           width={326}
           height={66}
@@ -446,7 +446,7 @@ export default function Page() {
         </span>
         <a href="https://www.instagram.com/kit_matsufes/" className="el-1662">
           <Image
-            src="/assets/pasted-artwork-136.svg"
+            src="/assets/pasted-artwork-134.svg"
             alt=""
             width={58}
             height={58}
@@ -455,7 +455,7 @@ export default function Page() {
         </a>
         <a href="https://x.com/matsufes_info" className="x-11">
           <Image
-            src="/assets/pasted-artwork-137.svg"
+            src="/assets/pasted-artwork-135.svg"
             alt=""
             width={54}
             height={49}
@@ -466,7 +466,7 @@ export default function Page() {
       <section data-inview className="el-1691">
         <a href="https://www.instagram.com/kit_matsufes/" className="el-1692">
           <Image
-            src="/assets/pasted-artwork-136.svg"
+            src="/assets/pasted-artwork-134.svg"
             alt=""
             width={58}
             height={58}
@@ -475,7 +475,7 @@ export default function Page() {
         </a>
         <a href="https://x.com/matsufes_info" className="x-27">
           <Image
-            src="/assets/pasted-artwork-137.svg"
+            src="/assets/pasted-artwork-135.svg"
             alt=""
             width={54}
             height={49}
@@ -487,7 +487,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
           <Image
-            src="/assets/pasted-artwork-198.svg"
+            src="/assets/pasted-artwork-196.svg"
             alt=""
             width={750}
             height={694}

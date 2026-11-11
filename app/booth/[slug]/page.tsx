@@ -194,7 +194,7 @@ export default async function Page({
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
-                    src="/assets/pasted-artwork-132.svg"
+                    src="/assets/pasted-artwork-131.svg"
                     alt="メニューを閉じる"
                     width={86}
                     height={62}
@@ -686,7 +686,7 @@ export default async function Page({
                     fetchPriority="high"
                   />
                   <Image id="favoff" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"set-var","into":"_d","raw":lookupVar(vars, "_1.publicId") ?? null},{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{_d}", { ...vars, ...{"_d":"{_d}","\u0000keepEscapes":true} }),"op":"empty","value":"","not":true},"then":[{"kind":"transform","source":"_2","into":"_e","transform":{"kind":"fallback","text":"","when":"nullish"}},{"kind":"transform","source":"_e","into":"_f","transform":{"kind":"split","separator":"."}},{"kind":"set-var","into":"_d","raw":lookupVar(vars, "_1.publicId") ?? null},{"kind":"set-var","into":"_g","value":"[]"},{"kind":"set-var","into":"_h","value":"false"},{"kind":"for-each","array":"_f","then":[{"kind":"if","cond":{"subject":"var","target":"","left":interpolate("{ループ.値}", { ...vars, ...{"\u0000keepEscapes":true} }),"op":"eq","value":interpolate("{_d}", { ...vars, ...{"_d":"{_d}","\u0000keepEscapes":true} })},"then":[],"else":[{"kind":"set-list-item","list":"_g","key":"","value":"{ループ.値}"}]}]},{"kind":"transform","source":"_g","into":"_2","transform":{"kind":"join","separator":"."}}]},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...vars, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"favoff"},{"kind":"show","target":"fav-svg"}]}])} data-toggle-show="block"
-                    src="/assets/pasted-artwork-181.svg"
+                    src="/assets/pasted-artwork-179.svg"
                     alt="お気に入り未登録"
                     width={209}
                     height={204}
@@ -699,7 +699,7 @@ export default async function Page({
               </div>
               <SmartLink href={safeNavigationUrl(interpolateUrl("https://vote.matsufes.info/?id={_1.publicId}", vars))} className="vote">
                 <Image
-                  src="/assets/pasted-artwork-180.svg"
+                  src="/assets/pasted-artwork-178.svg"
                   alt="m-1グランプリ"
                   width={162}
                   height={237}
@@ -722,21 +722,21 @@ export default async function Page({
           <div className="box-325">
             <div className="box-310">
               <Image id="x" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{_1.snsX}", { ...vars, ...{"\u0000keepEscapes":true} }),"newTab":true}]}])}
-                src="/assets/pasted-artwork-179.svg"
+                src="/assets/pasted-artwork-177.svg"
                 alt="X"
                 width={40}
                 height={37}
                 className="x-3"
               />
               <Image id="inst" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{_1.snsInstagram}", { ...vars, ...{"\u0000keepEscapes":true} }),"newTab":true}]}])}
-                src="/assets/pasted-artwork-178.svg"
+                src="/assets/pasted-artwork-176.svg"
                 alt="Instagram"
                 width={44}
                 height={44}
                 className="inst"
               />
               <Image id="web" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"open-url","url":interpolateUrl("{snsWeb}", { ...vars, ...{"snsWeb":"{snsWeb}","\u0000keepEscapes":true} }),"newTab":true}]}])}
-                src="/assets/pasted-artwork-177.svg"
+                src="/assets/pasted-artwork-175.svg"
                 alt="外部サイト"
                 width={50}
                 height={51}
@@ -793,7 +793,7 @@ export default async function Page({
         </span>
         <a href="https://www.instagram.com/kit_matsufes/" className="el-1664">
           <Image
-            src="/assets/pasted-artwork-136.svg"
+            src="/assets/pasted-artwork-134.svg"
             alt=""
             width={58}
             height={58}
@@ -802,7 +802,7 @@ export default async function Page({
         </a>
         <a href="https://x.com/matsufes_info" className="x-13">
           <Image
-            src="/assets/pasted-artwork-137.svg"
+            src="/assets/pasted-artwork-135.svg"
             alt=""
             width={54}
             height={49}
@@ -813,7 +813,7 @@ export default async function Page({
       <section data-inview className="el-1687">
         <a href="https://www.instagram.com/kit_matsufes/" className="el-1688">
           <Image
-            src="/assets/pasted-artwork-136.svg"
+            src="/assets/pasted-artwork-134.svg"
             alt=""
             width={58}
             height={58}
@@ -822,7 +822,7 @@ export default async function Page({
         </a>
         <a href="https://x.com/matsufes_info" className="x-25">
           <Image
-            src="/assets/pasted-artwork-137.svg"
+            src="/assets/pasted-artwork-135.svg"
             alt=""
             width={54}
             height={49}
@@ -834,7 +834,7 @@ export default async function Page({
         >
           <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
           <Image
-            src="/assets/pasted-artwork-198.svg"
+            src="/assets/pasted-artwork-196.svg"
             alt=""
             width={750}
             height={694}
