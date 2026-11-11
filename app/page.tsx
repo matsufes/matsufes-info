@@ -483,7 +483,7 @@ export default function Page() {
               height={1154}
             />
           </span>
-          <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://matsufes.info/tokimeki_dreamworld\"}]}]"}
+          <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://matsufes.info/tokimeki-dreamworld\"}]}]"}
             className="crisp-svg el-3105"
           >
             <svg aria-hidden="true" width={524} height={207} viewBox="0 0 524 207" />
