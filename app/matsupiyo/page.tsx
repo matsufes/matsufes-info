@@ -17,18 +17,18 @@ export default function Page() {
       <span hidden data-page-body="page_mv7xdigo16" data-scripts={"[{\"trigger\":\"load\",\"steps\":[{\"kind\":\"hide\",\"target\":\"img-6\"}]},{\"trigger\":\"load\",\"steps\":[{\"kind\":\"hide\",\"target\":\"img-5\"}]},{\"trigger\":\"load\",\"steps\":[{\"kind\":\"hide\",\"target\":\"img-4\"}]},{\"trigger\":\"load\",\"steps\":[{\"kind\":\"hide\",\"target\":\"img-3\"}]},{\"trigger\":\"load\",\"steps\":[{\"kind\":\"hide\",\"target\":\"img-2\"}]}]"} />
       <section className="box-766">
         <Image
-          src="/assets/pasted-artwork-206.svg"
-          alt=""
-          width={1280}
-          height={1010}
-          className="el-1675"
-        />
-        <Image
           src="/assets/pasted-artwork-234.svg"
           alt=""
           width={402}
           height={840}
           className="el-1990"
+        />
+        <Image
+          src="/assets/pasted-artwork-206.svg"
+          alt=""
+          width={1280}
+          height={1010}
+          className="el-1675"
         />
         <div className="box-767">
           <div className="header-41">
@@ -181,7 +181,7 @@ export default function Page() {
               </div>
             </div>
             <div className="box-785">
-              <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://matsufes.info/tokimeki_dreamworld\"}]}]"}
+              <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://matsufes.info/tokimeki-dreamworld\"}]}]"}
                 src="/assets/pasted-artwork-201.svg"
                 alt=""
                 width={437}

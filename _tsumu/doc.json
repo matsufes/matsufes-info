@@ -101,38 +101,6 @@
       "name": "バックアップ"
     }
   ],
-  "breakpoints": [
-    {
-      "id": "lg",
-      "label": "タブレット",
-      "maxWidth": 1024
-    },
-    {
-      "id": "html_860",
-      "label": "画面幅860",
-      "maxWidth": 860
-    },
-    {
-      "id": "md",
-      "label": "スマホ横向き",
-      "maxWidth": 767
-    },
-    {
-      "id": "html_680",
-      "label": "画面幅680",
-      "maxWidth": 680
-    },
-    {
-      "id": "html_560",
-      "label": "画面幅560",
-      "maxWidth": 560
-    },
-    {
-      "id": "sm",
-      "label": "スマホ",
-      "maxWidth": 478
-    }
-  ],
   "components": {},
   "pages": {
     "page_msleaffe1": {
@@ -3537,14 +3505,13 @@
         "base": {
           "default": {
             "height": "100%",
-            "display": "flex",
-            "flexDirection": "column"
+            "display": "block"
           }
         },
         "sm": {
           "default": {
-            "height": "2000px",
-            "width": "402px"
+            "height": "100%",
+            "width": "100%"
           }
         }
       },
@@ -205342,7 +205309,7 @@
             {
               "id": "st_mwbzxg0bauxr",
               "kind": "open-url",
-              "url": "https://matsufes.info/tokimeki_dreamworld"
+              "url": "https://matsufes.info/tokimeki-dreamworld"
             }
           ],
           "pos": {
@@ -275521,10 +275488,7 @@
       "hiddenOn": [
         "base",
         "lg",
-        "html_860",
-        "md",
-        "html_680",
-        "html_560"
+        "md"
       ]
     },
     "node_mvkbzmni4kb67": {
@@ -275909,17 +275873,15 @@
         },
         "sm": {
           "default": {
-            "width": "100%"
+            "width": "100%",
+            "height": "100%"
           }
         }
       },
       "hiddenOn": [
         "base",
         "lg",
-        "html_860",
-        "md",
-        "html_680",
-        "html_560"
+        "md"
       ]
     },
     "node_mvnbz2decvxjn": {
@@ -276003,7 +275965,13 @@
           }
         }
       ],
-      "locked": false
+      "locked": false,
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
+      ]
     },
     "node_mvnblpc98pkwj": {
       "id": "node_mvnblpc98pkwj",
@@ -276159,6 +276127,12 @@
             "y": 971
           }
         }
+      ],
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
       ]
     },
     "node_mvntys6h8un0x": {
@@ -276238,6 +276212,12 @@
             "y": 844
           }
         }
+      ],
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
       ]
     },
     "node_mvnutloweifv8": {
@@ -276316,6 +276296,12 @@
             "y": 942
           }
         }
+      ],
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
       ]
     },
     "node_mvntts2b5fwxg": {
@@ -276396,6 +276382,12 @@
           "direction": "normal",
           "fillMode": "both"
         }
+      ],
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
       ]
     },
     "node_mvou1xip25n8w": {
@@ -281637,8 +281629,8 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mvf9skbx65c83",
         "node_mvkohsfq3y68q",
+        "node_mvf9skbx65c83",
         "node_mvou7dj33wog8"
       ],
       "styles": {
@@ -281652,8 +281644,9 @@
         },
         "sm": {
           "default": {
-            "width": "118.9%",
-            "display": "block"
+            "width": "100%",
+            "display": "block",
+            "height": "100%"
           }
         }
       }
@@ -293146,7 +293139,7 @@
         },
         "sm": {
           "default": {
-            "width": "118.9%"
+            "width": "100%"
           }
         },
         "md": {
@@ -293287,7 +293280,6 @@
       "hiddenOn": [
         "base",
         "lg",
-        "html_860",
         "md"
       ]
     },
@@ -366555,7 +366547,6 @@
       "hiddenOn": [
         "base",
         "lg",
-        "html_860",
         "md"
       ]
     },
@@ -368408,7 +368399,7 @@
             "position": "absolute",
             "left": "0px",
             "top": "0px",
-            "gap": "35px",
+            "gap": "20px",
             "flexDirection": "column"
           }
         }
@@ -369335,7 +369326,12 @@
             "top": "8%"
           }
         }
-      }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ]
     },
     "node_mw859a0cswdhv": {
       "id": "node_mw859a0cswdhv",
@@ -370427,7 +370423,6 @@
       "hiddenOn": [
         "base",
         "lg",
-        "html_860",
         "md",
         "sm"
       ],
@@ -370828,7 +370823,6 @@
       "hiddenOn": [
         "base",
         "lg",
-        "html_860",
         "md",
         "sm"
       ],
@@ -375288,7 +375282,6 @@
       "hiddenOn": [
         "base",
         "lg",
-        "html_860",
         "md",
         "sm"
       ]
@@ -375464,7 +375457,12 @@
             "top": "25%"
           }
         }
-      }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ]
     },
     "node_mwayfmya2bt1g7": {
       "id": "node_mwayfmya2bt1g7",
@@ -375561,7 +375559,9 @@
         }
       },
       "hiddenOn": [
-        "html_860"
+        "base",
+        "lg",
+        "md"
       ]
     },
     "node_mwb06ie51nmj23": {
@@ -381740,7 +381740,6 @@
       "hiddenOn": [
         "base",
         "lg",
-        "html_860",
         "md",
         "sm"
       ]
@@ -381808,7 +381807,6 @@
       "hiddenOn": [
         "base",
         "lg",
-        "html_860",
         "md"
       ]
     },
@@ -381845,7 +381843,6 @@
       "hiddenOn": [
         "base",
         "lg",
-        "html_860",
         "md",
         "sm"
       ]
@@ -381905,7 +381902,6 @@
       "hiddenOn": [
         "base",
         "lg",
-        "html_860",
         "md",
         "sm"
       ]
@@ -386717,7 +386713,7 @@
             {
               "id": "st_mwc009t6m71q",
               "kind": "open-url",
-              "url": "https://matsufes.info/tokimeki_dreamworld"
+              "url": "https://matsufes.info/tokimeki-dreamworld"
             }
           ],
           "pos": {

@@ -229,8 +229,7 @@ body:has([data-page-body="page_mv7ucj3ccc"]) {
 
 body:has([data-page-body="page_mv7xdigo16"]) {
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 
 body:has([data-page-body="page_mv8igc0g21"]) {
@@ -30893,8 +30892,8 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   }
 
   body:has([data-page-body="page_mv7xdigo16"]) {
-    height: 2000px;
-    width: 402px;
+    height: 100%;
+    width: 100%;
   }
 
   .el,
@@ -31830,7 +31829,6 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-1912,
   .svg-317,
   .box-744,
-  .el-1990,
   .el-2049,
   .el-2057,
   .pasted-artwork-svg-100,
@@ -32034,6 +32032,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-38,
   .el-44,
   .svg-55,
+  .el-1990,
   .svg-357,
   .el-2177,
   .el-2187 {
@@ -35313,8 +35312,9 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   }
 
   .box-766 {
-    width: 118.9%;
+    width: 100%;
     display: block;
+    height: 100%;
   }
 
   .select-9 {
@@ -35367,7 +35367,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   }
 
   .box-787 {
-    width: 118.9%;
+    width: 100%;
     position: relative;
   }
 
@@ -35585,7 +35585,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
     position: absolute;
     left: 0px;
     top: 0px;
-    gap: 35px;
+    gap: 20px;
     flex-direction: column;
   }
 
@@ -36289,6 +36289,11 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .svg-346,
   .el-1985,
   .el-1990,
+  .el-1991,
+  .el-1993,
+  .el-1994,
+  .el-1995,
+  .el-1996,
   .el-1998,
   .el-2002,
   .el-2004,
@@ -36629,6 +36634,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-2922,
   .el-2925,
   .el-2926,
+  .el-2936,
   .el-2938,
   .el-2944,
   .el-2947,
@@ -36648,7 +36654,9 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-2993,
   .el-2994,
   .el-3001,
+  .el-3004,
   .el-3005,
+  .el-3007,
   .el-3009,
   .el-3013,
   .el-3015,
@@ -36700,7 +36708,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   }
 }
 
-@media (min-width: 860.02px) and (max-width: 1024px) {
+@media (min-width: 767.02px) and (max-width: 1024px) {
   .box-14,
   .box-15,
   .svg-10,
@@ -37264,6 +37272,11 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .svg-346,
   .el-1985,
   .el-1990,
+  .el-1991,
+  .el-1993,
+  .el-1994,
+  .el-1995,
+  .el-1996,
   .el-2002,
   .el-2004,
   .el-2006,
@@ -37590,6 +37603,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-2922,
   .el-2925,
   .el-2926,
+  .el-2936,
   .el-2938,
   .el-2944,
   .el-2947,
@@ -37608,7 +37622,9 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-2993,
   .el-2994,
   .el-3001,
+  .el-3004,
   .el-3005,
+  .el-3007,
   .el-3013,
   .el-3015,
   .el-3017,
@@ -37659,24 +37675,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   }
 }
 
-@media (min-width: 767.02px) and (max-width: 860px) {
-  .el-1985,
-  .el-1990,
-  .box-790,
-  .box-951,
-  .el-2944,
-  .el-2947,
-  .el-3001,
-  .el-3007,
-  .el-3064,
-  .el-3065,
-  .el-3066,
-  .el-3068 {
-    display: none;
-  }
-}
-
-@media (min-width: 680.02px) and (max-width: 767px) {
+@media (min-width: 478.02px) and (max-width: 767px) {
   .box-14,
   .box-15,
   .svg-10,
@@ -38240,6 +38239,11 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .svg-346,
   .el-1985,
   .el-1990,
+  .el-1991,
+  .el-1993,
+  .el-1994,
+  .el-1995,
+  .el-1996,
   .el-2002,
   .el-2004,
   .el-2006,
@@ -38566,6 +38570,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-2922,
   .el-2925,
   .el-2926,
+  .el-2936,
   .el-2938,
   .el-2944,
   .el-2947,
@@ -38584,7 +38589,9 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-2993,
   .el-2994,
   .el-3001,
+  .el-3004,
   .el-3005,
+  .el-3007,
   .el-3013,
   .el-3015,
   .el-3017,
@@ -38631,20 +38638,6 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-3100,
   .checkbox-14,
   .el-3103 {
-    display: none;
-  }
-}
-
-@media (min-width: 560.02px) and (max-width: 680px) {
-  .el-1985,
-  .el-1990 {
-    display: none;
-  }
-}
-
-@media (min-width: 478.02px) and (max-width: 560px) {
-  .el-1985,
-  .el-1990 {
     display: none;
   }
 }
@@ -39227,6 +39220,11 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .pc-2,
   .pc-3,
   .pc-4,
+  .el-1991,
+  .el-1993,
+  .el-1994,
+  .el-1995,
+  .el-1996,
   .el-2002,
   .el-2004,
   .el-2006,
