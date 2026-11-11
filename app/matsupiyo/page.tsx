@@ -181,7 +181,7 @@ export default function Page() {
               </div>
             </div>
             <div className="box-785">
-              <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://matsufes.info/tokimeki-dreamworld\"}]}]"}
+              <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://matsufes.info/tokimeki_dreamworld\"}]}]"}
                 src="/assets/pasted-artwork-201.svg"
                 alt=""
                 width={437}
