@@ -36708,7 +36708,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   }
 }
 
-@media (min-width: 860.02px) and (max-width: 1024px) {
+@media (min-width: 767.02px) and (max-width: 1024px) {
   .box-14,
   .box-15,
   .svg-10,
@@ -37675,31 +37675,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   }
 }
 
-@media (min-width: 767.02px) and (max-width: 860px) {
-  .el-1985,
-  .el-1990,
-  .el-1991,
-  .el-1993,
-  .el-1994,
-  .el-1995,
-  .el-1996,
-  .box-790,
-  .box-951,
-  .el-2936,
-  .el-2944,
-  .el-2947,
-  .el-3001,
-  .el-3004,
-  .el-3007,
-  .el-3064,
-  .el-3065,
-  .el-3066,
-  .el-3068 {
-    display: none;
-  }
-}
-
-@media (min-width: 680.02px) and (max-width: 767px) {
+@media (min-width: 478.02px) and (max-width: 767px) {
   .box-14,
   .box-15,
   .svg-10,
@@ -38662,50 +38638,6 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-3100,
   .checkbox-14,
   .el-3103 {
-    display: none;
-  }
-}
-
-@media (min-width: 560.02px) and (max-width: 680px) {
-  .el-1985,
-  .el-1990,
-  .el-1991,
-  .el-1993,
-  .el-1994,
-  .el-1995,
-  .el-1996,
-  .el-2936,
-  .el-2944,
-  .el-2947,
-  .el-3001,
-  .el-3004,
-  .el-3007,
-  .el-3064,
-  .el-3065,
-  .el-3066,
-  .el-3068 {
-    display: none;
-  }
-}
-
-@media (min-width: 478.02px) and (max-width: 560px) {
-  .el-1985,
-  .el-1990,
-  .el-1991,
-  .el-1993,
-  .el-1994,
-  .el-1995,
-  .el-1996,
-  .el-2936,
-  .el-2944,
-  .el-2947,
-  .el-3001,
-  .el-3004,
-  .el-3007,
-  .el-3064,
-  .el-3065,
-  .el-3066,
-  .el-3068 {
     display: none;
   }
 }
