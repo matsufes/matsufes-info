@@ -4,14 +4,14 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_mslbenpoz" />
-      <section className="el-349">
-        <h1 className="el-350">
+      <section className="el-315">
+        <h1 className="el-316">
           {"404"}
         </h1>
         <p className="text">
           {"お探しのページは見つかりませんでした。"}
         </p>
-        <Link href="/" className="button-91">
+        <Link href="/" className="button-76">
           {"ホームへ戻る"}
         </Link>
       </section>

@@ -24,13 +24,14 @@ function parseIPv4(host: string): number[] | null {
   return parts.every((p) => p <= 255) ? parts : null;
 }
 
-function isPrivateIPv4([a, b]: number[]): boolean {
+function isPrivateIPv4([a, b, c]: number[]): boolean {
   return (
     a === 0 || a === 10 || a === 127 || a >= 224 ||
     (a === 100 && b >= 64 && b <= 127) || // キャリアグレードNAT
     (a === 169 && b === 254) || // リンクローカル・クラウドのメタデータ
     (a === 172 && b >= 16 && b <= 31) ||
-    (a === 192 && (b === 168 || b === 0)) ||
+    (a === 192 && (b === 168 || b === 0 || (b === 88 && c === 99))) ||
+    (a === 198 && b === 51 && c === 100) || (a === 203 && b === 0 && c === 113) ||
     (a === 198 && (b === 18 || b === 19))
   );
 }
@@ -40,29 +41,46 @@ function isPrivateIPv6(addr: string): boolean {
   let a: string;
   try { a = new URL(`http://[${addr}]/`).hostname.slice(1, -1); }
   catch { return true; }
-  // :: で始まる（未指定・ループバック・IPv4 埋め込み）、ユニークローカル、リンク/サイトローカル、マルチキャスト、NAT64、6to4、ドキュメント用
-  if (
-    !/^[23]/.test(a) || a.startsWith("2001:") ||
-    /^(fc|fd|fe[89abcf]|ff|64:ff9b:|2002:|2001:db8:|100::)/.test(a)
-  ) {
-    return true;
-  }
-  // 0 を省かずに書いた未指定・ループバック（0:0:0:0:0:0:0:0 / 0:0:0:0:0:0:0:1）および IPv4 対応アドレス
-  return (
-    /^0{1,4}(:0{1,4}){6}:0{0,3}[01]$/.test(a) ||
-    /^0{1,4}(:0{1,4}){4}:(ffff|0{1,4}):/.test(a)
-  );
+  const [first, second] = a.split(":").map(part => parseInt(part || "0", 16));
+  // Global unicast is 2000::/3. Use hextet values so compressed, low-valued
+  // addresses such as 2::1 cannot match the textual start of a public prefix.
+  return first < 0x2000 || first > 0x3fff ||
+    (first === 0x2001 && (second < 0x200 || second === 0xdb8)) ||
+    first === 0x2002 || first === 0x3ffe || (first === 0x3fff && second < 0x1000);
+}
+
+/** DNS checks must not hang before the request's HTTP timeout starts. */
+function dnsWithDeadline<T>(work: () => Promise<T>, signal?: AbortSignal): Promise<T> {
+  const deadline = AbortSignal.timeout(5_000);
+  const combined = signal ? AbortSignal.any([signal, deadline]) : deadline;
+  if (combined.aborted) return Promise.reject(new BlockedUrlError("DNS lookup cancelled"));
+  return new Promise<T>((resolve, reject) => {
+    const cleanup = () => combined.removeEventListener("abort", abort);
+    const abort = () => { cleanup(); reject(new BlockedUrlError("DNS lookup cancelled")); };
+    combined.addEventListener("abort", abort, { once: true });
+    try {
+      work().then(
+        (value) => { cleanup(); resolve(value); },
+        (error: unknown) => { cleanup(); reject(error); }
+      );
+    } catch (error) {
+      cleanup();
+      reject(error);
+    }
+  });
 }
 
 /** 名前解決した先が内部の宛先でないか（Node.js で動くときだけ確かめられる） */
-async function resolvesPrivate(hostname: string): Promise<boolean> {
+async function resolvesPrivate(hostname: string, signal?: AbortSignal): Promise<boolean> {
   if (hostname.startsWith("[") || parseIPv4(hostname)) return false;
+  if (signal?.aborted) throw new BlockedUrlError("request cancelled");
   if (isWorker()) return false;
   const { lookup } = builtin<typeof import("node:dns/promises")>("node:dns/promises");
   try {
-    const addrs = await lookup(hostname, { all: true });
+    const addrs = await dnsWithDeadline(() => lookup(hostname, { all: true }), signal);
     return !addrs.length || addrs.some((r) => (r.family === 6 ? isPrivateIPv6(r.address) : isPrivateHost(r.address)));
-  } catch {
+  } catch (error) {
+    if (error instanceof BlockedUrlError) throw error;
     throw new BlockedUrlError("DNS lookup failed");
   }
 }
@@ -78,13 +96,52 @@ function builtin<T>(name: string): T {
   return load(name) as T;
 }
 
+/** Native fetch also needs a bounded body, including its already-decoded bytes. */
+async function bufferNativeResponse(res: Response, maxBytes: number, signal?: AbortSignal | null): Promise<Response> {
+  const reader = res.body?.getReader();
+  if (!reader) return res;
+  // Cancelling the reader wakes a pending read even if no more bytes arrive.
+  const abort = () => { void reader.cancel(signal?.reason).catch(() => {}); };
+  signal?.addEventListener("abort", abort, { once: true });
+  try {
+    const chunks: Uint8Array[] = [];
+    let size = 0;
+    for (;;) {
+      signal?.throwIfAborted();
+      const { done, value } = await reader.read();
+      signal?.throwIfAborted();
+      if (done) break;
+      size += value.byteLength;
+      if (size > maxBytes) throw new TooLargeError("too large");
+      chunks.push(value);
+    }
+    const headers = new Headers(res.headers);
+    // Native fetch decompresses the body; wire metadata no longer describes it.
+    headers.delete("content-encoding");
+    headers.delete("content-length");
+    return new Response(new Blob(chunks as BlobPart[]), { status: res.status, statusText: res.statusText, headers });
+  } catch (error) {
+    // Do not let upstream cancellation delay a size error or request deadline.
+    void reader.cancel(error).catch(() => {});
+    throw error;
+  } finally {
+    signal?.removeEventListener("abort", abort);
+    reader.releaseLock();
+  }
+}
+
 /**
  * Node では実際に接続する際の DNS 結果を検査する。
  * 事前の検査だけだと、検査後の再解決で内部IPに切り替える DNS rebinding が通ってしまう。
  * Workers はプラットフォームの公開ネットワーク用 fetch を使う。
  */
-async function fetchOnce(url: URL, init: RequestInit): Promise<Response> {
-  if (isWorker() || url.hostname.startsWith("[") || parseIPv4(url.hostname)) return fetch(url, init);
+async function fetchOnce(url: URL, init: RequestInit, maxBytes = 5 * 1024 * 1024): Promise<Response> {
+  if (isWorker() || url.hostname.startsWith("[") || parseIPv4(url.hostname)) {
+    const res = await fetch(url, init);
+    // fetchPublic discards redirect bodies before checking the next destination.
+    if ([301, 302, 303, 307, 308].includes(res.status) && res.headers.get("location")) return res;
+    return bufferNativeResponse(res, maxBytes, init.signal);
+  }
   const http = builtin<typeof import("node:http")>(url.protocol === "https:" ? "node:https" : "node:http");
   const dns = builtin<typeof import("node:dns/promises")>("node:dns/promises");
   const zlib = builtin<typeof import("node:zlib")>("node:zlib");
@@ -130,7 +187,7 @@ async function fetchOnce(url: URL, init: RequestInit): Promise<Response> {
           let size = 0;
           for await (const chunk of stream) {
             size += chunk.length;
-            if (size > 5 * 1024 * 1024) throw new TooLargeError("too large");
+            if (size > maxBytes) throw new TooLargeError("too large");
             chunks.push(chunk);
           }
           responseHeaders.delete("content-encoding");
@@ -148,7 +205,7 @@ export class BlockedUrlError extends Error {}
 export class TooLargeError extends Error {}
 
 /** 送ってよいURLか確かめる（だめなら BlockedUrlError） */
-export async function assertPublicUrl(raw: string): Promise<URL> {
+export async function assertPublicUrl(raw: string, signal?: AbortSignal): Promise<URL> {
   let url: URL;
   try {
     url = new URL(raw);
@@ -157,7 +214,8 @@ export async function assertPublicUrl(raw: string): Promise<URL> {
   }
   if (url.protocol !== "http:" && url.protocol !== "https:") throw new BlockedUrlError("protocol");
   if (url.username || url.password) throw new BlockedUrlError("credentials");
-  if (isPrivateHost(url.hostname) || (await resolvesPrivate(url.hostname))) {
+  if (signal?.aborted) throw new BlockedUrlError("request cancelled");
+  if (isPrivateHost(url.hostname) || (await resolvesPrivate(url.hostname, signal))) {
     throw new BlockedUrlError("private host");
   }
   return url;
@@ -167,22 +225,25 @@ export async function assertPublicUrl(raw: string): Promise<URL> {
 export async function fetchPublic(
   raw: string,
   init: RequestInit,
-  maxRedirects = 5
+  maxRedirects = 5,
+  maxResponseBytes = 5 * 1024 * 1024
 ): Promise<Response> {
-  let url = await assertPublicUrl(raw);
+  const signal = init.signal ? AbortSignal.any([init.signal, AbortSignal.timeout(15000)]) : AbortSignal.timeout(15000);
+  let url = await assertPublicUrl(raw, signal);
   let method = (init.method ?? "GET").toUpperCase();
   let body = init.body;
   const headers = new Headers(init.headers);
   // 接続先やHTTPフレーミングを呼び出し側のヘッダーで上書きさせない。
   for (const name of ["host", "connection", "content-length", "transfer-encoding", "upgrade", "proxy-authorization", "proxy-connection"]) headers.delete(name);
-  const signal = init.signal ? AbortSignal.any([init.signal, AbortSignal.timeout(15000)]) : AbortSignal.timeout(15000);
   for (let i = 0; ; i++) {
-    const res = await fetchOnce(url, { ...init, signal, headers, method, body, redirect: "manual" });
+    const res = await fetchOnce(url, { ...init, signal, headers, method, body, redirect: "manual" }, maxResponseBytes);
     const location = res.headers.get("location");
     if (![301, 302, 303, 307, 308].includes(res.status) || !location) return res;
-    await res.body?.cancel().catch(() => {});
+    // A cloned/teed body's cancellation can wait for another consumer forever.
+    // Initiate cleanup without delaying redirect validation or the request deadline.
+    void res.body?.cancel().catch(() => {});
     if (i >= maxRedirects) throw new BlockedUrlError("too many redirects");
-    const next = await assertPublicUrl(new URL(location, url).toString());
+    const next = await assertPublicUrl(new URL(location, url).toString(), signal);
     // 任意のヘッダーや本文には API キーなどが入るため、別オリジンへは転送しない。
     // 認証のない GET/HEAD の転送だけ許す（プロトコル・ポートの変更も別オリジン）。
     if (next.origin !== url.origin) {
@@ -204,23 +265,29 @@ export async function fetchPublic(
 /** 本文を上限まで読む（超えたら TooLargeError。Content-Length が無い・偽っていても上限で止める） */
 export async function readTextLimited(res: Response, maxBytes: number): Promise<string> {
   if (Number(res.headers.get("content-length")) > maxBytes) {
-    await res.body?.cancel().catch(() => {});
+    void res.body?.cancel().catch(() => {});
     throw new TooLargeError("too large");
   }
   const reader = res.body?.getReader();
   if (!reader) return "";
-  const decoder = new TextDecoder();
+  // JSON exchanged over HTTP is UTF-8; reject malformed bytes rather than silently replacing them.
+  const decoder = new TextDecoder("utf-8", { fatal: true });
   let bytes = 0;
   let out = "";
-  for (;;) {
-    const { done, value } = await reader.read();
-    if (done) break;
-    bytes += value.byteLength;
-    if (bytes > maxBytes) {
-      await reader.cancel().catch(() => {});
-      throw new TooLargeError("too large");
+  try {
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      bytes += value.byteLength;
+      if (bytes > maxBytes) throw new TooLargeError("too large");
+      out += decoder.decode(value, { stream: true });
     }
-    out += decoder.decode(value, { stream: true });
+    return out + decoder.decode();
+  } catch (error) {
+    // Size and decoding failures must stop the upstream without awaiting cleanup.
+    void reader.cancel(error).catch(() => {});
+    throw error;
+  } finally {
+    reader.releaseLock();
   }
-  return out + decoder.decode();
 }
