@@ -36,12 +36,8 @@ export function lookupVar(vars: Vars, name: string): unknown {
 }
 
 /** 表示用の文字にする（配列は「, 」でつなぐ） */
-export function varText(v: unknown): string {
-  if (v == null) return "";
-  if (Array.isArray(v)) return v.map(varText).filter(Boolean).join(", ");
-  if (typeof v === "object") return "";
-  return String(v);
-}
+const formatValueText: (value: unknown, comparison?: boolean) => string = (function E(e,t=!1){if(null==e)return"";if(!Array.isArray(e))return"object"==typeof e?t?"[object Object]":"":String(e);let n=[],s=[{value:e,index:0}],a=new WeakSet([e]),i=0,r=0;for(;s.length;){if(++i>5242880)return"";let e=s[s.length-1];if(e.index>=e.value.length){a.delete(e.value),s.pop();continue}t&&e.index>0&&(n.push(","),r++);let o=e.value[e.index++];if(Array.isArray(o))a.has(o)||(a.add(o),s.push({value:o,index:0}));else{let e=null==o?"":"object"==typeof o?t?"[object Object]":"":String(o);e&&(!t&&n.length&&(n.push(", "),r+=2),n.push(e),r+=e.length)}if(r>5242880)return""}return n.join("")});
+export function varText(v: unknown): string { return formatValueText(v); }
 
 /** "{name}" と "[slug]" を値に置き換える（未定義は空文字。「\{」は文字の「{」） */
 export function interpolate(template: string, vars: Vars): string {

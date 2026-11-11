@@ -44,7 +44,7 @@ export default function Page() {
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
-                    src="/assets/pasted-artwork-132.svg"
+                    src="/assets/pasted-artwork-131.svg"
                     alt="メニューを閉じる"
                     width={86}
                     height={62}
@@ -295,7 +295,7 @@ export default function Page() {
             >
               <svg aria-hidden="true" width={659} height={329} viewBox="0 0 659 329" />
               <Image
-                src="/assets/pasted-artwork-293.svg"
+                src="/assets/pasted-artwork-284.svg"
                 alt=""
                 width={1318}
                 height={658}
@@ -334,7 +334,7 @@ export default function Page() {
             >
               <svg aria-hidden="true" width={164} height={119} viewBox="0 0 164 119" />
               <Image
-                src="/assets/pasted-artwork-196.svg"
+                src="/assets/pasted-artwork-194.svg"
                 alt="言葉からさがす"
                 width={328}
                 height={238}
@@ -358,7 +358,7 @@ export default function Page() {
             >
               <svg aria-hidden="true" width={164} height={119} viewBox="0 0 164 119" />
               <Image
-                src="/assets/pasted-artwork-197.svg"
+                src="/assets/pasted-artwork-195.svg"
                 alt="地図からさがす"
                 width={328}
                 height={238}
@@ -380,7 +380,7 @@ export default function Page() {
             >
               <svg aria-hidden="true" width={202} height={111} viewBox="0 0 202 111" />
               <Image
-                src="/assets/pasted-artwork-242.svg"
+                src="/assets/pasted-artwork-239.svg"
                 alt=""
                 width={404}
                 height={222}
@@ -410,7 +410,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={990} height={764} viewBox="0 0 990 764" />
           <Image
-            src="/assets/pasted-artwork-388.svg"
+            src="/assets/pasted-artwork-376.svg"
             alt=""
             width={1980}
             height={1528}
@@ -423,7 +423,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={1051} height={732} viewBox="0 0 1051 732" />
           <Image
-            src="/assets/pasted-artwork-389.svg"
+            src="/assets/pasted-artwork-377.svg"
             alt=""
             width={2102}
             height={1464}
@@ -445,7 +445,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={999} height={815} viewBox="0 0 999 815" />
           <Image
-            src="/assets/pasted-artwork-390.svg"
+            src="/assets/pasted-artwork-378.svg"
             alt=""
             width={1998}
             height={1630}
@@ -459,7 +459,7 @@ export default function Page() {
           >
             <svg aria-hidden="true" width={674} height={159} viewBox="0 0 674 159" />
             <Image
-              src="/assets/pasted-artwork-492.svg"
+              src="/assets/pasted-artwork-452.svg"
               alt=""
               width={1348}
               height={318}
@@ -477,7 +477,7 @@ export default function Page() {
           >
             <svg aria-hidden="true" width={928} height={577} viewBox="0 0 928 577" />
             <Image
-              src="/assets/pasted-artwork-490.svg"
+              src="/assets/pasted-artwork-450.svg"
               alt=""
               width={1856}
               height={1154}
@@ -488,7 +488,7 @@ export default function Page() {
           >
             <svg aria-hidden="true" width={524} height={207} viewBox="0 0 524 207" />
             <Image
-              src="/assets/pasted-artwork-491.svg"
+              src="/assets/pasted-artwork-451.svg"
               alt=""
               width={1048}
               height={414}
@@ -538,7 +538,7 @@ export default function Page() {
       <section data-inview className="el-738">
         <a href="https://www.instagram.com/kit_matsufes/" className="el-81">
           <Image
-            src="/assets/pasted-artwork-136.svg"
+            src="/assets/pasted-artwork-134.svg"
             alt=""
             width={58}
             height={58}
@@ -547,7 +547,7 @@ export default function Page() {
         </a>
         <a href="https://x.com/matsufes_info" className="x">
           <Image
-            src="/assets/pasted-artwork-137.svg"
+            src="/assets/pasted-artwork-135.svg"
             alt=""
             width={54}
             height={49}
@@ -559,7 +559,7 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
           <Image
-            src="/assets/pasted-artwork-198.svg"
+            src="/assets/pasted-artwork-196.svg"
             alt=""
             width={750}
             height={694}
@@ -580,7 +580,7 @@ export default function Page() {
         </span>
         <a href="https://www.instagram.com/kit_matsufes/" className="el-1673">
           <Image
-            src="/assets/pasted-artwork-136.svg"
+            src="/assets/pasted-artwork-134.svg"
             alt=""
             width={58}
             height={58}
@@ -589,7 +589,7 @@ export default function Page() {
         </a>
         <a href="https://x.com/matsufes_info" className="x-19">
           <Image
-            src="/assets/pasted-artwork-137.svg"
+            src="/assets/pasted-artwork-135.svg"
             alt=""
             width={54}
             height={49}
