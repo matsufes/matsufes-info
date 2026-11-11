@@ -275965,13 +275965,7 @@
           }
         }
       ],
-      "locked": false,
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ]
+      "locked": false
     },
     "node_mvnblpc98pkwj": {
       "id": "node_mvnblpc98pkwj",
@@ -276127,12 +276121,6 @@
             "y": 971
           }
         }
-      ],
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
       ]
     },
     "node_mvntys6h8un0x": {
@@ -276212,12 +276200,6 @@
             "y": 844
           }
         }
-      ],
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
       ]
     },
     "node_mvnutloweifv8": {
@@ -276296,12 +276278,6 @@
             "y": 942
           }
         }
-      ],
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
       ]
     },
     "node_mvntts2b5fwxg": {
@@ -276382,12 +276358,6 @@
           "direction": "normal",
           "fillMode": "both"
         }
-      ],
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
       ]
     },
     "node_mvou1xip25n8w": {
