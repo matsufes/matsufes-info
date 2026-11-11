@@ -229,8 +229,9 @@ body:has([data-page-body="page_mv7ucj3ccc"]) {
 
 body:has([data-page-body="page_mv7xdigo16"]) {
   height: 100%;
-  display: block;
+  display: flex;
   width: 100%;
+  flex-direction: column;
 }
 
 body:has([data-page-body="page_mv8igc0g21"]) {
