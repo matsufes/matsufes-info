@@ -26553,6 +26553,10 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   align-items: center;
 }
 
+.el-3105:hover {
+  animation: anim-pulse 0.3s ease-out 0s 1 normal both;
+}
+
 .el-3106 {
   display: flex;
   flex-direction: column;
