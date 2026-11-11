@@ -230,6 +230,7 @@ body:has([data-page-body="page_mv7ucj3ccc"]) {
 body:has([data-page-body="page_mv7xdigo16"]) {
   height: 100%;
   display: block;
+  width: 100%;
 }
 
 body:has([data-page-body="page_mv8igc0g21"]) {
@@ -21581,8 +21582,6 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   display: block;
   padding: 0px;
   gap: 0px;
-  position: sticky;
-  top: 0px;
 }
 
 .box-788 {
@@ -31841,7 +31840,6 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .pasted-artwork-svg-100,
   .el-2182,
   .box-781,
-  .box-787,
   .svg-401,
   .svg-402,
   .svg-406,
@@ -35372,6 +35370,11 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
     height: auto;
     bottom: 5%;
     width: 40%;
+  }
+
+  .box-787 {
+    width: 100%;
+    position: relative;
   }
 
   .box-788 {

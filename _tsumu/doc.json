@@ -3505,7 +3505,8 @@
         "base": {
           "default": {
             "height": "100%",
-            "display": "block"
+            "display": "block",
+            "width": "100%"
           }
         },
         "sm": {
@@ -293133,9 +293134,7 @@
           "default": {
             "display": "block",
             "padding": "0px",
-            "gap": "0px",
-            "position": "sticky",
-            "top": "0px"
+            "gap": "0px"
           }
         },
         "sm": {
