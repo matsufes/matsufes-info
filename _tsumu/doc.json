@@ -281641,7 +281641,9 @@
             "display": "flex",
             "flexDirection": "column",
             "padding": "0px",
-            "gap": "0px"
+            "gap": "0px",
+            "width": "100%",
+            "height": "100%"
           }
         },
         "sm": {
@@ -293135,7 +293137,9 @@
           "default": {
             "display": "block",
             "padding": "0px",
-            "gap": "0px"
+            "gap": "0px",
+            "width": "100%",
+            "height": "100%"
           }
         },
         "sm": {
