@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <span hidden data-page-body="page_mv7xdigo16" data-scripts={"[{\"trigger\":\"load\",\"steps\":[{\"kind\":\"hide\",\"target\":\"img-6\"}]},{\"trigger\":\"load\",\"steps\":[{\"kind\":\"hide\",\"target\":\"img-5\"}]},{\"trigger\":\"load\",\"steps\":[{\"kind\":\"hide\",\"target\":\"img-4\"}]},{\"trigger\":\"load\",\"steps\":[{\"kind\":\"hide\",\"target\":\"img-2\"}]}]"} />
+      <span hidden data-page-body="page_mv7xdigo16" data-scripts={"[{\"trigger\":\"load\",\"steps\":[{\"kind\":\"hide\",\"target\":\"img-6\"}]},{\"trigger\":\"load\",\"steps\":[{\"kind\":\"hide\",\"target\":\"img-5\"}]},{\"trigger\":\"load\",\"steps\":[{\"kind\":\"hide\",\"target\":\"img-4\"}]},{\"trigger\":\"load\",\"steps\":[{\"kind\":\"hide\",\"target\":\"img-3\"}]},{\"trigger\":\"load\",\"steps\":[{\"kind\":\"hide\",\"target\":\"img-2\"}]}]"} />
       <section className="box-766">
         <Image
           src="/assets/pasted-artwork-234.svg"

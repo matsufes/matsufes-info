@@ -9032,7 +9032,6 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
 .container-151,
 .el-2124,
 .container-157,
-.box-787,
 .box-790,
 .el-2222,
 .container-163,
@@ -21578,6 +21577,14 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   width: auto;
 }
 
+.box-787 {
+  display: block;
+  padding: 0px;
+  gap: 0px;
+  position: sticky;
+  top: 0px;
+}
+
 .box-788 {
   display: block;
   gap: 0px;
@@ -31834,6 +31841,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .pasted-artwork-svg-100,
   .el-2182,
   .box-781,
+  .box-787,
   .svg-401,
   .svg-402,
   .svg-406,
@@ -35366,11 +35374,6 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
     width: 40%;
   }
 
-  .box-787 {
-    width: 100%;
-    position: relative;
-  }
-
   .box-788 {
     position: absolute;
     padding-top: 0px;
@@ -36290,6 +36293,10 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-1985,
   .el-1990,
   .el-1991,
+  .el-1993,
+  .el-1994,
+  .el-1995,
+  .el-1996,
   .el-1998,
   .el-2002,
   .el-2004,
@@ -37269,6 +37276,10 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-1985,
   .el-1990,
   .el-1991,
+  .el-1993,
+  .el-1994,
+  .el-1995,
+  .el-1996,
   .el-2002,
   .el-2004,
   .el-2006,
@@ -38232,6 +38243,10 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-1985,
   .el-1990,
   .el-1991,
+  .el-1993,
+  .el-1994,
+  .el-1995,
+  .el-1996,
   .el-2002,
   .el-2004,
   .el-2006,
@@ -39209,6 +39224,10 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .pc-3,
   .pc-4,
   .el-1991,
+  .el-1993,
+  .el-1994,
+  .el-1995,
+  .el-1996,
   .el-2002,
   .el-2004,
   .el-2006,

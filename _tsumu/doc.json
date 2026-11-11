@@ -3564,10 +3564,16 @@
         {
           "id": "sc_mvnaruis504u",
           "trigger": "load",
-          "steps": [],
+          "steps": [
+            {
+              "id": "st_mvnas1jy6t6l",
+              "kind": "hide",
+              "target": "img-3"
+            }
+          ],
           "pos": {
-            "x": 582,
-            "y": 513
+            "x": 451,
+            "y": 509
           }
         },
         {
@@ -3583,22 +3589,6 @@
           "pos": {
             "x": 451,
             "y": 429
-          }
-        }
-      ],
-      "scripts": [
-        {
-          "id": "sc_mwcccuzp19bj",
-          "steps": [
-            {
-              "id": "st_mvnas1jy6t6l",
-              "kind": "hide",
-              "target": "img-3"
-            }
-          ],
-          "pos": {
-            "x": 782,
-            "y": 689
           }
         }
       ]
@@ -275970,8 +275960,8 @@
             }
           ],
           "pos": {
-            "x": 47,
-            "y": 564
+            "x": 43,
+            "y": 547
           }
         }
       ],
@@ -276137,6 +276127,12 @@
             "y": 971
           }
         }
+      ],
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
       ]
     },
     "node_mvntys6h8un0x": {
@@ -276216,6 +276212,12 @@
             "y": 844
           }
         }
+      ],
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
       ]
     },
     "node_mvnutloweifv8": {
@@ -276294,6 +276296,12 @@
             "y": 942
           }
         }
+      ],
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
       ]
     },
     "node_mvntts2b5fwxg": {
@@ -276374,6 +276382,12 @@
           "direction": "normal",
           "fillMode": "both"
         }
+      ],
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
       ]
     },
     "node_mvou1xip25n8w": {
@@ -293117,10 +293131,11 @@
       "styles": {
         "base": {
           "default": {
-            "display": "flex",
-            "flexDirection": "column",
+            "display": "block",
             "padding": "0px",
-            "gap": "0px"
+            "gap": "0px",
+            "position": "sticky",
+            "top": "0px"
           }
         },
         "sm": {
