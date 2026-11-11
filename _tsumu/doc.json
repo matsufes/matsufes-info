@@ -205603,13 +205603,13 @@
             "display": "block",
             "padding": "0px",
             "gap": "40px",
-            "position": "fixed",
-            "left": "0%",
-            "top": "76.5%",
             "width": "100%",
-            "height": "23.6%",
+            "height": "100%",
             "justifyContent": "center",
-            "alignItems": "center"
+            "alignItems": "center",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px"
           }
         },
         "lg": {
