@@ -40,7 +40,7 @@ export default function Page() {
             <div className="el-1456">
               <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p-2\"}]}]"} className="el-1457">
                 <span
-                  className="crisp-svg svg-214"
+                  className="crisp-svg svg-213"
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
@@ -291,7 +291,7 @@ export default function Page() {
           </div>
           <div className="el-63">
             <span
-              className="crisp-svg svg-416"
+              className="crisp-svg svg-415"
             >
               <svg aria-hidden="true" width={659} height={329} viewBox="0 0 659 329" />
               <Image
@@ -326,11 +326,11 @@ export default function Page() {
             alt=""
             width={186}
             height={164}
-            className="svg-192"
+            className="svg-191"
           />
           <p className="box-491">
             <span
-              className="crisp-svg svg-194"
+              className="crisp-svg svg-193"
             >
               <svg aria-hidden="true" width={164} height={119} viewBox="0 0 164 119" />
               <Image
@@ -354,7 +354,7 @@ export default function Page() {
           />
           <p className="box-493">
             <span
-              className="crisp-svg svg-195"
+              className="crisp-svg svg-194"
             >
               <svg aria-hidden="true" width={164} height={119} viewBox="0 0 164 119" />
               <Image
@@ -372,11 +372,11 @@ export default function Page() {
             alt=""
             width={120}
             height={120}
-            className="svg-193"
+            className="svg-192"
           />
           <p className="box-494">
             <span
-              className="crisp-svg svg-356"
+              className="crisp-svg svg-355"
             >
               <svg aria-hidden="true" width={202} height={111} viewBox="0 0 202 111" />
               <Image
@@ -452,18 +452,49 @@ export default function Page() {
           />
         </span>
       </section>
+      <section className="el-3106">
+        <div className="el-3107">
+          <span
+            className="crisp-svg pasted-artwork-svg-183"
+          >
+            <svg aria-hidden="true" width={674} height={159} viewBox="0 0 674 159" />
+            <Image
+              src="/assets/pasted-artwork-492.svg"
+              alt=""
+              width={1348}
+              height={318}
+            />
+          </span>
+        </div>
+      </section>
       <section className="el-79">
-        <span
-          className="crisp-svg svg-111"
-        >
-          <svg aria-hidden="true" width={1248} height={195} viewBox="0 0 1248 195" />
-          <Image
-            src="/assets/pasted-artwork-131.svg"
-            alt=""
-            width={2496}
-            height={390}
-          />
-        </span>
+        <p className="text-785">
+          {"第56回松ヶ崎祭オリジナルゲームが新登場！\nきみも まつぴよと 恋に落ちちゃう・・・！？"}
+        </p>
+        <div className="el-3104">
+          <span
+            className="crisp-svg svg-637"
+          >
+            <svg aria-hidden="true" width={928} height={577} viewBox="0 0 928 577" />
+            <Image
+              src="/assets/pasted-artwork-490.svg"
+              alt=""
+              width={1856}
+              height={1154}
+            />
+          </span>
+          <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://matsufes.info/tokimeki_dreamworld\"}]}]"}
+            className="crisp-svg el-3105"
+          >
+            <svg aria-hidden="true" width={524} height={207} viewBox="0 0 524 207" />
+            <Image
+              src="/assets/pasted-artwork-491.svg"
+              alt=""
+              width={1048}
+              height={414}
+            />
+          </span>
+        </div>
       </section>
       <section className="el-26">
         <div className="el-67">
@@ -511,7 +542,7 @@ export default function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-114"
+            className="svg-113"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x">
@@ -520,11 +551,11 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-115"
+            className="svg-114"
           />
         </a>
         <span
-          className="crisp-svg svg-196"
+          className="crisp-svg svg-195"
         >
           <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
           <Image
@@ -553,7 +584,7 @@ export default function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-247"
+            className="svg-246"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-19">
@@ -562,7 +593,7 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-248"
+            className="svg-247"
           />
         </a>
       </section>

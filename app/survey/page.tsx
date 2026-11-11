@@ -40,7 +40,7 @@ export default function Page() {
             <div className="el-1557">
               <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p-2\"}]}]"} className="el-1558">
                 <span
-                  className="crisp-svg svg-216"
+                  className="crisp-svg svg-215"
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
@@ -267,7 +267,7 @@ export default function Page() {
       />
       <section className="box-201">
         <span
-          className="crisp-svg svg-167"
+          className="crisp-svg svg-166"
         >
           <svg aria-hidden="true" width={1113} height={135} viewBox="0 0 1113 135" />
           <Image
@@ -279,7 +279,7 @@ export default function Page() {
         </span>
         <p className="box-199">
           <span
-            className="crisp-svg svg-168"
+            className="crisp-svg svg-167"
           >
             <svg aria-hidden="true" width={371} height={38} viewBox="0 0 371 38" />
             <Image
@@ -292,7 +292,7 @@ export default function Page() {
         </p>
         <div className="box-200">
           <span
-            className="crisp-svg svg-169"
+            className="crisp-svg svg-168"
           >
             <svg aria-hidden="true" width={400} height={400} viewBox="0 0 400 400" />
             <Image

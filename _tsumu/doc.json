@@ -36,71 +36,6 @@
   ],
   "customHeadHtml": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-75BCG9JTXY\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-75BCG9JTXY');\n</script>",
   "schemaVersion": 1,
-  "pageOrder": [
-    "page_mslbenpoz",
-    "page_msleaffe1",
-    "page_mvzcltff5ss5c7",
-    "page_msmxmtrg5",
-    "page_mvou1xir3p353n",
-    "page_mu98rc7s3u",
-    "page_mvouejle4bq4wf",
-    "page_mu98rd4648",
-    "page_mvouf28p8g9pd9",
-    "page_msotieex1e",
-    "page_mv6trtsz1",
-    "page_mvhve1zmbsvph4",
-    "page_muzoss702k",
-    "page_mv7ucj3ccc",
-    "page_mvhyhtub6uytqm",
-    "page_msoti2tux",
-    "page_mv69uvlg3u",
-    "page_mswzfiqry",
-    "page_mwb06ie85q5g5p",
-    "page_mv69qjbj1y",
-    "page_muiixvz340",
-    "page_mw0g55mu5emi6z",
-    "page_mv6o9vxe2u",
-    "page_mw0g59fj95g8sl",
-    "page_muf53mtd6j",
-    "page_mw0g5ayccl4poy",
-    "page_mu2t6c971l",
-    "page_mw0g5cpwgggijw",
-    "page_muf5w3hl70",
-    "page_mv6ai6be3t",
-    "page_muf67d6n7n",
-    "page_mw0g8eucm0eorg",
-    "page_muf6dx2a7y",
-    "page_mw0g8gqopggras",
-    "page_muf6el0a87",
-    "page_mw0g8i67sxpweq",
-    "page_muf6exd68g",
-    "page_mw0g8q76wqupul",
-    "page_muf6flq18p",
-    "page_mw0g8rjmzybnlp",
-    "page_mv6alv245p",
-    "page_mu3wp199l",
-    "page_mvhxphej2d8ldu",
-    "page_mu727nz01e",
-    "page_mvhy09pt5kscnf",
-    "page_muhpjery26",
-    "page_muhpllld2i",
-    "page_mw2c6tvu4arwk4",
-    "page_mts0xmew1h",
-    "page_mv8igc0g21",
-    "page_mv7xdigo16",
-    "page_mv6a54dc1",
-    "page_mv8b51ub1",
-    "page_mv8n8sk0fg",
-    "page_mv8n8kse5m",
-    "page_mva9voxq1"
-  ],
-  "pageFolders": [
-    {
-      "id": "folder_mv9nleld1",
-      "name": "バックアップ"
-    }
-  ],
-  "components": {},
   "pages": {
     "page_msleaffe1": {
       "id": "page_msleaffe1",
@@ -119,6 +54,7 @@
         "node_mvacbxfru",
         "node_mvaci3sux",
         "node_mvacjogmz",
+        "node_mwbzufjz8948za",
         "node_mupd3j0w26",
         "node_mu3o50te3q",
         "node_mu3o27ns3l",
@@ -3498,7 +3434,7 @@
         "node_mvou6uqa2mg1y",
         "node_mvowf37u3ath4"
       ],
-      "unpublished": true,
+      "unpublished": false,
       "bodyStyles": {
         "base": {
           "default": {
@@ -3590,22 +3526,6 @@
             "y": 429
           }
         }
-      ],
-      "scripts": [
-        {
-          "id": "sc_mwaxd93482un",
-          "steps": [
-            {
-              "id": "st_mwaxd8s37b88",
-              "kind": "open-page",
-              "pageId": ""
-            }
-          ],
-          "pos": {
-            "x": 22,
-            "y": 1025
-          }
-        }
       ]
     },
     "page_mv8b51ub1": {
@@ -3630,7 +3550,7 @@
         "node_mv8igc0g1u",
         "node_mv8igc0g20"
       ],
-      "unpublished": false,
+      "unpublished": true,
       "bodyStyles": {
         "base": {
           "default": {
@@ -7797,8 +7717,142 @@
           }
         }
       }
+    },
+    "page_mwbzwoaa1mga8w": {
+      "id": "page_mwbzwoaa1mga8w",
+      "name": "ときめきドリームワールド",
+      "slug": "tokimeki-dreamworld",
+      "title": "ときめきドリームワールド",
+      "description": "",
+      "children": [],
+      "rawHtml": "<!DOCTYPE html>\r\n<html lang=\"ja\">\r\n<head>\r\n<meta charset=\"UTF-8\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n<title>ときめき☆ドリームワールド（仮）</title>\r\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\r\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\r\n<link href=\"https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap\" rel=\"stylesheet\">\r\n<style>\r\n  :root{\r\n    --pink:      #ff9ecb;\r\n    --pink-deep: #ff5fa2;\r\n    --pink-pale: #fff0f5;\r\n    --ink:       #4a3540;\r\n    --panel:     rgba(255,255,255,0.92);\r\n    --menu-img-h: 40px;   /* スマホで丸い画像だけを出すときの大きさ／MENUボタンの画像の高さ */\r\n    --menu-ico-h: 24px;   /* パソコンで絵文字の位置に入る丸い画像の大きさ */\r\n    --ctrl-img-h: 42px;   /* 「次へ」「戻る」を画像にしたときの高さ */\r\n    /* ▼名前欄を画像にしたとき。幅と高さは画像の比率に合わせてください\r\n       （例：画像が 420x88px なら 210px と 44px） */\r\n    --speaker-w:  210px;\r\n    --speaker-h:   44px;\r\n    --speaker-ink: #ffffff;                      /* 名前の文字色 */\r\n    --speaker-shadow: 0 2px 4px rgba(0,0,0,0.7); /* 名前の影。消すなら none */\r\n\r\n\r\n    /* ▼タイトル画面の配置。すべて画面に対する割合（％）です。\r\n         ロゴ … 左上に置きます\r\n         ボタン … 画面のやや右寄り、下のほうに2つ縦に並べます\r\n       数値を変えるだけで位置と大きさを動かせます。 */\r\n    --title-logo-left:   9%;    /* ロゴの左端 */\r\n    --title-logo-top:   11%;    /* ロゴの上端 */\r\n    --title-logo-w:     38%;    /* ロゴの幅 */\r\n    --title-logo-h:     24%;    /* ロゴの高さの上限 */\r\n    --title-btn-cx:     28%;    /* ボタンの中心の横位置 */\r\n    --title-btn-bottom: 11%;    /* 下から何％の位置にボタンを置くか */\r\n    --title-btn-w:      24%;    /* ボタンの幅 */\r\n    --title-btn-gap:    12px;   /* ボタン2つのあいだ */\r\n  }\r\n\r\n  *{ box-sizing: border-box; }\r\n\r\n  html, body{\r\n    margin: 0;\r\n    padding: 0;\r\n    height: 100%;\r\n    font-family: \"Zen Kaku Gothic New\", \"Hiragino Kaku Gothic ProN\", \"Yu Gothic\", \"Meiryo\", sans-serif;\r\n    color: var(--ink);\r\n    background: #f9d9e8;\r\n  }\r\n\r\n  /* ===== 画面全体 ===== */\r\n  #stage{\r\n    position: relative;\r\n    width: 100%;\r\n    height: 100dvh;\r\n    overflow: hidden;\r\n    background: radial-gradient(circle at 50% 35%, #ffeaf3 0%, #f6c9de 60%, #e8aecb 100%);\r\n  }\r\n\r\n  /* ===== 背景・立ち絵レイヤー ===== */\r\n  #bg-layer{\r\n    position: absolute;\r\n    inset: 0;\r\n    background-size: cover;\r\n    background-position: center;\r\n    transition: background .35s ease, opacity .35s ease;\r\n  }\r\n  #character{\r\n    position: absolute;\r\n    left: 50%;\r\n    top: 56%;\r\n    transform: translate(-50%, -50%);\r\n    max-width: 70vw;\r\n    max-height: 82dvh;\r\n    width: 530px;\r\n    height: auto;\r\n    border-radius: 24px;\r\n    object-fit: contain;\r\n    filter: drop-shadow(0 8px 24px rgba(120,60,95,0.3));\r\n    transition: opacity .25s ease;\r\n  }\r\n  #character.hidden{ opacity: 0; }\r\n\r\n  /* 画像未設定のときに出る仮の立ち絵 */\r\n  #chara-placeholder{\r\n    position: absolute;\r\n    left: 50%;\r\n    top: 56%;\r\n    transform: translate(-50%, -50%);\r\n    display: none;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    gap: 8px;\r\n    padding: 22px 28px;\r\n    background: rgba(255,255,255,0.72);\r\n    border: 2px dashed var(--pink);\r\n    border-radius: 18px;\r\n    text-align: center;\r\n  }\r\n  #chara-placeholder.show{ display: flex; }\r\n  #chara-placeholder .emoji{ font-size: 54px; line-height: 1; }\r\n  #chara-placeholder .key{ font-size: 13px; font-weight: 700; color: #a46a8a; }\r\n\r\n  /* ちきゅ～くん（右側） */\r\n  #kira{\r\n    position: absolute;\r\n    left: 72%;\r\n    top: 56%;\r\n    transform: translate(-50%, -50%);\r\n    width: 420px;\r\n    height: auto;\r\n    max-height: 72dvh;\r\n    object-fit: contain;\r\n    transition: left 1.4s ease, top 1.4s ease, width 1.4s ease, height 1.4s ease, opacity 1.8s ease;\r\n    animation: kira-float 7s ease-in-out infinite;\r\n  }\r\n  /* ちきゅ～くんが揺蕩う動き。#kira は translate(-50%,-50%) で中央寄せしているので、\r\n     各フレームでその translate を必ず書き直してください（書き忘れると位置がずれます）。 */\r\n    @keyframes kira-float{\r\n    0%   { transform: translate(-50%, -50%) translateY(0); }\r\n    30%  { transform: translate(-50%, -50%) translateY(-12px); }\r\n    50%  { transform: translate(-50%, -50%) translateY(-6px); }\r\n    70%  { transform: translate(-50%, -50%) translateY(-14px); }\r\n    100% { transform: translate(-50%, -50%) translateY(0); }\r\n  }\r\n\r\n  @media (prefers-reduced-motion: reduce){\r\n    #kira{ animation: none; }\r\n  }\r\n  #kira.hidden{ opacity: 0; }\r\n\r\n  #kira.edge{ left: 92%; width: 195px; }\r\n  #kira.zoom{ left: 50%; top: 56%; width: 900px; max-height: 92dvh; }\r\n  #kira-placeholder{\r\n    position: absolute;\r\n    left: 72%;\r\n    top: 56%;\r\n    transform: translate(-50%, -50%);\r\n    display: none;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    gap: 6px;\r\n    padding: 16px 20px;\r\n    background: rgba(255,255,255,0.7);\r\n    border: 2px dashed #c9a7e0;\r\n    border-radius: 16px;\r\n    text-align: center;\r\n    transition: left 1.4s ease, top 1.4s ease, transform 1.4s ease;\r\n  }\r\n  #kira-placeholder.show{ display: flex; }\r\n  #kira-placeholder.edge{ left: 92%; transform: translate(-50%, -50%) scale(0.6); }\r\n  #kira-placeholder.zoom{ left: 50%; transform: translate(-50%, -50%) scale(1.9); }\r\n  #kira-placeholder .emoji{ font-size: 40px; line-height: 1; }\r\n  #kira-placeholder .key{ font-size: 12px; font-weight: 700; color: #7d5fa0; }\r\n\r\n  /* まつぴよの演出 */\r\n  #character.silhouette{ filter: brightness(0) saturate(0); }\r\n  #chara-placeholder.silhouette{ filter: brightness(0.25) saturate(0); }\r\n  #character.closeup, #chara-placeholder.closeup{\r\n    width: 150%; height: auto; max-width: none; max-height: none;\r\n    filter: blur(10px);\r\n  }\r\n  #chara-placeholder.closeup{ transform: translate(-50%, -50%) scale(2.6); filter: blur(6px); }\r\n\r\n  /* 場面転換効果 */\r\n   #transition{\r\n    position: absolute;\r\n    inset: 0;\r\n    background: #fff;\r\n    opacity: 0;\r\n    pointer-events: none;\r\n    z-index: 55;\r\n    transition: opacity .5s ease;   /* 実際の長さは JS の TRANS が上書きします */\r\n  }\r\n  #transition.on{ opacity: 1; }\r\n  #transition.dark{ background: #000; }   /* fx: \"transition-dark\" のときの暗転 */\r\n\r\n  /* 一枚絵（CG） */\r\n  #cg-layer{\r\n    position: absolute;\r\n    inset: 0;\r\n    display: none;\r\n    align-items: center;\r\n    justify-content: center;\r\n    background: #000;\r\n    z-index: 10;\r\n  }\r\n  #cg-layer.show{ display: flex; }\r\n  #cg-layer img{ max-width: 100%; max-height: 100%; object-fit: contain; }\r\n  #cg-layer .cg-placeholder{\r\n    padding: 28px 34px;\r\n    background: rgba(255,255,255,0.85);\r\n    border: 3px dashed var(--pink-deep);\r\n    border-radius: 20px;\r\n    font-weight: 700;\r\n    color: #a46a8a;\r\n    text-align: center;\r\n  }\r\n\r\n  /* ===== 左上メニュー（MENUボタンで開閉） ===== */\r\n  #menu-toggle{\r\n    position: absolute;\r\n    top: 14px;\r\n    left: 14px;\r\n    z-index: 42;\r\n    padding: 10px 22px;\r\n    background: var(--panel);\r\n    color: var(--ink);\r\n    border: none;\r\n    border-radius: 999px;\r\n    font-family: inherit;\r\n    font-size: 15px;\r\n    font-weight: 700;\r\n    letter-spacing: .08em;\r\n    cursor: pointer;\r\n    box-shadow: 0 3px 10px rgba(150,80,120,0.22);\r\n    transition: background .15s ease, transform .1s ease;\r\n  }\r\n  #menu-toggle:hover{ background: #fff; }\r\n  #menu-toggle:active{ transform: scale(0.97); }\r\n  #menu-toggle.on{\r\n    background: var(--pink-deep);\r\n    color: #fff;\r\n    box-shadow: 0 0 0 3px rgba(255,95,162,0.28);\r\n  }\r\n\r\n #menu{\r\n    position: absolute;\r\n    top: 62px;\r\n    left: 14px;\r\n    right: 14px;\r\n    display: none;\r\n    flex-wrap: nowrap;        /* 折り返さず横1列を保つ */\r\n    gap: 8px;\r\n    align-items: stretch;     /* ボタンの高さをそろえる */\r\n    z-index: 41;\r\n  }\r\n\r\n  #menu.open{ display: flex; }\r\n  .menu-btn{\r\n    display: flex;\r\n    align-items: center;\r\n    gap: 8px;\r\n    min-width: 0;\r\n    padding: 10px 18px;\r\n    white-space: nowrap;\r\n    background: var(--panel);\r\n    color: var(--ink);\r\n    border: none;\r\n    border-radius: 999px;\r\n    font-size: 15px;\r\n    font-weight: 700;\r\n    cursor: pointer;\r\n    box-shadow: 0 3px 10px rgba(150,80,120,0.22);\r\n    transition: background .15s ease, transform .1s ease;\r\n  }\r\n  .menu-btn:hover{ background: #fff; }\r\n  .menu-btn:active{ transform: scale(0.97); }\r\n  .menu-btn.on{\r\n    background: var(--pink-deep);\r\n    color: #fff;\r\n    box-shadow: 0 0 0 3px rgba(255,95,162,0.28);\r\n  }\r\n  .menu-btn .ico{ font-size: 15px; width: 18px; text-align: center; }\r\n  .menu-btn.icon-only{ min-width: 0; padding: 10px 14px; justify-content: center; }\r\n  .menu-btn.icon-only .ico{ width: auto; }\r\n\r\n  /* ボタン全体を画像に差し替えたとき（MENUボタン、タイトル画面のボタン） */\r\n  .menu-btn.has-img, #menu-toggle.has-img{\r\n    padding: 0;\r\n    gap: 0;\r\n    background: none;\r\n    box-shadow: none;\r\n    border-radius: 0;\r\n    line-height: 0;\r\n    min-width: 0;\r\n  }\r\n  .menu-btn.has-img:hover, #menu-toggle.has-img:hover,\r\n  .menu-btn.has-img.on, #menu-toggle.has-img.on{ background: none; box-shadow: none; }\r\n  .menu-btn.has-img img, #menu-toggle.has-img img{\r\n    display: block;\r\n    height: var(--menu-img-h, 40px);\r\n    width: auto;\r\n  }\r\n\r\n  /* 絵文字の位置に丸い画像を入れたとき（しおり・オート・スキップ・早送り・ログ・ミュート・とじる）\r\n     パソコン … 白い枠と文字はそのままで、絵文字だけが丸い画像になります\r\n     スマホ   … 枠も文字も消えて、丸い画像だけになります */\r\n  .menu-btn.has-ico-img .ico{ width: auto; line-height: 0; }\r\n  .menu-btn.has-ico-img .ico img{\r\n    display: block;\r\n    height: var(--menu-ico-h, 24px);\r\n    width: var(--menu-ico-h, 24px);\r\n    object-fit: cover;\r\n    border-radius: 50%;\r\n  }\r\n  /* 文字が無いボタン（とじる）は、パソコンでも丸い画像だけにします */\r\n  .menu-btn.icon-only.has-ico-img,\r\n  .menu-btn.icon-only.has-ico-img:hover,\r\n  #btn-menu-close.has-ico-img, #btn-menu-close.has-ico-img:hover{\r\n    padding: 0;\r\n    gap: 0;\r\n    background: none;\r\n    box-shadow: none;\r\n    border-radius: 0;\r\n    min-width: 0;\r\n  }\r\n  .menu-btn.icon-only.has-ico-img .ico img{\r\n    height: var(--menu-img-h, 40px);\r\n    width: var(--menu-img-h, 40px);\r\n  }\r\n  /* 画像を入れたメニューボタンは、枠や背景を消して画像だけにします。\r\n     画像の大きさは --menu-img-h（上の :root）で揃えています。 */\r\n  .menu-btn.has-img, #menu-toggle.has-img{\r\n    padding: 0;\r\n    gap: 0;\r\n    background: none;\r\n    box-shadow: none;\r\n    border-radius: 0;\r\n    line-height: 0;\r\n    min-width: 0;\r\n  }\r\n  .menu-btn.has-img:hover, #menu-toggle.has-img:hover,\r\n  .menu-btn.has-img.on, #menu-toggle.has-img.on{ background: none; box-shadow: none; }\r\n  /* とじるボタンは色が指定されているので、画像のときは打ち消します */\r\n  #btn-menu-close.has-img, #btn-menu-close.has-img:hover{\r\n    margin-left: 4px;\r\n    padding: 0;\r\n    background: none;\r\n    box-shadow: none;\r\n  }\r\n  .menu-btn.has-img img, #menu-toggle.has-img img{\r\n    display: block;\r\n    height: var(--menu-img-h, 40px);\r\n    width: auto;\r\n  }\r\n\r\n  /* メニューを閉じるボタン */\r\n  #btn-menu-close{\r\n    margin-left: 4px;\r\n    padding: 10px 16px;\r\n    background: var(--pink-deep);\r\n    color: #fff;\r\n    box-shadow: 0 3px 10px rgba(255,95,162,0.35);\r\n  }\r\n  #btn-menu-close:hover{ background: #ff4593; }\r\n\r\n  /* 画面が狭いときは文字を省いてアイコンだけにし、1列を保つ */\r\n  @media (max-width: 860px){\r\n    .menu-btn .label{ display: none; }\r\n    .menu-btn{ padding: 10px 14px; }\r\n    :root{ --menu-img-h: 30px; }\r\n    .menu-btn .ico{ width: auto; }\r\n  }\r\n\r\n\r\n  /* ===== 会話ウィンドウ ===== */\r\n  #dialogue-wrap{\r\n    position: absolute;\r\n    left: 0; right: 0; bottom: 0;\r\n    padding: 0 20px 18px;\r\n    z-index: 20;\r\n  }\r\n  .dialogue-box{\r\n    max-width: 700px;\r\n    margin: 0 auto;\r\n    position: relative;\r\n  }\r\n  #speaker-name{\r\n    display: inline-block;\r\n    margin: 0 0 5px 20px;\r\n    padding: 7px 26px;\r\n    background: rgba(0, 0, 0, 0.5);\r\n    color: #fff;\r\n    border-radius: 14px;\r\n    font-size: 19px;\r\n    font-weight: 500;\r\n    letter-spacing: .08em;\r\n    text-shadow: 0 2px 4px rgba(0,0,0,0.7);\r\n    box-shadow: none;\r\n  }\r\n  /* 名前欄を画像にしたとき。もとのうすい黒の帯を消して、画像だけにします。\r\n     文字は画像の上に、中央ぞろえで出ます。 */\r\n  #speaker-name.has-plate{\r\n    width: var(--speaker-w, 210px);\r\n    height: var(--speaker-h, 44px);\r\n    padding: 0;\r\n    background-color: transparent;\r\n    background-repeat: no-repeat;\r\n    background-position: center;\r\n    background-size: 100% 100%;\r\n    border-radius: 0;\r\n    color: var(--speaker-ink, #fff);\r\n    text-shadow: var(--speaker-shadow, 0 2px 4px rgba(0,0,0,0.7));\r\n    text-align: center;\r\n    line-height: var(--speaker-h, 44px);\r\n    white-space: nowrap;\r\n    overflow: hidden;\r\n  }\r\n  #message{\r\n    position: relative;\r\n    font-size: 21px;\r\n    line-height: 1.7;\r\n    letter-spacing: .03em;\r\n    white-space: pre-wrap;\r\n    min-height: 92px;\r\n    padding: 18px 26px;\r\n    border: none;\r\n    border-radius: 16px;\r\n    background: rgba(0, 0, 0, 0.5);\r\n    color: #fff;\r\n    font-weight: 500;\r\n    /* 文字に影を落として、どんな背景でも読めるようにする */\r\n    text-shadow: 0 2px 5px rgba(0,0,0,0.9), 0 0 3px rgba(0,0,0,0.7);\r\n    cursor: pointer;\r\n    overflow: hidden;\r\n  }\r\n  #message.narration{ border-radius: 16px; }\r\n\r\n  /* 続きがあることを示す▼ */\r\n  #more-mark{\r\n    position: absolute;\r\n    right: 18px;\r\n    bottom: 10px;\r\n    font-size: 14px;\r\n    color: #fff;\r\n    text-shadow: 0 2px 4px rgba(0,0,0,0.8);\r\n    opacity: 0;\r\n    transition: opacity .2s ease;\r\n    pointer-events: none;\r\n  }\r\n  #more-mark.show{ opacity: 1; animation: bob 1s ease-in-out infinite; }\r\n  @keyframes bob{ 0%,100%{ transform: translateY(0); } 50%{ transform: translateY(3px); } }\r\n  @media (prefers-reduced-motion: reduce){ #more-mark.show{ animation: none; } }\r\n\r\n  /* 文字幅の計測用（画面には出ません） */\r\n  #measurer{\r\n    position: absolute;\r\n    visibility: hidden;\r\n    pointer-events: none;\r\n    left: -9999px;\r\n    top: 0;\r\n    white-space: pre-wrap;\r\n    word-break: break-word;\r\n  }\r\n\r\n  /* ===== 下部の操作列 ===== */\r\n  #controls{\r\n    max-width: 700px;\r\n    margin: 10px auto 0;\r\n    display: flex;\r\n    align-items: center;\r\n    gap: 10px;\r\n  }\r\n  #status{\r\n    flex: 1;\r\n    font-size: 13px;\r\n    color: #b45c88;\r\n    font-weight: 700;\r\n  }\r\n  .ctrl-btn{\r\n    padding: 9px 26px;\r\n    font-size: 16px;\r\n    font-weight: 700;\r\n    background: var(--pink);\r\n    color: #fff;\r\n    border: none;\r\n    border-radius: 10px;\r\n    cursor: pointer;\r\n    box-shadow: 0 3px 0 #e07aae;\r\n  }\r\n  .ctrl-btn:hover{ background: var(--pink-deep); }\r\n  .ctrl-btn:active{ transform: translateY(2px); box-shadow: 0 1px 0 #e07aae; }\r\n  /* 画像を入れたときは枠を消して画像だけにします。\r\n     あとに出てくる .ctrl-btn.ghost と .ctrl-btn[disabled] に\r\n     負けないよう、クラスを2つ重ねて強くしています。 */\r\n  .ctrl-btn.has-img,\r\n  .ctrl-btn.ghost.has-img,\r\n  .ctrl-btn.has-img[disabled],\r\n  .ctrl-btn.has-img:hover,\r\n  .ctrl-btn.ghost.has-img:hover{\r\n    padding: 0;\r\n    background: none;\r\n    box-shadow: none;\r\n    border-radius: 0;\r\n    line-height: 0;\r\n  }\r\n  .ctrl-btn.has-img:active{ transform: translateY(2px); box-shadow: none; }\r\n  .ctrl-btn.has-img img{\r\n    display: block;\r\n    height: var(--ctrl-img-h, 42px);\r\n    width: auto;\r\n  }\r\n  .ctrl-btn.has-img[disabled]{ opacity: .45; cursor: default; }\r\n  .ctrl-btn.ghost{\r\n    background: #fff;\r\n    color: var(--pink-deep);\r\n    box-shadow: 0 3px 0 #f2c7db;\r\n  }\r\n  .ctrl-btn[disabled]{\r\n    background: #e6cad8;\r\n    color: #fff;\r\n    box-shadow: 0 3px 0 #d5b4c5;\r\n    cursor: default;\r\n  }\r\n\r\n  /* ===== 選択肢 ===== */\r\n  #choices{\r\n    position: absolute;\r\n    left: 50%;\r\n    top: 50%;\r\n    transform: translate(-50%, -50%);\r\n    width: min(560px, 88vw);\r\n    display: none;\r\n    z-index: 30;\r\n  }\r\n  #choices button{\r\n    display: block;\r\n    width: 100%;\r\n    margin: 10px 0;\r\n    padding: 14px 20px;\r\n    font-size: 16px;\r\n    font-weight: 700;\r\n    text-align: left;\r\n    background: rgba(255,255,255,0.95);\r\n    color: var(--ink);\r\n    border: 2px solid var(--pink);\r\n    border-radius: 12px;\r\n    cursor: pointer;\r\n    box-shadow: 0 4px 12px rgba(150,80,120,0.2);\r\n  }\r\n  #choices button:hover{ background: var(--pink-pale); border-color: var(--pink-deep); }\r\n\r\n  /* ===== タイトル画面 ===== */\r\n  #title-overlay{\r\n    padding: 0;\r\n    overflow: hidden;\r\n    background: linear-gradient(160deg, #ffeaf3 0%, #f6c9de 55%, #e8aecb 100%);\r\n    background-size: cover;\r\n    background-position: center;\r\n    background-repeat: no-repeat;\r\n  }\r\n  #title-overlay.show{ display: block; }\r\n  #title-inner{\r\n    position: relative;\r\n    width: 100%;\r\n    height: 100%;\r\n    margin: 0;\r\n    padding: 0;\r\n  }\r\n  /* 横長ロゴ。左上に置きます。logo.png が無いときは文字タイトルが同じ位置に出ます */\r\n  #title-logo{\r\n    position: absolute;\r\n    left: var(--title-logo-left);\r\n    top: var(--title-logo-top);\r\n    width: var(--title-logo-w);\r\n    max-height: var(--title-logo-h);\r\n    object-fit: contain;\r\n    object-position: left top;\r\n  }\r\n  #title-fallback{\r\n    display: none;\r\n    position: absolute;\r\n    left: var(--title-logo-left);\r\n    top: var(--title-logo-top);\r\n    width: var(--title-logo-w);\r\n    font-size: clamp(18px, 3.4vw, 34px);\r\n    font-weight: 900;\r\n    letter-spacing: .04em;\r\n    color: var(--pink-deep);\r\n    text-align: left;\r\n    text-shadow: 0 2px 0 #fff;\r\n  }\r\n  /* ボタン2つ。画面のやや右寄り・下のほうに縦に並べます */\r\n  #title-buttons{\r\n    position: absolute;\r\n    left: var(--title-btn-cx);\r\n    bottom: var(--title-btn-bottom);\r\n    transform: translateX(-50%);\r\n    width: var(--title-btn-w);\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: var(--title-btn-gap);\r\n  }\r\n  .title-btn{\r\n    width: 100%;\r\n    padding: 16px;\r\n    font-family: inherit;\r\n    font-size: 18px;\r\n    font-weight: 700;\r\n    letter-spacing: .1em;\r\n    color: #fff;\r\n    background: var(--pink);\r\n    border: none;\r\n    border-radius: 999px;\r\n    cursor: pointer;\r\n    box-shadow: 0 4px 0 #e07aae;\r\n    transition: background .15s ease;\r\n  }\r\n  .title-btn:hover{ background: var(--pink-deep); }\r\n  .title-btn:active{ transform: translateY(3px); box-shadow: 0 1px 0 #e07aae; }\r\n  .title-btn.sub{\r\n    color: var(--pink-deep);\r\n    background: #fff;\r\n    box-shadow: 0 4px 0 #f2c7db;\r\n  }\r\n  .title-btn.sub:hover{ background: var(--pink-pale); }\r\n\r\n  /* 画像を入れたボタンは、枠を消して画像だけにする */\r\n  .title-btn.has-img{\r\n    padding: 0;\r\n    background: none;\r\n    box-shadow: none;\r\n    border-radius: 0;\r\n    line-height: 0;\r\n  }\r\n  .title-btn.has-img:hover{ background: none; }\r\n  .title-btn.has-img:active{ transform: translateY(3px); box-shadow: none; }\r\n  .title-btn.has-img img{ width: 100%; display: block; }\r\n\r\n  /* ===== あそびかた（チュートリアル）===== */\r\n  #tutorial-overlay{\r\n    padding: 20px 16px 40px;\r\n    background: linear-gradient(160deg, #ffeaf3 0%, #f6c9de 55%, #e8aecb 100%);\r\n  }\r\n  #tutorial-inner{\r\n    width: min(840px, 94vw);\r\n    margin: 0 auto;\r\n    background: rgba(255,255,255,0.94);\r\n    border-radius: 20px;\r\n    padding: 20px 22px 24px;\r\n    box-shadow: 0 10px 30px rgba(150,80,120,0.25);\r\n  }\r\n  #tutorial-title{\r\n    margin: 0 0 6px;\r\n    font-size: 22px;\r\n    color: var(--pink-deep);\r\n    text-align: center;\r\n  }\r\n  #tutorial-lead, #tutorial-foot{\r\n    margin: 0 0 14px;\r\n    font-size: 13px;\r\n    line-height: 1.7;\r\n    color: #6b5563;\r\n    text-align: center;\r\n  }\r\n  #tutorial-foot{ margin: 14px 0 16px; }\r\n  #tutorial-lead b, #tutorial-foot b{ color: var(--pink-deep); }\r\n  #tutorial-list{\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n    gap: 10px 18px;\r\n  }\r\n  .tut-row{\r\n    display: flex;\r\n    align-items: flex-start;\r\n    gap: 10px;\r\n  }\r\n  .tut-ico{\r\n    flex: 0 0 auto;\r\n    width: 34px;\r\n    height: 34px;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    font-size: 17px;\r\n    background: var(--pink-pale);\r\n    border-radius: 50%;\r\n    overflow: hidden;\r\n  }\r\n  .tut-ico img{ width: 100%; height: 100%; object-fit: cover; display: block; }\r\n  .tut-body{ flex: 1 1 auto; min-width: 0; }\r\n  .tut-name{\r\n    font-size: 13px;\r\n    font-weight: 800;\r\n    color: var(--pink-deep);\r\n    margin-bottom: 2px;\r\n  }\r\n  .tut-text{ font-size: 12px; line-height: 1.6; color: #594454; }\r\n  /* 早送り＋オートの組み合わせだけ目立たせます */\r\n  .tut-row.hilite{\r\n    background: #fff4f9;\r\n    border: 2px solid var(--pink);\r\n    border-radius: 12px;\r\n    padding: 8px 10px;\r\n    margin: -2px -4px;\r\n  }\r\n  .tut-tip{\r\n    display: block;\r\n    margin-top: 4px;\r\n    font-size: 12px;\r\n    font-weight: 700;\r\n    color: var(--pink-deep);\r\n  }\r\n  /* あそびかた画面の「つぎへ」。タイトル画面のボタンより小さめにします */\r\n  #btn-tutorial-ok{\r\n    display: block;\r\n    width: auto;\r\n    margin: 0 auto;\r\n    padding: 9px 30px;\r\n    font-size: 15px;\r\n    letter-spacing: .14em;\r\n    text-indent: .14em;\r\n    box-shadow: 0 3px 0 #e07aae;\r\n  }\r\n\r\n  @media (max-width: 860px), (max-height: 520px){\r\n    #tutorial-inner{ padding: 14px 16px 18px; border-radius: 16px; }\r\n    #tutorial-title{ font-size: 18px; }\r\n    #tutorial-lead, #tutorial-foot{ font-size: 12px; margin-bottom: 10px; }\r\n    #tutorial-list{ gap: 8px 14px; }\r\n    .tut-ico{ width: 28px; height: 28px; font-size: 15px; }\r\n    .tut-name{ font-size: 12px; }\r\n    .tut-text{ font-size: 11px; line-height: 1.5; }\r\n    #btn-tutorial-ok{ padding: 7px 24px; font-size: 13px; }\r\n  }\r\n  @media (max-width: 560px){\r\n    #tutorial-list{ grid-template-columns: 1fr; }\r\n  }\r\n  /* 画面が低いとき（スマホ横向き）は、一覧の中だけをスクロールさせて\r\n     「わかった！」ボタンが必ず見えるようにします */\r\n  @media (max-height: 520px){\r\n    #tutorial-overlay{ padding: 10px 14px; overflow: hidden; }\r\n    #tutorial-inner{\r\n      max-height: calc(100dvh - 20px);\r\n      display: flex;\r\n      flex-direction: column;\r\n      padding: 12px 14px 14px;\r\n    }\r\n    #tutorial-list{ overflow-y: auto; flex: 1 1 auto; min-height: 0; gap: 6px 12px; }\r\n    #tutorial-title{ font-size: 16px; }\r\n    #tutorial-lead{ font-size: 11px; margin-bottom: 8px; }\r\n    #tutorial-foot{ font-size: 11px; margin: 8px 0 8px; }\r\n    .tut-row{ gap: 8px; }\r\n    .tut-row.hilite{ padding: 6px 8px; }\r\n    .tut-ico{ width: 26px; height: 26px; font-size: 14px; }\r\n    .tut-name{ font-size: 11.5px; }\r\n    .tut-text, .tut-tip{ font-size: 10.5px; line-height: 1.45; }\r\n    #btn-tutorial-ok{ flex: 0 0 auto; }\r\n  }\r\n\r\n  /* スマホではキーボードの説明が不要なので、下の案内を消して場所を空けます */\r\n  @media (pointer: coarse){\r\n    #tutorial-foot{ display: none; }\r\n  }\r\n  /* ブラウザのツールバーが出ていて画面がとくに低いときは、さらに詰めます */\r\n  @media (max-height: 380px){\r\n    #tutorial-lead{ display: none; }\r\n    #tutorial-title{ font-size: 15px; margin-bottom: 8px; }\r\n    #tutorial-list{ gap: 5px 12px; }\r\n    .tut-row{ gap: 7px; }\r\n    .tut-row.hilite{ padding: 5px 7px; }\r\n    .tut-ico{ width: 24px; height: 24px; font-size: 13px; }\r\n    .tut-name{ font-size: 11px; }\r\n    .tut-text, .tut-tip{ font-size: 10px; line-height: 1.4; }\r\n    #tutorial-inner{ padding: 10px 12px 10px; }\r\n  }\r\n\r\n  /* ===== 名前入力画面 ===== */\r\n  #name-overlay{\r\n    padding: 14dvh 20px calc(24px + 45vh);\r\n    background: linear-gradient(160deg, #ffeaf3 0%, #f6c9de 55%, #e8aecb 100%);\r\n  }\r\n  #name-inner{\r\n    width: min(360px, 84vw);\r\n    margin: 0 auto;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    gap: 18px;\r\n  }\r\n  #name-heading{\r\n    font-size: clamp(18px, 3.4vw, 24px);\r\n    font-weight: 700;\r\n    letter-spacing: .08em;\r\n    color: var(--pink-deep);\r\n    text-shadow: 0 2px 0 #fff;\r\n  }\r\n  #name-heading img{ width: 100%; display: block; }\r\n  #name-buttons{\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 12px;\r\n    width: 100%;\r\n  }\r\n\r\n  /* 横向きで高さが足りないときは詰める */\r\n  @media (max-height: 520px){\r\n    .title-btn{ padding: 12px; font-size: 16px; }\r\n    :root{ --title-btn-gap: 8px; }\r\n    #name-overlay{ padding-top: 6dvh; }\r\n    #name-inner{ gap: 12px; }\r\n  }\r\n\r\n  /* ===== オーバーレイ（タイトル・セーブ・ログ） ===== */\r\n  .overlay{\r\n    position: fixed;          /* #stage の overflow:hidden に切り取られないように */\r\n    inset: 0;\r\n    display: none;\r\n    background: rgba(90,40,70,0.45);\r\n    z-index: 60;\r\n    overflow-y: auto;         /* 画面が狭いときは中身をスクロールできる */\r\n    -webkit-overflow-scrolling: touch;\r\n    /* キーボードが出てもボタンまでスクロールできるよう下に余白をとる */\r\n    padding: 24px 20px calc(24px + 45vh);\r\n  }\r\n  .overlay.show{ display: block; }\r\n  .panel{\r\n    width: min(520px, 92vw);\r\n    margin: 0 auto;\r\n    background: #fff;\r\n    border-radius: 18px;\r\n    padding: 26px;\r\n    box-shadow: 0 12px 40px rgba(90,40,70,0.35);\r\n  }\r\n  #log-overlay .panel{ padding-bottom: 20px; }\r\n  .panel h2{\r\n    margin: 0 0 6px;\r\n    font-size: 22px;\r\n    color: var(--pink-deep);\r\n  }\r\n  .panel p.lead{\r\n    margin: 0 0 18px;\r\n    font-size: 14px;\r\n    line-height: 1.6;\r\n    color: #7d6270;\r\n  }\r\n  #name-input{\r\n    width: 100%;\r\n    padding: 12px 14px;\r\n    text-align: center;\r\n    background: #fff;\r\n    font-size: 18px;\r\n    border: 2px solid var(--pink);\r\n    border-radius: 10px;\r\n    outline: none;\r\n    font-family: inherit;\r\n  }\r\n  #name-input:focus{ border-color: var(--pink-deep); }\r\n\r\n  .slot{\r\n    display: flex;\r\n    align-items: center;\r\n    gap: 12px;\r\n    padding: 12px 14px;\r\n    margin-bottom: 10px;\r\n    border: 2px solid #f0d5e2;\r\n    border-radius: 12px;\r\n  }\r\n  .slot .slot-info{ flex: 1; min-width: 0; }\r\n  .slot .slot-title{ font-weight: 700; font-size: 15px; }\r\n  .slot .slot-sub{\r\n    font-size: 12px;\r\n    color: #9a7d8c;\r\n    white-space: nowrap;\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\r\n  }\r\n  .slot button{\r\n    padding: 7px 14px;\r\n    font-size: 13px;\r\n    font-weight: 700;\r\n    border: none;\r\n    border-radius: 8px;\r\n    cursor: pointer;\r\n    background: var(--pink);\r\n    color: #fff;\r\n  }\r\n  .slot button.sub{ background: #fff; color: var(--pink-deep); border: 2px solid var(--pink); }\r\n  .slot button[disabled]{ background: #e6cad8; cursor: default; }\r\n\r\n  /* ===== エンディングの振り返り ===== */\r\n  #result-list{ margin-bottom: 4px; }\r\n  #result-list .result-row{\r\n    display: flex;\r\n    align-items: baseline;\r\n    gap: 10px;\r\n    padding: 11px 0;\r\n    border-bottom: 1px solid #f3e0ea;\r\n  }\r\n  #result-list .result-q{\r\n    flex: 0 0 auto;\r\n    min-width: 7.5em;\r\n    font-size: 12px;\r\n    font-weight: 700;\r\n    color: #a4849a;\r\n  }\r\n  #result-list .result-a{\r\n    flex: 1;\r\n    font-size: 15px;\r\n    line-height: 1.5;\r\n    font-weight: 700;\r\n  }\r\n  #result-end{\r\n    margin: 16px 0 4px;\r\n    padding: 16px;\r\n    border-radius: 12px;\r\n    background: var(--pink-pale);\r\n    border: 2px solid var(--pink);\r\n    text-align: center;\r\n    font-size: 19px;\r\n    font-weight: 700;\r\n    color: var(--pink-deep);\r\n  }\r\n  #result-aff{\r\n    text-align: center;\r\n    font-size: 13px;\r\n    color: #9a7d8c;\r\n  }\r\n\r\n  #log-list{\r\n    max-height: 60vh;\r\n    overflow-y: auto;\r\n    -webkit-overflow-scrolling: touch;\r\n  }\r\n  #log-list .log-line{\r\n    padding: 10px 0;\r\n    border-bottom: 1px solid #f3e0ea;\r\n    font-size: 15px;\r\n    line-height: 1.6;\r\n    white-space: pre-wrap;\r\n  }\r\n  #log-list .log-name{\r\n    display: block;\r\n    font-size: 12px;\r\n    font-weight: 700;\r\n    color: var(--pink-deep);\r\n    margin-bottom: 2px;\r\n  }\r\n\r\n  .panel-close{\r\n    display: block;\r\n    width: 100%;\r\n    margin-top: 16px;\r\n    padding: 16px;\r\n    font-size: 17px;\r\n    font-weight: 700;\r\n    background: var(--pink);\r\n    color: #fff;\r\n    border: none;\r\n    border-radius: 10px;\r\n    cursor: pointer;\r\n    touch-action: manipulation;\r\n    -webkit-appearance: none;\r\n    -webkit-tap-highlight-color: rgba(255,95,162,0.3);\r\n  }\r\n  .panel-close:active{ background: var(--pink-deep); }\r\n\r\n  /* スマホでは操作ボタンやメニューも押しやすいサイズに */\r\n  button{ touch-action: manipulation; -webkit-tap-highlight-color: rgba(255,95,162,0.3); }\r\n\r\n  \r\n  /* =====================================================\r\n     スマホ：縦向きのときは横にするよう促す（縦では遊べません）\r\n     ===================================================== */\r\n  #rotate-notice{ display: none; }\r\n  @media (pointer: coarse) and (orientation: portrait){\r\n    #rotate-notice{\r\n      position: fixed;\r\n      inset: 0;\r\n      z-index: 200;\r\n      display: flex;\r\n      flex-direction: column;\r\n      align-items: center;\r\n      justify-content: center;\r\n      gap: 18px;\r\n      padding: 32px;\r\n      text-align: center;\r\n      background: linear-gradient(160deg, #ffeaf3 0%, #f6c9de 100%);\r\n    }\r\n    /* 縦向きの間は本編を操作させない */\r\n    #stage > *:not(#rotate-notice), .overlay{ pointer-events: none !important; }\r\n  }\r\n  #rotate-notice .rotate-icon{\r\n    font-size: 64px;\r\n    line-height: 1;\r\n    animation: rotateHint 2.4s ease-in-out infinite;\r\n  }\r\n  #rotate-notice .rotate-title{\r\n    font-size: 21px;\r\n    font-weight: 700;\r\n    color: var(--pink-deep);\r\n  }\r\n  #rotate-notice .rotate-sub{\r\n    font-size: 14px;\r\n    line-height: 1.7;\r\n    color: #7d6270;\r\n  }\r\n  #rotate-notice .rotate-tip{\r\n    margin-top: 14px;\r\n    padding: 10px 16px;\r\n    border-radius: 12px;\r\n    background: rgba(255,255,255,0.75);\r\n    font-size: 13px;\r\n    line-height: 1.7;\r\n    font-weight: 700;\r\n    color: var(--pink-deep);\r\n  }\r\n  @keyframes rotateHint{\r\n    0%, 45%   { transform: rotate(0deg); }\r\n    60%, 100% { transform: rotate(90deg); }\r\n  }\r\n  @media (prefers-reduced-motion: reduce){\r\n    #rotate-notice .rotate-icon{ animation: none; transform: rotate(90deg); }\r\n  }\r\n\r\n  /* =====================================================\r\n     スマホ横向き：高さが足りないので各部を圧縮\r\n     ===================================================== */\r\n  /* スマホ横向き用の調整。\r\n     画面の高さが 640px より大きい端末（タブレットなど）には当てません。\r\n     そのため iPad などは パソコンと同じ表示になります。 */\r\n  @media (pointer: coarse) and (orientation: landscape) and (max-height: 640px){\r\n    #dialogue-wrap{ padding: 0 14px 10px; }\r\n    #message{ font-size: 17px; line-height: 1.65; padding: 13px 18px; }\r\n    #speaker-name{ font-size: 15px; padding: 5px 18px; margin-left: 14px; }\r\n    :root{ --speaker-w: 160px; --speaker-h: 34px; }\r\n    #controls{ margin-top: 6px; }\r\n    .ctrl-btn{ padding: 7px 20px; font-size: 14px; }\r\n    :root{ --ctrl-img-h: 34px; }\r\n    #menu{ top: 54px; left: 10px; gap: 6px; }\r\n    #menu-toggle{ top: 10px; left: 10px; padding: 8px 16px; font-size: 13px; }\r\n    .menu-btn{ padding: 7px 10px; font-size: 12px; }\r\n    :root{ --menu-img-h: 34px; }\r\n    /* スマホでは、丸い画像を入れたボタンは枠も文字も消して画像だけにします */\r\n    .menu-btn.has-ico-img,\r\n    .menu-btn.has-ico-img:hover,\r\n    .menu-btn.has-ico-img.on,\r\n    #btn-menu-close.has-ico-img, #btn-menu-close.has-ico-img:hover{\r\n      padding: 0;\r\n      gap: 0;\r\n      background: none;\r\n      box-shadow: none;\r\n      border-radius: 0;\r\n      min-width: 0;\r\n    }\r\n    .menu-btn.has-ico-img .label{ display: none; }\r\n    .menu-btn.has-ico-img .ico img{\r\n      height: var(--menu-img-h, 34px);\r\n      width: var(--menu-img-h, 34px);\r\n    }\r\n    #character{ top: 52%; width: 300px; height: auto; max-height: 78dvh; }\r\n    /* ちきゅ～くんも、まつぴよと同じ割合で小さくします */\r\n    #kira{ top: 52%; width: 235px; max-height: 64dvh; }\r\n    #kira.edge{ width: 110px; }\r\n    #kira.zoom{ width: 440px; max-height: 80dvh; }\r\n    #chara-placeholder{ top: 52%; padding: 14px 18px; }\r\n    #chara-placeholder .emoji{ font-size: 38px; }\r\n    #choices button{ padding: 10px 16px; font-size: 14px; margin: 6px 0; }\r\n    /* 選択肢を画面の上寄せにして、台詞ウィンドウに重ならないようにします。\r\n       （まつぴよに重なるのは問題ないので、そのままです）\r\n       --dlg-h は台詞ウィンドウの実際の高さで、showChoices が毎回入れ直します。 */\r\n    #choices{\r\n      top: 10px;\r\n      bottom: auto;\r\n      transform: translateX(-50%);\r\n      /* 左端が MENU ボタンの下に潜らない幅に抑えます */\r\n      width: min(560px, calc(100% - 200px));\r\n      max-height: calc(100% - var(--dlg-h, 190px) - 20px);\r\n      overflow-y: auto;\r\n    }\r\n  }\r\n\r\n  @media (max-width: 680px){\r\n    .menu-btn{ font-size: 13px; padding: 9px 12px; }\r\n    #menu{ gap: 6px; }\r\n    #message{ font-size: 17px; min-height: 82px; }\r\n    #character{ width: 260px; height: auto; top: 52%; }\r\n    #kira{ width: 200px; top: 52%; }\r\n    #kira.edge{ width: 95px; }\r\n    #kira.zoom{ width: 410px; }\r\n  }\r\n\r\n  #btn-tutorial-ok{\r\n    display: block;\r\n    width: auto;\r\n    max-width: 200px;\r\n    margin: 0 auto;\r\n    padding: 9px 28px;\r\n    font-size: 15px;\r\n    line-height: 1.2;\r\n    letter-spacing: .14em;\r\n    text-indent: .14em;\r\n    box-shadow: 0 3px 0 #e07aae;\r\n  }\r\n  @media (max-width: 860px), (max-height: 520px){\r\n    #btn-tutorial-ok{ padding: 7px 22px; font-size: 13px; }\r\n  }\r\n  .ctrl-btn.has-img,\r\n  .ctrl-btn.ghost.has-img,\r\n  .ctrl-btn.has-img[disabled],\r\n  .ctrl-btn.has-img:hover,\r\n  .ctrl-btn.has-img:active,\r\n  .ctrl-btn.ghost.has-img:hover{\r\n    padding: 0;\r\n    background: none;\r\n    background-color: transparent;\r\n    box-shadow: none;\r\n    border: none;\r\n    border-radius: 0;\r\n    line-height: 0;\r\n  }\r\n  .ctrl-btn.has-img[disabled]{ opacity: .45; cursor: default; }\r\n  #btn-tutorial-ok{\r\n    display: block;\r\n    width: auto;\r\n    max-width: 200px;\r\n    margin: 0 auto;\r\n    padding: 9px 28px;\r\n    font-size: 15px;\r\n    line-height: 1.2;\r\n    letter-spacing: .14em;\r\n    text-indent: .14em;\r\n    box-shadow: none;\r\n  }\r\n  #btn-tutorial-ok:active{ transform: translateY(1px); box-shadow: none; }\r\n  @media (max-width: 860px), (max-height: 520px){\r\n    #btn-tutorial-ok{ padding: 7px 22px; font-size: 13px; }\r\n  }\r\n  /* ▼長押し・ドラッグ・右クリックでの選択を止めます。\r\n     スマホで台詞や選択肢を押したときに、青い選択の枠や\r\n     コピーのメニューが出てしまうのを防ぎます。 */\r\n  html, body{\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\r\n    -webkit-touch-callout: none;              /* 長押しのメニューを出さない */\r\n    -webkit-tap-highlight-color: transparent; /* 押したときの灰色のちらつきを消す */\r\n  }\r\n  /* 絵をドラッグして持ち出せないようにします */\r\n  img{\r\n    -webkit-user-drag: none;\r\n    user-drag: none;\r\n  }\r\n  /* 名前入力欄だけは、これまで通り選択・コピー・貼り付けができます */\r\n  input, textarea{\r\n    -webkit-user-select: text;\r\n    -moz-user-select: text;\r\n    -ms-user-select: text;\r\n    user-select: text;\r\n    -webkit-touch-callout: default;\r\n  }\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<div id=\"stage\">\r\n  <div id=\"bg-layer\"></div>\r\n  <img id=\"character\" alt=\"\">\r\n  <div id=\"chara-placeholder\">\r\n    <span class=\"emoji\"></span>\r\n    <span class=\"key\"></span>\r\n  </div>\r\n  <img id=\"kira\" alt=\"\">\r\n  <div id=\"kira-placeholder\">\r\n    <span class=\"emoji\"></span>\r\n    <span class=\"key\"></span>\r\n  </div>\r\n  <div id=\"cg-layer\"><img alt=\"\"><div class=\"cg-placeholder\"></div></div>\r\n  <div id=\"transition\"></div>\r\n\r\n  <!-- 左上メニュー -->\r\n  <button id=\"menu-toggle\" data-ui=\"MENU\">MENU</button>\r\n  <div id=\"menu\">\r\n    <button class=\"menu-btn\" id=\"btn-save\" data-ui=\"しおり\"><span class=\"ico\">🔖</span><span class=\"label\">しおり</span></button>\r\n    <button class=\"menu-btn\" id=\"btn-auto\" data-ui=\"オート\"><span class=\"ico\">▶</span><span class=\"label\">オート</span></button>\r\n    <button class=\"menu-btn\" id=\"btn-skip\" data-ui=\"スキップ\"><span class=\"ico\">⏭</span><span class=\"label\">スキップ</span></button>\r\n    <button class=\"menu-btn\" id=\"btn-ff\" data-ui=\"早送り\"><span class=\"ico\">⏩</span><span class=\"label\">早送り</span></button>\r\n    <button class=\"menu-btn\" id=\"btn-log\" data-ui=\"ログ\"><span class=\"ico\">📜</span><span class=\"label\">ログ</span></button>\r\n    <button class=\"menu-btn\" id=\"btn-mute\" data-ui=\"ミュート\"><span class=\"ico\">🔊</span><span class=\"label\">ミュート</span></button>\r\n    <button class=\"menu-btn icon-only\" id=\"btn-menu-close\" data-ui=\"とじる\"><span class=\"ico\">✕</span></button>\r\n  </div>\r\n\r\n\r\n  <!-- 選択肢 -->\r\n  <div id=\"choices\"></div>\r\n\r\n  <!-- 会話ウィンドウ -->\r\n  <div id=\"dialogue-wrap\">\r\n    <div class=\"dialogue-box\">\r\n      <div id=\"speaker-name\"></div>\r\n      <div id=\"message\"></div>\r\n      <span id=\"more-mark\">▼</span>\r\n      <div id=\"measurer\"></div>\r\n    </div>\r\n    <div id=\"controls\">\r\n      <div id=\"status\"></div>\r\n      <button class=\"ctrl-btn ghost\" id=\"backBtn\" data-ui=\"戻る\"></button>\r\n      <button class=\"ctrl-btn\" id=\"nextBtn\" data-ui=\"次へ\"></button>\r\n    </div>\r\n  </div>\r\n\r\n  <!-- 縦向きのときだけ出る案内 -->\r\n  <div id=\"rotate-notice\">\r\n    <div class=\"rotate-icon\">📱</div>\r\n    <div class=\"rotate-title\">画面を横向きにしてください</div>\r\n    <div class=\"rotate-sub\">このゲームは横向き表示専用です。<br>端末の向きのロックがかかっている場合は解除してください。</div>\r\n    <div class=\"rotate-tip\">画面を上にスワイプして<br>ブラウザのツールバーを隠すと、より見やすくなります</div>\r\n  </div>\r\n\r\n  <!-- タイトル画面 -->\r\n  <div class=\"overlay show\" id=\"title-overlay\">\r\n    <div id=\"title-inner\">\r\n      <img id=\"title-logo\" alt=\"ときめき☆ドリームワールド（仮）\">\r\n      <div id=\"title-fallback\">ときめき☆ドリームワールド（仮）</div>\r\n      <div id=\"title-buttons\">\r\n        <button class=\"title-btn\" id=\"btn-new\" data-ui=\"さいしょから\"></button>\r\n        <button class=\"title-btn sub\" id=\"btn-title-load\" data-ui=\"つづきから\"></button>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <!-- あそびかた（「さいしょから」のあと、名前入力の前に出ます） -->\r\n  <div class=\"overlay\" id=\"tutorial-overlay\">\r\n    <div id=\"tutorial-inner\">\r\n      <h2 id=\"tutorial-title\">あそびかた</h2>\r\n      <p id=\"tutorial-lead\">画面の左上の <b>MENU</b> から、いつでも下のボタンが使えます。</p>\r\n      <div id=\"tutorial-list\"></div>\r\n      <p id=\"tutorial-foot\">\r\n        画面のどこを押しても話が進みます。キーボードなら <b>Enter</b> で次へ、<b>Backspace</b> で戻るです。\r\n      </p>\r\n      <button class=\"title-btn\" id=\"btn-tutorial-ok\" data-ui=\"つぎへ\">つぎへ</button>\r\n    </div>\r\n  </div>\r\n\r\n  <!-- 名前入力（「さいしょから」のあとに出ます） -->\r\n  <div class=\"overlay\" id=\"name-overlay\">\r\n    <div id=\"name-inner\">\r\n      <div id=\"name-heading\" data-ui=\"名前を入力\"></div>\r\n      <input id=\"name-input\" type=\"text\" maxlength=\"8\" placeholder=\"さくら\"\r\n             autocomplete=\"off\" autocapitalize=\"off\" enterkeyhint=\"go\" inputmode=\"text\">\r\n      <div id=\"name-buttons\">\r\n        <button class=\"title-btn\" id=\"btn-start\" data-ui=\"はじめる\"></button>\r\n        <button class=\"title-btn sub\" id=\"btn-name-back\" data-ui=\"もどる\"></button>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <!-- セーブ／ロード -->\r\n  <div class=\"overlay\" id=\"save-overlay\">\r\n    <div class=\"panel\">\r\n      <h2>しおり</h2>\r\n      <p class=\"lead\">3つまで記録できます。ブラウザに保存されます。</p>\r\n      <div id=\"slot-list\"></div>\r\n      <button class=\"panel-close\" id=\"btn-save-close\">とじる</button>\r\n    </div>\r\n  </div>\r\n\r\n  <!-- エンディングの振り返り -->\r\n  <div class=\"overlay\" id=\"result-overlay\">\r\n    <div class=\"panel\">\r\n      <h2>あなたの選択</h2>\r\n      <p class=\"lead\">このルートでたどった選択です。</p>\r\n      <div id=\"result-list\"></div>\r\n      <div id=\"result-end\"></div>\r\n      <div id=\"result-aff\"></div>\r\n      <button class=\"panel-close\" id=\"btn-result-restart\">最初から</button>\r\n      <button class=\"panel-close\" id=\"btn-result-close\"\r\n              style=\"background:#fff;color:var(--pink-deep);border:2px solid var(--pink);\">とじる</button>\r\n    </div>\r\n  </div>\r\n\r\n  <!-- ログ -->\r\n  <div class=\"overlay\" id=\"log-overlay\">\r\n    <div class=\"panel\">\r\n      <h2>ログ</h2>\r\n      <p class=\"lead\">これまでに読んだ台詞です。</p>\r\n      <div id=\"log-list\"></div>\r\n      <button class=\"panel-close\" id=\"btn-log-close\">とじる</button>\r\n    </div>\r\n  </div>\r\n</div>\r\n<script src = \"bgm-fade.js\"></script>\r\n<script>\r\n/* =========================================================\r\n   画像の設定\r\n   ここに画像のURL（またはファイル名）を書くと、台詞の\r\n   bg / chara の指定に合わせて自動で切り替わります。\r\n   空のままでも、色と仮の立ち絵で最後まで動きます。\r\n   例) \"教室\": { url: \"images/classroom.png\" }\r\n   ========================================================= */\r\nconst BG_ASSETS = {\r\n  \"教室\":      { url: \"classroom0331.png\", color: \"#cfdcec\" },   // 背景①\r\n  \"教室ぼやけ\":  { url: \"classroom_boyake.png\", color: \"#b9c8dd\" },   // 背景①（ぼやけ）\r\n  \"食堂\":      { url: \"ortus.png\", color: \"#f0dcc4\" },   // 背景②\r\n  \"屋外\":      { url: \"building08.png\", color: \"#f6cfa8\" },   // 背景③\r\n  \"夢世界表\":   { url: \"yumesekai_omote.png\", color: \"#bfe6a8\" },   // 背景④\r\n  \"夢世界裏\":   { url: \"yumesekai_ura.png\", color: \"#7a6a9c\" },   // 背景⑤\r\n  \"入場門前\":   { url: \"gate3.png\", color: \"#ffd9ea\" },   // 背景⑥\r\n  \"もやもや\":   { url: \"moyamoya.png\", color: \"#5d718c\" },   // 背景⑦\r\n  \"黒背景\":     { url: \"\", color: \"#0d0a10\" },\r\n  \"白背景\":     { url: \"\", color: \"#ffffff\" }\r\n};\r\n\r\nconst CHARA_ASSETS = {\r\n  \"まつぴよ/通常\":        { url: \"matsupiyo001.png\", emoji: \"🐣\" },   // 表情①\r\n  \"まつぴよ/しょんぼり\":    { url: \"matsupiyo002.png\", emoji: \"😢\" },   // 表情②\r\n  \"まつぴよ/嬉しい\":       { url: \"matsupiyo003.png\", emoji: \"😄\" },   // 表情③\r\n  \"まつぴよ/がーん\":       { url: \"matsupiyo004.png\", emoji: \"😱\" },   // 表情④\r\n  \"まつぴよ/ジト目\":       { url: \"matsupiyo005.png\", emoji: \"😒\" },   // 表情⑤\r\n  \"まつぴよ/びっくり\":      { url: \"matsupiyo006.png\", emoji: \"😲\" },   // 表情⑥\r\n  \"まつぴよ/赤面\":        { url: \"matsupiyo007.png\", emoji: \"😳\" },   // 表情⑦\r\n  \"まつぴよ/照れ\":        { url: \"matsupiyo008.png\", emoji: \"😅\" },   // 表情⑧\r\n  \"まつぴよ/苦しい\":       { url: \"matsupiyo009.png\", emoji: \"😖\" },   // 表情⑨\r\n  \"まつぴよ/目を輝かせる\":  { url: \"matsupiyo010.png\", emoji: \"🤩\" },   // 表情⑩\r\n  \"まつぴよ/疑問\":        { url: \"matsupiyo011.png\", emoji: \"🤔\" },   // 表情⑪\r\n  \"まつぴよ/ぼー\":        { url: \"matsupiyo012.png\", emoji: \"😶\" },   // 表情⑫\r\n  \"まつぴよ/目が回る\":      { url: \"matsupiyo013.png\", emoji: \"😵\" },   // 表情⑬\r\n  \"まつぴよ/考える\":       { url: \"matsupiyo014.png\", emoji: \"🧐\" },   // 表情⑭\r\n  \"まつぴよ/目バキ\":       { url: \"matsupiyo015.png\", emoji: \"😠\" }    // 表情⑮\r\n};\r\n\r\nconst KIRA_ASSETS = {\r\n  \"ちきゅ～くん/通常\":     { url: \"chikyuukun.png\", emoji: \"🌟\" },   // ちきゅ～くん①\r\n  \"ちきゅ～くん/笑顔\":     { url: \"chikyuukun_smile.png\", emoji: \"🌠\" },   // ちきゅ～くん②\r\n  \"偽ちきゅ～くん/通常\":    { url: \"fake_chikyuukun.png\", emoji: \"💠\" }, // 偽ちきゅ～くん①\r\n  \"偽ちきゅ～くん/笑顔\":    { url: \"fake_chikyuukun_smile.png\", emoji: \"💫\" }    // 偽ちきゅ～くん②\r\n};\r\n\r\nconst CG_ASSETS = {\r\n  \"絵/ノート落書き\":       { url: \"rakugaki.png\", emoji: \"📓\" },   // 絵①\r\n  \"絵/水中手あり\":        { url: \"water_h.png\", emoji: \"🫳\" },   // 絵②\r\n  \"絵/水中\":            { url: \"water.png\", emoji: \"🌊\" },   // 絵③\r\n  \"絵/灰色水中\":         { url: \"water_gmh.png\", emoji: \"🌫\" },   // 絵④\r\n  \"絵/水中まつぴよ腕\":     { url: \"water_mh.png\", emoji: \"🪽\" },   // 絵⑤\r\n  \"絵/BADEND\":         { url: \"badend.png\", emoji: \"🛏\" },   // 絵⑥\r\n  \"絵/とびきり笑顔\":       { url: \"trueend.png\", emoji: \"🥰\" },   // 絵⑦\r\n  \"絵/告白\":            { url: \"happyend.png\", emoji: \"💕\" }    // 絵⑧\r\n};\r\n\r\nconst BGM_ASSETS = {\r\n  \"がやがや\":    { url: \"gayagaya.mp3\", volume: 0.25 },  // ＢＧＭ④\r\n  \"授業中\":     { url: \"class.mp3\", volume: 0.5 },   // ＢＧＭ⑤\r\n  \"水中\":      { url: \"underwater.mp3\", volume: 0.45 },  // ＢＧＭ⑥\r\n};\r\n\r\nconst SE_ASSETS = {\r\n  \"おなか\":     { url: \"hungry.mp3\", volume: 0.35 },   // ＳＥ①\r\n  \"水中落下\":    { url: \"underwater_fall.mp3\", volume: 0.7 }    // ＳＥ②\r\n};\r\n\r\n/* タイトル画面と名前入力の画像。\r\n   url を入れると画像のボタンになり、空のままなら文字のボタンが出ます。 */\r\nconst UI_ASSETS = {\r\n  \"ロゴ\":        { url: \"logo.png\" },\r\n  \"さいしょから\":  { url: \"start.png\", label: \"さいしょから\" },\r\n  \"つづきから\":   { url: \"restart.png\", label: \"つづきから\" },\r\n  \"名前を入力\":   { url: \"\", label: \"名前を入力\" },\r\n  \"はじめる\":     { url: \"\", label: \"この名前ではじめる\" },\r\n  \"もどる\":      { url: \"\", label: \"もどる\" },\r\n\r\n  /* ▼メニューのボタン\r\n     url    … 画像のファイル名を入れると、その画像に差し替わります（空なら絵文字＋文字）\r\n     urlOn  … オンのとき（押して光っているとき）だけ使う画像。空なら url と同じ画像\r\n     icon   … url が空のときに出る絵文字\r\n     iconOn … オンのときの絵文字（ミュートだけ使っています）\r\n     label  … url が空のときに出る文字。画像のときは alt に使われます\r\n     画像が見つからないときは、自動で絵文字＋文字に戻ります。 */\r\n  \"MENU\":      { url: \"MENU.png\", label: \"MENU\" },\r\n  \"しおり\":     { url: \"SAVE_OFF.png\", urlOn: \"SAVE.png\", label: \"SAVE\",   icon: \"🔖\" },\r\n  \"オート\":     { url: \"AUTO_OFF.png\", urlOn: \"AUTO.png\", label: \"AUTO\",   icon: \"▶\" },\r\n  \"スキップ\":   { url: \"SKIP_OFF.png\", urlOn: \"SKIP.png\", label: \"SKIP\", icon: \"⏭\" },\r\n  \"早送り\":     { url: \"FAST_OFF.png\", urlOn: \"FAST.png\", label: \"FAST\",   icon: \"⏩\" },\r\n  \"ログ\":      { url: \"LOG_OFF.png\", urlOn: \"LOG.png\", label: \"LOG\",     icon: \"📜\" },\r\n  \"ミュート\":   { url: \"AUDIO.png\", urlOn: \"AUDIO_OFF.png\", label: \"MUTE\", icon: \"🔊\", iconOn: \"🔇\" },\r\n  \"とじる\":     { url: \"CLOSE.png\", label: \"CLOSE\", icon: \"✕\" },\r\n  /* ▼タイトル画面の背景いっぱいの絵。空ならピンクのグラデーションのままです */\r\n  \"メインビジュアル\": { url: \"main_visual.png\" },\r\n\r\n  /* ▼台詞の名前欄のフレーム。空ならこれまでのうすい黒の帯のままです */\r\n  \"名前欄\":     { url: \"name.png\" },\r\n\r\n  /* ▼台詞送りのボタン。url を入れると画像に差し替わります */\r\n  \"次へ\":      { url: \"next.png\", label: \"次へ\" },\r\n  \"最初から\":   { url: \"start.png\", label: \"最初から\" },   /* エンディング後に「次へ」の位置に出ます */\r\n  \"戻る\":      { url: \"back.png\", label: \"戻る\" },\r\n\r\n  /* ▼あそびかた画面の「つぎへ」ボタン */\r\n  \"つぎへ\":     { url: \"next.png\", label: \"つぎへ\" }\r\n};\r\n\r\n/* =========================================================\r\n   台詞データ\r\n   name : 話者（\"\" はナレーション）\r\n   text : 本文（〇〇 は主人公の名前に置換されます）\r\n   scene: 場面の区切り（スキップの停止位置）\r\n   bg   : 背景（指定が無ければ前の背景が続く）\r\n   chara: まつぴよの立ち絵（\"\" で非表示）／ charaFx: silhouette, closeup\r\n   kira : ちきゅ～くんの立ち絵（\"\" で非表示）\r\n          kiraPos: edge(画面端) / center 、kiraFx: zoom、kiraAlpha: 透明度\r\n   cg   : 一枚絵（\"\" で解除）\r\n   bgm  : BGM（\"\" で停止）  se: 効果音（その場で1回）\r\n   fx   : transition で場面転換効果\r\n   jump : 読み終えたら指定インデックスへ合流\r\n   choices: 選択肢（next=飛び先 / effect=好感度・フラグ / requires=表示条件）\r\n   end  : エンディング\r\n   ========================================================= */\r\nconst dialogues = [\r\n{\"name\": \"？？？\", \"text\": \"みえてる？\", \"scene\": true, \"kira\": \"ちきゅ～くん/通常\", \"kiraAlpha\": 0.5},\r\n{\"name\": \"\", \"text\": \"こえがきこえる。\"},\r\n{\"name\": \"？？？\", \"text\": \"おぼえてる？\"},\r\n{\"name\": \"\", \"text\": \"なにか、見覚えがあるような。\\nどこかで、聞いたことのあるような。\"},\r\n{\"name\": \"\", \"text\": \"暗い世界の中で“それ”が微かに見える。\\n“それ”が何かはわからない。目の前にいるのか、視界の端にいるのか、後ろにいるのか……。存在しか認識できない。\"},\r\n{\"name\": \"\", \"text\": \"なぜかわたしは“それ”から目が離せなくて、体が吸い寄せられる錯覚に陥る。\"},\r\n{\"name\": \"わたし\", \"text\": \"「はっ！」\", \"bg\": \"教室ぼやけ\", \"kira\": \"\", \"kiraAlpha\": 1, \"fx\": \"transition\"},\r\n{\"name\": \"\", \"text\": \"急に目を開けたからか、視界がぼやけている。ぼ～っとする頭をゆっくり持ち上げて、状況を確認する。\"},\r\n{\"name\": \"わたし\", \"text\": \"「わたし、寝てたんだ……。」\", \"bg\": \"教室\"},\r\n{\"name\": \"\", \"text\": \"どうやら授業中に寝てしまっていたらしい。視界には前の人の頭で欠けた黒板と淡々と授業を進める教授が見えてきた。時刻は17時。\", \"bgm\": \"授業中\"},\r\n{\"name\": \"わたし\", \"text\": \"一限から授業に出ていたのだから仕方がないといえば仕方がない。\", \"scene\": true, \"bgm\": \"\"},\r\n{\"name\": \"わたし\", \"text\": \"どれだけ寝てたんだろう、わたし……。\"},\r\n{\"name\": \"\", \"text\": \"気を取り直して、板書を再開させよう。10分ほどしか寝ていないし、まだ追いつけるだろう。\\nにしても、前の人の頭が邪魔だ。わたしも女子とはいえ、女子の中でも平均ほどの身長だ。\", \"chara\": \"まつぴよ/通常\", \"charaFx\": \"silhouette\"},\r\n{\"name\": \"\", \"text\": \"普段は授業中に前の人の頭が気になることなんてなかなか無い。\\n……というか、丸いというかシルエットが２本の触覚のような……。\"},\r\n{\"name\": \"\", \"text\": \"よく見てみたら、有名な“あの人”だった。\"},\r\n{\"name\": \"わたし\", \"text\": \"前の席、“まつぴよ”じゃん。\"},\r\n{\"name\": \"\", \"text\": \"このマスコットみたいな見た目の生き物は“まつぴよ”。この大学では少し有名人だ。ちなみに、本名は松田らしい。下の名前を知っている人はいない。\", \"charaFx\": \"\"},\r\n{\"name\": \"\", \"text\": \"なにせ、「すべての課程の授業を学びたいから」といって留年を繰り返し、ずっとこの大学にいる変な人なのだ。いや……人と言って良いのだろうか……。\"},\r\n{\"name\": \"\", \"text\": \"そういうわけで、見た目も相まって複数の授業で目撃証言が相次いでいる。あとは……まあ、そのフォルムが刺さっているのか、一部女子から一定の人気がある。まあ……ナシではないけどさあ……。\"},\r\n{\"name\": \"\", \"text\": \"苦戦しながら板書をとっていると、目の前のまつぴよが話しかけてきた。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"ぼ、ぼく寝ちゃってたまつ。今何の話まつ？\", \"chara\": \"まつぴよ/疑問\", \"q\": \"授業中のひとこと\", \"choices\": [{\"text\": \"「実はわたしも寝ちゃってたんだよね」\", \"next\": 21, \"effect\": {\"aff\": 0}}, {\"text\": \"「そんなことより頭で前見えないよ」\", \"next\": 29, \"effect\": {\"aff\": -1}}, {\"text\": \"「書いてある分だけのノートなら見せれるけど……。」\", \"next\": 37, \"effect\": {\"aff\": 1}}]},\r\n{\"name\": \"わたし\", \"text\": \"実はわたしも寝ちゃってたんだよね……。\", \"scene\": true},\r\n{\"name\": \"\", \"text\": \"まつぴよには申し訳ないが、わたしも同様に寝ていたのだ。力にはなれないだろう。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"そうまつか……。\", \"chara\": \"まつぴよ/しょんぼり\"},\r\n{\"name\": \"\", \"text\": \"まつぴよが明らかに悲しいですと言わんばかりの表情をみせる。その顔にはわずかに疲れも見える。全課程の授業を受けたいというのだから、相応の疲れもあるのだろう。そんな顔を見せられてしまうと、何とかしたくなってしまうではないか。\"},\r\n{\"name\": \"わたし\", \"text\": \"今書いてある分だけでも見せようか？\"},\r\n{\"name\": \"\", \"text\": \"寝ていたとはいえ、ほんの10分ほどだ。それ以前の内容ならもしかしたら力になるかもしれない。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"ありがとうまつ！\", \"chara\": \"まつぴよ/嬉しい\"},\r\n{\"name\": \"\", \"text\": \"まつぴよはまあまあ喜んでくれたようだ。\", \"jump\": 41},\r\n{\"name\": \"わたし\", \"text\": \"そんなことより頭で前が見えないよ。\", \"scene\": true, \"chara\": \"まつぴよ/疑問\"},\r\n{\"name\": \"\", \"text\": \"そんな顔をされても……。そもそも、わたしが寝てしまったのも板書が大変だったからではないかとも考えてしまう。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"ごめんまつ……。\", \"chara\": \"まつぴよ/がーん\"},\r\n{\"name\": \"\", \"text\": \"む。そんな顔をされてしまうとこちらも弱くなる。\", \"chara\": \"まつぴよ/しょんぼり\"},\r\n{\"name\": \"わたし\", \"text\": \"今書いてある分だけでも見せようか？\"},\r\n{\"name\": \"\", \"text\": \"寝ていたとはいえ、ほんの10分ほどだ。それ以前の内容ならもしかしたら力になるかもしれない。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"ありがとうまつ！\", \"chara\": \"まつぴよ/嬉しい\"},\r\n{\"name\": \"\", \"text\": \"まつぴよは少し不満そうながらも、喜んでくれたようだ。\", \"jump\": 41},\r\n{\"name\": \"わたし\", \"text\": \"書いてある分だけのノートなら見せれるけど……。\", \"scene\": true, \"chara\": \"まつぴよ/疑問\"},\r\n{\"name\": \"\", \"text\": \"まつぴよの顔をよく見てみると、わずかに疲れが見てとれた。全課程の授業を受けたいというのだから、相応の疲れもあるのだろう。そんな顔を見ていると、少しでも力になりたいと思えてきた。寝ていたとはいえ、ほんの10分ほどだ。それ以前の内容ならもしかしたら力になるかもしれない。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"ありがとうまつ！\", \"chara\": \"まつぴよ/嬉しい\"},\r\n{\"name\": \"\", \"text\": \"まつぴよはすごく喜んでくれたようだ！\", \"jump\": 41},\r\n{\"name\": \"\", \"text\": \"どうやらまつぴよはわたしよりも長く寝ていたらしく、あせあせとわたしの渡したノートを写していた。そんな風に、やっぱり前の２本の触覚に悩まされながらも授業が終わった。\", \"scene\": true, \"chara\": \"まつぴよ/目バキ\"},\r\n{\"name\": \"\", \"text\": \"少し気になったのは、まつぴよがノートを返しながら奇妙なことを言い出したことだ。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"この絵って何まつか？\", \"chara\": \"まつぴよ/疑問\"},\r\n{\"name\": \"\", \"text\": \"そう言って、私には身に覚えがない落書きを見せてきた。\", \"cg\": \"絵/ノート落書き\"},\r\n{\"name\": \"わたし\", \"text\": \"なんだろうこれ。全く覚えがないんだけど。\", \"cg\": \"\"},\r\n{\"name\": \"\", \"text\": \"眠たくて落書きでも書いていたのだろうか、はたまたまつぴよの悪戯だろうか？\"},\r\n{\"name\": \"\", \"text\": \"授業がすべて終わり、わたしは食堂へやってきた。多くの学生は五限が終わるとすぐに帰宅するが、わたしはよく夕飯は食堂で食べる。というのも、昼夜両方用のミールシステムを使っているからだ。\", \"scene\": true, \"bg\": \"食堂\", \"chara\": \"\", \"bgm\": \"がやがや\", \"fx\": \"transition\"},\r\n{\"name\": \"\", \"text\": \"食堂にはあまり人はいない。おそらく夜遅くまで学校で作業をするであろう人たちや、近所の家族などでちらほらと席が埋まっている。わたしもそそくさと注文を済ませ、端の方の席に一人で座った。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"あ！ここに居たまつね！\", \"chara\": \"まつぴよ/嬉しい\", \"bgm\": \"\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"さっきのお礼をしたくて探してたまつ。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"はい、これジュースまつ。\"},\r\n{\"name\": \"\", \"text\": \"そう言って缶ジュースを手渡してくれた。意外と律儀なんだ、まつぴよって。そして当たり前のように横に座り、一番安いうどんをすすり始めた。\"},\r\n{\"name\": \"わたし\", \"text\": \"わたし、〇〇。まつぴよ、だよね？まつぴよでいい？\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"なんでぼくの名前を知っているまつか！？\", \"chara\": \"まつぴよ/びっくり\"},\r\n{\"name\": \"わたし\", \"text\": \"そりゃあ、有名だよ。まつぴよ。\"},\r\n{\"name\": \"\", \"text\": \"すこしびっくりして、すこしうれしそうな顔をする。\", \"chara\": \"まつぴよ/照れ\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"じゃあ、ぼくも〇〇って呼ぶまつ。\"},\r\n{\"name\": \"わたし\", \"text\": \"……。\"},\r\n{\"name\": \"わたし\", \"text\": \"なにか、用かな？まつぴよ。\"},\r\n{\"name\": \"\", \"text\": \"なにか、まつぴよがわたしの方をじっと見ている。わたしの方というか……わたしの手元というか……。\", \"chara\": \"まつぴよ/ジト目\"},\r\n{\"name\": \"わたし\", \"text\": \"まさかまつぴよ、わたしの食べてるもの、欲しいの？\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"ま、まさかまつ！\", \"chara\": \"まつぴよ/びっくり\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"人から食べ物を取るなんてできないまつ！\"},\r\n{\"name\": \"わたし\", \"text\": \"ほーう、そうですかそうですか。\"},\r\n{\"name\": \"\", \"text\": \"わたしはじゃああげない、と言わんばかりに体の向きを変えた。\"},\r\n{\"name\": \"\", \"text\": \"ぐううううう。\", \"se\": \"おなか\"},\r\n{\"name\": \"\", \"text\": \"どうやらおなかの虫は正直らしい。わたしは―――\", \"chara\": \"まつぴよ/赤面\", \"q\": \"食堂でわけたもの\", \"choices\": [{\"text\": \"ささみのサラダをあげる\", \"next\": 68, \"effect\": {\"aff\": 0}}, {\"text\": \"とりの肝煮をあげる\", \"next\": 74, \"effect\": {\"aff\": -1}}, {\"text\": \"お昼に買って余っている、ローソンのからあげくん\", \"next\": 80, \"effect\": {\"aff\": 1}}]},\r\n{\"name\": \"わたし\", \"text\": \"しょうがないなあ。はい、これあげる。\", \"scene\": true},\r\n{\"name\": \"\", \"text\": \"そう言って、ささみのサラダをまつぴよに差し出した。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"そんなっ！もらえないまつ！\", \"chara\": \"まつぴよ/びっくり\"},\r\n{\"name\": \"\", \"text\": \"そう叫びながら、わたしの手からはサラダがスポッと抜かれ、まつぴよの手に渡ってしまった。ばくばくと食べ進め、半分を食べ終えてから、\", \"chara\": \"まつぴよ/目を輝かせる\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"あ、ありがとうまつ。おいしかったまつ。\", \"chara\": \"まつぴよ/照れ\"},\r\n{\"name\": \"\", \"text\": \"意外と律儀なのか、それとも途中で理性が戻ったのか、そう礼を言って半分を返却した。ともかく、まつぴよはそこそこ喜んでくれたようだった。\", \"jump\": 90},\r\n{\"name\": \"わたし\", \"text\": \"しょうがないなあ。はい、これあげる。\", \"scene\": true, \"chara\": \"まつぴよ/赤面\"},\r\n{\"name\": \"\", \"text\": \"そう言って、とりの肝煮を差し出した。ちなみに、わたしはこの肝煮が食堂のメニューの中で最もおいしいのではないかと思うほど気に入っている。きっと、まつぴよも喜んでくれるはずである。\"},\r\n{\"name\": \"わたし\", \"text\": \"どうしたの？これ、おいしいよ。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"い、いや、遠慮するまつ。\", \"chara\": \"まつぴよ/苦しい\"},\r\n{\"name\": \"わたし\", \"text\": \"気を遣ってくれてありがとうまつ。\"},\r\n{\"name\": \"\", \"text\": \"しまった、まつぴよ、レバーとか苦手な人だったか。確かに好みがわかれるけれど……。おいしいんだけどなあ……。ともかく、まつぴよはあまり喜んでくれなかったようだ……。\", \"jump\": 90},\r\n{\"name\": \"わたし\", \"text\": \"えーっと、これ……いる？\", \"scene\": true, \"chara\": \"まつぴよ/照れ\"},\r\n{\"name\": \"\", \"text\": \"これはレポートをローソンまで印刷しに行ったついでに買ったのはいいものの、食べる時間が無くてそのまま持っていた、からあげくんだ。差し出した手を自分で見て後悔する。もうとっくに冷めてしまっているし、そもそも唐揚げなんて、鳥の見た目をしたまつぴよにとって地雷だったのではないか……。\"},\r\n{\"name\": \"わたし\", \"text\": \"やっぱり、いらなかったよね……。\"},\r\n{\"name\": \"\", \"text\": \"なぜか、まつぴよがものすごく目を輝かせているように見える。よだれまでたらして……。\", \"chara\": \"まつぴよ/目を輝かせる\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"か、かたじけないまつ！！\"},\r\n{\"name\": \"\", \"text\": \"我慢できなくなったのか、勢いよくわたしの手からからあげくんを奪い取り、むしゃくしゃと平らげてしまった。\"},\r\n{\"name\": \"わたし\", \"text\": \"えっと、からあげくん、そんなに好きなんだ。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"こ、これは仕方がないまつ。\", \"chara\": \"まつぴよ/赤面\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"おいしかったまつ。〇〇は優しいまつ。\", \"chara\": \"まつぴよ/嬉しい\"},\r\n{\"name\": \"\", \"text\": \"ともかく、からあげくんはまつぴよの好物だったらしい。とても喜んでくれたようだ。\", \"jump\": 90},\r\n{\"name\": \"\", \"text\": \"――もぐもぐ\", \"scene\": true, \"chara\": \"まつぴよ/照れ\"},\r\n{\"name\": \"\", \"text\": \"せっかくの機会だ。なにか、まつぴよに聞きたいことを聞いておこう。\", \"q\": \"まつぴよに聞いたこと\", \"choices\": [{\"text\": \"まつぴよの野望\", \"next\": 92}, {\"text\": \"まつぴよの行きたい場所\", \"next\": 96, \"effect\": {\"flag\": \"sawPast\"}}, {\"text\": \"まつぴよの夢\", \"next\": 127}]},\r\n{\"name\": \"わたし\", \"text\": \"まつぴよ、野望ってある？\", \"scene\": true},\r\n{\"name\": \"\", \"text\": \"ほぼ初対面の人に向かって何を聞いているのだろうわたしは。とにかく、何か面白そうな話題が欲しかったのだ。まつぴよはしばらく考え込んでから、真剣な目で口を開いた。\", \"chara\": \"まつぴよ/考える\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"からあげくんの、パッケージモデルになることまつ。\", \"chara\": \"まつぴよ/通常\"},\r\n{\"name\": \"\", \"text\": \"それはもう、雄大な野望をお持ちであった。\", \"jump\": 135},\r\n{\"name\": \"わたし\", \"text\": \"たとえば旅行に行くとして、どこへ行きたい？\", \"scene\": true, \"chara\": \"まつぴよ/嬉しい\"},\r\n{\"name\": \"\", \"text\": \"すごくありきたりな話題だが、ほぼ初対面の人への話題としてこれしか思いつかなかった……。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"うーーん。\", \"chara\": \"まつぴよ/考える\"},\r\n{\"name\": \"\", \"text\": \"かなり難航しているらしい。行きたい場所がいくつもあるのだろうか。\"},\r\n{\"name\": \"わたし\", \"text\": \"そこまで難しく考えなくていいよ、海派か山派だけでも。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"なら、海派まつ。虫、嫌いまつ。\", \"chara\": \"まつぴよ/苦しい\"},\r\n{\"name\": \"\", \"text\": \"まつぴよは虫が嫌いなんだ……生物系の実験などはどうしているのだろう。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"〇〇はどっち派まつ？\", \"chara\": \"まつぴよ/疑問\"},\r\n{\"name\": \"わたし\", \"text\": \"わたし？わたしは山だな～。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"なんでまつか？\", \"chara\": \"まつぴよ/通常\"},\r\n{\"name\": \"わたし\", \"text\": \"わたし、泳げないもん。\"},\r\n{\"name\": \"\", \"text\": \"わたしは昔から泳げないのだ。いや、泳げなくなってしまった。あれはわたしが中学生の頃だ。\", \"scene\": true, \"bg\": \"黒背景\", \"chara\": \"\", \"bgm\": \"回想\", \"fx\": \"transition\"},\r\n{\"name\": \"\", \"text\": \"わかりやすく端的に言うと、わたしは虐められていた。きっかけなんて覚えていない。何かクラスメイトに嫌われるようなことをしでかしたのか、もともと標的になっていた子をかばって次の標的にされた、なんて格好いい理由か。思い出せない。まあ、いじめなんてそんなものだ。\", \"bgm\": \"\"},\r\n{\"name\": \"\", \"text\": \"内容はかなり酷いものだった。わたしが学校に持っていった物は一つ残らず、一度は水浸しにされている。制服も一年経たずで一式新しく買う必要が出てきたし、上履きなんて何回新品を切り刻まれたかわからない。\"},\r\n{\"name\": \"\", \"text\": \"ある日、ことは起きた。わたしはその日、学校から少し離れた場所にある森に呼び出された。当時の私は彼ら、彼女らの指示に背くという考えを頭に浮かべることは不可能になっていた。後日何をされるかわからないし、逃げられないという固定観念がわたしを強く束縛していた。\"},\r\n{\"name\": \"\", \"text\": \"指定された場所は、森の中の大きな湖の近くだった。ニヤニヤしている男子、後ろで携帯を構える女子、いずれも見慣れ尽くした光景だった。まさか、と思ったが、もう逃げられるはずがない。男子二人がわたしを左右から捕らえ、湖へ投げ落とした。\"},\r\n{\"name\": \"\", \"text\": \"あの時の感覚は今でも思い出すことができる。終始ニヤニヤしている輩を逆さまになった視界でとらえ、飲み込まれるように水中へ落ちていった。湖は相当深かった。足が付くはずもなく、できることは藻掻くことだけだったが、体が動かず沈んでいくのみだった。\", \"bg\": \"もやもや\", \"cg\": \"絵/水中\", \"se\": \"水中落下\"},\r\n{\"name\": \"\", \"text\": \"いくら藻掻いても、見上げる水面は遠ざかっていくばかり。\\nこわいこわいこわいこわいこわい。\\nたすけてたすけてたすけてたすけて。\", \"cg\": \"絵/水中手あり\", \"bgm\": \"水中\"},\r\n{\"name\": \"\", \"text\": \"何かにしがみつくように藻掻いた。それでも手は何も掴んではくれない。空気を求めて口を開けると入ってくるのは冷たく濁った水のみ。藻掻けば藻掻くほど苦しくなる状況に、感じていたのは絶望のみだった。\"},\r\n{\"name\": \"\", \"text\": \"とうとう手足に力が入らなくなり、水面の光も網膜に届かなくなってきたとき、僅かな光の中に腕のような影を見た。そこからは記憶がなく、気が付けば病室で父と母が泣いている姿が映りこんできた。\", \"bg\": \"黒背景\", \"cg\": \"\", \"bgm\": \"\"},\r\n{\"name\": \"\", \"text\": \"後から探しても、わたしを助けた人物は見つからなかった。何者かが救急車を呼んだそうだが、森の湖にはわたし以外の姿が見えなかった、という話だった。それ以来、水が怖くなり泳ぐことができなくなってしまったのだ。もちろん、こんなエピソードは暗くて人に話せるものではない。なにより、今は楽しく大学に通っている。\"},\r\n{\"name\": \"わたし\", \"text\": \"……ということがあってね……。\", \"bg\": \"食堂\", \"chara\": \"まつぴよ/苦しい\", \"fx\": \"transition\"},\r\n{\"name\": \"\", \"text\": \"話せるエピソードではない。しかし、なぜかわたしはまつぴよにこのことを話してしまっていた。まつぴよを前にするとなんでも話してもいいような気になってしまう。話し終えて、まつぴよの方をみると、まつぴよは一瞬暗い顔をしてからすぐにいつもの笑顔にもどって、\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"〇〇はぼくに優しくしてくれたまつ。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"そんなことがあっても人に優しくできるということは、君はとっても素敵な人まつ。\", \"chara\": \"まつぴよ/嬉しい\"},\r\n{\"name\": \"\", \"text\": \"そんなことを、とんでもなく良い笑顔で伝えてきた。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"誰よりも人の邪悪なところを知っているきみは、\\n誰よりも人の素敵なところを信じ切れるまつ。\"},\r\n{\"name\": \"\", \"text\": \"わたしの過去を聞いて、まつぴよは今のわたしを肯定してくれた。同情や憐みの目はなく、ただ、今のわたしを見てくれた。少し目ににじんだ涙は、きっとまつぴよには見えていないだろう。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"ぼくもそういえば泳げないまつ。\", \"chara\": \"まつぴよ/考える\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"ぼくも羽が濡れたら動けなくなるまつ。\"},\r\n{\"name\": \"\", \"text\": \"まつぴよは案外、インドアなのかもしれない。\", \"jump\": 135},\r\n{\"name\": \"わたし\", \"text\": \"まつぴよ、夢ってある？\", \"scene\": true, \"chara\": \"まつぴよ/嬉しい\"},\r\n{\"name\": \"\", \"text\": \"ほぼ初対面の相手に少し踏み込みすぎたかな？でも気になってしまう。何のために全課程の授業を受けようとしているのだろう。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"夢まつか？\", \"chara\": \"まつぴよ/考える\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"そうまつねー大学教授まつ。\"},\r\n{\"name\": \"\", \"text\": \"なるほど、聞いてみると理にかなっている。大学教授になるためにいろんな教授を見て回っているのだろうか。……何か、ずれているような気はするが、それが夢なら否定はできない。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"そしていろんな論文を読みたいまつ。\", \"chara\": \"まつぴよ/嬉しい\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"あの、論文を読んで何かを分かった気になる瞬間はすごく快感まつ。\"},\r\n{\"name\": \"\", \"text\": \"やっぱり、まつぴよは変な人だ。\", \"jump\": 135},\r\n{\"name\": \"わたし\", \"text\": \"ごちそうさまでした。\", \"scene\": true, \"chara\": \"まつぴよ/通常\", \"fx\": \"transition\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"ごちそうさまでした。\"},\r\n{\"name\": \"\", \"text\": \"食事を終えたわたし達は食器を返却し、食堂の外に出た。\", \"bg\": \"屋外\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"じゃあ、ぼくは委員会で準備があるから先に行くまつ。\"},\r\n{\"name\": \"\", \"text\": \"そういえば、そろそろそんな季節だ。実は、まつぴよが有名な理由に、学園祭の委員会のメンバーであることも大きい。うちの学園祭は松ヶ崎祭といったっけ。毎年11月ぐらいにやっているから、委員会が忙しくなる季節である。きっと、まつぴよも委員会として色々あるのだろう。わたしは特に引き止めず、そのままその場で別れた。\"},\r\n{\"name\": \"\", \"text\": \"そのつもりだったのだが、歩きかけていたまつぴよの足はわたしの一歩先で止まってしまった。ただ、一点を見つめて。そしてその視線の先は、わたしの視線の先と全く同じだった。\", \"chara\": \"まつぴよ/ぼー\"},\r\n{\"name\": \"\", \"text\": \"”あれ”と目が合った。”あれ”が何なのか、確かに見えているのに捉えられない。大きいのか小さいのかさえ分からない。”それ”に意図は感じられず、こちらが一方的に見ているとも感じられる。目が合っているというより、”目が離せない”。\", \"kira\": \"ちきゅ～くん/通常\"},\r\n{\"name\": \"\", \"text\": \"どこかで見たことがあるようにも感じるが、確かな記憶はない。体が勝手に、”それ”に近づく。頭はぼ～っとして、足を止められない。視界の端ではまつぴよもわたしと同じように歩き始めている。わたしの意識はここで止まり、目の前が真っ暗になった。\", \"kiraFx\": \"zoom\"},\r\n{\"name\": \"\", \"text\": \"気がつくと、目の前に広がる光景はさっきまでいた大学とは全く異なっていた。たしか、わたしとまつぴよで食堂の外に出て……この記憶が正しければここは大学構内の屋外ということになる。しかし、今の視界は……なんだか、色が単純すぎるような……まだぼんやりとする意識を半ば無理矢理起こし、目をこらす。\", \"scene\": true, \"bg\": \"夢世界表\", \"charaFx\": \"closeup\", \"kira\": \"\", \"fx\": \"transition\"},\r\n{\"name\": \"わたし\", \"text\": \"うわああ！\"},\r\n{\"name\": \"\", \"text\": \"とっさに後ろへ跳ぶ。この視界の正体はまつぴよだった。まつぴよが、なぜかわたしと向き合う形で立ち尽くしていた。更になぜか、ものすごく至近距離で。\", \"charaFx\": \"\"},\r\n{\"name\": \"わたし\", \"text\": \"まつぴよ……？\"},\r\n{\"name\": \"\", \"text\": \"まつぴよはずっと立ち尽くしている。今日だけでまつぴよの何も考えていないような、ぼ～っとした顔は何度も目にしたが、これは少し異常に感じた。\"},\r\n{\"name\": \"わたし\", \"text\": \"まつぴよ！お～い！まつぴよ～！\"},\r\n{\"name\": \"\", \"text\": \"わたしがジタバタとまつぴよの前で騒ぎ立て、暫くするとようやくまつぴよはわたしと目が合った。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"へっ？はっ！\", \"chara\": \"まつぴよ/びっくり\"},\r\n{\"name\": \"\", \"text\": \"素っ頓狂な声をあげて、まつぴよは目をぱちぱちしている。\", \"chara\": \"まつぴよ/目が回る\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"なんだかぼ～っとしてたまつ……。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"て、ていうかここどこまつ！？\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"ぼく、委員会で準備をしなきゃだめまつ……！\"},\r\n{\"name\": \"\", \"text\": \"よほど状況が読み込めていないのか、まつぴよはパニックになってバタバタしている。\"},\r\n{\"name\": \"わたし\", \"text\": \"ま、まつぴよ、落ち着いて……！\", \"chara\": \"まつぴよ/考える\"},\r\n{\"name\": \"\", \"text\": \"そう言ってまつぴよを落ち着かせる。とは言ってもわたしだって状況を読み込めていない。わたしも少し深呼吸をして頭をはたらかせる。自分よりもテンパっている姿を見たからか、すこしずつ状況が見えてきた。気づいたことは、ここは草原のような場所であること。そして、現実ではないような、ふわふわとした感覚があること。雰囲気が幻想的というか、何というか。\"},\r\n{\"name\": \"わたし\", \"text\": \"まるで”夢の世界”まつね。\"},\r\n{\"name\": \"\", \"text\": \"そう、”夢の世界”という表現がしっくりくる。何となく、感覚的にそう思えるのだ。理想郷、というものがあるならば、このような場所のことかもしれない。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"とにかく、ぼくも〇〇もなにごともなく無事そうでよかったまつ。\", \"chara\": \"まつぴよ/嬉しい\"},\r\n{\"name\": \"わたし\", \"text\": \"全然、異常はないよ！むしろ元気なくらい！\"},\r\n{\"name\": \"わたし\", \"text\": \"まつぴよ、ここに来る前、何か覚えていることある？\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"うーん、気づいたらここにいたまつ。ず～っとぼ～っとしていたような気もするまつ……。\", \"chara\": \"まつぴよ/考える\"},\r\n{\"name\": \"わたし\", \"text\": \"そっかあ、わたしもここに来るまでの記憶は同じような感じだね。\"},\r\n{\"name\": \"\", \"text\": \"今のところ、”あれ”を見た、というのが起因しているようにしか考えられない……。”あれ”は一体何だったのだろう。目をつむると、瞼の裏にはっきりと映し出される。トゲトゲしていてキラキラしていた……でも、この見た目が本質だとは感じられない。ましてや、その正体についてなんて見当もつかない。もっと昔に見たことがあるようにも感じるが、それと同じものかといえば、微妙に違和感がある。そもそも、その既視感自体とても曖昧だ。考えても、何も進展はなかった。\", \"bg\": \"黒背景\", \"chara\": \"\", \"kiraFx\": \"\"},\r\n{\"name\": \"\", \"text\": \"まつぴよは今何をしているかというと…草原の上でニコニコと日向ぼっこをしている。おそらく、何も考えてはいないだろう。さっきまでジタバタしていたのが嘘みたいだ。\", \"bg\": \"夢世界表\", \"chara\": \"まつぴよ/嬉しい\"},\r\n{\"name\": \"わたし\", \"text\": \"まつぴよ、何か”あれ”に覚えはない？\"},\r\n{\"name\": \"\", \"text\": \"あまり期待はできないが、見渡す限りここにはわたしとまつぴよしかいない。なんでもいいから現状を把握できる情報が欲しい。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"”あれ”？\", \"chara\": \"まつぴよ/疑問\"},\r\n{\"name\": \"わたし\", \"text\": \"そう、わたしたちがここに来る前に見たもの。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"ああ、“あれ”なら、思い当たる節があるまつ。\", \"chara\": \"まつぴよ/嬉しい\"},\r\n{\"name\": \"わたし\", \"text\": \"え？\"},\r\n{\"name\": \"\", \"text\": \"どうやら、まつぴよが何か知っているようだ。\"},\r\n{\"name\": \"わたし\", \"text\": \"なにか……知ってるの？\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"おとぎ話のようなものまつ！\", \"chara\": \"まつぴよ/目を輝かせる\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"あの、“キラキラしたもの”はぼくたちが疲れたときや、現実から目を背けたくなったときにあらわれるまつ。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"そして、“それ”を見た人は”ユートピア”に行ってしまうまつ！\"},\r\n{\"name\": \"\", \"text\": \"ユートピア。理想郷。ここはわたしの直観通り、そういう場所なのだと、まつぴよは語る。にわかには信じ難いが、実際にこんな場所に来てしまっているのだ。この話以外に信じられるものがない。\", \"chara\": \"\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"つまり、ここはユートピアということまつ！\", \"chara\": \"まつぴよ/嬉しい\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"課題提出という現実から解放されたまつ！！\"},\r\n{\"name\": \"\", \"text\": \"まつぴよは嬉しそうにはしゃいでいる。ここはユートピアで、厳しい現実は存在しない、ということを信じ切っている様子だ。どこの課程の課題か知らないが、大変なんだな……。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"ちなみに、“それ”が見えるのは子どもだけで、大人になるにつれて見えなくなって、記憶もあいまいになっていくまつ。\"},\r\n{\"name\": \"\", \"text\": \"見覚えを感じたのは、そういうことだったのか。子どもだけが見える世界……子どもには霊感があるとか、神の力が宿っているとか、日本は昔からやたらとそういう話が多いけれど、これもその一種なのだろうか。\"},\r\n{\"name\": \"わたし\", \"text\": \"なんでまつぴよはそんなに詳しいの？わたし初耳なんだけど。\", \"chara\": \"まつぴよ/疑問\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"あんまり覚えてないまつ……多分、いろんな論文を探しているときにたまたま見かけた情報まつ。実際、“それ”の本名は知らないまつ。\", \"chara\": \"まつぴよ/嬉しい\"},\r\n{\"name\": \"\", \"text\": \"そういえば、まつぴよは論文を読んで分かった気になるのが趣味なんだっけ。\"},\r\n{\"name\": \"わたし\", \"text\": \"つまり、わたし達はたまたまその、“キラキラ”を見つけて、ここに来た。そういうこと？\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"そういうことまつ！\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"とにかく、危険な場所ではないはずまつ。\"},\r\n{\"name\": \"\", \"text\": \"……なるほど。少なくとも、怪談や都市伝説の類いではないようだ。\"},\r\n{\"name\": \"？？？\", \"text\": \"そのとおりだよ。\", \"scene\": true, \"kira\": \"ちきゅ～くん/通常\"},\r\n{\"name\": \"\", \"text\": \"気づけば、さっき見た”あれ”がわたし達のそばにいた。\", \"chara\": \"まつぴよ/びっくり\"},\r\n{\"name\": \"？？？\", \"text\": \"みんなのいうとおり。\"},\r\n{\"name\": \"？？？\", \"text\": \"ここは ゆ～とぴあ。\"},\r\n{\"name\": \"？？？\", \"text\": \"げんじつから にげたくなったんでしょ？\"},\r\n{\"name\": \"\", \"text\": \"そう、まつぴよが“キラキラ”と呼んだものは話しかけてきた。今は、この世界に引き込まれた時とは違って特別な感覚は抱かなかった。この世界では自然な存在ということだろうか。\", \"chara\": \"まつぴよ/嬉しい\", \"kira\": \"ちきゅ～くん/笑顔\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"うれしいまつ！\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"ユートピアだから、課題も期限もないまつね？？\"},\r\n{\"name\": \"？？？\", \"text\": \"うん ないよ。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"１限も？？\"},\r\n{\"name\": \"？？？\", \"text\": \"もちろん ないよ。\"},\r\n{\"name\": \"わたし\", \"text\": \"いい 怠惰 だね。\"},\r\n{\"name\": \"\", \"text\": \"？今、“あれ”の雰囲気に違和感が……気のせいかな。まつぴよはすごく嬉しそうに、草原の中を舞っている。\"},\r\n{\"name\": \"？？？\", \"text\": \"ここは みんなの ねがい からうまれたせかい だよ。\"},\r\n{\"name\": \"？？？\", \"text\": \"だから どんなねがいも かなえられる。\"},\r\n{\"name\": \"わたし\", \"text\": \"え\"},\r\n{\"name\": \"\", \"text\": \"この世界は皆の願いから生まれて？どんな願いも叶えられる？あまり理解が追いつかない。そもそも、わたしとまつぴよはついさっきまで現実の、食堂で、普通に食事をしていただけである。それなのに突然この世界にやってきて、願いが叶えられる？信じられるはずがない。何の努力も、試練もなく、ただ道で目が合っただけで願いが叶う機会を得た。信じられるはずがない。信じられるはずがないが、もし本当なら、どれだけ幸せなことだろう。\"},\r\n{\"name\": \"わたし\", \"text\": \"その話、本当なの？\", \"kira\": \"ちきゅ～くん/通常\"},\r\n{\"name\": \"？？？\", \"text\": \"ほんとう だよ。\"},\r\n{\"name\": \"わたし\", \"text\": \"世界征服とか、一生遊んで暮らせるくらいのお金とか、そんなトンデモないことでもいいの？\"},\r\n{\"name\": \"？？？\", \"text\": \"もちろん かなえてあげるよ。\"},\r\n{\"name\": \"\", \"text\": \"そんなおいしい話があるはずがない。あるはずがないと分かっていても、千載一遇であろうこの機会を手放そうとは思えない。\", \"kira\": \"ちきゅ～くん/笑顔\"},\r\n{\"name\": \"？？？\", \"text\": \"さあ ねがいを おしえて。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"はい！ぼくの願いをきいてほしいまつ！\", \"chara\": \"まつぴよ/目を輝かせる\"},\r\n{\"name\": \"\", \"text\": \"まつぴよが嬉しそうに手を挙げ、目を輝かせている。わたしも、なにを願おうか一応思案してみる。突然こんな状況になって、いいものが思いつかない。\"},\r\n{\"name\": \"？？？\", \"text\": \"いいわすれていたけれど ねがいをかなえられる のは ひとりだけだよ。\", \"kira\": \"ちきゅ～くん/通常\"},\r\n{\"name\": \"わたし\", \"text\": \"え\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"え\"},\r\n{\"name\": \"\", \"text\": \"叶えられるのはどちらか一人だけ。そう知らされた途端、私のなかで叶えたい願いが頭に思い浮かんだ。これは、過去のわたしを救う意味でもある。長年のコンプレックス。どれほど克服できればいいかと悩んだかわからない。わたしはどうしてもこの願いを叶えたい。まつぴよの方を見ると、まつぴよも同じようなことを考えているようだ。\", \"chara\": \"まつぴよ/びっくり\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"どっちか一人なんて、ひどいまつ……。\", \"chara\": \"まつぴよ/苦しい\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"○○、ぼく、どうしても叶えたい願いがあるんだ……。\"},\r\n{\"name\": \"？？？\", \"text\": \"さあ はやく\"},\r\n{\"name\": \"？？？\", \"text\": \"おしえて\"},\r\n{\"name\": \"？？？\", \"text\": \"だれの ねがいを かなえるの？\"},\r\n{\"name\": \"\", \"text\": \"急かされる。早く決めなければならない。わたしの願いを叶えるか、まつぴよの願いを叶えるか。わたしは―――\", \"q\": \"最後の選択\", \"choices\": [{\"text\": \"まつぴよの願いを叶える\", \"next\": 226}, {\"text\": \"わたしの願いを叶える\", \"next\": 244, \"requires\": {\"aff_min\": 1}}, {\"text\": \"あなた、何者？\", \"next\": 301, \"requires\": {\"aff_min\": 1, \"flag\": \"sawPast\"}}]},\r\n{\"name\": \"まつぴよ\", \"text\": \"どうしてもぼくの願いを叶えてほしいまつ！\", \"scene\": true, \"chara\": \"まつぴよ/嬉しい\"},\r\n{\"name\": \"\", \"text\": \"まつぴよはわたしが口を開く前に、一歩前に出て“それ”に向かってそう言った。まつぴよからの信頼が足りなかったのだろう。わたしの願いは、この瞬間に潰えてしまった。\"},\r\n{\"name\": \"？？？\", \"text\": \"きみの ねがいを かなえるんだね。\", \"kira\": \"ちきゅ～くん/笑顔\"},\r\n{\"name\": \"？？？\", \"text\": \"ねがいは なに？\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"ここに、ずっといたいまつ！\"},\r\n{\"name\": \"わたし\", \"text\": \"え？\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"ここは、課題も厳しい現実も何もないまつ。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"将来の不安も、やらなくちゃいけないことも何もないまつ。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"なら、一生ここで遊んで暮らした方が幸せまつ！\"},\r\n{\"name\": \"\", \"text\": \"言われて、わたしは、その通りなんじゃないかと、頭の端で一瞬、肯定してしまった。\"},\r\n{\"name\": \"？？？\", \"text\": \"いいねがい だね。\"},\r\n{\"name\": \"？？？\", \"text\": \"もちろん ここでは ずっとあそんでくらせるよ。\"},\r\n{\"name\": \"？？？\", \"text\": \"ほしいものは なんでも すぐにだせる。\"},\r\n{\"name\": \"？？？\", \"text\": \"たべものも あそべるものも なんでもきみのおもいどおり。\"},\r\n{\"name\": \"？？？\", \"text\": \"ね？ しあわせでしょ？\"},\r\n{\"name\": \"\", \"text\": \"それから、わたしとまつぴよはこの世界から出ることは無かった。ここでは食べ物も、ゲームも、漫画も、何でも思い通りに出すことができる。頭に思い浮かべればお城のような家にも住める。庭には遊園地まである。間違いなくわたし達は幸せだ。\", \"chara\": \"\", \"kira\": \"\", \"cg\": \"絵/BADEND\"},\r\n{\"name\": \"\", \"text\": \"わたしとまつぴよは、ここで一生遊んで暮らす。将来のことも、やるべきタスクも、責任も考える必要は無い。今日もたくさん寝て、まつぴよと遊ぶ。\"},\r\n{\"name\": \"\", \"text\": \"でもときどき、疑問に思う時がある。このままでいいのだろうか……？わたしは選択を、間違えたのではないか……？\\n\\nBAD END「まだ夢の途中」\", \"end\": true},\r\n{\"name\": \"まつぴよ\", \"text\": \"○○、きみの願いを叶えるまつ。\", \"scene\": true, \"chara\": \"まつぴよ/嬉しい\", \"kira\": \"ちきゅ～くん/通常\", \"cg\": \"\"},\r\n{\"name\": \"わたし\", \"text\": \"え？いいの？\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"○○はぼくに色々優しくしてくれたまつ。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"ここは○○に譲るまつ。\"},\r\n{\"name\": \"わたし\", \"text\": \"あ、ありがとう。\"},\r\n{\"name\": \"\", \"text\": \"どうやら、まつぴよから信頼されているらしい。まつぴよはわたしに願いを叶える機会を譲ってくれた。“それ”はというと、少し退屈そうな表情に見えるのは、きっと気のせいだろう。わたしの願い、それは……。\"},\r\n{\"name\": \"わたし\", \"text\": \"わたし、泳げるようになりたい。\"},\r\n{\"name\": \"\", \"text\": \"わたしは昔から泳げない。過去のトラウマによる弊害。忌々しい過去が今のわたしを未だ束縛している。その事実がとてつもなく嫌だった。だから、泳げるようになりたい。泳げるようになって、過去を克服したい。\"},\r\n{\"name\": \"？？？\", \"text\": \"わかった じゃあそのねがいを かなえるね。\", \"kira\": \"ちきゅ～くん/笑顔\"},\r\n{\"name\": \"\", \"text\": \"そう言った“それ”の笑顔は、わたしにはとても不気味に思えた。その瞬間、わたしは突然の浮遊感に襲われた。\", \"scene\": true},\r\n{\"name\": \"\", \"text\": \"地面はもう無い。さっきまでいた、あの草原はわたしの視界から消えた。視界は暗く、肌に冷たいものがまとわりついている。まるで、あのときの水中のような。突然の状況の変化にやっと追いついた頭で理解したことは、ここが水中だということだった。上を見上げると、水面のような場所から僅かな光が見える。\", \"bg\": \"黒背景\", \"chara\": \"\", \"kira\": \"\", \"cg\": \"絵/水中\", \"bgm\": \"水中\"},\r\n{\"name\": \"\", \"text\": \"泳げないわたしにできることは藻掻くことだけだったが、体が動かず沈んでいくのみだった。いくら藻掻いても、見上げる水面は遠ざかっていくばかり。\\nこわいこわいこわいこわいこわい。\\nたすけてたすけてたすけてたすけて。\"},\r\n{\"name\": \"\", \"text\": \"なんでこんな状況なのか、意味が分からない。わたしは「泳げるようになりたい」と願ったはずだ。なのになぜこんなことになっているのか。\"},\r\n{\"name\": \"？？？\", \"text\": \"おしえて あげようか？\", \"bgm\": \"\"},\r\n{\"name\": \"\", \"text\": \"何も見えないが、声だけが聞こえてくる。さっきまで目の前にいた“それ”の声だ。\"},\r\n{\"name\": \"？？？\", \"text\": \"きみはね、だまされたんだよ。\"},\r\n{\"name\": \"\", \"text\": \"さっきまでと話し方が少し違う。\"},\r\n{\"name\": \"？？？\", \"text\": \"君の友達が言っていたおとぎ話なんかじゃないんだよ僕は。\"},\r\n{\"name\": \"？？？\", \"text\": \"都合よく僕と似ているものがあったからね、皮を被らせていただいたよ。\"},\r\n{\"name\": \"？？？\", \"text\": \"まあ、それと僕とは全く違う存在なんだけどね。正反対ともいえる。でも在り方が似てたんだ。\"},\r\n{\"name\": \"？？？\", \"text\": \"僕に名前はないよ。僕は人類皆の、負の感情そのものだよ。\"},\r\n{\"name\": \"？？？\", \"text\": \"妬み、恨み、憎しみ、怠惰、欲望、誰かを陥れたい、傷つけたい。そういう負の感情が集まった、集合的無意識。\"},\r\n{\"name\": \"\", \"text\": \"負の感情の集合的無意識。”それ”は自分自身をそう称した。難しい言葉は分からないが、とにかくそういった負の感情が集まって作られたものということだろう。その感情が、“それ”の皮を被って偽物としてわたし達の前に現れた。\"},\r\n{\"name\": \"？？？\", \"text\": \"だからね、僕は君たちの喧嘩、争いから生まれる感情がと～っても大好きなんだ。\"},\r\n{\"name\": \"？？？\", \"text\": \"そういうわけで、この偽物のユートピアを作って誰かを招待し、争わせた。\"},\r\n{\"name\": \"？？？\", \"text\": \"誰か一人しか願いはかなえられない、ってね。\"},\r\n{\"name\": \"？？？\", \"text\": \"もっとも、僕は負の感情から生まれたものだから、みんなが望まない形で叶えちゃうことはあるけどね。\"},\r\n{\"name\": \"\", \"text\": \"何も見えないが、”それ”は今笑っていたように感じる。\"},\r\n{\"name\": \"？？？\", \"text\": \"だから君の願いもこんなふうに叶っちゃった。\"},\r\n{\"name\": \"？？？\", \"text\": \"泳げるようになりたいんでしょ。\"},\r\n{\"name\": \"？？？\", \"text\": \"だから、泳げるようになるまで溺れ続ける世界をプレゼントしてあげたんだよ。\"},\r\n{\"name\": \"\", \"text\": \"そっか、そういうことだったのか。猿の手、という伝説を思い出す。願ったことを不幸な形でしか叶えない呪いのミイラ。気づけなかった。だから今、こうやって溺れている。真相が分かったからと言って、今更戻って選択をやり直すことはできない。\"},\r\n{\"name\": \"\", \"text\": \"何かにしがみつくように藻掻いた。それでも手は何も掴んではくれない。空気を求めて口を開けると入ってくるのは冷たく濁った水のみ。藻掻けば藻掻くほど苦しくなる状況に、感じていたのは絶望のみだった。\", \"cg\": \"絵/水中手あり\"},\r\n{\"name\": \"\", \"text\": \"とうとう手足に力が入らなくなり、水面の光も網膜に届かなくなってきたとき、僅かな光の中に腕のような影を見た。わたしは必死にその腕につかまり、その腕はわたしを力強く水面へ引っ張り上げた。そして、わたしの視界は白く広がった。\", \"cg\": \"絵/水中まつぴよ腕\"},\r\n{\"name\": \"\", \"text\": \"気が付くと、食堂の前でわたしはまつぴよに抱きかかえられていた。\", \"scene\": true, \"bg\": \"屋外\", \"chara\": \"まつぴよ/しょんぼり\", \"cg\": \"\", \"fx\": \"transition\"},\r\n{\"name\": \"わたし\", \"text\": \"はっ！\"},\r\n{\"name\": \"\", \"text\": \"目の前のまつぴよを見ながら、ここが水中でないことを確認する。\"},\r\n{\"name\": \"わたし\", \"text\": \"まつぴよ……。\"},\r\n{\"name\": \"わたし\", \"text\": \"助けてくれたんだね……。\"},\r\n{\"name\": \"わたし\", \"text\": \"ありがとう……。\"},\r\n{\"name\": \"\", \"text\": \"そう言って、わたしはまつぴよを抱きしめた。\", \"cg\": \"絵/とびきり笑顔\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"○○、無事でよかったまつ！\"},\r\n{\"name\": \"\", \"text\": \"なんでまつぴよがわたしを助けることができたのか、分からないし、聞くことは野暮のように感じた。お互いに必死で、わたしもあまり覚えていない。とにかく、あの世界から抜け出すことができた。これも、まつぴよのおかげだ。\"},\r\n{\"name\": \"\", \"text\": \"よく思い返してみると、私があの選択をしてしまったのは、少し冷静でなかったように思う。きっと、心のどこかにトラウマになった原因に対して、復讐心や負の感情が残っていたんだと思う。\"},\r\n{\"name\": \"わたし\", \"text\": \"まつぴよ、これからどうする？\", \"chara\": \"まつぴよ/疑問\", \"cg\": \"\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"これからは松ヶ崎祭の準備まつ！\", \"chara\": \"まつぴよ/嬉しい\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"偽物だったけど、ユートピアみたいな松ヶ崎祭にするように頑張るまつ！\"},\r\n{\"name\": \"\", \"text\": \"そっか、あんなことがあったけど、ここではそんなに時間が経っていないんだ。まだ時間は夕方の放課後だった。\"},\r\n{\"name\": \"わたし\", \"text\": \"そっか。\"},\r\n{\"name\": \"\", \"text\": \"体を離して、まつぴよと向き合う。\"},\r\n{\"name\": \"わたし\", \"text\": \"今日はありがとう。\"},\r\n{\"name\": \"わたし\", \"text\": \"また、会おうね、まつぴよ。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"当たり前まつ！\", \"jump\": 297},\r\n{\"name\": \"\", \"text\": \"松ヶ崎祭当日。あれからわたしとまつぴよは授業も一緒に受け、食堂で一緒にご飯を食べるような仲になっていた。まつぴよは今日のために準備を頑張ってきたのだから、わたしも参加してまつぴよに会いに行きたかった。\", \"scene\": true, \"bg\": \"入場門前\", \"chara\": \"\", \"fx\": \"transition\"},\r\n{\"name\": \"\", \"text\": \"会場は来場者でいっぱいだった。様々な装飾が施され、入っていく人たちの笑顔がまぶしく映っている。さっそくわたしも入場門から入ろうとしたとき、\"},\r\n{\"name\": \"\", \"text\": \"”あれ”が目に入った。とっさに身構えてしまったが、すぐにわたしの直感が大丈夫だと伝える。わたしが以前に見た偽物の”それ”とは違う。以前の”あれ”よりももっと意図が薄く、ただそこにいるだけのように思えた。大丈夫、これは本物だ。\", \"bg\": \"黒背景\", \"kira\": \"ちきゅ～くん/通常\"},\r\n{\"name\": \"\", \"text\": \"まつぴよが解説してくれた、おとぎ話のようなあの話の本物だ。あの時のような違和感は感じない。だからわたしは、安心してユートピアへと足を踏み入れた。\\n\\nTRUE END「もう大丈夫」\", \"bg\": \"入場門前\", \"end\": true},\r\n{\"name\": \"わたし\", \"text\": \"あなた、何者？\", \"scene\": true, \"bg\": \"夢世界表\", \"chara\": \"まつぴよ/びっくり\"},\r\n{\"name\": \"\", \"text\": \"”泳げるようになりたい”そう言おうとして、私の口からは別の言葉が出てきた。まつぴよは、私が口にした予想外の言葉に動揺しているようだった。でも、確かに感じるのだ。違和感を。ここはユートピアで、目の前のものは何でも願いを叶えるというけれど、おそらくそれらはすべて嘘だ。\", \"chara\": \"\"},\r\n{\"name\": \"\", \"text\": \"わたしには分かってしまった。あの日のトラウマ。あの人間の醜悪な部分を散々見せられてきたわたしには、分かってしまった。この世界も、目の前のものにも、あの時の醜悪さと同じものを感じる。妬み、恨み、憎しみ、怠惰、欲望、誰かを陥れたい、傷つけたい。そういう負の感情が集まったような。そんな雰囲気を感じ取ってしまった。\"},\r\n{\"name\": \"わたし\", \"text\": \"もう一度聞く、あなた、何者？\"},\r\n{\"name\": \"\", \"text\": \"目の前のものは動じない。\"},\r\n{\"name\": \"？？？\", \"text\": \"よくわかったね。\", \"bg\": \"夢世界裏\", \"kira\": \"偽ちきゅ～くん/通常\"},\r\n{\"name\": \"？？？\", \"text\": \"そうだよ ぼくは君たちが話していた存在なんかじゃない。\"},\r\n{\"name\": \"？？？\", \"text\": \"都合よく僕と似ているものがあったからね、皮を被らせていただいたよ。\"},\r\n{\"name\": \"？？？\", \"text\": \"まあ、それと僕とは全く違う存在なんだけどね。正反対ともいえる。でも在り方が似てたんだ。\"},\r\n{\"name\": \"？？？\", \"text\": \"僕に名前はないよ。僕は人類皆の、負の感情そのものだよ。\"},\r\n{\"name\": \"？？？\", \"text\": \"妬み、恨み、憎しみ、怠惰、欲望、誰かを陥れたい、傷つけたい。そういう負の感情が集まった、集合的無意識。\"},\r\n{\"name\": \"\", \"text\": \"負の感情の集合的無意識。”それ”は自分自身をそう称した。難しい言葉は分からないが、とにかくそういった負の感情が集まって作られたものということだろう。それが、あるおとぎ話の皮を被って偽物としてわたし達の前に現れた。\"},\r\n{\"name\": \"？？？\", \"text\": \"だからね、僕は君たちの喧嘩、争いから生まれる感情がと～っても大好きなんだ。\", \"kira\": \"偽ちきゅ～くん/笑顔\"},\r\n{\"name\": \"？？？\", \"text\": \"そういうわけで、この偽物のユートピアを作って誰かを招待し、争わせた。\"},\r\n{\"name\": \"？？？\", \"text\": \"誰か一人しか願いはかなえられない、ってね。\"},\r\n{\"name\": \"？？？\", \"text\": \"もっとも、僕は負の感情から生まれたものだから、みんなが望まない形で叶えちゃうことはあるけどね。\"},\r\n{\"name\": \"\", \"text\": \"何の表情の変化はないが、”それ”は今笑っていたように感じる。猿の手、という伝説を思い出す。願ったことを不幸な形でしか叶えない呪いのミイラ。もしわたしが願いを口にしてしまっていたら、どうなっていたのだろうか。例えば、泳げるようになるまで溺れ続ける世界に閉じ込められる、とか。\"},\r\n{\"name\": \"？？？\", \"text\": \"でも、君の願いは知っているよ。\"},\r\n{\"name\": \"？？？\", \"text\": \"泳げるようになりたいんでしょ？\"},\r\n{\"name\": \"\", \"text\": \"その瞬間、わたしは突然の浮遊感に襲われた。地面はもう無い。さっきまでいた、あの草原はわたしの視界から消えた。視界は暗く、肌に冷たいものがまとわりついている。まるで、あのときの水中のような。突然の状況の変化にやっと追いついた頭で理したことは、ここが水中だということだった。\", \"scene\": true, \"bg\": \"黒背景\", \"kira\": \"\", \"cg\": \"絵/水中\", \"bgm\": \"水中\"},\r\n{\"name\": \"\", \"text\": \"上を見上げると、水面のような場所から僅かな光が見える。泳げないわたしにできることは藻掻くことだけだったが、体が動かず沈んでいくのみだった。いくら藻掻いても、見上げる水面は遠ざかっていくばかり。あの時の恐怖が襲ってくる。あの時の祈りが蘇ってくる。\", \"cg\": \"絵/水中手あり\"},\r\n{\"name\": \"\", \"text\": \"とうとう手足に力が入らなくなり、水面の光も網膜に届かなくなってきたとき、僅かな光の中に腕のような影を見た。この影を、覚えている。わたしは必死にその腕につかまり、その腕はわたしを力強く水面へ引っ張り上げた。そして、わたしの視界は白く広がった。\", \"cg\": \"絵/灰色水中\"},\r\n{\"name\": \"わたし\", \"text\": \"はっ！\", \"bg\": \"屋外\", \"chara\": \"まつぴよ/しょんぼり\", \"cg\": \"\", \"bgm\": \"\", \"fx\": \"transition\"},\r\n{\"name\": \"\", \"text\": \"目の前のまつぴよを見ながら、ここが水中でないことを確認する。\"},\r\n{\"name\": \"わたし\", \"text\": \"まつぴよ……。\"},\r\n{\"name\": \"わたし\", \"text\": \"助けてくれたんだね……。\"},\r\n{\"name\": \"わたし\", \"text\": \"ありがとう……。\"},\r\n{\"name\": \"\", \"text\": \"そう言って、わたしはまつぴよを抱きしめた。\", \"cg\": \"絵/とびきり笑顔\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"○○、無事でよかったまつ！\"},\r\n{\"name\": \"\", \"text\": \"なんでまつぴよがわたしを助けることができたのか、分からないし、聞くことは野暮のように感じた。お互いに必死で、わたしもあまり覚えていない。とにかく、あの世界から抜け出すことができた。これも、まつぴよのおかげだ。これで、助けられたのは二回目だ。\"},\r\n{\"name\": \"わたし\", \"text\": \"あの時、助けてくれたのはまつぴよだったのね。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"？なにか言ったまつ？聞こえなかったまつ。\"},\r\n{\"name\": \"わたし\", \"text\": \"ううん、何にもない。\"},\r\n{\"name\": \"\", \"text\": \"まつぴよはあの時、湖に落とされたときに助けてくれた。なにより、この特徴的な腕（羽？）を間違えるはずがない。そして、過去の話を聞いて今のわたしを見てくれた。わたしは何度、このまつぴよに救われるのだろう。\", \"cg\": \"\"},\r\n{\"name\": \"わたし\", \"text\": \"まつぴよ……。\"},\r\n{\"name\": \"\", \"text\": \"体を離して、まつぴよと向かい合う。\"},\r\n{\"name\": \"わたし\", \"text\": \"わたし、まつぴよが好き。\", \"cg\": \"絵/告白\"},\r\n{\"name\": \"わたし\", \"text\": \"わたしってば、まつぴよに助けられてばっかりみたい。\"},\r\n{\"name\": \"\", \"text\": \"これからは、わたしがまつぴよを助けよう。一緒にいたい、そう心から思えた言葉だった。\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"ぼくも優しい○○が好きまつ。\"},\r\n{\"name\": \"\", \"text\": \"そう言ってくれた。これからはまつぴよと一緒だ。わたしが、まつぴよを支えるのだ。\", \"jump\": 342},\r\n{\"name\": \"\", \"text\": \"松ヶ崎祭当日。まつぴよは入場門の前でわたしを待ってくれていた。\", \"scene\": true, \"bg\": \"入場門前\", \"chara\": \"\", \"cg\": \"\", \"fx\": \"transition\"},\r\n{\"name\": \"まつぴよ\", \"text\": \"遅いまつ～！もうすぐ開会式の時間まつ～！\", \"chara\": \"まつぴよ/嬉しい\"},\r\n{\"name\": \"わたし\", \"text\": \"ごめんごめんまつぴよ、いっつも時間通り来ないくせに、今日は早いんだから。\"},\r\n{\"name\": \"\", \"text\": \"まつぴよは今日のために準備を頑張ってきたのだから、それも当然だった。それをねぎらうためにも、わたしも松ヶ崎祭に参加したかった。会場は来場者でいっぱいだった。様々な装飾が施され、入っていく人たちの笑顔がまぶしく映っている。さっそくわたし達も入場門から入ろうとしたとき、\"},\r\n{\"name\": \"\", \"text\": \"”あれ”が目に入った。とっさに身構えてしまったが、すぐにわたしの直感が大丈夫だと伝える。わたしが以前に見た偽物の”それ”とは違う。以前の”あれ”と比べて醜悪な部分がない、ただそこにいるだけのように思えた。大丈夫、これは本物だ。\", \"bg\": \"黒背景\", \"chara\": \"\", \"kira\": \"ちきゅ～くん/通常\"},\r\n{\"name\": \"\", \"text\": \"まつぴよが解説してくれた、おとぎ話のようなあの話の本物だ。あの時のような悪意は感じない。なにより、隣にはまつぴよがいる。隣にまつぴよがいる限り、わたし達は大丈夫だ。だからわたし達は、安心してユートピアへと足を踏み入れた。\\n\\nHAPPY END「ふたりの夢」\", \"bg\": \"入場門前\", \"end\": true}\r\n];\r\n\r\n/* ===== 要素参照 ===== */\r\nconst el = {\r\n  speaker:  document.getElementById('speaker-name'),\r\n  message:  document.getElementById('message'),\r\n  next:     document.getElementById('nextBtn'),\r\n  back:     document.getElementById('backBtn'),\r\n  choices:  document.getElementById('choices'),\r\n  status:   document.getElementById('status'),\r\n  btnAuto:  document.getElementById('btn-auto'),\r\n  btnSkip:  document.getElementById('btn-skip'),\r\n  btnFf:    document.getElementById('btn-ff'),\r\n  btnSave:  document.getElementById('btn-save'),\r\n  btnLog:   document.getElementById('btn-log'),\r\n  titleOv:  document.getElementById('title-overlay'),\r\n  nameOv:   document.getElementById('name-overlay'),\r\n  tutorialOv: document.getElementById('tutorial-overlay'),\r\n  titleLogo:document.getElementById('title-logo'),\r\n  menu:     document.getElementById('menu'),\r\n  menuToggle:document.getElementById('menu-toggle'),\r\n  saveOv:   document.getElementById('save-overlay'),\r\n  logOv:    document.getElementById('log-overlay'),\r\n  nameInput:document.getElementById('name-input'),\r\n  slotList: document.getElementById('slot-list'),\r\n  logList:  document.getElementById('log-list'),\r\n  measurer: document.getElementById('measurer'),\r\n  moreMark: document.getElementById('more-mark'),\r\n  bgLayer:  document.getElementById('bg-layer'),\r\n  character:document.getElementById('character'),\r\n  charaPh:  document.getElementById('chara-placeholder'),\r\n  cgLayer:  document.getElementById('cg-layer')\r\n};\r\nel.kira       = document.getElementById('kira');\r\nel.kiraPh     = document.getElementById('kira-placeholder');\r\nel.transition = document.getElementById('transition');\r\nel.resultOv   = document.getElementById('result-overlay');\r\nel.resultList = document.getElementById('result-list');\r\nel.resultEnd  = document.getElementById('result-end');\r\nel.resultAff  = document.getElementById('result-aff');\r\nel.kiraPhEmoji = el.kiraPh.querySelector('.emoji');\r\nel.kiraPhKey   = el.kiraPh.querySelector('.key');\r\nel.charaPhEmoji = el.charaPh.querySelector('.emoji');\r\nel.charaPhKey   = el.charaPh.querySelector('.key');\r\nel.cgImg        = el.cgLayer.querySelector('img');\r\nel.cgPh         = el.cgLayer.querySelector('.cg-placeholder');\r\n\r\n/* =========================================================\r\n   背景・立ち絵の切り替え\r\n   台詞に bg / chara が書かれていればそこで差し替え、\r\n   書かれていなければ直前の絵を保ちます。\r\n   ========================================================= */\r\n/* =========================================================\r\n   長い台詞の自動ページ分割\r\n   ウィンドウに収まらない台詞を「。」「、」などの\r\n   区切りのいいところで切って、次のページに送ります。\r\n   ========================================================= */\r\nlet   MAX_LINES   = 4;                       // 1ページに表示する最大行数（画面の高さで変わります）\r\nconst BREAK_HARD  = '。！？!?」』〟）)】…';   // 優先して区切る文字\r\nconst BREAK_SOFT  = '、，・：；';              // 次点で区切る文字\r\nconst NO_START    = '。、，・：；』〟）)】…';   // ページの先頭に来てはいけない文字\r\n\r\nlet maxTextHeight = 0;\r\nlet pageCache = {};        // index -> [ページ文字列]\r\n\r\n/* スマホを横にすると高さが足りないので、表示行数を減らす */\r\nfunction isPortraitPhone(){\r\n  return window.matchMedia('(pointer: coarse) and (orientation: portrait)').matches;\r\n}\r\n\r\nfunction setupMeasurer(){\r\n  // 画面の高さに合わせて1ページの行数を決める\r\n  MAX_LINES = window.innerHeight < 460 ? 2 : 2;   // 2行ずつ表示\r\n  const cs = getComputedStyle(el.message);\r\n  const padX = parseFloat(cs.paddingLeft) + parseFloat(cs.paddingRight);\r\n  const padY = parseFloat(cs.paddingTop) + parseFloat(cs.paddingBottom);\r\n  const inner = el.message.clientWidth - padX;\r\n\r\n  el.measurer.style.width      = inner + 'px';\r\n  el.measurer.style.font       = cs.font;\r\n  el.measurer.style.fontSize   = cs.fontSize;\r\n  el.measurer.style.fontFamily = cs.fontFamily;\r\n  el.measurer.style.lineHeight = cs.lineHeight;\r\n  el.measurer.style.letterSpacing = cs.letterSpacing;\r\n\r\n  const lineHeight = parseFloat(cs.lineHeight) || (parseFloat(cs.fontSize) * 1.75);\r\n  maxTextHeight = lineHeight * MAX_LINES;\r\n\r\n  // ページが変わっても箱の高さが動かないよう固定する\r\n  el.message.style.height = (maxTextHeight + padY) + 'px';\r\n}\r\n\r\nfunction fits(text){\r\n  el.measurer.textContent = text;\r\n  return el.measurer.scrollHeight <= maxTextHeight + 1;\r\n}\r\n\r\nfunction swallow(text,n){\r\n  while(n < text.length && NO_START.indexOf(text[n]) >= 0) n++;\r\n  return n;\r\n}\r\n\r\n/* 収まる長さ best のうち、いちばん後ろの区切りを探す */\r\nfunction findBreak(text, best){\r\n  const floor = Math.max(1, Math.floor(best * 0.4));  // 短く切りすぎない下限\r\n\r\n  for(let i = best - 1; i >= floor; i--){\r\n    if(text[i] === '\\n') return i + 1;\r\n  }\r\n  for(let i = best - 1; i >= floor; i--){\r\n    if(BREAK_HARD.indexOf(text[i]) >= 0){\r\n      let j = i;\r\n      while(j + 1 < best && BREAK_HARD.indexOf(text[j + 1]) >= 0) j++;\r\n      return j + 1;\r\n    }\r\n  }\r\n  for(let i = best - 1; i >= floor; i--){\r\n    if(BREAK_SOFT.indexOf(text[i]) >= 0) return i + 1;\r\n  }\r\n  return best;   // 区切りが無ければそのまま切る\r\n}\r\n\r\nfunction paginate(text){\r\n  if(!maxTextHeight) setupMeasurer();\r\n  if(fits(text)) return [text];\r\n\r\n  const pages = [];\r\n  let rest = text;\r\n\r\n  while(rest.length){\r\n    if(fits(rest)){ pages.push(rest); break; }\r\n\r\n    // 句読点まで含めて収まる最大の長さを二分探索\r\n    let lo = 1, hi = rest.length, best = 1;\r\n    while(lo <= hi){\r\n      const mid = (lo + hi) >> 1;\r\n      if(fits(rest.slice(0, swallow(rest, mid)))){ best = mid; lo = mid + 1; }\r\n      else { hi = mid - 1; }\r\n    }\r\n    best = swallow(rest, best);\r\n\r\n    let cut = findBreak(rest, best);\r\n    // 区切った直後が「。」「…」などなら、収まる限り前のページに連れていく。\r\n    // ただし改行で区切ったときは、改行の向こう側まで連れてきません。\r\n    if(rest[cut - 1] !== '\\n'){\r\n      const grown = swallow(rest, cut);\r\n      if(grown > cut && fits(rest.slice(0, grown))) cut = grown;\r\n    }\r\n    pages.push(rest.slice(0, cut).replace(/\\s+$/, ''));\r\n    rest = rest.slice(cut).replace(/^[\\s\\n]+/, '');\r\n  }\r\n  return pages.length ? pages : [text];\r\n}\r\n\r\nfunction getPages(index){\r\n  if(pageCache[index]) return pageCache[index];\r\n  const d = dialogues[index];\r\n  const pages = d ? paginate(applyName(d.text)) : [''];\r\n  pageCache[index] = pages;\r\n  return pages;\r\n}\r\n\r\nlet curBgKey = null, curCharaKey = null, curCharaFx = null;\r\nlet curKiraKey = null, curKiraPos = null, curKiraFx = null, curKiraAlpha = null;\r\nlet curCgKey = null;\r\n\r\nfunction applyBg(key){\r\n  if(key === curBgKey) return;\r\n  curBgKey = key;\r\n  const a = BG_ASSETS[key];\r\n  if(!a){ el.bgLayer.style.background = '#e8aecb'; return; }\r\n  el.bgLayer.style.background = a.url\r\n    ? 'center / cover no-repeat url(\"' + a.url + '\")'\r\n    : a.color;\r\n}\r\n\r\n/* 画像があれば img、無ければ絵文字の仮立ち絵を出す共通処理 */\r\nfunction showSprite(imgEl, phEl, phEmoji, phKey, assets, key, fallbackEmoji){\r\n  if(!key){\r\n    imgEl.classList.add('hidden');\r\n    phEl.classList.remove('show');\r\n    return;\r\n  }\r\n  const a = assets[key] || {};\r\n  if(a.url){\r\n    imgEl.src = a.url;\r\n    imgEl.alt = key;\r\n    imgEl.classList.remove('hidden');\r\n    phEl.classList.remove('show');\r\n  } else {\r\n    imgEl.classList.add('hidden');\r\n    phEmoji.textContent = a.emoji || fallbackEmoji;\r\n    phKey.textContent = key;\r\n    phEl.classList.add('show');\r\n  }\r\n}\r\n\r\nfunction applyChara(key, fx){\r\n  if(key !== curCharaKey){\r\n    curCharaKey = key;\r\n    showSprite(el.character, el.charaPh, el.charaPhEmoji, el.charaPhKey,\r\n               CHARA_ASSETS, key, '🐣');\r\n  }\r\n  if(fx !== curCharaFx){\r\n    curCharaFx = fx;\r\n    ['silhouette', 'closeup'].forEach(c => {\r\n      el.character.classList.toggle(c, fx === c);\r\n      el.charaPh.classList.toggle(c, fx === c);\r\n    });\r\n  }\r\n}\r\n\r\nfunction applyKira(key, pos, fx, alpha){\r\n  if(key !== curKiraKey){\r\n    curKiraKey = key;\r\n    showSprite(el.kira, el.kiraPh, el.kiraPhEmoji, el.kiraPhKey,\r\n               KIRA_ASSETS, key, '🌟');\r\n  }\r\n  if(pos !== curKiraPos || fx !== curKiraFx){\r\n    curKiraPos = pos; curKiraFx = fx;\r\n    el.kira.classList.toggle('edge', pos === 'edge');\r\n    el.kiraPh.classList.toggle('edge', pos === 'edge');\r\n    el.kira.classList.toggle('zoom', fx === 'zoom');\r\n    el.kiraPh.classList.toggle('zoom', fx === 'zoom');\r\n  }\r\n  const a = key ? alpha : 0;\r\n  if(a !== curKiraAlpha){\r\n    curKiraAlpha = a;\r\n    el.kira.style.opacity = a;\r\n    el.kiraPh.style.opacity = a;\r\n  }\r\n}\r\n\r\nfunction applyCg(key){\r\n  if(key === curCgKey) return;\r\n  curCgKey = key;\r\n  if(!key){ el.cgLayer.classList.remove('show'); return; }\r\n  const a = CG_ASSETS[key] || {};\r\n  if(a.url){\r\n    el.cgImg.src = a.url;\r\n    el.cgImg.style.display = '';\r\n    el.cgPh.style.display = 'none';\r\n  } else {\r\n    el.cgImg.style.display = 'none';\r\n    el.cgPh.style.display = '';\r\n    el.cgPh.textContent = (a.emoji || '🖼') + '  ' + key;\r\n  }\r\n  el.cgLayer.classList.add('show');\r\n}\r\n\r\n/* 効果音（その場で1回だけ鳴らす） */\r\nfunction playSe(key){\r\n  const a = key ? SE_ASSETS[key] : null;\r\n  if(!a || !a.url || !bgmUnlocked || bgmMuted) return;\r\n  const se = new Audio(a.url);\r\n  se.volume = a.volume != null ? a.volume : 0.7;\r\n  se.play().catch(() => {});\r\n}\r\n\r\n/* 場面転換効果（白くフラッシュ） */\r\n/* 場面転換の演出。数値を変えると「間」の長さが変わります（単位はミリ秒）\r\n     fadeIn  : 真っ白（真っ暗）になるまでの時間\r\n     hold    : 真っ白（真っ暗）のまま止まっている時間  ← ここを伸ばすと間が長くなります\r\n     fadeOut : 元の画面に戻るまでの時間\r\n   文字送りは fadeIn + hold のあと、画面が戻り始めるのと同時に始まります。 */\r\nconst TRANS = { fadeIn: 500, hold: 600, fadeOut: 700 };\r\n\r\nlet transTimer = null;\r\n\r\n/* dark が true なら暗転（黒）、false なら明転（白）。\r\n   戻り値は「画面が覆われている時間」で、文字送りを待たせるのに使います。 */\r\nfunction playTransition(dark){\r\n  if(skipMode) return 0;\r\n  if(transTimer){ clearTimeout(transTimer); transTimer = null; }\r\n\r\n  el.transition.classList.toggle('dark', !!dark);\r\n  el.transition.style.transitionDuration = TRANS.fadeIn + 'ms';\r\n  el.transition.classList.add('on');\r\n\r\n  transTimer = setTimeout(() => {\r\n    el.transition.style.transitionDuration = TRANS.fadeOut + 'ms';\r\n    el.transition.classList.remove('on');\r\n    transTimer = null;\r\n  }, TRANS.fadeIn + TRANS.hold);\r\n\r\n  return TRANS.fadeIn + TRANS.hold;\r\n}\r\n\r\n/* =========================================================\r\n   BGM\r\n   ・台詞の bgm 指定で自動的に切り替わります（\"\"で停止）\r\n   ・ブラウザの制限で、音は最初のタップ／クリック後から鳴ります\r\n   ・2秒かけてクロスフェードします\r\n   ========================================================= */\r\nconst FADE_MS = 800;\r\nlet curBgmKey = null;\r\nlet bgmA = null, bgmB = null;     // クロスフェード用に2つ使う\r\nlet bgmUnlocked = false;          // ユーザー操作があったか\r\nlet bgmMuted = false;\r\ntry{ bgmMuted = localStorage.getItem('matsupiyo_muted') === '1'; }catch(e){}\r\n\r\nfunction makeAudio(url, volume){\r\n  const a = new Audio(url);\r\n  a.loop = true;\r\n  a.preload = 'auto';\r\n  a.volume = 0;\r\n  a.dataset.target = volume;\r\n  return a;\r\n}\r\n\r\nfunction fadeTo(audio, to, ms, onEnd){\r\n  if(!audio) return;\r\n  if(audio._fade) clearInterval(audio._fade);\r\n  const from = audio.volume;\r\n  const steps = Math.max(1, Math.round(ms / 50));\r\n  let n = 0;\r\n  audio._fade = setInterval(() => {\r\n    n++;\r\n    const v = from + (to - from) * (n / steps);\r\n    audio.volume = Math.min(1, Math.max(0, v));\r\n    if(n >= steps){\r\n      clearInterval(audio._fade);\r\n      audio._fade = null;\r\n      if(onEnd) onEnd();\r\n    }\r\n  }, 50);\r\n}\r\n\r\nfunction playBgm(key){\r\n  if(key === curBgmKey) return;\r\n  curBgmKey = key;\r\n\r\n  const old = bgmA;\r\n  if(old) fadeTo(old, 0, FADE_MS, () => { old.pause(); });\r\n  bgmA = null;\r\n\r\n  const asset = key ? BGM_ASSETS[key] : null;\r\n  if(!asset || !asset.url) return;          // 未設定なら無音のまま進みます\r\n\r\n  const next = makeAudio(asset.url, asset.volume != null ? asset.volume : 0.5);\r\n  bgmA = next;\r\n  if(!bgmUnlocked || bgmMuted) return;      // 解禁前・ミュート中は鳴らさない\r\n\r\n  next.play().then(() => {\r\n    fadeTo(next, parseFloat(next.dataset.target), FADE_MS);\r\n  }).catch(() => { /* 自動再生が拒否された場合は次の操作で鳴ります */ });\r\n}\r\n\r\n/* 最初のユーザー操作で音を解禁する */\r\nfunction unlockBgm(){\r\n  if(bgmUnlocked) return;\r\n  bgmUnlocked = true;\r\n  if(bgmA && !bgmMuted){\r\n    bgmA.play().then(() => {\r\n      fadeTo(bgmA, parseFloat(bgmA.dataset.target), FADE_MS);\r\n    }).catch(() => {});\r\n  }\r\n}\r\n\r\nfunction toggleMute(){\r\n  bgmMuted = !bgmMuted;\r\n  try{ localStorage.setItem('matsupiyo_muted', bgmMuted ? '1' : '0'); }catch(e){}\r\n  const btn = document.getElementById('btn-mute');\r\n  btn.classList.toggle('on', bgmMuted);\r\n  refreshUiState(btn);\r\n\r\n  if(!bgmA) return;\r\n  if(bgmMuted){\r\n    fadeTo(bgmA, 0, 400, () => bgmA && bgmA.pause());\r\n  } else if(bgmUnlocked){\r\n    bgmA.play().then(() => fadeTo(bgmA, parseFloat(bgmA.dataset.target), 600)).catch(() => {});\r\n  }\r\n}\r\n\r\n/* その時点で有効な絵・音を求める（ロードや「戻る」で遡れるように） */\r\nfunction resolveVisual(index){\r\n  const v = { bg: '黒背景', chara: '', charaFx: '', kira: '', kiraPos: 'center',\r\n              kiraFx: '', kiraAlpha: 1, cg: '', bgm: '' };\r\n  for(let i = 0; i <= index && i < dialogues.length; i++){\r\n    const d = dialogues[i];\r\n    for(const k in v){ if(d[k] !== undefined) v[k] = d[k]; }\r\n  }\r\n  return v;\r\n}\r\n\r\nfunction updateVisual(index, isNewLine){\r\n  const d = dialogues[index] || {};\r\n  // fx: \"transition\" ＝ 明転（白）／ fx: \"transition-dark\" ＝ 暗転（黒）\r\n  let cover = 0;\r\n  if(isNewLine && (d.fx === 'transition' || d.fx === 'transition-dark')){\r\n    cover = playTransition(d.fx === 'transition-dark');\r\n  }\r\n\r\n  const v = resolveVisual(index);\r\n  applyBg(v.bg);\r\n  applyChara(v.chara, v.charaFx);\r\n  applyKira(v.kira, v.kiraPos, v.kiraFx, v.kiraAlpha);\r\n  applyCg(v.cg);\r\n  playBgm(v.bgm);\r\n\r\n  if(isNewLine && d.se) playSe(d.se);\r\n  return cover;\r\n}\r\n\r\n/* ===== 速度設定 ===== */\r\nconst SPEED = { normal: 30, fast: 8 };   // 1文字あたり(ms)\r\nconst AUTO_WAIT = { normal: 1600, fast: 700 }; // 読み終えてから次へ進むまで\r\nconst SKIP_INTERVAL = 40;                // スキップ中の1メッセージあたり\r\n\r\n/* ===== ゲーム状態 ===== */\r\nlet currentIndex = 0;\r\nlet pageIndex = 0;             // 長い台詞を分割したときの現在ページ\r\nlet history = [];              // {index, page, aff, flags}\r\nlet logEntries = [];           // {name, text}\r\nlet choiceLog = [];            // {q, text} 最後に振り返りで表示する\r\nlet state = { aff: 0, flags: {} };\r\nlet playerName = 'わたし';\r\n\r\nlet isTyping = false;\r\nlet typingTimer = null;\r\nlet autoTimer = null;\r\nlet skipTimer = null;\r\n\r\nlet autoMode = false;\r\nlet ffMode   = false;\r\nlet skipMode = false;\r\n\r\n/* ===== 名前の差し込み ===== */\r\nfunction applyName(text){\r\n  return text.replace(/〇〇|○○/g, playerName);\r\n}\r\nfunction displayName(name){\r\n  return name === 'わたし' ? playerName : name;\r\n}\r\n\r\n/* ===== タイマー整理 ===== */\r\nfunction clearTypingTimer(){ if(typingTimer){ clearTimeout(typingTimer); typingTimer = null; } }\r\nfunction clearAutoTimer(){ if(autoTimer){ clearTimeout(autoTimer); autoTimer = null; } }\r\nfunction clearSkipTimer(){ if(skipTimer){ clearTimeout(skipTimer); skipTimer = null; } }\r\nfunction clearAllTimers(){ clearTypingTimer(); clearAutoTimer(); clearSkipTimer(); }\r\n\r\n/* ===== 状態表示 ===== */\r\nfunction updateStatus(){\r\n  // 左下の「オート」などの文字は出しません。ボタンの見た目だけで知らせます。\r\n  // （#status は、ボタンを右に寄せるための すきま として残してあります）\r\n  el.btnAuto.classList.toggle('on', autoMode);\r\n  el.btnSkip.classList.toggle('on', skipMode);\r\n  el.btnFf.classList.toggle('on', ffMode);\r\n  refreshUiState(el.btnAuto);\r\n  refreshUiState(el.btnSkip);\r\n  refreshUiState(el.btnFf);\r\n}\r\n\r\n/* ===== 文字送り ===== */\r\n/* delayMs を渡すと、その時間だけ待ってから文字送りを始めます。\r\n   場面転換で画面が覆われている間に本文が進んでしまうのを防ぎます。\r\n   待っている間に「次へ」を押せば、いつでも全文表示できます。 */\r\nfunction typeText(text, delayMs){\r\n  return new Promise(resolve => {\r\n    clearTypingTimer();\r\n    isTyping = true;\r\n    el.message.textContent = '';\r\n\r\n    if(skipMode){                      // スキップ中は一気に表示\r\n      el.message.textContent = text;\r\n      isTyping = false;\r\n      resolve();\r\n      return;\r\n    }\r\n\r\n    const speed = ffMode ? SPEED.fast : SPEED.normal;\r\n    let i = 0;\r\n    const step = (function step(){\r\n      if(i < text.length){\r\n        el.message.textContent += text[i++];\r\n        typingTimer = setTimeout(step, speed);\r\n      } else {\r\n        isTyping = false;\r\n        typingTimer = null;\r\n        resolve();\r\n      }\r\n    });\r\n\r\n    if(delayMs > 0) typingTimer = setTimeout(step, delayMs);\r\n    else step();\r\n  });\r\n}\r\n\r\nfunction finishTyping(){\r\n  if(!isTyping) return;\r\n  clearTypingTimer();\r\n  const cur = dialogues[currentIndex];\r\n  if(cur){\r\n    const pages = getPages(currentIndex);\r\n    el.message.textContent = pages[Math.min(pageIndex, pages.length - 1)];\r\n  }\r\n  isTyping = false;\r\n  afterTyped(cur);\r\n}\r\n\r\nasync function renderScene(){\r\n  clearAutoTimer();\r\n  clearSkipTimer();\r\n  el.choices.style.display = 'none';\r\n  updateStatus();\r\n\r\n  if(currentIndex >= dialogues.length){\r\n    el.speaker.style.display = 'none';\r\n    el.message.textContent = '（おわり）';\r\n    el.message.classList.add('narration');\r\n    setNextLabel('最初から');\r\n    el.next.disabled = false;\r\n    el.back.style.visibility = history.length ? 'visible' : 'hidden';\r\n    stopAllModes();\r\n    return;\r\n  }\r\n\r\n  const cur = dialogues[currentIndex];\r\n  const cover = updateVisual(currentIndex, pageIndex === 0);\r\n  const name = displayName(cur.name || '');\r\n  const pages = getPages(currentIndex);\r\n  if(pageIndex > pages.length - 1) pageIndex = pages.length - 1;\r\n  const pageText = pages[pageIndex];\r\n  const hasMore = pageIndex < pages.length - 1;\r\n\r\n  if(name.trim() !== ''){\r\n    el.speaker.textContent = name;\r\n    el.speaker.style.display = 'inline-block';\r\n    el.message.classList.remove('narration');\r\n  } else {\r\n    el.speaker.style.display = 'none';\r\n    el.message.classList.add('narration');\r\n  }\r\n\r\n  // ログには分割前の台詞をまとめて1件だけ残す\r\n  if(pageIndex === 0){\r\n    logEntries.push({ name: name, text: applyName(cur.text) });\r\n    if(logEntries.length > 300) logEntries.shift();\r\n  }\r\n\r\n  el.back.style.visibility = history.length ? 'visible' : 'hidden';\r\n  setNextLabel((cur.end && !hasMore) ? '最初から' : '次へ');\r\n  el.next.disabled = false;\r\n  el.moreMark.classList.remove('show');\r\n\r\n  await typeText(pageText, cover);\r\n  if(hasMore) el.moreMark.classList.add('show');\r\n  afterTyped(cur);\r\n}\r\n\r\n/* 文字送りが終わったあとの処理 */\r\nfunction afterTyped(cur){\r\n  if(!cur) return;\r\n\r\n  // 分割された途中のページでは、選択肢もエンドもまだ出さない\r\n  const hasMore = pageIndex < getPages(currentIndex).length - 1;\r\n\r\n  if(cur.choices && !hasMore){\r\n    showChoices(cur.choices);\r\n    stopSkipOnly();              // スキップだけ止めます（オートと早送りは選んだあとも続きます）\r\n    return;\r\n  }\r\n\r\n  if(cur.end && !hasMore){\r\n    stopAllModes();\r\n    showResult(applyName(cur.text));\r\n    return;\r\n  }\r\n\r\n  if(skipMode){\r\n    skipTimer = setTimeout(() => { if(skipMode) advance(); }, SKIP_INTERVAL);\r\n    return;\r\n  }\r\n\r\n  if(autoMode){\r\n    const wait = ffMode ? AUTO_WAIT.fast : AUTO_WAIT.normal;\r\n    autoTimer = setTimeout(() => { if(autoMode) advance(); }, wait);\r\n  }\r\n}\r\n\r\n/* =========================================================\r\n   エンディングの振り返り\r\n   どの選択肢を選んだかを一覧で見せます。\r\n   ========================================================= */\r\nfunction showResult(endText){\r\n  el.resultList.innerHTML = '';\r\n  choiceLog.forEach(c => {\r\n    const row = document.createElement('div');\r\n    row.className = 'result-row';\r\n    const q = document.createElement('span');\r\n    q.className = 'result-q';\r\n    q.textContent = c.q;\r\n    const a = document.createElement('span');\r\n    a.className = 'result-a';\r\n    a.textContent = c.text;\r\n    row.appendChild(q);\r\n    row.appendChild(a);\r\n    el.resultList.appendChild(row);\r\n  });\r\n\r\n  // 本文の末尾から「BAD END「まだ夢の途中」」などを取り出す\r\n  const m = (endText || '').match(/(BAD|TRUE|HAPPY) END「[^」]*」/);\r\n  el.resultEnd.textContent = m ? m[0] : 'END';\r\n  el.resultAff.textContent = '好感度 ' + state.aff;\r\n\r\n  el.resultOv.classList.add('show');\r\n}\r\n\r\n/* ===== 進行 ===== */\r\nfunction advance(){\r\n  if(isPortraitPhone()) return;    // 横向きにするまで進めない\r\n  const cur = dialogues[currentIndex];\r\n\r\n  // 台詞が分割されている場合は、まず次のページへ\r\n  if(cur){\r\n    const pages = getPages(currentIndex);\r\n    if(pageIndex < pages.length - 1){\r\n      history.push({ index: currentIndex, page: pageIndex, aff: state.aff, flags: Object.assign({}, state.flags), choices: choiceLog.slice() });\r\n      pageIndex++;\r\n      renderScene();\r\n      return;\r\n    }\r\n  }\r\n\r\n  if(currentIndex >= dialogues.length || (cur && cur.end)){\r\n    restart();\r\n    return;\r\n  }\r\n  if(cur && cur.choices) return;    // 選択肢は選ぶまで進まない\r\n\r\n  history.push({ index: currentIndex, page: pageIndex, aff: state.aff, flags: Object.assign({}, state.flags), choices: choiceLog.slice() });\r\n  currentIndex = (cur && cur.jump !== undefined) ? cur.jump : currentIndex + 1;\r\n  pageIndex = 0;\r\n\r\n  // スキップは「場面転換」で自動停止\r\n  const nxt = dialogues[currentIndex];\r\n  if(skipMode && (!nxt || nxt.scene)){\r\n    skipMode = false;\r\n  }\r\n  renderScene();\r\n}\r\n\r\nfunction handleNext(){\r\n  if(isTyping){ finishTyping(); return; }\r\n  advance();\r\n}\r\n\r\nfunction goBack(){\r\n  if(!history.length) return;\r\n  clearAllTimers();\r\n  stopAllModes();\r\n  isTyping = false;\r\n  const prev = history.pop();\r\n  currentIndex = prev.index;\r\n  pageIndex = prev.page || 0;\r\n  state.aff = prev.aff;\r\n  state.flags = prev.flags;\r\n  choiceLog = prev.choices || [];\r\n  el.resultOv.classList.remove('show');\r\n  renderScene();\r\n}\r\n\r\nfunction restart(){\r\n  clearAllTimers();\r\n  stopAllModes();\r\n  currentIndex = 0;\r\n  pageIndex = 0;\r\n  history = [];\r\n  logEntries = [];\r\n  choiceLog = [];\r\n  state = { aff: 0, flags: {} };\r\n  el.resultOv.classList.remove('show');\r\n  curBgKey = curCharaKey = curCharaFx = curKiraKey = curKiraPos = curKiraFx = curKiraAlpha = curCgKey = curBgmKey = null;\r\n  el.moreMark.classList.remove('show');\r\n  closeMenu();\r\n  el.nameOv.classList.remove('show');\r\n  el.tutorialOv.classList.remove('show');\r\n  el.titleOv.classList.add('show');\r\n  refreshContinueBtn();\r\n}\r\n\r\n/* ===== 選択肢 ===== */\r\nfunction choiceAvailable(choice){\r\n  if(!choice.requires) return true;\r\n  if(choice.requires.aff_min !== undefined && state.aff < choice.requires.aff_min) return false;\r\n  if(choice.requires.flag && !state.flags[choice.requires.flag]) return false;\r\n  return true;\r\n}\r\n\r\nfunction showChoices(choices){\r\n  el.choices.innerHTML = '';\r\n  el.choices.style.display = 'block';\r\n  el.next.disabled = true;\r\n\r\n  // 台詞ウィンドウの高さを CSS に渡します（スマホで選択肢を上に逃がすため）\r\n  const dw = document.getElementById('dialogue-wrap');\r\n  if(dw) document.documentElement.style.setProperty('--dlg-h', dw.offsetHeight + 'px');\r\n\r\n  choices.filter(choiceAvailable).forEach(choice => {\r\n    const btn = document.createElement('button');\r\n    btn.textContent = applyName(choice.text);\r\n    btn.addEventListener('click', () => {\r\n      history.push({ index: currentIndex, aff: state.aff, flags: Object.assign({}, state.flags), choices: choiceLog.slice() });\r\n      if(choice.effect){\r\n        if(choice.effect.aff)  state.aff += choice.effect.aff;\r\n        if(choice.effect.flag) state.flags[choice.effect.flag] = true;\r\n      }\r\n      choiceLog.push({\r\n        q: dialogues[currentIndex].q || '選択',\r\n        text: applyName(choice.text)\r\n      });\r\n      currentIndex = choice.next;\r\n      el.next.disabled = false;\r\n      renderScene();\r\n    });\r\n    el.choices.appendChild(btn);\r\n  });\r\n}\r\n\r\n/* ===== オート／早送り／スキップ ===== */\r\nfunction stopAllModes(){\r\n  autoMode = false;\r\n  skipMode = false;\r\n  clearAutoTimer();\r\n  clearSkipTimer();\r\n  updateStatus();\r\n}\r\n\r\n/* 選択肢で使います。スキップだけ止めて、オートはそのまま残します。\r\n   スキップは「もう読んだところを飛ばす」機能なので、\r\n   分岐の先（たいてい初めて読む場所）まで飛ばさないように止めます。 */\r\nfunction stopSkipOnly(){\r\n  skipMode = false;\r\n  clearSkipTimer();\r\n  clearAutoTimer();             // 選択肢を出しているあいだは自動で進めません\r\n  updateStatus();\r\n}\r\n\r\nfunction toggleAuto(){\r\n  autoMode = !autoMode;\r\n  if(autoMode){\r\n    skipMode = false;\r\n    clearSkipTimer();\r\n    if(!isTyping) afterTyped(dialogues[currentIndex]);\r\n  } else {\r\n    clearAutoTimer();\r\n  }\r\n  updateStatus();\r\n}\r\n\r\nfunction toggleSkip(){\r\n  skipMode = !skipMode;\r\n  if(skipMode){\r\n    autoMode = false;\r\n    clearAutoTimer();\r\n    if(isTyping) finishTyping();\r\n    else afterTyped(dialogues[currentIndex]);\r\n  } else {\r\n    clearSkipTimer();\r\n  }\r\n  updateStatus();\r\n}\r\n\r\nfunction toggleFf(){\r\n  ffMode = !ffMode;\r\n  updateStatus();\r\n}\r\n\r\n/* ===== セーブ／ロード ===== */\r\nconst SAVE_KEY = 'matsupiyo_save_';\r\nconst SLOTS = [1, 2, 3];\r\n\r\nfunction readSlot(n){\r\n  try{\r\n    const raw = localStorage.getItem(SAVE_KEY + n);\r\n    return raw ? JSON.parse(raw) : null;\r\n  }catch(e){ return null; }\r\n}\r\n\r\nfunction writeSlot(n){\r\n  const cur = dialogues[currentIndex];\r\n  const data = {\r\n    index: currentIndex,\r\n    page: pageIndex,\r\n    aff: state.aff,\r\n    flags: state.flags,\r\n    name: playerName,\r\n    history: history,\r\n    log: logEntries.slice(-120),\r\n    choiceLog: choiceLog,\r\n    preview: cur ? getPages(currentIndex)[pageIndex].replace(/\\n/g, ' ').slice(0, 28) : 'おわり',\r\n    savedAt: new Date().toLocaleString('ja-JP')\r\n  };\r\n  try{\r\n    localStorage.setItem(SAVE_KEY + n, JSON.stringify(data));\r\n    renderSlots();\r\n  }catch(e){\r\n    alert('保存できませんでした。ブラウザの設定で保存が制限されている可能性があります。');\r\n  }\r\n}\r\n\r\nfunction loadSlot(n){\r\n  const data = readSlot(n);\r\n  if(!data) return;\r\n  clearAllTimers();\r\n  stopAllModes();\r\n  isTyping = false;\r\n  currentIndex = data.index;\r\n  pageIndex = data.page || 0;\r\n  state.aff = data.aff || 0;\r\n  state.flags = data.flags || {};\r\n  playerName = data.name || 'わたし';\r\n  pageCache = {};\r\n  curBgKey = curCharaKey = curCharaFx = curKiraKey = curKiraPos = curKiraFx = curKiraAlpha = curCgKey = curBgmKey = null;\r\n  history = data.history || [];\r\n  logEntries = data.log || [];\r\n  choiceLog = data.choiceLog || [];\r\n  el.resultOv.classList.remove('show');\r\n  el.saveOv.classList.remove('show');\r\n  el.titleOv.classList.remove('show');\r\n  el.tutorialOv.classList.remove('show');\r\n  el.nameOv.classList.remove('show');\r\n  closeMenu();\r\n  renderScene();\r\n}\r\n\r\nfunction renderSlots(){\r\n  el.slotList.innerHTML = '';\r\n  SLOTS.forEach(n => {\r\n    const data = readSlot(n);\r\n    const row = document.createElement('div');\r\n    row.className = 'slot';\r\n\r\n    const info = document.createElement('div');\r\n    info.className = 'slot-info';\r\n    const t = document.createElement('div');\r\n    t.className = 'slot-title';\r\n    t.textContent = 'しおり ' + n;\r\n    const s = document.createElement('div');\r\n    s.className = 'slot-sub';\r\n    s.textContent = data ? (data.savedAt + '　' + data.preview) : '（空き）';\r\n    info.appendChild(t);\r\n    info.appendChild(s);\r\n\r\n    const saveB = document.createElement('button');\r\n    saveB.textContent = '記録';\r\n    saveB.addEventListener('click', () => writeSlot(n));\r\n\r\n    const loadB = document.createElement('button');\r\n    loadB.className = 'sub';\r\n    loadB.textContent = '再開';\r\n    loadB.disabled = !data;\r\n    loadB.addEventListener('click', () => loadSlot(n));\r\n\r\n    row.appendChild(info);\r\n    row.appendChild(saveB);\r\n    row.appendChild(loadB);\r\n    el.slotList.appendChild(row);\r\n  });\r\n}\r\n\r\nfunction hasAnySave(){\r\n  return SLOTS.some(n => readSlot(n));\r\n}\r\n\r\n/* ===== ログ ===== */\r\nfunction renderLog(){\r\n  el.logList.innerHTML = '';\r\n  logEntries.slice(-100).forEach(entry => {\r\n    const div = document.createElement('div');\r\n    div.className = 'log-line';\r\n    if(entry.name && entry.name.trim() !== ''){\r\n      const nm = document.createElement('span');\r\n      nm.className = 'log-name';\r\n      nm.textContent = entry.name;\r\n      div.appendChild(nm);\r\n    }\r\n    div.appendChild(document.createTextNode(entry.text));\r\n    el.logList.appendChild(div);\r\n  });\r\n  el.logList.scrollTop = el.logList.scrollHeight;\r\n}\r\n\r\n/* ===== 開始 ===== */\r\nfunction startGame(){\r\n  const input = el.nameInput.value.trim();\r\n  playerName = input === '' ? 'わたし' : input;\r\n  pageCache = {};                 // 名前が変わると行の折り返しも変わる\r\n  el.nameOv.classList.remove('show');\r\n  el.tutorialOv.classList.remove('show');\r\n  el.titleOv.classList.remove('show');\r\n  currentIndex = 0;\r\n  pageIndex = 0;\r\n  history = [];\r\n  logEntries = [];\r\n  choiceLog = [];\r\n  state = { aff: 0, flags: {} };\r\n  el.resultOv.classList.remove('show');\r\n  setupMeasurer();\r\n  renderScene();\r\n}\r\n\r\n/* =========================================================\r\n   タイトル画面とメニュー\r\n   ========================================================= */\r\n\r\n/* タイトル・あそびかた・名前入力が出ている間は本編を操作しない */\r\nfunction isTitleShowing(){\r\n  return el.titleOv.classList.contains('show')\r\n      || el.tutorialOv.classList.contains('show')\r\n      || el.nameOv.classList.contains('show');\r\n}\r\n\r\n/* 「つづきから」は記録があるときだけ出す */\r\nfunction refreshContinueBtn(){\r\n  const btn = document.getElementById('btn-title-load');\r\n  btn.style.display = hasAnySave() ? 'block' : 'none';\r\n}\r\n\r\nfunction openMenu(){\r\n  el.menu.classList.add('open');\r\n  el.menuToggle.classList.add('on');\r\n}\r\nfunction closeMenu(){\r\n  el.menu.classList.remove('open');\r\n  el.menuToggle.classList.remove('on');\r\n}\r\nfunction toggleMenu(){\r\n  if(el.menu.classList.contains('open')) closeMenu();\r\n  else openMenu();\r\n}\r\n\r\nel.menuToggle.addEventListener('click', e => { e.stopPropagation(); toggleMenu(); });\r\ndocument.getElementById('btn-menu-close').addEventListener('click', e => {\r\n  e.stopPropagation();\r\n  closeMenu();\r\n});\r\nel.menu.addEventListener('click', e => e.stopPropagation());\r\n// メニュー以外を触ったら閉じる\r\ndocument.addEventListener('click', e => {\r\n  if(!el.menu.classList.contains('open')) return;\r\n  if(e.target.closest('#dialogue-wrap, #choices')) return;\r\n  closeMenu();\r\n});\r\n\r\n/* data-ui の付いた要素に UI_ASSETS を流し込む。\r\n   url があれば画像、無ければ文字が入ります。 */\r\n/* ボタン1つの中身を作り直します。\r\n   url があれば画像、無ければ 絵文字(icon)＋文字(label) を組み立てます。 */\r\nfunction setUiNode(node, a, url){\r\n  node.textContent = '';\r\n  if(url){\r\n    const img = document.createElement('img');\r\n    img.src = url;\r\n    img.alt = a.label || node.dataset.ui;\r\n    // 画像が見つからなければ絵文字＋文字に戻す\r\n    img.addEventListener('error', () => setUiNode(node, a, ''));\r\n    node.classList.add('has-img');\r\n    node.appendChild(img);\r\n    return;\r\n  }\r\n  node.classList.remove('has-img');\r\n  if(a.icon){                       // メニューのボタン（絵文字＋文字）\r\n    const ico = document.createElement('span');\r\n    ico.className = 'ico';\r\n    ico.textContent = (node.classList.contains('on') && a.iconOn) ? a.iconOn : a.icon;\r\n    node.appendChild(ico);\r\n    if(a.label && !node.classList.contains('icon-only')){\r\n      const lb = document.createElement('span');\r\n      lb.className = 'label';\r\n      lb.textContent = a.label;\r\n      node.appendChild(lb);\r\n    }\r\n    return;\r\n  }\r\n  node.textContent = a.label || node.dataset.ui;   // タイトル画面のボタン\r\n}\r\n\r\n/* オン・オフで見た目が変わるボタン（オート／スキップ／早送り／ミュート）を更新します。\r\n   画像を設定していれば urlOn に、していなければ iconOn に切り替わります。 */\r\nfunction refreshUiState(node){\r\n  if(!node || !node.dataset.ui) return;\r\n  const a = UI_ASSETS[node.dataset.ui] || {};\r\n  const on = node.classList.contains('on');\r\n  if(a.url){\r\n    const img = node.querySelector('img');\r\n    const want = (on && a.urlOn) ? a.urlOn : a.url;\r\n    if(img && img.getAttribute('src') !== want) img.setAttribute('src', want);\r\n    return;\r\n  }\r\n  const ico = node.querySelector('.ico');\r\n  if(ico && a.icon) ico.textContent = (on && a.iconOn) ? a.iconOn : a.icon;\r\n}\r\n\r\n/* 「次へ」ボタンの表示を切り替えます（\"次へ\" ／ エンディング後の \"最初から\"）。\r\n   UI_ASSETS に画像が入っていれば画像に、無ければ文字になります。 */\r\nfunction setNextLabel(key){\r\n  if(el.next.dataset.ui === key) return;\r\n  el.next.dataset.ui = key;\r\n  const a = UI_ASSETS[key] || { label: key };\r\n  setUiNode(el.next, a, a.url);\r\n}\r\n\r\n/* data-ui の付いた要素に UI_ASSETS を流し込む。 */\r\nfunction applyUiAssets(){\r\n  document.querySelectorAll('[data-ui]').forEach(node => {\r\n    const a = UI_ASSETS[node.dataset.ui] || {};\r\n    setUiNode(node, a, a.url);\r\n  });\r\n\r\n  // 台詞の名前欄のフレーム（無ければこれまでのうすい黒の帯）\r\n  const plate = UI_ASSETS[\"名前欄\"] || {};\r\n  el.speaker.classList.remove('has-plate');\r\n  el.speaker.style.backgroundImage = '';\r\n  if(plate.url){\r\n    const t2 = new Image();\r\n    t2.onload = () => {\r\n      el.speaker.style.backgroundImage = 'url(\"' + plate.url + '\")';\r\n      el.speaker.classList.add('has-plate');\r\n    };\r\n    t2.src = plate.url;        // 見つからなければ何もしません\r\n  }\r\n\r\n  // タイトル画面のメインビジュアル（無ければピンクのグラデーション）\r\n  const mv = UI_ASSETS[\"メインビジュアル\"] || {};\r\n  const tov = document.getElementById('title-overlay');\r\n  tov.style.backgroundImage = '';\r\n  if(mv.url){\r\n    const test = new Image();\r\n    test.onload = () => { tov.style.backgroundImage = 'url(\"' + mv.url + '\")'; };\r\n    test.src = mv.url;           // 見つからなければ何もしない＝グラデーションのまま\r\n  }\r\n\r\n  // ロゴ（無ければ文字のタイトル）\r\n  const logo = UI_ASSETS[\"ロゴ\"] || {};\r\n  if(logo.url){\r\n    el.titleLogo.src = logo.url;\r\n    el.titleLogo.style.display = '';\r\n    document.getElementById('title-fallback').style.display = 'none';\r\n  } else {\r\n    el.titleLogo.style.display = 'none';\r\n    document.getElementById('title-fallback').style.display = 'block';\r\n  }\r\n}\r\n\r\nel.titleLogo.addEventListener('error', () => {\r\n  el.titleLogo.style.display = 'none';\r\n  document.getElementById('title-fallback').style.display = 'block';\r\n});\r\n\r\n/* =========================================================\r\n   あそびかた（チュートリアル）\r\n   ボタンの絵は UI_ASSETS を見て作るので、画像を設定すれば\r\n   この画面のアイコンも自動でその画像になります。\r\n   説明文を変えたいときは下の text を直してください。\r\n   ========================================================= */\r\nconst TUTORIAL = [\r\n  { ui: 'しおり',   text: '今いる場面を記録します。3つまで残せて、タイトルの「つづきから」で再開できます。' },\r\n  { ui: 'オート',   text: '手を触れなくても台詞が自動で進みます。読み終わるのを待ってから次へ進みます。' },\r\n  { ui: 'スキップ', text: '一気に読み飛ばします。選択肢と場面の変わり目で自動的に止まります。' },\r\n  { ui: '早送り',   text: '文字が出る速さが上がります。',\r\n    tip: '★ オートと一緒に押すと、どんどん先へ進みます。読んだところを飛ばしたいときに便利です。',\r\n    hilite: true },\r\n  { ui: 'ログ',     text: 'ここまでの台詞を読み返せます。聞き逃したときに。' },\r\n  { ui: 'ミュート', text: '音楽を消したり、また鳴らしたりします。', normalIcon: true },\r\n  { ui: 'とじる',   text: 'メニューを閉じます。MENU をもう一度押しても閉じます。' }\r\n];\r\n\r\n/* あそびかたの一覧を組み立てます */\r\nfunction buildTutorial(){\r\n  const list = document.getElementById('tutorial-list');\r\n  list.innerHTML = '';\r\n  TUTORIAL.forEach(item => {\r\n    const a = UI_ASSETS[item.ui] || {};\r\n    const row = document.createElement('div');\r\n    row.className = 'tut-row' + (item.hilite ? ' hilite' : '');\r\n\r\n    const ico = document.createElement('div');\r\n    ico.className = 'tut-ico';\r\n    // あそびかた画面では、オンのときの絵（urlOn）があればそちらを出します。\r\n    // normalIcon: true を書いた項目だけ、ふだんの絵（url）を出します。\r\n    const icoUrl = item.normalIcon ? a.url : (a.urlOn || a.url);\r\n    if(icoUrl){\r\n      const img = document.createElement('img');\r\n      img.src = icoUrl;\r\n      img.alt = '';\r\n      // 画像が見つからないときは絵文字に戻す\r\n      img.addEventListener('error', () => { ico.textContent = a.icon || ''; });\r\n      ico.appendChild(img);\r\n    } else {\r\n      ico.textContent = a.icon || '';\r\n    }\r\n\r\n    const body = document.createElement('div');\r\n    body.className = 'tut-body';\r\n    const nm = document.createElement('div');\r\n    nm.className = 'tut-name';\r\n    nm.textContent = a.label || item.ui;\r\n    const tx = document.createElement('div');\r\n    tx.className = 'tut-text';\r\n    tx.textContent = item.text;\r\n    body.appendChild(nm);\r\n    body.appendChild(tx);\r\n    if(item.tip){\r\n      const tip = document.createElement('span');\r\n      tip.className = 'tut-tip';\r\n      tip.textContent = item.tip;\r\n      body.appendChild(tip);\r\n    }\r\n\r\n    row.appendChild(ico);\r\n    row.appendChild(body);\r\n    list.appendChild(row);\r\n  });\r\n}\r\n\r\n/* さいしょから → あそびかたへ */\r\ndocument.getElementById('btn-new').addEventListener('click', () => {\r\n  unlockBgm();\r\n  buildTutorial();\r\n  el.titleOv.classList.remove('show');\r\n  el.tutorialOv.classList.add('show');\r\n  el.tutorialOv.scrollTop = 0;\r\n});\r\n\r\n/* あそびかた → 名前入力へ */\r\ndocument.getElementById('btn-tutorial-ok').addEventListener('click', () => {\r\n  el.nameInput.value = '';\r\n  el.tutorialOv.classList.remove('show');\r\n  el.nameOv.classList.add('show');\r\n  setTimeout(() => el.nameInput.focus(), 100);\r\n});\r\n\r\n/* 名前入力からタイトルへ戻る */\r\ndocument.getElementById('btn-name-back').addEventListener('click', () => {\r\n  el.nameOv.classList.remove('show');\r\n  el.titleOv.classList.add('show');\r\n});\r\n\r\n/* ===== イベント ===== */\r\nel.next.addEventListener('click', handleNext);\r\nel.back.addEventListener('click', goBack);\r\n\r\nel.message.addEventListener('click', () => {\r\n  if(isTyping){ finishTyping(); return; }\r\n  const cur = dialogues[currentIndex];\r\n  if(cur && cur.choices) return;\r\n  advance();\r\n});\r\n\r\nel.btnAuto.addEventListener('click', e => { e.stopPropagation(); toggleAuto(); });\r\nel.btnSkip.addEventListener('click', e => { e.stopPropagation(); toggleSkip(); });\r\nel.btnFf.addEventListener('click', e => { e.stopPropagation(); toggleFf(); });\r\n\r\nel.btnSave.addEventListener('click', () => {\r\n  closeMenu();\r\n  renderSlots();\r\n  el.saveOv.classList.add('show');\r\n  stopAllModes();\r\n});\r\ndocument.getElementById('btn-save-close').addEventListener('click', () => el.saveOv.classList.remove('show'));\r\n\r\nel.btnLog.addEventListener('click', () => {\r\n  closeMenu();\r\n  renderLog();\r\n  el.logOv.classList.add('show');\r\n  stopAllModes();\r\n});\r\ndocument.getElementById('btn-log-close').addEventListener('click', () => el.logOv.classList.remove('show'));\r\n\r\ndocument.getElementById('btn-result-close').addEventListener('click', () => el.resultOv.classList.remove('show'));\r\ndocument.getElementById('btn-result-restart').addEventListener('click', () => {\r\n  el.resultOv.classList.remove('show');\r\n  restart();\r\n});\r\n\r\nconst btnStart = document.getElementById('btn-start');\r\nbtnStart.addEventListener('click', () => { unlockBgm(); startGame(); });\r\n\r\ndocument.getElementById('btn-mute').addEventListener('click', e => { e.stopPropagation(); toggleMute(); });\r\n// 何らかの理由で解禁できていなくても、最初のタップで鳴るようにしておく\r\ndocument.addEventListener('pointerdown', unlockBgm, { once: true });\r\n\r\n// スマホのキーボードでボタンが隠れないよう、入力欄を押したら下まで見えるようにする\r\nel.nameInput.addEventListener('focus', () => {\r\n  setTimeout(() => {\r\n    if(btnStart.scrollIntoView) btnStart.scrollIntoView({ block: 'center', behavior: 'smooth' });\r\n  }, 300);\r\n});\r\n// 変換確定のEnterで誤発火しないよう isComposing を見る\r\nel.nameInput.addEventListener('keydown', e => {\r\n  if(e.key === 'Enter' && !e.isComposing){ e.preventDefault(); el.nameInput.blur(); startGame(); }\r\n});\r\n\r\ndocument.getElementById('btn-title-load').addEventListener('click', () => {\r\n  unlockBgm();\r\n  renderSlots();\r\n  el.saveOv.classList.add('show');\r\n});\r\n\r\ndocument.addEventListener('keydown', e => {\r\n  if(e.key === 'Escape'){\r\n    el.saveOv.classList.remove('show');\r\n    el.logOv.classList.remove('show');\r\n    el.resultOv.classList.remove('show');\r\n    closeMenu();\r\n    return;\r\n  }\r\n  if(e.isComposing) return;\r\n  // 名前入力など、文字を打っている欄の中ではゲームを動かさない\r\n  const t = e.target;\r\n  if(t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;\r\n  if(isTitleShowing()) return;\r\n  // セーブ／ロードやログを開いている間は進退させない\r\n  if(el.saveOv.classList.contains('show') || el.logOv.classList.contains('show')) return;\r\n\r\n  // Enter と スペース ＝「次へ」\r\n  if(e.key === ' ' || e.key === 'Enter'){ e.preventDefault(); handleNext(); return; }\r\n  // Backspace ＝「戻る」。ブラウザの「前のページへ戻る」動作も止めます\r\n  if(e.key === 'Backspace'){ e.preventDefault(); goBack(); return; }\r\n});\r\n\r\n/* ===== 画面サイズが変わったら分割し直す ===== */\r\nlet resizeTimer = null;\r\nfunction relayout(){\r\n  if(resizeTimer) clearTimeout(resizeTimer);\r\n  resizeTimer = setTimeout(() => {\r\n    if(isPortraitPhone()) stopAllModes();   // 縦向きの間は進行を止める\r\n    setupMeasurer();\r\n    pageCache = {};\r\n    pageIndex = 0;\r\n    if(!isTitleShowing()) renderScene();\r\n  }, 250);\r\n}\r\nwindow.addEventListener('resize', relayout);\r\nwindow.addEventListener('orientationchange', relayout);\r\n\r\n/* ===== 初期化 ===== */\r\napplyUiAssets();\r\n/* 右クリック（スマホの長押し）のメニューを出しません。\r\n   名前入力欄の中だけは、貼り付けができるように残してあります。 */\r\ndocument.addEventListener('contextmenu', e => {\r\n  if(e.target.closest('input, textarea')) return;\r\n  e.preventDefault();\r\n});\r\n/* 絵や文字をドラッグで持ち出せないようにします */\r\ndocument.addEventListener('dragstart', e => {\r\n  if(e.target.closest('input, textarea')) return;\r\n  e.preventDefault();\r\n});\r\n// 前回ミュートにしていた場合、起動時の見た目も合わせます\r\ndocument.getElementById('btn-mute').classList.toggle('on', bgmMuted);\r\nrefreshUiState(document.getElementById('btn-mute'));\r\nrefreshContinueBtn();\r\nif(bgmMuted){\r\n  const mb = document.getElementById('btn-mute');\r\n  mb.querySelector('.ico').textContent = '🔇';\r\n  mb.classList.add('on');\r\n}\r\nsetupMeasurer();\r\nupdateStatus();\r\nel.back.style.visibility = 'hidden';\r\n</script>\r\n</body>\r\n</html>",
+      "htmlZip": {
+        "path": "index.html",
+        "assetIds": [
+          "asset_mwbzykq91o854w",
+          "asset_mwbzymq71pdi97",
+          "asset_mwbzynfi1q9h1j",
+          "asset_mwbzypk21rq99e",
+          "asset_mwbzyt3i1sfurh",
+          "asset_mwbzyzpc1tc8aq",
+          "asset_mwbzz3rb1uvrz5",
+          "asset_mwbzz9a41v8c25",
+          "asset_mwbzzbmn1wbf3l",
+          "asset_mwbzzch21xhsyr",
+          "asset_mwbzzdpy1ytilh",
+          "asset_mwbzzeqk1z6x90",
+          "asset_mwbzzflw20e3m3",
+          "asset_mwbzzgwf21vr31",
+          "asset_mwbzziig226hck",
+          "asset_mwbzzjvv23qv85",
+          "asset_mwbzzkzs24yek9",
+          "asset_mwbzzlxp25fg25",
+          "asset_mwbzzmrc26ojzd",
+          "asset_mwbzzodq27mvau",
+          "asset_mwbzzqrp28rmvo",
+          "asset_mwbzzsdv29bc6d",
+          "asset_mwbzztqr2ayurg",
+          "asset_mwbzzvse2bm5vw",
+          "asset_mwbzzy5m2cj12b",
+          "asset_mwc0003x2dfrfi",
+          "asset_mwc002xe2es5jo",
+          "asset_mwc005gf2fto2o",
+          "asset_mwc009uj2gt90k",
+          "asset_mwc00ajo2hghal",
+          "asset_mwc00bmm2i8ht1",
+          "asset_mwc00exj2jp4pm",
+          "asset_mwc00fqj2kk5lt",
+          "asset_mwc00jx62lqknv",
+          "asset_mwc00l7o2ma7sj",
+          "asset_mwc00mxu2nd7po",
+          "asset_mwc00ofs2orv7p",
+          "asset_mwc00p4i2pzrwk",
+          "asset_mwc00pnj2qajtt",
+          "asset_mwc00qqh2r2ke9",
+          "asset_mwc00rln2s6z43",
+          "asset_mwc00vw42tweam",
+          "asset_mwc00zpr2udvix",
+          "asset_mwc011ch2vcqk4",
+          "asset_mwc012zu2wklzc",
+          "asset_mwc0148q2xteuk",
+          "asset_mwc015l22yq9kr",
+          "asset_mwc017dh2z36t0",
+          "asset_mwc018gc30ab5v",
+          "asset_mwc019kg310epz",
+          "asset_mwc01awo32y4kr",
+          "asset_mwc01c073386zw",
+          "asset_mwc01djk34bhdc",
+          "asset_mwc01eyn35ctzb",
+          "asset_mwc01gn4366eq1",
+          "asset_mwc01ict379fac",
+          "asset_mwc01jrz38crcg",
+          "asset_mwc01n2m390c94",
+          "asset_mwc01qba3awd3h",
+          "asset_mwc01rsh3b6npb",
+          "asset_mwc01ulw3clpv3"
+        ]
+      }
     }
   },
+  "pageOrder": [
+    "page_mslbenpoz",
+    "page_mwbzwoaa1mga8w",
+    "page_msleaffe1",
+    "page_mvzcltff5ss5c7",
+    "page_msmxmtrg5",
+    "page_mvou1xir3p353n",
+    "page_mu98rc7s3u",
+    "page_mvouejle4bq4wf",
+    "page_mu98rd4648",
+    "page_mvouf28p8g9pd9",
+    "page_msotieex1e",
+    "page_mv6trtsz1",
+    "page_mvhve1zmbsvph4",
+    "page_muzoss702k",
+    "page_mv7ucj3ccc",
+    "page_mvhyhtub6uytqm",
+    "page_msoti2tux",
+    "page_mv69uvlg3u",
+    "page_mswzfiqry",
+    "page_mwb06ie85q5g5p",
+    "page_mv69qjbj1y",
+    "page_muiixvz340",
+    "page_mw0g55mu5emi6z",
+    "page_mv6o9vxe2u",
+    "page_mw0g59fj95g8sl",
+    "page_muf53mtd6j",
+    "page_mw0g5ayccl4poy",
+    "page_mu2t6c971l",
+    "page_mw0g5cpwgggijw",
+    "page_muf5w3hl70",
+    "page_mv6ai6be3t",
+    "page_muf67d6n7n",
+    "page_mw0g8eucm0eorg",
+    "page_muf6dx2a7y",
+    "page_mw0g8gqopggras",
+    "page_muf6el0a87",
+    "page_mw0g8i67sxpweq",
+    "page_muf6exd68g",
+    "page_mw0g8q76wqupul",
+    "page_muf6flq18p",
+    "page_mw0g8rjmzybnlp",
+    "page_mv6alv245p",
+    "page_mu3wp199l",
+    "page_mvhxphej2d8ldu",
+    "page_mu727nz01e",
+    "page_mvhy09pt5kscnf",
+    "page_muhpjery26",
+    "page_muhpllld2i",
+    "page_mw2c6tvu4arwk4",
+    "page_mts0xmew1h",
+    "page_mv8igc0g21",
+    "page_mv7xdigo16",
+    "page_mv6a54dc1",
+    "page_mv8b51ub1",
+    "page_mv8n8sk0fg",
+    "page_mv8n8kse5m",
+    "page_mva9voxq1"
+  ],
   "nodes": {
     "node_mslk3jko1": {
       "id": "node_mslk3jko1",
@@ -19664,7 +19718,8 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mupd435v28"
+        "node_mwby6m3f81c2b7",
+        "node_mwbzeg1e82kxzt"
       ],
       "styles": {
         "base": {
@@ -19675,43 +19730,13 @@
             "gap": "12px",
             "justifyContent": "center",
             "alignItems": "center",
-            "marginTop": "200px",
+            "marginTop": "0px",
             "marginBottom": "200px"
           }
         },
         "sm": {
           "default": {
-            "marginTop": "100px"
-          }
-        }
-      }
-    },
-    "node_mupd435v28": {
-      "id": "node_mupd435v28",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmupd44di-pasted-artwork.svg",
-        "alt": "",
-        "width": 1248,
-        "height": 195,
-        "assetId": "asset_mupd435v27"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "60%",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "100%"
+            "marginTop": "0px"
           }
         }
       }
@@ -205269,7 +205294,24 @@
           }
         }
       },
-      "motions": []
+      "motions": [],
+      "scripts": [
+        {
+          "id": "sc_mwbzm8841cvq",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mwbzxg0bauxr",
+              "kind": "open-url",
+              "url": "https://matsufes.info/tokimeki_dreamworld"
+            }
+          ],
+          "pos": {
+            "x": 547,
+            "y": 232
+          }
+        }
+      ]
     },
     "node_mvezrowdrsnbv": {
       "id": "node_mvezrowdrsnbv",
@@ -386520,6 +386562,241 @@
           }
         }
       }
+    },
+    "node_mwby6m3f81c2b7": {
+      "id": "node_mwby6m3f81c2b7",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "第56回松ヶ崎祭オリジナルゲームが新登場！\nきみも まつぴよと 恋に落ちちゃう・・・！？",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "40px",
+            "lineHeight": "1.7",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontWeight": "900",
+            "textAlign": "center",
+            "color": "#ffffff",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.6)"
+          }
+        },
+        "md": {
+          "default": {
+            "fontSize": "20px"
+          }
+        }
+      }
+    },
+    "node_mwbzeg1e82kxzt": {
+      "id": "node_mwbzeg1e82kxzt",
+      "type": "box",
+      "name": "ゲームボタン",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwbzehxj84sex0",
+        "node_mwbzskpl86pv3t"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "60%",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "80%"
+          }
+        }
+      }
+    },
+    "node_mwbzehxj84sex0": {
+      "id": "node_mwbzehxj84sex0",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwbzehb8d5210a-pasted-artwork.svg",
+        "alt": "",
+        "width": 928,
+        "height": 577,
+        "assetId": "asset_mwbzehxg83kv5e"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      }
+    },
+    "node_mwbzskpl86pv3t": {
+      "id": "node_mwbzskpl86pv3t",
+      "type": "image",
+      "name": "ゲームをプレイする",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwbzskbqee17c2-pasted-artwork.svg",
+        "alt": "",
+        "width": 524,
+        "height": 207,
+        "assetId": "asset_mwbzskph85curv"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "50%",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "60%"
+          }
+        }
+      },
+      "scripts": [
+        {
+          "id": "sc_mwc002sgi2go",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mwc009t6m71q",
+              "kind": "open-url",
+              "url": "https://matsufes.info/tokimeki_dreamworld"
+            }
+          ],
+          "pos": {
+            "x": 57,
+            "y": 290
+          }
+        }
+      ],
+      "motions": [
+        {
+          "id": "motion_mwc04rfu8d07ap",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.3,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mwbzufjz8948za": {
+      "id": "node_mwbzufjz8948za",
+      "type": "box",
+      "name": "メインテ〜マ",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwbzufjz8aa1cf"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "height": "100%",
+            "width": "100%",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "marginTop": "200px"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "marginTop": "200px"
+          }
+        }
+      },
+      "motions": []
+    },
+    "node_mwbzufjz8aa1cf": {
+      "id": "node_mwbzufjz8aa1cf",
+      "type": "box",
+      "name": "メインテ〜マタイトル",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwbzx7kn8czj4n"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "padding": "20px",
+            "gap": "12px",
+            "flexDirection": "column",
+            "width": "45%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "70%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "50%"
+          }
+        }
+      }
+    },
+    "node_mwbzx7kn8czj4n": {
+      "id": "node_mwbzx7kn8czj4n",
+      "type": "image",
+      "name": "pasted-artwork.svg",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwbzu4na5351aa-pasted-artwork.svg",
+        "alt": "",
+        "width": 674,
+        "height": 159,
+        "assetId": "asset_mwbzu511874r5f"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
     }
   },
   "assets": {
@@ -391820,6 +392097,958 @@
       "width": 290,
       "height": 71,
       "svgFilter": true
+    },
+    "asset_mwbzehxg83kv5e": {
+      "id": "asset_mwbzehxg83kv5e",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mwbzehb8d5210a-pasted-artwork.svg",
+      "bytes": 137955,
+      "mimeType": "image/svg+xml",
+      "width": 928,
+      "height": 577,
+      "svgFilter": true
+    },
+    "asset_mwbzskph85curv": {
+      "id": "asset_mwbzskph85curv",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mwbzskbqee17c2-pasted-artwork.svg",
+      "bytes": 12930,
+      "mimeType": "image/svg+xml",
+      "width": 524,
+      "height": 207,
+      "svgFilter": true
+    },
+    "asset_mwbzu511874r5f": {
+      "id": "asset_mwbzu511874r5f",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mwbzu4na5351aa-pasted-artwork.svg",
+      "bytes": 7151,
+      "mimeType": "image/svg+xml",
+      "width": 674,
+      "height": 159,
+      "svgFilter": true
+    },
+    "asset_mwbzykq91o854w": {
+      "id": "asset_mwbzykq91o854w",
+      "name": "bgm-fade.js",
+      "path": "assets/mwbzyk3b20bb66-bgm-fade.js",
+      "bytes": 5068,
+      "mimeType": "text/javascript",
+      "width": 0,
+      "height": 0,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "bgm-fade.js",
+        "sha256": "4e33bfa9504c6f43fae2be9d44c33cdb44cc499a3a32594ae7fecc053b48d167"
+      }
+    },
+    "asset_mwbzymq71pdi97": {
+      "id": "asset_mwbzymq71pdi97",
+      "name": "classroom0331.png",
+      "path": "assets/mwbzym283bb3ec-classroom0331.png",
+      "bytes": 258037,
+      "mimeType": "image/png",
+      "width": 1152,
+      "height": 864,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "classroom0331.png",
+        "sha256": "904a97dd639d4dd21e6f91519d45646729384a8bc0cc6641c91d649e3df79317"
+      }
+    },
+    "asset_mwbzynfi1q9h1j": {
+      "id": "asset_mwbzynfi1q9h1j",
+      "name": "classroom_boyake.png",
+      "path": "assets/mwbzymyt67cc47-classroom_boyake.png",
+      "bytes": 63348,
+      "mimeType": "image/png",
+      "width": 1179,
+      "height": 873,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "classroom_boyake.png",
+        "sha256": "b67a1acfe73cb37dc55b0cb4eb461996914dfc3cdbafccab0738657a9a8ee08a"
+      }
+    },
+    "asset_mwbzypk21rq99e": {
+      "id": "asset_mwbzypk21rq99e",
+      "name": "ortus.png",
+      "path": "assets/mwbzyorj0d2e51-ortus.png",
+      "bytes": 666905,
+      "mimeType": "image/png",
+      "width": 2364,
+      "height": 1774,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "ortus.png",
+        "sha256": "a33c204239ce789d871ed9f547f4607a8e7c76c778904ab6c11f09b55337b59d"
+      }
+    },
+    "asset_mwbzyt3i1sfurh": {
+      "id": "asset_mwbzyt3i1sfurh",
+      "name": "building08.png",
+      "path": "assets/mwbzyruw3af8f5-building08.png",
+      "bytes": 1095086,
+      "mimeType": "image/png",
+      "width": 2498,
+      "height": 1678,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "building08.png",
+        "sha256": "603a61db1bf2e5187544fbe3851bc4b480bbc0c428bebcf6e60728a80eb13b25"
+      }
+    },
+    "asset_mwbzyzpc1tc8aq": {
+      "id": "asset_mwbzyzpc1tc8aq",
+      "name": "yumesekai_omote.png",
+      "path": "assets/mwbzyxf905f322-yumesekai_omote.png",
+      "bytes": 2295280,
+      "mimeType": "image/png",
+      "width": 1887,
+      "height": 868,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "yumesekai_omote.png",
+        "sha256": "309fda16a5c24874222e9a3439596f9a30b1732d0d63cc6a8da2bfb386cc2954"
+      }
+    },
+    "asset_mwbzz3rb1uvrz5": {
+      "id": "asset_mwbzz3rb1uvrz5",
+      "name": "yumesekai_ura.png",
+      "path": "assets/mwbzz21lb9fa3c-yumesekai_ura.png",
+      "bytes": 2308058,
+      "mimeType": "image/png",
+      "width": 1887,
+      "height": 868,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "yumesekai_ura.png",
+        "sha256": "a7fba9b62ada5b0f0cad0c1c2d761f4293488058e9aa37fb93c344cca85b643e"
+      }
+    },
+    "asset_mwbzz9a41v8c25": {
+      "id": "asset_mwbzz9a41v8c25",
+      "name": "gate3.png",
+      "path": "assets/mwbzz72g90892b-gate3.png",
+      "bytes": 3155744,
+      "mimeType": "image/png",
+      "width": 4617,
+      "height": 3891,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "gate3.png",
+        "sha256": "e2c601211ead1b6919b5243521a7185a22df02713673a023b9418c8ca50318bb"
+      }
+    },
+    "asset_mwbzzbmn1wbf3l": {
+      "id": "asset_mwbzzbmn1wbf3l",
+      "name": "moyamoya.png",
+      "path": "assets/mwbzzahu7ca28e-moyamoya.png",
+      "bytes": 626788,
+      "mimeType": "image/png",
+      "width": 2622,
+      "height": 1206,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "moyamoya.png",
+        "sha256": "be212de9c33a7510d1d70253a6126786cda6180ced0ef9a46150198768c36d94"
+      }
+    },
+    "asset_mwbzzch21xhsyr": {
+      "id": "asset_mwbzzch21xhsyr",
+      "name": "matsupiyo001.png",
+      "path": "assets/mwbzzbz84541ae-matsupiyo001.png",
+      "bytes": 148572,
+      "mimeType": "image/png",
+      "width": 896,
+      "height": 805,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "matsupiyo001.png",
+        "sha256": "a0ac0f218c5c6349924aa4c70441531f8721a31cd5f44ed7690e2596efe7a99f"
+      }
+    },
+    "asset_mwbzzdpy1ytilh": {
+      "id": "asset_mwbzzdpy1ytilh",
+      "name": "matsupiyo002.png",
+      "path": "assets/mwbzzcrl5f12bf-matsupiyo002.png",
+      "bytes": 143689,
+      "mimeType": "image/png",
+      "width": 896,
+      "height": 805,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "matsupiyo002.png",
+        "sha256": "6e15490e972fcf1762ba1cd3fd863d6971067dff83a65e36b3cfcbd1c65c47fa"
+      }
+    },
+    "asset_mwbzzeqk1z6x90": {
+      "id": "asset_mwbzzeqk1z6x90",
+      "name": "matsupiyo003.png",
+      "path": "assets/mwbzzdyz195736-matsupiyo003.png",
+      "bytes": 150983,
+      "mimeType": "image/png",
+      "width": 896,
+      "height": 805,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "matsupiyo003.png",
+        "sha256": "2d13d78dce13b71df59e1ed33b4ef138ce4bacadd86491c54f7ecbbedf1e41eb"
+      }
+    },
+    "asset_mwbzzflw20e3m3": {
+      "id": "asset_mwbzzflw20e3m3",
+      "name": "matsupiyo004.png",
+      "path": "assets/mwbzzf4182d0eb-matsupiyo004.png",
+      "bytes": 136249,
+      "mimeType": "image/png",
+      "width": 896,
+      "height": 805,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "matsupiyo004.png",
+        "sha256": "8a28dc11c1fef3fbb84492fed98f932e096b4a268c68db358430fbdbb3bf2ef8"
+      }
+    },
+    "asset_mwbzzgwf21vr31": {
+      "id": "asset_mwbzzgwf21vr31",
+      "name": "matsupiyo005.png",
+      "path": "assets/mwbzzgcw794dd6-matsupiyo005.png",
+      "bytes": 140850,
+      "mimeType": "image/png",
+      "width": 896,
+      "height": 805,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "matsupiyo005.png",
+        "sha256": "844c2431aa2b6af8810d91947ec79ab1355745167c73be79e2b538e07571c1ab"
+      }
+    },
+    "asset_mwbzziig226hck": {
+      "id": "asset_mwbzziig226hck",
+      "name": "matsupiyo006.png",
+      "path": "assets/mwbzzhdf7c1c0b-matsupiyo006.png",
+      "bytes": 159318,
+      "mimeType": "image/png",
+      "width": 896,
+      "height": 805,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "matsupiyo006.png",
+        "sha256": "c98fbe30ca18dfebec6632a5cca04c335b97ec7cc3614ebed231f24f1a68c0e9"
+      }
+    },
+    "asset_mwbzzjvv23qv85": {
+      "id": "asset_mwbzzjvv23qv85",
+      "name": "matsupiyo007.png",
+      "path": "assets/mwbzzja3b34374-matsupiyo007.png",
+      "bytes": 158192,
+      "mimeType": "image/png",
+      "width": 896,
+      "height": 805,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "matsupiyo007.png",
+        "sha256": "0ee1a343de961e24b36ea8f61d124b61361b477feab30904767a4f5673f6b102"
+      }
+    },
+    "asset_mwbzzkzs24yek9": {
+      "id": "asset_mwbzzkzs24yek9",
+      "name": "matsupiyo008.png",
+      "path": "assets/mwbzzkc2af808f-matsupiyo008.png",
+      "bytes": 150680,
+      "mimeType": "image/png",
+      "width": 896,
+      "height": 805,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "matsupiyo008.png",
+        "sha256": "57e849341995f39fd032e74763f0383f517e089f3c071c1ae5185f9ece250bdf"
+      }
+    },
+    "asset_mwbzzlxp25fg25": {
+      "id": "asset_mwbzzlxp25fg25",
+      "name": "matsupiyo009.png",
+      "path": "assets/mwbzzley046d1a-matsupiyo009.png",
+      "bytes": 147110,
+      "mimeType": "image/png",
+      "width": 896,
+      "height": 805,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "matsupiyo009.png",
+        "sha256": "47484acf143023f0c9ae54c71166fc0beaed3114f62bf6a83d4ae677355c5dd1"
+      }
+    },
+    "asset_mwbzzmrc26ojzd": {
+      "id": "asset_mwbzzmrc26ojzd",
+      "name": "matsupiyo010.png",
+      "path": "assets/mwbzzm9r06d01c-matsupiyo010.png",
+      "bytes": 70627,
+      "mimeType": "image/png",
+      "width": 896,
+      "height": 805,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "matsupiyo010.png",
+        "sha256": "7e69ec3f44e153b93b59e15fc2b72aa744cd1fd293d028bdb9188547f2baf394"
+      }
+    },
+    "asset_mwbzzodq27mvau": {
+      "id": "asset_mwbzzodq27mvau",
+      "name": "matsupiyo011.png",
+      "path": "assets/mwbzznpc680792-matsupiyo011.png",
+      "bytes": 154009,
+      "mimeType": "image/png",
+      "width": 896,
+      "height": 805,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "matsupiyo011.png",
+        "sha256": "9872c0cf200908a59b7ad89824745e674adac1af432e4145b1d89fb5a064b984"
+      }
+    },
+    "asset_mwbzzqrp28rmvo": {
+      "id": "asset_mwbzzqrp28rmvo",
+      "name": "matsupiyo012.png",
+      "path": "assets/mwbzzpoaadb8b2-matsupiyo012.png",
+      "bytes": 151662,
+      "mimeType": "image/png",
+      "width": 896,
+      "height": 805,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "matsupiyo012.png",
+        "sha256": "b08967c4a38f5d25dc836ab5fa3c42a7fb1ede77aea56557b0c7e0001fd6c37d"
+      }
+    },
+    "asset_mwbzzsdv29bc6d": {
+      "id": "asset_mwbzzsdv29bc6d",
+      "name": "matsupiyo013.png",
+      "path": "assets/mwbzzrue99913b-matsupiyo013.png",
+      "bytes": 156487,
+      "mimeType": "image/png",
+      "width": 896,
+      "height": 805,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "matsupiyo013.png",
+        "sha256": "37f3509051096204389f4656fd874ae6cb1961aae7a4666287b84ab9e96f307a"
+      }
+    },
+    "asset_mwbzztqr2ayurg": {
+      "id": "asset_mwbzztqr2ayurg",
+      "name": "matsupiyo014.png",
+      "path": "assets/mwbzzt6z0ef795-matsupiyo014.png",
+      "bytes": 143023,
+      "mimeType": "image/png",
+      "width": 896,
+      "height": 805,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "matsupiyo014.png",
+        "sha256": "9156a992e876ccf38a7c47b9f49b3a8d301f54c8bca0a36a1ba313d0d174aad5"
+      }
+    },
+    "asset_mwbzzvse2bm5vw": {
+      "id": "asset_mwbzzvse2bm5vw",
+      "name": "matsupiyo015.png",
+      "path": "assets/mwbzzus80239ee-matsupiyo015.png",
+      "bytes": 158609,
+      "mimeType": "image/png",
+      "width": 896,
+      "height": 805,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "matsupiyo015.png",
+        "sha256": "a26fefafdf17ee1528022b845eb204ed9ffa4e2defc2568f8a553409494c2961"
+      }
+    },
+    "asset_mwbzzy5m2cj12b": {
+      "id": "asset_mwbzzy5m2cj12b",
+      "name": "chikyuukun.png",
+      "path": "assets/mwbzzxj5716730-chikyuukun.png",
+      "bytes": 371867,
+      "mimeType": "image/png",
+      "width": 2622,
+      "height": 1206,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "chikyuukun.png",
+        "sha256": "339d483d7eb4470e4b72621a608aef239c08d1561280ec06d6147d2cf3551c1d"
+      }
+    },
+    "asset_mwc0003x2dfrfi": {
+      "id": "asset_mwc0003x2dfrfi",
+      "name": "chikyuukun_smile.png",
+      "path": "assets/mwbzzzga40138c-chikyuukun_smile.png",
+      "bytes": 373444,
+      "mimeType": "image/png",
+      "width": 2622,
+      "height": 1206,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "chikyuukun_smile.png",
+        "sha256": "c7e85b4b9e40150fc425f1652dabbf9863843f7d5d615d6cf8e0bc8ef1433e6d"
+      }
+    },
+    "asset_mwc002xe2es5jo": {
+      "id": "asset_mwc002xe2es5jo",
+      "name": "fake_chikyuukun.png",
+      "path": "assets/mwc00239d796b4-fake_chikyuukun.png",
+      "bytes": 416985,
+      "mimeType": "image/png",
+      "width": 2622,
+      "height": 1206,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "fake_chikyuukun.png",
+        "sha256": "ae8fbdad22d1a9b2e38a0b7b2fa46578dfb260c9caffeced7eefc01f62ea5252"
+      }
+    },
+    "asset_mwc005gf2fto2o": {
+      "id": "asset_mwc005gf2fto2o",
+      "name": "fake_chikyuukun_smile.png",
+      "path": "assets/mwc004oi914644-fake_chikyuukun_smile.png",
+      "bytes": 419878,
+      "mimeType": "image/png",
+      "width": 2622,
+      "height": 1206,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "fake_chikyuukun_smile.png",
+        "sha256": "8a21ff461526d1346e57b449f3877afd2a25381ea0334fec14a92077b27112fa"
+      }
+    },
+    "asset_mwc009uj2gt90k": {
+      "id": "asset_mwc009uj2gt90k",
+      "name": "rakugaki.png",
+      "path": "assets/mwc008ahdda12d-rakugaki.png",
+      "bytes": 1861950,
+      "mimeType": "image/png",
+      "width": 2622,
+      "height": 1206,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "rakugaki.png",
+        "sha256": "740094d99bfcd0aaa58f51dd0d63559397605d70acec2261f7ce51aa0aeb5429"
+      }
+    },
+    "asset_mwc00ajo2hghal": {
+      "id": "asset_mwc00ajo2hghal",
+      "name": "water_h.png",
+      "path": "assets/mwc00a1yfe37ad-water_h.png",
+      "bytes": 229279,
+      "mimeType": "image/png",
+      "width": 2622,
+      "height": 1206,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "water_h.png",
+        "sha256": "84c43e4796d0bb724de8390885a1f9ecedb2be15c6c265a4034d844426bf8397"
+      }
+    },
+    "asset_mwc00bmm2i8ht1": {
+      "id": "asset_mwc00bmm2i8ht1",
+      "name": "water.png",
+      "path": "assets/mwc00ary6986b0-water.png",
+      "bytes": 218190,
+      "mimeType": "image/png",
+      "width": 2622,
+      "height": 1206,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "water.png",
+        "sha256": "78456f6495355862522881163f58c40e7d5775865fd04f010e22529e87d86ae6"
+      }
+    },
+    "asset_mwc00exj2jp4pm": {
+      "id": "asset_mwc00exj2jp4pm",
+      "name": "water_gmh.png",
+      "path": "assets/mwc00de79f4c60-water_gmh.png",
+      "bytes": 1910257,
+      "mimeType": "image/png",
+      "width": 2622,
+      "height": 1206,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "water_gmh.png",
+        "sha256": "0aead5479f19df32aca26d4ed8d835ac96c04e3c7604d11b59d00c38f03b27f2"
+      }
+    },
+    "asset_mwc00fqj2kk5lt": {
+      "id": "asset_mwc00fqj2kk5lt",
+      "name": "water_mh.png",
+      "path": "assets/mwc00f5wd3899d-water_mh.png",
+      "bytes": 232211,
+      "mimeType": "image/png",
+      "width": 2622,
+      "height": 1206,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "water_mh.png",
+        "sha256": "73d092f54b773054440e19e2517aa391b977f33602a83594f09f744cd6b4f0df"
+      }
+    },
+    "asset_mwc00jx62lqknv": {
+      "id": "asset_mwc00jx62lqknv",
+      "name": "badend.png",
+      "path": "assets/mwc00i2656207f-badend.png",
+      "bytes": 3252190,
+      "mimeType": "image/png",
+      "width": 2622,
+      "height": 1206,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "badend.png",
+        "sha256": "f797134ba51ad699c1eeca568ff95162cc003d494374416fa02af6139be37280"
+      }
+    },
+    "asset_mwc00l7o2ma7sj": {
+      "id": "asset_mwc00l7o2ma7sj",
+      "name": "trueend.png",
+      "path": "assets/mwc00khy7f069e-trueend.png",
+      "bytes": 619706,
+      "mimeType": "image/png",
+      "width": 2622,
+      "height": 1206,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "trueend.png",
+        "sha256": "96a7a4b82beed4dfe064e6e32b88d65904d9ee30b88c8f57b03e414ea00dd9d0"
+      }
+    },
+    "asset_mwc00mxu2nd7po": {
+      "id": "asset_mwc00mxu2nd7po",
+      "name": "happyend.png",
+      "path": "assets/mwc00lqvf3dd7f-happyend.png",
+      "bytes": 663483,
+      "mimeType": "image/png",
+      "width": 2622,
+      "height": 1206,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "happyend.png",
+        "sha256": "477514a4a146932285c8fbfacf689c9c1bd3cfbff7f45195fd78ada5fb7a9491"
+      }
+    },
+    "asset_mwc00ofs2orv7p": {
+      "id": "asset_mwc00ofs2orv7p",
+      "name": "gayagaya.mp3",
+      "path": "assets/mwc00npv256ae7-gayagaya.mp3",
+      "bytes": 1037748,
+      "mimeType": "audio/mpeg",
+      "width": 0,
+      "height": 0,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "gayagaya.mp3",
+        "sha256": "bc322300f74b70c13298472ec13b36ffa080c89dbb518e6bc52bea4a4bef8038"
+      }
+    },
+    "asset_mwc00p4i2pzrwk": {
+      "id": "asset_mwc00p4i2pzrwk",
+      "name": "class.mp3",
+      "path": "assets/mwc00olv0d0447-class.mp3",
+      "bytes": 94039,
+      "mimeType": "audio/mpeg",
+      "width": 0,
+      "height": 0,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "class.mp3",
+        "sha256": "1f94ed71e25448e42a3ab14769bfd51a37c08d269eee98ccaa1da57fa97df376"
+      }
+    },
+    "asset_mwc00pnj2qajtt": {
+      "id": "asset_mwc00pnj2qajtt",
+      "name": "hungry.mp3",
+      "path": "assets/mwc00p6q4953ed-hungry.mp3",
+      "bytes": 25482,
+      "mimeType": "audio/mpeg",
+      "width": 0,
+      "height": 0,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "hungry.mp3",
+        "sha256": "0c0837446e63c45beaba8250aa9a0c11d133a1f5d3b1324cf38cd49fe887b9d7"
+      }
+    },
+    "asset_mwc00qqh2r2ke9": {
+      "id": "asset_mwc00qqh2r2ke9",
+      "name": "underwater_fall.mp3",
+      "path": "assets/mwc00q6b356bc0-underwater_fall.mp3",
+      "bytes": 706351,
+      "mimeType": "audio/mpeg",
+      "width": 0,
+      "height": 0,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "underwater_fall.mp3",
+        "sha256": "4c07f3f11fd3eed836e58be5f2d3ac95790e22dbc8155590d3f17002201c38ed"
+      }
+    },
+    "asset_mwc00rln2s6z43": {
+      "id": "asset_mwc00rln2s6z43",
+      "name": "logo.png",
+      "path": "assets/mwc00qvuba12f7-logo.png",
+      "bytes": 92509,
+      "mimeType": "image/png",
+      "width": 667,
+      "height": 194,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "logo.png",
+        "sha256": "e51284cee36f12e7d9642b781bdd5c738b8afe13d3a4b51cca1647acdfd709c9"
+      }
+    },
+    "asset_mwc00vw42tweam": {
+      "id": "asset_mwc00vw42tweam",
+      "name": "start.png",
+      "path": "assets/mwc00ucu5cf191-start.png",
+      "bytes": 2228892,
+      "mimeType": "image/png",
+      "width": 11078,
+      "height": 3072,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "start.png",
+        "sha256": "f4a6d121ffa108e973148eb573f11f6690b03d15e361c2a68dcb6d8237eae779"
+      }
+    },
+    "asset_mwc00zpr2udvix": {
+      "id": "asset_mwc00zpr2udvix",
+      "name": "restart.png",
+      "path": "assets/mwc00xwjce71a7-restart.png",
+      "bytes": 2267121,
+      "mimeType": "image/png",
+      "width": 11078,
+      "height": 3072,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "restart.png",
+        "sha256": "98cb6386fdca5224e7aa1cc5cecbc73d894c624432d69b69bbe7cfb94386af64"
+      }
+    },
+    "asset_mwc011ch2vcqk4": {
+      "id": "asset_mwc011ch2vcqk4",
+      "name": "MENU.png",
+      "path": "assets/mwc010pb35f05a-MENU.png",
+      "bytes": 916038,
+      "mimeType": "image/png",
+      "width": 7057,
+      "height": 3072,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "MENU.png",
+        "sha256": "b60c3f042a89165b14e0e06d71bca337a7384d0d67439e2a5d5c68b86917f558"
+      }
+    },
+    "asset_mwc012zu2wklzc": {
+      "id": "asset_mwc012zu2wklzc",
+      "name": "SAVE_OFF.png",
+      "path": "assets/mwc0121l87a0c9-SAVE_OFF.png",
+      "bytes": 576198,
+      "mimeType": "image/png",
+      "width": 3072,
+      "height": 3072,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "SAVE_OFF.png",
+        "sha256": "c4c0e61126003f05a816b0867828b6f3bf74670861079a391ce08ed1b8f491f0"
+      }
+    },
+    "asset_mwc0148q2xteuk": {
+      "id": "asset_mwc0148q2xteuk",
+      "name": "SAVE.png",
+      "path": "assets/mwc013na3a2140-SAVE.png",
+      "bytes": 565398,
+      "mimeType": "image/png",
+      "width": 3072,
+      "height": 3072,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "SAVE.png",
+        "sha256": "7094497ce740f8a80f67c7ec7e835c1f112432bce14b42095d69b32459c02c7a"
+      }
+    },
+    "asset_mwc015l22yq9kr": {
+      "id": "asset_mwc015l22yq9kr",
+      "name": "AUTO_OFF.png",
+      "path": "assets/mwc014x3e41132-AUTO_OFF.png",
+      "bytes": 570220,
+      "mimeType": "image/png",
+      "width": 3072,
+      "height": 3072,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "AUTO_OFF.png",
+        "sha256": "3d97e6ee25b792a3e7204468037fc2fa316bc9b15a8abcba6fdf10e1bee84d7a"
+      }
+    },
+    "asset_mwc017dh2z36t0": {
+      "id": "asset_mwc017dh2z36t0",
+      "name": "AUTO.png",
+      "path": "assets/mwc0162t10da89-AUTO.png",
+      "bytes": 553935,
+      "mimeType": "image/png",
+      "width": 3072,
+      "height": 3072,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "AUTO.png",
+        "sha256": "be2db56f1de30be9c55b0a68dda9ac5b10bd6c7cc9b1f638cb968a4af34f83c0"
+      }
+    },
+    "asset_mwc018gc30ab5v": {
+      "id": "asset_mwc018gc30ab5v",
+      "name": "SKIP_OFF.png",
+      "path": "assets/mwc017vufd06c5-SKIP_OFF.png",
+      "bytes": 568286,
+      "mimeType": "image/png",
+      "width": 3072,
+      "height": 3072,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "SKIP_OFF.png",
+        "sha256": "28fefc680e499ca1db6eba1d31b539e46b112c7b284497853b91531b01382d9a"
+      }
+    },
+    "asset_mwc019kg310epz": {
+      "id": "asset_mwc019kg310epz",
+      "name": "SKIP.png",
+      "path": "assets/mwc018za6fd49b-SKIP.png",
+      "bytes": 550706,
+      "mimeType": "image/png",
+      "width": 3072,
+      "height": 3072,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "SKIP.png",
+        "sha256": "b7021c5f688bfcf563a4eb6d41a2ba825dd6e986dd1ad8326895958a32363fd9"
+      }
+    },
+    "asset_mwc01awo32y4kr": {
+      "id": "asset_mwc01awo32y4kr",
+      "name": "FAST_OFF.png",
+      "path": "assets/mwc01a283a5daf-FAST_OFF.png",
+      "bytes": 574903,
+      "mimeType": "image/png",
+      "width": 3072,
+      "height": 3072,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "FAST_OFF.png",
+        "sha256": "75591ef7041072a20b8d903c030b5917629e913867149fb39e95887e5bf2258d"
+      }
+    },
+    "asset_mwc01c073386zw": {
+      "id": "asset_mwc01c073386zw",
+      "name": "FAST.png",
+      "path": "assets/mwc01bgw157771-FAST.png",
+      "bytes": 554709,
+      "mimeType": "image/png",
+      "width": 3072,
+      "height": 3072,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "FAST.png",
+        "sha256": "31975d72c217c5e3bc04a6cb57a2dfd9003f950acdb1bf44ab53122f99f369f1"
+      }
+    },
+    "asset_mwc01djk34bhdc": {
+      "id": "asset_mwc01djk34bhdc",
+      "name": "LOG_OFF.png",
+      "path": "assets/mwc01co8b92bfc-LOG_OFF.png",
+      "bytes": 562409,
+      "mimeType": "image/png",
+      "width": 3072,
+      "height": 3072,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "LOG_OFF.png",
+        "sha256": "1eeda902804f5b0343c97861c51d959d0dada6e368c24be575ef9a0a1169bfc0"
+      }
+    },
+    "asset_mwc01eyn35ctzb": {
+      "id": "asset_mwc01eyn35ctzb",
+      "name": "LOG.png",
+      "path": "assets/mwc01e8f412a88-LOG.png",
+      "bytes": 522993,
+      "mimeType": "image/png",
+      "width": 3072,
+      "height": 3072,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "LOG.png",
+        "sha256": "61c6fc851635ebc8e5202f2eaa5f65af710c93fa0adeef885080fb08709857ea"
+      }
+    },
+    "asset_mwc01gn4366eq1": {
+      "id": "asset_mwc01gn4366eq1",
+      "name": "AUDIO.png",
+      "path": "assets/mwc01fgsa42b84-AUDIO.png",
+      "bytes": 576154,
+      "mimeType": "image/png",
+      "width": 3072,
+      "height": 3072,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "AUDIO.png",
+        "sha256": "9bedbda6bdd7fc0162ec6c95eeb11ca15bd5d1a063417529de042dd8fed7e478"
+      }
+    },
+    "asset_mwc01ict379fac": {
+      "id": "asset_mwc01ict379fac",
+      "name": "AUDIO_OFF.png",
+      "path": "assets/mwc01h4nbf9f34-AUDIO_OFF.png",
+      "bytes": 595310,
+      "mimeType": "image/png",
+      "width": 3072,
+      "height": 3072,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "AUDIO_OFF.png",
+        "sha256": "3e7fed7abee6354dd1c4d9a9b2261ee06e9a927a2552c14335ed78a77ec9b979"
+      }
+    },
+    "asset_mwc01jrz38crcg": {
+      "id": "asset_mwc01jrz38crcg",
+      "name": "CLOSE.png",
+      "path": "assets/mwc01izo681aea-CLOSE.png",
+      "bytes": 558402,
+      "mimeType": "image/png",
+      "width": 3072,
+      "height": 3072,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "CLOSE.png",
+        "sha256": "3597279a1fbe45ec750695d02e56604356e06ba531727fd848619c2bbea2a3be"
+      }
+    },
+    "asset_mwc01n2m390c94": {
+      "id": "asset_mwc01n2m390c94",
+      "name": "main_visual.png",
+      "path": "assets/mwc01lq596bcb4-main_visual.png",
+      "bytes": 2060267,
+      "mimeType": "image/png",
+      "width": 1887,
+      "height": 868,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "main_visual.png",
+        "sha256": "54b6c30fae275d030df9abe997349d13455cdf08ae397d8314f1f55ff873131b"
+      }
+    },
+    "asset_mwc01qba3awd3h": {
+      "id": "asset_mwc01qba3awd3h",
+      "name": "name.png",
+      "path": "assets/mwc01pkcba1018-name.png",
+      "bytes": 882436,
+      "mimeType": "image/png",
+      "width": 7039,
+      "height": 3072,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "name.png",
+        "sha256": "2b92bd36b3d3314e0c68a408bf02b3171d7a51ef93262d92b5611343cea18a73"
+      }
+    },
+    "asset_mwc01rsh3b6npb": {
+      "id": "asset_mwc01rsh3b6npb",
+      "name": "next.png",
+      "path": "assets/mwc01r7j5a0784-next.png",
+      "bytes": 947823,
+      "mimeType": "image/png",
+      "width": 6625,
+      "height": 3072,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "next.png",
+        "sha256": "d4b8ddaefa04a5dc8fa5cc9e1fd19f3f8a586cc385380dadcb95cfa7d90ce5cb"
+      }
+    },
+    "asset_mwc01ulw3clpv3": {
+      "id": "asset_mwc01ulw3clpv3",
+      "name": "back.png",
+      "path": "assets/mwc01sxmb11e9c-back.png",
+      "bytes": 955663,
+      "mimeType": "image/png",
+      "width": 6625,
+      "height": 3072,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwbzyk0y1nbx7j",
+        "path": "back.png",
+        "sha256": "70f5f9edcb2996a44c796486a9c718a00c553402369b9d5238d216a112597954"
+      }
     }
-  }
+  },
+  "components": {},
+  "pageFolders": [
+    {
+      "id": "folder_mv9nleld1",
+      "name": "バックアップ"
+    }
+  ]
 }

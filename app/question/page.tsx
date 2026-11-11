@@ -40,7 +40,7 @@ export default function Page() {
             <div className="el-1099">
               <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p-2\"}]}]"} className="el-1100">
                 <span
-                  className="crisp-svg svg-207"
+                  className="crisp-svg svg-206"
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
@@ -667,7 +667,7 @@ export default function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-236"
+            className="svg-235"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-14">
@@ -676,7 +676,7 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-237"
+            className="svg-236"
           />
         </a>
       </section>
@@ -687,7 +687,7 @@ export default function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-279"
+            className="svg-278"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-30">
@@ -696,11 +696,11 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-280"
+            className="svg-279"
           />
         </a>
         <span
-          className="crisp-svg svg-281"
+          className="crisp-svg svg-280"
         >
           <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
           <Image

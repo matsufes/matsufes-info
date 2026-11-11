@@ -38,7 +38,7 @@ export default function Page() {
             <div className="el-1405">
               <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p-2\"}]}]"} className="el-1406">
                 <span
-                  className="crisp-svg svg-213"
+                  className="crisp-svg svg-212"
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image

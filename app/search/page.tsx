@@ -146,7 +146,7 @@ export default async function Page() {
             <div id="div-42" className="el-458">
               <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-393">
                 <span
-                  className="crisp-svg svg-183"
+                  className="crisp-svg svg-182"
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
@@ -1289,7 +1289,7 @@ export default async function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-226"
+            className="svg-225"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-9">
@@ -1298,7 +1298,7 @@ export default async function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-227"
+            className="svg-226"
           />
         </a>
       </section>
@@ -1309,7 +1309,7 @@ export default async function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-261"
+            className="svg-260"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-24">
@@ -1318,11 +1318,11 @@ export default async function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-262"
+            className="svg-261"
           />
         </a>
         <span
-          className="crisp-svg svg-263"
+          className="crisp-svg svg-262"
         >
           <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
           <Image
