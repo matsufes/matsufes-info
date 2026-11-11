@@ -9,9 +9,18 @@ if (scheme && ["http", "https", "mailto", "tel"].indexOf(scheme) < 0) return "#"
 if ((scheme === "http" || scheme === "https") && !/^https?:\/\//i.test(url)) return "#";
 return url;
 }
+var writeVarPath = (function eP(e,t,n,s){if("string"!=typeof t||!t)return;let a=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),i=(t,n)=>{if(!s||s(n))return Object.defineProperty(e,t,{value:n,writable:!0,enumerable:!0,configurable:!0}),t};if(a(e,t)||!t.includes("."))return i(t,n);let r=!1,o=(e,t)=>{if(!t.length)return n;let[s,...i]=t;if(Array.isArray(e)){if(!/^(0|[1-9][0-9]*)$/.test(s))return r=!0,e;let t=Number(s);if(!Number.isSafeInteger(t)||t>e.length||t===e.length&&e.length>=1e4)return r=!0,e;let n=e.slice();return n[t]=o(a(e,t)?e[t]:void 0,i),n}let l=e&&"object"==typeof e?e:{};return{...l,[s]:o(a(l,s)?l[s]:void 0,i)}},[l,...c]=t.split(".");if(c.length>64)return;let d=o(a(e,l)?e[l]:void 0,c);return r?void 0:i(l,d)});
+var withinValueLimit = (function eR(e){if(null==e)return!0;if("object"!=typeof e)return"number"==typeof e?Number.isFinite(e):"string"==typeof e?e.length<=5242880:"boolean"==typeof e;let t=new WeakMap,n=(e,s)=>{if(s>64)return{cost:1/0,height:0};if(null==e)return{cost:8,height:0};if("object"!=typeof e)return("number"!=typeof e||Number.isFinite(e))&&("number"==typeof e||"string"==typeof e||"boolean"==typeof e)?{cost:"string"==typeof e?e.length+2:8,height:0}:{cost:1/0,height:0};let a=t.get(e);if(a)return s+a.height<=64?a:{cost:1/0,height:0};if(t.set(e,{cost:1/0,height:0}),Array.isArray(e)&&e.length>5242880)return{cost:1/0,height:0};let i=Array.isArray(e)?2+e.length:2,r=0;for(let t of Object.keys(e)){let a=n(e[t],s+1);if(i+=t.length+4+a.cost,r=Math.max(r,a.height+1),i>5242880)return{cost:1/0,height:0}}let o={cost:i,height:r};return t.set(e,o),o};return n(e,0).cost<=5242880});
+var matchValueCondition = (function eO(e,t,n){let s=e=>null!==e&&"object"==typeof e,a=e=>{if("number"==typeof e)return Number.isFinite(e)?e:void 0;if("string"!=typeof e||!/^-?(?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][+-]?\d+)?$/.test(e.trim()))return;let t=Number(e.trim());return Number.isFinite(t)?t:void 0},i=(e,t,n=0)=>{if("number"==typeof e&&!Number.isFinite(e)||"number"==typeof t&&!Number.isFinite(t))return!1;if(e===t)return!0;if("string"==typeof e&&("boolean"==typeof t||"number"==typeof t&&Number.isFinite(t)))return e===String(t);if("string"==typeof t&&("boolean"==typeof e||"number"==typeof e&&Number.isFinite(e)))return String(e)===t;if(!s(e)||!s(t)||n>=16)return!1;let a=Object.keys(e),r=Object.keys(t);return a.length===r.length&&!(a.length>1e4)&&a.every(s=>Object.prototype.hasOwnProperty.call(t,s)&&i(e[s],t[s],n+1))};if("has-key"===t)return!(!s(e)||s(n))&&null!=n&&Object.prototype.propertyIsEnumerable.call(e,String(n));if("empty"===t)return null==e||""===e||!!s(e)&&0===Object.keys(e).length;if("contains"===t)return s(e)?Object.keys(e).some(t=>i(e[t],n)):null!=e&&!s(n)&&String(e).includes(String(n));if("eq"===t||void 0===t)return i(e,n);if("in"===t)return s(n)?Object.keys(n).some(t=>i(n[t],e)):"string"==typeof n&&n.split(",").some(t=>i(e,t.trim()));if("starts-with"===t||"ends-with"===t){if(null==e||s(e)||s(n))return!1;let a=String(e),i=String(n);return"starts-with"===t?a.startsWith(i):a.endsWith(i)}if("gt"===t||"gte"===t||"lt"===t||"lte"===t){let s=a(e),i=a(n);return void 0!==s&&void 0!==i&&("gt"===t?s>i:"gte"===t?s>=i:"lt"===t?s<i:s<=i)}return!1});
+var parseValueLiteral = (function eL(e){let t=e.trim();if("true"===t||"false"===t||"null"===t||t.startsWith("[")||t.startsWith("{")||/^-?(?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][+-]?\d+)?$/.test(t)||t.length>=2&&t.startsWith('"')&&t.endsWith('"'))try{return JSON.parse(t)}catch{}return e});
+var formatValueText = (function E(e,t=!1){if(null==e)return"";if(!Array.isArray(e))return"object"==typeof e?t?"[object Object]":"":String(e);let n=[],s=[{value:e,index:0}],a=new WeakSet([e]),i=0,r=0;for(;s.length;){if(++i>5242880)return"";let e=s[s.length-1];if(e.index>=e.value.length){a.delete(e.value),s.pop();continue}t&&e.index>0&&(n.push(","),r++);let o=e.value[e.index++];if(Array.isArray(o))a.has(o)||(a.add(o),s.push({value:o,index:0}));else{let e=null==o?"":"object"==typeof o?t?"[object Object]":"":String(o);e&&(!t&&n.length&&(n.push(", "),r+=2),n.push(e),r+=e.length)}if(r>5242880)return""}return n.join("")});
+var __name = function (fn) { return fn; };
+var evalRecipe = (function eA(e,t,n={}){let s=e=>({kind:"error",code:e});if(!Array.isArray(t)||t.length>32)return s("invalid-recipe");let a=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),i=(e,t)=>{if(!t)return e;if(!e||"object"!=typeof e)return;if(a(e,t))return e[t];let n=e,s=t.split(".");if(!(s.length>16)){for(let e of s){if(null===n||"object"!=typeof n)return;let t=Array.isArray(n)&&"-1"===e?n.length-1:e;if(!a(n,t))return;n=n[t]}return n}},r=(e,t)=>{if(!e||"object"!=typeof e)return!1;if(a(e,t))return!0;let n=t.split(".");if(n.length>16)return!1;let s=e;for(let e of n){if(null===s||"object"!=typeof s)return!1;let t=Array.isArray(s)&&"-1"===e?s.length-1:e;if(!a(s,t))return!1;s=s[t]}return!0},o=e=>null===e||"string"==typeof e||"boolean"==typeof e||"number"==typeof e&&Number.isFinite(e),l=e=>"string"==typeof e||"boolean"==typeof e||"number"==typeof e&&Number.isFinite(e)?String(e):void 0,c=(e,t,s=!1)=>{if("string"!=typeof e||e.length>t)return{ok:!1};let a=/^\{([^{}\s"'<>]+)\}$/.exec(e);if(a&&(!s||!/^\d+(,\d*)?$/.test(a[1]))){let e=i(n,a[1]);return void 0===e?{ok:!1}:{ok:!0,value:e}}let r="",o=0;for(let a of e.matchAll(/\\\{|\{([^{}\s"'<>]+)\}/g)){if(r+=e.slice(o,a.index),o=a.index+a[0].length,!a[1]){r+="{";continue}if(s&&/^\d+(,\d*)?$/.test(a[1])){r+=a[0];continue}let l=i(n,a[1]),c="";for(let e of Array.isArray(l)?l:[l]){if(null==e||"object"==typeof e||""===e)continue;let n=String(e);if(r.length+c.length+n.length>t)return{ok:!1};r+=c+n,c=", "}}return(r+=e.slice(o)).length<=t?{ok:!0,value:r}:{ok:!1}},d=(e,t,n=!1)=>{let s=c(e,t,n);if(!s.ok||null===s.value||"object"==typeof s.value)return{ok:!1};let a=String(s.value);return a.length<=t?{ok:!0,value:a}:{ok:!1}},u=e=>{if("text"===e.operandType)return c(e.operand,4096);if("variable"!==e.operandType)return((e,t)=>{if("string"!=typeof e||e.length>4096)return{ok:!1};if("text"===t)return{ok:!0,value:e};if("null"===t)return{ok:!0,value:null};if("boolean"===t)return"true"===e||"false"===e?{ok:!0,value:"true"===e}:{ok:!1};if("number"===t&&/^[-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?$/.test(e.trim())){let t=Number(e);return Number.isFinite(t)?{ok:!0,value:t}:{ok:!1}}return{ok:!1}})(e.operand,e.operandType);let t=i(n,e.operand);return void 0===t?{ok:!1}:{ok:!0,value:t}},p=e=>{if("number"==typeof e)return Number.isFinite(e)?e:void 0;if("string"!=typeof e||!/^[-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?$/.test(e.trim()))return;let t=Number(e.trim());return Number.isFinite(t)?t:void 0},h=(e,t)=>{if(e.length>256)return!1;let n=t+1,s=()=>({repeats:!1,alternation:!1,paths:0,branchPaths:1,choices:0,branchChoices:1,fixedWork:0,runtimeWork:0}),a=[s()],i=[],r=e=>"\\d"===e||"[0-9]"===e?"digit":"\\w"===e?"word":"\\s"===e?"space":"[a-z]"===e?"lower":"[A-Z]"===e?"upper":1===e.length?"literal:"+e:null,o=(e,t)=>"word"===e?/^[a-zA-Z0-9_]$/.test(t):"digit"===e?/^[0-9]$/.test(t):"lower"===e?/^[a-z]$/.test(t):"upper"===e?/^[A-Z]$/.test(t):"space"!==e||/^\s$/.test(t),l=(e,t)=>!e||!t||(e.startsWith("literal:")?t.startsWith("literal:")?e===t:o(t,e.slice(8)):t.startsWith("literal:")?o(e,t.slice(8)):"word"===e?"space"!==t:"word"===t?"space"!==e:e===t),c=null,d=(e,t)=>{let n=a[a.length-1];t&&(n.branchPaths*=t.paths+t.branchPaths);let s=t?t.choices+t.branchChoices:1,i={category:e,group:t,choices:s,fixedWork:t?t.fixedWork+2:1,runtimeWork:t?1+t.runtimeWork+s:1};return n.fixedWork+=i.fixedWork,n.runtimeWork+=n.branchChoices*i.runtimeWork,n.branchChoices*=s,n.paths+n.branchPaths<=256&&n.choices+n.branchChoices<=0x1000000&&n.fixedWork<=4096&&n.runtimeWork<=0x1000000?i:null};for(let t=0;t<e.length;t++){let o=e[t];if("\\"===o){if(t+1>=e.length||/[1-9]/.test(e[t+1])||"k"===e[t+1])return!1;let n=e[t+1];if("x"===n||"u"===n||"c"===n){let s=/^(?:x[0-9a-f]{2}|u[0-9a-f]{4}|c[a-z])/i.exec(e.slice(t+1));if(!s||!(c=d(r(String.fromCharCode("c"===n?s[0].toUpperCase().charCodeAt(1)%32:parseInt(s[0].slice(1),16))))))return!1;t+=s[0].length;continue}if("0"===n&&/[0-9]/.test(e[t+2]??"")||!(c=d(r("\\"+e[++t]))))return!1;continue}if("["===o){let n=t+1;for(;n<e.length;n++){if("\\"===e[n]){n++;continue}if("]"===e[n])break}if(n>=e.length||!(c=d(r(e.slice(t,n+1)))))return!1;t=n;continue}if("("===o){if("?"===e[t+1]){if(":"!==e[t+2])return!1;t+=2}a.push(s()),c=null;continue}if(")"===o){if(a.length<=1)return!1;let e=a.pop();if(a[a.length-1].repeats||=e.repeats,a[a.length-1].alternation||=e.alternation,!(c=d(null,e)))return!1;continue}if("|"===o){let e=a[a.length-1];if(e.alternation=!0,e.paths+=e.branchPaths,e.branchPaths=1,e.choices+=e.branchChoices,e.branchChoices=1,e.paths+e.branchPaths>256||e.choices+e.branchChoices>0x1000000)return!1;c=null;continue}let u="*"===o||"+"===o||"?"===o,p=!1,h=+("+"===o),f="?"===o?1:1/0;if("{"===o){let n=/^\{(\d+)(?:,(\d*))?\}/.exec(e.slice(t));if(n){let e=Number(n[1]),s=""===n[2]?1/0:void 0===n[2]?e:Number(n[2]);if(e>1e3||s>1e3&&1/0!==s||s<e)return!1;u=!0,p=e===s,h=e,f=s,t+=n[0].length-1}}if(u){if(!c||c.group&&(c.group.repeats||c.group.alternation))return!1;let e=a[a.length-1],t=Math.max(1,1/0===f?h:f),s=1/0===f?Math.max(n,h):Math.max(1,f),r=e.branchChoices/c.choices,o=p?1:s-h+1;if(e.fixedWork+=c.fixedWork*(t-1),e.runtimeWork+=r*c.runtimeWork*(s-1),e.branchChoices=r*o,e.fixedWork>4096||e.runtimeWork>0x1000000||e.choices+e.branchChoices>0x1000000)return!1;if(!p){if(i.some(e=>l(c.category,e)))return!1;i.push(c.category),a[a.length-1].repeats=!0}c=null}else if(!(c=d("."===o||"^"===o||"$"===o?null:r(o))))return!1}let u=a[0];return 1===a.length&&n*u.runtimeWork<=0x1000000},f=e,m=void 0===f;try{for(let e of t){if(!e||"object"!=typeof e||!("kind"in e))return s("invalid-recipe");switch(e.kind){case"fallback":if("string"!=typeof e.text||e.text.length>1e4)return s("invalid-recipe");if(m||"nullish"===e.when&&null===f){let t=c(e.text,1e4);if(!t.ok)return s("missing-value");f=t.value,m=!1}break;case"field":{if(m)break;let t=d(e.key,256);if(!t.ok||!f||"object"!=typeof f)return s("type-mismatch");let n=a(f,t.value);f=n||t.value&&r(f,t.value)?n?f[t.value]:i(f,t.value):void 0,m=void 0===f;break}case"length":if(m)break;if(!f||"object"!=typeof f)return s("type-mismatch");f=Object.keys(f).length;break;case"stringify":if(m)break;if(f=JSON.stringify(f),"string"!=typeof f||f.length>1e5)return s("limit-exceeded");break;case"parse":if(m)break;if("string"!=typeof f){if(null===f||"boolean"==typeof f||"number"==typeof f&&Number.isFinite(f)||"object"==typeof f)break;return s("type-mismatch")}if(f.length>1e5)return s("limit-exceeded");try{f=JSON.parse(f)}catch{return s("invalid-json")}break;case"math":{if(m)break;if(void 0!==e.operandType&&"number"!==e.operandType&&"variable"!==e.operandType)return s("invalid-recipe");let t=p(f),a="variable"===e.operandType?i(n,"string"==typeof e.operand?e.operand:""):e.operand,r=p(a);if(void 0===t||void 0===r)return s("type-mismatch");let o=t;switch(e.operation){case"add":o+=r;break;case"subtract":o-=r;break;case"multiply":o*=r;break;case"divide":if(0===r)return s("division-by-zero");o/=r;break;case"remainder":if(0===r)return s("division-by-zero");o%=r;break;default:return s("invalid-recipe")}if(!Number.isFinite(o))return s("limit-exceeded");f=o;break}case"split":{if(m)break;let t=d(e.separator,256),n=l(f);if(void 0===n||!t.ok)return s("type-mismatch");if(n.length>1e5)return s("limit-exceeded");f=n.split(t.value||",").map(e=>e.trim()).filter(Boolean);break}case"join":{if(m)break;let t=d(e.separator,256);if(!f||"object"!=typeof f||!t.ok)return s("type-mismatch");let n=Object.keys(f);if(n.length>1e4)return s("limit-exceeded");let a=[],i=0;for(let e of n){let n=f[e];if(null===n||""===n)continue;if(!o(n))return s("type-mismatch");let r=String(n);if((i+=r.length+(a.length?t.value.length:0))>1e5)return s("limit-exceeded");a.push(r)}f=a.join(t.value);break}case"replace":{if(m)break;let t=d(e.find,256,e.regex),n=d(e.replacement,1e4),a=l(f);if(void 0===a||!t.ok||!n.ok||"boolean"!=typeof e.regex)return s("type-mismatch");if(a.length>1e4)return s("limit-exceeded");if(!t.value){f=a;break}if(e.regex){let e;if(a.length>2048||!h(t.value,a.length))return s("invalid-regex");try{e=RegExp(t.value,"g")}catch{return s("invalid-regex")}let i=a.length,r=n.value.match(/\$(?:&|[1-9]\d?)/g)?.length??0,o=n.value.match(/\$(?:'|`)/g)?.length??0;for(let t of a.matchAll(e))if((i+=n.value.length+r*t[0].length+o*a.length)>1e5)return s("limit-exceeded");f=a.replace(e,n.value)}else{let e=a.split(t.value),i=e.length-1;if(a.length+i*(n.value.length-t.value.length)>1e5)return s("limit-exceeded");f=e.join(n.value)}if("string"!=typeof f||f.length>1e5)return s("limit-exceeded");break}case"append":{if(m)break;if(!Array.isArray(f)||f.length>=1e4)return s("type-mismatch");let t=u(e);if(!t.ok)return s("invalid-literal");f=[...f,t.value];break}case"sort":{let t;if(m)break;let n=d(e.field,256);if(!f||"object"!=typeof f||!n.ok||"asc"!==e.direction&&"desc"!==e.direction)return s("type-mismatch");let a=Array.isArray(f),r=Object.entries(f);if(r.length>1e4||Array.isArray(f)&&f.length>1e4)return s("limit-exceeded");let o=[];for(let e=0;e<r.length;e++){let[a,l]=r[e],c=i(l,n.value);if(void 0===c)return s("missing-value");if("number"!=typeof c&&"string"!=typeof c||"number"==typeof c&&!Number.isFinite(c)||void 0!==t&&t!==typeof c)return s("type-mismatch");t=typeof c,o.push({item:l,sourceKey:a,key:c,order:e})}o.sort((t,n)=>{let s="number"==typeof t.key&&"number"==typeof n.key?t.key-n.key:String(t.key).localeCompare(String(n.key),"ja",{numeric:!0});return"desc"===e.direction&&(s*=-1),s||t.order-n.order}),f=a?o.map(e=>e.item):o.map(e=>({キー:e.sourceKey,値:e.item}));break}default:return s("invalid-recipe")}if("string"==typeof f&&f.length>1e5||Array.isArray(f)&&f.length>1e4)return s("limit-exceeded")}return m?{kind:"missing"}:{kind:"value",value:f}}catch{return s("invalid-recipe")}});
+var removeItem = (function e$(e,t,n,s){if(!e||"object"!=typeof e||void 0===n||Array.isArray(e)&&e.length>1e4)return;let a=Object.keys(e);if(a.length>1e4)return;if("key"===t){if("string"!=typeof n&&"number"!=typeof n)return;let t=String(n);if(Array.isArray(e)){if(!/^(0|[1-9][0-9]*)$/.test(t))return;let n=Number(t);if(!Number.isSafeInteger(n)||n>=e.length)return;let s=e.slice();return s.splice(n,1),s}if(!Object.prototype.hasOwnProperty.call(e,t))return;let s=Object.assign(Object.create(null),e);return delete s[t],s}if("value"!==t)return;if(Array.isArray(e)){let t=e.filter(e=>!s(e,"eq",n));return t.length===e.length?void 0:t}let i=Object.assign(Object.create(null),e),r=!1;for(let e of a)s(i[e],"eq",n)&&(delete i[e],r=!0);return r?i:void 0});
 var cache = new Map();
 function parse(el) {
 var raw = el.getAttribute("data-scripts") || "[]";
+if (raw.length > 5 * 1024 * 1024) return [];
 var v = cache.get(raw);
 if (!v) {
 try {
@@ -19,6 +28,11 @@ v = JSON.parse(raw);
 } catch (e) {
 v = [];
 }
+if (!Array.isArray(v)) v = [];
+else v = v.filter(function (entry) {
+return entry && typeof entry === "object" &&
+typeof entry.trigger === "string" && Array.isArray(entry.steps);
+});
 cache.set(raw, v);
 }
 return v;
@@ -31,15 +45,14 @@ var keys = String(path).split(".");
 for (var i = 0; i < keys.length; i++) {
 if (v == null || typeof v !== "object") return undefined;
 var k = keys[i];
-v = Array.isArray(v) && k === "-1" ? v[v.length - 1] : v[k];
+var part = Array.isArray(v) && k === "-1" ? v.length - 1 : k;
+if (!has(v, part)) return undefined;
+v = v[part];
 }
 return v;
 }
 function text(v) {
-if (v == null) return "";
-if (Array.isArray(v)) return v.map(text).filter(Boolean).join(", ");
-if (typeof v === "object") return "";
-return String(v);
+return formatValueText(v);
 }
 function isHidden(el) {
 return getComputedStyle(el).display === "none";
@@ -135,31 +148,21 @@ return new RegExp(re).test(url);
 if (url.charAt(0) === "/" && url.charAt(1) !== "/" && !hard && r && r.push) r.push(url);
 else location.href = url;
 }
-function cmp(v, op, w) {
-switch (op) {
-case "neq": return v !== w;
-case "contains": return v.indexOf(w) >= 0;
-case "not-contains": return v.indexOf(w) < 0;
-case "starts-with": return v.lastIndexOf(w, 0) === 0;
-case "ends-with": return v.length >= w.length && v.indexOf(w, v.length - w.length) >= 0;
-case "gt": return parseFloat(v) > parseFloat(w);
-case "lt": return parseFloat(v) < parseFloat(w);
-case "empty": return v === "";
-case "not-empty": return v !== "";
-case "in":
-return w.split(",").some(function (x) {
-return x.trim() === v;
-});
-default: return v === w;
+function numericAmount(source, self, locals, resolveVar) {
+var value = source;
+if (typeof source === "string") {
+var match = /^\{([^{}\s]+)\}$/.exec(source.trim());
+if (!match) return NaN;
+value = resolveVar(match[1], self, locals);
 }
-}
-function sleep(s) {
-return new Promise(function (res) {
-setTimeout(res, Math.max(0, (Number(s) || 0) * 1000));
-});
+if (value === null || value === undefined || typeof value === "boolean" ||
+(typeof value === "string" && !value.trim())) return NaN;
+var number;
+try { number = Number(value); } catch (e) { return NaN; }
+return Number.isFinite(number) ? number : NaN;
 }
 var prefix = "";
-var mem = {};
+var mem = Object.create(null);
 var sharedDomain = (env && env.sharedDomain) || "";
 function domainAttr() {
 var h = location.hostname;
@@ -182,7 +185,10 @@ return cookieGet(ckName(k));
 }
 function cookieGet(name) {
 var n = name + "=";
-var parts = document.cookie ? document.cookie.split("; ") : [];
+var raw;
+try { raw = document.cookie; } catch (e) { return null; }
+if (!raw) return null;
+var parts = raw.split("; ");
 for (var i = 0; i < parts.length; i++) {
 if (parts[i].indexOf(n) !== 0) continue;
 try {
@@ -204,19 +210,39 @@ encodeURIComponent(k) + "=" + encodeURIComponent(v) + "; Max-Age=31536000; Path=
 "; SameSite=Lax" + (location.protocol === "https:" ? "; Secure" : "");
 return cookieGet(encodeURIComponent(k)) === v;
 }
+function encodeStored(value) {
+return "tsumu-store-v1:" + JSON.stringify({
+value: value === undefined ? null : value,
+missing: value === undefined
+});
+}
+function decodeStored(raw) {
+if (raw == null) return undefined;
+if (typeof raw !== "string" || !raw.startsWith("tsumu-store-v1:")) return raw;
+try {
+var data = JSON.parse(raw.slice("tsumu-store-v1:".length));
+if (!data || typeof data !== "object" ||
+!has(data, "missing") || !has(data, "value") ||
+typeof data.missing !== "boolean") return raw;
+return data.missing ? undefined : data.value;
+} catch (e) {
+return raw;
+}
+}
 function storeGet(key, shared) {
 var k = prefix + key;
 if (shared) {
 var s = cookieGet(encodeURIComponent(k));
-if (s != null) return s;
+if (s != null) return decodeStored(s);
 }
 var v = lsGet(k);
 if (v == null) v = ckGet(k);
 if (v == null && has(mem, k)) v = mem[k];
-return v == null ? "" : v;
+return decodeStored(v);
 }
 function storeSet(key, v, shared) {
 var k = prefix + key;
+try { v = encodeStored(v); } catch (e) { return; }
 try {
 if (shared && scSet(k, v)) {
 try {
@@ -248,33 +274,75 @@ return;
 mem[k] = v;
 }
 return {
-install: function (root) {
+install: function (root, initialVars, pageListRows) {
 var alive = true;
-var vars = {};
+var pageGeneration = 0;
+var pageBody = null;
+var pageId = null;
+var pendingSleeps = new Set();
+function cancelPendingSleeps() {
+pendingSleeps.forEach(function (task) {
+clearTimeout(task.timer);
+task.resolve();
+});
+pendingSleeps.clear();
+}
+function sleep(s) {
+return new Promise(function (resolve) {
+var task = { timer: null, resolve: resolve };
+task.timer = setTimeout(function () {
+pendingSleeps.delete(task);
+resolve();
+}, Math.min(86400, Math.max(0, s)) * 1000);
+pendingSleeps.add(task);
+});
+}
+function syncPage() {
+var body = root.querySelector("[data-page-body]");
+var pid = body ? body.getAttribute("data-page-body") : null;
+if (body !== pageBody || pid !== pageId) {
+cancelPendingSleeps();
+hovering.forEach(function (timer) { clearTimeout(timer); });
+hovering.clear();
+pageGeneration++;
+pageBody = body;
+}
+if (pid !== pageId) {
+if (pageId !== null) {
+vars = Object.create(null);
+filters.clear();
+sorts.clear();
+}
+pageId = pid;
+}
+return pageGeneration;
+}
+function activeRun() {
+var generation = syncPage();
+var stepsRun = 0;
+function active() {
+return alive && generation === syncPage() && stepsRun < 20000;
+}
+active.consume = function () {
+if (!active()) return false;
+stepsRun++;
+return true;
+};
+active.resetBudget = function () { stepsRun = 0; };
+return active;
+}
+var vars = initialVars && typeof initialVars === "object"
+? Object.assign(Object.create(null), initialVars) : Object.create(null);
 function getVar(name) {
 return has(vars, name) ? vars[name] : dig(vars, name);
 }
 function writeVar(name, v) {
-if (!name) return;
-if (name.indexOf(".") < 0 || has(vars, name)) {
-vars[name] = v;
-return;
+var rootName = writeVarPath(vars, name, v, withinValueLimit);
+if (rootName === undefined) return false;
+if (typeof window !== "undefined" && typeof window.__siteVarsOnChange === "function") {
+window.__siteVarsOnChange(rootName, vars[rootName]);
 }
-var ks = name.split(".");
-var cur = vars;
-for (var i = 0; i < ks.length - 1; i++) {
-var k = ks[i].trim();
-var nx = cur[k];
-if (nx == null || typeof nx !== "object" || Array.isArray(nx)) {
-vars[name] = v;
-return;
-}
-var cp = {};
-for (var ok in nx) if (has(nx, ok)) cp[ok] = nx[ok];
-cur[k] = cp;
-cur = cp;
-}
-cur[ks[ks.length - 1].trim()] = v;
+return true;
 }
 function inTpl(el) {
 return !!(el.closest && el.closest("[data-tpl]"));
@@ -312,14 +380,11 @@ if (mine.length) return mine;
 return els;
 }
 function lookup(name, self, item) {
-if (item) {
-var iv = has(item, name) ? item[name] : dig(item, name);
-if (iv !== undefined) return iv;
-}
-var v = getVar(name);
-if (v !== undefined) return v;
 var dot = name.indexOf(".");
 var head = dot < 0 ? name : name.slice(0, dot);
+if (item && (has(item, name) || has(item, head)))
+return has(item, name) ? item[name] : dig(item, name);
+if (has(vars, name) || has(vars, head)) return getVar(name);
 var prop = dot < 0 ? "" : name.slice(dot + 1);
 var els = find(self, head);
 if (!els.length) els = groupOf(head);
@@ -334,13 +399,17 @@ if (q != null) return q;
 return "";
 }
 function resolve(s, self, item) {
-return String(s == null ? "" : s).replace(/\\\{|\{([^{}\s"'<>`]+)\}/g, function (m, k) {
+var source;
+try { source = String(s == null ? "" : s); } catch (e) { return ""; }
+return source.replace(/\\\{|\{([^{}\s"'<>`]+)\}/g, function (m, k) {
 if (k == null) return "{";
 return text(lookup(k.trim(), self, item));
 });
 }
 function resolveUrl(s, self, item) {
-return String(s == null ? "" : s).replace(
+var source;
+try { source = String(s == null ? "" : s); } catch (e) { return ""; }
+return source.replace(
 /\\\{|\{([^{}\s"'<>`]+)\}|%7B(.*?)%7D/gi,
 function (m, a, b, at) {
 if (m === "\\{") return "{";
@@ -375,68 +444,135 @@ root.querySelectorAll("[data-live-placeholder]").forEach(function (el) {
 if (inTpl(el)) return;
 el.placeholder = resolve(el.getAttribute("data-live-placeholder"), el);
 });
-root.querySelectorAll("[data-live-value]").forEach(function (el) {
+var liveValues = Array.prototype.slice.call(root.querySelectorAll("[data-live-value]"));
+liveValues.sort(function (a, b) {
+return Number(b.tagName === "OPTION") - Number(a.tagName === "OPTION");
+});
+liveValues.forEach(function (el) {
 if (inTpl(el) || el.hasAttribute("data-edited")) return;
 var nv = resolve(el.getAttribute("data-live-value"), el);
 if (el.value !== nv) el.value = nv;
 });
 }
-function onLiveInput(e) {
-if (e.isTrusted && e.target && e.target.setAttribute) e.target.setAttribute("data-edited", "");
-refreshLive();
-}
 function setVar(name, v) {
-if (!name) return;
-writeVar(name, v);
+if (!name || Object.is(getVar(name), v)) return;
+var owner = root.querySelector("[data-page-body]");
+var watching = [];
+if (owner) parse(owner).forEach(function (s) {
+if (s.trigger !== "change" || typeof s.changeVariable !== "string" || !s.changeVariable) return;
+var watched = s.changeVariable;
+if (name === watched || name.indexOf(watched + ".") === 0 || watched.indexOf(name + ".") === 0)
+watching.push({ script: s, name: watched, before: getVar(watched) });
+});
+if (!writeVar(name, v)) return;
 refreshLive();
+watching.forEach(function (entry) {
+if (Object.is(entry.before, getVar(entry.name)) ||
+!alive || owner !== root.querySelector("[data-page-body]") ||
+firingVariableScripts.has(entry.script)) return;
+firingVariableScripts.add(entry.script);
+try {
+runSteps(entry.script.steps || [], owner, undefined, activeRun());
+} finally {
+firingVariableScripts.delete(entry.script);
+}
+});
+}
+function readInput(raw, self, scope) {
+if (raw && typeof raw === "object" && Array.isArray(raw.scriptParts))
+return resolve(raw, self, scope);
+if (typeof raw !== "string") return raw;
+var source = raw.trim();
+var reference = /^\{([^{}\s"'<>]+)\}$/.exec(source);
+if (reference) return lookup(reference[1], self, scope);
+if (source === "true" || source === "false" || source === "null" ||
+source.charAt(0) === "[" || source.charAt(0) === "{" ||
+/^-?(?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][+-]?\d+)?$/.test(source) ||
+(source.length >= 2 && source.charAt(0) === '"' && source.charAt(source.length - 1) === '"')) {
+try { return JSON.parse(source); } catch (e) {}
+}
+return resolve(raw, self, scope);
 }
 function test(c, self, sc) {
+if (!c || typeof c !== "object") return false;
 if (c.subject === "var") {
-return cmp(resolve(c.left, self, sc), c.op, resolve(c.value, self, sc));
+if (typeof c.left !== "string" || !c.left.trim()) return false;
+var matched = matchValueCondition(readInput(c.left, self, sc), c.op || "eq", readInput(c.value, self, sc));
+return c.not ? !matched : matched;
 }
+if (typeof c.target !== "string" || !c.target.trim()) return false;
 var els = find(self, c.target);
+if (!els.length) return false;
 var r = false;
 if (c.subject === "value") {
 var w = resolve(c.value, self, sc);
 var box = els.length ? inputOf(els[0]) : null;
 if (box && (box.type === "checkbox" || isRadioItem(els[0], box))) {
 var on = !!box.checked;
-if (c.op === "empty") return !on;
-if (c.op === "not-empty") return on;
-if (!c.op || c.op === "eq" || c.op === "neq") {
+if (c.op === "empty") return c.not ? on : !on;
+if (!c.op || c.op === "eq") {
 var same = truthy(w) === on;
-return c.op === "neq" ? !same : same;
+return c.not ? !same : same;
 }
 }
-return cmp(valueOf(els), c.op, w);
+var matches = matchValueCondition(valueOf(els), c.op || "eq", w);
+return c.not ? !matches : matches;
+}
+if (c.subject === "checked") {
+r = els.some(function (el) {
+var i = inputOf(el);
+return !!(i && i.checked);
+});
 }
 return c.not ? !r : r;
+}
+function testConditions(step, self, scope) {
+var extras = Array.isArray(step.conditions) ? step.conditions : [];
+if (extras.length > 32) return false;
+var groups = [[step.cond]];
+extras.forEach(function (condition) {
+if (!condition || typeof condition !== "object") return;
+if (!condition.and) groups.push([]);
+if (condition.subject !== "var" ||
+(typeof condition.left === "string" && !!condition.left.trim()))
+groups[groups.length - 1].push(condition);
+});
+return groups.some(function (group) {
+return group.length > 0 && group.every(function (condition) {
+return test(condition, self, scope);
+});
+});
 }
 var filters = new Map();
 function fieldOf(item, f) {
 if (item == null) return undefined;
 return has(item, f) ? item[f] : dig(item, f);
 }
-function passOne(conds, item) {
-var ok = false;
-var grp = true;
-conds.forEach(function (c, i) {
-if (i && !c.and) {
-ok = ok || grp;
-grp = true;
+function filterText(v) {
+return formatValueText(v, true);
 }
-var fv = fieldOf(item, c.field);
-grp = grp && cmp(fv == null ? "" : String(fv), c.op, c.value);
+function passOne(conds, item) {
+if (!conds.length) return true;
+var groups = [[]];
+conds.forEach(function (c, i) {
+if (i && !c.and) groups.push([]);
+groups[groups.length - 1].push(c);
 });
-return ok || grp;
+return groups.some(function (group) {
+return group.every(function (c) {
+var fv = fieldOf(item, c.field);
+var matches = matchValueCondition(fv, c.op, c.value);
+return c.not ? !matches : matches;
+});
+});
 }
 function passes(fs, item) {
-var acc = true;
-fs.forEach(function (f, i) {
-var r = passOne(f.conds, item);
-acc = i === 0 ? r : f.join === "or" ? acc || r : acc && r;
-});
-return acc;
+return fs.reduce(function (acc, f, i) {
+if (i === 0) return passOne(f.conds, item);
+return f.join === "or"
+? acc || passOne(f.conds, item)
+: acc && passOne(f.conds, item);
+}, true);
 }
 var sorts = new Map();
 function itemOf(w) {
@@ -449,7 +585,7 @@ return {};
 function order(x, y) {
 return typeof x === "number" && typeof y === "number"
 ? x - y
-: String(x == null ? "" : x).localeCompare(String(y == null ? "" : y), "ja", {
+: filterText(x).localeCompare(filterText(y), "ja", {
 numeric: true,
 });
 }
@@ -495,28 +631,22 @@ function listsOf(name) {
 try {
 return Array.prototype.slice.call(
 root.querySelectorAll('[data-array="' + CSS.escape(name) + '"]')
-);
+).filter(function (list) { return !inTpl(list); });
 } catch (e) {
 return [];
 }
-}
-function itemsOf(v) {
-var out = [];
-if (!Array.isArray(v)) return out;
-v.forEach(function (x) {
-if (x == null || Array.isArray(x)) return;
-out.push(typeof x === "object" ? x : { "値": x });
-});
-return out;
 }
 function setValue(self, id, v) {
 var els = find(self, id);
 if (!els.length) els = groupOf(id);
 var first = els.length ? inputOf(els[0]) : null;
+if (first && first.type === "file" && v !== "") return;
 var toggle = !!first && (first.type === "checkbox" || isRadioItem(els[0], first));
 if (toggle) v = truthy(v) ? "true" : "false";
 else if (first && first.type === "radio") els = radiosOf(first);
-if (valueOf(els) === v) return;
+var select = first && first.tagName === "SELECT";
+var scalar = first && !select && first.type !== "checkbox" && first.type !== "radio";
+if (valueOf(els) === v && !(select && first.selectedIndex < 0)) return;
 var changed = [];
 els.forEach(function (el) {
 var input = inputOf(el);
@@ -526,12 +656,21 @@ var on = toggle ? v === "true" : input.value === v;
 if (input.checked === on) return;
 input.checked = on;
 if (!on && input.type === "radio") return;
+} else if (input.tagName === "SELECT") {
+var before = input.selectedIndex;
+input.value = v;
+if (input.selectedIndex === before) return;
 } else {
 if (input.value === v || (input.type === "file" && v !== "")) return;
+var beforeValue = input.value;
 input.value = v;
+if (input.value === beforeValue) return;
 }
 changed.push(input);
 });
+if ((select || scalar) && !changed.length) return;
+if (scalar) v = first.value;
+if (!changed.length) refreshLive();
 changed.forEach(function (input) {
 input.dispatchEvent(new Event("input", { bubbles: true }));
 input.dispatchEvent(new Event("change", { bubbles: true }));
@@ -539,16 +678,63 @@ input.dispatchEvent(new Event("change", { bubbles: true }));
 }
 function scopeOf(cx) {
 if (!cx) return undefined;
-var o = scopeOf(cx.up) || {};
-for (var k in cx.item) if (has(cx.item, k)) o[k] = cx.item[k];
+var parent = scopeOf(cx.up);
+var o = Object.assign(Object.create(null), parent);
+if (cx.item) for (var k in cx.item) if (has(cx.item, k)) o[k] = cx.item[k];
+o["ループ"] = {
+"値": cx.raw,
+"キー": cx.key,
+"順番": cx.index,
+"外側": parent && parent["ループ"]
+};
 return o;
 }
 function merged(a, b) {
-var o = {};
+var o = Object.create(null);
 var k;
 for (k in a || {}) if (has(a, k)) o[k] = a[k];
 for (k in b || {}) if (has(b, k)) o[k] = b[k];
 return o;
+}
+function transformScope(transform, self, local) {
+var scope = merged(vars, local);
+var count = 0;
+function include(name) {
+if (!name || count++ >= 64) return;
+var rootName = name.split(".")[0];
+if (has(scope, name) || has(scope, rootName)) return;
+var exists = !!find(self, rootName).length || !!groupOf(rootName).length;
+if (!exists) {
+try { exists = new URLSearchParams(location.search).has(name); } catch (e) {}
+}
+if (exists) scope[name] = lookup(name, self, local);
+}
+function scan(value, depth) {
+if (depth > 4) return;
+if (typeof value === "string") {
+var pos = 0;
+while ((pos = value.indexOf("{", pos)) >= 0) {
+var end = value.indexOf("}", pos + 1);
+if (end < 0) break;
+var name = value.slice(pos + 1, end);
+var escaped = pos > 0 && value.charCodeAt(pos - 1) === 92;
+if (!escaped && name && !Array.from(name).some(function (char) {
+return char <= " " || char === "{" || char === "}" ||
+char === '"' || char === "'" || char === "<" || char === ">" ||
+char.charCodeAt(0) === 96;
+})) include(name);
+pos = end + 1;
+}
+} else if (Array.isArray(value)) {
+value.forEach(function (entry) { scan(entry, depth + 1); });
+} else if (value && typeof value === "object") {
+Object.keys(value).forEach(function (key) { scan(value[key], depth + 1); });
+}
+}
+scan(transform, 0);
+if (transform.operandType === "variable" && typeof transform.operand === "string")
+include(transform.operand);
+return scope;
 }
 function exec(st, self, cx) {
 var sc = scopeOf(cx);
@@ -565,6 +751,18 @@ if (isHidden(el)) show(el);
 else hide(el);
 });
 break;
+case "set-state": {
+var state = typeof st.state === "string" ? st.state.trim() : "";
+var valid = state === "default" || state === "" ||
+(state.length <= 40 && /^[\p{L}\p{N}_][\p{L}\p{N}_ -]*$/u.test(state) &&
+["hover", "active", "focus"].indexOf(state) < 0);
+if (!valid) break;
+find(self, st.target).forEach(function (el) {
+if (!state || state === "default") el.removeAttribute("data-site-state");
+else el.setAttribute("data-site-state", state);
+});
+break;
+}
 case "open-page":
 go(st.href, st.newTab);
 break;
@@ -587,198 +785,181 @@ c.disabled = st.op === "toggle" ? !c.disabled : st.op === "disable";
 });
 refreshLive();
 break;
-case "filter-array": {
-if (!st.array || !st.conds || !st.conds.length) break;
+case "list-display": {
+if (!st.array) break;
+if (st.mode === "filter") {
+if (!Array.isArray(st.conds) || !st.conds.length ||
+!st.conds.every(function (c) {
+return c && typeof c === "object" && typeof c.field === "string";
+})) break;
 var fs = (filters.get(st.array) || []).slice();
-var key =
-st.no != null
-? "n" + st.no
-: "f" +
-st.conds
-.map(function (c) {
-return c.field;
-})
-.sort()
-.join("|");
+var key = st.no != null ? "n" + st.no : "f" +
+st.conds.map(function (c) { return c.field; }).sort().join("|");
 var entry = {
-key: key,
-no: st.no,
-join: st.join,
+key: key, no: st.no, join: st.join,
 conds: st.conds.map(function (c) {
-return { field: c.field, op: c.op, value: resolve(c.value, self, sc), and: c.and };
+return { field: c.field, op: c.op, value: readInput(c.value, self, sc), not: c.not, and: c.and };
 }),
 };
 var at = -1;
-fs.forEach(function (f, i) {
-if (f.key === key) at = i;
-});
+fs.forEach(function (f, i) { if (f.key === key) at = i; });
 if (at >= 0) fs[at] = entry;
 else fs.push(entry);
 filters.set(st.array, fs);
+} else if (st.mode === "sort") {
+if (!st.field) break;
+sorts.set(st.array, { field: st.field, dir: st.dir });
+} else if (st.mode === "clear") {
+if (st.no != null) {
+filters.set(st.array, (filters.get(st.array) || []).filter(function (f) { return f.no !== st.no; }));
+} else {
+filters.delete(st.array);
+}
+} else break;
 relist(st.array);
 break;
 }
-case "unfilter-array":
-if (st.no != null) {
-filters.set(
-st.array,
-(filters.get(st.array) || []).filter(function (f) {
-return f.no !== st.no;
-})
-);
-} else filters.delete(st.array);
-relist(st.array);
-break;
-case "sort-array":
-if (!st.array || !st.field) break;
-sorts.set(st.array, { field: st.field, dir: st.dir });
-relist(st.array);
-break;
 case "store-save":
-if (st.key) storeSet(st.key, resolve(st.value, self, sc), !!st.shared);
+if (st.key) storeSet(st.key, readInput(st.value, self, sc), !!st.shared);
 break;
 case "store-load":
-setVar(st.into, st.key ? storeGet(st.key, !!st.shared) : "");
+setVar(st.into, st.key ? storeGet(st.key, !!st.shared) : undefined);
 break;
+case "transform": {
+if (!st.source || !st.into || !st.transform || typeof st.transform !== "object") break;
+var inputValue = sc && (has(sc, st.source) ? sc[st.source] : dig(sc, st.source));
+var sourceRoot = st.source.split(".")[0];
+var localShadows = !!(sc && (has(sc, st.source) || has(sc, sourceRoot)));
+var shadowed = has(vars, st.source) || has(vars, sourceRoot) || localShadows;
+if (inputValue === undefined && !localShadows) inputValue = getVar(st.source);
+if (inputValue === undefined && !shadowed && "serverValue" in st) {
+setVar(st.into, st.serverValue);
+break;
+}
+if (inputValue === undefined && !shadowed && "raw" in st) inputValue = st.raw;
+if (inputValue === undefined && !shadowed &&
+st.transform.kind !== "fallback")
+inputValue = lookup(st.source, self, sc);
+var transformed = evalRecipe(inputValue, [st.transform], transformScope(st.transform, self, sc));
+if (transformed.kind === "value") setVar(st.into, transformed.value);
+else if (transformed.kind === "missing") setVar(st.into, undefined);
+else if (transformed.kind === "error")
+console.warn("Value transform failed:", transformed.code, st.transform.kind, st.source, st.into);
+break;
+}
+case "set-list-item": {
+if (!st.list || typeof st.list !== "string") break;
+var sourceList = getVar(st.list);
+if (!sourceList || typeof sourceList !== "object") break;
+var providedKey = typeof st.key === "string" && st.key.trim() !== "";
+var rawKey = providedKey ? readInput(st.key, self, sc) : undefined;
+if (providedKey && (rawKey === null || typeof rawKey !== "string" && typeof rawKey !== "number")) break;
+var newValue = readInput(st.value, self, sc);
+if (Array.isArray(sourceList)) {
+var nextArray = sourceList.slice();
+var targetIndex = providedKey ? Number(rawKey) : nextArray.length;
+if (!Number.isSafeInteger(targetIndex) || targetIndex < 0 ||
+targetIndex > nextArray.length || nextArray.length >= 10000 && targetIndex === nextArray.length) break;
+nextArray[targetIndex] = newValue;
+setVar(st.list, nextArray);
+} else {
+if (!providedKey) break;
+var nextKey = String(rawKey);
+if (!Object.prototype.hasOwnProperty.call(sourceList, nextKey) && Object.keys(sourceList).length >= 10000) break;
+if (nextKey === "__proto__" || nextKey === "prototype" || nextKey === "constructor") break;
+var nextObject = Object.assign(Object.create(null), sourceList);
+nextObject[nextKey] = newValue;
+setVar(st.list, nextObject);
+}
+break;
+}
+case "remove-list-item": {
+if (!st.list || typeof st.list !== "string" ||
+typeof st.value !== "string" || !st.value.trim()) break;
+var selected = readInput(st.value, self, sc);
+var remaining = removeItem(getVar(st.list), st.mode, selected, matchValueCondition);
+if (remaining !== undefined) setVar(st.list, remaining);
+break;
+}
 case "set-var": {
 if ("raw" in st) {
 setVar(st.into, st.raw);
 break;
 }
-var sv = /^\{([^{}]+)\}$/.exec(String(st.value || "").trim());
-setVar(st.into, sv ? lookup(sv[1].trim(), self, sc) : resolve(st.value, self, sc));
+var sv = typeof st.value === "string"
+? /^\{([^{}\s"'<>]+)\}$/.exec(st.value.trim()) : null;
+setVar(st.into, sv ? lookup(sv[1].trim(), self, sc) : readInput(st.value, self, sc));
 break;
 }
-case "list-edit": {
-if (!st.into) break;
-var lsep = st.sep || ",";
-var lcur = getVar(st.into);
-var parts = (Array.isArray(lcur) ? lcur.map(text) : text(lcur).split(lsep))
-.map(function (x) {
-return x.trim();
-})
-.filter(Boolean);
-var lv = resolve(st.value, self, sc).trim();
-if (lv) {
-var lat = parts.indexOf(lv);
-if (st.op === "remove" || (st.op === "toggle" && lat >= 0)) {
-parts = parts.filter(function (x) {
-return x !== lv;
+}
+}
+var LOOP_BREAK = {};
+function loop(st, self, cx, n, active, times, forever, depth, nesting) {
+if (!active() || (!forever && n >= times)) return Promise.resolve();
+var local = { item: {}, array: "", index: n, key: String(n), raw: n, up: cx };
+return runSteps(st.then, self, local, active, depth + 1, nesting + 1).then(function (flow) {
+if (flow === LOOP_BREAK || !active()) return;
+return (forever ? sleep(0.05).then(function () { active.resetBudget(); }) : Promise.resolve()).then(function () {
+return loop(st, self, cx, n + 1, active, times, forever, depth, nesting);
 });
-} else if (lat < 0) parts.push(lv);
+});
 }
-setVar(st.into, parts.join(lsep));
-break;
+function each(st, self, up, i, active, entries, depth, nesting) {
+if (!active()) return Promise.resolve();
+if (!entries) {
+var source = lookup(st.array, self, scopeOf(up));
+if (!source || typeof source !== "object") return Promise.resolve();
+var keys = Object.keys(source);
+if (keys.length > 10000) return Promise.resolve();
+entries = keys.map(function (key) { return { key: key, value: source[key] }; });
 }
-case "split":
-setVar(
-st.into,
-resolve(st.source, self, sc)
-.split(st.sep || ",")
-.map(function (x) {
-return x.trim();
-})
-.filter(Boolean)
-);
-break;
-case "array-find": {
-var list = getVar(st.array);
-var key = resolve(st.value, self, sc);
-var hit = null;
-if (Array.isArray(list) && st.field) {
-for (var fi = 0; fi < list.length; fi++) {
-var fv = dig(list[fi], st.field);
-var fs = fv == null ? "" : String(fv);
-if (fs === key || encodeURIComponent(fs) === key) {
-hit = list[fi];
-break;
+if (i >= entries.length) return Promise.resolve();
+var entry = entries[i], value = entry.value;
+var item = value && typeof value === "object" && !Array.isArray(value) ? value : { "値": value };
+var cx = { array: st.array, index: i, key: entry.key, raw: value, item: item, up: up };
+return runSteps(st.then, self, cx, active, depth + 1, nesting + 1).then(function (flow) {
+if (flow === LOOP_BREAK) return;
+return each(st, self, up, i + 1, active, entries, depth, nesting);
+});
 }
-}
-}
-setVar(st.into, hit);
-break;
-}
-case "array-field": {
-var av = getVar(st.array);
-if (!Array.isArray(av) || !st.field) break;
-var one = /^\{([^{}]+)\}$/.exec(String(st.value || "").trim());
-setVar(
-st.array,
-av.map(function (x) {
-if (x == null || Array.isArray(x)) return x;
-var it = typeof x === "object" ? x : { "値": x };
-var ao = {};
-for (var ak in it) if (has(it, ak)) ao[ak] = it[ak];
-var am = merged(sc, it);
-ao[st.field] = one ? lookup(one[1].trim(), self, am) : resolve(st.value, self, am);
-return ao;
-})
-);
-break;
-}
-case "count": {
-var ca = getVar(st.array);
-var cn = Array.isArray(ca) ? ca.length : 0;
-if (!Array.isArray(ca)) {
-try {
-var cl0 = root.querySelector('[data-array="' + CSS.escape(st.array) + '"]:not([data-client-list])');
-if (cl0) {
-cn = Array.prototype.filter.call(cl0.children, function (w) {
-return w.hasAttribute("data-item");
-}).length;
-}
-} catch (e) {}
-}
-var cf = filters.get(st.array) || [];
-if (Array.isArray(ca)) {
-cn = itemsOf(ca).filter(function (x) {
-return passes(cf, x);
-}).length;
-} else {
-var cl = listsOf(st.array).filter(function (l) {
-return !l.hasAttribute("data-client-list");
-})[0];
-if (cl) {
-cn = Array.prototype.filter.call(cl.children, function (w) {
-return w.hasAttribute("data-item") && passes(cf, itemOf(w));
-}).length;
-}
-}
-setVar(st.into, cn);
-break;
-}
-case "join": {
-var src = getVar(st.array);
-setVar(
-st.into,
-Array.isArray(src)
-? src
-.map(function (x) {
-var v = st.field && x && typeof x === "object" ? dig(x, st.field) : x;
-return v == null || typeof v === "object" ? "" : String(v);
-})
-.filter(function (x) {
-return x !== "";
-})
-.join(st.sep || "")
-: text(src)
-);
-break;
-}
-}
-}
-function runSteps(steps, self, cx) {
+function runSteps(steps, self, cx, active, loopDepth, nesting) {
+if ((nesting || 0) > 16) return Promise.resolve();
+var depth = loopDepth || 0;
 var i = 0;
 function next() {
-while (alive && i < steps.length) {
+while (active() && i < steps.length) {
+if (!active.consume()) return Promise.resolve();
 var st = steps[i++];
-if (st.kind === "wait") return sleep(st.seconds).then(next);
+if (!st || typeof st !== "object" || typeof st.kind !== "string") continue;
+if (st.kind === "break-loop") {
+if (depth > 0) return Promise.resolve(LOOP_BREAK);
+continue;
+}
+if (st.kind === "wait") {
+var seconds = numericAmount(st.seconds, self, scopeOf(cx), lookup);
+if (!Number.isFinite(seconds) || seconds < 0) continue;
+return sleep(seconds).then(function () { active.resetBudget(); return next(); });
+}
 if (st.kind === "if") {
-var branch = test(st.cond, self, scopeOf(cx)) ? st.then : st.else;
-if (branch && branch.length) {
-return runSteps(branch, self, cx).then(next);
+var branch = testConditions(st, self, scopeOf(cx)) ? st.then : st.else;
+if (Array.isArray(branch) && branch.length) {
+return runSteps(branch, self, cx, active, depth, (nesting || 0) + 1).then(function (flow) {
+return flow === LOOP_BREAK ? LOOP_BREAK : next();
+});
 }
 continue;
+}
+if (st.kind === "repeat") {
+if (!Array.isArray(st.then) || !st.then.length) continue;
+var count = numericAmount(st.times, self, scopeOf(cx), lookup);
+if (!Number.isInteger(count) || count < 0 || count > 1000) continue;
+var forever = typeof st.times === "number" && st.times === 0;
+if (!forever && count === 0) continue;
+return loop(st, self, cx, 0, active, count, forever, depth, nesting || 0).then(next);
+}
+if (st.kind === "for-each") {
+if (!Array.isArray(st.then) || !st.then.length) continue;
+return each(st, self, cx, 0, active, null, depth, nesting || 0).then(next);
 }
 exec(st, self, cx);
 }
@@ -786,12 +967,26 @@ return Promise.resolve();
 }
 return next();
 }
+var firingTriggers = new WeakMap();
+var firingVariableScripts = new Set();
 function fire(el, trigger, keep) {
+var running = firingTriggers.get(el);
+if (!running) {
+running = new Set();
+firingTriggers.set(el, running);
+}
+if (running.has(trigger)) return;
+running.add(trigger);
+try {
 parse(el).forEach(function (s) {
-if (s.trigger !== trigger) return;
+if (s.trigger !== trigger ||
+(trigger === "change" && typeof s.changeVariable === "string")) return;
 if (keep !== undefined && !!s.keep !== keep) return;
-runSteps(s.steps || [], el);
+runSteps(s.steps || [], el, undefined, activeRun());
 });
+} finally {
+running.delete(trigger);
+}
 }
 function chain(t) {
 var out = [];
@@ -849,12 +1044,23 @@ return s.trigger === "hover-end" && s.keep;
 });
 }
 var hovering = new Map();
+function withinHoverArea(owner, node) {
+if (!node || node.nodeType !== 1) return false;
+return owner.contains(node) || shownByHover(owner).some(function (shown) {
+return root.contains(shown) && shown.contains(node);
+});
+}
 function leaveLater(el) {
 clearTimeout(hovering.get(el));
 hovering.set(
 el,
 setTimeout(function () {
-if (!alive || !hovering.has(el)) return;
+if (!alive || !hovering.has(el) || !root.contains(el)) {
+hovering.delete(el);
+return;
+}
+syncPage();
+if (!hovering.has(el)) return;
 var still = [el].concat(shownByHover(el)).some(function (g) {
 return root.contains(g) && g.matches(":hover");
 });
@@ -868,6 +1074,13 @@ fire(el, "hover-end", true);
 );
 }
 function onOver(e) {
+syncPage();
+hovering.forEach(function (timer, owner) {
+if (timer !== null && withinHoverArea(owner, e.target)) {
+clearTimeout(timer);
+hovering.set(owner, null);
+}
+});
 chain(e.target).forEach(function (el) {
 if (e.relatedTarget && el.contains(e.relatedTarget)) return;
 if (hovering.has(el)) {
@@ -885,14 +1098,18 @@ chain(e.target).forEach(function (el) {
 if (e.relatedTarget && el.contains(e.relatedTarget)) return;
 if (hovering.has(el)) {
 done.push(el);
-leaveLater(el);
+if (withinHoverArea(el, e.relatedTarget)) {
+clearTimeout(hovering.get(el));
+hovering.set(el, null);
+} else leaveLater(el);
 fire(el, "hover-end", false);
 return;
 }
 fire(el, "hover-end");
 });
 hovering.forEach(function (t, el) {
-if (t === null && done.indexOf(el) < 0) leaveLater(el);
+if (t === null && done.indexOf(el) < 0 &&
+!withinHoverArea(el, e.relatedTarget)) leaveLater(el);
 });
 }
 function onInput(e) {
@@ -901,22 +1118,12 @@ fire(el, "change");
 });
 }
 var seen = new WeakSet();
-var pageId = null;
 function scan() {
 if (!alive) return;
-var body = root.querySelector("[data-page-body]");
-var pid = body ? body.getAttribute("data-page-body") : null;
-if (pid !== pageId) {
-if (pageId !== null) {
-vars = {};
-filters.clear();
-sorts.clear();
-}
-pageId = pid;
-}
+syncPage();
 if (sorts.size || filters.size) {
 root.querySelectorAll("[data-array]").forEach(function (list) {
-if (list.hasAttribute("data-client-list")) return;
+if (list.hasAttribute("data-client-list") || inTpl(list)) return;
 applySort(list);
 applyFilters(list);
 });
@@ -932,6 +1139,7 @@ fire(el, "load");
 }
 var queued = false;
 var mo = new MutationObserver(function () {
+syncPage();
 if (queued) return;
 queued = true;
 requestAnimationFrame(function () {
@@ -943,7 +1151,7 @@ mo.observe(root, {
 childList: true,
 subtree: true,
 attributes: true,
-attributeFilter: ["data-scripts"],
+attributeFilter: ["data-scripts", "data-page-body"],
 });
 scan();
 root.addEventListener("click", onClickCapture, true);
@@ -951,10 +1159,9 @@ root.addEventListener("click", onClick);
 root.addEventListener("mouseover", onOver);
 root.addEventListener("mouseout", onOut);
 root.addEventListener("input", onInput);
-root.addEventListener("input", onLiveInput);
-refreshLive();
 return function dispose() {
 alive = false;
+cancelPendingSleeps();
 filters.clear();
 sorts.clear();
 hovering.forEach(function (t) {
@@ -967,7 +1174,6 @@ root.removeEventListener("click", onClick);
 root.removeEventListener("mouseover", onOver);
 root.removeEventListener("mouseout", onOut);
 root.removeEventListener("input", onInput);
-root.removeEventListener("input", onLiveInput);
 };
 },
 };

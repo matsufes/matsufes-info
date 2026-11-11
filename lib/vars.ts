@@ -22,22 +22,22 @@ export type Vars = Record<string, unknown>;
  * 「.」で配列の何番目・入れ子の項目をたどれる（配列の "-1" は最後の要素）
  */
 export function lookupVar(vars: Vars, name: string): unknown {
-  if (name in vars) return vars[name];
+  const owns = (value: object, key: string | number) =>
+    Object.prototype.hasOwnProperty.call(value, key);
+  if (owns(vars, name)) return vars[name];
   let cur: unknown = vars;
   for (const key of name.split(".")) {
     if (cur == null || typeof cur !== "object") return undefined;
-    cur = Array.isArray(cur) && key === "-1" ? cur[cur.length - 1] : (cur as Record<string, unknown>)[key];
+    const part = Array.isArray(cur) && key === "-1" ? cur.length - 1 : key;
+    if (!owns(cur, part)) return undefined;
+    cur = (cur as Record<string | number, unknown>)[part];
   }
   return cur;
 }
 
 /** 表示用の文字にする（配列は「, 」でつなぐ） */
-export function varText(v: unknown): string {
-  if (v == null) return "";
-  if (Array.isArray(v)) return v.map(varText).filter(Boolean).join(", ");
-  if (typeof v === "object") return "";
-  return String(v);
-}
+const formatValueText: (value: unknown, comparison?: boolean) => string = (function E(e,t=!1){if(null==e)return"";if(!Array.isArray(e))return"object"==typeof e?t?"[object Object]":"":String(e);let n=[],s=[{value:e,index:0}],a=new WeakSet([e]),i=0,r=0;for(;s.length;){if(++i>5242880)return"";let e=s[s.length-1];if(e.index>=e.value.length){a.delete(e.value),s.pop();continue}t&&e.index>0&&(n.push(","),r++);let o=e.value[e.index++];if(Array.isArray(o))a.has(o)||(a.add(o),s.push({value:o,index:0}));else{let e=null==o?"":"object"==typeof o?t?"[object Object]":"":String(o);e&&(!t&&n.length&&(n.push(", "),r+=2),n.push(e),r+=e.length)}if(r>5242880)return""}return n.join("")});
+export function varText(v: unknown): string { return formatValueText(v); }
 
 /** "{name}" と "[slug]" を値に置き換える（未定義は空文字。「\{」は文字の「{」） */
 export function interpolate(template: string, vars: Vars): string {
@@ -70,6 +70,7 @@ export function interpolateJson(template: string, vars: Vars): string {
   let out = "";
   let inString = false;
   let last = 0;
+  TOKEN_RE.lastIndex = 0;
   for (const m of template.matchAll(TOKEN_RE)) {
     const at = m.index ?? 0;
     const chunk = template.slice(last, at);
@@ -80,6 +81,15 @@ export function interpolateJson(template: string, vars: Vars): string {
     out += chunk;
     last = at + m[0].length;
     if (m[0] === ESCAPED_BRACE) {
+      if (inString) {
+        // A valid JSON string writes an escaped backslash as "\\\\". The
+        // token matcher consumes its final slash, leaving an invalid "\\{"
+        // escape unless its paired slash is removed as well.
+        let trailingSlashes = 0;
+        while (trailingSlashes < chunk.length &&
+          chunk[chunk.length - trailingSlashes - 1] === "\\") trailingSlashes++;
+        if (trailingSlashes % 2 === 1) out = out.slice(0, -1);
+      }
       out += "{";
       continue;
     }
