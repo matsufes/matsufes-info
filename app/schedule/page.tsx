@@ -40,7 +40,7 @@ export default function Page() {
             <div className="el-793">
               <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p-2\"}]}]"} className="el-794">
                 <span
-                  className="crisp-svg svg-201"
+                  className="crisp-svg svg-200"
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
@@ -267,7 +267,7 @@ export default function Page() {
       />
       <p className="el-1987">
         <span
-          className="crisp-svg svg-354"
+          className="crisp-svg svg-353"
         >
           <svg aria-hidden="true" width={707} height={136} viewBox="0 0 707 136" />
           <Image
@@ -484,14 +484,14 @@ export default function Page() {
               alt=""
               width={306}
               height={113}
-              className="svg-121"
+              className="svg-120"
             />
             <Image
               src="/assets/pasted-artwork-154.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-122"
+              className="svg-121"
             />
           </div>
           <div id="committee14" data-toggle-show="flex" className="el-74">
@@ -587,7 +587,7 @@ export default function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-220"
+            className="svg-219"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-6">
@@ -596,7 +596,7 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-221"
+            className="svg-220"
           />
         </a>
       </section>
@@ -607,7 +607,7 @@ export default function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-252"
+            className="svg-251"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-21">
@@ -616,11 +616,11 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-253"
+            className="svg-252"
           />
         </a>
         <span
-          className="crisp-svg svg-254"
+          className="crisp-svg svg-253"
         >
           <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
           <Image
