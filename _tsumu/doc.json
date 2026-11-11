@@ -3564,16 +3564,10 @@
         {
           "id": "sc_mvnaruis504u",
           "trigger": "load",
-          "steps": [
-            {
-              "id": "st_mvnas1jy6t6l",
-              "kind": "hide",
-              "target": "img-3"
-            }
-          ],
+          "steps": [],
           "pos": {
-            "x": 456,
-            "y": 519
+            "x": 582,
+            "y": 513
           }
         },
         {
@@ -3589,6 +3583,22 @@
           "pos": {
             "x": 451,
             "y": 429
+          }
+        }
+      ],
+      "scripts": [
+        {
+          "id": "sc_mwcccuzp19bj",
+          "steps": [
+            {
+              "id": "st_mvnas1jy6t6l",
+              "kind": "hide",
+              "target": "img-3"
+            }
+          ],
+          "pos": {
+            "x": 782,
+            "y": 689
           }
         }
       ]
@@ -275965,7 +275975,13 @@
           }
         }
       ],
-      "locked": false
+      "locked": false,
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
+      ]
     },
     "node_mvnblpc98pkwj": {
       "id": "node_mvnblpc98pkwj",
