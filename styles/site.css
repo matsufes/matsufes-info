@@ -9062,7 +9062,8 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
 .container-229,
 .el-3011,
 .container-235,
-.box-1000 {
+.box-1000,
+.box-1027 {
   display: flex;
   flex-direction: column;
   padding: 0px;
@@ -30893,8 +30894,8 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   }
 
   body:has([data-page-body="page_mv7xdigo16"]) {
-    height: 2000px;
-    width: 402px;
+    height: 100%;
+    width: 100%;
   }
 
   .el,
@@ -31830,7 +31831,6 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-1912,
   .svg-317,
   .box-744,
-  .el-1990,
   .el-2049,
   .el-2057,
   .pasted-artwork-svg-100,
@@ -32034,6 +32034,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-38,
   .el-44,
   .svg-55,
+  .el-1990,
   .svg-357,
   .el-2177,
   .el-2187 {
@@ -35313,8 +35314,9 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   }
 
   .box-766 {
-    width: 118.9%;
+    width: 100%;
     display: block;
+    height: 100%;
   }
 
   .select-9 {
@@ -35367,7 +35369,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   }
 
   .box-787 {
-    width: 118.9%;
+    width: 100%;
     position: relative;
   }
 
@@ -35585,7 +35587,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
     position: absolute;
     left: 0px;
     top: 0px;
-    gap: 35px;
+    gap: 20px;
     flex-direction: column;
   }
 
