@@ -41,8 +41,8 @@ export default function Page() {
               <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p-2\"}]}]"} className="el-1355">
                 <span
                   className="crisp-svg svg-211"
+                  style={{ ["--crisp-svg-width"]: "43px", ["--crisp-svg-ratio"]: "43 / 31" } as import("react").CSSProperties}
                 >
-                  <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
                     src="/assets/pasted-artwork-131.svg"
                     alt="メニューを閉じる"
@@ -268,8 +268,8 @@ export default function Page() {
       <section className="box-204">
         <span
           className="crisp-svg svg-169"
+          style={{ ["--crisp-svg-width"]: "1113px", ["--crisp-svg-ratio"]: "1113 / 135" } as import("react").CSSProperties}
         >
-          <svg aria-hidden="true" width={1113} height={135} viewBox="0 0 1113 135" />
           <Image
             src="/assets/pasted-artwork-96.svg"
             alt=""
@@ -280,8 +280,8 @@ export default function Page() {
         <p className="box-202">
           <span
             className="crisp-svg svg-170"
+            style={{ ["--crisp-svg-width"]: "371px", ["--crisp-svg-ratio"]: "371 / 38" } as import("react").CSSProperties}
           >
-            <svg aria-hidden="true" width={371} height={38} viewBox="0 0 371 38" />
             <Image
               src="/assets/pasted-artwork-97.svg"
               alt=""
@@ -293,8 +293,8 @@ export default function Page() {
         <div className="box-203">
           <span
             className="crisp-svg svg-171"
+            style={{ ["--crisp-svg-width"]: "400px", ["--crisp-svg-ratio"]: "400 / 400" } as import("react").CSSProperties}
           >
-            <svg aria-hidden="true" width={400} height={400} viewBox="0 0 400 400" />
             <Image
               src="/assets/pasted-artwork-98.svg"
               alt=""

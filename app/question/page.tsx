@@ -41,8 +41,8 @@ export default function Page() {
               <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p-2\"}]}]"} className="el-1100">
                 <span
                   className="crisp-svg svg-206"
+                  style={{ ["--crisp-svg-width"]: "43px", ["--crisp-svg-ratio"]: "43 / 31" } as import("react").CSSProperties}
                 >
-                  <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
                     src="/assets/pasted-artwork-131.svg"
                     alt="メニューを閉じる"
@@ -268,8 +268,8 @@ export default function Page() {
       <p className="box-53">
         <span
           className="crisp-svg svg-51"
+          style={{ ["--crisp-svg-width"]: "735px", ["--crisp-svg-ratio"]: "735 / 130" } as import("react").CSSProperties}
         >
-          <svg aria-hidden="true" width={735} height={130} viewBox="0 0 735 130" />
           <Image
             src="/assets/pasted-artwork-73.svg"
             alt=""
@@ -298,14 +298,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2203"
+              className="el-2201"
             />
             <Image id="img-17" data-toggle-show="block"
               src="/assets/pasted-artwork-263.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2204"
+              className="el-2202"
             />
           </div>
         </div>
@@ -322,14 +322,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2189"
+              className="el-2187"
             />
             <Image id="img-8" data-toggle-show="block"
               src="/assets/pasted-artwork-263.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2190"
+              className="el-2188"
             />
           </div>
         </div>
@@ -346,14 +346,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2191"
+              className="el-2189"
             />
             <Image id="img-3" data-toggle-show="block"
               src="/assets/pasted-artwork-263.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2192"
+              className="el-2190"
             />
           </div>
         </div>
@@ -370,14 +370,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2193"
+              className="el-2191"
             />
             <Image id="img-5" data-toggle-show="block"
               src="/assets/pasted-artwork-263.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2194"
+              className="el-2192"
             />
           </div>
         </div>
@@ -394,14 +394,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2195"
+              className="el-2193"
             />
             <Image id="img-9" data-toggle-show="block"
               src="/assets/pasted-artwork-263.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2196"
+              className="el-2194"
             />
           </div>
         </div>
@@ -418,14 +418,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2197"
+              className="el-2195"
             />
             <Image id="img-11" data-toggle-show="block"
               src="/assets/pasted-artwork-263.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2198"
+              className="el-2196"
             />
           </div>
         </div>
@@ -442,14 +442,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2199"
+              className="el-2197"
             />
             <Image id="img-13" data-toggle-show="block"
               src="/assets/pasted-artwork-263.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2200"
+              className="el-2198"
             />
           </div>
         </div>
@@ -466,14 +466,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2201"
+              className="el-2199"
             />
             <Image id="img-15" data-toggle-show="block"
               src="/assets/pasted-artwork-263.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2202"
+              className="el-2200"
             />
           </div>
         </div>
@@ -490,14 +490,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2205"
+              className="el-2203"
             />
             <Image id="img-19" data-toggle-show="block"
               src="/assets/pasted-artwork-263.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2206"
+              className="el-2204"
             />
           </div>
         </div>
@@ -514,14 +514,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2207"
+              className="el-2205"
             />
             <Image id="img-21" data-toggle-show="block"
               src="/assets/pasted-artwork-263.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2208"
+              className="el-2206"
             />
           </div>
         </div>
@@ -538,14 +538,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2209"
+              className="el-2207"
             />
             <Image id="img-23" data-toggle-show="block"
               src="/assets/pasted-artwork-263.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2210"
+              className="el-2208"
             />
           </div>
         </div>
@@ -562,14 +562,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2211"
+              className="el-2209"
             />
             <Image id="img-25" data-toggle-show="block"
               src="/assets/pasted-artwork-263.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2212"
+              className="el-2210"
             />
           </div>
         </div>
@@ -586,14 +586,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2213"
+              className="el-2211"
             />
             <Image id="img-27" data-toggle-show="block"
               src="/assets/pasted-artwork-263.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2214"
+              className="el-2212"
             />
           </div>
         </div>
@@ -610,14 +610,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2215"
+              className="el-2213"
             />
             <Image id="img-29" data-toggle-show="block"
               src="/assets/pasted-artwork-263.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2216"
+              className="el-2214"
             />
           </div>
         </div>
@@ -634,14 +634,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2217"
+              className="el-2215"
             />
             <Image id="img-31" data-toggle-show="block"
               src="/assets/pasted-artwork-263.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2218"
+              className="el-2216"
             />
           </div>
         </div>
@@ -652,8 +652,8 @@ export default function Page() {
       <section data-inview className="footer-11">
         <span
           className="crisp-svg pasted-artwork-svg-83"
+          style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1015" } as import("react").CSSProperties}
         >
-          <svg aria-hidden="true" width={1920} height={1015} viewBox="0 0 1920 1015" />
           <Image
             src="/assets/pasted-artwork-35.svg"
             alt=""
@@ -701,8 +701,8 @@ export default function Page() {
         </a>
         <span
           className="crisp-svg svg-280"
+          style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 347" } as import("react").CSSProperties}
         >
-          <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
           <Image
             src="/assets/pasted-artwork-196.svg"
             alt=""

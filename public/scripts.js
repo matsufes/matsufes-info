@@ -9,20 +9,27 @@ if (scheme && ["http", "https", "mailto", "tel"].indexOf(scheme) < 0) return "#"
 if ((scheme === "http" || scheme === "https") && !/^https?:\/\//i.test(url)) return "#";
 return url;
 }
-var writeVarPath = (function eP(e,t,n,s){if("string"!=typeof t||!t)return;let a=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),i=(t,n)=>{if(!s||s(n))return Object.defineProperty(e,t,{value:n,writable:!0,enumerable:!0,configurable:!0}),t};if(a(e,t)||!t.includes("."))return i(t,n);let r=!1,o=(e,t)=>{if(!t.length)return n;let[s,...i]=t;if(Array.isArray(e)){if(!/^(0|[1-9][0-9]*)$/.test(s))return r=!0,e;let t=Number(s);if(!Number.isSafeInteger(t)||t>e.length||t===e.length&&e.length>=1e4)return r=!0,e;let n=e.slice();return n[t]=o(a(e,t)?e[t]:void 0,i),n}let l=e&&"object"==typeof e?e:{};return{...l,[s]:o(a(l,s)?l[s]:void 0,i)}},[l,...c]=t.split(".");if(c.length>64)return;let d=o(a(e,l)?e[l]:void 0,c);return r?void 0:i(l,d)});
-var withinValueLimit = (function eR(e){if(null==e)return!0;if("object"!=typeof e)return"number"==typeof e?Number.isFinite(e):"string"==typeof e?e.length<=5242880:"boolean"==typeof e;let t=new WeakMap,n=(e,s)=>{if(s>64)return{cost:1/0,height:0};if(null==e)return{cost:8,height:0};if("object"!=typeof e)return("number"!=typeof e||Number.isFinite(e))&&("number"==typeof e||"string"==typeof e||"boolean"==typeof e)?{cost:"string"==typeof e?e.length+2:8,height:0}:{cost:1/0,height:0};let a=t.get(e);if(a)return s+a.height<=64?a:{cost:1/0,height:0};if(t.set(e,{cost:1/0,height:0}),Array.isArray(e)&&e.length>5242880)return{cost:1/0,height:0};let i=Array.isArray(e)?2+e.length:2,r=0;for(let t of Object.keys(e)){let a=n(e[t],s+1);if(i+=t.length+4+a.cost,r=Math.max(r,a.height+1),i>5242880)return{cost:1/0,height:0}}let o={cost:i,height:r};return t.set(e,o),o};return n(e,0).cost<=5242880});
-var matchValueCondition = (function eO(e,t,n){let s=e=>null!==e&&"object"==typeof e,a=e=>{if("number"==typeof e)return Number.isFinite(e)?e:void 0;if("string"!=typeof e||!/^-?(?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][+-]?\d+)?$/.test(e.trim()))return;let t=Number(e.trim());return Number.isFinite(t)?t:void 0},i=(e,t,n=0)=>{if("number"==typeof e&&!Number.isFinite(e)||"number"==typeof t&&!Number.isFinite(t))return!1;if(e===t)return!0;if("string"==typeof e&&("boolean"==typeof t||"number"==typeof t&&Number.isFinite(t)))return e===String(t);if("string"==typeof t&&("boolean"==typeof e||"number"==typeof e&&Number.isFinite(e)))return String(e)===t;if(!s(e)||!s(t)||n>=16)return!1;let a=Object.keys(e),r=Object.keys(t);return a.length===r.length&&!(a.length>1e4)&&a.every(s=>Object.prototype.hasOwnProperty.call(t,s)&&i(e[s],t[s],n+1))};if("has-key"===t)return!(!s(e)||s(n))&&null!=n&&Object.prototype.propertyIsEnumerable.call(e,String(n));if("empty"===t)return null==e||""===e||!!s(e)&&0===Object.keys(e).length;if("contains"===t)return s(e)?Object.keys(e).some(t=>i(e[t],n)):null!=e&&!s(n)&&String(e).includes(String(n));if("eq"===t||void 0===t)return i(e,n);if("in"===t)return s(n)?Object.keys(n).some(t=>i(n[t],e)):"string"==typeof n&&n.split(",").some(t=>i(e,t.trim()));if("starts-with"===t||"ends-with"===t){if(null==e||s(e)||s(n))return!1;let a=String(e),i=String(n);return"starts-with"===t?a.startsWith(i):a.endsWith(i)}if("gt"===t||"gte"===t||"lt"===t||"lte"===t){let s=a(e),i=a(n);return void 0!==s&&void 0!==i&&("gt"===t?s>i:"gte"===t?s>=i:"lt"===t?s<i:s<=i)}return!1});
-var parseValueLiteral = (function eL(e){let t=e.trim();if("true"===t||"false"===t||"null"===t||t.startsWith("[")||t.startsWith("{")||/^-?(?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][+-]?\d+)?$/.test(t)||t.length>=2&&t.startsWith('"')&&t.endsWith('"'))try{return JSON.parse(t)}catch{}return e});
-var formatValueText = (function E(e,t=!1){if(null==e)return"";if(!Array.isArray(e))return"object"==typeof e?t?"[object Object]":"":String(e);let n=[],s=[{value:e,index:0}],a=new WeakSet([e]),i=0,r=0;for(;s.length;){if(++i>5242880)return"";let e=s[s.length-1];if(e.index>=e.value.length){a.delete(e.value),s.pop();continue}t&&e.index>0&&(n.push(","),r++);let o=e.value[e.index++];if(Array.isArray(o))a.has(o)||(a.add(o),s.push({value:o,index:0}));else{let e=null==o?"":"object"==typeof o?t?"[object Object]":"":String(o);e&&(!t&&n.length&&(n.push(", "),r+=2),n.push(e),r+=e.length)}if(r>5242880)return""}return n.join("")});
+var writeVarPath = (function ev(e,t,i,s,n=!1){if("string"!=typeof t||!t)return;let a=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),r=(t,i)=>{if(!s||s(i))return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!0,configurable:!0}),t};if(a(e,t)||!t.includes("."))return r(t,i);let o=!1,l=(e,t)=>{if(!t.length)return i;let[s,...r]=t;if(Array.isArray(e)){let t=n&&"-1"===s;if(!t&&!/^(0|[1-9][0-9]*)$/.test(s))return o=!0,e;let i=t?e.length-1:Number(s);if(!Number.isSafeInteger(i)||i<0||i>e.length||i===e.length&&e.length>=1e4)return o=!0,e;let c=e.slice();return c[i]=l(a(e,i)?e[i]:void 0,r),c}let c=e&&"object"==typeof e?e:{};return{...c,[s]:l(a(c,s)?c[s]:void 0,r)}},[c,...d]=t.split(".");if(d.length>64)return;let h=l(a(e,c)?e[c]:void 0,d);return o?void 0:r(c,h)});
+var withinValueLimit = (function em(e){if(null==e)return!0;if("object"!=typeof e)return"number"==typeof e?Number.isFinite(e):"string"==typeof e?e.length<=5242880:"boolean"==typeof e;let t=new WeakMap,i=(e,s)=>{if(s>64)return{cost:1/0,height:0};if(null==e)return{cost:8,height:0};if("object"!=typeof e)return("number"!=typeof e||Number.isFinite(e))&&("number"==typeof e||"string"==typeof e||"boolean"==typeof e)?{cost:"string"==typeof e?e.length+2:8,height:0}:{cost:1/0,height:0};let n=t.get(e);if(n)return s+n.height<=64?n:{cost:1/0,height:0};if(t.set(e,{cost:1/0,height:0}),Array.isArray(e)&&e.length>5242880)return{cost:1/0,height:0};let a=Array.isArray(e)?2+e.length:2,r=0;for(let t of Object.keys(e)){let n=i(e[t],s+1);if(a+=t.length+4+n.cost,r=Math.max(r,n.height+1),a>5242880)return{cost:1/0,height:0}}let o={cost:a,height:r};return t.set(e,o),o};return i(e,0).cost<=5242880});
+var matchValueCondition = (function ep(e,t,i){let s=e=>null!==e&&"object"==typeof e,n=e=>{if("number"==typeof e)return Number.isFinite(e)?e:void 0;if("string"!=typeof e||!/^-?(?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][+-]?\d+)?$/.test(e.trim()))return;let t=Number(e.trim());return Number.isFinite(t)?t:void 0},a=(e,t,i=0)=>{if("number"==typeof e&&!Number.isFinite(e)||"number"==typeof t&&!Number.isFinite(t))return!1;if(e===t)return!0;if("string"==typeof e&&("boolean"==typeof t||"number"==typeof t&&Number.isFinite(t)))return e===String(t);if("string"==typeof t&&("boolean"==typeof e||"number"==typeof e&&Number.isFinite(e)))return String(e)===t;if(!s(e)||!s(t)||i>=16)return!1;let n=Object.keys(e),r=Object.keys(t);return n.length===r.length&&!(n.length>1e4)&&n.every(s=>Object.prototype.hasOwnProperty.call(t,s)&&a(e[s],t[s],i+1))};if("has-key"===t)return!(!s(e)||s(i))&&null!=i&&Object.prototype.propertyIsEnumerable.call(e,String(i));if("empty"===t)return null==e||""===e||!!s(e)&&0===Object.keys(e).length;if("contains-any"===t){let t=s(i)?Object.keys(i).map(e=>i[e]):"string"==typeof i?i.split(",").map(e=>e.trim()):[i];return s(e)?Object.keys(e).some(i=>t.some(t=>a(e[i],t))):"string"==typeof e&&t.some(t=>!s(t)&&null!=t&&e.includes(String(t)))}if("contains"===t)return s(e)?Object.keys(e).some(t=>a(e[t],i)):null!=e&&!s(i)&&String(e).includes(String(i));if("eq"===t||void 0===t)return a(e,i);if("in"===t)return s(i)?Object.keys(i).some(t=>a(i[t],e)):"string"==typeof i&&i.split(",").some(t=>a(e,t.trim()));if("starts-with"===t||"ends-with"===t){if(null==e||s(e)||s(i))return!1;let n=String(e),a=String(i);return"starts-with"===t?n.startsWith(a):n.endsWith(a)}if("gt"===t||"gte"===t||"lt"===t||"lte"===t){let s=n(e),a=n(i);return void 0!==s&&void 0!==a&&("gt"===t?s>a:"gte"===t?s>=a:"lt"===t?s<a:s<=a)}return!1});
+var parseValueLiteral = (function eg(e){let t=e.trim();if("true"===t||"false"===t||"null"===t||t.startsWith("[")||t.startsWith("{")||/^-?(?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][+-]?\d+)?$/.test(t)||t.length>=2&&t.startsWith('"')&&t.endsWith('"'))try{return JSON.parse(t)}catch{}return e});
+var formatValueText = (function w(e,t=!1){if(null==e)return"";if(!Array.isArray(e))return"object"==typeof e?t?"[object Object]":"":String(e);let i=[],s=[{value:e,index:0}],n=new WeakSet([e]),a=0,r=0;for(;s.length;){if(++a>5242880)return"";let e=s[s.length-1];if(e.index>=e.value.length){n.delete(e.value),s.pop();continue}t&&e.index>0&&(i.push(","),r++);let o=e.value[e.index++];if(Array.isArray(o))n.has(o)||(n.add(o),s.push({value:o,index:0}));else{let e=null==o?"":"object"==typeof o?t?"[object Object]":"":String(o);e&&(!t&&i.length&&(i.push(", "),r+=2),i.push(e),r+=e.length)}if(r>5242880)return""}return i.join("")});
 var __name = function (fn) { return fn; };
-var evalRecipe = (function eA(e,t,n={}){let s=e=>({kind:"error",code:e});if(!Array.isArray(t)||t.length>32)return s("invalid-recipe");let a=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),i=(e,t)=>{if(!t)return e;if(!e||"object"!=typeof e)return;if(a(e,t))return e[t];let n=e,s=t.split(".");if(!(s.length>16)){for(let e of s){if(null===n||"object"!=typeof n)return;let t=Array.isArray(n)&&"-1"===e?n.length-1:e;if(!a(n,t))return;n=n[t]}return n}},r=(e,t)=>{if(!e||"object"!=typeof e)return!1;if(a(e,t))return!0;let n=t.split(".");if(n.length>16)return!1;let s=e;for(let e of n){if(null===s||"object"!=typeof s)return!1;let t=Array.isArray(s)&&"-1"===e?s.length-1:e;if(!a(s,t))return!1;s=s[t]}return!0},o=e=>null===e||"string"==typeof e||"boolean"==typeof e||"number"==typeof e&&Number.isFinite(e),l=e=>"string"==typeof e||"boolean"==typeof e||"number"==typeof e&&Number.isFinite(e)?String(e):void 0,c=(e,t,s=!1)=>{if("string"!=typeof e||e.length>t)return{ok:!1};let a=/^\{([^{}\s"'<>]+)\}$/.exec(e);if(a&&(!s||!/^\d+(,\d*)?$/.test(a[1]))){let e=i(n,a[1]);return void 0===e?{ok:!1}:{ok:!0,value:e}}let r="",o=0;for(let a of e.matchAll(/\\\{|\{([^{}\s"'<>]+)\}/g)){if(r+=e.slice(o,a.index),o=a.index+a[0].length,!a[1]){r+="{";continue}if(s&&/^\d+(,\d*)?$/.test(a[1])){r+=a[0];continue}let l=i(n,a[1]),c="";for(let e of Array.isArray(l)?l:[l]){if(null==e||"object"==typeof e||""===e)continue;let n=String(e);if(r.length+c.length+n.length>t)return{ok:!1};r+=c+n,c=", "}}return(r+=e.slice(o)).length<=t?{ok:!0,value:r}:{ok:!1}},d=(e,t,n=!1)=>{let s=c(e,t,n);if(!s.ok||null===s.value||"object"==typeof s.value)return{ok:!1};let a=String(s.value);return a.length<=t?{ok:!0,value:a}:{ok:!1}},u=e=>{if("text"===e.operandType)return c(e.operand,4096);if("variable"!==e.operandType)return((e,t)=>{if("string"!=typeof e||e.length>4096)return{ok:!1};if("text"===t)return{ok:!0,value:e};if("null"===t)return{ok:!0,value:null};if("boolean"===t)return"true"===e||"false"===e?{ok:!0,value:"true"===e}:{ok:!1};if("number"===t&&/^[-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?$/.test(e.trim())){let t=Number(e);return Number.isFinite(t)?{ok:!0,value:t}:{ok:!1}}return{ok:!1}})(e.operand,e.operandType);let t=i(n,e.operand);return void 0===t?{ok:!1}:{ok:!0,value:t}},p=e=>{if("number"==typeof e)return Number.isFinite(e)?e:void 0;if("string"!=typeof e||!/^[-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?$/.test(e.trim()))return;let t=Number(e.trim());return Number.isFinite(t)?t:void 0},h=(e,t)=>{if(e.length>256)return!1;let n=t+1,s=()=>({repeats:!1,alternation:!1,paths:0,branchPaths:1,choices:0,branchChoices:1,fixedWork:0,runtimeWork:0}),a=[s()],i=[],r=e=>"\\d"===e||"[0-9]"===e?"digit":"\\w"===e?"word":"\\s"===e?"space":"[a-z]"===e?"lower":"[A-Z]"===e?"upper":1===e.length?"literal:"+e:null,o=(e,t)=>"word"===e?/^[a-zA-Z0-9_]$/.test(t):"digit"===e?/^[0-9]$/.test(t):"lower"===e?/^[a-z]$/.test(t):"upper"===e?/^[A-Z]$/.test(t):"space"!==e||/^\s$/.test(t),l=(e,t)=>!e||!t||(e.startsWith("literal:")?t.startsWith("literal:")?e===t:o(t,e.slice(8)):t.startsWith("literal:")?o(e,t.slice(8)):"word"===e?"space"!==t:"word"===t?"space"!==e:e===t),c=null,d=(e,t)=>{let n=a[a.length-1];t&&(n.branchPaths*=t.paths+t.branchPaths);let s=t?t.choices+t.branchChoices:1,i={category:e,group:t,choices:s,fixedWork:t?t.fixedWork+2:1,runtimeWork:t?1+t.runtimeWork+s:1};return n.fixedWork+=i.fixedWork,n.runtimeWork+=n.branchChoices*i.runtimeWork,n.branchChoices*=s,n.paths+n.branchPaths<=256&&n.choices+n.branchChoices<=0x1000000&&n.fixedWork<=4096&&n.runtimeWork<=0x1000000?i:null};for(let t=0;t<e.length;t++){let o=e[t];if("\\"===o){if(t+1>=e.length||/[1-9]/.test(e[t+1])||"k"===e[t+1])return!1;let n=e[t+1];if("x"===n||"u"===n||"c"===n){let s=/^(?:x[0-9a-f]{2}|u[0-9a-f]{4}|c[a-z])/i.exec(e.slice(t+1));if(!s||!(c=d(r(String.fromCharCode("c"===n?s[0].toUpperCase().charCodeAt(1)%32:parseInt(s[0].slice(1),16))))))return!1;t+=s[0].length;continue}if("0"===n&&/[0-9]/.test(e[t+2]??"")||!(c=d(r("\\"+e[++t]))))return!1;continue}if("["===o){let n=t+1;for(;n<e.length;n++){if("\\"===e[n]){n++;continue}if("]"===e[n])break}if(n>=e.length||!(c=d(r(e.slice(t,n+1)))))return!1;t=n;continue}if("("===o){if("?"===e[t+1]){if(":"!==e[t+2])return!1;t+=2}a.push(s()),c=null;continue}if(")"===o){if(a.length<=1)return!1;let e=a.pop();if(a[a.length-1].repeats||=e.repeats,a[a.length-1].alternation||=e.alternation,!(c=d(null,e)))return!1;continue}if("|"===o){let e=a[a.length-1];if(e.alternation=!0,e.paths+=e.branchPaths,e.branchPaths=1,e.choices+=e.branchChoices,e.branchChoices=1,e.paths+e.branchPaths>256||e.choices+e.branchChoices>0x1000000)return!1;c=null;continue}let u="*"===o||"+"===o||"?"===o,p=!1,h=+("+"===o),f="?"===o?1:1/0;if("{"===o){let n=/^\{(\d+)(?:,(\d*))?\}/.exec(e.slice(t));if(n){let e=Number(n[1]),s=""===n[2]?1/0:void 0===n[2]?e:Number(n[2]);if(e>1e3||s>1e3&&1/0!==s||s<e)return!1;u=!0,p=e===s,h=e,f=s,t+=n[0].length-1}}if(u){if(!c||c.group&&(c.group.repeats||c.group.alternation))return!1;let e=a[a.length-1],t=Math.max(1,1/0===f?h:f),s=1/0===f?Math.max(n,h):Math.max(1,f),r=e.branchChoices/c.choices,o=p?1:s-h+1;if(e.fixedWork+=c.fixedWork*(t-1),e.runtimeWork+=r*c.runtimeWork*(s-1),e.branchChoices=r*o,e.fixedWork>4096||e.runtimeWork>0x1000000||e.choices+e.branchChoices>0x1000000)return!1;if(!p){if(i.some(e=>l(c.category,e)))return!1;i.push(c.category),a[a.length-1].repeats=!0}c=null}else if(!(c=d("."===o||"^"===o||"$"===o?null:r(o))))return!1}let u=a[0];return 1===a.length&&n*u.runtimeWork<=0x1000000},f=e,m=void 0===f;try{for(let e of t){if(!e||"object"!=typeof e||!("kind"in e))return s("invalid-recipe");switch(e.kind){case"fallback":if("string"!=typeof e.text||e.text.length>1e4)return s("invalid-recipe");if(m||"nullish"===e.when&&null===f){let t=c(e.text,1e4);if(!t.ok)return s("missing-value");f=t.value,m=!1}break;case"field":{if(m)break;let t=d(e.key,256);if(!t.ok||!f||"object"!=typeof f)return s("type-mismatch");let n=a(f,t.value);f=n||t.value&&r(f,t.value)?n?f[t.value]:i(f,t.value):void 0,m=void 0===f;break}case"length":if(m)break;if(!f||"object"!=typeof f)return s("type-mismatch");f=Object.keys(f).length;break;case"stringify":if(m)break;if(f=JSON.stringify(f),"string"!=typeof f||f.length>1e5)return s("limit-exceeded");break;case"parse":if(m)break;if("string"!=typeof f){if(null===f||"boolean"==typeof f||"number"==typeof f&&Number.isFinite(f)||"object"==typeof f)break;return s("type-mismatch")}if(f.length>1e5)return s("limit-exceeded");try{f=JSON.parse(f)}catch{return s("invalid-json")}break;case"math":{if(m)break;if(void 0!==e.operandType&&"number"!==e.operandType&&"variable"!==e.operandType)return s("invalid-recipe");let t=p(f),a="variable"===e.operandType?i(n,"string"==typeof e.operand?e.operand:""):e.operand,r=p(a);if(void 0===t||void 0===r)return s("type-mismatch");let o=t;switch(e.operation){case"add":o+=r;break;case"subtract":o-=r;break;case"multiply":o*=r;break;case"divide":if(0===r)return s("division-by-zero");o/=r;break;case"remainder":if(0===r)return s("division-by-zero");o%=r;break;default:return s("invalid-recipe")}if(!Number.isFinite(o))return s("limit-exceeded");f=o;break}case"split":{if(m)break;let t=d(e.separator,256),n=l(f);if(void 0===n||!t.ok)return s("type-mismatch");if(n.length>1e5)return s("limit-exceeded");f=n.split(t.value||",").map(e=>e.trim()).filter(Boolean);break}case"join":{if(m)break;let t=d(e.separator,256);if(!f||"object"!=typeof f||!t.ok)return s("type-mismatch");let n=Object.keys(f);if(n.length>1e4)return s("limit-exceeded");let a=[],i=0;for(let e of n){let n=f[e];if(null===n||""===n)continue;if(!o(n))return s("type-mismatch");let r=String(n);if((i+=r.length+(a.length?t.value.length:0))>1e5)return s("limit-exceeded");a.push(r)}f=a.join(t.value);break}case"replace":{if(m)break;let t=d(e.find,256,e.regex),n=d(e.replacement,1e4),a=l(f);if(void 0===a||!t.ok||!n.ok||"boolean"!=typeof e.regex)return s("type-mismatch");if(a.length>1e4)return s("limit-exceeded");if(!t.value){f=a;break}if(e.regex){let e;if(a.length>2048||!h(t.value,a.length))return s("invalid-regex");try{e=RegExp(t.value,"g")}catch{return s("invalid-regex")}let i=a.length,r=n.value.match(/\$(?:&|[1-9]\d?)/g)?.length??0,o=n.value.match(/\$(?:'|`)/g)?.length??0;for(let t of a.matchAll(e))if((i+=n.value.length+r*t[0].length+o*a.length)>1e5)return s("limit-exceeded");f=a.replace(e,n.value)}else{let e=a.split(t.value),i=e.length-1;if(a.length+i*(n.value.length-t.value.length)>1e5)return s("limit-exceeded");f=e.join(n.value)}if("string"!=typeof f||f.length>1e5)return s("limit-exceeded");break}case"append":{if(m)break;if(!Array.isArray(f)||f.length>=1e4)return s("type-mismatch");let t=u(e);if(!t.ok)return s("invalid-literal");f=[...f,t.value];break}case"sort":{let t;if(m)break;let n=d(e.field,256);if(!f||"object"!=typeof f||!n.ok||"asc"!==e.direction&&"desc"!==e.direction)return s("type-mismatch");let a=Array.isArray(f),r=Object.entries(f);if(r.length>1e4||Array.isArray(f)&&f.length>1e4)return s("limit-exceeded");let o=[];for(let e=0;e<r.length;e++){let[a,l]=r[e],c=i(l,n.value);if(void 0===c)return s("missing-value");if("number"!=typeof c&&"string"!=typeof c||"number"==typeof c&&!Number.isFinite(c)||void 0!==t&&t!==typeof c)return s("type-mismatch");t=typeof c,o.push({item:l,sourceKey:a,key:c,order:e})}o.sort((t,n)=>{let s="number"==typeof t.key&&"number"==typeof n.key?t.key-n.key:String(t.key).localeCompare(String(n.key),"ja",{numeric:!0});return"desc"===e.direction&&(s*=-1),s||t.order-n.order}),f=a?o.map(e=>e.item):o.map(e=>({キー:e.sourceKey,値:e.item}));break}default:return s("invalid-recipe")}if("string"==typeof f&&f.length>1e5||Array.isArray(f)&&f.length>1e4)return s("limit-exceeded")}return m?{kind:"missing"}:{kind:"value",value:f}}catch{return s("invalid-recipe")}});
-var removeItem = (function e$(e,t,n,s){if(!e||"object"!=typeof e||void 0===n||Array.isArray(e)&&e.length>1e4)return;let a=Object.keys(e);if(a.length>1e4)return;if("key"===t){if("string"!=typeof n&&"number"!=typeof n)return;let t=String(n);if(Array.isArray(e)){if(!/^(0|[1-9][0-9]*)$/.test(t))return;let n=Number(t);if(!Number.isSafeInteger(n)||n>=e.length)return;let s=e.slice();return s.splice(n,1),s}if(!Object.prototype.hasOwnProperty.call(e,t))return;let s=Object.assign(Object.create(null),e);return delete s[t],s}if("value"!==t)return;if(Array.isArray(e)){let t=e.filter(e=>!s(e,"eq",n));return t.length===e.length?void 0:t}let i=Object.assign(Object.create(null),e),r=!1;for(let e of a)s(i[e],"eq",n)&&(delete i[e],r=!0);return r?i:void 0});
+var evalRecipe = (function eu(e,t,i={}){let s=e=>({kind:"error",code:e});if(!Array.isArray(t)||t.length>32)return s("invalid-recipe");let n=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),a=(e,t)=>{if(!t)return e;if(!e||"object"!=typeof e)return;if(n(e,t))return e[t];let i=e,s=t.split(".");if(!(s.length>16)){for(let e of s){if(null===i||"object"!=typeof i)return;let t=Array.isArray(i)&&"-1"===e?i.length-1:e;if(!n(i,t))return;i=i[t]}return i}},r=(e,t)=>{if(!e||"object"!=typeof e)return!1;if(n(e,t))return!0;let i=t.split(".");if(i.length>16)return!1;let s=e;for(let e of i){if(null===s||"object"!=typeof s)return!1;let t=Array.isArray(s)&&"-1"===e?s.length-1:e;if(!n(s,t))return!1;s=s[t]}return!0},o=e=>null===e||"string"==typeof e||"boolean"==typeof e||"number"==typeof e&&Number.isFinite(e),l=e=>"string"==typeof e||"boolean"==typeof e||"number"==typeof e&&Number.isFinite(e)?String(e):void 0,c=(e,t,s=!1)=>{if("string"!=typeof e||e.length>t)return{ok:!1};let n=/^\{([^{}\s"'<>]+)\}$/.exec(e);if(n&&(!s||!/^\d+(,\d*)?$/.test(n[1]))){let e=a(i,n[1]);return void 0===e?{ok:!1}:{ok:!0,value:e}}let r="",o=0;for(let n of e.matchAll(/\\\{|\{([^{}\s"'<>]+)\}/g)){if(r+=e.slice(o,n.index),o=n.index+n[0].length,!n[1]){r+="{";continue}if(s&&/^\d+(,\d*)?$/.test(n[1])){r+=n[0];continue}let l=a(i,n[1]),c="";for(let e of Array.isArray(l)?l:[l]){if(null==e||"object"==typeof e||""===e)continue;let i=String(e);if(r.length+c.length+i.length>t)return{ok:!1};r+=c+i,c=", "}}return(r+=e.slice(o)).length<=t?{ok:!0,value:r}:{ok:!1}},d=(e,t,i=!1)=>{let s=c(e,t,i);if(!s.ok||null===s.value||"object"==typeof s.value)return{ok:!1};let n=String(s.value);return n.length<=t?{ok:!0,value:n}:{ok:!1}},h=e=>{if("number"==typeof e)return Number.isFinite(e)?e:void 0;if("string"!=typeof e||!/^[-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?$/.test(e.trim()))return;let t=Number(e.trim());return Number.isFinite(t)?t:void 0},u=(e,t)=>{if(e.length>256)return!1;let i=t+1,s=()=>({repeats:!1,alternation:!1,paths:0,branchPaths:1,choices:0,branchChoices:1,fixedWork:0,runtimeWork:0}),n=[s()],a=[],r=e=>"\\d"===e||"[0-9]"===e?"digit":"\\w"===e?"word":"\\s"===e?"space":"[a-z]"===e?"lower":"[A-Z]"===e?"upper":1===e.length?"literal:"+e:null,o=(e,t)=>"word"===e?/^[a-zA-Z0-9_]$/.test(t):"digit"===e?/^[0-9]$/.test(t):"lower"===e?/^[a-z]$/.test(t):"upper"===e?/^[A-Z]$/.test(t):"space"!==e||/^\s$/.test(t),l=(e,t)=>!e||!t||(e.startsWith("literal:")?t.startsWith("literal:")?e===t:o(t,e.slice(8)):t.startsWith("literal:")?o(e,t.slice(8)):"word"===e?"space"!==t:"word"===t?"space"!==e:e===t),c=null,d=(e,t)=>{let i=n[n.length-1];t&&(i.branchPaths*=t.paths+t.branchPaths);let s=t?t.choices+t.branchChoices:1,a={category:e,group:t,choices:s,fixedWork:t?t.fixedWork+2:1,runtimeWork:t?1+t.runtimeWork+s:1};return i.fixedWork+=a.fixedWork,i.runtimeWork+=i.branchChoices*a.runtimeWork,i.branchChoices*=s,i.paths+i.branchPaths<=256&&i.choices+i.branchChoices<=0x1000000&&i.fixedWork<=4096&&i.runtimeWork<=0x1000000?a:null};for(let t=0;t<e.length;t++){let o=e[t];if("\\"===o){if(t+1>=e.length||/[1-9]/.test(e[t+1])||"k"===e[t+1])return!1;let i=e[t+1];if("x"===i||"u"===i||"c"===i){let s=/^(?:x[0-9a-f]{2}|u[0-9a-f]{4}|c[a-z])/i.exec(e.slice(t+1));if(!s||!(c=d(r(String.fromCharCode("c"===i?s[0].toUpperCase().charCodeAt(1)%32:parseInt(s[0].slice(1),16))))))return!1;t+=s[0].length;continue}if("0"===i&&/[0-9]/.test(e[t+2]??"")||!(c=d(r("\\"+e[++t]))))return!1;continue}if("["===o){let i=t+1;for(;i<e.length;i++){if("\\"===e[i]){i++;continue}if("]"===e[i])break}if(i>=e.length||!(c=d(r(e.slice(t,i+1)))))return!1;t=i;continue}if("("===o){if("?"===e[t+1]){if(":"!==e[t+2])return!1;t+=2}n.push(s()),c=null;continue}if(")"===o){if(n.length<=1)return!1;let e=n.pop();if(n[n.length-1].repeats||=e.repeats,n[n.length-1].alternation||=e.alternation,!(c=d(null,e)))return!1;continue}if("|"===o){let e=n[n.length-1];if(e.alternation=!0,e.paths+=e.branchPaths,e.branchPaths=1,e.choices+=e.branchChoices,e.branchChoices=1,e.paths+e.branchPaths>256||e.choices+e.branchChoices>0x1000000)return!1;c=null;continue}let h="*"===o||"+"===o||"?"===o,u=!1,p=+("+"===o),f="?"===o?1:1/0;if("{"===o){let i=/^\{(\d+)(?:,(\d*))?\}/.exec(e.slice(t));if(i){let e=Number(i[1]),s=""===i[2]?1/0:void 0===i[2]?e:Number(i[2]);if(e>1e3||s>1e3&&1/0!==s||s<e)return!1;h=!0,u=e===s,p=e,f=s,t+=i[0].length-1}}if(h){if(!c||c.group&&(c.group.repeats||c.group.alternation))return!1;let e=n[n.length-1],t=Math.max(1,1/0===f?p:f),s=1/0===f?Math.max(i,p):Math.max(1,f),r=e.branchChoices/c.choices,o=u?1:s-p+1;if(e.fixedWork+=c.fixedWork*(t-1),e.runtimeWork+=r*c.runtimeWork*(s-1),e.branchChoices=r*o,e.fixedWork>4096||e.runtimeWork>0x1000000||e.choices+e.branchChoices>0x1000000)return!1;if(!u){if(a.some(e=>l(c.category,e)))return!1;a.push(c.category),n[n.length-1].repeats=!0}c=null}else if(!(c=d("."===o||"^"===o||"$"===o?null:r(o))))return!1}let h=n[0];return 1===n.length&&i*h.runtimeWork<=0x1000000},p=e,f=void 0===p;try{for(let e of t){if(!e||"object"!=typeof e||!("kind"in e))return s("invalid-recipe");switch(e.kind){case"fallback":if("string"!=typeof e.text||e.text.length>1e4||"missing"!==e.when&&"nullish"!==e.when)return s("invalid-recipe");if(f||"nullish"===e.when&&null===p){let t=c(e.text,1e4);if(!t.ok)return s("missing-value");p=t.value,f=!1}break;case"field":{if(f)break;let t=d(e.key,256);if(!t.ok||!p||"object"!=typeof p)return s("type-mismatch");let i=n(p,t.value);p=i||t.value&&r(p,t.value)?i?p[t.value]:a(p,t.value):void 0,f=void 0===p;break}case"length":if(f)break;if(!p||"object"!=typeof p)return s("type-mismatch");p=Object.keys(p).length;break;case"stringify":if(f)break;if(p=JSON.stringify(p),"string"!=typeof p||p.length>1e5)return s("limit-exceeded");break;case"parse":if(f)break;if("string"!=typeof p){if(null===p||"boolean"==typeof p||"number"==typeof p&&Number.isFinite(p)||"object"==typeof p)break;return s("type-mismatch")}if(p.length>1e5)return s("limit-exceeded");try{p=JSON.parse(p)}catch{return s("invalid-json")}break;case"math":{if(f)break;if("number"!==e.operandType&&"variable"!==e.operandType)return s("invalid-recipe");let t=h(p),n="variable"===e.operandType?a(i,"string"==typeof e.operand?e.operand:""):e.operand,r=h(n);if(void 0===t||void 0===r)return s("type-mismatch");let o=t;switch(e.operation){case"add":o+=r;break;case"subtract":o-=r;break;case"multiply":o*=r;break;case"divide":if(0===r)return s("division-by-zero");o/=r;break;case"remainder":if(0===r)return s("division-by-zero");o%=r;break;default:return s("invalid-recipe")}if(!Number.isFinite(o))return s("limit-exceeded");p=o;break}case"split":{if(f)break;let t=d(e.separator,256),i=l(p);if(void 0===i||!t.ok)return s("type-mismatch");if(i.length>1e5)return s("limit-exceeded");p=i.split(t.value||",").map(e=>e.trim()).filter(Boolean);break}case"join":{if(f)break;let t=d(e.separator,256);if(!p||"object"!=typeof p||!t.ok)return s("type-mismatch");let i=Object.keys(p);if(i.length>1e4)return s("limit-exceeded");let n=[],a=0;for(let e of i){let i=p[e];if(null===i||""===i)continue;if(!o(i))return s("type-mismatch");let r=String(i);if((a+=r.length+(n.length?t.value.length:0))>1e5)return s("limit-exceeded");n.push(r)}p=n.join(t.value);break}case"replace":{if(f)break;let t=d(e.find,256,e.regex),i=d(e.replacement,1e4),n=l(p);if(void 0===n||!t.ok||!i.ok||"boolean"!=typeof e.regex)return s("type-mismatch");if(n.length>1e4)return s("limit-exceeded");if(!t.value){p=n;break}if(e.regex){let e;if(n.length>2048||!u(t.value,n.length))return s("invalid-regex");try{e=RegExp(t.value,"g")}catch{return s("invalid-regex")}let a=n.length,r=i.value.match(/\$(?:&|[1-9]\d?)/g)?.length??0,o=i.value.match(/\$(?:'|`)/g)?.length??0;for(let t of n.matchAll(e))if((a+=i.value.length+r*t[0].length+o*n.length)>1e5)return s("limit-exceeded");p=n.replace(e,i.value)}else{let e=n.split(t.value),a=e.length-1;if(n.length+a*(i.value.length-t.value.length)>1e5)return s("limit-exceeded");p=e.join(i.value)}if("string"!=typeof p||p.length>1e5)return s("limit-exceeded");break}case"sort":{let t;if(f)break;let i=d(e.field,256);if(!p||"object"!=typeof p||!i.ok||"asc"!==e.direction&&"desc"!==e.direction)return s("type-mismatch");let n=Array.isArray(p),r=Object.entries(p);if(r.length>1e4||Array.isArray(p)&&p.length>1e4)return s("limit-exceeded");let o=[];for(let e=0;e<r.length;e++){let[n,l]=r[e],c=a(l,i.value);if(void 0===c)return s("missing-value");if("number"!=typeof c&&"string"!=typeof c||"number"==typeof c&&!Number.isFinite(c)||void 0!==t&&t!==typeof c)return s("type-mismatch");t=typeof c,o.push({item:l,sourceKey:n,key:c,order:e})}let l="string"===t?new Intl.Collator("ja",{numeric:!0}):void 0;o.sort((t,i)=>{let s="number"==typeof t.key&&"number"==typeof i.key?t.key-i.key:l.compare(String(t.key),String(i.key));return"desc"===e.direction&&(s*=-1),s||t.order-i.order}),p=n?o.map(e=>e.item):o.map(e=>({キー:e.sourceKey,値:e.item}));break}default:return s("invalid-recipe")}if("string"==typeof p&&p.length>1e5||Array.isArray(p)&&p.length>1e4)return s("limit-exceeded")}return f?{kind:"missing"}:{kind:"value",value:p}}catch{return s("invalid-recipe")}});
+var removeItem = (function ef(e,t,i,s){if(!e||"object"!=typeof e||void 0===i||Array.isArray(e)&&e.length>1e4)return;let n=Object.keys(e);if(n.length>1e4)return;if("key"===t){if("string"!=typeof i&&"number"!=typeof i)return;let t=String(i);if(Array.isArray(e)){if(!/^(0|[1-9][0-9]*)$/.test(t))return;let i=Number(t);if(!Number.isSafeInteger(i)||i>=e.length)return;let s=e.slice();return s.splice(i,1),s}if(!Object.prototype.hasOwnProperty.call(e,t))return;let s=Object.assign(Object.create(null),e);return delete s[t],s}if("value"!==t)return;if(Array.isArray(e)){let t=e.filter(e=>!s(e,"eq",i));return t.length===e.length?void 0:t}let a=Object.assign(Object.create(null),e),r=!1;for(let e of n)s(a[e],"eq",i)&&(delete a[e],r=!0);return r?a:void 0});
 var cache = new Map();
+var cacheChars = 0;
+var cacheMaxChars = 8 * 1024 * 1024;
+var cacheMaxEntries = 256;
 function parse(el) {
 var raw = el.getAttribute("data-scripts") || "[]";
 if (raw.length > 5 * 1024 * 1024) return [];
 var v = cache.get(raw);
-if (!v) {
+if (v) {
+cache.delete(raw);
+cache.set(raw, v);
+return v;
+}
 try {
 v = JSON.parse(raw);
 } catch (e) {
@@ -33,20 +40,27 @@ else v = v.filter(function (entry) {
 return entry && typeof entry === "object" &&
 typeof entry.trigger === "string" && Array.isArray(entry.steps);
 });
+if (raw.length <= cacheMaxChars) {
+while (cache.size && (cache.size >= cacheMaxEntries || cacheChars + raw.length > cacheMaxChars)) {
+var oldest = cache.keys().next().value;
+cacheChars -= oldest.length;
+cache.delete(oldest);
+}
 cache.set(raw, v);
+cacheChars += raw.length;
 }
 return v;
 }
 function has(o, k) {
 return Object.prototype.hasOwnProperty.call(o, k);
 }
-function dig(v, path) {
+function dig(v, path, missing) {
 var keys = String(path).split(".");
 for (var i = 0; i < keys.length; i++) {
-if (v == null || typeof v !== "object") return undefined;
+if (v == null || typeof v !== "object") return missing;
 var k = keys[i];
 var part = Array.isArray(v) && k === "-1" ? v.length - 1 : k;
-if (!has(v, part)) return undefined;
+if (!has(v, part)) return missing;
 v = v[part];
 }
 return v;
@@ -279,6 +293,7 @@ var alive = true;
 var pageGeneration = 0;
 var pageBody = null;
 var pageId = null;
+var pageSeeds = null;
 var pendingSleeps = new Set();
 function cancelPendingSleeps() {
 pendingSleeps.forEach(function (task) {
@@ -297,28 +312,44 @@ resolve();
 pendingSleeps.add(task);
 });
 }
-function syncPage() {
+function syncPage(checkSeeds) {
 var body = root.querySelector("[data-page-body]");
 var pid = body ? body.getAttribute("data-page-body") : null;
-if (body !== pageBody || pid !== pageId) {
+var changed = body !== pageBody || pid !== pageId;
+if (!changed && !checkSeeds) return pageGeneration;
+var seedData = body && body.getAttribute("data-list-seeds");
+var newData = seedData !== pageSeeds || (changed && !!seedData);
+if (changed || newData) {
 cancelPendingSleeps();
 hovering.forEach(function (timer) { clearTimeout(timer); });
 hovering.clear();
 pageGeneration++;
 pageBody = body;
-}
-if (pid !== pageId) {
+pageSeeds = seedData;
 if (pageId !== null) {
 vars = Object.create(null);
+if (changed) seen = new WeakSet();
 filters.clear();
 sorts.clear();
 }
 pageId = pid;
+if (seedData) {
+try {
+JSON.parse(seedData).forEach(function (entry) {
+var value = entry[1];
+if (entry[2] === true) {
+if (!Number.isSafeInteger(value) || value < 0 || value > 5 * 1024 * 1024) return;
+value = new Array(value);
+}
+writeVarPath(vars, entry[0], value, withinValueLimit);
+});
+} catch (e) {}
+}
 }
 return pageGeneration;
 }
-function activeRun() {
-var generation = syncPage();
+function activeRun(cause) {
+var generation = syncPage(true);
 var stepsRun = 0;
 function active() {
 return alive && generation === syncPage() && stepsRun < 20000;
@@ -329,15 +360,18 @@ stepsRun++;
 return true;
 };
 active.resetBudget = function () { stepsRun = 0; };
+active.cause = cause;
 return active;
 }
 var vars = initialVars && typeof initialVars === "object"
 ? Object.assign(Object.create(null), initialVars) : Object.create(null);
-function getVar(name) {
-return has(vars, name) ? vars[name] : dig(vars, name);
+var missingVar = {};
+function getVar(name, missing) {
+var source = vars;
+return has(source, name) ? source[name] : dig(source, name, missing);
 }
-function writeVar(name, v) {
-var rootName = writeVarPath(vars, name, v, withinValueLimit);
+function writeVar(name, v, editingList) {
+var rootName = writeVarPath(vars, name, v, withinValueLimit, editingList);
 if (rootName === undefined) return false;
 if (typeof window !== "undefined" && typeof window.__siteVarsOnChange === "function") {
 window.__siteVarsOnChange(rootName, vars[rootName]);
@@ -398,6 +432,15 @@ if (q != null) return q;
 } catch (e) {}
 return "";
 }
+function scriptReference(ref, self, item) {
+if (!ref || typeof ref !== "object" ||
+typeof ref.name !== "string" || !ref.name) return undefined;
+var name = ref.name, head = name.split(".")[0];
+if (item && (has(item, name) || has(item, head))) {
+return has(item, name) ? item[name] : dig(item, name);
+}
+return has(ref, "fallback") ? ref.fallback : lookup(name, self, item);
+}
 function resolve(s, self, item) {
 var source;
 try { source = String(s == null ? "" : s); } catch (e) { return ""; }
@@ -429,56 +472,16 @@ return at === 0 && (/^(?:https?:|mailto:|tel:|data:image\/(?:png|jpe?g|gif|webp|
 }
 );
 }
-function refreshLive() {
-root.querySelectorAll("[data-live]").forEach(function (el) {
-if (inTpl(el)) return;
-var t = el.firstChild;
-if (!t || t.nodeType !== 3) {
-t = document.createTextNode("");
-el.insertBefore(t, el.firstChild);
-}
-var next = resolve(el.getAttribute("data-live"), el);
-if (t.nodeValue !== next) t.nodeValue = next;
-});
-root.querySelectorAll("[data-live-placeholder]").forEach(function (el) {
-if (inTpl(el)) return;
-el.placeholder = resolve(el.getAttribute("data-live-placeholder"), el);
-});
-var liveValues = Array.prototype.slice.call(root.querySelectorAll("[data-live-value]"));
-liveValues.sort(function (a, b) {
-return Number(b.tagName === "OPTION") - Number(a.tagName === "OPTION");
-});
-liveValues.forEach(function (el) {
-if (inTpl(el) || el.hasAttribute("data-edited")) return;
-var nv = resolve(el.getAttribute("data-live-value"), el);
-if (el.value !== nv) el.value = nv;
-});
-}
-function setVar(name, v) {
-if (!name || Object.is(getVar(name), v)) return;
-var owner = root.querySelector("[data-page-body]");
-var watching = [];
-if (owner) parse(owner).forEach(function (s) {
-if (s.trigger !== "change" || typeof s.changeVariable !== "string" || !s.changeVariable) return;
-var watched = s.changeVariable;
-if (name === watched || name.indexOf(watched + ".") === 0 || watched.indexOf(name + ".") === 0)
-watching.push({ script: s, name: watched, before: getVar(watched) });
-});
-if (!writeVar(name, v)) return;
-refreshLive();
-watching.forEach(function (entry) {
-if (Object.is(entry.before, getVar(entry.name)) ||
-!alive || owner !== root.querySelector("[data-page-body]") ||
-firingVariableScripts.has(entry.script)) return;
-firingVariableScripts.add(entry.script);
-try {
-runSteps(entry.script.steps || [], owner, undefined, activeRun());
-} finally {
-firingVariableScripts.delete(entry.script);
-}
-});
+function setVar(name, v, editingList) {
+if (typeof name !== "string" || !name || Object.is(getVar(name, missingVar), v)) return;
+if (!writeVar(name, v, editingList)) return;
 }
 function readInput(raw, self, scope) {
+if (raw && typeof raw.inputRef === "string") {
+var ref = raw.rawRef || { name: raw.inputRef };
+if (has(raw, "raw")) ref.fallback = raw.raw;
+return scriptReference(ref, self, scope);
+}
 if (raw && typeof raw === "object" && Array.isArray(raw.scriptParts))
 return resolve(raw, self, scope);
 if (typeof raw !== "string") return raw;
@@ -493,10 +496,14 @@ try { return JSON.parse(source); } catch (e) {}
 }
 return resolve(raw, self, scope);
 }
+function configuredInput(value) {
+return typeof value === "string" ? !!value.trim() :
+!!value && (typeof value.inputRef === "string" || Array.isArray(value.scriptParts));
+}
 function test(c, self, sc) {
 if (!c || typeof c !== "object") return false;
 if (c.subject === "var") {
-if (typeof c.left !== "string" || !c.left.trim()) return false;
+if (!configuredInput(c.left)) return false;
 var matched = matchValueCondition(readInput(c.left, self, sc), c.op || "eq", readInput(c.value, self, sc));
 return c.not ? !matched : matched;
 }
@@ -534,7 +541,7 @@ extras.forEach(function (condition) {
 if (!condition || typeof condition !== "object") return;
 if (!condition.and) groups.push([]);
 if (condition.subject !== "var" ||
-(typeof condition.left === "string" && !!condition.left.trim()))
+configuredInput(condition.left))
 groups[groups.length - 1].push(condition);
 });
 return groups.some(function (group) {
@@ -582,12 +589,11 @@ return JSON.parse(w.getAttribute("data-item")) || {};
 return {};
 }
 }
+var listCollator;
 function order(x, y) {
-return typeof x === "number" && typeof y === "number"
-? x - y
-: filterText(x).localeCompare(filterText(y), "ja", {
-numeric: true,
-});
+if (typeof x === "number" && typeof y === "number") return x - y;
+if (!listCollator) listCollator = new Intl.Collator("ja", { numeric: true });
+return listCollator.compare(filterText(x), filterText(y));
 }
 function applySort(list) {
 var s = sorts.get(list.getAttribute("data-array"));
@@ -670,7 +676,6 @@ changed.push(input);
 });
 if ((select || scalar) && !changed.length) return;
 if (scalar) v = first.value;
-if (!changed.length) refreshLive();
 changed.forEach(function (input) {
 input.dispatchEvent(new Event("input", { bubbles: true }));
 input.dispatchEvent(new Event("change", { bubbles: true }));
@@ -783,7 +788,6 @@ list.forEach(function (c) {
 c.disabled = st.op === "toggle" ? !c.disabled : st.op === "disable";
 });
 });
-refreshLive();
 break;
 case "list-display": {
 if (!st.array) break;
@@ -830,12 +834,12 @@ if (!st.source || !st.into || !st.transform || typeof st.transform !== "object")
 var inputValue = sc && (has(sc, st.source) ? sc[st.source] : dig(sc, st.source));
 var sourceRoot = st.source.split(".")[0];
 var localShadows = !!(sc && (has(sc, st.source) || has(sc, sourceRoot)));
-var shadowed = has(vars, st.source) || has(vars, sourceRoot) || localShadows;
-if (inputValue === undefined && !localShadows) inputValue = getVar(st.source);
-if (inputValue === undefined && !shadowed && "serverValue" in st) {
+var shadowed = localShadows || (!st.serverSource && (has(vars, st.source) || has(vars, sourceRoot)));
+if (!localShadows && st.serverSource && "serverValue" in st) {
 setVar(st.into, st.serverValue);
 break;
 }
+if (inputValue === undefined && !localShadows) inputValue = getVar(st.source);
 if (inputValue === undefined && !shadowed && "raw" in st) inputValue = st.raw;
 if (inputValue === undefined && !shadowed &&
 st.transform.kind !== "fallback")
@@ -851,7 +855,7 @@ case "set-list-item": {
 if (!st.list || typeof st.list !== "string") break;
 var sourceList = getVar(st.list);
 if (!sourceList || typeof sourceList !== "object") break;
-var providedKey = typeof st.key === "string" && st.key.trim() !== "";
+var providedKey = configuredInput(st.key);
 var rawKey = providedKey ? readInput(st.key, self, sc) : undefined;
 if (providedKey && (rawKey === null || typeof rawKey !== "string" && typeof rawKey !== "number")) break;
 var newValue = readInput(st.value, self, sc);
@@ -861,7 +865,7 @@ var targetIndex = providedKey ? Number(rawKey) : nextArray.length;
 if (!Number.isSafeInteger(targetIndex) || targetIndex < 0 ||
 targetIndex > nextArray.length || nextArray.length >= 10000 && targetIndex === nextArray.length) break;
 nextArray[targetIndex] = newValue;
-setVar(st.list, nextArray);
+setVar(st.list, nextArray, true);
 } else {
 if (!providedKey) break;
 var nextKey = String(rawKey);
@@ -869,16 +873,16 @@ if (!Object.prototype.hasOwnProperty.call(sourceList, nextKey) && Object.keys(so
 if (nextKey === "__proto__" || nextKey === "prototype" || nextKey === "constructor") break;
 var nextObject = Object.assign(Object.create(null), sourceList);
 nextObject[nextKey] = newValue;
-setVar(st.list, nextObject);
+setVar(st.list, nextObject, true);
 }
 break;
 }
 case "remove-list-item": {
 if (!st.list || typeof st.list !== "string" ||
-typeof st.value !== "string" || !st.value.trim()) break;
+!configuredInput(st.value)) break;
 var selected = readInput(st.value, self, sc);
 var remaining = removeItem(getVar(st.list), st.mode, selected, matchValueCondition);
-if (remaining !== undefined) setVar(st.list, remaining);
+if (remaining !== undefined) setVar(st.list, remaining, true);
 break;
 }
 case "set-var": {
@@ -927,7 +931,7 @@ if ((nesting || 0) > 16) return Promise.resolve();
 var depth = loopDepth || 0;
 var i = 0;
 function next() {
-while (active() && i < steps.length) {
+while (i < steps.length) {
 if (!active.consume()) return Promise.resolve();
 var st = steps[i++];
 if (!st || typeof st !== "object" || typeof st.kind !== "string") continue;
@@ -961,32 +965,29 @@ if (st.kind === "for-each") {
 if (!Array.isArray(st.then) || !st.then.length) continue;
 return each(st, self, cx, 0, active, null, depth, nesting || 0).then(next);
 }
-exec(st, self, cx);
+var previous = currentCause;
+currentCause = active.cause;
+try { exec(st, self, cx); }
+finally { currentCause = previous; }
 }
 return Promise.resolve();
 }
 return next();
 }
-var firingTriggers = new WeakMap();
-var firingVariableScripts = new Set();
-function fire(el, trigger, keep) {
-var running = firingTriggers.get(el);
-if (!running) {
-running = new Set();
-firingTriggers.set(el, running);
+var currentCause;
+function runTriggered(steps, owner, trigger, parent) {
+for (var cause = parent; cause; cause = cause.parent) {
+if (cause.owner === owner && cause.trigger === trigger) return;
 }
-if (running.has(trigger)) return;
-running.add(trigger);
-try {
+runSteps(steps, owner, undefined, activeRun({ owner: owner, trigger: trigger, parent: parent }));
+}
+function fire(el, trigger, keep, cause) {
 parse(el).forEach(function (s) {
 if (s.trigger !== trigger ||
 (trigger === "change" && typeof s.changeVariable === "string")) return;
 if (keep !== undefined && !!s.keep !== keep) return;
-runSteps(s.steps || [], el, undefined, activeRun());
+runTriggered(s.steps, el, trigger, cause || currentCause);
 });
-} finally {
-running.delete(trigger);
-}
 }
 function chain(t) {
 var out = [];
@@ -1120,7 +1121,7 @@ fire(el, "change");
 var seen = new WeakSet();
 function scan() {
 if (!alive) return;
-syncPage();
+syncPage(true);
 if (sorts.size || filters.size) {
 root.querySelectorAll("[data-array]").forEach(function (list) {
 if (list.hasAttribute("data-client-list") || inTpl(list)) return;
@@ -1151,14 +1152,14 @@ mo.observe(root, {
 childList: true,
 subtree: true,
 attributes: true,
-attributeFilter: ["data-scripts", "data-page-body"],
+attributeFilter: ["data-scripts", "data-page-body", "data-list-seeds"],
 });
-scan();
 root.addEventListener("click", onClickCapture, true);
 root.addEventListener("click", onClick);
 root.addEventListener("mouseover", onOver);
 root.addEventListener("mouseout", onOut);
 root.addEventListener("input", onInput);
+scan();
 return function dispose() {
 alive = false;
 cancelPendingSleeps();

@@ -41,8 +41,8 @@ export default function Page() {
               <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p-2\"}]}]"} className="el-998">
                 <span
                   className="crisp-svg svg-204"
+                  style={{ ["--crisp-svg-width"]: "43px", ["--crisp-svg-ratio"]: "43 / 31" } as import("react").CSSProperties}
                 >
-                  <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
                     src="/assets/pasted-artwork-131.svg"
                     alt="メニューを閉じる"
@@ -267,11 +267,11 @@ export default function Page() {
       />
       <p className="box-45">
         <span
-          className="crisp-svg svg-573"
+          className="crisp-svg svg-566"
+          style={{ ["--crisp-svg-width"]: "854px", ["--crisp-svg-ratio"]: "854 / 131" } as import("react").CSSProperties}
         >
-          <svg aria-hidden="true" width={854} height={131} viewBox="0 0 854 131" />
           <Image
-            src="/assets/pasted-artwork-361.svg"
+            src="/assets/pasted-artwork-360.svg"
             alt=""
             width={1708}
             height={262}
@@ -290,8 +290,8 @@ export default function Page() {
       <section className="box-47">
         <span
           className="crisp-svg pasted-artwork-svg-28"
+          style={{ ["--crisp-svg-width"]: "510px", ["--crisp-svg-ratio"]: "510 / 109" } as import("react").CSSProperties}
         >
-          <svg aria-hidden="true" width={510} height={109} viewBox="0 0 510 109" />
           <Image
             src="/assets/pasted-artwork-81.svg"
             alt=""
@@ -308,8 +308,8 @@ export default function Page() {
       <section className="box-80">
         <span
           className="crisp-svg svg-61"
+          style={{ ["--crisp-svg-width"]: "510px", ["--crisp-svg-ratio"]: "510 / 101" } as import("react").CSSProperties}
         >
-          <svg aria-hidden="true" width={510} height={101} viewBox="0 0 510 101" />
           <Image
             src="/assets/pasted-artwork-82.svg"
             alt=""
@@ -325,11 +325,11 @@ export default function Page() {
       </section>
       <section className="box-81">
         <span
-          className="crisp-svg svg-575"
+          className="crisp-svg svg-568"
+          style={{ ["--crisp-svg-width"]: "298px", ["--crisp-svg-ratio"]: "298 / 106" } as import("react").CSSProperties}
         >
-          <svg aria-hidden="true" width={298} height={106} viewBox="0 0 298 106" />
           <Image
-            src="/assets/pasted-artwork-363.svg"
+            src="/assets/pasted-artwork-362.svg"
             alt=""
             width={596}
             height={212}
@@ -344,8 +344,8 @@ export default function Page() {
       <section className="box-48">
         <span
           className="crisp-svg svg-50"
+          style={{ ["--crisp-svg-width"]: "1089px", ["--crisp-svg-ratio"]: "1089 / 710" } as import("react").CSSProperties}
         >
-          <svg aria-hidden="true" width={1089} height={710} viewBox="0 0 1089 710" />
           <Image
             src="/assets/pasted-artwork-72.svg"
             alt=""
@@ -358,8 +358,8 @@ export default function Page() {
       <section data-inview className="footer-9">
         <span
           className="crisp-svg pasted-artwork-svg-81"
+          style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1015" } as import("react").CSSProperties}
         >
-          <svg aria-hidden="true" width={1920} height={1015} viewBox="0 0 1920 1015" />
           <Image
             src="/assets/pasted-artwork-35.svg"
             alt=""
@@ -407,8 +407,8 @@ export default function Page() {
         </a>
         <span
           className="crisp-svg svg-274"
+          style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 347" } as import("react").CSSProperties}
         >
-          <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
           <Image
             src="/assets/pasted-artwork-196.svg"
             alt=""
