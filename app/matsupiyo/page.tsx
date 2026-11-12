@@ -62,6 +62,7 @@ export default function Page() {
               className="crisp-svg el-3110"
               style={{ ["--crisp-svg-width"]: "522px", ["--crisp-svg-ratio"]: "522 / 516" } as import("react").CSSProperties}
             >
+              <svg aria-hidden="true" width={522} height={516} viewBox="0 0 522 516" />
               <Image
                 src="/assets/pasted-artwork-422.svg"
                 alt=""
@@ -88,6 +89,7 @@ export default function Page() {
                 className="crisp-svg el-3112"
                 style={{ ["--crisp-svg-width"]: "771px", ["--crisp-svg-ratio"]: "771 / 613" } as import("react").CSSProperties}
               >
+                <svg aria-hidden="true" width={771} height={613} viewBox="0 0 771 613" />
                 <Image
                   src="/assets/pasted-artwork-241.svg"
                   alt=""
@@ -99,6 +101,7 @@ export default function Page() {
                 className="crisp-svg el-3113"
                 style={{ ["--crisp-svg-width"]: "597px", ["--crisp-svg-ratio"]: "597 / 679" } as import("react").CSSProperties}
               >
+                <svg aria-hidden="true" width={597} height={679} viewBox="0 0 597 679" />
                 <Image
                   src="/assets/pasted-artwork-242.svg"
                   alt=""
@@ -112,6 +115,7 @@ export default function Page() {
                 className="crisp-svg el-3114"
                 style={{ ["--crisp-svg-width"]: "682px", ["--crisp-svg-ratio"]: "682 / 639" } as import("react").CSSProperties}
               >
+                <svg aria-hidden="true" width={682} height={639} viewBox="0 0 682 639" />
                 <Image
                   src="/assets/pasted-artwork-243.svg"
                   alt=""
@@ -125,6 +129,7 @@ export default function Page() {
                 className="crisp-svg el-3115"
                 style={{ ["--crisp-svg-width"]: "584px", ["--crisp-svg-ratio"]: "584 / 613" } as import("react").CSSProperties}
               >
+                <svg aria-hidden="true" width={584} height={613} viewBox="0 0 584 613" />
                 <Image
                   src="/assets/pasted-artwork-240.svg"
                   alt=""
@@ -138,6 +143,7 @@ export default function Page() {
                 className="crisp-svg el-3116"
                 style={{ ["--crisp-svg-width"]: "718px", ["--crisp-svg-ratio"]: "718 / 631" } as import("react").CSSProperties}
               >
+                <svg aria-hidden="true" width={718} height={631} viewBox="0 0 718 631" />
                 <Image
                   src="/assets/pasted-artwork-244.svg"
                   alt=""
@@ -151,6 +157,7 @@ export default function Page() {
                 className="crisp-svg el-3117"
                 style={{ ["--crisp-svg-width"]: "594px", ["--crisp-svg-ratio"]: "594 / 531" } as import("react").CSSProperties}
               >
+                <svg aria-hidden="true" width={594} height={531} viewBox="0 0 594 531" />
                 <Image
                   src="/assets/pasted-artwork-245.svg"
                   alt=""
@@ -247,6 +254,7 @@ export default function Page() {
             className="crisp-svg el-3132"
             style={{ ["--crisp-svg-width"]: "522px", ["--crisp-svg-ratio"]: "522 / 516" } as import("react").CSSProperties}
           >
+            <svg aria-hidden="true" width={522} height={516} viewBox="0 0 522 516" />
             <Image
               src="/assets/pasted-artwork-423.svg"
               alt=""

@@ -149,6 +149,7 @@ export default async function Page() {
                   className="crisp-svg svg-182"
                   style={{ ["--crisp-svg-width"]: "43px", ["--crisp-svg-ratio"]: "43 / 31" } as import("react").CSSProperties}
                 >
+                  <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
                     src="/assets/pasted-artwork-131.svg"
                     alt="メニューを閉じる"
@@ -1124,6 +1125,7 @@ export default async function Page() {
                     className="crisp-svg vector-3-svg"
                     style={{ ["--crisp-svg-width"]: "343px", ["--crisp-svg-ratio"]: "343 / 178" } as import("react").CSSProperties}
                   >
+                    <svg aria-hidden="true" width={343} height={178} viewBox="0 0 343 178" />
                     <Image
                       src="/assets/Vector-3.svg"
                       alt="m-1グランプリに投票する"
@@ -1175,6 +1177,7 @@ export default async function Page() {
                           className="crisp-svg el-387"
                           style={{ ["--crisp-svg-width"]: "307px", ["--crisp-svg-ratio"]: "307 / 17" } as import("react").CSSProperties}
                         >
+                          <svg aria-hidden="true" width={307} height={17} viewBox="0 0 307 17" />
                           <Image
                             src="/assets/1.svg"
                             alt=""
@@ -1276,6 +1279,7 @@ export default async function Page() {
           className="crisp-svg pasted-artwork-svg-78"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1015" } as import("react").CSSProperties}
         >
+          <svg aria-hidden="true" width={1920} height={1015} viewBox="0 0 1920 1015" />
           <Image
             src="/assets/pasted-artwork-35.svg"
             alt=""
@@ -1325,6 +1329,7 @@ export default async function Page() {
           className="crisp-svg svg-262"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 347" } as import("react").CSSProperties}
         >
+          <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
           <Image
             src="/assets/pasted-artwork-196.svg"
             alt=""

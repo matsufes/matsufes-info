@@ -43,6 +43,7 @@ export default function Page() {
                   className="crisp-svg svg-206"
                   style={{ ["--crisp-svg-width"]: "43px", ["--crisp-svg-ratio"]: "43 / 31" } as import("react").CSSProperties}
                 >
+                  <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
                     src="/assets/pasted-artwork-131.svg"
                     alt="メニューを閉じる"
@@ -270,6 +271,7 @@ export default function Page() {
           className="crisp-svg svg-51"
           style={{ ["--crisp-svg-width"]: "735px", ["--crisp-svg-ratio"]: "735 / 130" } as import("react").CSSProperties}
         >
+          <svg aria-hidden="true" width={735} height={130} viewBox="0 0 735 130" />
           <Image
             src="/assets/pasted-artwork-73.svg"
             alt=""
@@ -654,6 +656,7 @@ export default function Page() {
           className="crisp-svg pasted-artwork-svg-83"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1015" } as import("react").CSSProperties}
         >
+          <svg aria-hidden="true" width={1920} height={1015} viewBox="0 0 1920 1015" />
           <Image
             src="/assets/pasted-artwork-35.svg"
             alt=""
@@ -703,6 +706,7 @@ export default function Page() {
           className="crisp-svg svg-280"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 347" } as import("react").CSSProperties}
         >
+          <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
           <Image
             src="/assets/pasted-artwork-196.svg"
             alt=""
