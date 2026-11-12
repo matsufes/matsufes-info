@@ -275801,7 +275801,8 @@
         "alt": "",
         "width": 597,
         "height": 679,
-        "assetId": "asset_mvnbz2dbbdknb"
+        "assetId": "asset_mvnbz2dbbdknb",
+        "priority": true
       },
       "children": [],
       "styles": {
@@ -275966,7 +275967,8 @@
         "alt": "",
         "width": 584,
         "height": 613,
-        "assetId": "asset_mvnbepiy5pr6j"
+        "assetId": "asset_mvnbepiy5pr6j",
+        "priority": true
       },
       "children": [],
       "styles": {
@@ -276052,7 +276054,8 @@
         "alt": "",
         "width": 718,
         "height": 631,
-        "assetId": "asset_mvntys6h722mf"
+        "assetId": "asset_mvntys6h722mf",
+        "priority": true
       },
       "children": [],
       "styles": {
@@ -276137,7 +276140,8 @@
         "alt": "",
         "width": 594,
         "height": 531,
-        "assetId": "asset_mvnutlowdiqd4"
+        "assetId": "asset_mvnutlowdiqd4",
+        "priority": true
       },
       "children": [],
       "styles": {
@@ -276221,7 +276225,8 @@
         "alt": "",
         "width": 682,
         "height": 639,
-        "assetId": "asset_mvntts2b4ia78"
+        "assetId": "asset_mvntts2b4ia78",
+        "priority": true
       },
       "children": [],
       "styles": {

@@ -104,6 +104,8 @@ export default function Page() {
                   alt=""
                   width={1194}
                   height={1358}
+                  preload
+                  fetchPriority="high"
                 />
               </span>
               <span id="img-4" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img-5\"},{\"kind\":\"hide\",\"target\":\"img-4\"}]}]"} data-toggle-show="block"
@@ -115,6 +117,8 @@ export default function Page() {
                   alt=""
                   width={1364}
                   height={1278}
+                  preload
+                  fetchPriority="high"
                 />
               </span>
               <span id="img-2" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img-6\"},{\"kind\":\"hide\",\"target\":\"img-2\"}]}]"} data-toggle-show="block" data-inview
@@ -126,6 +130,8 @@ export default function Page() {
                   alt=""
                   width={1168}
                   height={1226}
+                  preload
+                  fetchPriority="high"
                 />
               </span>
               <span id="img-5" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img-2\"},{\"kind\":\"hide\",\"target\":\"img-5\"}]}]"} data-toggle-show="block" data-inview
@@ -137,6 +143,8 @@ export default function Page() {
                   alt=""
                   width={1436}
                   height={1262}
+                  preload
+                  fetchPriority="high"
                 />
               </span>
               <span id="img-6" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img\"},{\"kind\":\"hide\",\"target\":\"img-6\"}]}]"} data-toggle-show="block" data-inview
@@ -148,6 +156,8 @@ export default function Page() {
                   alt=""
                   width={1188}
                   height={1062}
+                  preload
+                  fetchPriority="high"
                 />
               </span>
             </div>
