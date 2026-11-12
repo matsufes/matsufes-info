@@ -248,7 +248,7 @@ export default function Page() {
                   <Link href="/m-1" className="el-990">
                     {"m-1グランプリ"}
                   </Link>
-                  <Link href="/matsupiyo" className="el-991">
+                  <Link href="/matsupiyo-old" className="el-991">
                     {"公式メンバ〜「まつぴよ」"}
                   </Link>
                   <div id="menu1-9" className="el-992" />
@@ -463,8 +463,8 @@ export default function Page() {
           />
         </a>
       </section>
-      <section data-inview className="el-1691">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1692">
+      <section data-inview className="el-1690">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1691">
           <Image
             src="/assets/pasted-artwork-134.svg"
             alt=""

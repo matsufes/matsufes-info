@@ -248,7 +248,7 @@ export default function Page() {
                   <Link href="/m-1" className="el-1092">
                     {"m-1グランプリ"}
                   </Link>
-                  <Link href="/matsupiyo" className="el-1093">
+                  <Link href="/matsupiyo-old" className="el-1093">
                     {"公式メンバ〜「まつぴよ」"}
                   </Link>
                   <div id="menu1-9" className="el-1094" />
@@ -456,8 +456,8 @@ export default function Page() {
           </span>
         </div>
       </section>
-      <section className="el-2939">
-        <div className="box-964">
+      <section className="el-2934">
+        <div className="box-956">
           <Image
             src="/assets/pasted-artwork-402.svg"
             alt=""
@@ -473,7 +473,7 @@ export default function Page() {
       <p className="text-738">
         {"開催時間：11/14(土)10:00~20:30　11/15(日)10:00~17:00\n開催場所：本部"}
       </p>
-      <section className="box-965">
+      <section className="box-957">
         <Image
           src="/assets/pasted-artwork-404.svg"
           alt=""
@@ -485,7 +485,7 @@ export default function Page() {
       <p className="text-739">
         {"ミッションをクリアすることで、ちゅ〜せんかいに参加できるよ。\nミッションは全部で３つ。\n１つクリアにつき１回、合計３回挑戦できるよ。\n\nちゅ〜せんかいに挑戦したい時は、クリア画面を本部のスタッフに見せてね。\n\n景品は高級なお肉や割引券、まつぴよグッズなどなど。\nぜひ挑戦してみてね。"}
       </p>
-      <section className="box-966">
+      <section className="box-958">
         <Image
           src="/assets/pasted-artwork-405.svg"
           alt=""
@@ -494,8 +494,8 @@ export default function Page() {
           className="svg-602"
         />
       </section>
-      <section className="el-2941">
-        <div className="box-969">
+      <section className="el-2935">
+        <div className="box-961">
           <Image
             src="/assets/pasted-artwork-406.svg"
             alt=""
@@ -505,7 +505,7 @@ export default function Page() {
           />
         </div>
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/survey\"}]}]"}
-          className="crisp-svg el-2946"
+          className="crisp-svg el-2937"
           style={{ ["--crisp-svg-width"]: "278px", ["--crisp-svg-ratio"]: "278 / 71" } as import("react").CSSProperties}
         >
           <Image
@@ -517,7 +517,7 @@ export default function Page() {
         </span>
       </section>
       <section className="m-1-13">
-        <div className="box-967">
+        <div className="box-959">
           <Image
             src="/assets/pasted-artwork-409.svg"
             alt=""
@@ -538,8 +538,8 @@ export default function Page() {
           />
         </span>
       </section>
-      <section className="el-2943">
-        <div className="box-968">
+      <section className="el-2936">
+        <div className="box-960">
           <Image
             src="/assets/pasted-artwork-411.svg"
             alt=""
@@ -560,8 +560,8 @@ export default function Page() {
           />
         </span>
       </section>
-      <section data-inview className="el-1695">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1696">
+      <section data-inview className="el-1694">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1695">
           <Image
             src="/assets/pasted-artwork-134.svg"
             alt=""
@@ -603,7 +603,7 @@ export default function Page() {
             height={2030}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2217">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2215">
           <Image
             src="/assets/pasted-artwork-134.svg"
             alt=""

@@ -246,7 +246,7 @@ export default function Page() {
                   <Link href="/m-1" className="el-1449">
                     {"m-1グランプリ"}
                   </Link>
-                  <Link href="/matsupiyo" className="el-1450">
+                  <Link href="/matsupiyo-old" className="el-1450">
                     {"公式メンバ〜「まつぴよ」"}
                   </Link>
                   <div id="menu1-9" className="el-1451" />

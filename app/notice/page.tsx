@@ -248,7 +248,7 @@ export default function Page() {
                   <Link href="/m-1" className="el-1347">
                     {"m-1グランプリ"}
                   </Link>
-                  <Link href="/matsupiyo" className="el-1348">
+                  <Link href="/matsupiyo-old" className="el-1348">
                     {"公式メンバ〜「まつぴよ」"}
                   </Link>
                   <div id="menu1-9" className="el-1349" />
@@ -302,7 +302,7 @@ export default function Page() {
         </div>
       </section>
       <section className="box-187">
-        <div id="Q-8" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"A-8\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"img-16\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"img-17\"}]}]"} className="el-2917">
+        <div id="Q-8" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"A-8\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"img-16\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"img-17\"}]}]"} className="el-2915">
           <p className="text-735">
             {"第56回松ヶ崎祭公式webページが更新されました。"}
           </p>
@@ -312,26 +312,26 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2918"
+              className="el-2916"
             />
             <Image id="img-17" data-toggle-show="block"
               src="/assets/pasted-artwork-263.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2919"
+              className="el-2917"
             />
           </div>
         </div>
-        <p id="A-8" data-toggle-show="flex" className="el-2920">
+        <p id="A-8" data-toggle-show="flex" className="el-2918">
           {"出展者様情報が公開されました。\n各出展者様のSNS等で松ヶ崎祭の情報を発信していただけます。\n ぜひ一緒に、松ヶ崎祭を盛り上げていただけますと幸いです。\n\n また、システム調整に伴う公開予定日時の変更により、\n出展者の皆さまに多大なるご迷惑をおかけしましたことを、心よりお詫び申し上げます。"}
         </p>
       </section>
-      <section className="box-956">
-        <p className="box-957">
+      <section className="box-950">
+        <p className="box-951">
           {"2026/11/07"}
         </p>
-        <div className="box-958">
+        <div className="box-952">
           <Image
             src="/assets/pasted-artwork-189.svg"
             alt=""
@@ -341,8 +341,8 @@ export default function Page() {
           />
         </div>
       </section>
-      <section className="box-959">
-        <div id="Q-2" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"A-2\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"img-2\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"img-3\"}]}]"} className="el-2921">
+      <section className="box-953">
+        <div id="Q-2" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"A-2\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"img-2\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"img-3\"}]}]"} className="el-2919">
           <p className="text-736">
             {"第56回松ヶ崎祭公式webページが更新されました。"}
           </p>
@@ -352,18 +352,18 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2922"
+              className="el-2920"
             />
             <Image id="img-3" data-toggle-show="block"
               src="/assets/pasted-artwork-263.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2923"
+              className="el-2921"
             />
           </div>
         </div>
-        <p id="A-2" data-toggle-show="flex" className="el-2924">
+        <p id="A-2" data-toggle-show="flex" className="el-2922">
           {"追加されたコンテンツは以下の通りです。\n\n・よくあるご質問\n・委員会企画"}
         </p>
       </section>
@@ -398,8 +398,8 @@ export default function Page() {
           />
         </a>
       </section>
-      <section data-inview className="el-1705">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1706">
+      <section data-inview className="el-1704">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1705">
           <Image
             src="/assets/pasted-artwork-134.svg"
             alt=""

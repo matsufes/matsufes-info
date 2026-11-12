@@ -89,6 +89,7 @@
     "page_mts0xmew1h",
     "page_mv8igc0g21",
     "page_mv7xdigo16",
+    "page_mwdc62q53b5wd5",
     "page_mv6a54dc1",
     "page_mv8b51ub1",
     "page_mv8n8sk0fg",
@@ -3502,15 +3503,15 @@
     },
     "page_mv7xdigo16": {
       "id": "page_mv7xdigo16",
-      "name": "まつぴよ専用ページ",
-      "slug": "matsupiyo",
+      "name": "旧まつぴよ専用ページ",
+      "slug": "matsupiyo-old",
       "title": "まつぴよ",
       "description": "",
       "children": [
         "node_mvou6uqa2mg1y",
         "node_mvowf37u3ath4"
       ],
-      "unpublished": false,
+      "unpublished": true,
       "bodyStyles": {
         "base": {
           "default": {
@@ -7872,6 +7873,113 @@
           "asset_mwca0yqx52v6di"
         ]
       }
+    },
+    "page_mwdc62q53b5wd5": {
+      "id": "page_mwdc62q53b5wd5",
+      "name": "まつぴよ専用ページ",
+      "slug": "matsupiyo",
+      "title": "まつぴよ専用ページ",
+      "description": "",
+      "children": [
+        "node_mwdc62q41pjclt",
+        "node_mwdc62q52lbtd2"
+      ],
+      "unpublished": false,
+      "bodyStyles": {
+        "base": {
+          "default": {
+            "height": "100%",
+            "display": "flex",
+            "width": "100%",
+            "flexDirection": "column"
+          }
+        },
+        "sm": {
+          "default": {
+            "height": "100%",
+            "width": "100%",
+            "display": "flex",
+            "flexDirection": "column"
+          }
+        }
+      },
+      "pageScripts": [
+        {
+          "id": "sc_mvnugpow14v5",
+          "trigger": "load",
+          "steps": [
+            {
+              "id": "st_mvnugqls2m9t",
+              "kind": "hide",
+              "target": "img-6"
+            }
+          ],
+          "pos": {
+            "x": 463,
+            "y": 815
+          }
+        },
+        {
+          "id": "sc_mvnu1rl982o2",
+          "trigger": "load",
+          "steps": [
+            {
+              "id": "st_mvnu1v5s9nzm",
+              "kind": "hide",
+              "target": "img-5"
+            }
+          ],
+          "pos": {
+            "x": 454,
+            "y": 715
+          }
+        },
+        {
+          "id": "sc_mvntwbil19d8",
+          "trigger": "load",
+          "steps": [
+            {
+              "id": "st_mvntwxd45zc3",
+              "kind": "hide",
+              "target": "img-4"
+            }
+          ],
+          "pos": {
+            "x": 453,
+            "y": 610
+          }
+        },
+        {
+          "id": "sc_mvnaruis504u",
+          "trigger": "load",
+          "steps": [
+            {
+              "id": "st_mvnas1jy6t6l",
+              "kind": "hide",
+              "target": "img-3"
+            }
+          ],
+          "pos": {
+            "x": 451,
+            "y": 509
+          }
+        },
+        {
+          "id": "sc_mvnapwoq1vbb",
+          "trigger": "load",
+          "steps": [
+            {
+              "id": "st_mvnaq4182tsq",
+              "kind": "hide",
+              "target": "img-2"
+            }
+          ],
+          "pos": {
+            "x": 451,
+            "y": 429
+          }
+        }
+      ]
     }
   },
   "nodes": {
@@ -205407,44 +205515,6 @@
         }
       ]
     },
-    "node_mvezrowdrsnbv": {
-      "id": "node_mvezrowdrsnbv",
-      "type": "image",
-      "name": "黄色背景",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmvezrpwh-pasted-artwork.svg",
-        "alt": "",
-        "width": 1280,
-        "height": 312,
-        "assetId": "asset_mvezrowdqiaay"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "100%",
-            "maxWidth": "100%",
-            "borderRadius": "0px",
-            "zIndex": "-1",
-            "overflow": "visible"
-          }
-        },
-        "sm": {
-          "default": {
-            "position": "absolute",
-            "left": "0px",
-            "top": "40%",
-            "zIndex": "-1"
-          }
-        }
-      },
-      "hiddenOn": [
-        "sm"
-      ]
-    },
     "node_mvezynh01elgq": {
       "id": "node_mvezynh01elgq",
       "type": "box",
@@ -205671,48 +205741,6 @@
           }
         }
       }
-    },
-    "node_mvf109wr71fep": {
-      "id": "node_mvf109wr71fep",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mvj5voby8qkz4",
-        "node_mvezrowdrsnbv",
-        "node_mw333coalu9sy",
-        "node_mvowhfv04rwld",
-        "node_mvoy3v4b655g4",
-        "node_mvowhojv5d82z"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "block",
-            "padding": "0px",
-            "gap": "40px",
-            "width": "100%",
-            "height": "40%",
-            "justifyContent": "center",
-            "alignItems": "center"
-          }
-        },
-        "lg": {
-          "default": {
-            "height": "100%",
-            "width": "100%"
-          }
-        },
-        "sm": {
-          "default": {
-            "height": "100%",
-            "display": "block"
-          }
-        }
-      },
-      "motions": []
     },
     "node_mvf5c1hplzh4k": {
       "id": "node_mvf5c1hplzh4k",
@@ -275359,46 +275387,6 @@
         }
       }
     },
-    "node_mvj5voby8qkz4": {
-      "id": "node_mvj5voby8qkz4",
-      "type": "image",
-      "name": "黄色背景スマホ",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmvj5vons7a9021-pasted-artwork.svg",
-        "alt": "",
-        "width": 402,
-        "height": 921,
-        "assetId": "asset_mvj5voby7mlo9"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "402px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "100%",
-            "zIndex": "-1",
-            "position": "absolute",
-            "left": "0px",
-            "top": "0px",
-            "height": "100%"
-          }
-        }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md"
-      ]
-    },
     "node_mvkbzmni4kb67": {
       "id": "node_mvkbzmni4kb67",
       "type": "image",
@@ -281561,7 +281549,7 @@
           "default": {
             "width": "100%",
             "display": "block",
-            "height": "100%"
+            "height": "92%"
           }
         }
       }
@@ -292893,183 +292881,6 @@
             "y": 30
           }
         }
-      ]
-    },
-    "node_mvowf37u3ath4": {
-      "id": "node_mvowf37u3ath4",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mvf109wr71fep"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "block",
-            "padding": "0px",
-            "gap": "0px",
-            "width": "100%",
-            "height": "19.2%"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "100%",
-            "height": "100%",
-            "display": "flex",
-            "flexDirection": "column"
-          }
-        },
-        "md": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column"
-          }
-        }
-      },
-      "motions": []
-    },
-    "node_mvowhfv04rwld": {
-      "id": "node_mvowhfv04rwld",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mway2xmd27sgq2",
-        "node_mw839l0x2twnw"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "block",
-            "gap": "0px",
-            "width": "100%",
-            "paddingTop": "10px",
-            "paddingRight": "20px",
-            "paddingBottom": "10px",
-            "paddingLeft": "20px",
-            "height": "20%",
-            "justifyContent": "center",
-            "alignItems": "center",
-            "position": "absolute",
-            "left": "0px",
-            "top": "0px"
-          }
-        },
-        "sm": {
-          "default": {
-            "position": "absolute",
-            "paddingTop": "0px",
-            "paddingBottom": "0px",
-            "top": "34%",
-            "display": "flex",
-            "justifyContent": "center",
-            "alignItems": "flex-start",
-            "flexDirection": "column",
-            "height": "10%",
-            "paddingRight": "0px",
-            "paddingLeft": "0px",
-            "marginRight": "0px",
-            "marginLeft": "0px",
-            "width": "33%",
-            "left": "9%"
-          }
-        },
-        "md": {
-          "default": {}
-        }
-      },
-      "hiddenOn": [
-        "sm"
-      ]
-    },
-    "node_mvowhojv5d82z": {
-      "id": "node_mvowhojv5d82z",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mw3pe8s658aj5",
-        "node_mw3pfvl46d8f6"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "padding": "0px",
-            "height": "100%",
-            "justifyContent": "center",
-            "alignItems": "center",
-            "flexDirection": "row",
-            "position": "absolute",
-            "left": "0px",
-            "top": "0px",
-            "width": "100%"
-          }
-        },
-        "md": {
-          "default": {
-            "gap": "20px"
-          }
-        },
-        "sm": {
-          "default": {
-            "height": "65%",
-            "display": "block",
-            "gap": "30px",
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "paddingTop": "20px",
-            "paddingBottom": "20px",
-            "position": "static"
-          }
-        }
-      }
-    },
-    "node_mvoy3v4b655g4": {
-      "id": "node_mvoy3v4b655g4",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mwaykzlo2fybov",
-        "node_mwb0ibr41n16f0"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "0px",
-            "gap": "0px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "100%",
-            "height": "30%",
-            "justifyContent": "center",
-            "alignItems": "center",
-            "display": "flex",
-            "marginTop": "0px",
-            "marginBottom": "0px",
-            "flexDirection": "column"
-          }
-        }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md"
       ]
     },
     "node_mvqdhy8c4xcde": {
@@ -366422,40 +366233,6 @@
         }
       }
     },
-    "node_mw333coalu9sy": {
-      "id": "node_mw333coalu9sy",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mway6st529r3aj",
-        "node_mw84mram9u3w0"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "0px",
-            "gap": "0px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "100%",
-            "height": "10%",
-            "display": "block"
-          }
-        }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md"
-      ]
-    },
     "node_mw34gw4kc2qtc": {
       "id": "node_mw34gw4kc2qtc",
       "type": "image",
@@ -368266,94 +368043,6 @@
         }
       }
     },
-    "node_mw3pe8s658aj5": {
-      "id": "node_mw3pe8s658aj5",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mwax2ugv23i1e7",
-        "node_mwa0ls4a1t9kpz",
-        "node_mwa0oqwv1v7mq3",
-        "node_mwa0uuad1x8492",
-        "node_mwa14g5f1nqmg2"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "row",
-            "padding": "0px",
-            "gap": "60px",
-            "width": "70%",
-            "height": "100%",
-            "justifyContent": "center",
-            "alignItems": "center"
-          }
-        },
-        "lg": {
-          "default": {
-            "gap": "45px"
-          }
-        },
-        "md": {
-          "default": {
-            "gap": "45px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "100%",
-            "display": "flex",
-            "height": "60%",
-            "justifyContent": "center",
-            "alignItems": "center",
-            "gridTemplateColumns": "repeat(2, 1fr)",
-            "gap": "20px",
-            "flexDirection": "column"
-          }
-        }
-      }
-    },
-    "node_mw3pfvl46d8f6": {
-      "id": "node_mw3pfvl46d8f6",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mwb0t2xu1tlkmo",
-        "node_mwb0v52c1vmgyf",
-        "node_mwb0r23k1rvpmg",
-        "node_mwb0okzz1p5wst",
-        "node_mw859a0cswdhv"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "block",
-            "padding": "0px",
-            "gap": "0px",
-            "width": "30%",
-            "height": "100%",
-            "overflow": "visible"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "100%",
-            "height": "40%",
-            "display": "flex",
-            "flexDirection": "column",
-            "justifyContent": "space-between",
-            "alignItems": "center"
-          }
-        }
-      }
-    },
     "node_mw3rgz9z2494e": {
       "id": "node_mw3rgz9z2494e",
       "type": "box",
@@ -369202,42 +368891,6 @@
         }
       }
     },
-    "node_mw839l0x2twnw": {
-      "id": "node_mw839l0x2twnw",
-      "type": "image",
-      "name": "特集小見出し",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmw839kuyf16b6d-pasted-artwork.svg",
-        "alt": "",
-        "width": 508,
-        "height": 59,
-        "assetId": "asset_mw839l0w11nth"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "39.7%",
-            "maxWidth": "100%",
-            "borderRadius": "0px",
-            "position": "absolute",
-            "left": "30%",
-            "top": "15%"
-          }
-        },
-        "lg": {
-          "default": {
-            "top": "30%"
-          }
-        }
-      },
-      "hiddenOn": [
-        "sm"
-      ]
-    },
     "node_mw84cdvx8rv82": {
       "id": "node_mw84cdvx8rv82",
       "type": "box",
@@ -369261,76 +368914,6 @@
             "position": "absolute",
             "left": "0px",
             "top": "0px"
-          }
-        }
-      }
-    },
-    "node_mw84mram9u3w0": {
-      "id": "node_mw84mram9u3w0",
-      "type": "image",
-      "name": "特集小見出しスマホ",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmw839kuyf16b6d-pasted-artwork.svg",
-        "alt": "",
-        "width": 508,
-        "height": 59,
-        "assetId": "asset_mw839l0w11nth"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "39.7%",
-            "maxWidth": "100%",
-            "borderRadius": "0px",
-            "position": "absolute",
-            "left": "30%",
-            "top": "15%"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "85%",
-            "left": "7%",
-            "zIndex": "-1",
-            "top": "8%"
-          }
-        }
-      }
-    },
-    "node_mw859a0cswdhv": {
-      "id": "node_mw859a0cswdhv",
-      "type": "image",
-      "name": "しゃべりまつ",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmw8599ti2908da-pasted-artwork.svg",
-        "alt": "",
-        "width": 149,
-        "height": 97,
-        "assetId": "asset_mw859a0brt7ny"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "38.8%",
-            "maxWidth": "100%",
-            "borderRadius": "0px",
-            "position": "absolute",
-            "right": "0px",
-            "bottom": "0px"
-          }
-        },
-        "sm": {
-          "default": {
-            "right": "38%",
-            "width": "25%"
           }
         }
       }
@@ -370073,67 +369656,6 @@
         }
       }
     },
-    "node_mwa0ls4a1t9kpz": {
-      "id": "node_mwa0ls4a1t9kpz",
-      "type": "image",
-      "name": "グリーティング１",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmwa0lswfae3ab3-pasted-artwork.svg",
-        "alt": "",
-        "width": 350,
-        "height": 183,
-        "assetId": "asset_mwa0ls431sol23"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "40%",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "70%"
-          }
-        }
-      },
-      "motions": [
-        {
-          "id": "motion_mwa1kt2r1sfw0f",
-          "trigger": "hover",
-          "property": "all",
-          "keyframes": "pulse",
-          "duration": 0.5,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 2,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ],
-      "scripts": [
-        {
-          "id": "sc_mwaxahz91xs8",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_mwaxajul2roa",
-              "kind": "open-url",
-              "url": "https://www.matsufes.info/booth/175"
-            }
-          ],
-          "pos": {
-            "x": 46,
-            "y": 131
-          }
-        }
-      ]
-    },
     "node_mwa0m6721wy3yn": {
       "id": "node_mwa0m6721wy3yn",
       "type": "image",
@@ -370363,51 +369885,6 @@
           }
         }
       }
-    },
-    "node_mwa0oqwv1v7mq3": {
-      "id": "node_mwa0oqwv1v7mq3",
-      "type": "image",
-      "name": "グリーティング２",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmwa0orp3023623-pasted-artwork.svg",
-        "alt": "",
-        "width": 350,
-        "height": 185,
-        "assetId": "asset_mwa0oqwn1ubv7a"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "350px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ],
-      "motions": [
-        {
-          "id": "motion_mwa1m6fe1tkhln",
-          "trigger": "hover",
-          "property": "all",
-          "keyframes": "pulse",
-          "duration": 0.5,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 2,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ]
     },
     "node_mwa0pjdh2jucpq": {
       "id": "node_mwa0pjdh2jucpq",
@@ -370651,67 +370128,6 @@
         }
       ]
     },
-    "node_mwa0uuad1x8492": {
-      "id": "node_mwa0uuad1x8492",
-      "type": "image",
-      "name": "ストパフォ１",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmwa0uv1o42ce60-pasted-artwork.svg",
-        "alt": "",
-        "width": 350,
-        "height": 184,
-        "assetId": "asset_mwa0uua41we5wq"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "40%",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "70%"
-          }
-        }
-      },
-      "motions": [
-        {
-          "id": "motion_mwa1mlk01u32og",
-          "trigger": "hover",
-          "property": "all",
-          "keyframes": "pulse",
-          "duration": 0.5,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 2,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ],
-      "scripts": [
-        {
-          "id": "sc_mwaxc1qw4xmx",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_mwaxc3nm5jg9",
-              "kind": "open-url",
-              "url": "https://www.matsufes.info/booth/143"
-            }
-          ],
-          "pos": {
-            "x": 508,
-            "y": 123
-          }
-        }
-      ]
-    },
     "node_mwa132za2vmk05": {
       "id": "node_mwa132za2vmk05",
       "type": "box",
@@ -370763,51 +370179,6 @@
           }
         }
       }
-    },
-    "node_mwa14g5f1nqmg2": {
-      "id": "node_mwa14g5f1nqmg2",
-      "type": "image",
-      "name": "ストパフォ２",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmwa14gxo297356-pasted-artwork.svg",
-        "alt": "",
-        "width": 350,
-        "height": 185,
-        "assetId": "asset_mwa14g571m283l"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "350px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ],
-      "motions": [
-        {
-          "id": "motion_mwa1n3771v7e3g",
-          "trigger": "hover",
-          "property": "all",
-          "keyframes": "pulse",
-          "duration": 0.5,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 2,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ]
     },
     "node_mwa16z522yeclr": {
       "id": "node_mwa16z522yeclr",
@@ -375306,130 +374677,6 @@
         }
       ]
     },
-    "node_mwax2ugv23i1e7": {
-      "id": "node_mwax2ugv23i1e7",
-      "type": "image",
-      "name": "まつぴよに会える？",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmwax2u4yd77c99-pasted-artwork.svg",
-        "alt": "",
-        "width": 181,
-        "height": 100,
-        "assetId": "asset_mwax2ugm22uqzl"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "18%",
-            "maxWidth": "100%",
-            "borderRadius": "0px",
-            "position": "absolute",
-            "left": "2%",
-            "top": "-13%"
-          }
-        },
-        "sm": {
-          "default": {
-            "top": "-2%",
-            "left": "7%",
-            "width": "23%"
-          }
-        }
-      },
-      "motions": [
-        {
-          "id": "motion_mwax6wvx24hbhp",
-          "trigger": "hover",
-          "property": "all",
-          "keyframes": "pulse",
-          "duration": 0.5,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 2,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ]
-    },
-    "node_mway2xmd27sgq2": {
-      "id": "node_mway2xmd27sgq2",
-      "type": "image",
-      "name": "まつぴよ特集",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmway2x53d0eea9-pasted-artwork.svg",
-        "alt": "",
-        "width": 393,
-        "height": 32,
-        "assetId": "asset_mway2xm826oyzc"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "35%",
-            "maxWidth": "100%",
-            "borderRadius": "0px",
-            "zIndex": "1",
-            "position": "absolute",
-            "left": "32%",
-            "top": "35%"
-          }
-        },
-        "md": {
-          "default": {
-            "top": "45%"
-          }
-        },
-        "lg": {
-          "default": {
-            "top": "45%"
-          }
-        }
-      },
-      "hiddenOn": [
-        "sm"
-      ]
-    },
-    "node_mway6st529r3aj": {
-      "id": "node_mway6st529r3aj",
-      "type": "image",
-      "name": "まつぴよ特集スマホ",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmway6scg05963d-pasted-artwork.svg",
-        "alt": "",
-        "width": 393,
-        "height": 32,
-        "assetId": "asset_mway6st528iffs"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "393px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "80%",
-            "position": "absolute",
-            "left": "0px",
-            "top": "0px"
-          }
-        }
-      }
-    },
     "node_mwayfmya2bt1g7": {
       "id": "node_mwayfmya2bt1g7",
       "type": "image",
@@ -375493,41 +374740,6 @@
       },
       "hiddenOn": [
         "sm"
-      ]
-    },
-    "node_mwaykzlo2fybov": {
-      "id": "node_mwaykzlo2fybov",
-      "type": "image",
-      "name": "まつぴよとはスマホ１",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmwaykz3536e181-pasted-artwork.svg",
-        "alt": "",
-        "width": 522,
-        "height": 516,
-        "assetId": "asset_mwaykzlj2e23oo"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "522px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "68%"
-          }
-        }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md"
       ]
     },
     "node_mwb06ie51nmj23": {
@@ -381674,42 +380886,6 @@
         }
       }
     },
-    "node_mwb0ibr41n16f0": {
-      "id": "node_mwb0ibr41n16f0",
-      "type": "image",
-      "name": "まつぴよとはスマホ２",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmwb0ibff9af409-pasted-artwork.svg",
-        "alt": "",
-        "width": 514,
-        "height": 508,
-        "assetId": "asset_mwb0ibqy1mea7q"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "514px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "68%"
-          }
-        }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ]
-    },
     "node_mwb0nau36q67z3": {
       "id": "node_mwb0nau36q67z3",
       "type": "image",
@@ -381743,139 +380919,6 @@
         "base",
         "lg",
         "md"
-      ]
-    },
-    "node_mwb0okzz1p5wst": {
-      "id": "node_mwb0okzz1p5wst",
-      "type": "image",
-      "name": "吹き出しスマホ２",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmwb0okq48d0675-pasted-artwork.svg",
-        "alt": "",
-        "width": 257,
-        "height": 158,
-        "assetId": "asset_mwb0okzt1oifn3"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "257px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "auto",
-            "height": "70%"
-          }
-        }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ]
-    },
-    "node_mwb0r23k1rvpmg": {
-      "id": "node_mwb0r23k1rvpmg",
-      "type": "image",
-      "name": "吹き出しスマホ１",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmwb0r1sh6f61d7-pasted-artwork.svg",
-        "alt": "",
-        "width": 257,
-        "height": 158,
-        "assetId": "asset_mwb0r23k1qrcxj"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "257px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "auto",
-            "height": "70%"
-          }
-        }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md"
-      ]
-    },
-    "node_mwb0t2xu1tlkmo": {
-      "id": "node_mwb0t2xu1tlkmo",
-      "type": "image",
-      "name": "吹き出し１",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmwb0t2o0c0df2a-pasted-artwork.svg",
-        "alt": "",
-        "width": 346,
-        "height": 216,
-        "assetId": "asset_mwb0t2xk1s2ulm"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "92%",
-            "maxWidth": "100%",
-            "borderRadius": "0px",
-            "display": "block"
-          }
-        }
-      },
-      "hiddenOn": [
-        "sm"
-      ]
-    },
-    "node_mwb0v52c1vmgyf": {
-      "id": "node_mwb0v52c1vmgyf",
-      "type": "image",
-      "name": "吹き出し２",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmwb0v4qdcc1cd3-pasted-artwork.svg",
-        "alt": "",
-        "width": 346,
-        "height": 216,
-        "assetId": "asset_mwb0v5251u6r78"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "92%",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
       ]
     },
     "node_mwb0yawq6r2gr8": {
@@ -386934,6 +385977,3304 @@
           }
         }
       }
+    },
+    "node_mvezrowdrsnbv": {
+      "id": "node_mvezrowdrsnbv",
+      "type": "image",
+      "name": "黄色背景",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvezrpwh-pasted-artwork.svg",
+        "alt": "",
+        "width": 1280,
+        "height": 312,
+        "assetId": "asset_mvezrowdqiaay"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "zIndex": "-1",
+            "overflow": "visible"
+          }
+        },
+        "sm": {
+          "default": {
+            "position": "absolute",
+            "left": "0px",
+            "top": "40%",
+            "zIndex": "-1"
+          }
+        }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
+    },
+    "node_mvf109wr71fep": {
+      "id": "node_mvf109wr71fep",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvezrowdrsnbv",
+        "node_mw333coalu9sy",
+        "node_mvowhfv04rwld",
+        "node_mvoy3v4b655g4",
+        "node_mvowhojv5d82z"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "block",
+            "padding": "0px",
+            "gap": "40px",
+            "width": "100%",
+            "height": "40%",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        },
+        "lg": {
+          "default": {
+            "height": "100%",
+            "width": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "height": "100%",
+            "display": "block",
+            "backgroundColor": "#F9DA7D"
+          }
+        }
+      },
+      "motions": []
+    },
+    "node_mvowf37u3ath4": {
+      "id": "node_mvowf37u3ath4",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mvf109wr71fep"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "block",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "100%",
+            "height": "19.2%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%",
+            "height": "100%",
+            "display": "flex",
+            "flexDirection": "column"
+          }
+        },
+        "md": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column"
+          }
+        }
+      },
+      "motions": []
+    },
+    "node_mvowhfv04rwld": {
+      "id": "node_mvowhfv04rwld",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mway2xmd27sgq2",
+        "node_mw839l0x2twnw"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "block",
+            "gap": "0px",
+            "width": "100%",
+            "paddingTop": "10px",
+            "paddingRight": "20px",
+            "paddingBottom": "10px",
+            "paddingLeft": "20px",
+            "height": "20%",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "position": "absolute",
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "top": "34%",
+            "display": "flex",
+            "justifyContent": "center",
+            "alignItems": "flex-start",
+            "flexDirection": "column",
+            "height": "10%",
+            "paddingRight": "0px",
+            "paddingLeft": "0px",
+            "marginRight": "0px",
+            "marginLeft": "0px",
+            "width": "33%",
+            "left": "9%"
+          }
+        },
+        "md": {
+          "default": {}
+        }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
+    },
+    "node_mvowhojv5d82z": {
+      "id": "node_mvowhojv5d82z",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mw3pe8s658aj5",
+        "node_mw3pfvl46d8f6"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "padding": "0px",
+            "height": "100%",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "flexDirection": "row",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px",
+            "width": "100%"
+          }
+        },
+        "md": {
+          "default": {
+            "gap": "20px"
+          }
+        },
+        "sm": {
+          "default": {
+            "display": "block",
+            "gap": "30px",
+            "justifyContent": "flex-start",
+            "alignItems": "center",
+            "paddingTop": "20px",
+            "paddingBottom": "20px",
+            "position": "static"
+          }
+        }
+      }
+    },
+    "node_mvoy3v4b655g4": {
+      "id": "node_mvoy3v4b655g4",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwaykzlo2fybov",
+        "node_mwb0ibr41n16f0"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "display": "flex",
+            "marginTop": "0px",
+            "marginBottom": "0px",
+            "flexDirection": "column"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ]
+    },
+    "node_mw333coalu9sy": {
+      "id": "node_mw333coalu9sy",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdbibi81mdjak",
+        "node_mw84mram9u3w0"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%",
+            "height": "55px",
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ]
+    },
+    "node_mw3pe8s658aj5": {
+      "id": "node_mw3pe8s658aj5",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwax2ugv23i1e7",
+        "node_mwa0ls4a1t9kpz",
+        "node_mwa0oqwv1v7mq3",
+        "node_mwa0uuad1x8492",
+        "node_mwa14g5f1nqmg2"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "padding": "0px",
+            "gap": "60px",
+            "width": "70%",
+            "height": "100%",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        },
+        "lg": {
+          "default": {
+            "gap": "45px"
+          }
+        },
+        "md": {
+          "default": {
+            "gap": "45px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%",
+            "display": "flex",
+            "height": "60%",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "gridTemplateColumns": "repeat(2, 1fr)",
+            "gap": "20px",
+            "flexDirection": "column"
+          }
+        }
+      }
+    },
+    "node_mw3pfvl46d8f6": {
+      "id": "node_mw3pfvl46d8f6",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwb0t2xu1tlkmo",
+        "node_mwb0v52c1vmgyf",
+        "node_mwb0r23k1rvpmg",
+        "node_mwb0okzz1p5wst",
+        "node_mw859a0cswdhv"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "block",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "30%",
+            "height": "100%",
+            "overflow": "visible"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%",
+            "height": "40%",
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "space-between",
+            "alignItems": "center"
+          }
+        }
+      }
+    },
+    "node_mw839l0x2twnw": {
+      "id": "node_mw839l0x2twnw",
+      "type": "image",
+      "name": "特集小見出し",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw839kuyf16b6d-pasted-artwork.svg",
+        "alt": "",
+        "width": 508,
+        "height": 59,
+        "assetId": "asset_mw839l0w11nth"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "39.7%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "position": "absolute",
+            "left": "30%",
+            "top": "15%"
+          }
+        },
+        "lg": {
+          "default": {
+            "top": "30%"
+          }
+        }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
+    },
+    "node_mw84mram9u3w0": {
+      "id": "node_mw84mram9u3w0",
+      "type": "image",
+      "name": "特集小見出しスマホ",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw839kuyf16b6d-pasted-artwork.svg",
+        "alt": "",
+        "width": 508,
+        "height": 59,
+        "assetId": "asset_mw839l0w11nth"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "39.7%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "position": "absolute",
+            "left": "30%",
+            "top": "15%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "85%",
+            "left": "auto",
+            "zIndex": "0",
+            "top": "auto",
+            "position": "relative"
+          }
+        }
+      }
+    },
+    "node_mw859a0cswdhv": {
+      "id": "node_mw859a0cswdhv",
+      "type": "image",
+      "name": "しゃべりまつ",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw8599ti2908da-pasted-artwork.svg",
+        "alt": "",
+        "width": 149,
+        "height": 97,
+        "assetId": "asset_mw859a0brt7ny"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "38.8%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "position": "absolute",
+            "right": "0px",
+            "bottom": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "right": "38%",
+            "width": "25%"
+          }
+        }
+      }
+    },
+    "node_mwa0ls4a1t9kpz": {
+      "id": "node_mwa0ls4a1t9kpz",
+      "type": "image",
+      "name": "グリーティング１",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwa0lswfae3ab3-pasted-artwork.svg",
+        "alt": "",
+        "width": 350,
+        "height": 183,
+        "assetId": "asset_mwa0ls431sol23"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "40%",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "70%"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mwa1kt2r1sfw0f",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 2,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ],
+      "scripts": [
+        {
+          "id": "sc_mwaxahz91xs8",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mwaxajul2roa",
+              "kind": "open-url",
+              "url": "https://www.matsufes.info/booth/175"
+            }
+          ],
+          "pos": {
+            "x": 46,
+            "y": 131
+          }
+        }
+      ]
+    },
+    "node_mwa0oqwv1v7mq3": {
+      "id": "node_mwa0oqwv1v7mq3",
+      "type": "image",
+      "name": "グリーティング２",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwa0orp3023623-pasted-artwork.svg",
+        "alt": "",
+        "width": 350,
+        "height": 185,
+        "assetId": "asset_mwa0oqwn1ubv7a"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "350px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
+      ],
+      "motions": [
+        {
+          "id": "motion_mwa1m6fe1tkhln",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 2,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mwa0uuad1x8492": {
+      "id": "node_mwa0uuad1x8492",
+      "type": "image",
+      "name": "ストパフォ１",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwa0uv1o42ce60-pasted-artwork.svg",
+        "alt": "",
+        "width": 350,
+        "height": 184,
+        "assetId": "asset_mwa0uua41we5wq"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "40%",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "70%"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mwa1mlk01u32og",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 2,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ],
+      "scripts": [
+        {
+          "id": "sc_mwaxc1qw4xmx",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mwaxc3nm5jg9",
+              "kind": "open-url",
+              "url": "https://www.matsufes.info/booth/143"
+            }
+          ],
+          "pos": {
+            "x": 508,
+            "y": 123
+          }
+        }
+      ]
+    },
+    "node_mwa14g5f1nqmg2": {
+      "id": "node_mwa14g5f1nqmg2",
+      "type": "image",
+      "name": "ストパフォ２",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwa14gxo297356-pasted-artwork.svg",
+        "alt": "",
+        "width": 350,
+        "height": 185,
+        "assetId": "asset_mwa14g571m283l"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "350px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
+      ],
+      "motions": [
+        {
+          "id": "motion_mwa1n3771v7e3g",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 2,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mwax2ugv23i1e7": {
+      "id": "node_mwax2ugv23i1e7",
+      "type": "image",
+      "name": "まつぴよに会える？",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwax2u4yd77c99-pasted-artwork.svg",
+        "alt": "",
+        "width": 181,
+        "height": 100,
+        "assetId": "asset_mwax2ugm22uqzl"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "18%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "position": "absolute",
+            "left": "2%",
+            "top": "-13%"
+          }
+        },
+        "sm": {
+          "default": {
+            "top": "-2%",
+            "left": "7%",
+            "width": "23%"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mwax6wvx24hbhp",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 2,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mway2xmd27sgq2": {
+      "id": "node_mway2xmd27sgq2",
+      "type": "image",
+      "name": "まつぴよ特集",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmway2x53d0eea9-pasted-artwork.svg",
+        "alt": "",
+        "width": 393,
+        "height": 32,
+        "assetId": "asset_mway2xm826oyzc"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "35%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "zIndex": "1",
+            "position": "absolute",
+            "left": "32%",
+            "top": "35%"
+          }
+        },
+        "md": {
+          "default": {
+            "top": "45%"
+          }
+        },
+        "lg": {
+          "default": {
+            "top": "45%"
+          }
+        }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
+    },
+    "node_mway6st529r3aj": {
+      "id": "node_mway6st529r3aj",
+      "type": "image",
+      "name": "まつぴよ特集スマホ",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmway6scg05963d-pasted-artwork.svg",
+        "alt": "",
+        "width": 393,
+        "height": 32,
+        "assetId": "asset_mway6st528iffs"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "393px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "80%",
+            "zIndex": "1",
+            "position": "relative"
+          }
+        }
+      }
+    },
+    "node_mwaykzlo2fybov": {
+      "id": "node_mwaykzlo2fybov",
+      "type": "image",
+      "name": "まつぴよとはスマホ１",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwaykz3536e181-pasted-artwork.svg",
+        "alt": "",
+        "width": 522,
+        "height": 516,
+        "assetId": "asset_mwaykzlj2e23oo"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "522px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "68%"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ]
+    },
+    "node_mwb0ibr41n16f0": {
+      "id": "node_mwb0ibr41n16f0",
+      "type": "image",
+      "name": "まつぴよとはスマホ２",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwb0ibff9af409-pasted-artwork.svg",
+        "alt": "",
+        "width": 514,
+        "height": 508,
+        "assetId": "asset_mwb0ibqy1mea7q"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "514px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "68%"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
+      ]
+    },
+    "node_mwb0okzz1p5wst": {
+      "id": "node_mwb0okzz1p5wst",
+      "type": "image",
+      "name": "吹き出しスマホ２",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwb0okq48d0675-pasted-artwork.svg",
+        "alt": "",
+        "width": 257,
+        "height": 158,
+        "assetId": "asset_mwb0okzt1oifn3"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "257px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "auto",
+            "height": "70%"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
+      ]
+    },
+    "node_mwb0r23k1rvpmg": {
+      "id": "node_mwb0r23k1rvpmg",
+      "type": "image",
+      "name": "吹き出しスマホ１",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwb0r1sh6f61d7-pasted-artwork.svg",
+        "alt": "",
+        "width": 257,
+        "height": 158,
+        "assetId": "asset_mwb0r23k1qrcxj"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "257px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "70%"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ]
+    },
+    "node_mwb0t2xu1tlkmo": {
+      "id": "node_mwb0t2xu1tlkmo",
+      "type": "image",
+      "name": "吹き出し１",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwb0t2o0c0df2a-pasted-artwork.svg",
+        "alt": "",
+        "width": 346,
+        "height": 216,
+        "assetId": "asset_mwb0t2xk1s2ulm"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "92%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "display": "block"
+          }
+        }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
+    },
+    "node_mwb0v52c1vmgyf": {
+      "id": "node_mwb0v52c1vmgyf",
+      "type": "image",
+      "name": "吹き出し２",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwb0v4qdcc1cd3-pasted-artwork.svg",
+        "alt": "",
+        "width": 346,
+        "height": 216,
+        "assetId": "asset_mwb0v5251u6r78"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "92%",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
+      ]
+    },
+    "node_mwdbibi81mdjak": {
+      "id": "node_mwdbibi81mdjak",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mway6st529r3aj"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "100%",
+            "height": "100%",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px"
+          }
+        }
+      }
+    },
+    "node_mwdc62q41qnych": {
+      "id": "node_mwdc62q41qnych",
+      "type": "image",
+      "name": "背景スマホ",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvj5p1gebba63c-pasted-artwork.svg",
+        "alt": "",
+        "width": 402,
+        "height": 840,
+        "assetId": "asset_mvj5p1yc5m04m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ]
+    },
+    "node_mwdc62q41rglr7": {
+      "id": "node_mwdc62q41rglr7",
+      "type": "image",
+      "name": "背景",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvf9sk79-pasted-artwork.svg",
+        "alt": "",
+        "width": 1280,
+        "height": 1010,
+        "assetId": "asset_mvf9skbx50ukc"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "auto"
+          }
+        }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
+    },
+    "node_mwdc62q41ujrcl": {
+      "id": "node_mwdc62q41ujrcl",
+      "type": "image",
+      "name": "top",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwawri7f1d293e-pasted-artwork.svg",
+        "alt": "",
+        "width": 121,
+        "height": 120,
+        "assetId": "asset_mwawrigg20cgiv"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "9.5%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "position": "absolute",
+            "top": "10%",
+            "right": "1%",
+            "zIndex": "1"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "12%",
+            "right": "2%"
+          }
+        }
+      },
+      "scripts": [
+        {
+          "id": "sc_mwaxd6gs6318",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mwaxdac29jde",
+              "kind": "open-url",
+              "url": "https://www.matsufes.info/"
+            }
+          ],
+          "pos": {
+            "x": 49,
+            "y": 246
+          }
+        }
+      ]
+    },
+    "node_mwdc62q41typat": {
+      "id": "node_mwdc62q41typat",
+      "type": "box",
+      "name": "ヘッダー",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdc62q41ujrcl"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "zIndex": "1",
+            "height": "15%",
+            "width": "100%",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px"
+          }
+        }
+      }
+    },
+    "node_mwdc62q41w2mzz": {
+      "id": "node_mwdc62q41w2mzz",
+      "type": "image",
+      "name": "まつぴよロゴ",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvexnguz-pasted-artwork.svg",
+        "alt": "",
+        "width": 442,
+        "height": 213,
+        "assetId": "asset_mvexnh262f8cm"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "46.1%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "display": "block",
+            "justifyContent": "flex-start",
+            "alignItems": "flex-start",
+            "gridTemplateColumns": "repeat(2, 1fr)"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "60%"
+          }
+        }
+      }
+    },
+    "node_mwdc62q41xv1cw": {
+      "id": "node_mwdc62q41xv1cw",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "80%"
+          }
+        },
+        "sm": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "width": "70%",
+            "height": "100%"
+          }
+        }
+      }
+    },
+    "node_mwdc62q41ywwhl": {
+      "id": "node_mwdc62q41ywwhl",
+      "type": "image",
+      "name": "ポスター",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvf9yo33-pasted-artwork.svg",
+        "alt": "",
+        "width": 333,
+        "height": 164,
+        "assetId": "asset_mvf9yos72ru31"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "display": "flex",
+            "flexDirection": "row",
+            "height": "80%"
+          }
+        },
+        "sm": {
+          "default": {
+            "overflow": "hidden"
+          }
+        }
+      }
+    },
+    "node_mwdc62q41veo48": {
+      "id": "node_mwdc62q41veo48",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdc62q41w2mzz",
+        "node_mwdc62q41xv1cw",
+        "node_mwdc62q41ywwhl"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "100%",
+            "height": "20%",
+            "zIndex": "0"
+          }
+        },
+        "md": {
+          "default": {
+            "width": "100%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "100%",
+            "display": "flex",
+            "flexDirection": "row"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%",
+            "height": "12%"
+          }
+        }
+      }
+    },
+    "node_mwdc62q420h3k3": {
+      "id": "node_mwdc62q420h3k3",
+      "type": "image",
+      "name": "まつぴよとは１",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwayi0zx48d4ab-pasted-artwork.svg",
+        "alt": "",
+        "width": 522,
+        "height": 516,
+        "assetId": "asset_mwayi19u2ccosg"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "40%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "position": "absolute",
+            "top": "0px",
+            "right": "1%"
+          }
+        }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
+    },
+    "node_mwdc62q421nubb": {
+      "id": "node_mwdc62q421nubb",
+      "type": "image",
+      "name": "まつぴよとは２",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwayfmlg0005d5-pasted-artwork.svg",
+        "alt": "",
+        "width": 514,
+        "height": 508,
+        "assetId": "asset_mwayfmy32a0k8p"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "40%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "position": "absolute",
+            "top": "0px",
+            "right": "1%"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
+      ]
+    },
+    "node_mwdc62q423ickv": {
+      "id": "node_mwdc62q423ickv",
+      "type": "image",
+      "name": "tap",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw85hutid93108-pasted-artwork.svg",
+        "alt": "",
+        "width": 204,
+        "height": 150,
+        "assetId": "asset_mw85hv3dxf2bf"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "26.6%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "position": "absolute",
+            "left": "10%",
+            "top": "20%"
+          }
+        },
+        "sm": {
+          "default": {
+            "zIndex": "2",
+            "top": "15%"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mw92knwq1u0g7",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "custom",
+          "duration": 4,
+          "delay": 0,
+          "easing": "linear",
+          "repeat": -1,
+          "direction": "normal",
+          "fillMode": "both",
+          "customKeyframes": "from { opacity: 0; }\n40% { opacity: 1; }\n60% { opacity: 1; }\nto { opacity: 0; }"
+        }
+      ]
+    },
+    "node_mwdc62q424p4r1": {
+      "id": "node_mwdc62q424p4r1",
+      "type": "image",
+      "name": "まつぴよ本人",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvnblq88cf0f31-pasted-artwork.svg",
+        "alt": "",
+        "width": 771,
+        "height": 613,
+        "assetId": "asset_mvnblpc874ta6"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "zIndex": "0",
+            "position": "absolute",
+            "left": "2%",
+            "top": "20%",
+            "height": "121%"
+          }
+        },
+        "sm": {
+          "default": {
+            "position": "absolute",
+            "left": "0px",
+            "top": "10%",
+            "height": "90%"
+          }
+        }
+      },
+      "scripts": [
+        {
+          "id": "sc_mvnbpqwyaep0",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mvnbpsbebw5w",
+              "kind": "show",
+              "target": "img-3"
+            },
+            {
+              "id": "st_mvnbpti2cymr",
+              "kind": "hide",
+              "target": "img"
+            }
+          ],
+          "pos": {
+            "x": 48,
+            "y": 424
+          }
+        }
+      ],
+      "attrId": "img",
+      "motions": [
+        {
+          "id": "motion_mvnbv3itaimhh",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "bounce",
+          "duration": 1,
+          "delay": 0,
+          "easing": "ease-in-out",
+          "repeat": 2,
+          "direction": "normal",
+          "fillMode": "none"
+        }
+      ],
+      "locked": false
+    },
+    "node_mwdc62q42522sc": {
+      "id": "node_mwdc62q42522sc",
+      "type": "image",
+      "name": "びっくりぴよ",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvnbz3dke3b9a3-pasted-artwork.svg",
+        "alt": "",
+        "width": 597,
+        "height": 679,
+        "assetId": "asset_mvnbz2dbbdknb",
+        "priority": true
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "display": "block",
+            "height": "133%",
+            "position": "absolute",
+            "left": "8.5%",
+            "top": "9%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "80%",
+            "height": "99.5%",
+            "top": "1%",
+            "left": "16.5%",
+            "position": "absolute",
+            "zIndex": "0"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      },
+      "attrId": "img-3",
+      "motions": [
+        {
+          "id": "motion_mvncpt0jddwm4",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "bounce",
+          "duration": 0.3,
+          "delay": 0,
+          "easing": "cubic-bezier(0, 1.03, 0.3, 1)",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "none"
+        }
+      ],
+      "scripts": [
+        {
+          "id": "sc_mvnc3807i646",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mvntwliv3ni2",
+              "kind": "show",
+              "target": "img-4"
+            },
+            {
+              "id": "st_mvntwn5x4i2h",
+              "kind": "hide",
+              "target": "img-3"
+            }
+          ],
+          "pos": {
+            "x": 43,
+            "y": 547
+          }
+        }
+      ],
+      "locked": false,
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
+      ]
+    },
+    "node_mwdc62q426sqoe": {
+      "id": "node_mwdc62q426sqoe",
+      "type": "image",
+      "name": "悲しいぴよ",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvnttrtj888e3a-pasted-artwork.svg",
+        "alt": "",
+        "width": 682,
+        "height": 639,
+        "assetId": "asset_mvntts2b4ia78",
+        "priority": true
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "height": "121%",
+            "position": "absolute",
+            "left": "9%",
+            "top": "20%"
+          }
+        },
+        "lg": {
+          "default": {}
+        },
+        "md": {
+          "default": {
+            "width": "auto"
+          }
+        },
+        "sm": {
+          "default": {
+            "height": "90%",
+            "top": "10%",
+            "left": "7.5%"
+          }
+        }
+      },
+      "attrId": "img-4",
+      "scripts": [
+        {
+          "id": "sc_mvntxisn70m3",
+          "steps": [
+            {
+              "id": "st_mvnc3lw7jk39",
+              "kind": "show",
+              "target": "img-5"
+            },
+            {
+              "id": "st_mvnc3s2dke0k",
+              "kind": "hide",
+              "target": "img-4"
+            }
+          ],
+          "pos": {
+            "x": 49,
+            "y": 698
+          },
+          "trigger": "click"
+        }
+      ],
+      "motions": [
+        {
+          "id": "motion_mvnu4loc1y6z8",
+          "trigger": "load",
+          "property": "all",
+          "keyframes": "wobble",
+          "duration": 1.2,
+          "delay": 0,
+          "easing": "ease-in",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ],
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
+      ]
+    },
+    "node_mwdc62q427wb7w": {
+      "id": "node_mwdc62q427wb7w",
+      "type": "image",
+      "name": "闇ぴよ",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvnbeqh76e7470-pasted-artwork.svg",
+        "alt": "",
+        "width": 584,
+        "height": 613,
+        "assetId": "asset_mvnbepiy5pr6j",
+        "priority": true
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "height": "121%",
+            "position": "absolute",
+            "left": "13.5%",
+            "top": "20%"
+          }
+        },
+        "sm": {
+          "default": {
+            "height": "90%",
+            "top": "10%",
+            "left": "11.8%"
+          }
+        },
+        "lg": {
+          "default": {}
+        },
+        "md": {
+          "default": {
+            "width": "auto"
+          }
+        }
+      },
+      "attrId": "img-2",
+      "motions": [
+        {
+          "id": "motion_mvncrj60eo95c",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "slide-down",
+          "duration": 0.7,
+          "delay": 0,
+          "easing": "cubic-bezier(0.68, -0.6, 0.32, 1.6)",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "none"
+        }
+      ],
+      "scripts": [
+        {
+          "id": "sc_mvnuh12b48qf",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mvnuh25e5vbk",
+              "kind": "show",
+              "target": "img-6"
+            },
+            {
+              "id": "st_mvnuh4au6wql",
+              "kind": "hide",
+              "target": "img-2"
+            }
+          ],
+          "pos": {
+            "x": 54,
+            "y": 971
+          }
+        }
+      ],
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
+      ]
+    },
+    "node_mwdc62q428678y": {
+      "id": "node_mwdc62q428678y",
+      "type": "image",
+      "name": "怒ぴよ",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvntyrxyd04a68-pasted-artwork.svg",
+        "alt": "",
+        "width": 718,
+        "height": 631,
+        "assetId": "asset_mvntys6h722mf",
+        "priority": true
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "height": "121%",
+            "position": "absolute",
+            "left": "6%",
+            "top": "20%"
+          }
+        },
+        "lg": {
+          "default": {}
+        },
+        "md": {
+          "default": {}
+        },
+        "sm": {
+          "default": {
+            "height": "91%",
+            "top": "10%",
+            "left": "4%",
+            "zIndex": "0"
+          }
+        }
+      },
+      "attrId": "img-5",
+      "motions": [
+        {
+          "id": "motion_mvnu6fre264or",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "wobble",
+          "duration": 0.1,
+          "delay": 0,
+          "easing": "cubic-bezier(0.65, 0, 0.35, 1)",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ],
+      "scripts": [
+        {
+          "id": "sc_mvncf05f1bv83",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mvncdjz6165xc",
+              "kind": "show",
+              "target": "img-2"
+            },
+            {
+              "id": "st_mvncdn8z17fd2",
+              "kind": "hide",
+              "target": "img-5"
+            }
+          ],
+          "pos": {
+            "x": 48,
+            "y": 844
+          }
+        }
+      ],
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
+      ]
+    },
+    "node_mwdc62q4290kbu": {
+      "id": "node_mwdc62q4290kbu",
+      "type": "image",
+      "name": "疲れたぴよ",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvuiy6jda7fa5c-pasted-artwork.svg",
+        "alt": "",
+        "width": 594,
+        "height": 531,
+        "assetId": "asset_mvnutlowdiqd4",
+        "priority": true
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "height": "105%",
+            "position": "absolute",
+            "left": "13%",
+            "top": "30%"
+          }
+        },
+        "lg": {
+          "default": {}
+        },
+        "md": {
+          "default": {}
+        },
+        "sm": {
+          "default": {
+            "height": "80%",
+            "top": "20%",
+            "left": "13%"
+          }
+        }
+      },
+      "attrId": "img-6",
+      "motions": [
+        {
+          "id": "motion_mvnuxe36ft09q",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "slide-down",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "cubic-bezier(0.01, -0.01, 0.55, 1.12)",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ],
+      "scripts": [
+        {
+          "id": "sc_mvnvo44wfaz1",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mvnvo5hngspd",
+              "kind": "show",
+              "target": "img"
+            },
+            {
+              "id": "st_mvnvo6qnha9x",
+              "kind": "hide",
+              "target": "img-6"
+            }
+          ],
+          "pos": {
+            "x": 462,
+            "y": 942
+          }
+        }
+      ],
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
+      ]
+    },
+    "node_mwdc62q4229tjq": {
+      "id": "node_mwdc62q4229tjq",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdc62q423ickv",
+        "node_mwdc62q424p4r1",
+        "node_mwdc62q42522sc",
+        "node_mwdc62q426sqoe",
+        "node_mwdc62q427wb7w",
+        "node_mwdc62q428678y",
+        "node_mwdc62q4290kbu"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "block",
+            "padding": "0px",
+            "gap": "0px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "60%"
+          }
+        },
+        "lg": {
+          "default": {}
+        },
+        "sm": {
+          "default": {
+            "width": "100%",
+            "height": "60%",
+            "display": "block",
+            "position": "absolute",
+            "left": "0%",
+            "top": "25%"
+          }
+        }
+      },
+      "motions": []
+    },
+    "node_mwdc62q41z5725": {
+      "id": "node_mwdc62q41z5725",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdc62q420h3k3",
+        "node_mwdc62q421nubb",
+        "node_mwdc62q4229tjq"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "100%",
+            "height": "50%"
+          }
+        },
+        "lg": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%",
+            "height": "70%"
+          }
+        }
+      }
+    },
+    "node_mwdc62q52d8yja": {
+      "id": "node_mwdc62q52d8yja",
+      "type": "image",
+      "name": "インスタ",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvf5dp85-pasted-artwork.svg",
+        "alt": "",
+        "width": 52,
+        "height": 52,
+        "assetId": "asset_mvf5dpizm8058"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "height": "100%",
+            "position": "absolute",
+            "left": "10%",
+            "bottom": "0px"
+          }
+        },
+        "lg": {
+          "default": {}
+        },
+        "sm": {
+          "default": {
+            "width": "40%",
+            "left": "auto",
+            "bottom": "0px",
+            "height": "70%"
+          }
+        }
+      },
+      "scripts": [
+        {
+          "id": "sc_mvf8uu8o1dgs",
+          "trigger": "click",
+          "pos": {
+            "x": 32,
+            "y": 32
+          },
+          "steps": [
+            {
+              "id": "st_mvf8uu8o28sg",
+              "kind": "open-url",
+              "url": "https://www.instagram.com/matsupiyo_piyo/"
+            }
+          ]
+        }
+      ]
+    },
+    "node_mwdc62q52ewjoi": {
+      "id": "node_mwdc62q52ewjoi",
+      "type": "image",
+      "name": "エックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvf5e2r3-pasted-artwork.svg",
+        "alt": "",
+        "width": 50,
+        "height": 44,
+        "assetId": "asset_mvf5e31eot98m"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "height": "90%",
+            "position": "absolute",
+            "right": "10%",
+            "bottom": "0px"
+          }
+        },
+        "lg": {
+          "default": {
+            "height": "90%"
+          }
+        },
+        "sm": {
+          "default": {
+            "right": "0px",
+            "height": "auto",
+            "bottom": "5%",
+            "width": "40%"
+          }
+        },
+        "md": {
+          "default": {
+            "top": "auto"
+          }
+        }
+      },
+      "scripts": [
+        {
+          "id": "sc_mvf8z6kh3ist",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mvf8zcqd4898",
+              "kind": "open-url",
+              "url": "https://x.com/matsupiyo_piyo"
+            }
+          ],
+          "pos": {
+            "x": 498,
+            "y": 30
+          }
+        }
+      ]
+    },
+    "node_mwdc62q42cggx2": {
+      "id": "node_mwdc62q42cggx2",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdc62q52d8yja",
+        "node_mwdc62q52ewjoi"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "padding": "0px",
+            "gap": "40px",
+            "height": "18%",
+            "justifyContent": "flex-start",
+            "alignItems": "flex-end",
+            "width": "20%"
+          }
+        },
+        "lg": {
+          "default": {}
+        },
+        "sm": {
+          "default": {
+            "alignItems": "flex-end",
+            "height": "50%",
+            "justifyContent": "flex-start",
+            "gap": "50px",
+            "width": "70%"
+          }
+        }
+      }
+    },
+    "node_mwdc62q52gb4v5": {
+      "id": "node_mwdc62q52gb4v5",
+      "type": "image",
+      "name": "アカウント",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvf5efmo-pasted-artwork.svg",
+        "alt": "",
+        "width": 147,
+        "height": 15,
+        "assetId": "asset_mvf5efx2qmlze"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "93%",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "top": "80%",
+            "width": "100%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "93%"
+          }
+        }
+      }
+    },
+    "node_mwdc62q52fg2nj": {
+      "id": "node_mwdc62q52fg2nj",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdc62q52gb4v5"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "padding": "0px",
+            "gap": "0px",
+            "height": "10%",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "20%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "70%",
+            "height": "auto",
+            "justifyContent": "flex-end",
+            "alignItems": "center"
+          }
+        }
+      }
+    },
+    "node_mwdc62q42b4a05": {
+      "id": "node_mwdc62q42b4a05",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdc62q42cggx2",
+        "node_mwdc62q52fg2nj"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "height": "100%",
+            "width": "60%",
+            "justifyContent": "flex-end",
+            "alignItems": "flex-start"
+          }
+        },
+        "lg": {
+          "default": {
+            "top": "69%"
+          }
+        },
+        "sm": {
+          "default": {
+            "top": "44%",
+            "width": "40%",
+            "left": "2%",
+            "justifyContent": "flex-end",
+            "alignItems": "flex-start",
+            "gap": "10px"
+          }
+        }
+      }
+    },
+    "node_mwdc62q52i3agz": {
+      "id": "node_mwdc62q52i3agz",
+      "type": "image",
+      "name": "乙女ゲーム　ロゴ",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvezo7p3-pasted-artwork.svg",
+        "alt": "",
+        "width": 437,
+        "height": 209,
+        "assetId": "asset_mvezo6shn183q"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "display": "block"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      },
+      "motions": [],
+      "scripts": [
+        {
+          "id": "sc_mwbzm8841cvq",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mwbzxg0bauxr",
+              "kind": "open-url",
+              "url": "https://matsufes.info/tokimeki-dreamworld"
+            }
+          ],
+          "pos": {
+            "x": 547,
+            "y": 232
+          }
+        }
+      ]
+    },
+    "node_mwdc62q52j9r5l": {
+      "id": "node_mwdc62q52j9r5l",
+      "type": "image",
+      "name": "乙女ゲームであそぼう１",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwaw3bu450b10a-pasted-artwork.svg",
+        "alt": "",
+        "width": 415,
+        "height": 30,
+        "assetId": "asset_mwaw3c331o7q2o"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      }
+    },
+    "node_mwdc62q52k9tla": {
+      "id": "node_mwdc62q52k9tla",
+      "type": "image",
+      "name": "乙女ゲームであそぼう２",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwaw68zp6c8774-pasted-artwork.svg",
+        "alt": "",
+        "width": 415,
+        "height": 30,
+        "assetId": "asset_mwaw697r1qpoop"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
+      ]
+    },
+    "node_mwdc62q52hy1mh": {
+      "id": "node_mwdc62q52hy1mh",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdc62q52i3agz",
+        "node_mwdc62q52j9r5l",
+        "node_mwdc62q52k9tla"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "40%"
+          }
+        },
+        "lg": {
+          "default": {
+            "justifyContent": "flex-start",
+            "alignItems": "center"
+          }
+        },
+        "sm": {
+          "default": {
+            "justifyContent": "flex-end",
+            "alignItems": "flex-end",
+            "width": "60%"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mvozmyaj220tt",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 2,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mwdc62q42a0ffy": {
+      "id": "node_mwdc62q42a0ffy",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdc62q42b4a05",
+        "node_mwdc62q52hy1mh"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "gap": "0px",
+            "height": "30%",
+            "width": "100%",
+            "paddingTop": "0px",
+            "paddingRight": "20px",
+            "paddingBottom": "0px",
+            "paddingLeft": "20px"
+          }
+        },
+        "sm": {
+          "default": {
+            "height": "18%",
+            "paddingTop": "20px",
+            "paddingBottom": "20px"
+          }
+        }
+      }
+    },
+    "node_mwdc62q41su82b": {
+      "id": "node_mwdc62q41su82b",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdc62q41typat",
+        "node_mwdc62q41veo48",
+        "node_mwdc62q41z5725",
+        "node_mwdc62q42a0ffy"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px",
+            "width": "100%",
+            "height": "100%"
+          }
+        },
+        "lg": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column"
+          }
+        },
+        "sm": {
+          "default": {}
+        }
+      }
+    },
+    "node_mwdc62q41pjclt": {
+      "id": "node_mwdc62q41pjclt",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdc62q41qnych",
+        "node_mwdc62q41rglr7",
+        "node_mwdc62q41su82b"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%",
+            "display": "block"
+          }
+        }
+      }
+    },
+    "node_mwdc62q52tw7hq": {
+      "id": "node_mwdc62q52tw7hq",
+      "type": "image",
+      "name": "まつぴよ特集",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmway2x53d0eea9-pasted-artwork.svg",
+        "alt": "",
+        "width": 393,
+        "height": 32,
+        "assetId": "asset_mway2xm826oyzc"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "zIndex": "1",
+            "width": "34%"
+          }
+        },
+        "md": {
+          "default": {}
+        },
+        "lg": {
+          "default": {
+            "position": "absolute"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "72%"
+          }
+        }
+      }
+    },
+    "node_mwdc62q52ubb0m": {
+      "id": "node_mwdc62q52ubb0m",
+      "type": "image",
+      "name": "特集小見出し",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw839kuyf16b6d-pasted-artwork.svg",
+        "alt": "",
+        "width": 508,
+        "height": 59,
+        "assetId": "asset_mw839l0w11nth"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "39.7%",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "lg": {
+          "default": {
+            "position": "absolute"
+          }
+        },
+        "sm": {
+          "default": {
+            "zIndex": "0"
+          }
+        }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
+    },
+    "node_mwdc62q52s1k70": {
+      "id": "node_mwdc62q52s1k70",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdc62q52ubb0m",
+        "node_mwdcw9j63hf0h2",
+        "node_mwdcdwpy3chx7i"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "gap": "0px",
+            "width": "100%",
+            "paddingTop": "10px",
+            "paddingRight": "20px",
+            "paddingBottom": "10px",
+            "paddingLeft": "20px",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "marginTop": "18px",
+            "marginBottom": "18px"
+          }
+        },
+        "sm": {
+          "default": {
+            "display": "flex",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "marginRight": "0px",
+            "marginLeft": "0px",
+            "flexDirection": "column",
+            "marginTop": "5px",
+            "marginBottom": "5px"
+          }
+        },
+        "md": {
+          "default": {}
+        },
+        "lg": {
+          "default": {}
+        }
+      }
+    },
+    "node_mwdc62q53018xl": {
+      "id": "node_mwdc62q53018xl",
+      "type": "image",
+      "name": "まつぴよに会える？",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwax2u4yd77c99-pasted-artwork.svg",
+        "alt": "",
+        "width": 181,
+        "height": 100,
+        "assetId": "asset_mwax2ugm22uqzl"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "34%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "position": "absolute",
+            "left": "-2%",
+            "top": "-25%"
+          }
+        },
+        "sm": {
+          "default": {
+            "top": "-2%",
+            "left": "7%",
+            "width": "23%"
+          }
+        },
+        "lg": {
+          "default": {
+            "position": "absolute"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mwax6wvx24hbhp",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 2,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mwdc62q531d9uu": {
+      "id": "node_mwdc62q531d9uu",
+      "type": "image",
+      "name": "グリーティング１",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwa0lswfae3ab3-pasted-artwork.svg",
+        "alt": "",
+        "width": 350,
+        "height": 183,
+        "assetId": "asset_mwa0ls431sol23"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "90%",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "70%",
+            "marginTop": "20px"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mwa1kt2r1sfw0f",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 2,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ],
+      "scripts": [
+        {
+          "id": "sc_mwaxahz91xs8",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mwaxajul2roa",
+              "kind": "open-url",
+              "url": "https://www.matsufes.info/booth/175"
+            }
+          ],
+          "pos": {
+            "x": 46,
+            "y": 131
+          }
+        }
+      ]
+    },
+    "node_mwdc62q533h0ox": {
+      "id": "node_mwdc62q533h0ox",
+      "type": "image",
+      "name": "ストパフォ１",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwa0uv1o42ce60-pasted-artwork.svg",
+        "alt": "",
+        "width": 350,
+        "height": 184,
+        "assetId": "asset_mwa0uua41we5wq"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "90%",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "70%"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mwa1mlk01u32og",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.5,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 2,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ],
+      "scripts": [
+        {
+          "id": "sc_mwaxc1qw4xmx",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mwaxc3nm5jg9",
+              "kind": "open-url",
+              "url": "https://www.matsufes.info/booth/143"
+            }
+          ],
+          "pos": {
+            "x": 508,
+            "y": 123
+          }
+        }
+      ]
+    },
+    "node_mwdc62q52zzsqp": {
+      "id": "node_mwdc62q52zzsqp",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdc62q53018xl",
+        "node_mwdc62q531d9uu"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "60px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "30%"
+          }
+        },
+        "lg": {
+          "default": {
+            "gap": "45px"
+          }
+        },
+        "md": {
+          "default": {
+            "gap": "45px"
+          }
+        },
+        "sm": {
+          "default": {
+            "display": "flex",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "gridTemplateColumns": "repeat(2, 1fr)",
+            "flexDirection": "column",
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mwdc62q5368brz": {
+      "id": "node_mwdc62q5368brz",
+      "type": "image",
+      "name": "吹き出し１",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwb0t2o0c0df2a-pasted-artwork.svg",
+        "alt": "",
+        "width": 346,
+        "height": 216,
+        "assetId": "asset_mwb0t2xk1s2ulm"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "90%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "display": "block",
+            "marginBottom": "26px"
+          }
+        },
+        "md": {
+          "default": {}
+        }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
+    },
+    "node_mwdc62q53acmc6": {
+      "id": "node_mwdc62q53acmc6",
+      "type": "image",
+      "name": "しゃべりまつ",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw8599ti2908da-pasted-artwork.svg",
+        "alt": "",
+        "width": 149,
+        "height": 97,
+        "assetId": "asset_mw859a0brt7ny"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "38.8%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "position": "absolute",
+            "right": "0px",
+            "bottom": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "left": "19%",
+            "right": "auto",
+            "width": "32.8%"
+          }
+        }
+      }
+    },
+    "node_mwdc62q535ov0c": {
+      "id": "node_mwdc62q535ov0c",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdc62q5368brz",
+        "node_mwdcssm93erf1f",
+        "node_mwdc62q53acmc6"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "padding": "0px",
+            "gap": "0px",
+            "overflow": "visible",
+            "width": "30%",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        },
+        "sm": {
+          "default": {
+            "display": "flex",
+            "alignItems": "center",
+            "width": "100%",
+            "flexDirection": "column"
+          }
+        }
+      }
+    },
+    "node_mwdc62q52y3w2s": {
+      "id": "node_mwdc62q52y3w2s",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdc62q52zzsqp",
+        "node_mwdcg2bx3dlyd4",
+        "node_mwdc62q535ov0c"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "padding": "0px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "flexDirection": "row",
+            "width": "100%"
+          }
+        },
+        "md": {
+          "default": {}
+        },
+        "sm": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "18px"
+          }
+        },
+        "lg": {
+          "default": {}
+        }
+      }
+    },
+    "node_mwdc62q52lbtd2": {
+      "id": "node_mwdc62q52lbtd2",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdc62q52s1k70",
+        "node_mwdcuuk43gyvxs",
+        "node_mwdc62q52y3w2s"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "block",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "100%",
+            "backgroundColor": "#F9DA7D"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%",
+            "display": "flex",
+            "flexDirection": "column"
+          }
+        },
+        "md": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column"
+          }
+        }
+      },
+      "motions": []
+    },
+    "node_mwdcdwpy3chx7i": {
+      "id": "node_mwdcdwpy3chx7i",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdc62q52tw7hq"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px",
+            "width": "100%",
+            "height": "100%"
+          }
+        }
+      }
+    },
+    "node_mwdcg2bx3dlyd4": {
+      "id": "node_mwdcg2bx3dlyd4",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdc62q533h0ox"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "30%",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
+    "node_mwdcssm93erf1f": {
+      "id": "node_mwdcssm93erf1f",
+      "type": "image",
+      "name": "吹き出しスマホ１",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwb0r1sh6f61d7-pasted-artwork.svg",
+        "alt": "",
+        "width": 257,
+        "height": 158,
+        "assetId": "asset_mwb0r23k1qrcxj"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "257px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "70%"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ]
+    },
+    "node_mwdcupy13fwvoo": {
+      "id": "node_mwdcupy13fwvoo",
+      "type": "image",
+      "name": "まつぴよとはスマホ１",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwaykz3536e181-pasted-artwork.svg",
+        "alt": "",
+        "width": 522,
+        "height": 516,
+        "assetId": "asset_mwaykzlj2e23oo"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "522px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "68%"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ]
+    },
+    "node_mwdcuuk43gyvxs": {
+      "id": "node_mwdcuuk43gyvxs",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwdcupy13fwvoo"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ]
+    },
+    "node_mwdcw9j63hf0h2": {
+      "id": "node_mwdcw9j63hf0h2",
+      "type": "image",
+      "name": "特集小見出しスマホ",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw839kuyf16b6d-pasted-artwork.svg",
+        "alt": "",
+        "width": 508,
+        "height": 59,
+        "assetId": "asset_mw839l0w11nth"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "39.7%",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "position": "absolute",
+            "left": "30%",
+            "top": "15%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "99%",
+            "left": "auto",
+            "top": "auto",
+            "position": "relative"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md"
+      ]
     }
   },
   "assets": {

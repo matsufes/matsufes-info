@@ -248,7 +248,7 @@ export default function Page() {
                   <Link href="/m-1" className="el-888">
                     {"m-1グランプリ"}
                   </Link>
-                  <Link href="/matsupiyo" className="el-889">
+                  <Link href="/matsupiyo-old" className="el-889">
                     {"公式メンバ〜「まつぴよ」"}
                   </Link>
                   <div id="menu1-9" className="el-890" />
@@ -265,7 +265,7 @@ export default function Page() {
         height={583}
         className="el-891"
       />
-      <p className="el-1987">
+      <p className="el-1985">
         <span
           className="crisp-svg svg-353"
           style={{ ["--crisp-svg-width"]: "707px", ["--crisp-svg-ratio"]: "707 / 136" } as import("react").CSSProperties}
@@ -528,8 +528,8 @@ export default function Page() {
           />
         </a>
       </section>
-      <section data-inview className="el-1681">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1682">
+      <section data-inview className="el-1680">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1681">
           <Image
             src="/assets/pasted-artwork-134.svg"
             alt=""

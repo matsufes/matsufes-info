@@ -398,7 +398,7 @@ export default async function Page({
                   <Link href="/m-1" className="el-506">
                     {"m-1グランプリ"}
                   </Link>
-                  <Link href="/matsupiyo" className="el-507">
+                  <Link href="/matsupiyo-old" className="el-507">
                     {"公式メンバ〜「まつぴよ」"}
                   </Link>
                   <div id="menu1-9" className="el-508" />
@@ -810,8 +810,8 @@ export default async function Page({
           />
         </a>
       </section>
-      <section data-inview className="el-1687">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1688">
+      <section data-inview className="el-1686">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1687">
           <Image
             src="/assets/pasted-artwork-134.svg"
             alt=""

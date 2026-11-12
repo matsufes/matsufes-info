@@ -354,7 +354,7 @@ export default async function Page() {
                   <Link href="/m-1" className="el-454">
                     {"m-1グランプリ"}
                   </Link>
-                  <Link href="/matsupiyo" className="el-455">
+                  <Link href="/matsupiyo-old" className="el-455">
                     {"公式メンバ〜「まつぴよ」"}
                   </Link>
                   <div id="menu1-9" className="el-456" />
@@ -590,12 +590,12 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-3\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-3\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":3},{\"kind\":\"hide\",\"target\":\"div-4\"},{\"kind\":\"show\",\"target\":\"div-3\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-3\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":4,\"join\":\"or\",\"conds\":[{\"field\":\"businessHours\",\"op\":\"contains\",\"value\":\"11/14\"}]},{\"kind\":\"hide\",\"target\":\"div-3\"},{\"kind\":\"show\",\"target\":\"div-4\"}]}]}]"} className="el-3072">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-3\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-3\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":3},{\"kind\":\"hide\",\"target\":\"div-4\"},{\"kind\":\"show\",\"target\":\"div-3\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-3\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":4,\"join\":\"or\",\"conds\":[{\"field\":\"businessHours\",\"op\":\"contains\",\"value\":\"11/14\"}]},{\"kind\":\"hide\",\"target\":\"div-3\"},{\"kind\":\"show\",\"target\":\"div-4\"}]}]}]"} className="el-3054">
                   <label id="agree-3" className="checkbox-5">
                     <input type="checkbox" name="agree-3" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-3" data-toggle-show="flex" className="el-3073">
+                  <div id="div-3" data-toggle-show="flex" className="el-3055">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -603,13 +603,13 @@ export default async function Page() {
                       height={107}
                       className="png-97"
                     />
-                    <div className="box-1007">
+                    <div className="box-999">
                       <p className="text-765">
                         {"11.14(ど)"}
                       </p>
                     </div>
                   </div>
-                  <div id="div-4" data-toggle-show="flex" data-inview className="el-3074">
+                  <div id="div-4" data-toggle-show="flex" data-inview className="el-3056">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -617,19 +617,19 @@ export default async function Page() {
                       height={98}
                       className="png-98"
                     />
-                    <div className="box-1008">
+                    <div className="box-1000">
                       <p className="text-766">
                         {"11.14(ど)"}
                       </p>
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-4\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-4\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":3},{\"kind\":\"hide\",\"target\":\"div-6\"},{\"kind\":\"show\",\"target\":\"div-5\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-4\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":5,\"join\":\"or\",\"conds\":[{\"field\":\"businessHours\",\"op\":\"contains\",\"value\":\"11/15\"}]},{\"kind\":\"hide\",\"target\":\"div-5\"},{\"kind\":\"show\",\"target\":\"div-6\"}]}]}]"} className="el-3075">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-4\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-4\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":3},{\"kind\":\"hide\",\"target\":\"div-6\"},{\"kind\":\"show\",\"target\":\"div-5\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-4\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":5,\"join\":\"or\",\"conds\":[{\"field\":\"businessHours\",\"op\":\"contains\",\"value\":\"11/15\"}]},{\"kind\":\"hide\",\"target\":\"div-5\"},{\"kind\":\"show\",\"target\":\"div-6\"}]}]}]"} className="el-3057">
                   <label id="agree-4" className="checkbox-6">
                     <input type="checkbox" name="agree-4" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-5" data-toggle-show="flex" className="el-3076">
+                  <div id="div-5" data-toggle-show="flex" className="el-3058">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -637,13 +637,13 @@ export default async function Page() {
                       height={107}
                       className="png-99"
                     />
-                    <div className="box-1009">
+                    <div className="box-1001">
                       <p className="text-767">
                         {"11.15(にち)"}
                       </p>
                     </div>
                   </div>
-                  <div id="div-6" data-toggle-show="flex" data-inview className="el-3077">
+                  <div id="div-6" data-toggle-show="flex" data-inview className="el-3059">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -651,7 +651,7 @@ export default async function Page() {
                       height={98}
                       className="png-100"
                     />
-                    <div className="box-1010">
+                    <div className="box-1002">
                       <p className="text-768">
                         {"11.15(にち)"}
                       </p>
@@ -808,12 +808,12 @@ export default async function Page() {
                 </p>
               </div>
               <div className="box-263">
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-8\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-8\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":9},{\"kind\":\"hide\",\"target\":\"div-14\"},{\"kind\":\"show\",\"target\":\"div-13\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-8\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":9,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"たべる\"}]},{\"kind\":\"hide\",\"target\":\"div-13\"},{\"kind\":\"show\",\"target\":\"div-14\"}]}]}]"} className="el-3078">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-8\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-8\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":9},{\"kind\":\"hide\",\"target\":\"div-14\"},{\"kind\":\"show\",\"target\":\"div-13\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-8\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":9,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"たべる\"}]},{\"kind\":\"hide\",\"target\":\"div-13\"},{\"kind\":\"show\",\"target\":\"div-14\"}]}]}]"} className="el-3060">
                   <label id="agree-8" className="checkbox-7">
                     <input type="checkbox" name="agree-8" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-13" data-toggle-show="flex" className="el-3079">
+                  <div id="div-13" data-toggle-show="flex" className="el-3061">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -821,13 +821,13 @@ export default async function Page() {
                       height={107}
                       className="png-101"
                     />
-                    <div className="box-1011">
+                    <div className="box-1003">
                       <p className="text-769">
                         {"たべる"}
                       </p>
                     </div>
                   </div>
-                  <div id="div-14" data-toggle-show="flex" data-inview className="el-3080">
+                  <div id="div-14" data-toggle-show="flex" data-inview className="el-3062">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -835,19 +835,19 @@ export default async function Page() {
                       height={98}
                       className="png-102"
                     />
-                    <div className="box-1012">
+                    <div className="box-1004">
                       <p className="text-770">
                         {"たべる"}
                       </p>
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-9\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-9\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":10},{\"kind\":\"hide\",\"target\":\"div-16\"},{\"kind\":\"show\",\"target\":\"div-15\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-9\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":10,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"あそぶ\"}]},{\"kind\":\"hide\",\"target\":\"div-15\"},{\"kind\":\"show\",\"target\":\"div-16\"}]}]}]"} className="el-3081">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-9\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-9\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":10},{\"kind\":\"hide\",\"target\":\"div-16\"},{\"kind\":\"show\",\"target\":\"div-15\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-9\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":10,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"あそぶ\"}]},{\"kind\":\"hide\",\"target\":\"div-15\"},{\"kind\":\"show\",\"target\":\"div-16\"}]}]}]"} className="el-3063">
                   <label id="agree-9" className="checkbox-8">
                     <input type="checkbox" name="agree-9" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-15" data-toggle-show="flex" className="el-3082">
+                  <div id="div-15" data-toggle-show="flex" className="el-3064">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -855,13 +855,13 @@ export default async function Page() {
                       height={107}
                       className="png-103"
                     />
-                    <div className="box-1013">
+                    <div className="box-1005">
                       <p className="text-771">
                         {"あそぶ"}
                       </p>
                     </div>
                   </div>
-                  <div id="div-16" data-toggle-show="flex" data-inview className="el-3083">
+                  <div id="div-16" data-toggle-show="flex" data-inview className="el-3065">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -869,19 +869,19 @@ export default async function Page() {
                       height={98}
                       className="png-104"
                     />
-                    <div className="box-1014">
+                    <div className="box-1006">
                       <p className="text-772">
                         {"あそぶ"}
                       </p>
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-10\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-10\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":11},{\"kind\":\"hide\",\"target\":\"div-18\"},{\"kind\":\"show\",\"target\":\"div-17\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-10\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":11,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"のむ\"}]},{\"kind\":\"hide\",\"target\":\"div-17\"},{\"kind\":\"show\",\"target\":\"div-18\"}]}]}]"} className="el-3084">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-10\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-10\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":11},{\"kind\":\"hide\",\"target\":\"div-18\"},{\"kind\":\"show\",\"target\":\"div-17\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-10\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":11,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"のむ\"}]},{\"kind\":\"hide\",\"target\":\"div-17\"},{\"kind\":\"show\",\"target\":\"div-18\"}]}]}]"} className="el-3066">
                   <label id="agree-10" className="checkbox-9">
                     <input type="checkbox" name="agree-10" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-17" data-toggle-show="flex" className="el-3085">
+                  <div id="div-17" data-toggle-show="flex" className="el-3067">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -889,13 +889,13 @@ export default async function Page() {
                       height={107}
                       className="png-105"
                     />
-                    <div className="box-1015">
+                    <div className="box-1007">
                       <p className="text-773">
                         {"のむ"}
                       </p>
                     </div>
                   </div>
-                  <div id="div-18" data-toggle-show="flex" data-inview className="el-3086">
+                  <div id="div-18" data-toggle-show="flex" data-inview className="el-3068">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -903,19 +903,19 @@ export default async function Page() {
                       height={98}
                       className="png-106"
                     />
-                    <div className="box-1016">
+                    <div className="box-1008">
                       <p className="text-774">
                         {"のむ"}
                       </p>
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-11\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-11\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":12},{\"kind\":\"hide\",\"target\":\"div-20\"},{\"kind\":\"show\",\"target\":\"div-19\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-11\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":12,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"みる\"}]},{\"kind\":\"hide\",\"target\":\"div-19\"},{\"kind\":\"show\",\"target\":\"div-20\"}]}]}]"} className="el-3087">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-11\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-11\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":12},{\"kind\":\"hide\",\"target\":\"div-20\"},{\"kind\":\"show\",\"target\":\"div-19\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-11\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":12,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"みる\"}]},{\"kind\":\"hide\",\"target\":\"div-19\"},{\"kind\":\"show\",\"target\":\"div-20\"}]}]}]"} className="el-3069">
                   <label id="agree-11" className="checkbox-10">
                     <input type="checkbox" name="agree-11" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-19" data-toggle-show="flex" className="el-3088">
+                  <div id="div-19" data-toggle-show="flex" className="el-3070">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -923,13 +923,13 @@ export default async function Page() {
                       height={107}
                       className="png-107"
                     />
-                    <div className="box-1017">
+                    <div className="box-1009">
                       <p className="text-775">
                         {"みる"}
                       </p>
                     </div>
                   </div>
-                  <div id="div-20" data-toggle-show="flex" data-inview className="el-3089">
+                  <div id="div-20" data-toggle-show="flex" data-inview className="el-3071">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -937,19 +937,19 @@ export default async function Page() {
                       height={98}
                       className="png-108"
                     />
-                    <div className="box-1018">
+                    <div className="box-1010">
                       <p className="text-776">
                         {"みる"}
                       </p>
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-12\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-12\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":13},{\"kind\":\"hide\",\"target\":\"div-22\"},{\"kind\":\"show\",\"target\":\"div-21\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-12\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":13,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"かう\"}]},{\"kind\":\"hide\",\"target\":\"div-21\"},{\"kind\":\"show\",\"target\":\"div-22\"}]}]}]"} className="el-3090">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-12\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-12\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":13},{\"kind\":\"hide\",\"target\":\"div-22\"},{\"kind\":\"show\",\"target\":\"div-21\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-12\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":13,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"かう\"}]},{\"kind\":\"hide\",\"target\":\"div-21\"},{\"kind\":\"show\",\"target\":\"div-22\"}]}]}]"} className="el-3072">
                   <label id="agree-12" className="checkbox-11">
                     <input type="checkbox" name="agree-12" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-21" data-toggle-show="flex" className="el-3091">
+                  <div id="div-21" data-toggle-show="flex" className="el-3073">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -957,13 +957,13 @@ export default async function Page() {
                       height={107}
                       className="png-109"
                     />
-                    <div className="box-1019">
+                    <div className="box-1011">
                       <p className="text-777">
                         {"かう"}
                       </p>
                     </div>
                   </div>
-                  <div id="div-22" data-toggle-show="flex" data-inview className="el-3092">
+                  <div id="div-22" data-toggle-show="flex" data-inview className="el-3074">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -971,19 +971,19 @@ export default async function Page() {
                       height={98}
                       className="png-110"
                     />
-                    <div className="box-1020">
+                    <div className="box-1012">
                       <p className="text-778">
                         {"かう"}
                       </p>
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-13\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-13\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":14},{\"kind\":\"hide\",\"target\":\"div-24\"},{\"kind\":\"show\",\"target\":\"div-23\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-13\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":14,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"さわる\"}]},{\"kind\":\"hide\",\"target\":\"div-23\"},{\"kind\":\"show\",\"target\":\"div-24\"}]}]}]"} className="el-3093">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-13\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-13\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":14},{\"kind\":\"hide\",\"target\":\"div-24\"},{\"kind\":\"show\",\"target\":\"div-23\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-13\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":14,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"さわる\"}]},{\"kind\":\"hide\",\"target\":\"div-23\"},{\"kind\":\"show\",\"target\":\"div-24\"}]}]}]"} className="el-3075">
                   <label id="agree-13" className="checkbox-12">
                     <input type="checkbox" name="agree-13" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-23" data-toggle-show="flex" className="el-3094">
+                  <div id="div-23" data-toggle-show="flex" className="el-3076">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -991,13 +991,13 @@ export default async function Page() {
                       height={107}
                       className="png-111"
                     />
-                    <div className="box-1021">
+                    <div className="box-1013">
                       <p className="text-779">
                         {"さわる"}
                       </p>
                     </div>
                   </div>
-                  <div id="div-24" data-toggle-show="flex" data-inview className="el-3095">
+                  <div id="div-24" data-toggle-show="flex" data-inview className="el-3077">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -1005,19 +1005,19 @@ export default async function Page() {
                       height={98}
                       className="png-112"
                     />
-                    <div className="box-1022">
+                    <div className="box-1014">
                       <p className="text-780">
                         {"さわる"}
                       </p>
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-14\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-14\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":15},{\"kind\":\"hide\",\"target\":\"div-26\"},{\"kind\":\"show\",\"target\":\"div-25\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-14\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":15,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"つくる\"}]},{\"kind\":\"hide\",\"target\":\"div-25\"},{\"kind\":\"show\",\"target\":\"div-26\"}]}]}]"} className="el-3096">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-14\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-14\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":15},{\"kind\":\"hide\",\"target\":\"div-26\"},{\"kind\":\"show\",\"target\":\"div-25\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-14\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":15,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"つくる\"}]},{\"kind\":\"hide\",\"target\":\"div-25\"},{\"kind\":\"show\",\"target\":\"div-26\"}]}]}]"} className="el-3078">
                   <label id="agree-14" className="checkbox-13">
                     <input type="checkbox" name="agree-14" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-25" data-toggle-show="flex" className="el-3097">
+                  <div id="div-25" data-toggle-show="flex" className="el-3079">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -1025,13 +1025,13 @@ export default async function Page() {
                       height={107}
                       className="png-113"
                     />
-                    <div className="box-1023">
+                    <div className="box-1015">
                       <p className="text-781">
                         {"つくる"}
                       </p>
                     </div>
                   </div>
-                  <div id="div-26" data-toggle-show="flex" data-inview className="el-3098">
+                  <div id="div-26" data-toggle-show="flex" data-inview className="el-3080">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -1039,19 +1039,19 @@ export default async function Page() {
                       height={98}
                       className="png-114"
                     />
-                    <div className="box-1024">
+                    <div className="box-1016">
                       <p className="text-782">
                         {"つくる"}
                       </p>
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-15\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-15\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":16},{\"kind\":\"hide\",\"target\":\"div-28\"},{\"kind\":\"show\",\"target\":\"div-27\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-15\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":16,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"きく\"}]},{\"kind\":\"hide\",\"target\":\"div-27\"},{\"kind\":\"show\",\"target\":\"div-28\"}]}]}]"} className="el-3099">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-15\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-15\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":16},{\"kind\":\"hide\",\"target\":\"div-28\"},{\"kind\":\"show\",\"target\":\"div-27\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-15\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":16,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"きく\"}]},{\"kind\":\"hide\",\"target\":\"div-27\"},{\"kind\":\"show\",\"target\":\"div-28\"}]}]}]"} className="el-3081">
                   <label id="agree-15" className="checkbox-14">
                     <input type="checkbox" name="agree-15" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-27" data-toggle-show="flex" className="el-3100">
+                  <div id="div-27" data-toggle-show="flex" className="el-3082">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -1059,13 +1059,13 @@ export default async function Page() {
                       height={107}
                       className="png-115"
                     />
-                    <div className="box-1025">
+                    <div className="box-1017">
                       <p className="text-783">
                         {"きく"}
                       </p>
                     </div>
                   </div>
-                  <div id="div-28" data-toggle-show="flex" data-inview className="el-3101">
+                  <div id="div-28" data-toggle-show="flex" data-inview className="el-3083">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -1073,7 +1073,7 @@ export default async function Page() {
                       height={98}
                       className="png-116"
                     />
-                    <div className="box-1026">
+                    <div className="box-1018">
                       <p className="text-784">
                         {"きく"}
                       </p>
@@ -1302,8 +1302,8 @@ export default async function Page() {
           />
         </a>
       </section>
-      <section data-inview className="el-1685">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1686">
+      <section data-inview className="el-1684">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1685">
           <Image
             src="/assets/pasted-artwork-134.svg"
             alt=""

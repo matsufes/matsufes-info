@@ -248,7 +248,7 @@ export default function Page() {
                   <Link href="/m-1" className="el-1500">
                     {"m-1グランプリ"}
                   </Link>
-                  <Link href="/matsupiyo" className="el-1501">
+                  <Link href="/matsupiyo-old" className="el-1501">
                     {"公式メンバ〜「まつぴよ」"}
                   </Link>
                   <div id="menu1-9" className="el-1502" />
@@ -406,7 +406,7 @@ export default function Page() {
       </section>
       <section data-inview className="el-129">
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/attention\"}]}]"}
-          className="crisp-svg el-2925"
+          className="crisp-svg el-2923"
           style={{ ["--crisp-svg-width"]: "990px", ["--crisp-svg-ratio"]: "990 / 764" } as import("react").CSSProperties}
         >
           <Image
@@ -419,7 +419,7 @@ export default function Page() {
       </section>
       <section data-inview className="el-734">
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/access\"}]}]"}
-          className="crisp-svg el-2926"
+          className="crisp-svg el-2924"
           style={{ ["--crisp-svg-width"]: "1051px", ["--crisp-svg-ratio"]: "1051 / 732" } as import("react").CSSProperties}
         >
           <Image
@@ -441,7 +441,7 @@ export default function Page() {
       </section>
       <section data-inview className="el-737">
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/survey\"}]}]"}
-          className="crisp-svg el-2927"
+          className="crisp-svg el-2925"
           style={{ ["--crisp-svg-width"]: "999px", ["--crisp-svg-ratio"]: "999 / 815" } as import("react").CSSProperties}
         >
           <Image
@@ -452,8 +452,8 @@ export default function Page() {
           />
         </span>
       </section>
-      <section className="el-3104">
-        <div className="el-3105">
+      <section className="el-3086">
+        <div className="el-3087">
           <span
             className="crisp-svg pasted-artwork-svg-183"
             style={{ ["--crisp-svg-width"]: "674px", ["--crisp-svg-ratio"]: "674 / 159" } as import("react").CSSProperties}
@@ -471,7 +471,7 @@ export default function Page() {
         <p className="text-785">
           {"第56回松ヶ崎祭オリジナルゲームが新登場！\nきみも まつぴよと 恋に落ちちゃう・・・！？"}
         </p>
-        <div className="el-3102">
+        <div className="el-3084">
           <span
             className="crisp-svg svg-630"
             style={{ ["--crisp-svg-width"]: "928px", ["--crisp-svg-ratio"]: "928 / 577" } as import("react").CSSProperties}
@@ -484,7 +484,7 @@ export default function Page() {
             />
           </span>
           <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://matsufes.info/tokimeki-dreamworld\"}]}]"}
-            className="crisp-svg el-3103"
+            className="crisp-svg el-3085"
             style={{ ["--crisp-svg-width"]: "524px", ["--crisp-svg-ratio"]: "524 / 207" } as import("react").CSSProperties}
           >
             <Image
@@ -578,7 +578,7 @@ export default function Page() {
             height={2030}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1673">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1672">
           <Image
             src="/assets/pasted-artwork-134.svg"
             alt=""
