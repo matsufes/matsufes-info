@@ -59,9 +59,9 @@ export default function Page() {
           </div>
           <div className="box-586">
             <span
-              className="crisp-svg el-3005"
+              className="crisp-svg el-3004"
+              style={{ ["--crisp-svg-width"]: "522px", ["--crisp-svg-ratio"]: "522 / 516" }}
             >
-              <svg aria-hidden="true" width={522} height={516} viewBox="0 0 522 516" />
               <Image
                 src="/assets/pasted-artwork-422.svg"
                 alt=""
@@ -74,7 +74,7 @@ export default function Page() {
               alt=""
               width={514}
               height={508}
-              className="el-3004"
+              className="el-3003"
             />
             <div className="box-587">
               <Image data-inview
@@ -86,8 +86,8 @@ export default function Page() {
               />
               <span id="img" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img-3\"},{\"kind\":\"hide\",\"target\":\"img\"}]}]"} data-toggle-show="block"
                 className="crisp-svg el-1991"
+                style={{ ["--crisp-svg-width"]: "771px", ["--crisp-svg-ratio"]: "771 / 613" }}
               >
-                <svg aria-hidden="true" width={771} height={613} viewBox="0 0 771 613" />
                 <Image
                   src="/assets/pasted-artwork-241.svg"
                   alt=""
@@ -97,8 +97,8 @@ export default function Page() {
               </span>
               <span id="img-3" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img-4\"},{\"kind\":\"hide\",\"target\":\"img-3\"}]}]"} data-toggle-show="block" data-inview
                 className="crisp-svg el-1990"
+                style={{ ["--crisp-svg-width"]: "597px", ["--crisp-svg-ratio"]: "597 / 679" }}
               >
-                <svg aria-hidden="true" width={597} height={679} viewBox="0 0 597 679" />
                 <Image
                   src="/assets/pasted-artwork-242.svg"
                   alt=""
@@ -108,8 +108,8 @@ export default function Page() {
               </span>
               <span id="img-4" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img-5\"},{\"kind\":\"hide\",\"target\":\"img-4\"}]}]"} data-toggle-show="block"
                 className="crisp-svg el-1995"
+                style={{ ["--crisp-svg-width"]: "682px", ["--crisp-svg-ratio"]: "682 / 639" }}
               >
-                <svg aria-hidden="true" width={682} height={639} viewBox="0 0 682 639" />
                 <Image
                   src="/assets/pasted-artwork-243.svg"
                   alt=""
@@ -119,8 +119,8 @@ export default function Page() {
               </span>
               <span id="img-2" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img-6\"},{\"kind\":\"hide\",\"target\":\"img-2\"}]}]"} data-toggle-show="block" data-inview
                 className="crisp-svg el-1992"
+                style={{ ["--crisp-svg-width"]: "584px", ["--crisp-svg-ratio"]: "584 / 613" }}
               >
-                <svg aria-hidden="true" width={584} height={613} viewBox="0 0 584 613" />
                 <Image
                   src="/assets/pasted-artwork-240.svg"
                   alt=""
@@ -130,8 +130,8 @@ export default function Page() {
               </span>
               <span id="img-5" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img-2\"},{\"kind\":\"hide\",\"target\":\"img-5\"}]}]"} data-toggle-show="block" data-inview
                 className="crisp-svg el-1993"
+                style={{ ["--crisp-svg-width"]: "718px", ["--crisp-svg-ratio"]: "718 / 631" }}
               >
-                <svg aria-hidden="true" width={718} height={631} viewBox="0 0 718 631" />
                 <Image
                   src="/assets/pasted-artwork-244.svg"
                   alt=""
@@ -141,8 +141,8 @@ export default function Page() {
               </span>
               <span id="img-6" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img\"},{\"kind\":\"hide\",\"target\":\"img-6\"}]}]"} data-toggle-show="block" data-inview
                 className="crisp-svg el-1994"
+                style={{ ["--crisp-svg-width"]: "594px", ["--crisp-svg-ratio"]: "594 / 531" }}
               >
-                <svg aria-hidden="true" width={594} height={531} viewBox="0 0 594 531" />
                 <Image
                   src="/assets/pasted-artwork-245.svg"
                   alt=""
@@ -167,7 +167,7 @@ export default function Page() {
                   alt=""
                   width={50}
                   height={44}
-                  className="el-2187"
+                  className="el-2186"
                 />
               </div>
               <div className="box-784">
@@ -193,14 +193,14 @@ export default function Page() {
                 alt=""
                 width={415}
                 height={30}
-                className="el-2999"
+                className="el-2998"
               />
               <Image
                 src="/assets/pasted-artwork-416.svg"
                 alt=""
                 width={415}
                 height={30}
-                className="el-3000"
+                className="el-2999"
               />
             </div>
           </div>
@@ -228,22 +228,6 @@ export default function Page() {
               alt=""
               width={393}
               height={32}
-              className="el-3003"
-            />
-            <Image
-              src="/assets/pasted-artwork-399.svg"
-              alt=""
-              width={508}
-              height={59}
-              className="el-2935"
-            />
-          </div>
-          <div className="box-788">
-            <Image
-              src="/assets/pasted-artwork-419.svg"
-              alt=""
-              width={393}
-              height={32}
               className="el-3002"
             />
             <Image
@@ -254,11 +238,27 @@ export default function Page() {
               className="el-2934"
             />
           </div>
+          <div className="box-788">
+            <Image
+              src="/assets/pasted-artwork-419.svg"
+              alt=""
+              width={393}
+              height={32}
+              className="el-3001"
+            />
+            <Image
+              src="/assets/pasted-artwork-399.svg"
+              alt=""
+              width={508}
+              height={59}
+              className="el-2933"
+            />
+          </div>
           <div className="box-790">
             <span
-              className="crisp-svg el-3006"
+              className="crisp-svg el-3005"
+              style={{ ["--crisp-svg-width"]: "522px", ["--crisp-svg-ratio"]: "522 / 516" }}
             >
-              <svg aria-hidden="true" width={522} height={516} viewBox="0 0 522 516" />
               <Image
                 src="/assets/pasted-artwork-423.svg"
                 alt=""
@@ -271,7 +271,7 @@ export default function Page() {
               alt=""
               width={514}
               height={508}
-              className="el-3063"
+              className="el-3062"
             />
           </div>
           <div className="box-789">
@@ -281,35 +281,35 @@ export default function Page() {
                 alt=""
                 width={181}
                 height={100}
-                className="el-3001"
+                className="el-3000"
               />
               <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://www.matsufes.info/booth/175\"}]}]"}
                 src="/assets/pasted-artwork-403.svg"
                 alt=""
                 width={350}
                 height={183}
-                className="el-2941"
+                className="el-2940"
               />
               <Image
                 src="/assets/pasted-artwork-408.svg"
                 alt=""
                 width={350}
                 height={185}
-                className="el-2943"
+                className="el-2942"
               />
               <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://www.matsufes.info/booth/143\"}]}]"}
                 src="/assets/pasted-artwork-413.svg"
                 alt=""
                 width={350}
                 height={184}
-                className="el-2945"
+                className="el-2944"
               />
               <Image
                 src="/assets/pasted-artwork-414.svg"
                 alt=""
                 width={350}
                 height={185}
-                className="el-2946"
+                className="el-2945"
               />
             </div>
             <div className="box-961">
@@ -318,35 +318,35 @@ export default function Page() {
                 alt=""
                 width={346}
                 height={216}
-                className="el-3066"
+                className="el-3065"
               />
               <Image
                 src="/assets/pasted-artwork-439.svg"
                 alt=""
                 width={346}
                 height={216}
-                className="el-3067"
+                className="el-3066"
               />
               <Image
                 src="/assets/pasted-artwork-436.svg"
                 alt=""
                 width={257}
                 height={158}
-                className="el-3064"
+                className="el-3063"
               />
               <Image
                 src="/assets/pasted-artwork-437.svg"
                 alt=""
                 width={257}
                 height={158}
-                className="el-3065"
+                className="el-3064"
               />
               <Image
                 src="/assets/pasted-artwork-400.svg"
                 alt=""
                 width={149}
                 height={97}
-                className="el-2936"
+                className="el-2935"
               />
             </div>
           </div>

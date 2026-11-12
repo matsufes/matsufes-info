@@ -41,8 +41,8 @@ export default function Page() {
               <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p-2\"}]}]"} className="el-1304">
                 <span
                   className="crisp-svg svg-210"
+                  style={{ ["--crisp-svg-width"]: "43px", ["--crisp-svg-ratio"]: "43 / 31" }}
                 >
-                  <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
                     src="/assets/pasted-artwork-131.svg"
                     alt="メニューを閉じる"
@@ -268,8 +268,8 @@ export default function Page() {
       <p className="box-64">
         <span
           className="crisp-svg svg-53"
+          style={{ ["--crisp-svg-width"]: "412px", ["--crisp-svg-ratio"]: "412 / 123" }}
         >
-          <svg aria-hidden="true" width={412} height={123} viewBox="0 0 412 123" />
           <Image
             src="/assets/pasted-artwork-75.svg"
             alt=""
@@ -302,7 +302,7 @@ export default function Page() {
         </div>
       </section>
       <section className="box-187">
-        <div id="Q-8" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"A-8\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"img-16\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"img-17\"}]}]"} className="el-2918">
+        <div id="Q-8" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"A-8\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"img-16\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"img-17\"}]}]"} className="el-2917">
           <p className="text-735">
             {"第56回松ヶ崎祭公式webページが更新されました。"}
           </p>
@@ -312,18 +312,18 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2919"
+              className="el-2918"
             />
             <Image id="img-17" data-toggle-show="block"
               src="/assets/pasted-artwork-263.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2920"
+              className="el-2919"
             />
           </div>
         </div>
-        <p id="A-8" data-toggle-show="flex" className="el-2921">
+        <p id="A-8" data-toggle-show="flex" className="el-2920">
           {"出展者様情報が公開されました。\n各出展者様のSNS等で松ヶ崎祭の情報を発信していただけます。\n ぜひ一緒に、松ヶ崎祭を盛り上げていただけますと幸いです。\n\n また、システム調整に伴う公開予定日時の変更により、\n出展者の皆さまに多大なるご迷惑をおかけしましたことを、心よりお詫び申し上げます。"}
         </p>
       </section>
@@ -337,12 +337,12 @@ export default function Page() {
             alt=""
             width={112}
             height={37}
-            className="svg-583"
+            className="svg-579"
           />
         </div>
       </section>
       <section className="box-959">
-        <div id="Q-2" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"A-2\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"img-2\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"img-3\"}]}]"} className="el-2922">
+        <div id="Q-2" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"A-2\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"img-2\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"img-3\"}]}]"} className="el-2921">
           <p className="text-736">
             {"第56回松ヶ崎祭公式webページが更新されました。"}
           </p>
@@ -352,26 +352,26 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2923"
+              className="el-2922"
             />
             <Image id="img-3" data-toggle-show="block"
               src="/assets/pasted-artwork-263.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2924"
+              className="el-2923"
             />
           </div>
         </div>
-        <p id="A-2" data-toggle-show="flex" className="el-2925">
+        <p id="A-2" data-toggle-show="flex" className="el-2924">
           {"追加されたコンテンツは以下の通りです。\n\n・よくあるご質問\n・委員会企画"}
         </p>
       </section>
       <section data-inview className="footer-15">
         <span
           className="crisp-svg pasted-artwork-svg-87"
+          style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1015" }}
         >
-          <svg aria-hidden="true" width={1920} height={1015} viewBox="0 0 1920 1015" />
           <Image
             src="/assets/pasted-artwork-35.svg"
             alt=""
@@ -419,8 +419,8 @@ export default function Page() {
         </a>
         <span
           className="crisp-svg svg-292"
+          style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 347" }}
         >
-          <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
           <Image
             src="/assets/pasted-artwork-196.svg"
             alt=""

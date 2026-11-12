@@ -38,14 +38,14 @@ async function loadData(vars: Vars) {
   vars["_0"] = await fetchJson(interpolateUrl("https://api.matsufes.info/data/web-info.json", vars));
   vars["_1"] = JSON.parse("null");
   if (!__runPurePageSteps([{"id":"st_mv7up0vg4","kind":"for-each","array":"_0.data","then":[{"id":"st_restore_fbc40b2b66b61c3","kind":"if","cond":{"subject":"var","target":"","left":"{ループ.値.publicId}","op":"eq","value":"{slug}"},"then":[{"id":"st_restore_e7ef04865feaad8","kind":"set-var","into":"_1","value":"{ループ.値}"},{"id":"st_restore_6f973508ea722b6","kind":"break-loop"}]}]}], vars, lookupVar, interpolate, __evalValueRecipe)) console.warn("Page-load script exceeded execution limits");
-  vars["_4"] = lookupVar(vars, "_1.categories.投票カテゴリ") ?? null;
-  vars["_5"] = lookupVar(vars, "_1.customAnswers.中分類") ?? null;
-  vars["_6"] = lookupVar(vars, "_1.categories.大分類") ?? null;
+  vars["_5"] = lookupVar(vars, "_1.categories.投票カテゴリ") ?? null;
+  vars["_6"] = lookupVar(vars, "_1.customAnswers.中分類") ?? null;
+  vars["_7"] = lookupVar(vars, "_1.categories.大分類") ?? null;
   vars["businessHours"] = lookupVar(vars, "_1.businessHours") ?? null;
   {
     const result = __evalValueRecipe(lookupVar(vars, "businessHours"), [{"kind":"split","separator":"、"}], vars);
-    if (result.kind === "value") vars["_7"] = result.value;
-    else if (result.kind === "missing") vars["_7"] = undefined;
+    if (result.kind === "value") vars["_8"] = result.value;
+    else if (result.kind === "missing") vars["_8"] = undefined;
   }
 }
 
@@ -191,8 +191,8 @@ export default async function Page({
               <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-463">
                 <span
                   className="crisp-svg svg-186"
+                  style={{ ["--crisp-svg-width"]: "43px", ["--crisp-svg-ratio"]: "43 / 31" }}
                 >
-                  <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
                     src="/assets/pasted-artwork-131.svg"
                     alt="メニューを閉じる"
@@ -489,7 +489,7 @@ export default async function Page({
                     className="el-408"
                   />
                   <div className="text-72">
-                    {toItems(lookupVar(vars, "_7")).map((item, i) => {
+                    {toItems(lookupVar(vars, "_8")).map((item, i) => {
                       const iv0 = { ...vars, ...item };
                       return (
                         <Fragment key={i}>
@@ -555,7 +555,7 @@ export default async function Page({
           </div>
           <div className="box-322">
             <div className="el-409">
-              {toItems(lookupVar(vars, "_4")).map((item, i) => {
+              {toItems(lookupVar(vars, "_5")).map((item, i) => {
                 const iv1 = { ...vars, ...item };
                 return (
                   <Fragment key={i}>
@@ -569,7 +569,7 @@ export default async function Page({
               })}
             </div>
             <div className="el-414">
-              {toItems(lookupVar(vars, "_6")).map((item, i) => {
+              {toItems(lookupVar(vars, "_7")).map((item, i) => {
                 const iv2 = { ...vars, ...item };
                 return (
                   <Fragment key={i}>
@@ -585,7 +585,7 @@ export default async function Page({
             <div className="el-412">
               <div className="el-417">
                 <p className="el-418">
-                  {interpolate("{_5}", vars)}
+                  {interpolate("{_6}", vars)}
                 </p>
               </div>
             </div>
@@ -601,7 +601,7 @@ export default async function Page({
                   className="el-419"
                 />
                 <div className="text-73">
-                  {toItems(lookupVar(vars, "_7")).map((item, i) => {
+                  {toItems(lookupVar(vars, "_8")).map((item, i) => {
                     const iv3 = { ...vars, ...item };
                     return (
                       <Fragment key={i}>
@@ -676,7 +676,7 @@ export default async function Page({
             <div className="box-323">
               <div className="fav">
                 <div className="box-318">
-                  <Image id="fav-svg" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"set-var","into":"_i","raw":lookupVar(vars, "_1.publicId") ?? null},{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_i"},"op":"empty","value":"","not":true},"then":[{"kind":"transform","source":"_2","into":"_j","transform":{"kind":"fallback","text":"","when":"nullish"}},{"kind":"transform","source":"_j","into":"_k","transform":{"kind":"split","separator":"."}},{"kind":"set-var","into":"_i","raw":lookupVar(vars, "_1.publicId") ?? null},{"kind":"set-var","into":"_l","value":"[]"},{"kind":"set-var","into":"_m","value":"false"},{"kind":"for-each","array":"_k","then":[{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"ループ.値","raw":lookupVar(vars, "ループ.値") ?? null},"op":"eq","value":{"inputRef":"_i"}},"then":[{"kind":"set-var","into":"_m","value":"true"}]},{"kind":"set-list-item","list":"_l","key":"","value":{"inputRef":"ループ.値","raw":lookupVar(vars, "ループ.値") ?? null}}]},{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_m"},"op":"eq","value":"false"},"then":[{"kind":"set-list-item","list":"_l","key":"","value":{"inputRef":"_i"}}]},{"kind":"transform","source":"_l","into":"_2","transform":{"kind":"join","separator":"."}}]},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...vars, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"fav-svg"},{"kind":"show","target":"favoff"}]}])} data-toggle-show="block"
+                  <Image id="fav-svg" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"set-var","into":"_j","raw":lookupVar(vars, "_1.publicId") ?? null},{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_j"},"op":"empty","value":"","not":true},"then":[{"kind":"transform","source":"_2","into":"_k","transform":{"kind":"fallback","text":"","when":"nullish"}},{"kind":"transform","source":"_k","into":"_l","transform":{"kind":"split","separator":"."}},{"kind":"set-var","into":"_j","raw":lookupVar(vars, "_1.publicId") ?? null},{"kind":"set-var","into":"_m","value":"[]"},{"kind":"set-var","into":"_n","value":"false"},{"kind":"for-each","array":"_l","then":[{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"ループ.値","raw":lookupVar(vars, "ループ.値") ?? null},"op":"eq","value":{"inputRef":"_j"}},"then":[{"kind":"set-var","into":"_n","value":"true"}]},{"kind":"set-list-item","list":"_m","key":"","value":{"inputRef":"ループ.値","raw":lookupVar(vars, "ループ.値") ?? null}}]},{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_n"},"op":"eq","value":"false"},"then":[{"kind":"set-list-item","list":"_m","key":"","value":{"inputRef":"_j"}}]},{"kind":"transform","source":"_m","into":"_2","transform":{"kind":"join","separator":"."}}]},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...vars, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"fav-svg"},{"kind":"show","target":"favoff"}]}])} data-toggle-show="block"
                     src="/assets/fav.svg"
                     alt="お気に入り登録済"
                     width={154}
@@ -685,7 +685,7 @@ export default async function Page({
                     preload
                     fetchPriority="high"
                   />
-                  <Image id="favoff" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"set-var","into":"_d","raw":lookupVar(vars, "_1.publicId") ?? null},{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_d"},"op":"empty","value":"","not":true},"then":[{"kind":"transform","source":"_2","into":"_e","transform":{"kind":"fallback","text":"","when":"nullish"}},{"kind":"transform","source":"_e","into":"_f","transform":{"kind":"split","separator":"."}},{"kind":"set-var","into":"_d","raw":lookupVar(vars, "_1.publicId") ?? null},{"kind":"set-var","into":"_g","value":"[]"},{"kind":"set-var","into":"_h","value":"false"},{"kind":"for-each","array":"_f","then":[{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"ループ.値","raw":lookupVar(vars, "ループ.値") ?? null},"op":"eq","value":{"inputRef":"_d"}},"then":[],"else":[{"kind":"set-list-item","list":"_g","key":"","value":{"inputRef":"ループ.値","raw":lookupVar(vars, "ループ.値") ?? null}}]}]},{"kind":"transform","source":"_g","into":"_2","transform":{"kind":"join","separator":"."}}]},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...vars, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"favoff"},{"kind":"show","target":"fav-svg"}]}])} data-toggle-show="block"
+                  <Image id="favoff" data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"set-var","into":"_e","raw":lookupVar(vars, "_1.publicId") ?? null},{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_e"},"op":"empty","value":"","not":true},"then":[{"kind":"transform","source":"_2","into":"_f","transform":{"kind":"fallback","text":"","when":"nullish"}},{"kind":"transform","source":"_f","into":"_g","transform":{"kind":"split","separator":"."}},{"kind":"set-var","into":"_e","raw":lookupVar(vars, "_1.publicId") ?? null},{"kind":"set-var","into":"_h","value":"[]"},{"kind":"set-var","into":"_i","value":"false"},{"kind":"for-each","array":"_g","then":[{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"ループ.値","raw":lookupVar(vars, "ループ.値") ?? null},"op":"eq","value":{"inputRef":"_e"}},"then":[],"else":[{"kind":"set-list-item","list":"_h","key":"","value":{"inputRef":"ループ.値","raw":lookupVar(vars, "ループ.値") ?? null}}]}]},{"kind":"transform","source":"_h","into":"_2","transform":{"kind":"join","separator":"."}}]},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_2}", { ...vars, ...{"_2":"{_2}","\u0000keepEscapes":true} }),"shared":true},{"kind":"hide","target":"favoff"},{"kind":"show","target":"fav-svg"}]}])} data-toggle-show="block"
                     src="/assets/pasted-artwork-179.svg"
                     alt="お気に入り未登録"
                     width={209}
@@ -782,8 +782,8 @@ export default async function Page({
       <section data-inview className="footer-10">
         <span
           className="crisp-svg pasted-artwork-svg-82"
+          style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1015" }}
         >
-          <svg aria-hidden="true" width={1920} height={1015} viewBox="0 0 1920 1015" />
           <Image
             src="/assets/pasted-artwork-35.svg"
             alt=""
@@ -831,8 +831,8 @@ export default async function Page({
         </a>
         <span
           className="crisp-svg svg-265"
+          style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 347" }}
         >
-          <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
           <Image
             src="/assets/pasted-artwork-196.svg"
             alt=""
