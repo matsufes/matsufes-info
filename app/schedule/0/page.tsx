@@ -265,9 +265,9 @@ export default function Page() {
         height={583}
         className="el-323"
       />
-      <p className="el-1986">
+      <p className="el-1985">
         <span
-          className="crisp-svg svg-352"
+          className="crisp-svg svg-351"
         >
           <svg aria-hidden="true" width={707} height={136} viewBox="0 0 707 136" />
           <Image

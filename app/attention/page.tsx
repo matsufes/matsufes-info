@@ -267,11 +267,11 @@ export default function Page() {
       />
       <p className="box-72">
         <span
-          className="crisp-svg svg-571"
+          className="crisp-svg svg-568"
         >
           <svg aria-hidden="true" width={845} height={130} viewBox="0 0 845 130" />
           <Image
-            src="/assets/pasted-artwork-359.svg"
+            src="/assets/pasted-artwork-358.svg"
             alt=""
             width={1690}
             height={260}
@@ -289,11 +289,11 @@ export default function Page() {
       </section>
       <section className="box-74">
         <span
-          className="crisp-svg svg-574"
+          className="crisp-svg svg-571"
         >
           <svg aria-hidden="true" width={749} height={114} viewBox="0 0 749 114" />
           <Image
-            src="/assets/pasted-artwork-362.svg"
+            src="/assets/pasted-artwork-361.svg"
             alt=""
             width={1498}
             height={228}

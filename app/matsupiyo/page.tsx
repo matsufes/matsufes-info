@@ -21,7 +21,7 @@ export default function Page() {
           alt=""
           width={402}
           height={840}
-          className="el-1990"
+          className="el-1989"
         />
         <Image
           src="/assets/pasted-artwork-206.svg"
@@ -33,7 +33,7 @@ export default function Page() {
         <div className="box-767">
           <div className="header-41">
             <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://www.matsufes.info/\"}]}]"}
-              src="/assets/pasted-artwork-418.svg"
+              src="/assets/pasted-artwork-417.svg"
               alt=""
               width={121}
               height={120}
@@ -59,33 +59,33 @@ export default function Page() {
           </div>
           <div className="box-586">
             <span
-              className="crisp-svg el-3006"
+              className="crisp-svg el-3005"
             >
               <svg aria-hidden="true" width={522} height={516} viewBox="0 0 522 516" />
               <Image
-                src="/assets/pasted-artwork-423.svg"
+                src="/assets/pasted-artwork-422.svg"
                 alt=""
                 width={1044}
                 height={1032}
               />
             </span>
             <Image
-              src="/assets/pasted-artwork-422.svg"
+              src="/assets/pasted-artwork-421.svg"
               alt=""
               width={514}
               height={508}
-              className="el-3005"
+              className="el-3004"
             />
             <div className="box-587">
               <Image data-inview
-                src="/assets/pasted-artwork-402.svg"
+                src="/assets/pasted-artwork-401.svg"
                 alt=""
                 width={204}
                 height={150}
                 className="tap"
               />
               <span id="img" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img-3\"},{\"kind\":\"hide\",\"target\":\"img\"}]}]"} data-toggle-show="block"
-                className="crisp-svg el-1992"
+                className="crisp-svg el-1991"
               >
                 <svg aria-hidden="true" width={771} height={613} viewBox="0 0 771 613" />
                 <Image
@@ -96,7 +96,7 @@ export default function Page() {
                 />
               </span>
               <span id="img-3" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img-4\"},{\"kind\":\"hide\",\"target\":\"img-3\"}]}]"} data-toggle-show="block" data-inview
-                className="crisp-svg el-1991"
+                className="crisp-svg el-1990"
               >
                 <svg aria-hidden="true" width={597} height={679} viewBox="0 0 597 679" />
                 <Image
@@ -107,7 +107,7 @@ export default function Page() {
                 />
               </span>
               <span id="img-4" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img-5\"},{\"kind\":\"hide\",\"target\":\"img-4\"}]}]"} data-toggle-show="block"
-                className="crisp-svg el-1996"
+                className="crisp-svg el-1995"
               >
                 <svg aria-hidden="true" width={682} height={639} viewBox="0 0 682 639" />
                 <Image
@@ -118,7 +118,7 @@ export default function Page() {
                 />
               </span>
               <span id="img-2" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img-6\"},{\"kind\":\"hide\",\"target\":\"img-2\"}]}]"} data-toggle-show="block" data-inview
-                className="crisp-svg el-1993"
+                className="crisp-svg el-1992"
               >
                 <svg aria-hidden="true" width={584} height={613} viewBox="0 0 584 613" />
                 <Image
@@ -129,7 +129,7 @@ export default function Page() {
                 />
               </span>
               <span id="img-5" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img-2\"},{\"kind\":\"hide\",\"target\":\"img-5\"}]}]"} data-toggle-show="block" data-inview
-                className="crisp-svg el-1994"
+                className="crisp-svg el-1993"
               >
                 <svg aria-hidden="true" width={718} height={631} viewBox="0 0 718 631" />
                 <Image
@@ -140,7 +140,7 @@ export default function Page() {
                 />
               </span>
               <span id="img-6" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img\"},{\"kind\":\"hide\",\"target\":\"img-6\"}]}]"} data-toggle-show="block" data-inview
-                className="crisp-svg el-1995"
+                className="crisp-svg el-1994"
               >
                 <svg aria-hidden="true" width={594} height={531} viewBox="0 0 594 531" />
                 <Image
@@ -167,7 +167,7 @@ export default function Page() {
                   alt=""
                   width={50}
                   height={44}
-                  className="el-2188"
+                  className="el-2187"
                 />
               </div>
               <div className="box-784">
@@ -176,7 +176,7 @@ export default function Page() {
                   alt=""
                   width={147}
                   height={15}
-                  className="el-1989"
+                  className="el-1988"
                 />
               </div>
             </div>
@@ -189,56 +189,40 @@ export default function Page() {
                 className="el-1671"
               />
               <Image
+                src="/assets/pasted-artwork-415.svg"
+                alt=""
+                width={415}
+                height={30}
+                className="el-2999"
+              />
+              <Image
                 src="/assets/pasted-artwork-416.svg"
                 alt=""
                 width={415}
                 height={30}
                 className="el-3000"
               />
-              <Image
-                src="/assets/pasted-artwork-417.svg"
-                alt=""
-                width={415}
-                height={30}
-                className="el-3001"
-              />
             </div>
           </div>
         </div>
       </section>
       <section className="box-787">
-        <Image
-          src="/assets/pasted-artwork-202.svg"
-          alt=""
-          width={1280}
-          height={312}
-          className="el-1672"
-        />
-        <Image
-          src="/assets/pasted-artwork-235.svg"
-          alt=""
-          width={402}
-          height={921}
-          className="el-1985"
-        />
         <div className="box-588">
+          <Image
+            src="/assets/pasted-artwork-235.svg"
+            alt=""
+            width={402}
+            height={921}
+            className="el-1984"
+          />
+          <Image
+            src="/assets/pasted-artwork-202.svg"
+            alt=""
+            width={1280}
+            height={312}
+            className="el-1672"
+          />
           <div className="box-951">
-            <Image
-              src="/assets/pasted-artwork-421.svg"
-              alt=""
-              width={393}
-              height={32}
-              className="el-3004"
-            />
-            <Image
-              src="/assets/pasted-artwork-400.svg"
-              alt=""
-              width={508}
-              height={59}
-              className="el-2936"
-            />
-          </div>
-          <div className="box-788">
             <Image
               src="/assets/pasted-artwork-420.svg"
               alt=""
@@ -247,72 +231,95 @@ export default function Page() {
               className="el-3003"
             />
             <Image
-              src="/assets/pasted-artwork-400.svg"
+              src="/assets/pasted-artwork-399.svg"
               alt=""
               width={508}
               height={59}
               className="el-2935"
             />
           </div>
+          <div className="box-788">
+            <Image
+              src="/assets/pasted-artwork-419.svg"
+              alt=""
+              width={393}
+              height={32}
+              className="el-3002"
+            />
+            <Image
+              src="/assets/pasted-artwork-399.svg"
+              alt=""
+              width={508}
+              height={59}
+              className="el-2934"
+            />
+          </div>
           <div className="box-790">
             <span
-              className="crisp-svg el-3007"
+              className="crisp-svg el-3006"
             >
               <svg aria-hidden="true" width={522} height={516} viewBox="0 0 522 516" />
               <Image
-                src="/assets/pasted-artwork-424.svg"
+                src="/assets/pasted-artwork-423.svg"
                 alt=""
                 width={1044}
                 height={1032}
               />
             </span>
             <Image
-              src="/assets/pasted-artwork-435.svg"
+              src="/assets/pasted-artwork-434.svg"
               alt=""
               width={514}
               height={508}
-              className="el-3064"
+              className="el-3063"
             />
           </div>
           <div className="box-789">
             <div className="box-960">
               <Image
-                src="/assets/pasted-artwork-419.svg"
+                src="/assets/pasted-artwork-418.svg"
                 alt=""
                 width={181}
                 height={100}
-                className="el-3002"
+                className="el-3001"
               />
               <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://www.matsufes.info/booth/175\"}]}]"}
-                src="/assets/pasted-artwork-404.svg"
+                src="/assets/pasted-artwork-403.svg"
                 alt=""
                 width={350}
                 height={183}
-                className="el-2942"
+                className="el-2941"
               />
               <Image
-                src="/assets/pasted-artwork-409.svg"
+                src="/assets/pasted-artwork-408.svg"
                 alt=""
                 width={350}
                 height={185}
-                className="el-2944"
+                className="el-2943"
               />
               <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://www.matsufes.info/booth/143\"}]}]"}
-                src="/assets/pasted-artwork-414.svg"
+                src="/assets/pasted-artwork-413.svg"
                 alt=""
                 width={350}
                 height={184}
-                className="el-2946"
+                className="el-2945"
               />
               <Image
-                src="/assets/pasted-artwork-415.svg"
+                src="/assets/pasted-artwork-414.svg"
                 alt=""
                 width={350}
                 height={185}
-                className="el-2947"
+                className="el-2946"
               />
             </div>
             <div className="box-961">
+              <Image
+                src="/assets/pasted-artwork-438.svg"
+                alt=""
+                width={346}
+                height={216}
+                className="el-3066"
+              />
               <Image
                 src="/assets/pasted-artwork-439.svg"
                 alt=""
@@ -321,11 +328,11 @@ export default function Page() {
                 className="el-3067"
               />
               <Image
-                src="/assets/pasted-artwork-440.svg"
+                src="/assets/pasted-artwork-436.svg"
                 alt=""
-                width={346}
-                height={216}
-                className="el-3068"
+                width={257}
+                height={158}
+                className="el-3064"
               />
               <Image
                 src="/assets/pasted-artwork-437.svg"
@@ -335,18 +342,11 @@ export default function Page() {
                 className="el-3065"
               />
               <Image
-                src="/assets/pasted-artwork-438.svg"
-                alt=""
-                width={257}
-                height={158}
-                className="el-3066"
-              />
-              <Image
-                src="/assets/pasted-artwork-401.svg"
+                src="/assets/pasted-artwork-400.svg"
                 alt=""
                 width={149}
                 height={97}
-                className="el-2937"
+                className="el-2936"
               />
             </div>
           </div>

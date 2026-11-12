@@ -267,11 +267,11 @@ export default function Page() {
       />
       <p className="box-212">
         <span
-          className="crisp-svg svg-572"
+          className="crisp-svg svg-569"
         >
           <svg aria-hidden="true" width={522} height={122} viewBox="0 0 522 122" />
           <Image
-            src="/assets/pasted-artwork-360.svg"
+            src="/assets/pasted-artwork-359.svg"
             alt=""
             width={1044}
             height={244}

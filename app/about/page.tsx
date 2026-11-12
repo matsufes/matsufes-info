@@ -307,11 +307,11 @@ export default function Page() {
       </section>
       <section className="el-80">
         <span
-          className="crisp-svg svg-598"
+          className="crisp-svg svg-595"
         >
           <svg aria-hidden="true" width={438} height={114} viewBox="0 0 438 114" />
           <Image
-            src="/assets/pasted-artwork-395.svg"
+            src="/assets/pasted-artwork-394.svg"
             alt=""
             width={876}
             height={228}

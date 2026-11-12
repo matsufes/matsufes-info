@@ -265,9 +265,9 @@ export default function Page() {
         height={583}
         className="el-891"
       />
-      <p className="el-1988">
+      <p className="el-1987">
         <span
-          className="crisp-svg svg-354"
+          className="crisp-svg svg-353"
         >
           <svg aria-hidden="true" width={707} height={136} viewBox="0 0 707 136" />
           <Image
@@ -424,14 +424,14 @@ export default function Page() {
               alt=""
               width={306}
               height={299}
-              className="svg-351"
+              className="svg-350"
             />
             <Image
-              src="/assets/pasted-artwork-394.svg"
+              src="/assets/pasted-artwork-393.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-597"
+              className="svg-594"
             />
           </div>
           <div id="center15" data-toggle-show="flex" className="el-76">

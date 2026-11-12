@@ -291,7 +291,7 @@ export default function Page() {
           </div>
           <div className="el-63">
             <span
-              className="crisp-svg svg-415"
+              className="crisp-svg svg-413"
             >
               <svg aria-hidden="true" width={659} height={329} viewBox="0 0 659 329" />
               <Image
@@ -376,7 +376,7 @@ export default function Page() {
           />
           <p className="box-494">
             <span
-              className="crisp-svg svg-355"
+              className="crisp-svg svg-354"
             >
               <svg aria-hidden="true" width={202} height={111} viewBox="0 0 202 111" />
               <Image
@@ -406,11 +406,11 @@ export default function Page() {
       </section>
       <section data-inview className="el-129">
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/attention\"}]}]"}
-          className="crisp-svg el-2927"
+          className="crisp-svg el-2926"
         >
           <svg aria-hidden="true" width={990} height={764} viewBox="0 0 990 764" />
           <Image
-            src="/assets/pasted-artwork-376.svg"
+            src="/assets/pasted-artwork-375.svg"
             alt=""
             width={1980}
             height={1528}
@@ -419,11 +419,11 @@ export default function Page() {
       </section>
       <section data-inview className="el-734">
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/access\"}]}]"}
-          className="crisp-svg el-2928"
+          className="crisp-svg el-2927"
         >
           <svg aria-hidden="true" width={1051} height={732} viewBox="0 0 1051 732" />
           <Image
-            src="/assets/pasted-artwork-377.svg"
+            src="/assets/pasted-artwork-376.svg"
             alt=""
             width={2102}
             height={1464}
@@ -441,25 +441,25 @@ export default function Page() {
       </section>
       <section data-inview className="el-737">
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/survey\"}]}]"}
-          className="crisp-svg el-2929"
+          className="crisp-svg el-2928"
         >
           <svg aria-hidden="true" width={999} height={815} viewBox="0 0 999 815" />
           <Image
-            src="/assets/pasted-artwork-378.svg"
+            src="/assets/pasted-artwork-377.svg"
             alt=""
             width={1998}
             height={1630}
           />
         </span>
       </section>
-      <section className="el-3106">
-        <div className="el-3107">
+      <section className="el-3105">
+        <div className="el-3106">
           <span
             className="crisp-svg pasted-artwork-svg-183"
           >
             <svg aria-hidden="true" width={674} height={159} viewBox="0 0 674 159" />
             <Image
-              src="/assets/pasted-artwork-452.svg"
+              src="/assets/pasted-artwork-451.svg"
               alt=""
               width={1348}
               height={318}
@@ -471,24 +471,24 @@ export default function Page() {
         <p className="text-785">
           {"第56回松ヶ崎祭オリジナルゲームが新登場！\nきみも まつぴよと 恋に落ちちゃう・・・！？"}
         </p>
-        <div className="el-3104">
+        <div className="el-3103">
           <span
-            className="crisp-svg svg-637"
+            className="crisp-svg svg-634"
           >
             <svg aria-hidden="true" width={928} height={577} viewBox="0 0 928 577" />
             <Image
-              src="/assets/pasted-artwork-450.svg"
+              src="/assets/pasted-artwork-449.svg"
               alt=""
               width={1856}
               height={1154}
             />
           </span>
           <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://matsufes.info/tokimeki-dreamworld\"}]}]"}
-            className="crisp-svg el-3105"
+            className="crisp-svg el-3104"
           >
             <svg aria-hidden="true" width={524} height={207} viewBox="0 0 524 207" />
             <Image
-              src="/assets/pasted-artwork-451.svg"
+              src="/assets/pasted-artwork-450.svg"
               alt=""
               width={1048}
               height={414}
