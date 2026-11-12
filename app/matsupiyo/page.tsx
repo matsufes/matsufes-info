@@ -338,18 +338,18 @@ export default function Page() {
                 className="el-3066"
               />
               <Image
-                src="/assets/pasted-artwork-436.svg"
-                alt=""
-                width={257}
-                height={158}
-                className="el-3063"
-              />
-              <Image
                 src="/assets/pasted-artwork-437.svg"
                 alt=""
                 width={257}
                 height={158}
                 className="el-3064"
+              />
+              <Image
+                src="/assets/pasted-artwork-436.svg"
+                alt=""
+                width={257}
+                height={158}
+                className="el-3063"
               />
               <Image
                 src="/assets/pasted-artwork-400.svg"

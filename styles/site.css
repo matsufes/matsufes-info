@@ -31044,6 +31044,8 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   body:has([data-page-body="page_mv7xdigo16"]) {
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .el,
@@ -35349,9 +35351,6 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
 
   .box-588 {
     height: 100%;
-    top: 0px;
-    position: absolute;
-    left: 0px;
     display: block;
   }
 
@@ -35400,6 +35399,10 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-1984 {
     width: 100%;
     z-index: -1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
   }
 
   .el-1988 {
@@ -35587,7 +35590,9 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
 
   .box-787 {
     width: 100%;
-    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .box-788 {
@@ -35616,6 +35621,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    position: static;
   }
 
   .box-790 {
@@ -35923,9 +35929,6 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
-    position: absolute;
-    left: 0px;
-    top: 0px;
     gap: 20px;
     flex-direction: column;
   }
@@ -35934,9 +35937,6 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
     width: 100%;
     height: 40%;
     display: flex;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -36042,8 +36042,8 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-3002 {
     width: 80%;
     position: absolute;
-    left: 10%;
-    top: 25%;
+    left: 0px;
+    top: 0px;
   }
 
   .el-3005,
@@ -39622,6 +39622,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .svg-371,
   .svg-372,
   .svg-373,
+  .box-788,
   .a-1,
   .a-2,
   .a-3,
@@ -39886,6 +39887,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-2920,
   .el-2923,
   .el-2924,
+  .el-2933,
   .footer-36,
   .el-2942,
   .el-2945,
@@ -39904,6 +39906,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .el-2991,
   .el-2992,
   .el-2999,
+  .el-3001,
   .el-3003,
   .el-3004,
   .el-3011,
@@ -39927,7 +39930,7 @@ body:has([data-page-body="page_mwb06ie85q5g5p"]) {
   .footer-37,
   .svg-620,
   .el-3062,
-  .el-3064,
+  .el-3063,
   .el-3065,
   .el-3066,
   .checkbox,

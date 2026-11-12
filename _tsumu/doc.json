@@ -3523,7 +3523,9 @@
         "sm": {
           "default": {
             "height": "100%",
-            "width": "100%"
+            "width": "100%",
+            "display": "flex",
+            "flexDirection": "column"
           }
         }
       },
@@ -205706,9 +205708,6 @@
         "sm": {
           "default": {
             "height": "100%",
-            "top": "0px",
-            "position": "absolute",
-            "left": "0px",
             "display": "block"
           }
         }
@@ -275386,7 +275385,11 @@
         "sm": {
           "default": {
             "width": "100%",
-            "zIndex": "-1"
+            "zIndex": "-1",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px",
+            "height": "100%"
           }
         }
       },
@@ -292914,7 +292917,10 @@
         },
         "sm": {
           "default": {
-            "width": "100%"
+            "width": "100%",
+            "height": "100%",
+            "display": "flex",
+            "flexDirection": "column"
           }
         },
         "md": {
@@ -292977,7 +292983,10 @@
         "md": {
           "default": {}
         }
-      }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
     },
     "node_mvowhojv5d82z": {
       "id": "node_mvowhojv5d82z",
@@ -293018,7 +293027,8 @@
             "justifyContent": "flex-start",
             "alignItems": "center",
             "paddingTop": "20px",
-            "paddingBottom": "20px"
+            "paddingBottom": "20px",
+            "position": "static"
           }
         }
       }
@@ -368301,9 +368311,6 @@
             "justifyContent": "center",
             "alignItems": "center",
             "gridTemplateColumns": "repeat(2, 1fr)",
-            "position": "absolute",
-            "left": "0px",
-            "top": "0px",
             "gap": "20px",
             "flexDirection": "column"
           }
@@ -368320,8 +368327,8 @@
       "children": [
         "node_mwb0t2xu1tlkmo",
         "node_mwb0v52c1vmgyf",
-        "node_mwb0okzz1p5wst",
         "node_mwb0r23k1rvpmg",
+        "node_mwb0okzz1p5wst",
         "node_mw859a0cswdhv"
       ],
       "styles": {
@@ -368340,9 +368347,6 @@
             "width": "100%",
             "height": "40%",
             "display": "flex",
-            "position": "absolute",
-            "bottom": "0px",
-            "right": "0px",
             "flexDirection": "column",
             "justifyContent": "space-between",
             "alignItems": "center"
@@ -369229,7 +369233,10 @@
             "top": "30%"
           }
         }
-      }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
     },
     "node_mw84cdvx8rv82": {
       "id": "node_mw84cdvx8rv82",
@@ -375385,7 +375392,10 @@
             "top": "45%"
           }
         }
-      }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
     },
     "node_mway6st529r3aj": {
       "id": "node_mway6st529r3aj",
@@ -375414,8 +375424,8 @@
           "default": {
             "width": "80%",
             "position": "absolute",
-            "left": "10%",
-            "top": "25%"
+            "left": "0px",
+            "top": "0px"
           }
         }
       }
@@ -381738,7 +381748,7 @@
     "node_mwb0okzz1p5wst": {
       "id": "node_mwb0okzz1p5wst",
       "type": "image",
-      "name": "吹き出しスマホ１",
+      "name": "吹き出しスマホ２",
       "semantic": "auto",
       "text": null,
       "link": null,
@@ -381768,13 +381778,14 @@
       "hiddenOn": [
         "base",
         "lg",
-        "md"
+        "md",
+        "sm"
       ]
     },
     "node_mwb0r23k1rvpmg": {
       "id": "node_mwb0r23k1rvpmg",
       "type": "image",
-      "name": "吹き出しスマホ２",
+      "name": "吹き出しスマホ１",
       "semantic": "auto",
       "text": null,
       "link": null,
@@ -381804,8 +381815,7 @@
       "hiddenOn": [
         "base",
         "lg",
-        "md",
-        "sm"
+        "md"
       ]
     },
     "node_mwb0t2xu1tlkmo": {
