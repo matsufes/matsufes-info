@@ -36,7 +36,7 @@ export function lookupVar(vars: Vars, name: string): unknown {
 }
 
 /** 表示用の文字にする（配列は「, 」でつなぐ） */
-const formatValueText: (value: unknown, comparison?: boolean) => string = (function w(e,t=!1){if(null==e)return"";if(!Array.isArray(e))return"object"==typeof e?t?"[object Object]":"":String(e);let i=[],s=[{value:e,index:0}],n=new WeakSet([e]),r=0,a=0;for(;s.length;){if(++r>5242880)return"";let e=s[s.length-1];if(e.index>=e.value.length){n.delete(e.value),s.pop();continue}t&&e.index>0&&(i.push(","),a++);let o=e.value[e.index++];if(Array.isArray(o))n.has(o)||(n.add(o),s.push({value:o,index:0}));else{let e=null==o?"":"object"==typeof o?t?"[object Object]":"":String(o);e&&(!t&&i.length&&(i.push(", "),a+=2),i.push(e),a+=e.length)}if(a>5242880)return""}return i.join("")});
+const formatValueText: (value: unknown, comparison?: boolean) => string = (function w(e,t=!1){if(null==e)return"";if(!Array.isArray(e))return"object"==typeof e?t?"[object Object]":"":String(e);let i=[],s=[{value:e,index:0}],n=new WeakSet([e]),a=0,r=0;for(;s.length;){if(++a>5242880)return"";let e=s[s.length-1];if(e.index>=e.value.length){n.delete(e.value),s.pop();continue}t&&e.index>0&&(i.push(","),r++);let o=e.value[e.index++];if(Array.isArray(o))n.has(o)||(n.add(o),s.push({value:o,index:0}));else{let e=null==o?"":"object"==typeof o?t?"[object Object]":"":String(o);e&&(!t&&i.length&&(i.push(", "),r+=2),i.push(e),r+=e.length)}if(r>5242880)return""}return i.join("")});
 export function varText(v: unknown): string { return formatValueText(v); }
 
 /** "{name}" と "[slug]" を値に置き換える（未定義は空文字。「\{」は文字の「{」） */

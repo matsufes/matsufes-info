@@ -123961,14 +123961,10 @@
               "then": [
                 {
                   "id": "st_mwd3ix2l1nhv",
-                  "kind": "transform",
-                  "source": "お気に入り",
-                  "into": "お気に入り",
-                  "transform": {
-                    "kind": "append",
-                    "operand": "{publicId}",
-                    "operandType": "text"
-                  }
+                  "kind": "set-list-item",
+                  "list": "お気に入り",
+                  "key": "",
+                  "value": "{publicId}"
                 },
                 {
                   "id": "st_mwczqdxr4819",
@@ -124017,8 +124013,8 @@
             }
           ],
           "pos": {
-            "x": 1161,
-            "y": 2317
+            "x": 1140,
+            "y": 2326
           }
         },
         {
@@ -281376,7 +281372,10 @@
           }
         }
       },
-      "attrId": "committee14"
+      "attrId": "committee14",
+      "hiddenOn": [
+        "sm"
+      ]
     },
     "node_mvou1xir3boiy8": {
       "id": "node_mvou1xir3boiy8",
@@ -286449,7 +286448,10 @@
           }
         }
       },
-      "attrId": "main14"
+      "attrId": "main14",
+      "hiddenOn": [
+        "sm"
+      ]
     },
     "node_mvouejle3jf7q4": {
       "id": "node_mvouejle3jf7q4",

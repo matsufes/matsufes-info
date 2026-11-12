@@ -41,7 +41,7 @@ export default function Page() {
               <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p-3\"}]}]"} className="el-2951">
                 <span
                   className="crisp-svg svg-605"
-                  style={{ ["--crisp-svg-width"]: "43px", ["--crisp-svg-ratio"]: "43 / 31" }}
+                  style={{ ["--crisp-svg-width"]: "43px", ["--crisp-svg-ratio"]: "43 / 31" } as import("react").CSSProperties}
                 >
                   <Image
                     src="/assets/pasted-artwork-131.svg"
@@ -268,7 +268,7 @@ export default function Page() {
       <p className="box-9">
         <span
           className="crisp-svg svg-3"
-          style={{ ["--crisp-svg-width"]: "779px", ["--crisp-svg-ratio"]: "779 / 139" }}
+          style={{ ["--crisp-svg-width"]: "779px", ["--crisp-svg-ratio"]: "779 / 139" } as import("react").CSSProperties}
         >
           <Image
             src="/assets/pasted-artwork-27.svg"
@@ -290,7 +290,7 @@ export default function Page() {
       <section className="box-10">
         <span
           className="crisp-svg svg-63"
-          style={{ ["--crisp-svg-width"]: "559px", ["--crisp-svg-ratio"]: "559 / 116" }}
+          style={{ ["--crisp-svg-width"]: "559px", ["--crisp-svg-ratio"]: "559 / 116" } as import("react").CSSProperties}
         >
           <Image
             src="/assets/pasted-artwork-84.svg"
@@ -308,7 +308,7 @@ export default function Page() {
       <section className="box-86">
         <span
           className="crisp-svg svg-64"
-          style={{ ["--crisp-svg-width"]: "354px", ["--crisp-svg-ratio"]: "354 / 114" }}
+          style={{ ["--crisp-svg-width"]: "354px", ["--crisp-svg-ratio"]: "354 / 114" } as import("react").CSSProperties}
         >
           <Image
             src="/assets/pasted-artwork-85.svg"
@@ -321,7 +321,7 @@ export default function Page() {
       <section className="box-87">
         <span
           className="crisp-svg svg-65"
-          style={{ ["--crisp-svg-width"]: "390px", ["--crisp-svg-ratio"]: "390 / 59" }}
+          style={{ ["--crisp-svg-width"]: "390px", ["--crisp-svg-ratio"]: "390 / 59" } as import("react").CSSProperties}
         >
           <Image
             src="/assets/pasted-artwork-86.svg"
@@ -335,7 +335,7 @@ export default function Page() {
         <div className="box-89">
           <span
             className="crisp-svg svg-66"
-            style={{ ["--crisp-svg-width"]: "351px", ["--crisp-svg-ratio"]: "351 / 325" }}
+            style={{ ["--crisp-svg-width"]: "351px", ["--crisp-svg-ratio"]: "351 / 325" } as import("react").CSSProperties}
           >
             <Image
               src="/assets/pasted-artwork-87.svg"
@@ -357,7 +357,7 @@ export default function Page() {
         <div className="box-90">
           <span
             className="crisp-svg svg-67"
-            style={{ ["--crisp-svg-width"]: "345px", ["--crisp-svg-ratio"]: "345 / 286" }}
+            style={{ ["--crisp-svg-width"]: "345px", ["--crisp-svg-ratio"]: "345 / 286" } as import("react").CSSProperties}
           >
             <Image
               src="/assets/pasted-artwork-88.svg"
@@ -379,7 +379,7 @@ export default function Page() {
         <div className="box-91">
           <span
             className="crisp-svg svg-68"
-            style={{ ["--crisp-svg-width"]: "343px", ["--crisp-svg-ratio"]: "343 / 286" }}
+            style={{ ["--crisp-svg-width"]: "343px", ["--crisp-svg-ratio"]: "343 / 286" } as import("react").CSSProperties}
           >
             <Image
               src="/assets/pasted-artwork-89.svg"
@@ -433,7 +433,7 @@ export default function Page() {
       <section className="box-11">
         <span
           className="crisp-svg svg-70"
-          style={{ ["--crisp-svg-width"]: "457px", ["--crisp-svg-ratio"]: "457 / 114" }}
+          style={{ ["--crisp-svg-width"]: "457px", ["--crisp-svg-ratio"]: "457 / 114" } as import("react").CSSProperties}
         >
           <Image
             src="/assets/pasted-artwork-91.svg"
@@ -450,7 +450,7 @@ export default function Page() {
         <div className="box-95">
           <span
             className="crisp-svg svg-71"
-            style={{ ["--crisp-svg-width"]: "989px", ["--crisp-svg-ratio"]: "989 / 171" }}
+            style={{ ["--crisp-svg-width"]: "989px", ["--crisp-svg-ratio"]: "989 / 171" } as import("react").CSSProperties}
           >
             <Image
               src="/assets/pasted-artwork-92.svg"
@@ -470,7 +470,7 @@ export default function Page() {
       <p data-inview className="box-117">
         <span
           className="crisp-svg svg-119"
-          style={{ ["--crisp-svg-width"]: "352px", ["--crisp-svg-ratio"]: "352 / 279" }}
+          style={{ ["--crisp-svg-width"]: "352px", ["--crisp-svg-ratio"]: "352 / 279" } as import("react").CSSProperties}
         >
           <Image
             src="/assets/pasted-artwork-149.svg"
@@ -481,7 +481,7 @@ export default function Page() {
         </span>
         <span
           className="crisp-svg pasted-artwork-svg-32"
-          style={{ ["--crisp-svg-width"]: "1399px", ["--crisp-svg-ratio"]: "1399 / 238" }}
+          style={{ ["--crisp-svg-width"]: "1399px", ["--crisp-svg-ratio"]: "1399 / 238" } as import("react").CSSProperties}
         >
           <Image
             src="/assets/pasted-artwork-148.svg"
@@ -492,7 +492,7 @@ export default function Page() {
         </span>
         <span
           className="crisp-svg svg-110"
-          style={{ ["--crisp-svg-width"]: "1391px", ["--crisp-svg-ratio"]: "1391 / 39" }}
+          style={{ ["--crisp-svg-width"]: "1391px", ["--crisp-svg-ratio"]: "1391 / 39" } as import("react").CSSProperties}
         >
           <Image
             src="/assets/pasted-artwork-129.svg"
@@ -524,7 +524,7 @@ export default function Page() {
         </a>
         <span
           className="crisp-svg svg-598"
-          style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 347" }}
+          style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 347" } as import("react").CSSProperties}
         >
           <Image
             src="/assets/pasted-artwork-196.svg"
@@ -537,7 +537,7 @@ export default function Page() {
       <section data-inview className="footer-36">
         <span
           className="crisp-svg pasted-artwork-svg-168"
-          style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1015" }}
+          style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1015" } as import("react").CSSProperties}
         >
           <Image
             src="/assets/pasted-artwork-35.svg"
