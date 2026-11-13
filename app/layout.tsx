@@ -10,10 +10,10 @@ export const metadata: Metadata = {
     default: "第56回松ヶ崎祭",
     template: "%s | 第56回松ヶ崎祭",
   },
-  icons: { icon: "/assets/favicon.ico", apple: "/assets/apple-touch-icon.png" },
+  icons: { icon: "/assets/favicon-2.ico", apple: "/assets/apple-touch-icon-2.png" },
   openGraph: {
     siteName: "第56回松ヶ崎祭",
-    images: ["/assets/ogp.png"],
+    images: ["/assets/ogp-2.png"],
   },
   twitter: { card: "summary_large_image" },
 };

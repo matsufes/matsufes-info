@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     siteName: "第56回松ヶ崎祭",
     title: "ご来場の皆さまへ",
     description: "松ヶ崎祭実行委員会からご来場の皆さまへのお願いです。",
-    images: ["/assets/ogp.png"],
+    images: ["/assets/ogp-2.png"],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -32,7 +32,7 @@ export default function Page() {
           alt=""
           width={837}
           height={125}
-          className="svg-470"
+          className="svg-462"
         />
       </p>
       <section className="box-770">
@@ -41,7 +41,7 @@ export default function Page() {
           alt=""
           width={1356}
           height={65}
-          className="svg-438"
+          className="svg-430"
         />
       </section>
       <section className="box-771">
@@ -50,7 +50,7 @@ export default function Page() {
           alt=""
           width={750}
           height={128}
-          className="svg-439"
+          className="svg-431"
         />
       </section>
       <section className="box-773">
@@ -64,7 +64,7 @@ export default function Page() {
           alt=""
           width={438}
           height={128}
-          className="svg-440"
+          className="svg-432"
         />
       </section>
       <section className="box-776">
@@ -92,7 +92,7 @@ export default function Page() {
           />
         </a>
         <span
-          className="crisp-svg svg-390"
+          className="crisp-svg svg-388"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 350" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={375} height={350} viewBox="0 0 375 350" />
@@ -106,7 +106,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-22">
         <span
-          className="crisp-svg svg-391"
+          className="crisp-svg svg-702"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -123,7 +123,7 @@ export default function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-392"
+            className="svg-389"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-46">
@@ -132,7 +132,7 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-393"
+            className="svg-390"
           />
         </a>
       </section>

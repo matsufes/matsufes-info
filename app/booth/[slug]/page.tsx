@@ -102,7 +102,7 @@ export async function generateMetadata({
       siteName: "第56回松ヶ崎祭",
       title,
       description: "松ヶ崎祭の出展情報をご覧いただけます。",
-      images: ["/assets/ogp.png"],
+      images: ["/assets/ogp-2.png"],
     },
     twitter: { card: "summary_large_image" },
   };

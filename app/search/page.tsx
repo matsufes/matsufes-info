@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     siteName: "第56回松ヶ崎祭",
     title: "言葉からさがす",
     description: "松ヶ崎祭の全出展を検索いただけます。",
-    images: ["/assets/ogp.png"],
+    images: ["/assets/ogp-2.png"],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -146,7 +146,7 @@ export default async function Page() {
             <div id="div-42" className="el-2303">
               <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-2302">
                 <span
-                  className="crisp-svg svg-537"
+                  className="crisp-svg svg-528"
                   style={{ ["--crisp-svg-width"]: "43px", ["--crisp-svg-ratio"]: "43 / 31" } as import("react").CSSProperties}
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
@@ -482,7 +482,7 @@ export default async function Page() {
                 alt="検索"
                 width={102}
                 height={111}
-                className="png-117"
+                className="png-116"
               />
             </div>
             <input id="field" data-scripts={"[{\"trigger\":\"change\",\"steps\":[{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":2},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":1,\"conds\":[{\"field\":\"name\",\"op\":\"contains\",\"value\":{\"inputRef\":\"field\"}},{\"field\":\"exhibitorName\",\"op\":\"contains\",\"value\":{\"inputRef\":\"field\"},\"and\":false},{\"field\":\"customAnswers.中分類\",\"op\":\"contains\",\"value\":{\"inputRef\":\"field\"},\"and\":false},{\"field\":\"searchWords\",\"op\":\"contains\",\"value\":{\"inputRef\":\"field\"},\"and\":false}]}]}]"} type="text" className="input-10" name="field" placeholder="ここに　言葉を　入力してみてね" />
@@ -502,7 +502,7 @@ export default async function Page() {
                       alt=""
                       width={102}
                       height={111}
-                      className="png-118"
+                      className="png-117"
                     />
                   </div>
                   <input id="field-2" data-scripts={"[{\"trigger\":\"change\",\"steps\":[{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":1},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":2,\"conds\":[{\"field\":\"name\",\"op\":\"contains\",\"value\":{\"inputRef\":\"field-2\"}},{\"field\":\"exhibitorName\",\"op\":\"contains\",\"value\":{\"inputRef\":\"field-2\"},\"and\":false},{\"field\":\"customAnswers.中分類\",\"op\":\"contains\",\"value\":{\"inputRef\":\"field-2\"},\"and\":false},{\"field\":\"searchWords\",\"op\":\"contains\",\"value\":{\"inputRef\":\"field-2\"},\"and\":false}]}]}]"} type="text" className="input-11" name="field-2" placeholder="ここに　言葉を　入力してみてね" />
@@ -517,7 +517,7 @@ export default async function Page() {
                     alt=""
                     width={300}
                     height={107}
-                    className="png-119"
+                    className="png-118"
                   />
                   <div className="box-993">
                     <p className="text-656">
@@ -531,7 +531,7 @@ export default async function Page() {
                     alt=""
                     width={274}
                     height={98}
-                    className="png-120"
+                    className="png-119"
                     preload
                     fetchPriority="high"
                   />
@@ -568,7 +568,7 @@ export default async function Page() {
                       alt=""
                       width={300}
                       height={107}
-                      className="png-121"
+                      className="png-120"
                     />
                     <div className="box-997">
                       <p className="text-659">
@@ -582,7 +582,7 @@ export default async function Page() {
                       alt=""
                       width={274}
                       height={98}
-                      className="png-122"
+                      className="png-121"
                     />
                     <div className="box-998">
                       <p className="text-660">
@@ -602,7 +602,7 @@ export default async function Page() {
                       alt=""
                       width={300}
                       height={107}
-                      className="png-123"
+                      className="png-122"
                     />
                     <div className="box-999">
                       <p className="text-661">
@@ -616,7 +616,7 @@ export default async function Page() {
                       alt=""
                       width={274}
                       height={98}
-                      className="png-124"
+                      className="png-123"
                     />
                     <div className="box-1000">
                       <p className="text-662">
@@ -636,7 +636,7 @@ export default async function Page() {
                       alt=""
                       width={300}
                       height={107}
-                      className="png-125"
+                      className="png-124"
                     />
                     <div className="box-1001">
                       <p className="text-663">
@@ -650,7 +650,7 @@ export default async function Page() {
                       alt=""
                       width={274}
                       height={98}
-                      className="png-126"
+                      className="png-125"
                     />
                     <div className="box-1002">
                       <p className="text-664">
@@ -666,7 +666,7 @@ export default async function Page() {
                   alt="どこで"
                   width={85}
                   height={108}
-                  className="png-127"
+                  className="png-126"
                 />
                 <p className="text-665">
                   {"どこで"}
@@ -684,7 +684,7 @@ export default async function Page() {
                       alt=""
                       width={300}
                       height={107}
-                      className="png-128"
+                      className="png-127"
                     />
                     <div className="box-1006">
                       <div className="box-1005">
@@ -703,7 +703,7 @@ export default async function Page() {
                       alt=""
                       width={274}
                       height={98}
-                      className="png-129"
+                      className="png-128"
                     />
                     <div className="box-1008">
                       <div className="box-1007">
@@ -728,7 +728,7 @@ export default async function Page() {
                       alt=""
                       width={300}
                       height={107}
-                      className="png-130"
+                      className="png-129"
                     />
                     <div className="box-1010">
                       <div className="box-1009">
@@ -747,7 +747,7 @@ export default async function Page() {
                       alt=""
                       width={274}
                       height={98}
-                      className="png-131"
+                      className="png-130"
                     />
                     <div className="box-1012">
                       <div className="box-1011">
@@ -772,7 +772,7 @@ export default async function Page() {
                       alt=""
                       width={300}
                       height={107}
-                      className="png-132"
+                      className="png-131"
                     />
                     <div className="box-1013">
                       <p className="text-674">
@@ -786,7 +786,7 @@ export default async function Page() {
                       alt=""
                       width={274}
                       height={98}
-                      className="png-133"
+                      className="png-132"
                     />
                     <div className="box-1014">
                       <p className="text-675">
@@ -820,7 +820,7 @@ export default async function Page() {
                       alt=""
                       width={300}
                       height={107}
-                      className="png-134"
+                      className="png-133"
                     />
                     <div className="box-1017">
                       <p className="text-677">
@@ -834,7 +834,7 @@ export default async function Page() {
                       alt=""
                       width={274}
                       height={98}
-                      className="png-135"
+                      className="png-134"
                     />
                     <div className="box-1018">
                       <p className="text-678">
@@ -854,7 +854,7 @@ export default async function Page() {
                       alt=""
                       width={300}
                       height={107}
-                      className="png-136"
+                      className="png-135"
                     />
                     <div className="box-1019">
                       <p className="text-679">
@@ -868,7 +868,7 @@ export default async function Page() {
                       alt=""
                       width={274}
                       height={98}
-                      className="png-137"
+                      className="png-136"
                     />
                     <div className="box-1020">
                       <p className="text-680">
@@ -888,7 +888,7 @@ export default async function Page() {
                       alt=""
                       width={300}
                       height={107}
-                      className="png-138"
+                      className="png-137"
                     />
                     <div className="box-1021">
                       <p className="text-681">
@@ -902,7 +902,7 @@ export default async function Page() {
                       alt=""
                       width={274}
                       height={98}
-                      className="png-139"
+                      className="png-138"
                     />
                     <div className="box-1022">
                       <p className="text-682">
@@ -922,7 +922,7 @@ export default async function Page() {
                       alt=""
                       width={300}
                       height={107}
-                      className="png-140"
+                      className="png-139"
                     />
                     <div className="box-1023">
                       <p className="text-683">
@@ -936,7 +936,7 @@ export default async function Page() {
                       alt=""
                       width={274}
                       height={98}
-                      className="png-141"
+                      className="png-140"
                     />
                     <div className="box-1024">
                       <p className="text-684">
@@ -956,7 +956,7 @@ export default async function Page() {
                       alt=""
                       width={300}
                       height={107}
-                      className="png-142"
+                      className="png-141"
                     />
                     <div className="box-1025">
                       <p className="text-685">
@@ -970,7 +970,7 @@ export default async function Page() {
                       alt=""
                       width={274}
                       height={98}
-                      className="png-143"
+                      className="png-142"
                     />
                     <div className="box-1026">
                       <p className="text-686">
@@ -990,7 +990,7 @@ export default async function Page() {
                       alt=""
                       width={300}
                       height={107}
-                      className="png-144"
+                      className="png-143"
                     />
                     <div className="box-1027">
                       <p className="text-687">
@@ -1004,7 +1004,7 @@ export default async function Page() {
                       alt=""
                       width={274}
                       height={98}
-                      className="png-145"
+                      className="png-144"
                     />
                     <div className="box-1028">
                       <p className="text-688">
@@ -1024,7 +1024,7 @@ export default async function Page() {
                       alt=""
                       width={300}
                       height={107}
-                      className="png-146"
+                      className="png-145"
                     />
                     <div className="box-1029">
                       <p className="text-689">
@@ -1038,7 +1038,7 @@ export default async function Page() {
                       alt=""
                       width={274}
                       height={98}
-                      className="png-147"
+                      className="png-146"
                     />
                     <div className="box-1030">
                       <p className="text-690">
@@ -1058,7 +1058,7 @@ export default async function Page() {
                       alt=""
                       width={300}
                       height={107}
-                      className="png-148"
+                      className="png-147"
                     />
                     <div className="box-1031">
                       <p className="text-691">
@@ -1072,7 +1072,7 @@ export default async function Page() {
                       alt=""
                       width={274}
                       height={98}
-                      className="png-149"
+                      className="png-148"
                     />
                     <div className="box-1032">
                       <p className="text-692">
@@ -1089,7 +1089,7 @@ export default async function Page() {
                     alt="やり直しボタン"
                     width={300}
                     height={107}
-                    className="png-150"
+                    className="png-149"
                   />
                   <div className="box-1034">
                     <Image
@@ -1293,7 +1293,7 @@ export default async function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-538"
+            className="svg-529"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-73">
@@ -1302,7 +1302,7 @@ export default async function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-539"
+            className="svg-530"
           />
         </a>
       </section>
@@ -1313,7 +1313,7 @@ export default async function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-540"
+            className="svg-531"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-74">
@@ -1322,11 +1322,11 @@ export default async function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-541"
+            className="svg-532"
           />
         </a>
         <span
-          className="crisp-svg svg-542"
+          className="crisp-svg svg-533"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 347" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />

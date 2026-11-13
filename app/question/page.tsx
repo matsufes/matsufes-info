@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     siteName: "第56回松ヶ崎祭",
     title: "よくあるご質問",
     description: "松ヶ崎祭に関するよくあるご質問をご紹介します。",
-    images: ["/assets/ogp.png"],
+    images: ["/assets/ogp-2.png"],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -28,7 +28,7 @@ export default function Page() {
       />
       <p className="box-815">
         <span
-          className="crisp-svg svg-374"
+          className="crisp-svg svg-373"
           style={{ ["--crisp-svg-width"]: "735px", ["--crisp-svg-ratio"]: "735 / 130" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={735} height={130} viewBox="0 0 735 130" />
@@ -431,7 +431,7 @@ export default function Page() {
           />
         </a>
         <span
-          className="crisp-svg svg-410"
+          className="crisp-svg svg-403"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 350" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={375} height={350} viewBox="0 0 375 350" />
@@ -445,7 +445,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-27">
         <span
-          className="crisp-svg svg-411"
+          className="crisp-svg svg-707"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -462,7 +462,7 @@ export default function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-412"
+            className="svg-404"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-56">
@@ -471,7 +471,7 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-413"
+            className="svg-405"
           />
         </a>
       </section>

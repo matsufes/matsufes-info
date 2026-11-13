@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: "第56回松ヶ崎祭",
     title: "ページ 8",
-    images: ["/assets/ogp.png"],
+    images: ["/assets/ogp-2.png"],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -30,7 +30,7 @@ export default function Page() {
           alt=""
           width={840}
           height={129}
-          className="svg-450"
+          className="svg-442"
         />
       </p>
       <section className="box-51">
@@ -60,7 +60,7 @@ export default function Page() {
           alt=""
           width={1920}
           height={1126}
-          className="svg-449"
+          className="svg-441"
         />
       </section>
       <p className="box-152">
@@ -86,7 +86,7 @@ export default function Page() {
           />
         </a>
         <span
-          className="crisp-svg svg-406"
+          className="crisp-svg svg-400"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 350" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={375} height={350} viewBox="0 0 375 350" />
@@ -100,7 +100,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-26">
         <span
-          className="crisp-svg svg-407"
+          className="crisp-svg svg-706"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -117,7 +117,7 @@ export default function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-408"
+            className="svg-401"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-54">
@@ -126,7 +126,7 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-409"
+            className="svg-402"
           />
         </a>
       </section>

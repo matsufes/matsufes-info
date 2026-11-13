@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     siteName: "第56回松ヶ崎祭",
     title: "お知らせ",
     description: "松ヶ崎祭に関するお知らせをお届けします。",
-    images: ["/assets/ogp.png"],
+    images: ["/assets/ogp-2.png"],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -28,7 +28,7 @@ export default function Page() {
       />
       <p className="box-856">
         <span
-          className="crisp-svg svg-377"
+          className="crisp-svg svg-376"
           style={{ ["--crisp-svg-width"]: "412px", ["--crisp-svg-ratio"]: "412 / 123" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={412} height={123} viewBox="0 0 412 123" />
@@ -59,7 +59,7 @@ export default function Page() {
             alt=""
             width={112}
             height={42}
-            className="svg-464"
+            className="svg-456"
           />
         </div>
       </section>
@@ -99,7 +99,7 @@ export default function Page() {
             alt=""
             width={112}
             height={42}
-            className="svg-485"
+            className="svg-477"
           />
         </div>
       </section>
@@ -142,7 +142,7 @@ export default function Page() {
         </p>
       </section>
       <span
-        className="crisp-svg svg-427"
+        className="crisp-svg svg-419"
         style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
       >
         <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -173,7 +173,7 @@ export default function Page() {
           />
         </a>
         <span
-          className="crisp-svg svg-426"
+          className="crisp-svg svg-418"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 350" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={375} height={350} viewBox="0 0 375 350" />
@@ -192,7 +192,7 @@ export default function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-428"
+            className="svg-420"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-64">
@@ -201,7 +201,7 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-429"
+            className="svg-421"
           />
         </a>
       </section>

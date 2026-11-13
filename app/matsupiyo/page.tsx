@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: "第56回松ヶ崎祭",
     title: "まつぴよ専用ページ",
-    images: ["/assets/ogp.png"],
+    images: ["/assets/ogp-2.png"],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -35,7 +35,7 @@ export default function Page() {
           alt=""
           width={1280}
           height={1010}
-          className="svg-535"
+          className="svg-526"
         />
         <div className="box-957">
           <div className="header-29">

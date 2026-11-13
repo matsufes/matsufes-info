@@ -7,13 +7,13 @@
   ],
   "siteUrl": "https://matsufes.info",
   "favicon": {
-    "assetId": "asset_mv695yoe1"
+    "assetId": "asset_mwfdoi081nku4m"
   },
   "appleTouchIcon": {
-    "assetId": "asset_mv698i3w2"
+    "assetId": "asset_mwfdqjql1o2svx"
   },
   "ogImage": {
-    "assetId": "asset_mv6fewlm1"
+    "assetId": "asset_mwfdnb7y1m2tcg"
   },
   "customFonts": [
     {
@@ -67,6 +67,7 @@
     "page_mv8n8kse5m",
     "page_mva9voxq1",
     "page_mwc9rjdp1mjcqw",
+    "page_mwfe7cps1p0ktf",
     "page_mslbenpoz",
     "page_msleaffe1",
     "page_msmxmtrg5",
@@ -7320,6 +7321,16 @@
               "shared": true
             },
             {
+              "id": "st_mwfemu2r1xkv",
+              "kind": "transform",
+              "source": "mf_bookmarks",
+              "into": "お気に入り",
+              "transform": {
+                "kind": "split",
+                "separator": "."
+              }
+            },
+            {
               "id": "st_mv8ad09m6",
               "kind": "if",
               "cond": {
@@ -7327,7 +7338,7 @@
                 "target": "",
                 "op": "contains",
                 "value": "{data.publicId}",
-                "left": "{mf_bookmarks}"
+                "left": "{お気に入り}"
               },
               "then": [
                 {
@@ -7341,11 +7352,29 @@
                   "target": "fav-svg"
                 }
               ]
+            },
+            {
+              "id": "st_mwfgu7fm62rd",
+              "kind": "if",
+              "cond": {
+                "subject": "var",
+                "target": "",
+                "left": "{投票カテゴリ}",
+                "op": "empty",
+                "value": ""
+              },
+              "then": [
+                {
+                  "id": "st_mwfgui6m75lp",
+                  "kind": "hide",
+                  "target": "vote"
+                }
+              ]
             }
           ],
           "pos": {
-            "x": 201,
-            "y": 2745
+            "x": 127,
+            "y": 2405
           }
         }
       ],
@@ -7387,8 +7416,8 @@
       "id": "page_mvzcltff5ss5c7",
       "name": "トップページ",
       "slug": "",
-      "title": "第56回松ヶ崎祭 | 夢宙 むちゅ〜",
-      "description": "京都工芸繊維大学の学祭、松ヶ崎祭 公式サイトです！ 今年のメインテーマは「夢宙 むちゅ〜」 2026年11月13日(きん)〜11月15日(にち)開催",
+      "title": "第56回松ヶ崎祭 | 夢宙 むちゅー",
+      "description": "京都工芸繊維大学の学祭、松ヶ崎祭 公式サイトです！ 今年のメインテーマは「夢宙 むちゅー」 2026年11月13日(きん)〜11月15日(にち)開催",
       "children": [
         "node_mweszk241nuvbq",
         "node_mvzcltfe44xn3y",
@@ -7401,6 +7430,9 @@
         "node_mvzcltfe522nau",
         "node_mvzcltfe540u2p",
         "node_mvzcltfe56cbo6",
+        "node_mwf92x301miwep",
+        "node_mwf92x321p4o09",
+        "node_mwf96cxe1w0le2",
         "node_mvzcltfe58ylhm",
         "node_mvzcltfe5bl9wp",
         "node_mvzcltff5gt53t",
@@ -8929,6 +8961,34 @@
           }
         }
       }
+    },
+    "page_mwfe7cps1p0ktf": {
+      "id": "page_mwfe7cps1p0ktf",
+      "name": "夢占い",
+      "slug": "yumeuranai",
+      "title": "夢占い",
+      "description": "",
+      "children": [],
+      "rawHtml": "<!DOCTYPE html>\r\n<html lang=\"ja\">\r\n<head>\r\n<meta charset=\"UTF-8\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, viewport-fit=cover\">\r\n<meta name=\"screen-orientation\" content=\"landscape\">\r\n<title>夢占い</title>\r\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\r\n<link href=\"https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap\" rel=\"stylesheet\">\r\n<style>\r\n  :root{\r\n    --ink:#284a63;\r\n\r\n    /* 演出の長さ（背景・ぐるぐる・ゲージ） */\r\n    --spin-duration: 3000ms;\r\n    /* 雲がはけるまでの時間。\r\n       ゲージが100%になるのと同時に消えきるよう、\r\n       --spin-duration と同じ値にしています */\r\n    --cloud-duration: var(--spin-duration);\r\n\r\n    /* ================================================================\r\n       画像の置きかえはここだけ。assets フォルダに同じ名前で入れてください\r\n       ================================================================ */\r\n    --上雲_左:           url(\"cloud_top_left.png\");        /* 上の雲（左半分）＋吊るし星 */\r\n    --上雲_右:           url(\"cloud_top_right.png\");       /* 上の雲（右半分）＋吊るし星 */\r\n    --下雲_左:           url(\"cloud_bottom_left.png\");     /* 下の雲（左） */\r\n    --下雲_右:           url(\"cloud_bottom_right.png\");    /* 下の雲（右） */\r\n    --うずまき_左:       url(\"spiral_left.png\");\r\n    --うずまき_右:       url(\"spiral_right.png\");\r\n    --タイトル:          url(\"title.png\");       /* ロゴ「夢占い」 */\r\n    --カード_入力:       url(\"input_square.png\");     /* 夢を書く枠 */\r\n    --カード_結果:       url(\"result_square.png\");     /* 結果を出す枠 */\r\n    --占うボタン_入力前: url(\"button_before.png\");\r\n    --占うボタン_入力後: url(\"button_after.png\");\r\n    --占いちゅー星_わく:  url(\"star_empty.png\");  /* ゲージの空っぽの星 */\r\n    --占いちゅー星_なかみ: url(\"star_filled.png\"); /* ゲージに溜まっていく色 */\r\n  }\r\n  *{box-sizing:border-box;}\r\n  html,body{\r\n    margin:0;\r\n    height:100%;\r\n    font-family:'Zen Kaku Gothic New','Hiragino Maru Gothic ProN','sans-serif';\r\n    color:var(--ink);\r\n    background:#0e1626;\r\n  }\r\n  body{\r\n    display:flex;\r\n    align-items:center;\r\n    justify-content:center;\r\n    min-height:100dvh;\r\n    padding:0;\r\n    overflow:hidden;\r\n  }\r\n  /* スマホ横（16:9）を基準に、画面の短い辺にあわせて目いっぱい広げます */\r\n  .stage{ position:relative; width:100vw; }\r\n  .panel{\r\n    position:relative;\r\n    width:100vw;\r\n    height:100dvh;\r\n    overflow:hidden;\r\n    display:none;\r\n    /* --u = 「16:9 だったときのパネル幅の 1%」。\r\n       文字やカードのサイズはすべて --u 基準なので、\r\n       画面がどんな比率でもモックアップと同じ見た目になります */\r\n    container-type: size;\r\n    --u: min(1cqw, 1.7778cqh);\r\n    /* 中身を置く帯の幅。16:9 なら画面いっぱい、それより横長なら中央に寄せます */\r\n    --boxw: min(100%, calc(var(--u) * 108));\r\n  }\r\n  .panel.active{ display:block; }\r\n\r\n  /* ==========================================================\r\n     背景：2枚のグラデーションを重ねて opacity でクロスフェード。\r\n     これでグラデーションでも「だんだん」色が変わります。\r\n     ========================================================== */\r\n  .bg{ position:absolute; inset:0; }\r\n  .bg-day{\r\n    background: radial-gradient(120% 90% at 50% 0%, #8fc7e8, #5fa8d3);\r\n  }\r\n  .bg-night{\r\n    background: radial-gradient(120% 90% at 50% 0%, #1b2b4a, #101a30);\r\n    opacity:0;\r\n    transition: opacity var(--spin-duration) cubic-bezier(.45,.05,.35,1);\r\n  }\r\n  /* 占いちゅー中：夜へゆっくり移行 */\r\n  .loading-screen.deepen .bg-night{ opacity:1; }\r\n  /* 結果画面：最初から夜 */\r\n  .result-screen .bg-night{ opacity:1; transition:none; }\r\n\r\n  /* きらきら */\r\n  .twinkle{\r\n    position:absolute;\r\n    border-radius:50%;\r\n    background:#fff;\r\n    box-shadow:0 0 calc(var(--u) * .6) rgba(255,255,255,.9);\r\n    opacity:0;\r\n    transition: opacity 1.4s ease;\r\n  }\r\n  .loading-screen.deepen .twinkle,\r\n  .result-screen .twinkle{ opacity:.85; animation: sparkle 2.4s ease-in-out infinite; }\r\n  @keyframes sparkle{\r\n    0%,100%{ opacity:.25; }\r\n    50%{ opacity:.9; }\r\n  }\r\n\r\n\r\n  /* 画像はすべて background-image で指定しています */\r\n  .star-empty, .star-fill{\r\n    display:block;\r\n    background-position:center;\r\n    background-size:100% 100%;\r\n    background-repeat:no-repeat;\r\n  }\r\n  /* 雲は絵をそのまま重ねるだけ。絵の上側と外側には\r\n     「もこもこ半個分」のバッファがあるので、その分だけ画面外へ逃がしています */\r\n  .cimg{\r\n    position:absolute;\r\n    background-position:center;\r\n    background-size:100% 100%;\r\n    background-repeat:no-repeat;\r\n  }\r\n   .cimg-上左{ top:-8.4cqw; left:-7.2cqw;  width:48cqw; aspect-ratio:1121/1107; background-image: var(--上雲_左); }\r\n  .cimg-上右{ top:-8.4cqw; right:-7.2cqw; width:48cqw; aspect-ratio:1121/1107; background-image: var(--上雲_右); }\r\n   .cimg-下左{ bottom:-6.5cqw; left:-22cqw;  width:44cqw; aspect-ratio:998/475; background-image: var(--下雲_左); }\r\n  .cimg-下右{ bottom:-7cqw; right:-22cqw; width:46cqw; aspect-ratio:998/475; background-image: var(--下雲_右); }\r\n\r\n\r\n  /* ==========================================================\r\n     スマホ横向き専用。縦のときは回してもらう案内を出します\r\n     ========================================================== */\r\n  .rotate-hint{\r\n    display:none;\r\n    position:fixed;\r\n    inset:0;\r\n    z-index:50;\r\n    flex-direction:column;\r\n    align-items:center;\r\n    justify-content:center;\r\n    gap:4vh;\r\n    padding:8vw;\r\n    text-align:center;\r\n    background: radial-gradient(130% 80% at 50% 0%, #2f4474 0%, #16213d 70%);\r\n    color:#eaf3ff;\r\n    font-family:'Zen Kaku Gothic New','Hiragino Maru Gothic ProN','sans-serif';\r\n  }\r\n  .rotate-phone{\r\n    width:min(34vw,180px);\r\n    aspect-ratio:9/16;\r\n    border:3px solid rgba(255,255,255,.85);\r\n    border-radius:14px;\r\n    box-shadow:0 0 18px rgba(170,220,255,.45), inset 0 0 18px rgba(170,220,255,.25);\r\n    animation: rotatePhone 2.8s ease-in-out infinite;\r\n  }\r\n  \r\n  @keyframes rotatePhone{\r\n    0%, 20%   { transform: rotate(0deg); }\r\n    55%, 100% { transform: rotate(-90deg); }\r\n  }\r\n  .rotate-title{ font-size:clamp(20px,6.4vw,30px); letter-spacing:.06em; }\r\n  .rotate-sub{\r\n    font-family:'Zen Kaku Gothic New','Hiragino Maru Gothic ProN','sans-serif';\r\n    font-size:clamp(13px,3.8vw,16px);\r\n    color:#bcd4ee;\r\n    line-height:1.8;\r\n  }\r\n  .rotate-star{\r\n    width:min(16vw,80px);\r\n    aspect-ratio:60/62;\r\n    background:var(--星_エメラルド) center/100% 100% no-repeat;\r\n    filter: drop-shadow(0 0 10px rgba(150,245,205,.55));\r\n    animation: bob 5s ease-in-out infinite alternate;\r\n  }\r\n\r\n  @media (orientation: portrait){\r\n    .stage{ display:none; }\r\n    .rotate-hint{ display:flex; }\r\n  }\r\n\r\n  /* ==========================================================\r\n     空にただよう景色（雲・吊るし星・ぐるぐる）\r\n     .scenery の中だけで完結。content より奥（z-index:1）に敷きます。\r\n     ========================================================== */\r\n  .scenery{ position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:1; }\r\n\r\n  /* 雲：外枠 .cloud が「はける」動き、中の img が「ゆらぎ」を担当。\r\n     ふたつの transform がケンカしないように役割を分けています。 */\r\n  .cloud{\r\n    position:absolute;\r\n    inset:0;\r\n    transition: transform var(--cloud-duration) cubic-bezier(.55,.02,.75,.62),\r\n                opacity   var(--cloud-duration) linear;\r\n  }\r\n  /* 画面いっぱいのレイヤーなので、ゆれ幅は小さめにしてあります */\r\n   .cloud-left  .cimg{ animation: floatyTop 9s ease-in-out infinite; }\r\n  .cloud-right .cimg{ animation: floatyTop 11s ease-in-out -3.5s infinite; }\r\n   .cloud-bl   .cimg{ animation: floaty 5.4s ease-in-out infinite; }\r\n  .cloud-br    .cimg{ animation: floaty 6.6s ease-in-out -2s infinite reverse; }\r\n\r\n  @keyframes drift{\r\n    from{ transform: translate3d(-0.45%,-0.3%,0) rotate(-0.22deg); }\r\n    to  { transform: translate3d( 0.55%, 0.35%,0) rotate( 0.26deg); }\r\n  }\r\n\r\n  /* 下の雲：ふわふわ上下に浮く */\r\n  @keyframes floaty{\r\n    0%,100%{ transform: translate3d(0,  1.8%, 0) rotate(-0.4deg); }\r\n    50%    { transform: translate3d(0, -2.2%, 0) rotate( 0.4deg); }\r\n  }\r\n\r\n  @keyframes bob{\r\n    from{ transform: translateY(0)    rotate(-5deg); }\r\n    to  { transform: translateY(-9%)  rotate( 5deg); }\r\n  }\r\n\r\n  /* ---------- きらきら（四角い光） ---------- */\r\n  .spark{\r\n    position:absolute;\r\n    background:#fff;\r\n    clip-path: polygon(50% 0%, 57% 43%, 100% 50%, 57% 57%, 50% 100%, 43% 57%, 0% 50%, 43% 43%);\r\n    opacity:.85;\r\n    animation: sparkPulse 3.4s ease-in-out infinite;\r\n  }\r\n  @keyframes sparkPulse{\r\n    0%,100%{ transform: scale(.7) rotate(0deg);   opacity:.35; }\r\n    50%    { transform: scale(1.1) rotate(12deg); opacity:.95; }\r\n  }\r\n\r\n  /* ---------- 占いちゅー：雲と星がはける ---------- */\r\n  .loading-screen.leave .cloud-left { transform: translate(-60%,-16%); opacity:0; }\r\n  .loading-screen.leave .cloud-right{ transform: translate( 60%, 16%); opacity:0; }\r\n  .loading-screen.leave .cloud-bl   { transform: translate(-60%, 20%); opacity:0; }\r\n  .loading-screen.leave .cloud-br   { transform: translate( 60%, 20%); opacity:0; }\r\n\r\n  /* ---------- ぐるぐる（外側の先端から巻き戻るように消える） ---------- */\r\n  .spiral{\r\n    position:absolute;\r\n    background-position:center;\r\n    background-size:100% 100%;\r\n    background-repeat:no-repeat;\r\n    opacity:.85;\r\n    /* まるいマスクを縮めると、外周＝渦の先端のほうから順に消えていきます */\r\n    -webkit-mask-image: radial-gradient(circle, #000 56%, transparent 72%);\r\n            mask-image: radial-gradient(circle, #000 56%, transparent 72%);\r\n    -webkit-mask-position: 50% 46%;  mask-position: 50% 46%;\r\n    -webkit-mask-repeat: no-repeat;  mask-repeat: no-repeat;\r\n    -webkit-mask-size: 195% 195%;    mask-size: 195% 195%;\r\n    transition: -webkit-mask-size var(--spin-duration) cubic-bezier(.5,0,.5,1),\r\n                        mask-size var(--spin-duration) cubic-bezier(.5,0,.5,1);\r\n  }\r\n   .spiral-left{\r\n    left:11cqw; top:26.7cqw; width:15cqw; aspect-ratio:273/300;\r\n    background-image: var(--うずまき_左);\r\n    animation: spiralSpinL 240s ease-in-out infinite;\r\n  }\r\n   .spiral-right{\r\n    right:16.1cqw; top:15.5cqw; width:11cqw; aspect-ratio:342/394;\r\n    background-image: var(--うずまき_右);\r\n    animation: spiralSpinR 240s ease-in-out infinite;\r\n  }\r\n  .loading-screen.leave .spiral{ -webkit-mask-size:0% 0%; mask-size:0% 0%; }\r\n\r\n @keyframes spiralSpinL{\r\n  from{ transform: rotate(0deg); }\r\n  to  { transform: rotate(360deg); }\r\n}\r\n@keyframes spiralSpinR{\r\n  from{ transform: rotate(360deg); }\r\n  to  { transform: rotate(0deg); }\r\n}\r\n\r\n  /* 動きが苦手な人のために、OS 設定に従ってゆらぎを止めます */\r\n  @media (prefers-reduced-motion: reduce){\r\n    .cloud .cimg, .spark, .spiral, .rotate-star{ animation:none !important; }\r\n  }\r\n\r\n  /* ---------- レイアウト（数値はモックアップの比率そのまま） ---------- */\r\n  .content{\r\n    position:relative;\r\n    z-index:2;\r\n    height:100%;\r\n    width: var(--boxw);\r\n    margin: 0 auto;\r\n    display:flex;\r\n    flex-direction:column;\r\n    align-items:center;\r\n    padding: calc(var(--u) * 3.5) calc(var(--u) * 28.5) calc(var(--u) * 2.5);\r\n  }\r\n  .logo{\r\n    width: calc(var(--u) * 32);\r\n    aspect-ratio: 801/706;\r\n    background: var(--タイトル) center/100% 100% no-repeat;\r\n    /* まわりのふんわりした光も絵に入っているので、その分マイナスの余白で詰めます */\r\n    margin: calc(var(--u) * -9.5) 0 calc(var(--u) * -9);\r\n  }\r\n  .logo span{ position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }\r\n  .sub{\r\n    font-size: calc(var(--u) * 2.3);\r\n    color:#eef6fc;\r\n    margin-bottom: calc(var(--u) * 2.2);\r\n    text-align:center;\r\n    text-shadow: 0 1px 6px rgba(20,50,80,.35);\r\n  }\r\n  .card{\r\n    /* 枠はギザギザの手描き。絵をそのまま伸ばして使います */\r\n    background: var(--カード_入力) center/100% 100% no-repeat;\r\n    width:100%;\r\n    flex:1;\r\n    /* ギザギザの縁に文字がかからないよう内側に余白をとっています */\r\n    padding: calc(var(--u) * 4.2) calc(var(--u) * 5.2) calc(var(--u) * 3.2);\r\n    display:flex;\r\n    flex-direction:column;\r\n  }\r\n  textarea{\r\n    flex:1;\r\n    resize:none;\r\n    padding-left: calc(var(--u) * 1.2);\r\n    border:none;\r\n    background:transparent;\r\n    outline:none;\r\n    font-family:'Zen Kaku Gothic New','sans-serif';\r\n    font-size: calc(var(--u) * 2.2);\r\n    line-height:1.75;\r\n    color:var(--ink);\r\n  }\r\n  textarea::placeholder{ color:#7c93a3; }\r\n  .counter{ align-self:flex-end; margin-right:calc(var(--u) * 3.2); font-size:calc(var(--u) * 1.7); color:#6d8598; }\r\n  .counter.over{ color:#c0483f; }\r\n\r\n  .go-btn{\r\n    margin-top: calc(var(--u) * 2);\r\n    width: calc(var(--u) * 22);\r\n    max-width: none;\r\n    aspect-ratio: 403 / 231;\r\n    border:0;\r\n    padding:0;\r\n    background: transparent center/100% 100% no-repeat;\r\n    /* 入力前：くすんだテクスチャ版 */\r\n    background-image: var(--占うボタン_入力前);\r\n    cursor: not-allowed;\r\n    transition: transform .15s ease, filter .3s ease;\r\n  }\r\n  .go-btn .label{\r\n    /* 文字は画像に入っているので読み上げ用に隠します */\r\n    position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%);\r\n  }\r\n  /* 入力後：雲テクスチャ版に差し替え、ふわっと光らせる */\r\n  .go-btn:not(:disabled){\r\n    background-image: var(--占うボタン_入力後);\r\n    cursor:pointer;\r\n    animation: btnGlow 2.6s ease-in-out infinite;\r\n  }\r\n  .go-btn:not(:disabled):active{ transform: translateY(2px) scale(.98); }\r\n  .go-btn:focus-visible{ outline:3px solid #cfe9ff; outline-offset:4px; border-radius:999px; }\r\n  @keyframes btnGlow{\r\n    0%,100%{ filter: drop-shadow(0 0 6px rgba(180,225,255,.55)); }\r\n    50%    { filter: drop-shadow(0 0 16px rgba(190,240,255,.95)); }\r\n  }\r\n\r\n  .loading-screen .content{ padding: calc(var(--u) * 3.5) calc(var(--u) * 12) calc(var(--u) * 3); }\r\n  .result-screen  .content{ padding: calc(var(--u) * 3.5) calc(var(--u) * 24) calc(var(--u) * 3); }\r\n\r\n  /* ---------- 占いちゅー：星のゲージ ---------- */\r\n  .burst-wrap{\r\n    flex:1;\r\n    width:100%;\r\n    display:flex;\r\n    align-items:center;\r\n    justify-content:center;\r\n    position:relative;\r\n  }\r\n  .star-gauge{\r\n    position:relative;\r\n    width:56.4%;\r\n    /* --p = 0(空) 〜 100(満タン)。JSがここだけを動かします */\r\n    --p: 0;\r\n  }\r\n  /* 空っぽの器：白い星 */\r\n   .star-empty{\r\n    width:100%;\r\n    aspect-ratio:1/1;\r\n    /* 光彩はマスクのかかっていないこちらに置く。\r\n       .star-fill に置くと Safari で四角く切られます */\r\n    filter: drop-shadow(0 0 calc(6px + var(--p) * 0.16px) rgba(150,185,255,.75));\r\n    background-image: var(--占いちゅー星_わく);\r\n  }\r\n  /* 溜まっていく色：下からじわっと染み上がる。\r\n     境目をぼかしたグラデーションでマスクするので、\r\n     切り替わりの線が出ずに自然になじみます。 */\r\n  .star-fill{\r\n    position:absolute;\r\n    inset:0;\r\n    width:100%;\r\n    height:100%;\r\n    background-image: var(--占いちゅー星_なかみ);\r\n    -webkit-mask-image: linear-gradient(to top,\r\n        #000 0%,\r\n        #000 calc(var(--p) * 1%),\r\n        rgba(0,0,0,.55) calc(var(--p) * 1% + 7%),\r\n        rgba(0,0,0,0)   calc(var(--p) * 1% + 17%),\r\n        rgba(0,0,0,0)   100%);\r\n            mask-image: linear-gradient(to top,\r\n        #000 0%,\r\n        #000 calc(var(--p) * 1%),\r\n        rgba(0,0,0,.55) calc(var(--p) * 1% + 7%),\r\n        rgba(0,0,0,0)   calc(var(--p) * 1% + 17%),\r\n        rgba(0,0,0,0)   100%);\r\n  }\r\n  .burst-text{\r\n    position:absolute;\r\n    max-width:64%;\r\n    text-align:center;\r\n    font-size: calc(var(--u) * 2.2);\r\n    font-weight:600;\r\n    color:#ffffff;\r\n    line-height:1.5;\r\n    text-shadow: 0 1px 4px rgba(18,32,60,.9),\r\n                 0 0 10px rgba(18,32,60,.65);\r\n  }\r\n  .pct{\r\n    position:absolute;\r\n    bottom:-10.9%;\r\n    left:0; right:0;\r\n    text-align:center;\r\n    font-size:calc(var(--u) * 1.8);\r\n    color:#e9f3fb;\r\n    letter-spacing:.1em;\r\n    opacity:.85;\r\n  }\r\n\r\n  /* ---------- 結果 ---------- */\r\n  .result-card{\r\n    background: var(--カード_結果) center/100% 100% no-repeat;\r\n    width:100%;\r\n    flex:1;\r\n    padding: calc(var(--u) * 4.8) calc(var(--u) * 6.5);\r\n    display:flex;\r\n    flex-direction:column;\r\n    gap: calc(var(--u) * 1.6);\r\n  }\r\n  .result-block h3{\r\n    margin:0 0 calc(var(--u) * .8);\r\n    font-size: calc(var(--u) * 1.9);\r\n    color:#6d8598;\r\n    font-weight:600;\r\n  }\r\n  .result-block p{\r\n    margin:0;\r\n    font-size: calc(var(--u) * 2.3);\r\n    line-height:1.7;\r\n  }\r\n  .again-btn{\r\n    margin-top:auto;\r\n    align-self:center;\r\n    background:none;\r\n    border:none;\r\n    color:#41647d;\r\n    text-decoration:underline;\r\n    font-family:'Zen Kaku Gothic New','sans-serif';\r\n    font-size:calc(var(--u) * 1.9);\r\n    cursor:pointer;\r\n    padding-top:calc(var(--u) * 1);\r\n  }\r\n</style>\r\n</head>\r\n<body>\r\n\r\n<div class=\"rotate-hint\" aria-hidden=\"true\">\r\n  <div class=\"rotate-star\"></div>\r\n  <div class=\"rotate-phone\"></div>\r\n  <p class=\"rotate-title\">よこむきにしてね</p>\r\n  <p class=\"rotate-sub\">スマホを横にすると<br>夢占いがはじまります</p>\r\n</div>\r\n\r\n<div class=\"stage\">\r\n\r\n  <!-- ===================== スタート ===================== -->\r\n  <section class=\"panel start-screen active\" id=\"startScreen\">\r\n    <div class=\"bg bg-day\"></div>\r\n    <div class=\"bg bg-night\"></div>\r\n    <div class=\"scenery\">\r\n      <!-- 下の雲を先に、上の雲をあとに描くと、吊るした星が手前になります -->\r\n      <div class=\"cloud cloud-bl\"><i class=\"cimg cimg-下左\"></i></div>\r\n      <div class=\"cloud cloud-br\"><i class=\"cimg cimg-下右\"></i></div>\r\n      <div class=\"cloud cloud-left\"><i class=\"cimg cimg-上左\"></i></div>\r\n      <div class=\"cloud cloud-right\"><i class=\"cimg cimg-上右\"></i></div>\r\n      <span class=\"spark\" style=\"width:calc(var(--u) * 1.1);height:calc(var(--u) * 1.1); top:29%; left:62%; animation-delay:.2s;\"></span>\r\n      <span class=\"spark\" style=\"width:calc(var(--u) * 1.1);height:calc(var(--u) * 1.1); top:47%; left:9%;  animation-delay:1.1s;\"></span>\r\n      <span class=\"spark\" style=\"width:calc(var(--u) * 1.1);height:calc(var(--u) * 1.1);  top:66%; left:88%; animation-delay:2.0s;\"></span>\r\n      <span class=\"spark\" style=\"width:calc(var(--u) * 1.1);height:calc(var(--u) * 1.1); top:78%; left:33%; animation-delay:.7s;\"></span>\r\n    </div>\r\n    <i class=\"spiral spiral-left\"></i>\r\n    <i class=\"spiral spiral-right\"></i>\r\n    <div class=\"content\">\r\n      <div class=\"logo\"><span>夢占い</span></div>\r\n      <div class=\"sub\">今日、どんな夢をみた？</div>\r\n      <div class=\"card\">\r\n        <textarea id=\"dreamInput\" maxlength=\"100\" placeholder=\"100字以内で入力してね。\"></textarea>\r\n        <div class=\"counter\" id=\"counter\">0 / 100</div>\r\n      </div>\r\n      <button class=\"go-btn\" id=\"startBtn\" disabled><span class=\"label\">占う</span></button>\r\n    </div>\r\n  </section>\r\n\r\n  <!-- ===================== 占いちゅー ===================== -->\r\n  <section class=\"panel loading-screen\" id=\"loadingScreen\">\r\n    <div class=\"bg bg-day\"></div>\r\n    <div class=\"bg bg-night\"></div>\r\n    <span class=\"twinkle\" style=\"width:calc(var(--u) * 1.1);height:calc(var(--u) * 1.1); top:14%; left:20%;\"></span>\r\n    <span class=\"twinkle\" style=\"width:calc(var(--u) * 1.1);height:calc(var(--u) * 1.1); top:22%; left:78%; animation-delay:.4s;\"></span>\r\n    <span class=\"twinkle\" style=\"width:calc(var(--u) * 1.1);height:calc(var(--u) * 1.1); top:60%; left:12%; animation-delay:.8s;\"></span>\r\n    <span class=\"twinkle\" style=\"width:calc(var(--u) * 1.1);height:calc(var(--u) * 1.1); top:70%; left:85%; animation-delay:1.2s;\"></span>\r\n    <span class=\"twinkle\" style=\"width:calc(var(--u) * 1.1);height:calc(var(--u) * 1.1); top:44%; left:8%;  animation-delay:.6s;\"></span>\r\n    <span class=\"twinkle\" style=\"width:calc(var(--u) * 1.1);height:calc(var(--u) * 1.1); top:30%; left:92%; animation-delay:1.6s;\"></span>\r\n    <div class=\"scenery\">\r\n      <!-- 下の雲を先に、上の雲をあとに描くと、吊るした星が手前になります -->\r\n      <div class=\"cloud cloud-bl\"><i class=\"cimg cimg-下左\"></i></div>\r\n      <div class=\"cloud cloud-br\"><i class=\"cimg cimg-下右\"></i></div>\r\n      <div class=\"cloud cloud-left\"><i class=\"cimg cimg-上左\"></i></div>\r\n      <div class=\"cloud cloud-right\"><i class=\"cimg cimg-上右\"></i></div>\r\n\r\n    </div>\r\n    <i class=\"spiral spiral-left\"></i>\r\n    <i class=\"spiral spiral-right\"></i>\r\n    <div class=\"content\">\r\n      <div class=\"logo\"><span>夢占い</span></div>\r\n      <div class=\"burst-wrap\">\r\n        <div class=\"star-gauge\">\r\n          <i class=\"star-empty\"></i>\r\n          <i class=\"star-fill\" id=\"starFill\"></i>\r\n          <div class=\"pct\" id=\"pct\">0%</div>\r\n        </div>\r\n        <div class=\"burst-text\">今日の運勢、占いちゅー</div>\r\n      </div>\r\n    </div>\r\n  </section>\r\n\r\n  <!-- ===================== 結果 ===================== -->\r\n  <section class=\"panel result-screen\" id=\"resultScreen\">\r\n    <div class=\"bg bg-day\"></div>\r\n    <div class=\"bg bg-night\"></div>\r\n    <span class=\"twinkle\" style=\"width:calc(var(--u) * 1.1);height:calc(var(--u) * 1.1); top:16%; left:24%;\"></span>\r\n    <span class=\"twinkle\" style=\"width:calc(var(--u) * 1.1);height:calc(var(--u) * 1.1); top:26%; left:72%; animation-delay:.5s;\"></span>\r\n    <span class=\"twinkle\" style=\"width:calc(var(--u) * 1.1);height:calc(var(--u) * 1.1); top:66%; left:16%; animation-delay:.9s;\"></span>\r\n    <span class=\"twinkle\" style=\"width:calc(var(--u) * 1.1);height:calc(var(--u) * 1.1); top:76%; left:80%; animation-delay:1.3s;\"></span>\r\n    <div class=\"scenery\">\r\n      <!-- 下の雲を先に、上の雲をあとに描くと、吊るした星が手前になります -->\r\n      <div class=\"cloud cloud-bl\"><i class=\"cimg cimg-下左\"></i></div>\r\n      <div class=\"cloud cloud-br\"><i class=\"cimg cimg-下右\"></i></div>\r\n      <div class=\"cloud cloud-left\"><i class=\"cimg cimg-上左\"></i></div>\r\n      <div class=\"cloud cloud-right\"><i class=\"cimg cimg-上右\"></i></div>\r\n      <span class=\"spark\" style=\"width:calc(var(--u) * 1.1);height:calc(var(--u) * 1.1); top:34%; left:66%; animation-delay:.3s;\"></span>\r\n      <span class=\"spark\" style=\"width:calc(var(--u) * 1.1);height:calc(var(--u) * 1.1);  top:55%; left:6%;  animation-delay:1.4s;\"></span>\r\n      <span class=\"spark\" style=\"width:calc(var(--u) * 1.1);height:calc(var(--u) * 1.1); top:80%; left:52%; animation-delay:2.2s;\"></span>\r\n    </div>\r\n    <div class=\"content\">\r\n      <div class=\"logo\"><span>夢占い</span></div>\r\n      <div class=\"result-card\">\r\n        <div class=\"result-block\">\r\n          <h3>今日のきみは…</h3>\r\n          <p id=\"fortuneText\"></p>\r\n        </div>\r\n        <div class=\"result-block\">\r\n          <h3>きみへひとこと</h3>\r\n          <p id=\"messageText\"></p>\r\n        </div>\r\n        <button class=\"again-btn\" id=\"againBtn\">もう一度占う</button>\r\n      </div>\r\n    </div>\r\n  </section>\r\n\r\n</div>\r\n\r\n<script>\r\n  /* ====== 占い結果 56件 ======\r\n     RESULTS[i][0] = 「今日のきみは…」に出る文\r\n     RESULTS[i][1] = 「きみへひとこと」に出る文   */\r\n  const RESULTS = [\r\n    /*  1 */ [\"最高のお祭り気分。今日という日を楽しんで。\",\r\n             \"思い立ったら即行動しよう。\"],\r\n    /*  2 */ [\"普段より小さな幸せが見つかるかも。小さくても幸せは大切にしよう。\",\r\n             \"四つ葉のクローバーを探してみよう。\"],\r\n    /*  3 */ [\"頭が冴えているね。考えてから行動してみると良いことが起きそう。\",\r\n             \"あなただけのおまつりルートをつくろう。\"],\r\n    /*  4 */ [\"いつもより直感が冴えてるよ。自分の選択が全部正解。\",\r\n             \"いつもだったら選ばない選択をしてみよう。\"],\r\n    /*  5 */ [\"おまつりを彩る虹のよう。いつもより魅力的だね。\",\r\n             \"虹の塔を観察して、最高の一枚を撮ってみよう\"],\r\n    /*  6 */ [\"今年いちばんの思い出を作れそう。\",\r\n             \"今日の思い出を家族や友人に共有してみよう。\"],\r\n    /*  7 */ [\"創造力にみちあふれているね。いろんなものから学びを得るチャンス。\",\r\n             \"手づくりのテントを観察し、展示を見てみよう。\"],\r\n    /*  8 */ [\"今日の君は普段より想像力豊かかも。どんなものでも作れちゃう。\",\r\n             \"何かを作ってみよう。\"],\r\n    /*  9 */ [\"感性豊かな日なのかも。今日ならなんでも楽しめちゃう。\",\r\n             \"手づくりテントみにいってみよう。\"],\r\n    /* 10 */ [\"どきどき・わくわくな体験をしたい気分。\",\r\n             \"体験型の企画に挑戦してみよう。\"],\r\n    /* 11 */ [\"楽しかった時間を大切にしたいのかも。今日の余韻を味わいたくなるよ。\",\r\n             \"おまつりの思い出の品を家に持ち帰ってみよう。\"],\r\n    /* 12 */ [\"食欲旺盛。秋にそまりたい気分。\",\r\n             \"秋の季節の食べ物を探して食べてみよう。\"],\r\n    /* 13 */ [\"新しい価値観に出会いたいのかも。個性的なアートに触れたい気分。\",\r\n             \"個人の展示を見に行ってみよう。\"],\r\n    /* 14 */ [\"普段の100倍絶好調。やったことが無いものにも挑戦してみよう。\",\r\n             \"いつもの5倍ご飯をたべよう。\"],\r\n    /* 15 */ [\"人生でいちばん調子が良い日。今この瞬間を忘れないで。\",\r\n             \"とっておきの一枚を撮ってみよう。\"],\r\n    /* 16 */ [\"いつもより浮ついてるのかも。そんなときこそ勢いだ。\",\r\n             \"手を挙げて横断歩道を渡ろう。\"],\r\n    /* 17 */ [\"思いがけない出会いが待ってるかも。いつもより周りに視線を向けてみて。\",\r\n             \"手づくりの物を見に行くと新しい出会いがあるかも。\"],\r\n    /* 18 */ [\"ずっと笑顔でいられそう。周りの人も巻き込んで、ニコニコで過ごそう。\",\r\n             \"音楽にむちゅーになってもっとニコニコになろう。\"],\r\n    /* 19 */ [\"甘えたいそんな気分。たまには気を抜いて大丈夫。\",\r\n             \"先輩におごってもらおう。\"],\r\n    /* 20 */ [\"何かをかかえこんでない？世の中はなんとかなる。\",\r\n             \"スキップしながら過ごそう。(周りにちゅーい。)\"],\r\n    /* 21 */ [\"幸せ指数上昇中。近いうちに嬉しいことがおこりそう。\",\r\n             \"いつもより上を向いて歩こう。\"],\r\n    /* 22 */ [\"何でもうまくいっちゃうかも。思い切ったことをすると吉。\",\r\n             \"何かに迷ったら全部やろう。\"],\r\n    /* 23 */ [\"対人運上昇中。みんなきみのことが大好き。\",\r\n             \"今一緒にいる人と56枚写真を撮ろう。\"],\r\n    /* 24 */ [\"ほんのちょっぴりお疲れ中？自分の機嫌は自分でとろう。\",\r\n             \"甘いものをお腹いっぱい食べよう。\"],\r\n    /* 25 */ [\"普段よりも自由に過ごしたい気分。自分のやりたいことを優先させよう。\",\r\n             \"今日の最後まで松ヶ崎祭を楽しんでみよう。\"],\r\n    /* 26 */ [\"やる気に満ち溢れている日。ハートがメラメラ燃えてるね。\",\r\n             \"目指せ模擬店全制覇。\"],\r\n    /* 27 */ [\"なんだか刺激を求めてない？今が変化の時。\",\r\n             \"辛いものに挑戦しよう。\"],\r\n    /* 28 */ [\"とっても運が良い日。神様は君の味方だよ。\",\r\n             \"物販展示でラッキーアイテムを探してみよう！\"],\r\n    /* 29 */ [\"元気が有り余ってるみたい。動きたくてうずうずしてるね。\",\r\n             \"心のままに踊ってみよう。\"],\r\n    /* 30 */ [\"センスがピカイチ。どんな選択もステキな結果が待ってるよ。\",\r\n             \"気になるところに全部行ってみよう。\"],\r\n    /* 31 */ [\"いつもより勇気を出せそう。自分に自信を持って。\",\r\n             \"気になるあの人を誘っちゃおう。\"],\r\n    /* 32 */ [\"いつもよりちょっぴり素敵な日になりそう。すこし贅沢してみよう。\",\r\n             \"おいしそうなもの全部食べちゃおう。\"],\r\n    /* 33 */ [\"固定概念から解放されたいのかも。見えているものが全てじゃないよ。\",\r\n             \"行ったことのない場所にいってみよう。\"],\r\n    /* 34 */ [\"気分をあげたいみたい。それならいっそ踊ってみよう。\",\r\n             \"楽しい音楽を聴きに行こう。\"],\r\n    /* 35 */ [\"いつもよりリラックスしていいよ。力をぬいて歩きだそう。\",\r\n             \"匂いにつられて並んでみるのも悪くないよ。\"],\r\n    /* 36 */ [\"自分を大切にしたいのかも。ゆっくりと、きみのリズムで進んでみよう。\",\r\n             \"きみがときめく場所を探しに行ってみよう。\"],\r\n    /* 37 */ [\"好きの輪を広げたいと思ってるのかも。きみの好きをみんなにも教えてあげよう。\",\r\n             \"だれかと一緒にご飯をたべよう。\"],\r\n    /* 38 */ [\"すべてがきみの思うまま。いつもはできないことをしよう。\",\r\n             \"やりたいことはすべてやろう。なにをしてもうまくいくよ。\"],\r\n    /* 39 */ [\"普段の100倍元気。きみの元気をみんなにも分けてあげて。\",\r\n             \"みんなに挨拶してみよう。\"],\r\n    /* 40 */ [\"普段よりもちょっぴり勇気が出る日かも。いろんな出会いが待ってるよ。\",\r\n             \"積極的に物事に挑戦しよう。\"],\r\n    /* 41 */ [\"いつもよりいろんなことに興味津々。勉強運上昇中。\",\r\n             \"ちょっと勉強してみる？\"],\r\n    /* 42 */ [\"温もりを求めているね。寒くなってきたから風邪ひかないでね。\",\r\n             \"あったかい飲み物を飲もう。\"],\r\n    /* 43 */ [\"気付かぬうちにうきうきした気分になってるかも。楽しいことで頭をいっぱいにしよう。\",\r\n             \"普段より楽しい予定を入れてみよう。\"],\r\n    /* 44 */ [\"ときめき全開。きみの好きを大切にね。\",\r\n             \"一番好きな色を身に着けよう。\"],\r\n    /* 45 */ [\"暖かい気持ちで一日過ごせそう。そんなきみにみんなが虜。\",\r\n             \"あったかいものを食べてもっと暖まろう。\"],\r\n    /* 46 */ [\"とってもパワフルで元気な日かも。そんなときこそ落ち着きが大事。\",\r\n             \"一旦座って休憩してみよう。\"],\r\n    /* 47 */ [\"なんかはっちゃけたい？きみの思うがままに行動してね。\",\r\n             \"生の音楽聴いてテンションあげよう。\"],\r\n    /* 48 */ [\"新たな出会いを求めているのかも。誰よりも好奇心旺盛な1日になるよ。\",\r\n             \"いつもとちがう道で帰宅してみよう。\"],\r\n    /* 49 */ [\"ちょっと悶々としているのかも。今日は嫌なことから離れていいんだよ。\",\r\n             \"そんなときは歌って踊っちゃおう。\"],\r\n    /* 50 */ [\"ちょっと寂しいのかも。きみに会いたい人はすぐそこにいっぱいいるよ。\",\r\n             \"友達と集まっていっぱい喋ろう。\"],\r\n    /* 51 */ [\"日常の楽しさに気づけるかも。楽しい時間はまだまだ続くよ。\",\r\n             \"もう少しだけここにいてみよう。\"],\r\n    /* 52 */ [\"松ヶ崎祭に心惹かれている。1つでも多くまわってみよう。\",\r\n             \"5か6のつくものを選んでみよう。\"],\r\n    /* 53 */ [\"我が道を行きたい気分。いつもとは違う出会いがあるかも。\",\r\n             \"人混みを避けてみよう。\"],\r\n    /* 54 */ [\"自分だけの居場所を作りたい気分。このキャンパスにもきっとあるよ。\",\r\n             \"大学のお気に入りスポットを見つけてみよう。\"],\r\n    /* 55 */ [\"いろんなことに気がつけるかも。小さな幸せを見つけるのも簡単。\",\r\n             \"お気に入りの作品を見つけて持ち帰ろう。\"],\r\n    /* 56 */ [\"人とのつながりを大切のできる日。誰かを喜ばせてみよう。\",\r\n             \"大切な人へ贈り物をしよう。\"],\r\n  ];\r\n\r\n  /* 演出の長さ（CSSの --spin-duration と自動で揃います） */\r\n  const SPIN_MS = parseFloat(\r\n    getComputedStyle(document.documentElement).getPropertyValue('--spin-duration')\r\n  ) || 3000;\r\n\r\n  const startScreen   = document.getElementById('startScreen');\r\n  const loadingScreen = document.getElementById('loadingScreen');\r\n  const resultScreen  = document.getElementById('resultScreen');\r\n\r\n  const dreamInput = document.getElementById('dreamInput');\r\n  const counter    = document.getElementById('counter');\r\n  const startBtn   = document.getElementById('startBtn');\r\n  const againBtn   = document.getElementById('againBtn');\r\n  const starFill   = document.getElementById('starFill');\r\n  const pct        = document.getElementById('pct');\r\n\r\n  const fortuneText = document.getElementById('fortuneText');\r\n  const messageText = document.getElementById('messageText');\r\n\r\n  /* ぐるぐるの巻き戻しは CSS のマスクだけで動くので、JS は要りません */\r\n\r\n  /* ---- 入力欄 ---- */\r\n  dreamInput.addEventListener('input', () => {\r\n    const len = dreamInput.value.length;\r\n    counter.textContent = `${len} / 100`;\r\n    counter.classList.toggle('over', len >= 100);\r\n    startBtn.disabled = len === 0;\r\n  });\r\n\r\n  function showScreen(el){\r\n    [startScreen, loadingScreen, resultScreen].forEach(s => s.classList.remove('active'));\r\n    el.classList.add('active');\r\n  }\r\n\r\n  /* ====== キーワード分類 ======\r\n     words … 夢の文に含まれていたら反応する語\r\n     picks … そのとき出す結果の番号（RESULTS の 1〜56）\r\n     語を足したいときはここに書き足すだけでOKです  */\r\n  const CATEGORIES = [\r\n    { name: \"food\",      /* 食べ物・空腹の夢 */\r\n      words: [\"食べ\", \"ご飯\", \"ごはん\", \"飯\", \"お腹\", \"おなか\", \"空腹\", \"甘い\", \"甘く\", \"お菓子\", \"ケーキ\", \"ラーメン\", \"パン\", \"肉\", \"寿司\", \"カレー\", \"料理\", \"味\", \"焼き\", \"飲ん\", \"飲む\", \"ジュース\", \"おいし\", \"美味し\", \"オルタス\"],\r\n      picks: [12, 14, 19, 24, 26, 27, 32, 35, 37, 42, 45] },\r\n    { name: \"sky\",       /* 空・飛ぶ・落ちる夢 */\r\n      words: [\"飛ん\", \"飛ぶ\", \"飛べ\", \"空を\", \"空へ\", \"空が\", \"雲\", \"浮い\", \"浮か\", \"ジャンプ\", \"羽\", \"翼\", \"落ち\"],\r\n      picks: [21, 38, 22, 16, 1] },\r\n    { name: \"light\",     /* 星・光・虹の夢 */\r\n      words: [\"星\", \"光\", \"虹\", \"月\", \"輝\", \"きらきら\", \"キラキラ\", \"まぶし\", \"夜空\"],\r\n      picks: [5, 15, 28, 44] },\r\n    { name: \"people\",    /* 人と会う夢 */\r\n      words: [\"友達\", \"友人\", \"ともだち\", \"先輩\", \"後輩\", \"家族\", \"お母\", \"お父\", \"母\", \"父\", \"兄\", \"姉\", \"妹\", \"弟\", \"知らない人\", \"みんな\", \"誰か\", \"だれか\", \"会っ\", \"会う\", \"喋\", \"しゃべ\", \"話し\", \"集ま\"],\r\n      picks: [6, 17, 23, 31, 37, 39, 40, 45, 48, 50, 56] },\r\n    { name: \"love\",      /* 恋・ときめきの夢 */\r\n      words: [\"好きな人\", \"恋\", \"告白\", \"恋人\", \"彼氏\", \"彼女\", \"デート\", \"キス\", \"結婚\", \"ときめ\", \"片思い\", \"抱き\"],\r\n      picks: [31, 36, 44, 32, 43] },\r\n    { name: \"music\",     /* 音楽・踊りの夢 */\r\n      words: [\"歌\", \"踊\", \"音楽\", \"ライブ\", \"ダンス\", \"楽器\", \"ピアノ\", \"ギター\", \"演奏\", \"リズム\", \"ステージ\"],\r\n      picks: [18, 29, 34, 47, 49] },\r\n    { name: \"water\",     /* 水・海・雨の夢 */\r\n      words: [\"海\", \"川\", \"雨\", \"泳\", \"水\", \"池\", \"プール\", \"湖\", \"船\", \"波\", \"溺\", \"風呂\", \"濡れ\"],\r\n      picks: [35, 36, 46, 42, 21] },\r\n    { name: \"animal\",    /* 動物の夢 */\r\n      words: [\"猫\", \"ねこ\", \"犬\", \"いぬ\", \"鳥\", \"魚\", \"動物\", \"うさぎ\", \"ウサギ\", \"熊\", \"虫\", \"蝶\", \"馬\", \"象\", \"ペット\"],\r\n      picks: [2, 55, 9, 44, 29] },\r\n    { name: \"chase\",     /* 追われる・不安な夢 */\r\n      words: [\"追わ\", \"追い\", \"追っ\", \"逃げ\", \"怖\", \"恐\", \"遅刻\", \"テスト\", \"試験\", \"失敗\", \"迷子\", \"泣\", \"不安\", \"焦\", \"暗い\", \"落ちた\", \"事故\", \"出られ\"],\r\n      picks: [20, 24, 46, 49, 50] },\r\n    { name: \"travel\",    /* 移動・道・旅の夢 */\r\n      words: [\"電車\", \"バス\", \"道\", \"迷\", \"旅\", \"駅\", \"車\", \"自転車\", \"歩い\", \"走\", \"帰\", \"出かけ\", \"知らない場所\", \"street\"],\r\n      picks: [16, 33, 48, 51, 53, 54] },\r\n    { name: \"create\",    /* 作る・描く夢 */\r\n      words: [\"作っ\", \"作る\", \"描\", \"絵\", \"手づくり\", \"手作り\", \"工作\", \"展示\", \"アート\", \"デザイン\", \"写真\", \"撮\"],\r\n      picks: [7, 8, 9, 13, 17, 55] },\r\n    { name: \"study\",     /* 勉強・学校の夢 */\r\n      words: [\"勉強\", \"学校\", \"授業\", \"教室\", \"本\", \"読ん\", \"先生\", \"宿題\", \"レポート\", \"研究\"],\r\n      picks: [3, 41, 4] },\r\n    { name: \"tired\",     /* 疲れ・眠りの夢 */\r\n      words: [\"疲れ\", \"眠\", \"寝\", \"だる\", \"休み\", \"休ん\", \"ベッド\", \"布団\"],\r\n      picks: [19, 24, 46, 42, 50] },\r\n    { name: \"warm\",      /* 寒暖・温もりの夢 */\r\n      words: [\"温か\", \"あたたか\", \"あったか\", \"暖か\", \"寒\", \"冷た\", \"雪\", \"こたつ\", \"毛布\"],\r\n      picks: [42, 45, 19, 50] },\r\n    { name: \"festival\",  /* お祭り・にぎやかな夢 */\r\n      words: [\"祭\", \"花火\", \"屋台\", \"模擬店\", \"縁日\", \"文化祭\", \"学祭\", \"イベント\", \"人混み\", \"にぎや\"],\r\n      picks: [1, 25, 26, 51, 52, 3] },\r\n    { name: \"excite\",    /* 楽しい・うれしい夢 */\r\n      words: [\"楽し\", \"嬉し\", \"うれし\", \"笑\", \"わくわく\", \"ワクワク\", \"どきどき\", \"ドキドキ\", \"幸せ\", \"最高\"],\r\n      picks: [10, 43, 18, 1, 21] },\r\n    { name: \"memory\",    /* 思い出・懐かしい夢 */\r\n      words: [\"思い出\", \"懐かし\", \"なつかし\", \"昔\", \"子ども\", \"子供\", \"小さい頃\", \"実家\", \"卒業\"],\r\n      picks: [11, 6, 51] },\r\n    { name: \"choice\",    /* 迷う・選ぶ夢 */\r\n      words: [\"選\", \"決め\", \"分かれ道\", \"どっち\", \"悩ん\"],\r\n      picks: [4, 22, 30] },\r\n  ];\r\n\r\n  function randomOf(arr){\r\n    return arr[Math.floor(Math.random() * arr.length)];\r\n  }\r\n\r\n  /* 入力文からどのカテゴリに当たるかを判定して結果番号を決める */\r\n  function chooseIndex(text){\r\n    // 1) 各カテゴリで、含まれていた語の数をかぞえる\r\n    let best = 0;\r\n    let winners = [];\r\n    for (const cat of CATEGORIES){\r\n      let score = 0;\r\n      for (const w of cat.words){\r\n        if (text.includes(w)) score++;\r\n      }\r\n      if (score > best){ best = score; winners = [cat]; }\r\n      else if (score === best && score > 0){ winners.push(cat); }\r\n    }\r\n\r\n    // 2) どれにも当たらなければ、56件から完全ランダム\r\n    if (best === 0){\r\n      return Math.floor(Math.random() * RESULTS.length);\r\n    }\r\n\r\n    // 3) 当たったカテゴリ（同点ならその中から1つ）の候補から選ぶ\r\n    const cat = randomOf(winners);\r\n    return randomOf(cat.picks) - 1;   // picks は1始まりなので -1\r\n  }\r\n\r\n  function pickResult(){\r\n    const text = dreamInput.value.trim();\r\n    const i = text ? chooseIndex(text)\r\n                   : Math.floor(Math.random() * RESULTS.length);\r\n    fortuneText.textContent = RESULTS[i][0];\r\n    messageText.textContent = RESULTS[i][1];\r\n  }\r\n\r\n  /* ---- 星のゲージ：0% → 100% ---- */\r\n  let gaugeRAF = null;\r\n  const starGauge = document.querySelector('.star-gauge');\r\n\r\n  function runGauge(duration){\r\n    cancelAnimationFrame(gaugeRAF);\r\n    const t0 = performance.now();\r\n    function step(now){\r\n      const t = Math.min((now - t0) / duration, 1);\r\n      const eased = t < .5 ? 2*t*t : 1 - Math.pow(-2*t+2, 2)/2;   // ゆるやかに加減速\r\n\r\n      // 水面がゆらゆらするように、ほんの少しだけ上下に揺らす\r\n      const wobble = Math.sin(now / 260) * 1.4 * (1 - eased);\r\n      const p = Math.max(0, Math.min(100, eased * 100 + wobble));\r\n\r\n      starGauge.style.setProperty('--p', p.toFixed(2));\r\n      pct.textContent = Math.round(eased * 100) + '%';\r\n      if (t < 1) gaugeRAF = requestAnimationFrame(step);\r\n    }\r\n    gaugeRAF = requestAnimationFrame(step);\r\n  }\r\n  function resetGauge(){\r\n    cancelAnimationFrame(gaugeRAF);\r\n    starGauge.style.setProperty('--p', 0);\r\n    pct.textContent = '0%';\r\n  }\r\n\r\n  /* ---- メイン ---- */\r\n  function runFortune(){\r\n    loadingScreen.classList.remove('deepen', 'leave');\r\n    resetGauge();\r\n    showScreen(loadingScreen);\r\n\r\n    requestAnimationFrame(() => {\r\n      // 背景の夜化・雲のはけ・ぐるぐるの巻き戻し・ゲージを同時にスタート\r\n      loadingScreen.classList.add('deepen', 'leave');\r\n      runGauge(SPIN_MS);\r\n    });\r\n\r\n    // ゲージが満タンになってすこし余韻をもたせてから結果へ\r\n    setTimeout(() => {\r\n      pickResult();\r\n      showScreen(resultScreen);\r\n    }, SPIN_MS + 500);\r\n  }\r\n\r\n  startBtn.addEventListener('click', runFortune);\r\n\r\n  againBtn.addEventListener('click', () => {\r\n    dreamInput.value = '';\r\n    counter.textContent = '0 / 100';\r\n    counter.classList.remove('over');\r\n    startBtn.disabled = true;\r\n    resetGauge();\r\n    showScreen(startScreen);\r\n  });\r\n\r\n  /* 全画面に入れる端末では横向きに固定します。\r\n     非対応のブラウザでは失敗するだけなので、エラーは握りつぶします */\r\n  (function lockLandscape(){\r\n    if (!screen.orientation || !screen.orientation.lock) return;\r\n    const tryLock = () => screen.orientation.lock('landscape').catch(()=>{});\r\n    document.addEventListener('fullscreenchange', tryLock);\r\n    tryLock();\r\n  })();\r\n</script>\r\n</body>\r\n</html>\r\n\r\n",
+      "htmlZip": {
+        "path": "index.html",
+        "assetIds": [
+          "asset_mwfe83t61ru4s0",
+          "asset_mwfe84rr1sfz1m",
+          "asset_mwfe85e21t8zav",
+          "asset_mwfe86mp1ujg0g",
+          "asset_mwfe871r1v21ma",
+          "asset_mwfe87gz1wb4ge",
+          "asset_mwfe87yq1xeui7",
+          "asset_mwfe899e1ynx4t",
+          "asset_mwfe8ard1zaq4y",
+          "asset_mwfe8bbe20r516",
+          "asset_mwfe8bve2160gg",
+          "asset_mwfe8cci22n2f5",
+          "asset_mwfe8cr2234781"
+        ]
+      },
+      "unpublished": true
     }
   },
   "nodes": {
@@ -255598,8 +255658,8 @@
           "steps": [
             {
               "id": "st_mvotw7rz2eu3",
-              "kind": "open-page",
-              "pageId": "page_mvhy09pt5kscnf"
+              "kind": "open-url",
+              "url": "https://vote.matsufes.info/"
             }
           ],
           "pos": {
@@ -261090,40 +261150,6 @@
         }
       }
     },
-    "node_mvhyhtua4f1dnx": {
-      "id": "node_mvhyhtua4f1dnx",
-      "type": "image",
-      "name": "ボタン.png",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmv6zgfuc-asset.png",
-        "alt": "地図をひらくボタン",
-        "width": 300,
-        "height": 107,
-        "assetId": "asset_mv6zgg9ff"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "position": "absolute",
-            "left": "0px",
-            "top": "0px",
-            "width": "100%",
-            "height": "100%",
-            "zIndex": "1"
-          }
-        }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ]
-    },
     "node_mvhyhtua4iyj0b": {
       "id": "node_mvhyhtua4iyj0b",
       "type": "box",
@@ -261416,7 +261442,6 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mvhyhtua4f1dnx",
         "node_mvhys10w752ii5",
         "node_mvhyhtua4gbw37"
       ],
@@ -261462,7 +261487,15 @@
       "name": "地図を開く",
       "semantic": "auto",
       "text": null,
-      "link": null,
+      "link": {
+        "kind": "url",
+        "url": "https://map.matsufes.info/?id={data.publicId}",
+        "newTab": false,
+        "pos": {
+          "x": 32,
+          "y": 32
+        }
+      },
       "children": [
         "node_mvhyhtua4eqt8k"
       ],
@@ -262810,349 +262843,6 @@
         "md"
       ]
     },
-    "node_mvhyhtub5tl6sw": {
-      "id": "node_mvhyhtub5tl6sw",
-      "type": "image",
-      "name": "favon",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmv85ojck-fav.svg",
-        "alt": "お気に入り登録済",
-        "width": 154,
-        "height": 150,
-        "assetId": "asset_mv85ojw0r",
-        "priority": true
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "100%",
-            "height": "100%"
-          }
-        }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ],
-      "attrId": "fav-svg",
-      "scripts": [
-        {
-          "id": "sc_mv8ags1t9",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_restore_c0f1e43b482ac2d",
-              "kind": "set-var",
-              "into": "__tsumu_restore_50c381f75b067bc_db6ba8ffc395aaf_wanted",
-              "value": "{data.publicId}"
-            },
-            {
-              "id": "st_mv8ah1fza",
-              "kind": "if",
-              "cond": {
-                "subject": "var",
-                "target": "",
-                "left": "{__tsumu_restore_50c381f75b067bc_db6ba8ffc395aaf_wanted}",
-                "op": "empty",
-                "value": "",
-                "not": true
-              },
-              "then": [
-                {
-                  "id": "st_restore_d5e04fa1e8799d7",
-                  "kind": "transform",
-                  "source": "mf_bookmarks",
-                  "into": "__tsumu_restore_50c381f75b067bc_db6ba8ffc395aaf_initial",
-                  "transform": {
-                    "kind": "fallback",
-                    "text": "",
-                    "when": "nullish"
-                  }
-                },
-                {
-                  "id": "st_restore_a77d4c3d2609611",
-                  "kind": "transform",
-                  "source": "__tsumu_restore_50c381f75b067bc_db6ba8ffc395aaf_initial",
-                  "into": "__tsumu_restore_50c381f75b067bc_db6ba8ffc395aaf_parts",
-                  "transform": {
-                    "kind": "split",
-                    "separator": "."
-                  }
-                },
-                {
-                  "id": "st_restore_88bc72b8742b0ba",
-                  "kind": "set-var",
-                  "into": "__tsumu_restore_50c381f75b067bc_db6ba8ffc395aaf_wanted",
-                  "value": "{data.publicId}"
-                },
-                {
-                  "id": "st_restore_352cde8dbb8c907",
-                  "kind": "set-var",
-                  "into": "__tsumu_restore_50c381f75b067bc_db6ba8ffc395aaf_output",
-                  "value": "[]"
-                },
-                {
-                  "id": "st_restore_16f9c5ad5b32d0e",
-                  "kind": "set-var",
-                  "into": "__tsumu_restore_50c381f75b067bc_db6ba8ffc395aaf_found",
-                  "value": "false"
-                },
-                {
-                  "id": "st_restore_5d1156b7d412c91",
-                  "kind": "for-each",
-                  "array": "__tsumu_restore_50c381f75b067bc_db6ba8ffc395aaf_parts",
-                  "then": [
-                    {
-                      "id": "st_restore_7b817c1161292d9",
-                      "kind": "if",
-                      "cond": {
-                        "subject": "var",
-                        "target": "",
-                        "left": "{ループ.値}",
-                        "op": "eq",
-                        "value": "{__tsumu_restore_50c381f75b067bc_db6ba8ffc395aaf_wanted}"
-                      },
-                      "then": [
-                        {
-                          "id": "st_restore_30e1acb246075b5",
-                          "kind": "set-var",
-                          "into": "__tsumu_restore_50c381f75b067bc_db6ba8ffc395aaf_found",
-                          "value": "true"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "st_restore_f9c649fb4572a8b",
-                      "kind": "set-list-item",
-                      "list": "__tsumu_restore_50c381f75b067bc_db6ba8ffc395aaf_output",
-                      "key": "",
-                      "value": "{ループ.値}"
-                    }
-                  ]
-                },
-                {
-                  "id": "st_restore_be4f73b570982d8",
-                  "kind": "if",
-                  "cond": {
-                    "subject": "var",
-                    "target": "",
-                    "left": "{__tsumu_restore_50c381f75b067bc_db6ba8ffc395aaf_found}",
-                    "op": "eq",
-                    "value": "false"
-                  },
-                  "then": [
-                    {
-                      "id": "st_restore_d2a4f6d50434afa",
-                      "kind": "set-list-item",
-                      "list": "__tsumu_restore_50c381f75b067bc_db6ba8ffc395aaf_output",
-                      "key": "",
-                      "value": "{__tsumu_restore_50c381f75b067bc_db6ba8ffc395aaf_wanted}"
-                    }
-                  ]
-                },
-                {
-                  "id": "st_restore_1f9ac0a2c33e7e4",
-                  "kind": "transform",
-                  "source": "__tsumu_restore_50c381f75b067bc_db6ba8ffc395aaf_output",
-                  "into": "mf_bookmarks",
-                  "transform": {
-                    "kind": "join",
-                    "separator": "."
-                  }
-                }
-              ]
-            },
-            {
-              "id": "st_mv8amqjy1",
-              "kind": "store-save",
-              "key": "mf_bookmarks",
-              "value": "{mf_bookmarks}",
-              "shared": true
-            },
-            {
-              "id": "st_mv8aqwy52",
-              "kind": "hide",
-              "target": "fav-svg"
-            },
-            {
-              "id": "st_mv8ar4od3",
-              "kind": "show",
-              "target": "favoff"
-            }
-          ],
-          "pos": {
-            "x": 115,
-            "y": 2282
-          }
-        }
-      ]
-    },
-    "node_mvhyhtub5uthqt": {
-      "id": "node_mvhyhtub5uthqt",
-      "type": "image",
-      "name": "favoff",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmuzsclnm-pasted-artwork.svg",
-        "alt": "お気に入り未登録",
-        "width": 209,
-        "height": 204,
-        "assetId": "asset_muzscm1x4o"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "100%",
-            "position": "absolute",
-            "left": "0px",
-            "top": "0px",
-            "height": "100%"
-          }
-        }
-      },
-      "attrId": "favoff",
-      "scripts": [
-        {
-          "id": "sc_mv8arecc4",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_restore_0c46543e9c51275",
-              "kind": "set-var",
-              "into": "__tsumu_restore_50c381f75b067bc_dd44a3b65297744_wanted",
-              "value": "{data.publicId}"
-            },
-            {
-              "id": "st_mv8arecc5",
-              "kind": "if",
-              "cond": {
-                "subject": "var",
-                "target": "",
-                "left": "{__tsumu_restore_50c381f75b067bc_dd44a3b65297744_wanted}",
-                "op": "empty",
-                "value": "",
-                "not": true
-              },
-              "then": [
-                {
-                  "id": "st_restore_f20f42f3bcb2c22",
-                  "kind": "transform",
-                  "source": "mf_bookmarks",
-                  "into": "__tsumu_restore_50c381f75b067bc_dd44a3b65297744_initial",
-                  "transform": {
-                    "kind": "fallback",
-                    "text": "",
-                    "when": "nullish"
-                  }
-                },
-                {
-                  "id": "st_restore_02af408c373ee0b",
-                  "kind": "transform",
-                  "source": "__tsumu_restore_50c381f75b067bc_dd44a3b65297744_initial",
-                  "into": "__tsumu_restore_50c381f75b067bc_dd44a3b65297744_parts",
-                  "transform": {
-                    "kind": "split",
-                    "separator": "."
-                  }
-                },
-                {
-                  "id": "st_restore_326a6d9c7342f67",
-                  "kind": "set-var",
-                  "into": "__tsumu_restore_50c381f75b067bc_dd44a3b65297744_wanted",
-                  "value": "{data.publicId}"
-                },
-                {
-                  "id": "st_restore_a63242e6569e350",
-                  "kind": "set-var",
-                  "into": "__tsumu_restore_50c381f75b067bc_dd44a3b65297744_output",
-                  "value": "[]"
-                },
-                {
-                  "id": "st_restore_85e8af15b97cf1a",
-                  "kind": "set-var",
-                  "into": "__tsumu_restore_50c381f75b067bc_dd44a3b65297744_found",
-                  "value": "false"
-                },
-                {
-                  "id": "st_restore_3dc5f83fb241e5e",
-                  "kind": "for-each",
-                  "array": "__tsumu_restore_50c381f75b067bc_dd44a3b65297744_parts",
-                  "then": [
-                    {
-                      "id": "st_restore_39e7fbe0d55f65f",
-                      "kind": "if",
-                      "cond": {
-                        "subject": "var",
-                        "target": "",
-                        "left": "{ループ.値}",
-                        "op": "eq",
-                        "value": "{__tsumu_restore_50c381f75b067bc_dd44a3b65297744_wanted}"
-                      },
-                      "then": [],
-                      "else": [
-                        {
-                          "id": "st_restore_76dcef30da2e4e9",
-                          "kind": "set-list-item",
-                          "list": "__tsumu_restore_50c381f75b067bc_dd44a3b65297744_output",
-                          "key": "",
-                          "value": "{ループ.値}"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "st_restore_28a4fd14a7131bb",
-                  "kind": "transform",
-                  "source": "__tsumu_restore_50c381f75b067bc_dd44a3b65297744_output",
-                  "into": "mf_bookmarks",
-                  "transform": {
-                    "kind": "join",
-                    "separator": "."
-                  }
-                }
-              ]
-            },
-            {
-              "id": "st_mv8arecc6",
-              "kind": "store-save",
-              "key": "mf_bookmarks",
-              "value": "{mf_bookmarks}",
-              "shared": true
-            },
-            {
-              "id": "st_mv8arecc7",
-              "kind": "hide",
-              "target": "favoff"
-            },
-            {
-              "id": "st_mv8arecc8",
-              "kind": "show",
-              "target": "fav-svg"
-            }
-          ],
-          "pos": {
-            "x": 156,
-            "y": 2503
-          }
-        }
-      ],
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ]
-    },
     "node_mvhyhtub5stddx": {
       "id": "node_mvhyhtub5stddx",
       "type": "box",
@@ -263161,10 +262851,8 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mvhyhtub5tl6sw",
-        "node_mvhzfy187hwcak",
-        "node_mwe6sh6p1nfbjt",
-        "node_mvhyhtub5uthqt"
+        "node_mwfgx8mu24ie5c",
+        "node_mwfgyp5e256gde"
       ],
       "styles": {
         "base": {
@@ -263226,8 +262914,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mvhyhtub5stddx",
-        "node_mvhyhtub5vw50e"
+        "node_mvhyhtub5stddx"
       ],
       "styles": {
         "base": {
@@ -263373,7 +263060,8 @@
           "direction": "normal",
           "fillMode": "both"
         }
-      ]
+      ],
+      "attrId": "vote"
     },
     "node_mvhyhtub5qk8ug": {
       "id": "node_mvhyhtub5qk8ug",
@@ -263410,7 +263098,85 @@
             "gap": "18px"
           }
         }
-      }
+      },
+      "scripts": [
+        {
+          "id": "sc_mwfep6az268u",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mwfepi6y3fwb",
+              "kind": "if",
+              "cond": {
+                "subject": "var",
+                "target": "",
+                "left": "{お気に入り}",
+                "op": "contains",
+                "value": "{data.publicId}"
+              },
+              "then": [
+                {
+                  "id": "st_mwfh65iga0v0",
+                  "kind": "remove-list-item",
+                  "list": "お気に入り",
+                  "mode": "value",
+                  "value": "{data.publicId}"
+                },
+                {
+                  "id": "st_mwfer4o14mqz",
+                  "kind": "hide",
+                  "target": "div-41"
+                },
+                {
+                  "id": "st_mwfersy75cas",
+                  "kind": "show",
+                  "target": "div-43"
+                }
+              ],
+              "else": [
+                {
+                  "id": "st_mwfh6v6jcjh2",
+                  "kind": "set-list-item",
+                  "list": "お気に入り",
+                  "key": "",
+                  "value": "{data.publicId}"
+                },
+                {
+                  "id": "st_mwfh5p8c8u90",
+                  "kind": "hide",
+                  "target": "div-43"
+                },
+                {
+                  "id": "st_mwfh5wmj96xk",
+                  "kind": "show",
+                  "target": "div-41"
+                }
+              ]
+            },
+            {
+              "id": "st_mwfh78e0dhti",
+              "kind": "transform",
+              "source": "お気に入り",
+              "into": "mf_bookmarks",
+              "transform": {
+                "kind": "join",
+                "separator": "."
+              }
+            },
+            {
+              "id": "st_mwfh7to2ebf6",
+              "kind": "store-save",
+              "key": "mf_bookmarks",
+              "value": "{mf_bookmarks}",
+              "shared": true
+            }
+          ],
+          "pos": {
+            "x": 1195,
+            "y": 2558
+          }
+        }
+      ]
     },
     "node_mvhyhtub61utjz": {
       "id": "node_mvhyhtub61utjz",
@@ -264381,10 +264147,11 @@
       "text": null,
       "link": null,
       "image": {
-        "src": "",
+        "src": "/api/assets/file?path=assets%2Fmvhzjzjhfe87d9-pasted-artwork.svg",
         "alt": "",
-        "width": 238,
-        "height": 52
+        "width": 242,
+        "height": 61,
+        "assetId": "asset_mvhzk03x7o62uw"
       },
       "children": [],
       "styles": {
@@ -264395,7 +264162,7 @@
             "borderRadius": "0px",
             "position": "absolute",
             "left": "0%",
-            "top": "9%"
+            "top": "1%"
           }
         }
       }
@@ -264431,36 +264198,6 @@
           }
         }
       }
-    },
-    "node_mvhzfy187hwcak": {
-      "id": "node_mvhzfy187hwcak",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "",
-        "alt": "",
-        "width": 90,
-        "height": 93
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "90px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ]
     },
     "node_mvhzgzku7l6ybt": {
       "id": "node_mvhzgzku7l6ybt",
@@ -276307,7 +276044,13 @@
             "marginTop": "100px"
           }
         }
-      }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
+      ]
     },
     "node_mvzcltfe59o4m4": {
       "id": "node_mvzcltfe59o4m4",
@@ -277143,7 +276886,8 @@
             "maxWidth": "130px",
             "borderRadius": "0px",
             "marginLeft": "10px",
-            "minWidth": "75px"
+            "minWidth": "75px",
+            "cursor": "pointer"
           }
         },
         "sm": {
@@ -277178,6 +276922,20 @@
             "x": 1120,
             "y": 279
           }
+        }
+      ],
+      "motions": [
+        {
+          "id": "motion_mwf16glcboivc5",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.3,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
         }
       ]
     },
@@ -285386,8 +285144,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "1920px",
-            "maxWidth": "100%",
+            "width": "100%",
             "borderRadius": "0px"
           }
         }
@@ -285781,7 +285538,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mw0m7b9011k8rcf",
+        "node_mwfh0yew29o3qv",
         "node_mw0m7b9011lt8qr",
         "node_mw0m7b9011nbdfy"
       ],
@@ -285812,34 +285569,6 @@
           "fillMode": "both"
         }
       ],
-      "hiddenOn": [
-        "sm"
-      ]
-    },
-    "node_mw0m7b9011k8rcf": {
-      "id": "node_mw0m7b9011k8rcf",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmw07qugk2faeee-pasted-artwork.svg",
-        "alt": "",
-        "width": 1920,
-        "height": 1227,
-        "assetId": "asset_mvzeoxjo1hr08c"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1920px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        }
-      },
       "hiddenOn": [
         "sm"
       ]
@@ -286229,7 +285958,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mw0m84k311wq3f8",
+        "node_mwfh209q2bmli0",
         "node_mw0m84k311x48c7",
         "node_mw0m84k311zlxjn"
       ],
@@ -286260,34 +285989,6 @@
           "fillMode": "both"
         }
       ],
-      "hiddenOn": [
-        "sm"
-      ]
-    },
-    "node_mw0m84k311wq3f8": {
-      "id": "node_mw0m84k311wq3f8",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmw07qugk2faeee-pasted-artwork.svg",
-        "alt": "",
-        "width": 1920,
-        "height": 1227,
-        "assetId": "asset_mvzeoxjo1hr08c"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1920px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        }
-      },
       "hiddenOn": [
         "sm"
       ]
@@ -286677,7 +286378,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mw0m8nsn128uijo",
+        "node_mwfh28gs2c3nov",
         "node_mw0m8nsn1292wgh",
         "node_mw0m8nsn12bqcnu"
       ],
@@ -286708,34 +286409,6 @@
           "fillMode": "both"
         }
       ],
-      "hiddenOn": [
-        "sm"
-      ]
-    },
-    "node_mw0m8nsn128uijo": {
-      "id": "node_mw0m8nsn128uijo",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmw07qugk2faeee-pasted-artwork.svg",
-        "alt": "",
-        "width": 1920,
-        "height": 1227,
-        "assetId": "asset_mvzeoxjo1hr08c"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1920px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        }
-      },
       "hiddenOn": [
         "sm"
       ]
@@ -287125,7 +286798,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mw0m99ue12k3ort",
+        "node_mwfh2nel2dkvxz",
         "node_mw0m99ue12lbur1",
         "node_mw0m99ue12ni2wq"
       ],
@@ -287156,34 +286829,6 @@
           "fillMode": "both"
         }
       ],
-      "hiddenOn": [
-        "sm"
-      ]
-    },
-    "node_mw0m99ue12k3ort": {
-      "id": "node_mw0m99ue12k3ort",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmw07qugk2faeee-pasted-artwork.svg",
-        "alt": "",
-        "width": 1920,
-        "height": 1227,
-        "assetId": "asset_mvzeoxjo1hr08c"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1920px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        }
-      },
       "hiddenOn": [
         "sm"
       ]
@@ -287573,7 +287218,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mw0ma3xm12wop16",
+        "node_mwfh303n2eho6d",
         "node_mw0ma3xm12xfqbl",
         "node_mw0ma3xm12zi5hr"
       ],
@@ -287604,34 +287249,6 @@
           "fillMode": "both"
         }
       ],
-      "hiddenOn": [
-        "sm"
-      ]
-    },
-    "node_mw0ma3xm12wop16": {
-      "id": "node_mw0ma3xm12wop16",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmw07qugk2faeee-pasted-artwork.svg",
-        "alt": "",
-        "width": 1920,
-        "height": 1227,
-        "assetId": "asset_mvzeoxjo1hr08c"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1920px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        }
-      },
       "hiddenOn": [
         "sm"
       ]
@@ -288021,7 +287638,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mw0majf5138szbi",
+        "node_mwfh38b32f38eu",
         "node_mw0majf5139oepk",
         "node_mw0majf513bisjm"
       ],
@@ -288052,34 +287669,6 @@
           "fillMode": "both"
         }
       ],
-      "hiddenOn": [
-        "sm"
-      ]
-    },
-    "node_mw0majf5138szbi": {
-      "id": "node_mw0majf5138szbi",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmw07qugk2faeee-pasted-artwork.svg",
-        "alt": "",
-        "width": 1920,
-        "height": 1227,
-        "assetId": "asset_mvzeoxjo1hr08c"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1920px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        }
-      },
       "hiddenOn": [
         "sm"
       ]
@@ -288469,7 +288058,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mw0maxs313klm9p",
+        "node_mwfh3ip32gusmb",
         "node_mw0maxs313lbkeu",
         "node_mw0maxs313ntaes"
       ],
@@ -288500,34 +288089,6 @@
           "fillMode": "both"
         }
       ],
-      "hiddenOn": [
-        "sm"
-      ]
-    },
-    "node_mw0maxs313klm9p": {
-      "id": "node_mw0maxs313klm9p",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmw07qugk2faeee-pasted-artwork.svg",
-        "alt": "",
-        "width": 1920,
-        "height": 1227,
-        "assetId": "asset_mvzeoxjo1hr08c"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1920px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        }
-      },
       "hiddenOn": [
         "sm"
       ]
@@ -308660,7 +308221,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mwb0f1ob6kxqg8",
+        "node_mwfh1k4n2aet0o",
         "node_mwb0f1ob6lgfbt",
         "node_mwb0f1ob6n9f0z"
       ],
@@ -308691,34 +308252,6 @@
           "fillMode": "both"
         }
       ],
-      "hiddenOn": [
-        "sm"
-      ]
-    },
-    "node_mwb0f1ob6kxqg8": {
-      "id": "node_mwb0f1ob6kxqg8",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmw07qugk2faeee-pasted-artwork.svg",
-        "alt": "",
-        "width": 1920,
-        "height": 1227,
-        "assetId": "asset_mvzeoxjo1hr08c"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1920px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        }
-      },
       "hiddenOn": [
         "sm"
       ]
@@ -313748,7 +313281,7 @@
     "node_mwbzufjz8948za": {
       "id": "node_mwbzufjz8948za",
       "type": "box",
-      "name": "メインテ〜マ",
+      "name": "ゲーム",
       "semantic": "auto",
       "text": null,
       "link": null,
@@ -313782,7 +313315,7 @@
     "node_mwbzufjz8aa1cf": {
       "id": "node_mwbzufjz8aa1cf",
       "type": "box",
-      "name": "メインテ〜マタイトル",
+      "name": "タイトル",
       "semantic": "auto",
       "text": null,
       "link": null,
@@ -316479,7 +316012,7 @@
             "alignItems": "center",
             "marginTop": "0px",
             "marginBottom": "0px",
-            "height": "21.7%"
+            "height": "23.2%"
           }
         },
         "sm": {
@@ -316502,7 +316035,7 @@
           "default": {
             "display": "flex",
             "flexDirection": "column",
-            "height": "25.5%",
+            "height": "28.6%",
             "paddingRight": "0px",
             "paddingLeft": "0px"
           }
@@ -316852,14 +316385,14 @@
         "md": {
           "default": {
             "display": "block",
-            "height": "23.7%"
+            "height": "185px"
           }
         },
         "lg": {
           "default": {
             "display": "flex",
             "flexDirection": "column",
-            "height": "24%"
+            "height": "239px"
           }
         }
       },
@@ -346315,6 +345848,815 @@
           }
         }
       }
+    },
+    "node_mwf92x301miwep": {
+      "id": "node_mwf92x301miwep",
+      "type": "box",
+      "name": "ゲーム",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwf92x321n9gqj"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "height": "100%",
+            "width": "100%",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "marginTop": "200px"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingTop": "0px",
+            "paddingBottom": "0px",
+            "marginTop": "200px"
+          }
+        }
+      },
+      "motions": []
+    },
+    "node_mwf92x321n9gqj": {
+      "id": "node_mwf92x321n9gqj",
+      "type": "box",
+      "name": "タイトル",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwf95g4r1vd9jz"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "padding": "20px",
+            "gap": "12px",
+            "flexDirection": "column",
+            "width": "45%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "70%"
+          }
+        },
+        "lg": {
+          "default": {
+            "width": "50%"
+          }
+        }
+      }
+    },
+    "node_mwf92x321p4o09": {
+      "id": "node_mwf92x321p4o09",
+      "type": "box",
+      "name": "乙女ゲー",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwf92x321qd1ua",
+        "node_mwf92x321r12n4",
+        "node_mwf9iv7m2cmowv"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "marginTop": "0px",
+            "marginBottom": "200px"
+          }
+        },
+        "sm": {
+          "default": {
+            "marginTop": "0px"
+          }
+        }
+      }
+    },
+    "node_mwf92x321qd1ua": {
+      "id": "node_mwf92x321qd1ua",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "第56回松ヶ崎祭オリジナルゲームが新登場！\nきみも まつぴよと 恋に落ちちゃう・・・！？",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "30px",
+            "lineHeight": "1.7",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontWeight": "900",
+            "textAlign": "center",
+            "color": "#ffffff",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.6)"
+          }
+        },
+        "md": {
+          "default": {
+            "fontSize": "20px"
+          }
+        },
+        "sm": {
+          "default": {
+            "fontSize": "16px"
+          }
+        }
+      }
+    },
+    "node_mwf92x321r12n4": {
+      "id": "node_mwf92x321r12n4",
+      "type": "box",
+      "name": "ゲームボタン",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwf92x321s3ghd"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "60%",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "80%"
+          }
+        }
+      }
+    },
+    "node_mwf92x321s3ghd": {
+      "id": "node_mwf92x321s3ghd",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwbzehb8d5210a-pasted-artwork.svg",
+        "alt": "",
+        "width": 928,
+        "height": 577,
+        "assetId": "asset_mwbzehxg83kv5e"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      }
+    },
+    "node_mwf95g4r1vd9jz": {
+      "id": "node_mwf95g4r1vd9jz",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwf95fkjc43c0f-pasted-artwork.svg",
+        "alt": "",
+        "width": 718,
+        "height": 176,
+        "assetId": "asset_mwf95g4k1ue6uy"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "718px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      }
+    },
+    "node_mwf96cxe1w0le2": {
+      "id": "node_mwf96cxe1w0le2",
+      "type": "box",
+      "name": "夢占い",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwf96cxe1xn5u0",
+        "node_mwf9c2yp217lte",
+        "node_mwf9ihzb29zwb1"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "20px",
+            "gap": "12px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "marginTop": "0px",
+            "marginBottom": "200px"
+          }
+        },
+        "sm": {
+          "default": {
+            "marginTop": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
+      ]
+    },
+    "node_mwf96cxe1xn5u0": {
+      "id": "node_mwf96cxe1xn5u0",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "今日　どんな夢をみた？\nきみの夢を　占ってみよう。",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "30px",
+            "lineHeight": "1.7",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontWeight": "900",
+            "textAlign": "center",
+            "color": "#ffffff",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.6)"
+          }
+        },
+        "md": {
+          "default": {
+            "fontSize": "20px"
+          }
+        },
+        "sm": {
+          "default": {
+            "fontSize": "16px"
+          }
+        }
+      }
+    },
+    "node_mwf9c2yp217lte": {
+      "id": "node_mwf9c2yp217lte",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwf9fenf28ut6i"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "70%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "80%"
+          }
+        }
+      }
+    },
+    "node_mwf9fenf28ut6i": {
+      "id": "node_mwf9fenf28ut6i",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwf9fe4af2f240-pasted-artwork.svg",
+        "alt": "",
+        "width": 1262,
+        "height": 1016,
+        "assetId": "asset_mwf9fen5278pnv"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      }
+    },
+    "node_mwf9ihzb29zwb1": {
+      "id": "node_mwf9ihzb29zwb1",
+      "type": "box",
+      "name": "プレイする2",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "page",
+        "pageId": "page_mwfe7cps1p0ktf"
+      },
+      "children": [
+        "node_mwf9ij7b2bonff"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "30%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "50%"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mwf9o6ly2fbc71",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.3,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mwf9ij7b2bonff": {
+      "id": "node_mwf9ij7b2bonff",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwf9iisp6e7048-pasted-artwork.svg",
+        "alt": "",
+        "width": 556,
+        "height": 236,
+        "assetId": "asset_mwf9ij792ap31l"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      }
+    },
+    "node_mwf9iv7m2cmowv": {
+      "id": "node_mwf9iv7m2cmowv",
+      "type": "box",
+      "name": "プレイする1",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "page",
+        "pageId": "page_mwc9rjdp1mjcqw",
+        "newTab": false,
+        "pos": {
+          "x": 111,
+          "y": 269
+        }
+      },
+      "children": [
+        "node_mwf9iv7m2dfyt4"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "30%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "50%"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mwf9nxon2ebh7n",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.3,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mwf9iv7m2dfyt4": {
+      "id": "node_mwf9iv7m2dfyt4",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwf9iisp6e7048-pasted-artwork.svg",
+        "alt": "",
+        "width": 556,
+        "height": 236,
+        "assetId": "asset_mwf9ij792ap31l"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      }
+    },
+    "node_mwfgx8mu24ie5c": {
+      "id": "node_mwfgx8mu24ie5c",
+      "type": "box",
+      "name": "未登録",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwe6sh6p1nfbjt",
+        "node_mvhyhtub5vw50e"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        }
+      },
+      "attrId": "div-43"
+    },
+    "node_mwfgyp5e256gde": {
+      "id": "node_mwfgyp5e256gde",
+      "type": "box",
+      "name": "登録済み",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwfgyp5e26ojtw",
+        "node_mwfgyp5e27qcrq"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
+      ],
+      "attrId": "div-41"
+    },
+    "node_mwfgyp5e26ojtw": {
+      "id": "node_mwfgyp5e26ojtw",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwe6sgmwcd9760-pasted-artwork.svg",
+        "alt": "",
+        "width": 90,
+        "height": 93,
+        "assetId": "asset_mwe6sh6m1m093e"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "90px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      }
+    },
+    "node_mwfgyp5e27qcrq": {
+      "id": "node_mwfgyp5e27qcrq",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "登録済み",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "1rem",
+            "color": "#ffffff",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontWeight": "900",
+            "letterSpacing": "1px",
+            "textShadow": "0px 3px 4px rgba(0, 0, 0, 0.4)",
+            "lineHeight": "1",
+            "textAlign": "center"
+          }
+        },
+        "lg": {
+          "default": {}
+        },
+        "sm": {
+          "default": {
+            "fontSize": "0.9rem"
+          }
+        }
+      }
+    },
+    "node_mwfh0yew29o3qv": {
+      "id": "node_mwfh0yew29o3qv",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw07qugk2faeee-pasted-artwork.svg",
+        "alt": "",
+        "width": 1920,
+        "height": 1227,
+        "assetId": "asset_mvzeoxjo1hr08c"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
+    },
+    "node_mwfh1k4n2aet0o": {
+      "id": "node_mwfh1k4n2aet0o",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw07qugk2faeee-pasted-artwork.svg",
+        "alt": "",
+        "width": 1920,
+        "height": 1227,
+        "assetId": "asset_mvzeoxjo1hr08c"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
+    },
+    "node_mwfh209q2bmli0": {
+      "id": "node_mwfh209q2bmli0",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw07qugk2faeee-pasted-artwork.svg",
+        "alt": "",
+        "width": 1920,
+        "height": 1227,
+        "assetId": "asset_mvzeoxjo1hr08c"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
+    },
+    "node_mwfh28gs2c3nov": {
+      "id": "node_mwfh28gs2c3nov",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw07qugk2faeee-pasted-artwork.svg",
+        "alt": "",
+        "width": 1920,
+        "height": 1227,
+        "assetId": "asset_mvzeoxjo1hr08c"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
+    },
+    "node_mwfh2nel2dkvxz": {
+      "id": "node_mwfh2nel2dkvxz",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw07qugk2faeee-pasted-artwork.svg",
+        "alt": "",
+        "width": 1920,
+        "height": 1227,
+        "assetId": "asset_mvzeoxjo1hr08c"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
+    },
+    "node_mwfh303n2eho6d": {
+      "id": "node_mwfh303n2eho6d",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw07qugk2faeee-pasted-artwork.svg",
+        "alt": "",
+        "width": 1920,
+        "height": 1227,
+        "assetId": "asset_mvzeoxjo1hr08c"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
+    },
+    "node_mwfh38b32f38eu": {
+      "id": "node_mwfh38b32f38eu",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw07qugk2faeee-pasted-artwork.svg",
+        "alt": "",
+        "width": 1920,
+        "height": 1227,
+        "assetId": "asset_mvzeoxjo1hr08c"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
+    },
+    "node_mwfh3ip32gusmb": {
+      "id": "node_mwfh3ip32gusmb",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw07qugk2faeee-pasted-artwork.svg",
+        "alt": "",
+        "width": 1920,
+        "height": 1227,
+        "assetId": "asset_mvzeoxjo1hr08c"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      },
+      "hiddenOn": [
+        "sm"
+      ]
     }
   },
   "assets": {
@@ -352287,6 +352629,278 @@
       "mimeType": "image/webp",
       "width": 1032,
       "height": 981
+    },
+    "asset_mwf95g4k1ue6uy": {
+      "id": "asset_mwf95g4k1ue6uy",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mwf95fkjc43c0f-pasted-artwork.svg",
+      "bytes": 68638,
+      "mimeType": "image/svg+xml",
+      "width": 718,
+      "height": 176,
+      "svgFilter": false
+    },
+    "asset_mwf9c50q22bz7l": {
+      "id": "asset_mwf9c50q22bz7l",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mwf9c4iz1cd21c-pasted-artwork.svg",
+      "bytes": 205836,
+      "mimeType": "image/svg+xml",
+      "width": 1920,
+      "height": 1146,
+      "svgFilter": false
+    },
+    "asset_mwf9e52j257bof": {
+      "id": "asset_mwf9e52j257bof",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mwf9e1e39cd8b9-pasted-artwork.svg",
+      "bytes": 206870,
+      "mimeType": "image/svg+xml",
+      "width": 1570,
+      "height": 1022,
+      "svgFilter": false
+    },
+    "asset_mwf9fen5278pnv": {
+      "id": "asset_mwf9fen5278pnv",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mwf9fe4af2f240-pasted-artwork.svg",
+      "bytes": 182189,
+      "mimeType": "image/svg+xml",
+      "width": 1262,
+      "height": 1016,
+      "svgFilter": false
+    },
+    "asset_mwf9ij792ap31l": {
+      "id": "asset_mwf9ij792ap31l",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mwf9iisp6e7048-pasted-artwork.svg",
+      "bytes": 18869,
+      "mimeType": "image/svg+xml",
+      "width": 556,
+      "height": 236,
+      "svgFilter": false
+    },
+    "asset_mwfdnb7y1m2tcg": {
+      "id": "asset_mwfdnb7y1m2tcg",
+      "name": "ogp.png",
+      "path": "assets/mwfdn9ta8d67b2-ogp.png",
+      "bytes": 1154428,
+      "mimeType": "image/png",
+      "width": 1200,
+      "height": 630
+    },
+    "asset_mwfdoi081nku4m": {
+      "id": "asset_mwfdoi081nku4m",
+      "name": "favicon.ico",
+      "path": "assets/mwfdohesf8942c-favicon.ico",
+      "bytes": 282805,
+      "mimeType": "image/vnd.microsoft.icon",
+      "width": 256,
+      "height": 256
+    },
+    "asset_mwfdqjql1o2svx": {
+      "id": "asset_mwfdqjql1o2svx",
+      "name": "apple-touch-icon.png",
+      "path": "assets/mwfdqj7z77d3f8-apple-touch-icon.png",
+      "bytes": 42179,
+      "mimeType": "image/png",
+      "width": 180,
+      "height": 180
+    },
+    "asset_mwfe83t61ru4s0": {
+      "id": "asset_mwfe83t61ru4s0",
+      "name": "cloud_top_left.png",
+      "path": "assets/mwfe82rf23051c-cloud_top_left.png",
+      "bytes": 1279254,
+      "mimeType": "image/png",
+      "width": 1121,
+      "height": 1107,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwfe82oc1qezao",
+        "path": "cloud_top_left.png",
+        "sha256": "82ab90e2c940e236a36101259398ffad17b3a1b4a61a327ce5cd16f67a7090fe"
+      }
+    },
+    "asset_mwfe84rr1sfz1m": {
+      "id": "asset_mwfe84rr1sfz1m",
+      "name": "cloud_top_right.png",
+      "path": "assets/mwfe83wv055afa-cloud_top_right.png",
+      "bytes": 1381267,
+      "mimeType": "image/png",
+      "width": 1120,
+      "height": 1107,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwfe82oc1qezao",
+        "path": "cloud_top_right.png",
+        "sha256": "5641104129cda0c7f18ca800d93bb880430a3974725d50f39fcc5d908c75262d"
+      }
+    },
+    "asset_mwfe85e21t8zav": {
+      "id": "asset_mwfe85e21t8zav",
+      "name": "cloud_bottom_left.png",
+      "path": "assets/mwfe84tne08f83-cloud_bottom_left.png",
+      "bytes": 662835,
+      "mimeType": "image/png",
+      "width": 998,
+      "height": 475,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwfe82oc1qezao",
+        "path": "cloud_bottom_left.png",
+        "sha256": "0b8406fb2ae48034353aa2f2763730ee4d499c885b3029a89837732f875eacbe"
+      }
+    },
+    "asset_mwfe86mp1ujg0g": {
+      "id": "asset_mwfe86mp1ujg0g",
+      "name": "cloud_bottom_right.png",
+      "path": "assets/mwfe85gd3e30b0-cloud_bottom_right.png",
+      "bytes": 668906,
+      "mimeType": "image/png",
+      "width": 1017,
+      "height": 474,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwfe82oc1qezao",
+        "path": "cloud_bottom_right.png",
+        "sha256": "4fe53129615296c5458be51cd9ddbdd364a6df0088b366d0bcd39e3d9eadd46e"
+      }
+    },
+    "asset_mwfe871r1v21ma": {
+      "id": "asset_mwfe871r1v21ma",
+      "name": "spiral_left.png",
+      "path": "assets/mwfe86n6dd8b4e-spiral_left.png",
+      "bytes": 16149,
+      "mimeType": "image/png",
+      "width": 342,
+      "height": 394,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwfe82oc1qezao",
+        "path": "spiral_left.png",
+        "sha256": "31d7094ae0b554ea79d95839ca38cdb8d758eec36c08b44520f65198c73ad5b6"
+      }
+    },
+    "asset_mwfe87gz1wb4ge": {
+      "id": "asset_mwfe87gz1wb4ge",
+      "name": "spiral_right.png",
+      "path": "assets/mwfe872qf2f971-spiral_right.png",
+      "bytes": 11108,
+      "mimeType": "image/png",
+      "width": 273,
+      "height": 300,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwfe82oc1qezao",
+        "path": "spiral_right.png",
+        "sha256": "914692c4e94d2063813640e54b0e3bc647a5134a154be66e436390aa1ad05372"
+      }
+    },
+    "asset_mwfe87yq1xeui7": {
+      "id": "asset_mwfe87yq1xeui7",
+      "name": "title.png",
+      "path": "assets/mwfe87hl00da65-title.png",
+      "bytes": 68466,
+      "mimeType": "image/png",
+      "width": 1299,
+      "height": 1088,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwfe82oc1qezao",
+        "path": "title.png",
+        "sha256": "91c5ecf49d0af4a38674fbe8994f787f4173316e3582ed46d32ea7585c3dfffc"
+      }
+    },
+    "asset_mwfe899e1ynx4t": {
+      "id": "asset_mwfe899e1ynx4t",
+      "name": "input_square.png",
+      "path": "assets/mwfe88172421ca-input_square.png",
+      "bytes": 953761,
+      "mimeType": "image/png",
+      "width": 956,
+      "height": 585,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwfe82oc1qezao",
+        "path": "input_square.png",
+        "sha256": "2b77e565cbbe65032e94112ab62e2985c918becc699cdde9427debd88e5e7ea5"
+      }
+    },
+    "asset_mwfe8ard1zaq4y": {
+      "id": "asset_mwfe8ard1zaq4y",
+      "name": "result_square.png",
+      "path": "assets/mwfe89ce79c53e-result_square.png",
+      "bytes": 1464300,
+      "mimeType": "image/png",
+      "width": 955,
+      "height": 845,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwfe82oc1qezao",
+        "path": "result_square.png",
+        "sha256": "cc557cbca1790263923c0cc55762a8dcb9011ce7d9a0020cb9bd039dfa85a97e"
+      }
+    },
+    "asset_mwfe8bbe20r516": {
+      "id": "asset_mwfe8bbe20r516",
+      "name": "button_before.png",
+      "path": "assets/mwfe8asl60d55e-button_before.png",
+      "bytes": 291519,
+      "mimeType": "image/png",
+      "width": 893,
+      "height": 455,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwfe82oc1qezao",
+        "path": "button_before.png",
+        "sha256": "bf597c41a8c40c52e704098002ad1b68fa92da1b681190afa2958a00240487f9"
+      }
+    },
+    "asset_mwfe8bve2160gg": {
+      "id": "asset_mwfe8bve2160gg",
+      "name": "button_after.png",
+      "path": "assets/mwfe8bcc608693-button_after.png",
+      "bytes": 222699,
+      "mimeType": "image/png",
+      "width": 893,
+      "height": 454,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwfe82oc1qezao",
+        "path": "button_after.png",
+        "sha256": "ab775f232b04951196a6a11ad8d96cf003605aeba0c3382cbf287aa83f176282"
+      }
+    },
+    "asset_mwfe8cci22n2f5": {
+      "id": "asset_mwfe8cci22n2f5",
+      "name": "star_empty.png",
+      "path": "assets/mwfe8bw92b5901-star_empty.png",
+      "bytes": 26286,
+      "mimeType": "image/png",
+      "width": 876,
+      "height": 876,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwfe82oc1qezao",
+        "path": "star_empty.png",
+        "sha256": "7c1904f3b41088a37bea2d50cb3b5ddc94b9cae1ada06cf8f9dfbea7de422c41"
+      }
+    },
+    "asset_mwfe8cr2234781": {
+      "id": "asset_mwfe8cr2234781",
+      "name": "star_filled.png",
+      "path": "assets/mwfe8ccz2dc5ee-star_filled.png",
+      "bytes": 39547,
+      "mimeType": "image/png",
+      "width": 876,
+      "height": 876,
+      "zip": {
+        "version": 1,
+        "group": "zip_mwfe82oc1qezao",
+        "path": "star_filled.png",
+        "sha256": "f9c73d7b7347703786059f1a99188a53dc0273055865d1e3daf4c8e340a4eebb"
+      }
     }
   }
 }

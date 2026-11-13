@@ -4,13 +4,13 @@ import Image from "next/image";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "第56回松ヶ崎祭 | 夢宙 むちゅ〜",
-  description: "京都工芸繊維大学の学祭、松ヶ崎祭 公式サイトです！ 今年のメインテーマは「夢宙 むちゅ〜」 2026年11月13日(きん)〜11月15日(にち)開催",
+  title: "第56回松ヶ崎祭 | 夢宙 むちゅー",
+  description: "京都工芸繊維大学の学祭、松ヶ崎祭 公式サイトです！ 今年のメインテーマは「夢宙 むちゅー」 2026年11月13日(きん)〜11月15日(にち)開催",
   openGraph: {
     siteName: "第56回松ヶ崎祭",
-    title: "第56回松ヶ崎祭 | 夢宙 むちゅ〜",
-    description: "京都工芸繊維大学の学祭、松ヶ崎祭 公式サイトです！ 今年のメインテーマは「夢宙 むちゅ〜」 2026年11月13日(きん)〜11月15日(にち)開催",
-    images: ["/assets/ogp.png"],
+    title: "第56回松ヶ崎祭 | 夢宙 むちゅー",
+    description: "京都工芸繊維大学の学祭、松ヶ崎祭 公式サイトです！ 今年のメインテーマは「夢宙 むちゅー」 2026年11月13日(きん)〜11月15日(にち)開催",
+    images: ["/assets/ogp-2.png"],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -53,7 +53,7 @@ export default function Page() {
           </div>
           <div className="el-1945">
             <span
-              className="crisp-svg svg-493"
+              className="crisp-svg svg-485"
               style={{ ["--crisp-svg-width"]: "659px", ["--crisp-svg-ratio"]: "659 / 329" } as import("react").CSSProperties}
             >
               <svg aria-hidden="true" width={659} height={329} viewBox="0 0 659 329" />
@@ -74,7 +74,7 @@ export default function Page() {
             alt=""
             width={718}
             height={233}
-            className="svg-497"
+            className="svg-489"
           />
         </div>
       </section>
@@ -158,7 +158,7 @@ export default function Page() {
             alt=""
             width={718}
             height={230}
-            className="svg-498"
+            className="svg-490"
           />
         </div>
       </section>
@@ -200,7 +200,7 @@ export default function Page() {
       </section>
       <section className="box-767">
         <span
-          className="crisp-svg svg-366"
+          className="crisp-svg svg-365"
           style={{ ["--crisp-svg-width"]: "1248px", ["--crisp-svg-ratio"]: "1248 / 195" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1248} height={195} viewBox="0 0 1248 195" />
@@ -212,6 +212,68 @@ export default function Page() {
           />
         </span>
       </section>
+      <section className="el-2526">
+        <div className="el-2527">
+          <Image
+            src="/assets/pasted-artwork-454.svg"
+            alt=""
+            width={718}
+            height={176}
+            className="svg-695"
+          />
+        </div>
+      </section>
+      <section className="el-2528">
+        <p className="text-704">
+          {"第56回松ヶ崎祭オリジナルゲームが新登場！\nきみも まつぴよと 恋に落ちちゃう・・・！？"}
+        </p>
+        <div className="el-2529">
+          <span
+            className="crisp-svg svg-694"
+            style={{ ["--crisp-svg-width"]: "928px", ["--crisp-svg-ratio"]: "928 / 577" } as import("react").CSSProperties}
+          >
+            <svg aria-hidden="true" width={928} height={577} viewBox="0 0 928 577" />
+            <Image
+              src="/assets/pasted-artwork-438.svg"
+              alt=""
+              width={1856}
+              height={1154}
+            />
+          </span>
+        </div>
+        <a href="/tokimeki-dreamworld" className="el-2532">
+          <Image
+            src="/assets/pasted-artwork-458.svg"
+            alt=""
+            width={556}
+            height={236}
+            className="svg-698"
+          />
+        </a>
+      </section>
+      <section className="el-2530">
+        <p className="text-705">
+          {"今日　どんな夢をみた？\nきみの夢を　占ってみよう。"}
+        </p>
+        <div className="box-1067">
+          <Image
+            src="/assets/pasted-artwork-457.svg"
+            alt=""
+            width={1262}
+            height={1016}
+            className="svg-696"
+          />
+        </div>
+        <Link href="/yumeuranai" className="el-2531">
+          <Image
+            src="/assets/pasted-artwork-458.svg"
+            alt=""
+            width={556}
+            height={236}
+            className="svg-697"
+          />
+        </Link>
+      </section>
       <section className="el-1961">
         <div className="el-1960">
           <Image
@@ -219,7 +281,7 @@ export default function Page() {
             alt=""
             width={718}
             height={176}
-            className="svg-499"
+            className="svg-491"
           />
         </div>
       </section>
@@ -230,7 +292,7 @@ export default function Page() {
             alt=""
             width={123}
             height={99}
-            className="svg-469"
+            className="svg-461"
           />
         </div>
         <div className="box-769">
@@ -239,7 +301,7 @@ export default function Page() {
             alt=""
             width={925}
             height={438}
-            className="svg-367"
+            className="svg-366"
           />
         </div>
       </section>
@@ -263,7 +325,7 @@ export default function Page() {
           />
         </a>
         <span
-          className="crisp-svg svg-371"
+          className="crisp-svg svg-370"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 350" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={375} height={350} viewBox="0 0 375 350" />
@@ -277,7 +339,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-18">
         <span
-          className="crisp-svg svg-368"
+          className="crisp-svg svg-367"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -294,7 +356,7 @@ export default function Page() {
             alt=""
             width={58}
             height={58}
-            className="svg-369"
+            className="svg-368"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-38">
@@ -303,7 +365,7 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-370"
+            className="svg-369"
           />
         </a>
       </section>
