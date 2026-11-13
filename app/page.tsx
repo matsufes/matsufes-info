@@ -264,7 +264,7 @@ export default function Page() {
             className="svg-696"
           />
         </div>
-        <Link href="/yumeuranai" className="el-2531">
+        <a href="/yumeuranai" className="el-2531">
           <Image
             src="/assets/pasted-artwork-458.svg"
             alt=""
@@ -272,7 +272,7 @@ export default function Page() {
             height={236}
             className="svg-697"
           />
-        </Link>
+        </a>
       </section>
       <section className="el-1961">
         <div className="el-1960">

@@ -3,11 +3,11 @@ import Image from "next/image";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "②m-1グランプリ",
+  title: "m-1グランプリ",
   description: "松ヶ崎祭の出展投票企画、「m-1グランプリ」のページです。",
   openGraph: {
     siteName: "第56回松ヶ崎祭",
-    title: "②m-1グランプリ",
+    title: "m-1グランプリ",
     description: "松ヶ崎祭の出展投票企画、「m-1グランプリ」のページです。",
     images: ["/assets/ogp-2.png"],
   },

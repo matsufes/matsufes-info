@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { ComponentPropsWithoutRef } from "react";
 
 /** Next.js のページではないURL（リダイレクト・外部サイトの中継・HTMLページ） */
-const HARD_NAV: RegExp[] = [new RegExp("^/navigation/?(?:[?#].*)?$"), new RegExp("^/booth/?(?:[?#].*)?$"), new RegExp("^/search/[^/]+/?(?:[?#].*)?$"), new RegExp("^/tokimeki-dreamworld/?(?:[?#].*)?$")];
+const HARD_NAV: RegExp[] = [new RegExp("^/navigation/?(?:[?#].*)?$"), new RegExp("^/booth/?(?:[?#].*)?$"), new RegExp("^/search/[^/]+/?(?:[?#].*)?$"), new RegExp("^/tokimeki-dreamworld/?(?:[?#].*)?$"), new RegExp("^/yumeuranai/?(?:[?#].*)?$")];
 
 /**
  * サイト内のページ（/〜）は Link でページ遷移を速くし、外部URLや Next.js のページではないURLは

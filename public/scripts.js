@@ -1178,4 +1178,4 @@ root.removeEventListener("input", onInput);
 };
 },
 };
-})({"sharedDomain":"matsufes.info","hardNav":["^/navigation/?(?:[?#].*)?$","^/booth/?(?:[?#].*)?$","^/search/[^/]+/?(?:[?#].*)?$","^/tokimeki-dreamworld/?(?:[?#].*)?$"]}).install(document);
+})({"sharedDomain":"matsufes.info","hardNav":["^/navigation/?(?:[?#].*)?$","^/booth/?(?:[?#].*)?$","^/search/[^/]+/?(?:[?#].*)?$","^/tokimeki-dreamworld/?(?:[?#].*)?$","^/yumeuranai/?(?:[?#].*)?$"]}).install(document);

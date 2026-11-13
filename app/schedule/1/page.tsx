@@ -4,11 +4,11 @@ import Image from "next/image";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "日程表からさがす(11.15)",
+  title: "タイムテーブル",
   description: "今回の松ヶ崎祭のタイムテーブルです。",
   openGraph: {
     siteName: "第56回松ヶ崎祭",
-    title: "日程表からさがす(11.15)",
+    title: "タイムテーブル",
     description: "今回の松ヶ崎祭のタイムテーブルです。",
     images: ["/assets/ogp-2.png"],
   },

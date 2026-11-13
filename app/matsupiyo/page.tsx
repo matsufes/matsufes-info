@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "まつぴよ専用ページ",
+  title: "まつぴよ",
   openGraph: {
     siteName: "第56回松ヶ崎祭",
-    title: "まつぴよ専用ページ",
+    title: "まつぴよ",
     images: ["/assets/ogp-2.png"],
   },
   twitter: { card: "summary_large_image" },

@@ -1296,7 +1296,7 @@
       "id": "page_muf5w3hl70",
       "name": "来場者アンケート",
       "slug": "survey",
-      "title": "ページ 8",
+      "title": "来場者アンケート",
       "description": "",
       "children": [
         "node_mwet91iu1ynma1",
@@ -7782,7 +7782,7 @@
       "id": "page_mwb06ie85q5g5p",
       "name": "m-1グランプリ",
       "slug": "m-1",
-      "title": "②m-1グランプリ",
+      "title": "m-1グランプリ",
       "description": "松ヶ崎祭の出展投票企画、「m-1グランプリ」のページです。",
       "children": [
         "node_mwet68z91t1irq",
@@ -7894,7 +7894,7 @@
       "id": "page_mwdc62q53b5wd5",
       "name": "まつぴよ専用ページ",
       "slug": "matsupiyo",
-      "title": "まつぴよ専用ページ",
+      "title": "まつぴよ",
       "description": "",
       "children": [
         "node_mwdc62q41pjclt",
@@ -8904,7 +8904,7 @@
       "id": "page_mwey62ss3u3er3",
       "name": "日程表からさがす(11.14)",
       "slug": "schedule",
-      "title": "日程表からさがす(11.14)",
+      "title": "タイムテーブル",
       "description": "今回の松ヶ崎祭のタイムテーブルです。",
       "children": [
         "node_mwey62ss3vs30a",
@@ -8935,7 +8935,7 @@
       "id": "page_mwey915180yk5u",
       "name": "日程表からさがす(11.15)",
       "slug": "schedule/1",
-      "title": "日程表からさがす(11.15)",
+      "title": "タイムテーブル",
       "description": "今回の松ヶ崎祭のタイムテーブルです。",
       "children": [
         "node_mwey9151815e4e",
@@ -8988,7 +8988,7 @@
           "asset_mwfe8cr2234781"
         ]
       },
-      "unpublished": true
+      "unpublished": false
     }
   },
   "nodes": {
@@ -346091,13 +346091,7 @@
             "marginTop": "0px"
           }
         }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ]
+      }
     },
     "node_mwf96cxe1xn5u0": {
       "id": "node_mwf96cxe1xn5u0",

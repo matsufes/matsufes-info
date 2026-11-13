@@ -3,10 +3,10 @@ import Image from "next/image";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "ページ 8",
+  title: "来場者アンケート",
   openGraph: {
     siteName: "第56回松ヶ崎祭",
-    title: "ページ 8",
+    title: "来場者アンケート",
     images: ["/assets/ogp-2.png"],
   },
   twitter: { card: "summary_large_image" },
