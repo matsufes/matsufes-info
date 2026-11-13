@@ -472,9 +472,39 @@ return at === 0 && (/^(?:https?:|mailto:|tel:|data:image\/(?:png|jpe?g|gif|webp|
 }
 );
 }
+function refreshLive() {
+root.querySelectorAll("[data-live]").forEach(function (el) {
+if (inTpl(el)) return;
+var t = el.firstChild;
+if (!t || t.nodeType !== 3) {
+t = document.createTextNode("");
+el.insertBefore(t, el.firstChild);
+}
+var next = resolve(el.getAttribute("data-live"), el);
+if (t.nodeValue !== next) t.nodeValue = next;
+});
+root.querySelectorAll("[data-live-placeholder]").forEach(function (el) {
+if (inTpl(el)) return;
+el.placeholder = resolve(el.getAttribute("data-live-placeholder"), el);
+});
+var liveValues = Array.prototype.slice.call(root.querySelectorAll("[data-live-value]"));
+liveValues.sort(function (a, b) {
+return Number(b.tagName === "OPTION") - Number(a.tagName === "OPTION");
+});
+liveValues.forEach(function (el) {
+if (inTpl(el) || el.hasAttribute("data-edited")) return;
+var nv = resolve(el.getAttribute("data-live-value"), el);
+if (el.value !== nv) el.value = nv;
+});
+}
+function onLiveInput(e) {
+if (e.isTrusted && e.target && e.target.setAttribute) e.target.setAttribute("data-edited", "");
+refreshLive();
+}
 function setVar(name, v, editingList) {
 if (typeof name !== "string" || !name || Object.is(getVar(name, missingVar), v)) return;
 if (!writeVar(name, v, editingList)) return;
+refreshLive();
 }
 function readInput(raw, self, scope) {
 if (raw && typeof raw.inputRef === "string") {
@@ -676,6 +706,7 @@ changed.push(input);
 });
 if ((select || scalar) && !changed.length) return;
 if (scalar) v = first.value;
+if (!changed.length) refreshLive();
 changed.forEach(function (input) {
 input.dispatchEvent(new Event("input", { bubbles: true }));
 input.dispatchEvent(new Event("change", { bubbles: true }));
@@ -788,6 +819,7 @@ list.forEach(function (c) {
 c.disabled = st.op === "toggle" ? !c.disabled : st.op === "disable";
 });
 });
+refreshLive();
 break;
 case "list-display": {
 if (!st.array) break;
@@ -1122,6 +1154,7 @@ var seen = new WeakSet();
 function scan() {
 if (!alive) return;
 syncPage(true);
+refreshLive();
 if (sorts.size || filters.size) {
 root.querySelectorAll("[data-array]").forEach(function (list) {
 if (list.hasAttribute("data-client-list") || inTpl(list)) return;
@@ -1159,6 +1192,7 @@ root.addEventListener("click", onClick);
 root.addEventListener("mouseover", onOver);
 root.addEventListener("mouseout", onOut);
 root.addEventListener("input", onInput);
+root.addEventListener("input", onLiveInput);
 scan();
 return function dispose() {
 alive = false;
@@ -1175,6 +1209,7 @@ root.removeEventListener("click", onClick);
 root.removeEventListener("mouseover", onOver);
 root.removeEventListener("mouseout", onOut);
 root.removeEventListener("input", onInput);
+root.removeEventListener("input", onLiveInput);
 };
 },
 };
