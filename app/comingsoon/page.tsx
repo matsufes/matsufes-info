@@ -41,6 +41,7 @@ export default function Page() {
                   className="crisp-svg svg-212"
                   style={{ ["--crisp-svg-width"]: "43px", ["--crisp-svg-ratio"]: "43 / 31" } as import("react").CSSProperties}
                 >
+                  <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
                   <Image
                     src="/assets/pasted-artwork-131.svg"
                     alt="メニューを閉じる"
@@ -246,7 +247,7 @@ export default function Page() {
                   <Link href="/m-1" className="el-1449">
                     {"m-1グランプリ"}
                   </Link>
-                  <Link href="/matsupiyo" className="el-1450">
+                  <Link href="/matsupiyo-old" className="el-1450">
                     {"公式メンバ〜「まつぴよ」"}
                   </Link>
                   <div id="menu1-9" className="el-1451" />
@@ -268,6 +269,7 @@ export default function Page() {
           className="crisp-svg svg-76"
           style={{ ["--crisp-svg-width"]: "1113px", ["--crisp-svg-ratio"]: "1113 / 135" } as import("react").CSSProperties}
         >
+          <svg aria-hidden="true" width={1113} height={135} viewBox="0 0 1113 135" />
           <Image
             src="/assets/pasted-artwork-96.svg"
             alt=""
@@ -280,6 +282,7 @@ export default function Page() {
             className="crisp-svg svg-77"
             style={{ ["--crisp-svg-width"]: "371px", ["--crisp-svg-ratio"]: "371 / 38" } as import("react").CSSProperties}
           >
+            <svg aria-hidden="true" width={371} height={38} viewBox="0 0 371 38" />
             <Image
               src="/assets/pasted-artwork-97.svg"
               alt=""
@@ -293,6 +296,7 @@ export default function Page() {
             className="crisp-svg svg-78"
             style={{ ["--crisp-svg-width"]: "400px", ["--crisp-svg-ratio"]: "400 / 400" } as import("react").CSSProperties}
           >
+            <svg aria-hidden="true" width={400} height={400} viewBox="0 0 400 400" />
             <Image
               src="/assets/pasted-artwork-98.svg"
               alt=""
