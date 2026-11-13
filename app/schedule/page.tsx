@@ -4,11 +4,11 @@ import Image from "next/image";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "タイムテーブル",
+  title: "日程表からさがす(11.14)",
   description: "今回の松ヶ崎祭のタイムテーブルです。",
   openGraph: {
     siteName: "第56回松ヶ崎祭",
-    title: "タイムテーブル",
+    title: "日程表からさがす(11.14)",
     description: "今回の松ヶ崎祭のタイムテーブルです。",
     images: ["/assets/ogp.png"],
   },
@@ -18,354 +18,346 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <span hidden data-page-body="page_mvouejle4bq4wf" />
+      <span hidden data-page-body="page_mwey62ss3u3er3" />
       <Header />
       <Image data-inview
-        src="/assets/image-4.svg"
+        src="/assets/clouds.webp"
         alt=""
-        width={1920}
-        height={583}
-        className="el-1907"
+        width={1600}
+        height={543}
+        className="el-2488"
       />
-      <Image data-inview
-        src="/assets/pasted-artwork-217.svg"
-        alt=""
-        width={1440}
-        height={489}
-        className="el-2407"
-      />
-      <p className="el-1908">
+      <p className="el-2489">
         <span
-          className="crisp-svg pasted-artwork-svg-156"
+          className="crisp-svg svg-628"
           style={{ ["--crisp-svg-width"]: "707px", ["--crisp-svg-ratio"]: "707 / 136" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={707} height={136} viewBox="0 0 707 136" />
           <Image
-            src="/assets/pasted-artwork-369.svg"
-            alt=""
+            src="/assets/pasted-artwork-368.svg"
+            alt="日程表からさがす"
             width={1414}
             height={272}
           />
         </span>
       </p>
-      <section className="el-1909">
+      <section className="el-2490">
         <Image
           src="/assets/pasted-artwork-78.svg"
           alt=""
           width={1246}
           height={34}
-          className="pasted-artwork-svg-96"
+          className="svg-629"
         />
         <Image
-          src="/assets/pasted-artwork-282.svg"
+          src="/assets/pasted-artwork-281.svg"
           alt=""
           width={1356}
           height={65}
-          className="pasted-artwork-svg-153"
+          className="pasted-artwork-svg-169"
         />
       </section>
-      <p className="box-752">
+      <p className="box-1063">
         {"1日の日程表を　見ることができるよ。\nメインステージでの催しや　音楽サークルの公演時間を　確認しよう。"}
       </p>
-      <section className="el-1910">
+      <section className="el-2491">
         <span
-          className="crisp-svg svg-359"
+          className="crisp-svg svg-630"
           style={{ ["--crisp-svg-width"]: "430px", ["--crisp-svg-ratio"]: "430 / 64" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={430} height={64} viewBox="0 0 430 64" />
           <Image
             src="/assets/pasted-artwork-45.svg"
-            alt=""
+            alt="日にち"
             width={860}
             height={128}
           />
         </span>
       </section>
-      <section className="el-1933">
-        <Link href="/schedule/0" className="el-1930">
+      <section className="el-2495">
+        <Link href="/schedule/0" className="el-2496">
           <Image
             src="/assets/pasted-artwork-50.svg"
             alt=""
             width={268}
             height={84}
-            className="svg-366"
+            className="svg-635"
           />
           <Image
             src="/assets/pasted-artwork-249.svg"
             alt=""
             width={268}
             height={84}
-            className="svg-371"
+            className="svg-636"
           />
         </Link>
-        <div className="el-1931">
+        <div className="el-2497">
           <Image
             src="/assets/pasted-artwork-49.svg"
             alt=""
             width={268}
             height={84}
-            className="svg-367"
+            className="svg-637"
           />
           <Image
             src="/assets/pasted-artwork-246.svg"
             alt=""
             width={268}
             height={84}
-            className="svg-369"
+            className="svg-638"
           />
         </div>
-        <Link href="/schedule/2" className="el-1932">
+        <Link href="/schedule/2" className="el-2498">
           <Image
             src="/assets/pasted-artwork-48.svg"
             alt=""
             width={268}
             height={84}
-            className="svg-368"
+            className="svg-639"
           />
           <Image
             src="/assets/pasted-artwork-248.svg"
             alt=""
             width={268}
             height={84}
-            className="svg-370"
+            className="svg-640"
           />
         </Link>
       </section>
-      <section className="select-10">
-        <select id="choice" data-scripts={"[{\"trigger\":\"change\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"ストリートパフォーマンス\"},\"then\":[{\"kind\":\"show\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"committee14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"メインステージ\"},\"then\":[{\"kind\":\"show\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"committee14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"センターホール\"},\"then\":[{\"kind\":\"show\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"committee14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"委員会企画\"},\"then\":[{\"kind\":\"show\",\"target\":\"committee14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"main14\"}]}]}]"} className="select-9" name="choice">
-          <option value="場所を選んでね。">{"場所を選んでね。"}</option>
+      <section className="select-14">
+        <select id="choice" data-scripts={"[{\"trigger\":\"change\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"メインステージ\"},\"then\":[{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"committee14\"},{\"kind\":\"show\",\"target\":\"main14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"センターホール\"},\"then\":[{\"kind\":\"hide\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"hide\",\"target\":\"committee14\"},{\"kind\":\"show\",\"target\":\"center14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"ストリートパフォーマンス\"},\"then\":[{\"kind\":\"hide\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"committee14\"},{\"kind\":\"show\",\"target\":\"street14\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"委員会企画\"},\"then\":[{\"kind\":\"hide\",\"target\":\"main14\"},{\"kind\":\"hide\",\"target\":\"center14\"},{\"kind\":\"hide\",\"target\":\"street14\"},{\"kind\":\"show\",\"target\":\"committee14\"}]}]}]"} className="select-13" name="choice" defaultValue="メインステージ">
           <option value="メインステージ">{"メインステージ"}</option>
           <option value="センターホール">{"センターホール"}</option>
           <option value="ストリートパフォーマンス">{"ストリートパフォーマンス"}</option>
           <option value="委員会企画">{"委員会企画"}</option>
         </select>
       </section>
-      <section className="el-1916">
-        <div className="box-753">
-          <div id="main14" data-toggle-show="flex" className="el-1911">
+      <section className="el-2499">
+        <div className="box-1064">
+          <div id="main14" data-toggle-show="flex" className="t-3">
+            <Image
+              src="/assets/pasted-artwork-303.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-641"
+            />
             <Image
               src="/assets/pasted-artwork-304.svg"
               alt=""
               width={306}
-              height={113}
-              className="svg-496"
-            />
-            <Image
-              src="/assets/pasted-artwork-305.svg"
-              alt=""
-              width={306}
               height={504}
-              className="svg-497"
+              className="svg-642"
             />
             <Image
-              src="/assets/pasted-artwork-448.svg"
+              src="/assets/pasted-artwork-444.svg"
               alt=""
               width={306}
               height={556}
-              className="svg-616"
+              className="svg-643"
             />
             <Image
-              src="/assets/pasted-artwork-449.svg"
+              src="/assets/pasted-artwork-445.svg"
               alt=""
               width={306}
               height={601}
-              className="svg-617"
+              className="svg-644"
             />
             <Image
               src="/assets/pasted-artwork-253.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-375"
+              className="svg-645"
             />
             <Image
               src="/assets/pasted-artwork-254.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-376"
+              className="svg-646"
             />
             <Image
               src="/assets/pasted-artwork-255.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-377"
+              className="svg-647"
             />
             <Image
               src="/assets/pasted-artwork-256.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-378"
+              className="svg-648"
             />
             <Image
               src="/assets/pasted-artwork-257.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-379"
+              className="svg-649"
             />
             <Image
               src="/assets/pasted-artwork-258.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-380"
+              className="svg-650"
             />
             <Image
               src="/assets/pasted-artwork-261.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-383"
+              className="svg-651"
+            />
+            <Image
+              src="/assets/pasted-artwork-301.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-652"
             />
             <Image
               src="/assets/pasted-artwork-302.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-494"
-            />
-            <Image
-              src="/assets/pasted-artwork-303.svg"
-              alt=""
-              width={306}
-              height={113}
-              className="svg-495"
+              className="svg-653"
             />
             <Image
               src="/assets/pasted-artwork-260.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-382"
+              className="svg-654"
             />
             <Image
               src="/assets/pasted-artwork-259.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-381"
+              className="svg-655"
             />
           </div>
-          <div id="center14" data-toggle-show="flex" className="el-2594">
+          <div id="center14" data-toggle-show="flex" className="t-4">
+            <Image
+              src="/assets/pasted-artwork-305.svg"
+              alt=""
+              width={306}
+              height={153}
+              className="svg-656"
+            />
+            <Image
+              src="/assets/pasted-artwork-449.svg"
+              alt=""
+              width={306}
+              height={178}
+              className="svg-657"
+            />
+          </div>
+          <div id="street14" data-toggle-show="flex" className="t-5">
             <Image
               src="/assets/pasted-artwork-306.svg"
               alt=""
               width={306}
-              height={153}
-              className="svg-613"
-            />
-            <Image
-              src="/assets/pasted-artwork-453.svg"
-              alt=""
-              width={306}
-              height={178}
-              className="svg-620"
-            />
-          </div>
-          <div id="street14" data-toggle-show="flex" className="el-1912">
-            <Image
-              src="/assets/pasted-artwork-307.svg"
-              alt=""
-              width={306}
               height={113}
-              className="svg-498"
-            />
-            <Image
-              src="/assets/pasted-artwork-309.svg"
-              alt=""
-              width={306}
-              height={113}
-              className="svg-500"
-            />
-            <Image
-              src="/assets/pasted-artwork-310.svg"
-              alt=""
-              width={306}
-              height={113}
-              className="svg-501"
+              className="svg-658"
             />
             <Image
               src="/assets/pasted-artwork-308.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-499"
+              className="svg-659"
             />
+            <Image
+              src="/assets/pasted-artwork-309.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-660"
+            />
+            <Image
+              src="/assets/pasted-artwork-307.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-661"
+            />
+            <Image
+              src="/assets/pasted-artwork-310.svg"
+              alt=""
+              width={306}
+              height={113}
+              className="svg-662"
+            />
+          </div>
+          <div id="committee14" data-toggle-show="flex" className="t-6">
             <Image
               src="/assets/pasted-artwork-311.svg"
               alt=""
               width={306}
-              height={113}
-              className="svg-502"
-            />
-          </div>
-          <div id="committee14" data-toggle-show="flex" className="el-1913">
-            <Image
-              src="/assets/pasted-artwork-312.svg"
-              alt=""
-              width={306}
               height={212}
-              className="svg-503"
+              className="svg-663"
             />
             <Image
-              src="/assets/pasted-artwork-454.svg"
+              src="/assets/pasted-artwork-450.svg"
               alt=""
               width={306}
               height={235}
-              className="svg-621"
-            />
-            <Image
-              src="/assets/pasted-artwork-315.svg"
-              alt=""
-              width={153}
-              height={212}
-              className="svg-506"
+              className="svg-664"
             />
             <Image
               src="/assets/pasted-artwork-314.svg"
               alt=""
               width={153}
               height={212}
-              className="svg-505"
+              className="svg-665"
             />
             <Image
               src="/assets/pasted-artwork-313.svg"
               alt=""
-              width={306}
+              width={153}
               height={212}
-              className="svg-504"
+              className="svg-666"
             />
             <Image
-              src="/assets/pasted-artwork-455.svg"
+              src="/assets/pasted-artwork-312.svg"
+              alt=""
+              width={306}
+              height={212}
+              className="svg-667"
+            />
+            <Image
+              src="/assets/pasted-artwork-451.svg"
               alt=""
               width={306}
               height={235}
-              className="svg-623"
+              className="svg-668"
             />
             <Image
-              src="/assets/pasted-artwork-316.svg"
+              src="/assets/pasted-artwork-315.svg"
               alt=""
               width={153}
               height={594}
-              className="svg-507"
+              className="svg-669"
             />
             <Image
-              src="/assets/pasted-artwork-456.svg"
+              src="/assets/pasted-artwork-452.svg"
               alt=""
               width={153}
               height={678}
-              className="svg-624"
+              className="svg-670"
             />
             <span
-              className="crisp-svg svg-508"
+              className="crisp-svg svg-671"
               style={{ ["--crisp-svg-width"]: "236px", ["--crisp-svg-ratio"]: "236 / 181" } as import("react").CSSProperties}
             >
               <svg aria-hidden="true" width={236} height={181} viewBox="0 0 236 181" />
               <Image
-                src="/assets/pasted-artwork-317.svg"
+                src="/assets/pasted-artwork-316.svg"
                 alt=""
                 width={472}
                 height={362}
@@ -377,15 +369,15 @@ export default function Page() {
             alt=""
             width={295}
             height={2502}
-            className="el-1914"
+            className="el-2500"
           />
           <span
-            className="crisp-svg pc-7"
+            className="crisp-svg pc-9"
             style={{ ["--crisp-svg-width"]: "1670px", ["--crisp-svg-ratio"]: "1670 / 3081" } as import("react").CSSProperties}
           >
             <svg aria-hidden="true" width={1670} height={3081} viewBox="0 0 1670 3081" />
             <Image
-              src="/assets/pasted-artwork-368.svg"
+              src="/assets/pasted-artwork-367.svg"
               alt=""
               width={3340}
               height={6162}
@@ -397,70 +389,70 @@ export default function Page() {
           alt=""
           width={1701}
           height={3102}
-          className="el-1915"
+          className="el-2501"
         />
       </section>
-      <section data-inview className="el-2315">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2316">
+      <section data-inview className="el-2493">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2492">
           <Image
-            src="/assets/pasted-artwork-276.svg"
+            src="/assets/pasted-artwork-275.svg"
             alt=""
             width={58}
             height={58}
-            className="pasted-artwork-svg-107"
+            className="pasted-artwork-svg-170"
           />
         </a>
-        <a href="https://x.com/matsufes_info" className="x-41">
+        <a href="https://x.com/matsufes_info" className="x-79">
           <Image
-            src="/assets/pasted-artwork-277.svg"
+            src="/assets/pasted-artwork-276.svg"
             alt=""
             width={54}
             height={49}
-            className="pasted-artwork-svg-108"
+            className="pasted-artwork-svg-171"
           />
         </a>
         <span
-          className="crisp-svg svg-415"
+          className="crisp-svg svg-631"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 350" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={375} height={350} viewBox="0 0 375 350" />
           <Image
-            src="/assets/pasted-artwork-278.svg"
+            src="/assets/pasted-artwork-277.svg"
             alt=""
             width={750}
             height={700}
           />
         </span>
       </section>
-      <section data-inview className="footer-20">
+      <section data-inview className="footer-39">
         <span
-          className="crisp-svg svg-416"
+          className="crisp-svg svg-632"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
           <Image
-            src="/assets/pasted-artwork-275.svg"
+            src="/assets/pasted-artwork-274.svg"
             alt=""
             width={3840}
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2317">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2494">
           <Image
-            src="/assets/pasted-artwork-276.svg"
+            src="/assets/pasted-artwork-275.svg"
             alt=""
             width={58}
             height={58}
-            className="svg-417"
+            className="svg-633"
           />
         </a>
-        <a href="https://x.com/matsufes_info" className="x-42">
+        <a href="https://x.com/matsufes_info" className="x-80">
           <Image
-            src="/assets/pasted-artwork-277.svg"
+            src="/assets/pasted-artwork-276.svg"
             alt=""
             width={54}
             height={49}
-            className="svg-418"
+            className="svg-634"
           />
         </a>
       </section>

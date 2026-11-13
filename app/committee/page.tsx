@@ -20,13 +20,13 @@ export default function Page() {
       <span hidden data-page-body="page_mw0g5cpwgggijw" />
       <Header />
       <Image data-inview
-        src="/assets/pasted-artwork-217.svg"
+        src="/assets/clouds.webp"
         alt=""
-        width={1440}
-        height={489}
-        className="el-2366"
+        width={1600}
+        height={543}
+        className="el-2519"
       />
-      <p className="box-811">
+      <p className="box-810">
         <span
           className="crisp-svg svg-401"
           style={{ ["--crisp-svg-width"]: "562px", ["--crisp-svg-ratio"]: "562 / 167" } as import("react").CSSProperties}
@@ -40,50 +40,64 @@ export default function Page() {
           />
         </span>
       </p>
-      <section className="box-812">
+      <section className="box-811">
         <Image
-          src="/assets/pasted-artwork-282.svg"
+          src="/assets/pasted-artwork-281.svg"
           alt=""
           width={1356}
           height={65}
-          className="pasted-artwork-svg-141"
+          className="pasted-artwork-svg-136"
         />
       </section>
-      <p className="box-813">
+      <p className="box-812">
         {"みんなが松ヶ崎祭を　もっと楽しめるように　企画をいっぱい　用意したよ。\nここでしかできない　特別な体験を　お届けするね。"}
       </p>
-      <section className="el-2044">
+      <section className="el-2036">
         <span
-          className="crisp-svg svg-567"
+          className="crisp-svg svg-556"
           style={{ ["--crisp-svg-width"]: "1661px", ["--crisp-svg-ratio"]: "1661 / 1821" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1661} height={1821} viewBox="0 0 1661 1821" />
           <Image
-            src="/assets/pasted-artwork-379.svg"
+            src="/assets/pasted-artwork-375.svg"
             alt=""
             width={3322}
             height={3642}
           />
         </span>
       </section>
-      <section className="box-814">
+      <section className="box-813">
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://livepocket.jp/e/i1x36\"}]}]"}
-          className="crisp-svg el-2464"
+          className="crisp-svg el-2197"
           style={{ ["--crisp-svg-width"]: "380px", ["--crisp-svg-ratio"]: "380 / 176" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={380} height={176} viewBox="0 0 380 176" />
           <Image
-            src="/assets/pasted-artwork-360.svg"
+            src="/assets/pasted-artwork-359.svg"
             alt=""
             width={760}
             height={352}
           />
         </span>
       </section>
-      <section className="box-815">
-        <div className="el-2045">
+      <section className="box-814">
+        <div className="el-2037">
           <span
-            className="crisp-svg svg-555"
+            className="crisp-svg svg-545"
+            style={{ ["--crisp-svg-width"]: "563px", ["--crisp-svg-ratio"]: "563 / 675" } as import("react").CSSProperties}
+          >
+            <svg aria-hidden="true" width={563} height={675} viewBox="0 0 563 675" />
+            <Image
+              src="/assets/pasted-artwork-360.svg"
+              alt=""
+              width={1126}
+              height={1350}
+            />
+          </span>
+        </div>
+        <div className="el-2038">
+          <span
+            className="crisp-svg svg-546"
             style={{ ["--crisp-svg-width"]: "563px", ["--crisp-svg-ratio"]: "563 / 675" } as import("react").CSSProperties}
           >
             <svg aria-hidden="true" width={563} height={675} viewBox="0 0 563 675" />
@@ -95,14 +109,30 @@ export default function Page() {
             />
           </span>
         </div>
-        <div className="el-2046">
+      </section>
+      <section className="box-815">
+        <div className="el-2039">
           <span
-            className="crisp-svg svg-556"
+            className="crisp-svg svg-557"
             style={{ ["--crisp-svg-width"]: "563px", ["--crisp-svg-ratio"]: "563 / 675" } as import("react").CSSProperties}
           >
             <svg aria-hidden="true" width={563} height={675} viewBox="0 0 563 675" />
             <Image
-              src="/assets/pasted-artwork-362.svg"
+              src="/assets/pasted-artwork-376.svg"
+              alt=""
+              width={1126}
+              height={1350}
+            />
+          </span>
+        </div>
+        <div className="el-2040">
+          <span
+            className="crisp-svg svg-558"
+            style={{ ["--crisp-svg-width"]: "563px", ["--crisp-svg-ratio"]: "563 / 675" } as import("react").CSSProperties}
+          >
+            <svg aria-hidden="true" width={563} height={675} viewBox="0 0 563 675" />
+            <Image
+              src="/assets/pasted-artwork-377.svg"
               alt=""
               width={1126}
               height={1350}
@@ -111,39 +141,39 @@ export default function Page() {
         </div>
       </section>
       <section className="box-816">
-        <div className="el-2047">
+        <div className="el-2041">
           <span
-            className="crisp-svg svg-568"
-            style={{ ["--crisp-svg-width"]: "563px", ["--crisp-svg-ratio"]: "563 / 675" } as import("react").CSSProperties}
+            className="crisp-svg svg-547"
+            style={{ ["--crisp-svg-width"]: "563px", ["--crisp-svg-ratio"]: "563 / 426" } as import("react").CSSProperties}
           >
-            <svg aria-hidden="true" width={563} height={675} viewBox="0 0 563 675" />
+            <svg aria-hidden="true" width={563} height={426} viewBox="0 0 563 426" />
             <Image
-              src="/assets/pasted-artwork-380.svg"
+              src="/assets/pasted-artwork-362.svg"
               alt=""
               width={1126}
-              height={1350}
+              height={852}
             />
           </span>
         </div>
-        <div className="el-2048">
+        <div className="el-2042">
           <span
-            className="crisp-svg svg-569"
-            style={{ ["--crisp-svg-width"]: "563px", ["--crisp-svg-ratio"]: "563 / 675" } as import("react").CSSProperties}
+            className="crisp-svg svg-555"
+            style={{ ["--crisp-svg-width"]: "563px", ["--crisp-svg-ratio"]: "563 / 426" } as import("react").CSSProperties}
           >
-            <svg aria-hidden="true" width={563} height={675} viewBox="0 0 563 675" />
+            <svg aria-hidden="true" width={563} height={426} viewBox="0 0 563 426" />
             <Image
-              src="/assets/pasted-artwork-381.svg"
+              src="/assets/pasted-artwork-373.svg"
               alt=""
               width={1126}
-              height={1350}
+              height={852}
             />
           </span>
         </div>
       </section>
       <section className="box-817">
-        <div className="el-2049">
+        <div className="el-2043">
           <span
-            className="crisp-svg svg-557"
+            className="crisp-svg svg-548"
             style={{ ["--crisp-svg-width"]: "563px", ["--crisp-svg-ratio"]: "563 / 426" } as import("react").CSSProperties}
           >
             <svg aria-hidden="true" width={563} height={426} viewBox="0 0 563 426" />
@@ -155,25 +185,9 @@ export default function Page() {
             />
           </span>
         </div>
-        <div className="el-2050">
+        <div className="el-2044">
           <span
-            className="crisp-svg svg-565"
-            style={{ ["--crisp-svg-width"]: "563px", ["--crisp-svg-ratio"]: "563 / 426" } as import("react").CSSProperties}
-          >
-            <svg aria-hidden="true" width={563} height={426} viewBox="0 0 563 426" />
-            <Image
-              src="/assets/pasted-artwork-374.svg"
-              alt=""
-              width={1126}
-              height={852}
-            />
-          </span>
-        </div>
-      </section>
-      <section className="box-818">
-        <div className="el-2051">
-          <span
-            className="crisp-svg svg-558"
+            className="crisp-svg svg-549"
             style={{ ["--crisp-svg-width"]: "563px", ["--crisp-svg-ratio"]: "563 / 426" } as import("react").CSSProperties}
           >
             <svg aria-hidden="true" width={563} height={426} viewBox="0 0 563 426" />
@@ -185,30 +199,16 @@ export default function Page() {
             />
           </span>
         </div>
-        <div className="el-2052">
-          <span
-            className="crisp-svg svg-559"
-            style={{ ["--crisp-svg-width"]: "563px", ["--crisp-svg-ratio"]: "563 / 426" } as import("react").CSSProperties}
-          >
-            <svg aria-hidden="true" width={563} height={426} viewBox="0 0 563 426" />
-            <Image
-              src="/assets/pasted-artwork-365.svg"
-              alt=""
-              width={1126}
-              height={852}
-            />
-          </span>
-        </div>
       </section>
-      <section className="box-819">
+      <section className="box-818">
         <div className="mod">
           <span
-            className="crisp-svg svg-560"
+            className="crisp-svg svg-550"
             style={{ ["--crisp-svg-width"]: "563px", ["--crisp-svg-ratio"]: "563 / 443" } as import("react").CSSProperties}
           >
             <svg aria-hidden="true" width={563} height={443} viewBox="0 0 563 443" />
             <Image
-              src="/assets/pasted-artwork-366.svg"
+              src="/assets/pasted-artwork-365.svg"
               alt=""
               width={1126}
               height={886}
@@ -217,12 +217,12 @@ export default function Page() {
         </div>
         <div className="night">
           <span
-            className="crisp-svg svg-561"
+            className="crisp-svg svg-551"
             style={{ ["--crisp-svg-width"]: "563px", ["--crisp-svg-ratio"]: "563 / 426" } as import("react").CSSProperties}
           >
             <svg aria-hidden="true" width={563} height={426} viewBox="0 0 563 426" />
             <Image
-              src="/assets/pasted-artwork-367.svg"
+              src="/assets/pasted-artwork-366.svg"
               alt=""
               width={1126}
               height={852}
@@ -230,61 +230,61 @@ export default function Page() {
           </span>
         </div>
       </section>
-      <section className="el-2555">
-        <div className="box-943">
+      <section className="el-2287">
+        <div className="box-917">
           <Image
-            src="/assets/pasted-artwork-433.svg"
+            src="/assets/pasted-artwork-429.svg"
             alt=""
             width={1046}
             height={215}
-            className="svg-605"
+            className="svg-594"
           />
         </div>
       </section>
-      <p className="text-652">
+      <p className="text-597">
         {"おおきなガラポンを回して、豪華景品を当てよう！\n１等は絶品グルメ！他にもうれしい景品盛りだくさん！"}
       </p>
-      <p className="text-653">
+      <p className="text-598">
         {"開催時間：11/14(土)10:00-20:30　11/15(日)10:00-17:00\n開催場所：本部"}
       </p>
-      <section className="box-944">
+      <section className="box-918">
         <Image
-          src="/assets/pasted-artwork-434.svg"
+          src="/assets/pasted-artwork-430.svg"
           alt=""
           width={245}
           height={58}
-          className="svg-606"
+          className="svg-595"
         />
       </section>
-      <p className="text-654">
+      <p className="text-599">
         {"ミッションをクリアすることで、ちゅーせんかいに参加できるよ。\nミッションは全部で３つ。\n１つクリアにつき１回、合計３回挑戦できるよ。\n\nちゅーせんかいに挑戦したい時は、クリア画面を本部のスタッフに見せてね。\n\n景品は高級なお肉や割引券、まつぴよグッズなどなど。\nぜひ挑戦してみてね。"}
       </p>
-      <section className="box-945">
+      <section className="box-919">
         <Image
-          src="/assets/pasted-artwork-435.svg"
+          src="/assets/pasted-artwork-431.svg"
           alt=""
           width={265}
           height={58}
-          className="svg-607"
+          className="svg-596"
         />
       </section>
-      <section className="el-2556">
-        <div className="box-946">
+      <section className="el-2288">
+        <div className="box-920">
           <Image
-            src="/assets/pasted-artwork-436.svg"
+            src="/assets/pasted-artwork-432.svg"
             alt=""
             width={307}
             height={32}
-            className="svg-608"
+            className="svg-597"
           />
         </div>
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/survey\"}]}]"}
-          className="crisp-svg el-2558"
+          className="crisp-svg el-2290"
           style={{ ["--crisp-svg-width"]: "278px", ["--crisp-svg-ratio"]: "278 / 71" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={278} height={71} viewBox="0 0 278 71" />
           <Image
-            src="/assets/pasted-artwork-439.svg"
+            src="/assets/pasted-artwork-435.svg"
             alt=""
             width={556}
             height={142}
@@ -292,13 +292,13 @@ export default function Page() {
         </span>
       </section>
       <section className="m-1-15">
-        <div className="box-947">
+        <div className="box-921">
           <Image
-            src="/assets/pasted-artwork-437.svg"
+            src="/assets/pasted-artwork-433.svg"
             alt=""
             width={495}
             height={32}
-            className="svg-609"
+            className="svg-598"
           />
         </div>
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/m-1\"}]}]"}
@@ -307,62 +307,62 @@ export default function Page() {
         >
           <svg aria-hidden="true" width={262} height={71} viewBox="0 0 262 71" />
           <Image
-            src="/assets/pasted-artwork-440.svg"
+            src="/assets/pasted-artwork-436.svg"
             alt=""
             width={524}
             height={142}
           />
         </span>
       </section>
-      <section className="el-2557">
-        <div className="box-948">
+      <section className="el-2289">
+        <div className="box-922">
           <Image
-            src="/assets/pasted-artwork-438.svg"
+            src="/assets/pasted-artwork-434.svg"
             alt=""
             width={423}
             height={32}
-            className="svg-610"
+            className="svg-599"
           />
         </div>
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://www.instagram.com/matsupiyo_piyo/\"}]}]"}
-          className="crisp-svg el-2559"
+          className="crisp-svg el-2291"
           style={{ ["--crisp-svg-width"]: "290px", ["--crisp-svg-ratio"]: "290 / 71" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={290} height={71} viewBox="0 0 290 71" />
           <Image
-            src="/assets/pasted-artwork-441.svg"
+            src="/assets/pasted-artwork-437.svg"
             alt=""
             width={580}
             height={142}
           />
         </span>
       </section>
-      <section data-inview className="el-2336">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2337">
+      <section data-inview className="el-2078">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2079">
           <Image
-            src="/assets/pasted-artwork-276.svg"
+            src="/assets/pasted-artwork-275.svg"
             alt=""
             width={58}
             height={58}
-            className="pasted-artwork-svg-121"
+            className="pasted-artwork-svg-116"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-55">
           <Image
-            src="/assets/pasted-artwork-277.svg"
+            src="/assets/pasted-artwork-276.svg"
             alt=""
             width={54}
             height={49}
-            className="pasted-artwork-svg-122"
+            className="pasted-artwork-svg-117"
           />
         </a>
         <span
-          className="crisp-svg svg-443"
+          className="crisp-svg svg-438"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 350" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={375} height={350} viewBox="0 0 375 350" />
           <Image
-            src="/assets/pasted-artwork-278.svg"
+            src="/assets/pasted-artwork-277.svg"
             alt=""
             width={750}
             height={700}
@@ -371,33 +371,33 @@ export default function Page() {
       </section>
       <section data-inview className="footer-27">
         <span
-          className="crisp-svg svg-444"
+          className="crisp-svg svg-439"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
           <Image
-            src="/assets/pasted-artwork-275.svg"
+            src="/assets/pasted-artwork-274.svg"
             alt=""
             width={3840}
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2338">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2080">
           <Image
-            src="/assets/pasted-artwork-276.svg"
+            src="/assets/pasted-artwork-275.svg"
             alt=""
             width={58}
             height={58}
-            className="svg-445"
+            className="svg-440"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-56">
           <Image
-            src="/assets/pasted-artwork-277.svg"
+            src="/assets/pasted-artwork-276.svg"
             alt=""
             width={54}
             height={49}
-            className="svg-446"
+            className="svg-441"
           />
         </a>
       </section>

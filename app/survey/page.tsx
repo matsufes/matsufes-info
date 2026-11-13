@@ -17,83 +17,81 @@ export default function Page() {
     <>
       <span hidden data-page-body="page_muf5w3hl70" />
       <Header />
-      <section data-inview className="el-57">
-        <Image
-          src="/assets/pasted-artwork-217.svg"
-          alt=""
-          width={1440}
-          height={489}
-          className="pasted-artwork-svg-151"
-        />
-      </section>
+      <Image data-inview
+        src="/assets/clouds.webp"
+        alt=""
+        width={1600}
+        height={543}
+        className="el-2520"
+      />
       <p className="box-50">
         <Image
-          src="/assets/pasted-artwork-297.svg"
+          src="/assets/pasted-artwork-296.svg"
           alt=""
           width={840}
           height={129}
-          className="svg-491"
+          className="svg-486"
         />
       </p>
       <section className="box-51">
         <Image
-          src="/assets/pasted-artwork-282.svg"
+          src="/assets/pasted-artwork-281.svg"
           alt=""
           width={1356}
           height={65}
-          className="pasted-artwork-svg-150"
+          className="pasted-artwork-svg-145"
         />
       </section>
-      <p className="box-909">
+      <p className="box-883">
         {"松ヶ崎祭に来てくれて　ほんとーにありがとう。\n松ヶ崎祭は　どうだった？　きみの感想　教えてね。\n来年の松ヶ崎祭も　もっともっと　楽しくするからね。\nまた来年も　会えたらいいな。"}
       </p>
       <section className="box-52">
         <a href="https://docs.google.com/forms/d/1mF7IUTw-hBKqgomKGNHPegECGxmmGigbrLpUeFXWLpU/edit" className="el-55">
           <Image
-            src="/assets/pasted-artwork-296.svg"
+            src="/assets/pasted-artwork-295.svg"
             alt=""
             width={769}
             height={383}
-            className="el-2376"
+            className="el-2109"
           />
         </a>
         <Image
-          src="/assets/pasted-artwork-295.svg"
+          src="/assets/pasted-artwork-294.svg"
           alt=""
           width={1920}
           height={1126}
-          className="svg-490"
+          className="svg-485"
         />
       </section>
       <p className="box-152">
         {"アンケート回答後、スクリーンショットなどで画面を保存するのを忘れないでね。"}
       </p>
-      <section data-inview className="el-2339">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2340">
+      <section data-inview className="el-2081">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2082">
           <Image
-            src="/assets/pasted-artwork-276.svg"
+            src="/assets/pasted-artwork-275.svg"
             alt=""
             width={58}
             height={58}
-            className="pasted-artwork-svg-123"
+            className="pasted-artwork-svg-118"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-57">
           <Image
-            src="/assets/pasted-artwork-277.svg"
+            src="/assets/pasted-artwork-276.svg"
             alt=""
             width={54}
             height={49}
-            className="pasted-artwork-svg-124"
+            className="pasted-artwork-svg-119"
           />
         </a>
         <span
-          className="crisp-svg svg-447"
+          className="crisp-svg svg-442"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 350" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={375} height={350} viewBox="0 0 375 350" />
           <Image
-            src="/assets/pasted-artwork-278.svg"
+            src="/assets/pasted-artwork-277.svg"
             alt=""
             width={750}
             height={700}
@@ -102,33 +100,33 @@ export default function Page() {
       </section>
       <section data-inview className="footer-28">
         <span
-          className="crisp-svg svg-448"
+          className="crisp-svg svg-443"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
           <Image
-            src="/assets/pasted-artwork-275.svg"
+            src="/assets/pasted-artwork-274.svg"
             alt=""
             width={3840}
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2341">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2083">
           <Image
-            src="/assets/pasted-artwork-276.svg"
+            src="/assets/pasted-artwork-275.svg"
             alt=""
             width={58}
             height={58}
-            className="svg-449"
+            className="svg-444"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-58">
           <Image
-            src="/assets/pasted-artwork-277.svg"
+            src="/assets/pasted-artwork-276.svg"
             alt=""
             width={54}
             height={49}
-            className="svg-450"
+            className="svg-445"
           />
         </a>
       </section>
