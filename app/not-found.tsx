@@ -4,8 +4,8 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_mslbenpoz" />
-      <section className="el-315">
-        <h1 className="el-316">
+      <section className="el-314">
+        <h1 className="el-315">
           {"404"}
         </h1>
         <p className="text">
