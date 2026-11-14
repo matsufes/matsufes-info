@@ -22516,8 +22516,7 @@ body:has([data-page-body="page_mwg374j71mg4xr"]) {
   animation: anim-pulse 0.5s ease-out 0s 2 normal both;
 }
 
-.svg-524,
-.svg-712 {
+.svg-524 {
   width: 36%;
   max-width: 100%;
   border-radius: 0px;
@@ -24125,6 +24124,17 @@ body:has([data-page-body="page_mwg374j71mg4xr"]) {
 
 .box-1153:hover {
   animation: anim-pulse 0.3s ease-out 0s 1 normal both;
+}
+
+.svg-712 {
+  width: 36%;
+  max-width: 100%;
+  border-radius: 0px;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  z-index: -1;
+  height: auto;
 }
 
 .svg-713.is-inview {

@@ -9811,7 +9811,7 @@
                 "totals": {
                   "data": 178
                 },
-                "fetchedAt": 1794332271943
+                "fetchedAt": 1794650047969
               }
             },
             {
@@ -9841,8 +9841,8 @@
             }
           ],
           "pos": {
-            "x": 50,
-            "y": 1912
+            "x": 208,
+            "y": 1798
           }
         }
       ],
@@ -351705,7 +351705,29 @@
                   "dir": "asc",
                   "no": 7,
                   "join": "or",
-                  "not": true
+                  "not": true,
+                  "or": [
+                    {
+                      "field": "exhibitNo",
+                      "op": "empty",
+                      "value": "",
+                      "and": true,
+                      "not": false
+                    },
+                    {
+                      "field": "categories.出展カテゴリ",
+                      "op": "contains",
+                      "value": "委員会企画",
+                      "and": true,
+                      "not": true
+                    },
+                    {
+                      "field": "name",
+                      "op": "eq",
+                      "value": "CASINO",
+                      "and": false
+                    }
+                  ]
                 },
                 {
                   "id": "st_mwbx1yc31v1od",
@@ -351722,8 +351744,8 @@
             }
           ],
           "pos": {
-            "x": 62,
-            "y": 4867
+            "x": 64,
+            "y": 5161
           }
         }
       ]
@@ -352086,18 +352108,12 @@
                   "dir": "asc",
                   "no": 8,
                   "join": "or",
-                  "not": true,
+                  "not": false,
                   "or": [
                     {
                       "field": "categories.出展カテゴリ",
                       "op": "contains",
                       "value": "ストリートパフォーマンス",
-                      "and": false
-                    },
-                    {
-                      "field": "categories.出展カテゴリ",
-                      "op": "contains",
-                      "value": "屋内パフォーマンス",
                       "and": false
                     }
                   ]
@@ -352117,8 +352133,8 @@
             }
           ],
           "pos": {
-            "x": 72,
-            "y": 5390
+            "x": 198,
+            "y": 5421
           }
         }
       ]
@@ -355862,7 +355878,7 @@
           ],
           "pos": {
             "x": 1140,
-            "y": 2326
+            "y": 2476
           }
         },
         {
@@ -355907,7 +355923,7 @@
           ],
           "pos": {
             "x": 1117,
-            "y": 1874
+            "y": 2624
           }
         }
       ]
@@ -356846,7 +356862,7 @@
         "newTab": false,
         "pos": {
           "x": 71,
-          "y": 1492
+          "y": 1642
         }
       },
       "children": [
@@ -356925,7 +356941,7 @@
         "newTab": false,
         "pos": {
           "x": 63,
-          "y": 1408
+          "y": 1708
         }
       },
       "children": [
@@ -357556,7 +357572,8 @@
             "borderRadius": "0px",
             "position": "absolute",
             "top": "0%",
-            "right": "0%"
+            "right": "0%",
+            "zIndex": "-1"
           }
         },
         "md": {
