@@ -127,7 +127,7 @@ export default function Page() {
             </span>
           </p>
         </a>
-        <Link href="/schedule/0" className="el-1952">
+        <Link href="/schedule" className="el-1952">
           <Image
             src="/assets/image-4.webp"
             alt=""

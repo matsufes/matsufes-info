@@ -75,7 +75,7 @@ export default function Page() {
         </span>
       </section>
       <section className="el-1858">
-        <div className="el-1855">
+        <Link href="/schedule/0" className="el-1855">
           <Image
             src="/assets/pasted-artwork-46.svg"
             alt="11.13（きん）"
@@ -90,7 +90,7 @@ export default function Page() {
             height={84}
             className="svg-350"
           />
-        </div>
+        </Link>
         <Link href="/schedule" className="el-1856">
           <Image
             src="/assets/pasted-artwork-47.svg"
@@ -107,7 +107,7 @@ export default function Page() {
             className="svg-352"
           />
         </Link>
-        <Link href="/schedule/2" className="el-1857">
+        <Link href="/schedule/1" className="el-1857">
           <Image
             src="/assets/pasted-artwork-48.svg"
             alt="11.15（にち）"
@@ -115,7 +115,7 @@ export default function Page() {
             height={84}
             className="svg-349"
           />
-          <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/schedule/1\"}]}]"}
+          <Image
             src="/assets/pasted-artwork-248.svg"
             alt="11.15（にち）"
             width={268}

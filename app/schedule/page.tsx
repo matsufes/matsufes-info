@@ -91,7 +91,7 @@ export default function Page() {
             className="svg-620"
           />
         </Link>
-        <div className="el-2458">
+        <Link href="/schedule" className="el-2458">
           <Image
             src="/assets/pasted-artwork-49.svg"
             alt=""
@@ -106,8 +106,8 @@ export default function Page() {
             height={84}
             className="svg-622"
           />
-        </div>
-        <Link href="/schedule/2" className="el-2459">
+        </Link>
+        <Link href="/schedule/1" className="el-2459">
           <Image
             src="/assets/pasted-artwork-48.svg"
             alt=""

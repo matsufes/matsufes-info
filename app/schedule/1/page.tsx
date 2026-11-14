@@ -75,7 +75,7 @@ export default function Page() {
         </span>
       </section>
       <section className="el-2470">
-        <Link href="/schedule/0" className="el-2471">
+        <Link href="/schedule/0" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/schedule/0\"}]}]"} className="el-2471">
           <Image
             src="/assets/pasted-artwork-51.svg"
             alt=""
@@ -91,7 +91,7 @@ export default function Page() {
             className="svg-664"
           />
         </Link>
-        <Link href="/schedule" className="el-2472">
+        <Link href="/schedule" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/schedule\"}]}]"} className="el-2472">
           <Image
             src="/assets/pasted-artwork-47.svg"
             alt=""
@@ -107,7 +107,7 @@ export default function Page() {
             className="svg-666"
           />
         </Link>
-        <div className="el-2473">
+        <Link href="/schedule/1" className="el-2473">
           <Image
             src="/assets/pasted-artwork-52.svg"
             alt=""
@@ -122,7 +122,7 @@ export default function Page() {
             height={84}
             className="svg-668"
           />
-        </div>
+        </Link>
       </section>
       <section className="select-16">
         <select id="choice" data-scripts={"[{\"trigger\":\"change\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"メインステージ\"},\"then\":[{\"kind\":\"hide\",\"target\":\"center15\"},{\"kind\":\"hide\",\"target\":\"street15\"},{\"kind\":\"hide\",\"target\":\"committee15\"},{\"kind\":\"show\",\"target\":\"main15\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"センターホール\"},\"then\":[{\"kind\":\"hide\",\"target\":\"main15\"},{\"kind\":\"hide\",\"target\":\"street15\"},{\"kind\":\"hide\",\"target\":\"committee15\"},{\"kind\":\"show\",\"target\":\"center15\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"ストリートパフォーマンス\"},\"then\":[{\"kind\":\"hide\",\"target\":\"main15\"},{\"kind\":\"hide\",\"target\":\"center15\"},{\"kind\":\"hide\",\"target\":\"committee15\"},{\"kind\":\"show\",\"target\":\"street15\"}]},{\"kind\":\"if\",\"cond\":{\"subject\":\"value\",\"target\":\"choice\",\"op\":\"eq\",\"value\":\"委員会企画\"},\"then\":[{\"kind\":\"hide\",\"target\":\"main15\"},{\"kind\":\"hide\",\"target\":\"center15\"},{\"kind\":\"hide\",\"target\":\"street15\"},{\"kind\":\"show\",\"target\":\"committee15\"}]}]}]"} className="select-15" name="choice" defaultValue="メインステージ">
