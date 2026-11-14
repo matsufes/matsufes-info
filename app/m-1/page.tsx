@@ -24,9 +24,9 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2475"
+        className="el-2474"
       />
-      <p className="box-892">
+      <p className="box-891">
         <span
           className="crisp-svg svg-499"
           style={{ ["--crisp-svg-width"]: "779px", ["--crisp-svg-ratio"]: "779 / 139" } as import("react").CSSProperties}
@@ -40,7 +40,7 @@ export default function Page() {
           />
         </span>
       </p>
-      <section className="box-893">
+      <section className="box-892">
         <Image
           src="/assets/pasted-artwork-281.svg"
           alt=""
@@ -49,9 +49,9 @@ export default function Page() {
           className="pasted-artwork-svg-152"
         />
       </section>
-      <section className="box-1068">
-        <div className="box-1069">
-          <a href="https://vote.matsufes.info" className="box-1070">
+      <section className="box-1067">
+        <div className="box-1068">
+          <a href="https://vote.matsufes.info" className="box-1069">
             <p className="text-707">
               {"m-1グランプリに投票する"}
             </p>
@@ -60,19 +60,19 @@ export default function Page() {
               alt=""
               width={27}
               height={39}
-              className="svg-705"
+              className="svg-700"
             />
             <Image
               src="/assets/pasted-artwork-215.svg"
               alt=""
               width={411}
               height={110}
-              className="svg-706"
+              className="svg-701"
             />
           </a>
         </div>
       </section>
-      <section className="box-894">
+      <section className="box-893">
         <span
           className="crisp-svg svg-501"
           style={{ ["--crisp-svg-width"]: "565px", ["--crisp-svg-ratio"]: "565 / 118" } as import("react").CSSProperties}
@@ -86,12 +86,12 @@ export default function Page() {
           />
         </span>
       </section>
-      <section className="box-896">
-        <p className="box-895">
+      <section className="box-895">
+        <p className="box-894">
           {"「m-1グランプリ」は、来場者様みんなの投票によって、部門ごとのNo.1出展団体を決定する、松ヶ崎祭の目玉企画。\n\n\n来場者様一人ひとりの「いちばん良かった！」が、各部門の頂点を選び出すよ。\n\n\n見事1位に輝いた出展団体には、豪華商品が贈られるよ。"}
         </p>
       </section>
-      <section className="box-897">
+      <section className="box-896">
         <span
           className="crisp-svg svg-502"
           style={{ ["--crisp-svg-width"]: "358px", ["--crisp-svg-ratio"]: "358 / 121" } as import("react").CSSProperties}
@@ -105,7 +105,7 @@ export default function Page() {
           />
         </span>
       </section>
-      <section className="box-898">
+      <section className="box-897">
         <span
           className="crisp-svg svg-500"
           style={{ ["--crisp-svg-width"]: "390px", ["--crisp-svg-ratio"]: "390 / 59" } as import("react").CSSProperties}
@@ -119,8 +119,8 @@ export default function Page() {
           />
         </span>
       </section>
-      <section className="box-904">
-        <div className="box-899">
+      <section className="box-903">
+        <div className="box-898">
           <span
             className="crisp-svg svg-503"
             style={{ ["--crisp-svg-width"]: "351px", ["--crisp-svg-ratio"]: "351 / 320" } as import("react").CSSProperties}
@@ -134,7 +134,7 @@ export default function Page() {
             />
           </span>
         </div>
-        <div className="box-900">
+        <div className="box-899">
           <Image
             src="/assets/pasted-artwork-418.svg"
             alt=""
@@ -143,7 +143,7 @@ export default function Page() {
             className="svg-506"
           />
         </div>
-        <div className="box-901">
+        <div className="box-900">
           <span
             className="crisp-svg svg-504"
             style={{ ["--crisp-svg-width"]: "345px", ["--crisp-svg-ratio"]: "345 / 281" } as import("react").CSSProperties}
@@ -157,7 +157,7 @@ export default function Page() {
             />
           </span>
         </div>
-        <div className="box-902">
+        <div className="box-901">
           <Image
             src="/assets/pasted-artwork-418.svg"
             alt=""
@@ -166,7 +166,7 @@ export default function Page() {
             className="pasted-artwork-svg-153"
           />
         </div>
-        <div className="box-903">
+        <div className="box-902">
           <span
             className="crisp-svg svg-505"
             style={{ ["--crisp-svg-width"]: "343px", ["--crisp-svg-ratio"]: "343 / 281" } as import("react").CSSProperties}
@@ -181,10 +181,10 @@ export default function Page() {
           </span>
         </div>
       </section>
-      <section className="el-2207">
+      <section className="el-2206">
         <input id="field" type="text" className="input-9" name="field" placeholder="ここに　言葉を　入力してみてね" />
       </section>
-      <section className="el-2208">
+      <section className="el-2207">
         <Image
           src="/assets/pasted-artwork-15.svg"
           alt=""
@@ -221,7 +221,7 @@ export default function Page() {
           className="pasted-artwork-svg-151"
         />
       </section>
-      <section className="box-905">
+      <section className="box-904">
         <span
           className="crisp-svg svg-507"
           style={{ ["--crisp-svg-width"]: "452px", ["--crisp-svg-ratio"]: "452 / 122" } as import("react").CSSProperties}
@@ -235,11 +235,11 @@ export default function Page() {
           />
         </span>
       </section>
-      <section className="box-910">
-        <p className="box-906">
+      <section className="box-909">
+        <p className="box-905">
           {"全部で5部門に分かれているよ。\n\n\n5部門それぞれに１票づつ投票できるよ。"}
         </p>
-        <div className="box-907">
+        <div className="box-906">
           <span
             className="crisp-svg svg-508"
             style={{ ["--crisp-svg-width"]: "989px", ["--crisp-svg-ratio"]: "989 / 171" } as import("react").CSSProperties}
@@ -253,14 +253,14 @@ export default function Page() {
             />
           </span>
         </div>
-        <p className="box-908">
+        <p className="box-907">
           {"自分が投票した企画は「きみのしおり」から確認できるよ。\n\n\n5部門中3部門以上投票すると　豪華景品が当たる 「ちゅ〜せんかい」に 参加できるよ。"}
         </p>
-        <p className="box-909">
+        <p className="box-908">
           {"※個人出展は対象外となります。ご了承ください。"}
         </p>
       </section>
-      <p data-inview className="box-911">
+      <p data-inview className="box-910">
         <span
           className="crisp-svg svg-514"
           style={{ ["--crisp-svg-width"]: "1095px", ["--crisp-svg-ratio"]: "1095 / 670" } as import("react").CSSProperties}
@@ -298,9 +298,9 @@ export default function Page() {
           />
         </span>
       </p>
-      <section className="box-912" />
-      <section data-inview className="el-2209">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2210">
+      <section className="box-911" />
+      <section data-inview className="el-2208">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2209">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -333,7 +333,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-35">
         <span
-          className="crisp-svg svg-698"
+          className="crisp-svg svg-693"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -344,7 +344,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2211">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2210">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

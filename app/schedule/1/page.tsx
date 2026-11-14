@@ -25,9 +25,9 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2462"
+        className="el-2461"
       />
-      <p className="el-2463">
+      <p className="el-2462">
         <span
           className="crisp-svg svg-655"
           style={{ ["--crisp-svg-width"]: "707px", ["--crisp-svg-ratio"]: "707 / 136" } as import("react").CSSProperties}
@@ -41,7 +41,7 @@ export default function Page() {
           />
         </span>
       </p>
-      <section className="el-2464">
+      <section className="el-2463">
         <Image
           src="/assets/pasted-artwork-78.svg"
           alt=""
@@ -57,10 +57,10 @@ export default function Page() {
           className="pasted-artwork-svg-171"
         />
       </section>
-      <p className="box-1065">
+      <p className="box-1064">
         {"1日の日程表を　見ることができるよ。\nメインステージでの催しや　音楽サークルの公演時間を　確認しよう。"}
       </p>
-      <section className="el-2465">
+      <section className="el-2464">
         <span
           className="crisp-svg svg-657"
           style={{ ["--crisp-svg-width"]: "430px", ["--crisp-svg-ratio"]: "430 / 64" } as import("react").CSSProperties}
@@ -74,8 +74,8 @@ export default function Page() {
           />
         </span>
       </section>
-      <section className="el-2469">
-        <Link href="/schedule/0" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/schedule/0\"}]}]"} className="el-2470">
+      <section className="el-2468">
+        <Link href="/schedule/0" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/schedule/0\"}]}]"} className="el-2469">
           <Image
             src="/assets/pasted-artwork-51.svg"
             alt=""
@@ -91,7 +91,7 @@ export default function Page() {
             className="svg-663"
           />
         </Link>
-        <Link href="/schedule" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/schedule\"}]}]"} className="el-2471">
+        <Link href="/schedule" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/schedule\"}]}]"} className="el-2470">
           <Image
             src="/assets/pasted-artwork-47.svg"
             alt=""
@@ -107,7 +107,7 @@ export default function Page() {
             className="svg-665"
           />
         </Link>
-        <Link href="/schedule/1" className="el-2472">
+        <Link href="/schedule/1" className="el-2471">
           <Image
             src="/assets/pasted-artwork-52.svg"
             alt=""
@@ -132,8 +132,8 @@ export default function Page() {
           <option value="委員会企画">{"委員会企画"}</option>
         </select>
       </section>
-      <section className="el-2473">
-        <div className="box-1066">
+      <section className="el-2472">
+        <div className="box-1065">
           <div id="main15" data-toggle-show="flex" className="t-7">
             <Image
               src="/assets/pasted-artwork-328.svg"
@@ -273,7 +273,7 @@ export default function Page() {
             alt=""
             width={295}
             height={2502}
-            className="el-2474"
+            className="el-2473"
           />
           <span
             className="crisp-svg pc-10"
@@ -289,8 +289,8 @@ export default function Page() {
           </span>
         </div>
       </section>
-      <section data-inview className="el-2467">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2466">
+      <section data-inview className="el-2466">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2465">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -334,7 +334,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2468">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2467">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

@@ -24,9 +24,9 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2484"
+        className="el-2483"
       />
-      <p className="box-836">
+      <p className="box-835">
         <span
           className="crisp-svg svg-373"
           style={{ ["--crisp-svg-width"]: "1161px", ["--crisp-svg-ratio"]: "1161 / 131" } as import("react").CSSProperties}
@@ -40,7 +40,7 @@ export default function Page() {
           />
         </span>
       </p>
-      <section className="box-837">
+      <section className="box-836">
         <Image
           src="/assets/pasted-artwork-281.svg"
           alt=""
@@ -49,10 +49,10 @@ export default function Page() {
           className="pasted-artwork-svg-134"
         />
       </section>
-      <p className="box-838">
+      <p className="box-837">
         {"第56回松ヶ崎祭を開催するにあたり、多くの方々にご協賛いただきました。\nここに深く御礼申し上げます。（敬称略・順不同）"}
       </p>
-      <section className="box-839">
+      <section className="box-838">
         <Image
           src="/assets/pasted-artwork-346.svg"
           alt=""
@@ -61,15 +61,15 @@ export default function Page() {
           className="svg-451"
         />
       </section>
-      <section className="box-842">
-        <p className="box-840">
+      <section className="box-841">
+        <p className="box-839">
           {"・京お好み鉄平\n\n・中華そば 高安\n\n・開晴亭 北山本店\n\n・遊食邸 北山店\n\n・熟成麺屋 神来 一乗寺店\n\n・珍遊 一乗寺本店\n\n・麺家 澤希\n\n・麺屋 極鶏 一乗寺本店\n\n・家系ラーメン 斎藤家 一乗寺店\n\n・株式会社 バックス画材\n\n・天天有 一乗寺本店\n\n・ライフ 松ヶ崎店\n\n・EARTH CAFE\n\n・さいじき"}
         </p>
-        <p className="box-841">
+        <p className="box-840">
           {"・びしや\n\n・麺屋 しな埜\n\n・こにし\n\n・cote a cote\n\n・CAFE JEUNO\n\n・タイ料理 AOW\n\n・musu:bi hair salon\n\n・nondoko ざっぴ\n\n・和より\n\n・餃子と唐揚げ　犀のツノ\n\n・洛北阪急スクエア\n\n・レッドバロン京都北\n\n・うどんの近江や\n\n・BAKERY DAYS"}
         </p>
       </section>
-      <section className="box-843">
+      <section className="box-842">
         <Image
           src="/assets/pasted-artwork-347.svg"
           alt=""
@@ -78,15 +78,15 @@ export default function Page() {
           className="svg-452"
         />
       </section>
-      <section className="box-846">
-        <p className="box-844">
+      <section className="box-845">
+        <p className="box-843">
           {"・小川珈琲ホールディングス株式会社\n\n・櫂有限会社\n\n・株式会社王将フードサービス\n\n・株式会社KINUJO\n\n・株式会社TOAI\n\n・株式会社　丸久小山園"}
         </p>
-        <p className="box-845">
+        <p className="box-844">
           {"・株式会社マンナンライフ\n\n・株式会社ロッテ\n\n・株式会社ロワールホールディングス\n\n・タマノイ酢株式会社\n\n・ブルドックソース株式会社\n\n・マルサンアイ株式会社\n\n・ヤマト株式会社"}
         </p>
       </section>
-      <section className="box-847">
+      <section className="box-846">
         <Image
           src="/assets/pasted-artwork-348.svg"
           alt=""
@@ -95,7 +95,7 @@ export default function Page() {
           className="svg-453"
         />
       </section>
-      <section className="box-848">
+      <section className="box-847">
         <Image
           src="/assets/mf56_HCD.png"
           alt=""
@@ -104,26 +104,26 @@ export default function Page() {
           className="mf56-hcd-png-2"
         />
       </section>
-      <section className="box-852">
-        <div className="box-849">
+      <section className="box-851">
+        <div className="box-848">
           <Image
             src="/assets/1791353956278-d18c90cc-01c7-4f18-93e4-7a2e39bd277f_1.jpg"
             alt=""
             width={1024}
             height={727}
-            className="el-1983"
+            className="el-1982"
           />
         </div>
-        <div className="box-850">
+        <div className="box-849">
           <Image
             src="/assets/2026-10-07-15.17.40.png"
             alt=""
             width={1438}
             height={1035}
-            className="el-1984"
+            className="el-1983"
           />
         </div>
-        <div className="box-851">
+        <div className="box-850">
           <Image
             src="/assets/BAKERY-DAYS.jpg"
             alt=""
@@ -133,8 +133,8 @@ export default function Page() {
           />
         </div>
       </section>
-      <section className="box-855">
-        <div className="box-853">
+      <section className="box-854">
+        <div className="box-852">
           <Image
             src="/assets/S__148398082.jpg"
             alt=""
@@ -143,18 +143,18 @@ export default function Page() {
             className="s-148398082-jpg-2"
           />
         </div>
-        <div className="box-854">
+        <div className="box-853">
           <Image
             src="/assets/02.jpg"
             alt=""
             width={1021}
             height={574}
-            className="el-1985"
+            className="el-1984"
           />
         </div>
       </section>
-      <section data-inview className="el-2020">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2021">
+      <section data-inview className="el-2019">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2020">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -198,7 +198,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2022">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2021">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

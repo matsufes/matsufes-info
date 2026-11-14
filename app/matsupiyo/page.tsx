@@ -15,20 +15,20 @@ export default function Page() {
   return (
     <>
       <span hidden data-page-body="page_mwdc62q53b5wd5" data-scripts={"[{\"trigger\":\"load\",\"steps\":[{\"kind\":\"hide\",\"target\":\"img-6\"}]},{\"trigger\":\"load\",\"steps\":[{\"kind\":\"hide\",\"target\":\"img-5\"}]},{\"trigger\":\"load\",\"steps\":[{\"kind\":\"hide\",\"target\":\"img-4\"}]},{\"trigger\":\"load\",\"steps\":[{\"kind\":\"hide\",\"target\":\"img-3\"}]},{\"trigger\":\"load\",\"steps\":[{\"kind\":\"hide\",\"target\":\"img-2\"}]}]"} />
-      <section className="box-958">
+      <section className="box-957">
         <Image
           src="/assets/pasted-artwork-234.svg"
           alt=""
           width={402}
           height={840}
-          className="el-2268"
+          className="el-2267"
         />
         <Image
           src="/assets/pasted-artwork-206.svg"
           alt=""
           width={1280}
           height={1010}
-          className="el-2294"
+          className="el-2293"
         />
         <Image
           src="/assets/pasted-artwork-446.svg"
@@ -37,7 +37,7 @@ export default function Page() {
           height={1010}
           className="svg-523"
         />
-        <div className="box-957">
+        <div className="box-956">
           <div className="header-29">
             <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://www.matsufes.info/\"}]}]"}
               src="/assets/pasted-artwork-406.svg"
@@ -47,26 +47,26 @@ export default function Page() {
               className="top-2"
             />
           </div>
-          <div className="box-949">
+          <div className="box-948">
             <Image
               src="/assets/pasted-artwork-200.svg"
               alt=""
               width={442}
               height={213}
-              className="el-2269"
+              className="el-2268"
             />
-            <div className="box-948" />
+            <div className="box-947" />
             <Image
               src="/assets/pasted-artwork-207.svg"
               alt=""
               width={333}
               height={164}
-              className="el-2270"
+              className="el-2269"
             />
           </div>
-          <div className="box-951">
+          <div className="box-950">
             <span
-              className="crisp-svg el-2271"
+              className="crisp-svg el-2270"
               style={{ ["--crisp-svg-width"]: "522px", ["--crisp-svg-ratio"]: "522 / 516" } as import("react").CSSProperties}
             >
               <svg aria-hidden="true" width={522} height={516} viewBox="0 0 522 516" />
@@ -82,9 +82,9 @@ export default function Page() {
               alt=""
               width={514}
               height={508}
-              className="el-2272"
+              className="el-2271"
             />
-            <div className="box-950">
+            <div className="box-949">
               <Image data-inview
                 src="/assets/pasted-artwork-390.svg"
                 alt=""
@@ -93,7 +93,7 @@ export default function Page() {
                 className="tap-2"
               />
               <span id="img" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img-3\"},{\"kind\":\"hide\",\"target\":\"img\"}]}]"} data-toggle-show="block"
-                className="crisp-svg el-2273"
+                className="crisp-svg el-2272"
                 style={{ ["--crisp-svg-width"]: "771px", ["--crisp-svg-ratio"]: "771 / 613" } as import("react").CSSProperties}
               >
                 <svg aria-hidden="true" width={771} height={613} viewBox="0 0 771 613" />
@@ -105,7 +105,7 @@ export default function Page() {
                 />
               </span>
               <span id="img-3" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img-4\"},{\"kind\":\"hide\",\"target\":\"img-3\"}]}]"} data-toggle-show="block" data-inview
-                className="crisp-svg el-2274"
+                className="crisp-svg el-2273"
                 style={{ ["--crisp-svg-width"]: "597px", ["--crisp-svg-ratio"]: "597 / 679" } as import("react").CSSProperties}
               >
                 <svg aria-hidden="true" width={597} height={679} viewBox="0 0 597 679" />
@@ -119,7 +119,7 @@ export default function Page() {
                 />
               </span>
               <span id="img-4" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img-5\"},{\"kind\":\"hide\",\"target\":\"img-4\"}]}]"} data-toggle-show="block"
-                className="crisp-svg el-2275"
+                className="crisp-svg el-2274"
                 style={{ ["--crisp-svg-width"]: "682px", ["--crisp-svg-ratio"]: "682 / 639" } as import("react").CSSProperties}
               >
                 <svg aria-hidden="true" width={682} height={639} viewBox="0 0 682 639" />
@@ -133,7 +133,7 @@ export default function Page() {
                 />
               </span>
               <span id="img-2" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img-6\"},{\"kind\":\"hide\",\"target\":\"img-2\"}]}]"} data-toggle-show="block" data-inview
-                className="crisp-svg el-2276"
+                className="crisp-svg el-2275"
                 style={{ ["--crisp-svg-width"]: "584px", ["--crisp-svg-ratio"]: "584 / 613" } as import("react").CSSProperties}
               >
                 <svg aria-hidden="true" width={584} height={613} viewBox="0 0 584 613" />
@@ -147,7 +147,7 @@ export default function Page() {
                 />
               </span>
               <span id="img-5" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img-2\"},{\"kind\":\"hide\",\"target\":\"img-5\"}]}]"} data-toggle-show="block" data-inview
-                className="crisp-svg el-2277"
+                className="crisp-svg el-2276"
                 style={{ ["--crisp-svg-width"]: "718px", ["--crisp-svg-ratio"]: "718 / 631" } as import("react").CSSProperties}
               >
                 <svg aria-hidden="true" width={718} height={631} viewBox="0 0 718 631" />
@@ -161,7 +161,7 @@ export default function Page() {
                 />
               </span>
               <span id="img-6" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"img\"},{\"kind\":\"hide\",\"target\":\"img-6\"}]}]"} data-toggle-show="block" data-inview
-                className="crisp-svg el-2278"
+                className="crisp-svg el-2277"
                 style={{ ["--crisp-svg-width"]: "594px", ["--crisp-svg-ratio"]: "594 / 531" } as import("react").CSSProperties}
               >
                 <svg aria-hidden="true" width={594} height={531} viewBox="0 0 594 531" />
@@ -176,89 +176,89 @@ export default function Page() {
               </span>
             </div>
           </div>
-          <div className="box-956">
-            <div className="box-954">
-              <div className="box-952">
+          <div className="box-955">
+            <div className="box-953">
+              <div className="box-951">
                 <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://www.instagram.com/matsupiyo_piyo/\"}]}]"}
                   src="/assets/pasted-artwork-203.svg"
                   alt=""
                   width={52}
                   height={52}
-                  className="el-2279"
+                  className="el-2278"
                 />
                 <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://x.com/matsupiyo_piyo\"}]}]"}
                   src="/assets/pasted-artwork-204.svg"
                   alt=""
                   width={50}
                   height={44}
-                  className="el-2280"
+                  className="el-2279"
                 />
               </div>
-              <div className="box-953">
+              <div className="box-952">
                 <Image
                   src="/assets/pasted-artwork-205.svg"
                   alt=""
                   width={147}
                   height={15}
-                  className="el-2281"
+                  className="el-2280"
                 />
               </div>
             </div>
-            <div className="box-955">
+            <div className="box-954">
               <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://matsufes.info/tokimeki-dreamworld\"}]}]"}
                 src="/assets/pasted-artwork-201.svg"
                 alt=""
                 width={437}
                 height={209}
-                className="el-2282"
+                className="el-2281"
               />
               <Image
                 src="/assets/pasted-artwork-404.svg"
                 alt=""
                 width={415}
                 height={30}
-                className="el-2283"
+                className="el-2282"
               />
               <Image
                 src="/assets/pasted-artwork-405.svg"
                 alt=""
                 width={415}
                 height={30}
-                className="el-2284"
+                className="el-2283"
               />
             </div>
           </div>
         </div>
       </section>
-      <section className="box-963">
-        <div className="box-959">
+      <section className="box-962">
+        <div className="box-958">
           <Image
             src="/assets/pasted-artwork-388.svg"
             alt=""
             width={508}
             height={59}
-            className="el-2286"
+            className="el-2285"
           />
           <Image
             src="/assets/pasted-artwork-388.svg"
             alt=""
             width={508}
             height={59}
-            className="el-2293"
+            className="el-2292"
           />
-          <div className="box-964">
+          <div className="box-963">
             <Image
               src="/assets/pasted-artwork-408.svg"
               alt=""
               width={393}
               height={32}
-              className="el-2285"
+              className="el-2284"
             />
           </div>
         </div>
-        <div className="box-966">
+        <div className="box-965">
           <span
-            className="crisp-svg el-2292"
+            className="crisp-svg el-2291"
             style={{ ["--crisp-svg-width"]: "522px", ["--crisp-svg-ratio"]: "522 / 516" } as import("react").CSSProperties}
           >
             <svg aria-hidden="true" width={522} height={516} viewBox="0 0 522 516" />
@@ -270,57 +270,57 @@ export default function Page() {
             />
           </span>
         </div>
-        <div className="box-962">
-          <div className="box-960">
+        <div className="box-961">
+          <div className="box-959">
             <Image
               src="/assets/pasted-artwork-407.svg"
               alt=""
               width={181}
               height={100}
-              className="el-2287"
+              className="el-2286"
             />
             <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://www.matsufes.info/booth/175\"}]}]"}
               src="/assets/pasted-artwork-392.svg"
               alt=""
               width={350}
               height={183}
-              className="el-2295"
+              className="el-2294"
             />
           </div>
-          <div className="box-965">
+          <div className="box-964">
             <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://www.matsufes.info/booth/143\"}]}]"}
               src="/assets/pasted-artwork-402.svg"
               alt=""
               width={350}
               height={184}
-              className="el-2288"
+              className="el-2287"
             />
           </div>
-          <div className="box-961">
+          <div className="box-960">
             <Image
               src="/assets/pasted-artwork-427.svg"
               alt=""
               width={346}
               height={216}
-              className="el-2289"
+              className="el-2288"
             />
             <Image
               src="/assets/pasted-artwork-426.svg"
               alt=""
               width={257}
               height={158}
-              className="el-2291"
+              className="el-2290"
             />
           </div>
         </div>
       </section>
-      <section className="box-967">
+      <section className="box-966">
         <Image
           src="/assets/pasted-artwork-389.svg"
           alt=""
           width={149}
           height={97}
-          className="el-2290"
+          className="el-2289"
         />
       </section>
     </>

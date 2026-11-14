@@ -24,9 +24,9 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2476"
+        className="el-2475"
       />
-      <p className="box-870">
+      <p className="box-869">
         <Image
           src="/assets/pasted-artwork-297.svg"
           alt=""
@@ -35,7 +35,7 @@ export default function Page() {
           className="svg-460"
         />
       </p>
-      <section className="box-770">
+      <section className="box-769">
         <Image
           src="/assets/pasted-artwork-281.svg"
           alt=""
@@ -44,7 +44,7 @@ export default function Page() {
           className="svg-428"
         />
       </section>
-      <section className="box-771">
+      <section className="box-770">
         <Image
           src="/assets/pasted-artwork-282.svg"
           alt=""
@@ -53,12 +53,12 @@ export default function Page() {
           className="svg-429"
         />
       </section>
-      <section className="box-773">
-        <p className="box-772">
+      <section className="box-772">
+        <p className="box-771">
           {"◇ ご来場の際は、公共交通機関をご利用ください。\n\n◇ 車・バイクでのご来場はご遠慮ください。\n\n◇ 自転車でご来場の方は、会場の案内係の指示に従い、指定の場所へ駐輪してください。\n\n構内の自転車走行は禁止されています。\n\n◇ ペット(補助犬を除く)の同伴はご遠慮ください。\n\n◇ 酒類の持ち込みおよび飲酒は禁止されています。また、泥酔状態でのご来場もご遠慮ください。\n\n◇ 構内は喫煙所を除き、全面禁煙です。周辺道路での喫煙もご遠慮ください。\n\n◇ 当委員会から認められていない勧誘・宣伝・販売行為は禁止されています。\n\n◇ 企画を実施していない建物や講義室、工事区域内への立ち入りはご遠慮ください。\n\n◇ ゴミの分別にご協力ください。"}
         </p>
       </section>
-      <section className="box-774">
+      <section className="box-773">
         <Image
           src="/assets/pasted-artwork-283.svg"
           alt=""
@@ -67,13 +67,13 @@ export default function Page() {
           className="svg-430"
         />
       </section>
-      <section className="box-776">
-        <p className="box-775">
+      <section className="box-775">
+        <p className="box-774">
           {"◇ 落とし物をしたり、発見した場合は本部までお越しください。\n\n◇ 迷子を見つけた場合、お連れの方が迷子になった場合は本部までお越しください。\n\n◇ 急病人を発見した場合は、お近くの実行委員までお知らせください。\n\n◇ 怪我や体調が優れない場合は、本部または保健管理センターまでお越しください。 "}
         </p>
       </section>
-      <section data-inview className="el-1996">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1997">
+      <section data-inview className="el-1995">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1996">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -106,7 +106,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-22">
         <span
-          className="crisp-svg svg-699"
+          className="crisp-svg svg-694"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -117,7 +117,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1998">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1997">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

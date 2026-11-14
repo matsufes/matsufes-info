@@ -24,9 +24,9 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2481"
+        className="el-2480"
       />
-      <p className="box-815">
+      <p className="box-814">
         <span
           className="crisp-svg svg-371"
           style={{ ["--crisp-svg-width"]: "735px", ["--crisp-svg-ratio"]: "735 / 130" } as import("react").CSSProperties}
@@ -40,7 +40,7 @@ export default function Page() {
           />
         </span>
       </p>
-      <section className="box-816">
+      <section className="box-815">
         <Image
           src="/assets/pasted-artwork-281.svg"
           alt=""
@@ -49,7 +49,7 @@ export default function Page() {
           className="pasted-artwork-svg-131"
         />
       </section>
-      <section className="box-817">
+      <section className="box-816">
         <div id="Q-8" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"A-8\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"8-1\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"8-2\"}]}]"} className="q-8-2">
           <p className="text-553">
             {"第56回松ヶ崎祭の開催場所と日時を教えてください。"}
@@ -60,14 +60,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2037"
+              className="el-2036"
             />
             <Image id="8-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2038"
+              className="el-2037"
             />
           </div>
         </div>
@@ -84,14 +84,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2039"
+              className="el-2038"
             />
             <Image id="1-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2040"
+              className="el-2039"
             />
           </div>
         </div>
@@ -108,14 +108,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2041"
+              className="el-2040"
             />
             <Image id="2-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2042"
+              className="el-2041"
             />
           </div>
         </div>
@@ -132,14 +132,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2043"
+              className="el-2042"
             />
             <Image id="3-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2044"
+              className="el-2043"
             />
           </div>
         </div>
@@ -156,14 +156,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2045"
+              className="el-2044"
             />
             <Image id="4-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2046"
+              className="el-2045"
             />
           </div>
         </div>
@@ -180,14 +180,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2047"
+              className="el-2046"
             />
             <Image id="5-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2048"
+              className="el-2047"
             />
           </div>
         </div>
@@ -204,14 +204,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2049"
+              className="el-2048"
             />
             <Image id="6-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2050"
+              className="el-2049"
             />
           </div>
         </div>
@@ -228,14 +228,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2051"
+              className="el-2050"
             />
             <Image id="7-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2052"
+              className="el-2051"
             />
           </div>
         </div>
@@ -252,14 +252,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2053"
+              className="el-2052"
             />
             <Image id="9-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2054"
+              className="el-2053"
             />
           </div>
         </div>
@@ -276,14 +276,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2055"
+              className="el-2054"
             />
             <Image id="10-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2056"
+              className="el-2055"
             />
           </div>
         </div>
@@ -300,14 +300,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2057"
+              className="el-2056"
             />
             <Image id="11-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2058"
+              className="el-2057"
             />
           </div>
         </div>
@@ -324,14 +324,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2059"
+              className="el-2058"
             />
             <Image id="12-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2060"
+              className="el-2059"
             />
           </div>
         </div>
@@ -348,14 +348,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2061"
+              className="el-2060"
             />
             <Image id="13-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2062"
+              className="el-2061"
             />
           </div>
         </div>
@@ -372,14 +372,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2063"
+              className="el-2062"
             />
             <Image id="14-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2064"
+              className="el-2063"
             />
           </div>
         </div>
@@ -396,14 +396,14 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2065"
+              className="el-2064"
             />
             <Image id="15-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2066"
+              className="el-2065"
             />
           </div>
         </div>
@@ -411,8 +411,8 @@ export default function Page() {
           {"まつぴよグリーティングやストリートパフォーマンスで会うことができます。\n詳しくは「公式メンバー「まつぴよ」」ページからご確認ください。"}
         </p>
       </section>
-      <section data-inview className="el-2011">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2012">
+      <section data-inview className="el-2010">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2011">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -445,7 +445,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-27">
         <span
-          className="crisp-svg svg-704"
+          className="crisp-svg svg-699"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -456,7 +456,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2013">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2012">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

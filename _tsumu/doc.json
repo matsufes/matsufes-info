@@ -3,7 +3,8 @@
   "colorPalette": [
     "#9b7a81",
     "#f4f4f5",
-    "#4f80b8"
+    "#4f80b8",
+    "#f5e9ef"
   ],
   "siteUrl": "https://matsufes.info",
   "favicon": {
@@ -36,88 +37,6 @@
   ],
   "customHeadHtml": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-75BCG9JTXY\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-75BCG9JTXY');\n</script>",
   "schemaVersion": 1,
-  "pageOrder": [
-    "page_mvzcltff5ss5c7",
-    "page_mvou1xir3p353n",
-    "page_mwey62ss3u3er3",
-    "page_mwey915180yk5u",
-    "page_mvouejle4bq4wf",
-    "page_mvouf28p8g9pd9",
-    "page_mvhve1zmbsvph4",
-    "page_mwg374j71mg4xr",
-    "page_mvhyhtub6uytqm",
-    "page_msoti2tux",
-    "page_mwb06ie85q5g5p",
-    "page_mw0g55mu5emi6z",
-    "page_mw0g59fj95g8sl",
-    "page_mw0g5ayccl4poy",
-    "page_mw0g5cpwgggijw",
-    "page_muf5w3hl70",
-    "page_mw0g8eucm0eorg",
-    "page_mw0g8gqopggras",
-    "page_mw0g8i67sxpweq",
-    "page_mw0g8q76wqupul",
-    "page_mw0g8rjmzybnlp",
-    "page_mvhxphej2d8ldu",
-    "page_mvhy09pt5kscnf",
-    "page_mw2c6tvu4arwk4",
-    "page_mwdc62q53b5wd5",
-    "page_mv6a54dc1",
-    "page_mv8b51ub1",
-    "page_mv8n8sk0fg",
-    "page_mv8n8kse5m",
-    "page_mva9voxq1",
-    "page_mwc9rjdp1mjcqw",
-    "page_mwfe7cps1p0ktf",
-    "page_mslbenpoz",
-    "page_msleaffe1",
-    "page_msmxmtrg5",
-    "page_mu98rc7s3u",
-    "page_mu98rd4648",
-    "page_msotieex1e",
-    "page_mv6trtsz1",
-    "page_mwefqpvo1m40u4",
-    "page_muzoss702k",
-    "page_mv7ucj3ccc",
-    "page_mv69uvlg3u",
-    "page_mswzfiqry",
-    "page_mv69qjbj1y",
-    "page_muiixvz340",
-    "page_mv6o9vxe2u",
-    "page_muf53mtd6j",
-    "page_mu2t6c971l",
-    "page_mv6ai6be3t",
-    "page_muf67d6n7n",
-    "page_muf6dx2a7y",
-    "page_muf6el0a87",
-    "page_muf6exd68g",
-    "page_muf6flq18p",
-    "page_mv6alv245p",
-    "page_mu3wp199l",
-    "page_mu727nz01e",
-    "page_muhpjery26",
-    "page_muhpllld2i",
-    "page_mts0xmew1h",
-    "page_mv8igc0g21",
-    "page_mv7xdigo16"
-  ],
-  "pageFolders": [
-    {
-      "id": "folder_mv9nleld1",
-      "name": "バックアップ"
-    },
-    {
-      "id": "folder_mweu13tz1nr4ao",
-      "name": "第一弾"
-    }
-  ],
-  "components": {
-    "comp_mweszk241mvfiq": {
-      "id": "comp_mweszk241mvfiq",
-      "name": "ヘッダー",
-      "rootId": "node_mvzcltfc1lasc3"
-    }
-  },
   "pages": {
     "page_msleaffe1": {
       "id": "page_msleaffe1",
@@ -1320,7 +1239,8 @@
             "backgroundImage": "url(\"/api/assets/file?path=assets%2Fmwexpv4rd27ab5-back.webp\")"
           }
         }
-      }
+      },
+      "htmlBackground": "#040b1b"
     },
     "page_muf67d6n7n": {
       "id": "page_muf67d6n7n",
@@ -1524,7 +1444,7 @@
         "node_muhpllld2f",
         "node_muhpllld2g"
       ],
-      "unpublished": false,
+      "unpublished": true,
       "bodyStyles": {
         "base": {
           "default": {
@@ -1708,7 +1628,7 @@
         "node_mv6alv245i",
         "node_mv6alv245o"
       ],
-      "unpublished": false,
+      "unpublished": true,
       "bodyStyles": {
         "base": {
           "default": {
@@ -6328,23 +6248,25 @@
     },
     "page_mvhxphej2d8ldu": {
       "id": "page_mvhxphej2d8ldu",
-      "name": "②きみのしおり(お気に入り)",
+      "name": "きみのしおり",
       "slug": "mypage",
       "title": "マイページ",
       "description": "松ヶ崎祭HPにてブックマークした出展などを確認できます。",
       "children": [
-        "node_mvhxphegbvx9j",
+        "node_mwgaopu82gtseb",
+        "node_mwgaopu82hdunp",
         "node_mvhxphei1z2xsg",
         "node_mvhxphei21ek5i",
         "node_mvhxphei2367s9",
         "node_mvhxphei24w9a1",
         "node_mvhxphej29olz1",
-        "node_mvhxphej2bdq4t",
         "node_mvhxphej2cn4qp",
+        "node_mwgaq5hz2iczau",
+        "node_mwgcobts2rulyy",
         "node_mw1ip9qo1518dne",
         "node_mw1ip9qq157doym"
       ],
-      "unpublished": true,
+      "unpublished": false,
       "bodyStyles": {
         "base": {
           "default": {
@@ -6354,7 +6276,776 @@
             "backgroundImage": "url(\"/api/assets/file?path=assets%2Fmw5soggi8f1c6d-pasted-artwork.svg\")"
           }
         }
-      }
+      },
+      "pageScripts": [
+        {
+          "id": "sc_mwga8517hl74",
+          "trigger": "load",
+          "steps": [
+            {
+              "id": "st_mwgabh37lf07",
+              "kind": "fetch",
+              "url": "https://api.matsufes.info/data/web-info.json",
+              "as": "データ",
+              "preview": {
+                "sample": {
+                  "data": [
+                    {
+                      "exhibitKey": "74176cc6-ae48-47f9-8ee9-953434dcf281",
+                      "publicId": "063",
+                      "exhibitNo": "3の21",
+                      "name": "fleur",
+                      "groupName": "fleur",
+                      "exhibitorName": "fleur",
+                      "businessHours": "11/14 10:00-20:30、11/15 10:00-16:00",
+                      "customAnswers": {
+                        "中分類": "編み物",
+                        "皆さまへ": "編み物沼にどっぷりハマりちゅ〜"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "物販"
+                        ],
+                        "投票カテゴリ": [
+                          "物販"
+                        ],
+                        "大分類": [
+                          "かう"
+                        ]
+                      },
+                      "description": "編み物のお花を自由に選んで、自分だけのブーケ作り♡心を込めた手作りの小物も販売します⭐︎",
+                      "tags": [],
+                      "searchWords": "編み物,フルール,Fleur,花束,はなたば,ブーケ,bouquet,お花,おはな,花,フラワー,flower,毛糸,けいと,ニット,knit,あみもの,手作り,手づくり,てづくり,ハンドメイド,handmade,小物,こもの,雑貨,ざっか,物販,グッズ",
+                      "snsX": "",
+                      "snsInstagram": "https://instagram.com/fleur._.crochet?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==",
+                      "snsWeb": "",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/74176cc6-ae48-47f9-8ee9-953434dcf281-6bb9a77a5edd.webp",
+                      "place": "",
+                      "venue": "まぜこぜ通り",
+                      "location": "3の21",
+                      "updatedAt": "2026-09-22T05:44:41.012Z"
+                    },
+                    {
+                      "exhibitKey": "2f93616a-e201-41f7-93db-4985efe56d7e",
+                      "publicId": "009",
+                      "exhibitNo": "1の9",
+                      "name": "お金がない炒飯",
+                      "groupName": "きっと26代",
+                      "exhibitorName": "きっと、26代",
+                      "businessHours": "11/14 10:00-20:30、11/15 10:00-16:00",
+                      "customAnswers": {
+                        "皆さまへ": "筋肉ちゅ～(痛)で提供ちゅ〜",
+                        "中分類": "軽食・スナック"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "飲食"
+                        ],
+                        "投票カテゴリ": [
+                          "飲食"
+                        ],
+                        "大分類": [
+                          "たべる"
+                        ]
+                      },
+                      "description": "鳥人間プロジェクト\"きっと、Flyers\"の26年度大会OBが松ヶ崎祭限定で運営する炒飯専門店です。シンプルながら究極の炒飯を目指して中華鍋を振ります！ぜひご賞味ください^ ^\"きっと、Flyers\"の方では公式に出展がありますので併せて応援してくださると嬉しいです！",
+                      "tags": [],
+                      "searchWords": "軽食,チャーハン,炒飯,焼き飯,焼飯,やきめし,中華,ちゅうか,中華料理,中華鍋,ご飯,ごはん,飯,めし,鳥人間,とりにんげん,きっと、Flyers,きっとFlyers,きっとフライヤーズ,フライヤーズ,flyers,OB,食べ物,たべもの,フード,food,飲食,屋台",
+                      "snsX": "",
+                      "snsInstagram": "",
+                      "snsWeb": "",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/2f93616a-e201-41f7-93db-4985efe56d7e-b967314c2f36.webp",
+                      "place": "",
+                      "venue": "できたて通り",
+                      "location": "1の9",
+                      "updatedAt": "2026-09-18T04:37:57.160Z"
+                    },
+                    {
+                      "exhibitKey": "78e76b08-f7bc-4a43-900f-27cef38a670e",
+                      "publicId": "010",
+                      "exhibitNo": "1の10",
+                      "name": "itwoonたいやき",
+                      "groupName": "itwoon",
+                      "exhibitorName": "itwoon",
+                      "businessHours": "11/14 10:00-20:30、11/15 10:00-16:00",
+                      "customAnswers": {
+                        "中分類": "スイーツ",
+                        "皆さまへ": "焼きたてのたいやき販売ちゅ〜"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "飲食"
+                        ],
+                        "投票カテゴリ": [
+                          "飲食"
+                        ],
+                        "大分類": [
+                          "たべる"
+                        ]
+                      },
+                      "description": "焼きたてふわふわのたいやきを販売します！ぜひ出来たての美味しさをお楽しみください！",
+                      "tags": [],
+                      "searchWords": "お菓子,鯛焼き,鯛焼,たい焼き,タイヤキ,taiyaki,イトゥーン,itwoon,焼きたて,やきたて,ふわふわ,あんこ,餡子,和菓子,わがし,おやつ,スイーツ,sweets,甘いもの,あまいもの,おかし",
+                      "snsX": "https://x.com/Itwoon_badmin",
+                      "snsInstagram": "https://instagram.com/itwoon_badmin/",
+                      "snsWeb": "",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/78e76b08-f7bc-4a43-900f-27cef38a670e-a2897db90c0b.webp",
+                      "place": "",
+                      "venue": "できたて通り",
+                      "location": "1の10",
+                      "updatedAt": "2026-09-22T08:30:47.084Z"
+                    },
+                    {
+                      "exhibitKey": "b4368526-5ef1-4913-9dbb-a5a0d6b4786c",
+                      "publicId": "067",
+                      "exhibitNo": "4の3",
+                      "name": "テクテク工房",
+                      "groupName": "テクテク工房",
+                      "exhibitorName": "テクテク工房",
+                      "businessHours": "11/14 10:00-20:30、11/15 10:00-16:00",
+                      "customAnswers": {
+                        "中分類": "ハンドメイド雑貨",
+                        "皆さまへ": "ときめきをお届けちゅ〜"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "物販"
+                        ],
+                        "投票カテゴリ": [
+                          "物販"
+                        ],
+                        "大分類": [
+                          "かう"
+                        ]
+                      },
+                      "description": "心ときめくハンドメイド作品をお届けします♡\r\n編み物でできたお花やふわふわのシュシュ、キラキラのビーズアクセサリーなど、個性豊かな作品がいっぱい！\r\nひとつひとつ心を込めて手作りしています。\r\nぜひお気に入りを見つけに来てください♪",
+                      "tags": [],
+                      "searchWords": "ハンドメイド,てくてく工房,てくてくこうぼう,tekuteku,編み物,あみもの,ニット,毛糸,お花,シュシュ,ヘアアクセ,ヘアゴム,ビーズ,アクセサリー,アクセ,手作り,手づくり,てづくり,雑貨,ざっか,小物,物販",
+                      "snsX": "",
+                      "snsInstagram": "https://instagram.com/tech_tech_factory/",
+                      "snsWeb": "",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/b4368526-5ef1-4913-9dbb-a5a0d6b4786c-83f99196cd19.webp",
+                      "place": "",
+                      "venue": "あそび横丁",
+                      "location": "4の3",
+                      "updatedAt": "2026-09-05T07:08:10.433Z"
+                    },
+                    {
+                      "exhibitKey": "0cd14942-a7b5-414e-a940-9e698065a825",
+                      "publicId": "024",
+                      "exhibitNo": "2の2",
+                      "name": "アメ研のおでん",
+                      "groupName": "アメリカ民謡研究会",
+                      "exhibitorName": "アメリカ民謡研究会B&Bo",
+                      "businessHours": "11/14 10:00-20:30、11/15 10:00-16:00",
+                      "customAnswers": {
+                        "中分類": "おでん",
+                        "皆さまへ": "アメ研のおでんでほっこりちゅ〜"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "飲食"
+                        ],
+                        "投票カテゴリ": [
+                          "飲食"
+                        ],
+                        "大分類": [
+                          "たべる"
+                        ]
+                      },
+                      "description": "アメ研ではあったかいおでんを販売します！11月の寒空にぴったりです！",
+                      "tags": [],
+                      "searchWords": "おでん,御田,お田,関東煮,かんとだき,煮物,あったか,温かい,あたたかい,アメリカ民謡研究会,アメ研,あめけん,B&Bo,ビーアンドボー,食べ物,フード,飲食,冬,寒い",
+                      "snsX": "https://x.com/ ameken_bbo",
+                      "snsInstagram": "https://instagram.com/kit_ameken_bbo/",
+                      "snsWeb": "https://amekenismine.wixsite.com/mysite",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/0cd14942-a7b5-414e-a940-9e698065a825-eecb24ebb117.webp",
+                      "place": "",
+                      "venue": "にぎやか通り",
+                      "location": "2の2",
+                      "updatedAt": "2026-09-16T12:00:25.924Z"
+                    },
+                    {
+                      "exhibitKey": "63e5d4a0-8cf4-4565-bdb3-302c6f54fbac",
+                      "publicId": "102",
+                      "exhibitNo": "",
+                      "name": "アメリカ民謡研究会野外ライブ",
+                      "groupName": "アメリカ民謡研究会",
+                      "exhibitorName": "アメリカ民謡研究会B&Bo",
+                      "businessHours": "11/13 17:10-18:00、11/14 11:10-13:00",
+                      "customAnswers": {
+                        "中分類": "バンド",
+                        "皆さまへ": "メインステージにて演奏ちゅ〜"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "パフォーマンス"
+                        ],
+                        "投票カテゴリ": [
+                          "パフォーマンス"
+                        ],
+                        "大分類": [
+                          "きく"
+                        ]
+                      },
+                      "description": "メインステージにてライブを行います！野外でのライブは迫力満点！ぜひ見に来てください！",
+                      "tags": [],
+                      "searchWords": "バンド,アメ研,あめけん,B&Bo,ライブ,live,LIVE,音楽,おんがく,music,演奏,えんそう,軽音,バンド演奏,野外,屋外,メインステージ,ステージ,stage,フォーク,カントリー,ブルーグラス",
+                      "snsX": "https://x.com/ ameken_bbo",
+                      "snsInstagram": "https://instagram.com/ kit_ameken_bbo/",
+                      "snsWeb": "https://amekenismine.wixsite.com/mysite",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/63e5d4a0-8cf4-4565-bdb3-302c6f54fbac-4d6b5ab205f0.webp",
+                      "place": "",
+                      "venue": "メインステージ",
+                      "location": "メインステージ",
+                      "updatedAt": "2026-09-16T10:53:17.801Z"
+                    },
+                    {
+                      "exhibitKey": "305a60dd-33e5-4ea6-9867-363e8b74db36",
+                      "publicId": "103",
+                      "exhibitNo": "",
+                      "name": "アメリカ民謡研究会屋内ライブ",
+                      "groupName": "アメリカ民謡研究会",
+                      "exhibitorName": "アメリカ民謡研究会B&Bo",
+                      "businessHours": "出展者にお問い合わせください",
+                      "customAnswers": {
+                        "中分類": "バンド",
+                        "皆さまへ": "屋内でもバンド演奏ちゅ〜"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "屋内パフォーマンス"
+                        ],
+                        "投票カテゴリ": [
+                          "パフォーマンス"
+                        ],
+                        "大分類": [
+                          "きく"
+                        ]
+                      },
+                      "description": "普段のバンドメンバーとは違うメンバーとライブを行う企画バンドライブを行います！松ヶ崎祭でしか見れないバンドがたくさん出演するのでぜひ見に来てください！",
+                      "tags": [],
+                      "searchWords": "バンド,アメ研,あめけん,B&Bo,ライブ,live,音楽,おんがく,演奏,企画バンド,屋内,室内,教室ライブ,ステージ,セッション,限定バンド",
+                      "snsX": "https://x.com/ameken_bbo",
+                      "snsInstagram": "https://instagram.com/kit_ameken_bbo/",
+                      "snsWeb": "https://amekenismine.wixsite.com/mysite",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/305a60dd-33e5-4ea6-9867-363e8b74db36-2ea7040af994.webp",
+                      "place": "K101",
+                      "venue": "東3号館",
+                      "location": "東3号館 K101",
+                      "updatedAt": "2026-09-16T10:50:26.210Z"
+                    },
+                    {
+                      "exhibitKey": "8314fa5d-f76b-4e2b-ba24-e087427cc6e1",
+                      "publicId": "018",
+                      "exhibitNo": "1の18",
+                      "name": "KITchen ごちそう山",
+                      "groupName": "ワンダーフォーゲル部",
+                      "exhibitorName": "ワンダーフォーゲル部",
+                      "businessHours": "11/14 10:00-20:30、11/15 10:00-16:00",
+                      "customAnswers": {
+                        "皆さまへ": "きりたんぽ食べていってちゅ〜",
+                        "中分類": "鍋"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "飲食"
+                        ],
+                        "投票カテゴリ": [
+                          "飲食"
+                        ],
+                        "大分類": [
+                          "たべる"
+                        ]
+                      },
+                      "description": "私たちワンダーフォーゲル部は、東北名物のきりたんぽ鍋を販売します！きりたんぽ、鶏肉、野菜を入れたほっとする一杯です。山で温かいものを食べると心も体も温まり幸せな気持ちになります。来ていただいた皆様にも、登山飯を食べているような気分になっていただけるように、心を込めて調理いたしますのでぜひお越しください！",
+                      "tags": [],
+                      "searchWords": "鍋,キッチン,kitchen,ごちそうさん,ご馳走山,ご馳走さん,ワンゲル,ワンダーフォーゲル,WV,登山部,山岳,きりたんぽ,切蒲英,きりたんぽ鍋,なべ,東北,秋田,鶏肉,とりにく,登山飯,山ごはん,山飯,あったか,汁物,フード,飲食",
+                      "snsX": "https://x.com/kitwvblog",
+                      "snsInstagram": "https://instagram.com/kit.wv/",
+                      "snsWeb": "",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/8314fa5d-f76b-4e2b-ba24-e087427cc6e1-d4d2c09722eb.webp",
+                      "place": "",
+                      "venue": "できたて通り",
+                      "location": "1の18",
+                      "updatedAt": "2026-09-15T13:43:53.309Z"
+                    },
+                    {
+                      "exhibitKey": "64cb0bf5-6537-4f61-8d64-8526cbfe0882",
+                      "publicId": "059",
+                      "exhibitNo": "3の17",
+                      "name": "タマリバ",
+                      "groupName": "タマリバ",
+                      "exhibitorName": "タマリバ",
+                      "businessHours": "11/14 10:00-19:00、11/15 10:00-16:00",
+                      "customAnswers": {
+                        "中分類": "手づくりのいろいろ",
+                        "皆さまへ": "甘い香りと可愛い雑貨にむちゅ〜"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "飲食",
+                          "物販"
+                        ],
+                        "投票カテゴリ": [
+                          "飲食",
+                          "物販"
+                        ],
+                        "大分類": [
+                          "たべる",
+                          "かう"
+                        ]
+                      },
+                      "description": "デザ建4回による、個性光る手づくり雑貨と白玉ぜんざい。心ときめく一点モノとの出会いを楽しんで！",
+                      "tags": [],
+                      "searchWords": "手づくりのいろいろ,たまりば,溜まり場,たまり場,デザ建,デザイン建築,4回生,白玉,しらたま,ぜんざい,善哉,白玉ぜんざい,和菓子,スイーツ,雑貨,ざっか,手作り,手づくり,ハンドメイド,一点物,一点モノ",
+                      "snsX": "",
+                      "snsInstagram": "https://instagram.com/tamariba.kit?stkn=MTJ6ZTNid255ZGtieQ%3D%3D&utm_source=qr",
+                      "snsWeb": "",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/64cb0bf5-6537-4f61-8d64-8526cbfe0882-2e83277ee9b8.webp",
+                      "place": "",
+                      "venue": "まぜこぜ通り",
+                      "location": "3の17",
+                      "updatedAt": "2026-09-22T05:40:23.421Z"
+                    },
+                    {
+                      "exhibitKey": "d059fe2d-554f-4e48-bf30-5fbd67192f83",
+                      "publicId": "104",
+                      "exhibitNo": "",
+                      "name": "音楽サークル Raccoon",
+                      "groupName": "音楽サークル Raccoon",
+                      "exhibitorName": "音楽サークル Raccoon",
+                      "businessHours": "11/14 15:50-17:10、11/15 13:00-14:20",
+                      "customAnswers": {
+                        "中分類": "バンド",
+                        "皆さまへ": "野外の時はラーメン休業ちゅ〜"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "パフォーマンス"
+                        ],
+                        "投票カテゴリ": [
+                          "パフォーマンス"
+                        ],
+                        "大分類": [
+                          "きく"
+                        ]
+                      },
+                      "description": "音楽サークルRaccoonを代表するバンドが松ヶ崎祭を盛り上げます！\nいろんなアーティストの方の曲をカバーしているのでぜひ見に来て一緒に楽しみましょう〜",
+                      "tags": [],
+                      "searchWords": "バンド,ラクーン,raccoon,RACCOON,音楽サークル,ライブ,live,カバー,コピーバンド,音楽,演奏,ステージ",
+                      "snsX": "https://x.com/raccoonkyoto",
+                      "snsInstagram": "https://instagram.com/raccoon_kit",
+                      "snsWeb": "",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/d059fe2d-554f-4e48-bf30-5fbd67192f83-4efa16e7bdff.webp",
+                      "place": "",
+                      "venue": "メインステージ",
+                      "location": "メインステージ",
+                      "updatedAt": "2026-09-17T10:07:00.430Z"
+                    },
+                    {
+                      "exhibitKey": "c3ccae48-5c5b-4aec-9d8c-0740e30a9dfe",
+                      "publicId": "004",
+                      "exhibitNo": "1の4",
+                      "name": "二郎系ラーメン　現実を見ろ",
+                      "groupName": "音楽サークル Raccoon",
+                      "exhibitorName": "音楽サークル Raccoon",
+                      "businessHours": "11/14 10:00-20:30、11/15 10:00-16:00",
+                      "customAnswers": {
+                        "中分類": "ラーメン",
+                        "皆さまへ": "全マシでお願いしまちゅ〜"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "飲食"
+                        ],
+                        "投票カテゴリ": [
+                          "飲食"
+                        ],
+                        "大分類": [
+                          "たべる"
+                        ]
+                      },
+                      "description": "音楽サークルRaccoonです！\r\n例年大好評をいただいている、太麺、濃厚スープに分厚いチャーシューが乗った二郎系ラーメンを提供します！\r\nお友達やご家族とraccoonのラーメンをお試しください！",
+                      "tags": [],
+                      "searchWords": "ラーメン,二郎,じろう,二郎系,じろうけい,二郎インスパイア,拉麺,ramen,太麺,極太麺,濃厚,豚骨,チャーシュー,叉焼,ニンニク,ヤサイマシ,ラクーン,raccoon,Raccoon,げんじつをみろ,麺,フード,飲食",
+                      "snsX": "https://x.com/raccoonkyoto",
+                      "snsInstagram": "https://instagram.com/raccoon_kit",
+                      "snsWeb": "",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/c3ccae48-5c5b-4aec-9d8c-0740e30a9dfe-567365e4a2e0.webp",
+                      "place": "",
+                      "venue": "できたて通り",
+                      "location": "1の4",
+                      "updatedAt": "2026-09-17T10:08:08.575Z"
+                    },
+                    {
+                      "exhibitKey": "848b081f-c045-4042-b1bb-8f603627f246",
+                      "publicId": "105",
+                      "exhibitNo": "",
+                      "name": "音楽サークル Raccoon",
+                      "groupName": "音楽サークル Raccoon",
+                      "exhibitorName": "音楽サークル Raccoon",
+                      "businessHours": "出展者にお問い合わせください",
+                      "customAnswers": {
+                        "中分類": "バンド",
+                        "皆さまへ": "ライブに向けて練習ちゅ〜"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "屋内パフォーマンス"
+                        ],
+                        "投票カテゴリ": [
+                          "パフォーマンス"
+                        ],
+                        "大分類": [
+                          "きく"
+                        ]
+                      },
+                      "description": "音楽サークルRaccoonの教室ライブは2日間ずっと開催しています！\r\nタイムテーブルをInstagramやXで投稿しているので、ぜひチェックして気になるバンドを見に来てください！！",
+                      "tags": [],
+                      "searchWords": "バンド,ラクーン,raccoon,教室ライブ,ライブ,live,タイムテーブル,タイテ,音楽,演奏,インスタ,Instagram,X,Twitter",
+                      "snsX": "https://x.com/raccoonkyoto",
+                      "snsInstagram": "https://instagram.com/raccoon_kit",
+                      "snsWeb": "",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/848b081f-c045-4042-b1bb-8f603627f246-13ff53d446d0.webp",
+                      "place": "K201,K202",
+                      "venue": "東3号館",
+                      "location": "東3号館 K201,K202",
+                      "updatedAt": "2026-09-17T10:08:18.423Z"
+                    },
+                    {
+                      "exhibitKey": "529855f0-8f64-47dc-95ba-df0183f83688",
+                      "publicId": "002",
+                      "exhibitNo": "1の2",
+                      "name": "さくっと亭",
+                      "groupName": "生協学生委員会",
+                      "exhibitorName": "生協学生委員会",
+                      "businessHours": "11/14 10:00-20:30、11/15 10:00-16:00",
+                      "customAnswers": {
+                        "中分類": "軽食・スナック",
+                        "皆さまへ": "アツアツ提供ちゅ〜"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "飲食"
+                        ],
+                        "投票カテゴリ": [
+                          "飲食"
+                        ],
+                        "大分類": [
+                          "たべる"
+                        ]
+                      },
+                      "description": "揚げたてサクサクポテトと甘くておいしいドーナツを販売してます！小腹がすいたらぜひお立ち寄りください！🍟🍩",
+                      "tags": [],
+                      "searchWords": "軽食,さくっとてい,生協,せいきょう,学生委員会,ポテト,フライドポテト,フライドポテ,フライ,potato,ドーナツ,ドーナッツ,donut,doughnut,揚げたて,あげたて,おやつ,スナック",
+                      "snsX": "https://x.com/kit_coopgi?s=11",
+                      "snsInstagram": "https://instagram.com/kit_coopgi?igsh=MndxMjBiMTl1azEz&utm_source=qr",
+                      "snsWeb": "https://kit.u-coop.net/student_committee/",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/529855f0-8f64-47dc-95ba-df0183f83688-56e700555ab5.webp",
+                      "place": "",
+                      "venue": "できたて通り",
+                      "location": "1の2",
+                      "updatedAt": "2026-09-17T14:54:28.372Z"
+                    },
+                    {
+                      "exhibitKey": "15629848-6359-462f-b92f-990b9d0b9fb6",
+                      "publicId": "068",
+                      "exhibitNo": "4の4",
+                      "name": "umu -ウム-",
+                      "groupName": "umu",
+                      "exhibitorName": "umu -ウム-",
+                      "businessHours": "11/14 10:00-20:30、11/15 10:00-16:00",
+                      "customAnswers": {
+                        "中分類": "ハンドメイド雑貨",
+                        "皆さまへ": "\"可愛い\"を生み出しちゅ〜"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "物販"
+                        ],
+                        "投票カテゴリ": [
+                          "物販"
+                        ],
+                        "大分類": [
+                          "かう"
+                        ]
+                      },
+                      "description": "はじめまして！雑貨屋「umu -ウム-」です。\nデザイン専攻の３回生３人でつくりました。\n手作りのアクセサリーや紙類、キーホルダーなど、可愛いものをたくさん生み出します。\nあなただけのお気に入りの１点を、ぜひ見つけに来てください！\nご来店お待ちしております♩",
+                      "tags": [],
+                      "searchWords": "雑貨,ウム,umu,UMU,雑貨屋,ざっか,アクセサリー,紙もの,紙類,キーホルダー,キーホル,手作り,手づくり,ハンドメイド,デザイン,3回生,三回生,かわいい,可愛い",
+                      "snsX": "",
+                      "snsInstagram": "https://instagram.com/umu.kit",
+                      "snsWeb": "",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/15629848-6359-462f-b92f-990b9d0b9fb6-bcfa15ebf2c8.webp",
+                      "place": "",
+                      "venue": "あそび横丁",
+                      "location": "4の4",
+                      "updatedAt": "2026-09-16T11:04:44.208Z"
+                    },
+                    {
+                      "exhibitKey": "00a4393d-bb4b-4066-9980-ef5bf52df79a",
+                      "publicId": "012",
+                      "exhibitNo": "1の12",
+                      "name": "精密加工研究室",
+                      "groupName": "精密加工研究室",
+                      "exhibitorName": "精密加工研究室",
+                      "businessHours": "11/14 10:00-20:30、11/15 10:00-16:00",
+                      "customAnswers": {
+                        "中分類": "焼き鳥",
+                        "皆さまへ": "焼き鳥製作ちゅ〜"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "飲食"
+                        ],
+                        "投票カテゴリ": [
+                          "飲食"
+                        ],
+                        "大分類": [
+                          "たべる"
+                        ]
+                      },
+                      "description": "精密加工研究室特製！歯車のように噛み合う肉とタレの味わい。摩擦ゼロ級の滑らかな焼き鳥をどうぞ！",
+                      "tags": [],
+                      "searchWords": "焼き鳥,せいみつかこう,精密加工研,研究室,焼鳥,やきとり,串,串焼き,鶏,とり,チキン,歯車,タレ,フード,飲食",
+                      "snsX": "",
+                      "snsInstagram": "",
+                      "snsWeb": "",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/00a4393d-bb4b-4066-9980-ef5bf52df79a-5cc0a962b024.webp",
+                      "place": "",
+                      "venue": "できたて通り",
+                      "location": "1の12",
+                      "updatedAt": "2026-09-22T07:38:12.159Z"
+                    },
+                    {
+                      "exhibitKey": "7ed46c2d-8b4c-49d9-a082-18ed84ee4765",
+                      "publicId": "106",
+                      "exhibitNo": "",
+                      "name": "Xcape謎解きパーク",
+                      "groupName": "謎解き研究部Xcape",
+                      "exhibitorName": "謎解き研究部Xcape",
+                      "businessHours": "11/14 10:00-20:30、11/15 10:00-16:00",
+                      "customAnswers": {
+                        "中分類": "謎解き",
+                        "皆さまへ": "みんなにひらめき提供ちゅ〜"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "物販",
+                          "体験"
+                        ],
+                        "投票カテゴリ": [
+                          "物販",
+                          "体験"
+                        ],
+                        "大分類": [
+                          "かう",
+                          "みる",
+                          "あそぶ"
+                        ]
+                      },
+                      "description": "謎解きはどんな方でも「ひらめき」ひとつで楽しめるコンテンツです。\r\nXcapeでは謎解き初心者の方から謎解き好きの方まで幅広く楽しめるよう、コンテンツを多数ご用意しています！\r\n友達と一緒に脱出ゲームに挑戦したり、席に座ってゆっくり謎を解いたり、お土産の謎解きキットを自宅で解いてみたり…楽しみ方は様々です。謎解きでしか味わえない快感を体験してみませんか？\r\n公演の予約や最新情報は公式SNSから！",
+                      "tags": [],
+                      "searchWords": "謎解き,エックスケープ,エスケープ,Xcape,XCAPE,なぞとき,謎研,謎解き研究部,リアル脱出ゲーム,脱出ゲーム,だっしゅつ,パズル,クイズ,謎解きキット,ひらめき,体験,ゲーム,パーク",
+                      "snsX": "https://x.com/_X_c_a_p_e_",
+                      "snsInstagram": "https://instagram.com/_x.c.a.p.e_? stkn=aGJ6dDNmcnU0dWhy",
+                      "snsWeb": "https://sites.google.com/view/nazotokixcape/%E3%83%9B%E3%83%BC%E3%83%A0",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/7ed46c2d-8b4c-49d9-a082-18ed84ee4765-c3c418124e96.webp",
+                      "place": "NP11,NP12,NP21",
+                      "venue": "北部講義室(NP)",
+                      "location": "北部講義室(NP) NP11,NP12,NP21",
+                      "updatedAt": "2026-09-17T10:49:06.542Z"
+                    },
+                    {
+                      "exhibitKey": "23b6749f-5dc5-4c98-847b-b4c3bc0b5f81",
+                      "publicId": "107",
+                      "exhibitNo": "",
+                      "name": "軽音楽部",
+                      "groupName": "軽音楽部",
+                      "exhibitorName": "軽音楽部",
+                      "businessHours": "11/14 13:40-15:30、11/15 10:30-11:20",
+                      "customAnswers": {
+                        "中分類": "バンド",
+                        "皆さまへ": "迫力アリ、聴きごたえアリちゅ〜"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "パフォーマンス"
+                        ],
+                        "投票カテゴリ": [
+                          "パフォーマンス"
+                        ],
+                        "大分類": [
+                          "きく"
+                        ]
+                      },
+                      "description": "野外ライブには、部内でのオーディションを勝ち抜いた、くるり、ヨルシカをはじめとし、計６つのバンドが出演する予定です。軽音楽部は、日々それぞれが音楽に楽しく丁寧に向き合っています。松ヶ崎祭全体に音を響かせ、来場者の皆さんを包み込むような演奏ができるよう頑張ります。ぜひお越しください！",
+                      "tags": [],
+                      "searchWords": "バンド,けいおん,けいおんがくぶ,軽音,野外ライブ,ライブ,live,オーディション,くるり,ヨルシカ,yorushika,音楽,演奏,ステージ,メインステージ",
+                      "snsX": "https://x.com/kousen_keion?s=11",
+                      "snsInstagram": "https://instagram.com/kousen_keion?igsi=dGgxZzViYzk0MGwx&utm_source=qr",
+                      "snsWeb": "youtube.com/channel/UCQnxT4lbLAcjwAqqEiU2tOA?si=y1MxWWXhZPVxoBk8",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/23b6749f-5dc5-4c98-847b-b4c3bc0b5f81-d12a39bb5567.webp",
+                      "place": "",
+                      "venue": "メインステージ",
+                      "location": "メインステージ",
+                      "updatedAt": "2026-09-18T10:34:06.588Z"
+                    },
+                    {
+                      "exhibitKey": "a9a569d8-e63e-40de-9f13-9a24665adad3",
+                      "publicId": "108",
+                      "exhibitNo": "",
+                      "name": "軽音楽部",
+                      "groupName": "軽音楽部",
+                      "exhibitorName": "軽音楽部",
+                      "businessHours": "出展者にお問い合わせください",
+                      "customAnswers": {
+                        "中分類": "バンド",
+                        "皆さまへ": "誰でもウェルカムちゅ〜"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "屋内パフォーマンス"
+                        ],
+                        "投票カテゴリ": [
+                          "パフォーマンス"
+                        ],
+                        "大分類": [
+                          "きく"
+                        ]
+                      },
+                      "description": "部室ライブではj-popからヘビーなメタルまで色々な曲を演奏します！昨年も、Tempalay、東京事変、結束バンド、カネコアヤノ、Dream Theater、Red Hot Chili Peppers など、幅広いジャンルを演奏しました。松ヶ崎祭期間中、ほぼずっとライブをしておりますので、ぜひお越しください！",
+                      "tags": [],
+                      "searchWords": "バンド,けいおん,けいおんがくぶ,軽音,部室ライブ,ライブ,live,J-POP,JPOP,jpop,メタル,metal,Tempalay,テンパレイ,東京事変,結束バンド,ぼっち・ざ・ろっく,カネコアヤノ,Dream Theater,ドリームシアター,Red Hot Chili Peppers,レッチリ,音楽,演奏",
+                      "snsX": "https://x.com/kousen_keion?s=11",
+                      "snsInstagram": "https://instagram.com/kousen_keion?igsi=dGgxZzViYzk0MGwx&utm_source=qr",
+                      "snsWeb": "https://www.youtube.com/channel/UCQnxT4lbLAcjwAqqEiU2tOA",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/a9a569d8-e63e-40de-9f13-9a24665adad3-6398d54605ea.webp",
+                      "place": "練習室1",
+                      "venue": "文化サークル共同利用施設",
+                      "location": "文化サークル共同利用施設 練習室1",
+                      "updatedAt": "2026-09-23T13:07:57.175Z"
+                    },
+                    {
+                      "exhibitKey": "7745f238-1d3b-40e1-861f-77e38524b3d4",
+                      "publicId": "109",
+                      "exhibitNo": "",
+                      "name": "参加･観笑自由の大喜利ライブ",
+                      "groupName": "大喜利サークルわらてん",
+                      "exhibitorName": "大喜利サークルわらてん",
+                      "businessHours": "11/14 14:00-15:30、11/15 14:00-15:30",
+                      "customAnswers": {
+                        "中分類": "お笑い",
+                        "皆さまへ": "サークルメンバー募集ちゅ〜"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "体験"
+                        ],
+                        "投票カテゴリ": [
+                          "体験"
+                        ],
+                        "大分類": [
+                          "みる"
+                        ]
+                      },
+                      "description": "大喜利サークルわらてんの大喜利ライブ！参加・観笑大歓迎！\r\n普段は週に1回集まって活動しており、日々大喜利で鍛錬を積んでいます。今回は、そんなわらてんの活動の一部を皆さんに楽しんでもらえるようなライブをお届けします。大喜利を見るだけでも、実際に参加してみるのも大歓迎！一緒に笑って楽しみましょう！わらてんでは現在サークルメンバーも募集中です。大喜利やお笑いが好きな方はぜひ遊びに来てください！",
+                      "tags": [],
+                      "searchWords": "お笑い,おおぎり,大喜利,わらてん,大喜利サークル,おわらい,笑い,ライブ,参加型,観覧,観笑,ボケ,ネタ,コメディ,comedy",
+                      "snsX": "https://x.com/WaratenOgiri",
+                      "snsInstagram": "https://instagram.com/waratenogiri",
+                      "snsWeb": "",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/7745f238-1d3b-40e1-861f-77e38524b3d4-948c54898ae0.webp",
+                      "place": "0313",
+                      "venue": "3号館（こだわりの館）",
+                      "location": "3号館（こだわりの館） 0313",
+                      "updatedAt": "2026-09-20T10:34:50.957Z"
+                    },
+                    {
+                      "exhibitKey": "26b22a25-f1f7-42bb-9caf-29b31cccee3b",
+                      "publicId": "066",
+                      "exhibitNo": "4の2",
+                      "name": "まつだ",
+                      "groupName": "まつだ",
+                      "exhibitorName": "まつだ",
+                      "businessHours": "11/14 10:00-20:30、11/15 10:00-16:00",
+                      "customAnswers": {
+                        "中分類": "ハンドメイド雑貨",
+                        "皆さまへ": "工繊にむちゅ〜"
+                      },
+                      "categories": {
+                        "出展カテゴリ": [
+                          "物販"
+                        ],
+                        "投票カテゴリ": [
+                          "物販"
+                        ],
+                        "大分類": [
+                          "かう"
+                        ]
+                      },
+                      "description": "雑貨と中古家具を販売します。ぜひお越しください！",
+                      "tags": [],
+                      "searchWords": "雑貨,マツダ,松田,matsuda,ざっか,家具,かぐ,中古,中古家具,古道具,アンティーク,ヴィンテージ,ビンテージ,インテリア,リサイクル",
+                      "snsX": "https://x.com/matsudafqgu",
+                      "snsInstagram": "https://instagram.com/3er322fd8",
+                      "snsWeb": "",
+                      "imageUrl": "https://api.matsufes.info/images/exhibits/26b22a25-f1f7-42bb-9caf-29b31cccee3b-21a544e06ef4.webp",
+                      "place": "",
+                      "venue": "あそび横丁",
+                      "location": "4の2",
+                      "updatedAt": "2026-09-23T10:44:10.349Z"
+                    }
+                  ]
+                },
+                "totals": {
+                  "data": 178
+                },
+                "fetchedAt": 1794653470614
+              }
+            },
+            {
+              "id": "st_mwgah9c3mfnz",
+              "kind": "set-var",
+              "value": "{データ.data}",
+              "into": "data"
+            },
+            {
+              "id": "st_mwga8wr3icp7",
+              "kind": "store-load",
+              "key": "mf_bookmarks",
+              "into": "mf_bookmarks",
+              "shared": true
+            },
+            {
+              "id": "st_mwgaatjqky9k",
+              "kind": "transform",
+              "source": "mf_bookmarks",
+              "into": "お気に入り",
+              "transform": {
+                "kind": "split",
+                "separator": "."
+              }
+            },
+            {
+              "id": "st_mwgahpvan83k",
+              "kind": "list-display",
+              "mode": "filter",
+              "array": "data",
+              "field": "publicId",
+              "op": "in",
+              "value": "{mf_bookmarks}",
+              "dir": "asc",
+              "no": 1
+            }
+          ],
+          "pos": {
+            "x": 75,
+            "y": 2276
+          }
+        }
+      ]
     },
     "page_mvhy09pt5kscnf": {
       "id": "page_mvhy09pt5kscnf",
@@ -7411,7 +8102,8 @@
             "backgroundImage": "url(\"/api/assets/file?path=assets%2Fmw5soggi8f1c6d-pasted-artwork.svg\")"
           }
         }
-      }
+      },
+      "htmlBackground": "#040b1b"
     },
     "page_mvzcltff5ss5c7": {
       "id": "page_mvzcltff5ss5c7",
@@ -7453,7 +8145,7 @@
           "default": {}
         }
       },
-      "htmlBackground": "#f5e9ef"
+      "htmlBackground": "#040b1b"
     },
     "page_mw0g55mu5emi6z": {
       "id": "page_mw0g55mu5emi6z",
@@ -7483,7 +8175,8 @@
             "backgroundImage": "url(\"/api/assets/file?path=assets%2Fmw5soggi8f1c6d-pasted-artwork.svg\")"
           }
         }
-      }
+      },
+      "htmlBackground": "#040b1b"
     },
     "page_mw0g59fj95g8sl": {
       "id": "page_mw0g59fj95g8sl",
@@ -7518,7 +8211,8 @@
             "backgroundImage": "url(\"/api/assets/file?path=assets%2Fmw5soggi8f1c6d-pasted-artwork.svg\")"
           }
         }
-      }
+      },
+      "htmlBackground": "#040b1b"
     },
     "page_mw0g5ayccl4poy": {
       "id": "page_mw0g5ayccl4poy",
@@ -7552,7 +8246,8 @@
             "backgroundImage": "url(\"/api/assets/file?path=assets%2Fmw5soggi8f1c6d-pasted-artwork.svg\")"
           }
         }
-      }
+      },
+      "htmlBackground": "#040b1b"
     },
     "page_mw0g5cpwgggijw": {
       "id": "page_mw0g5cpwgggijw",
@@ -7595,7 +8290,8 @@
             "backgroundImage": "url(\"/api/assets/file?path=assets%2Fmw5soggi8f1c6d-pasted-artwork.svg\")"
           }
         }
-      }
+      },
+      "htmlBackground": "#040b1b"
     },
     "page_mw0g8eucm0eorg": {
       "id": "page_mw0g8eucm0eorg",
@@ -7622,7 +8318,8 @@
             "backgroundImage": "url(\"/api/assets/file?path=assets%2Fmw5soggi8f1c6d-pasted-artwork.svg\")"
           }
         }
-      }
+      },
+      "htmlBackground": "#040b1b"
     },
     "page_mw0g8gqopggras": {
       "id": "page_mw0g8gqopggras",
@@ -7653,7 +8350,8 @@
             "backgroundImage": "url(\"/api/assets/file?path=assets%2Fmw5soggi8f1c6d-pasted-artwork.svg\")"
           }
         }
-      }
+      },
+      "htmlBackground": "#040b1b"
     },
     "page_mw0g8i67sxpweq": {
       "id": "page_mw0g8i67sxpweq",
@@ -7684,7 +8382,8 @@
             "backgroundImage": "url(\"/api/assets/file?path=assets%2Fmw5soggi8f1c6d-pasted-artwork.svg\")"
           }
         }
-      }
+      },
+      "htmlBackground": "#040b1b"
     },
     "page_mw0g8q76wqupul": {
       "id": "page_mw0g8q76wqupul",
@@ -7722,7 +8421,8 @@
         "sm": {
           "default": {}
         }
-      }
+      },
+      "htmlBackground": "#040b1b"
     },
     "page_mw0g8rjmzybnlp": {
       "id": "page_mw0g8rjmzybnlp",
@@ -7753,7 +8453,8 @@
             "backgroundImage": "url(\"/api/assets/file?path=assets%2Fmw5soggi8f1c6d-pasted-artwork.svg\")"
           }
         }
-      }
+      },
+      "htmlBackground": "#040b1b"
     },
     "page_mw2c6tvu4arwk4": {
       "id": "page_mw2c6tvu4arwk4",
@@ -7767,7 +8468,7 @@
         "node_mw2c6tvt43ggyy",
         "node_mw2c8awf4bjpja"
       ],
-      "unpublished": true,
+      "unpublished": false,
       "bodyStyles": {
         "base": {
           "default": {
@@ -7815,7 +8516,8 @@
             "backgroundRepeat": "no-repeat"
           }
         }
-      }
+      },
+      "htmlBackground": "#040b1b"
     },
     "page_mwc9rjdp1mjcqw": {
       "id": "page_mwc9rjdp1mjcqw",
@@ -8948,7 +9650,8 @@
             "backgroundImage": "url(\"/api/assets/file?path=assets%2Fmw5soggi8f1c6d-pasted-artwork.svg\")"
           }
         }
-      }
+      },
+      "htmlBackground": "#040b1b"
     },
     "page_mwey915180yk5u": {
       "id": "page_mwey915180yk5u",
@@ -8979,7 +9682,8 @@
             "backgroundImage": "url(\"/api/assets/file?path=assets%2Fmw5soggi8f1c6d-pasted-artwork.svg\")"
           }
         }
-      }
+      },
+      "htmlBackground": "#040b1b"
     },
     "page_mwfe7cps1p0ktf": {
       "id": "page_mwfe7cps1p0ktf",
@@ -9850,6 +10554,71 @@
       "unpublished": false
     }
   },
+  "pageOrder": [
+    "page_mvzcltff5ss5c7",
+    "page_mvou1xir3p353n",
+    "page_mwey62ss3u3er3",
+    "page_mwey915180yk5u",
+    "page_mvouejle4bq4wf",
+    "page_mvouf28p8g9pd9",
+    "page_mvhve1zmbsvph4",
+    "page_mwg374j71mg4xr",
+    "page_mvhyhtub6uytqm",
+    "page_msoti2tux",
+    "page_mwb06ie85q5g5p",
+    "page_mw0g55mu5emi6z",
+    "page_mw0g59fj95g8sl",
+    "page_mw0g5ayccl4poy",
+    "page_mw0g5cpwgggijw",
+    "page_muf5w3hl70",
+    "page_mw0g8eucm0eorg",
+    "page_mw0g8gqopggras",
+    "page_mw0g8i67sxpweq",
+    "page_mw0g8q76wqupul",
+    "page_mw0g8rjmzybnlp",
+    "page_mvhxphej2d8ldu",
+    "page_mvhy09pt5kscnf",
+    "page_mw2c6tvu4arwk4",
+    "page_mwdc62q53b5wd5",
+    "page_mv6a54dc1",
+    "page_mv8b51ub1",
+    "page_mv8n8sk0fg",
+    "page_mv8n8kse5m",
+    "page_mva9voxq1",
+    "page_mwc9rjdp1mjcqw",
+    "page_mwfe7cps1p0ktf",
+    "page_mslbenpoz",
+    "page_msleaffe1",
+    "page_msmxmtrg5",
+    "page_mu98rc7s3u",
+    "page_mu98rd4648",
+    "page_msotieex1e",
+    "page_mv6trtsz1",
+    "page_mwefqpvo1m40u4",
+    "page_muzoss702k",
+    "page_mv7ucj3ccc",
+    "page_mv69uvlg3u",
+    "page_mswzfiqry",
+    "page_mv69qjbj1y",
+    "page_muiixvz340",
+    "page_mv6o9vxe2u",
+    "page_muf53mtd6j",
+    "page_mu2t6c971l",
+    "page_mv6ai6be3t",
+    "page_muf67d6n7n",
+    "page_muf6dx2a7y",
+    "page_muf6el0a87",
+    "page_muf6exd68g",
+    "page_muf6flq18p",
+    "page_mv6alv245p",
+    "page_mu3wp199l",
+    "page_mu727nz01e",
+    "page_muhpjery26",
+    "page_muhpllld2i",
+    "page_mts0xmew1h",
+    "page_mv8igc0g21",
+    "page_mv7xdigo16"
+  ],
   "nodes": {
     "node_mslk3jko1": {
       "id": "node_mslk3jko1",
@@ -255521,7 +256290,9 @@
             "color": "#ffffff",
             "textShadow": "0px 2px 5px rgba(40, 43, 55, 0.7)",
             "height": "100%",
-            "width": "100%"
+            "width": "100%",
+            "zIndex": "1",
+            "position": "relative"
           }
         },
         "sm": {
@@ -255587,7 +256358,9 @@
             "height": "40px",
             "width": "100%",
             "justifyContent": "center",
-            "alignItems": "center"
+            "alignItems": "center",
+            "zIndex": "1",
+            "position": "relative"
           }
         },
         "sm": {
@@ -255912,26 +256685,6 @@
         "sm": {
           "default": {
             "paddingTop": "0px"
-          }
-        }
-      }
-    },
-    "node_mvhxphej2bdq4t": {
-      "id": "node_mvhxphej2bdq4t",
-      "type": "box",
-      "name": "ボックス",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "height": "100%"
           }
         }
       }
@@ -261444,9 +262197,9 @@
         },
         "md": {
           "default": {
-            "width": "24px",
-            "flexShrink": "0",
-            "height": "31px"
+            "width": "20%",
+            "flexShrink": "1",
+            "height": "100%"
           }
         }
       }
@@ -262305,44 +263058,6 @@
         }
       }
     },
-    "node_mvhyhtua522mx0": {
-      "id": "node_mvhyhtua522mx0",
-      "type": "image",
-      "name": "_レイヤー_2.png",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmv6z6jn1-_-_2.png",
-        "alt": "",
-        "width": 129,
-        "height": 129,
-        "assetId": "asset_mv6z6k459"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "32px",
-            "height": "32px"
-          }
-        },
-        "md": {
-          "default": {
-            "width": "24px",
-            "flexShrink": "0",
-            "height": "24px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "32px",
-            "flexShrink": "0",
-            "height": "32px"
-          }
-        }
-      }
-    },
     "node_mvhyhtua542yj0": {
       "id": "node_mvhyhtua542yj0",
       "type": "box",
@@ -262414,7 +263129,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mvhyhtua522mx0",
+        "node_mwgc1kat1m3bcr",
         "node_mvhyhtua53wiz2"
       ],
       "styles": {
@@ -262433,45 +263148,6 @@
         },
         "sm": {
           "default": {}
-        }
-      }
-    },
-    "node_mvhyhtua57tbju": {
-      "id": "node_mvhyhtua57tbju",
-      "type": "image",
-      "name": "いつ.png",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmv71xm1s-asset.png",
-        "alt": "",
-        "width": 85,
-        "height": 108,
-        "assetId": "asset_mv71xmgof"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "32px",
-            "height": "41px",
-            "flexShrink": "0"
-          }
-        },
-        "md": {
-          "default": {
-            "width": "24px",
-            "flexShrink": "0",
-            "height": "31px"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "32px",
-            "flexShrink": "0",
-            "height": "41px"
-          }
         }
       }
     },
@@ -262515,7 +263191,7 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mvhyhtua57tbju",
+        "node_mwgc5r871nqlip",
         "node_mvhyhtua58piwf"
       ],
       "styles": {
@@ -263084,7 +263760,8 @@
             "marginRight": "18px",
             "marginLeft": "18px",
             "fontSize": "1rem",
-            "textAlign": "left"
+            "textAlign": "left",
+            "color": "#4f80b8"
           }
         }
       }
@@ -264447,6 +265124,11 @@
             "width": "54.3%",
             "maxWidth": "100%",
             "borderRadius": "0px"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "90%"
           }
         }
       }
@@ -271943,8 +272625,8 @@
         "heading": 0
       },
       "link": {
-        "kind": "url",
-        "url": "https://map.matsufes.info/?bookmarks=1",
+        "kind": "page",
+        "pageId": "page_mvhxphej2d8ldu",
         "pos": {
           "x": 1108,
           "y": 1627
@@ -273838,8 +274520,8 @@
         "heading": 0
       },
       "link": {
-        "kind": "url",
-        "url": "https://map.matsufes.info/?bookmarks=1",
+        "kind": "page",
+        "pageId": "page_mvhxphej2d8ldu",
         "pos": {
           "x": 48,
           "y": 957
@@ -290641,8 +291323,7 @@
       "styles": {
         "base": {
           "default": {
-            "width": "1920px",
-            "maxWidth": "100%",
+            "width": "100%",
             "borderRadius": "0px"
           }
         }
@@ -316948,10 +317629,7 @@
             "width": "auto"
           }
         }
-      },
-      "hiddenOn": [
-        "sm"
-      ]
+      }
     },
     "node_mwe7oiyh1v26in": {
       "id": "node_mwe7oiyh1v26in",
@@ -343158,3036 +343836,6 @@
         }
       ]
     },
-    "node_mvhxphegecpu9": {
-      "id": "node_mvhxphegecpu9",
-      "type": "image",
-      "name": "pasted-artwork.svg",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmv517b89-pasted-artwork.svg",
-        "alt": "",
-        "width": 230,
-        "height": 142,
-        "assetId": "asset_mv517bkvug"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "100%",
-            "borderRadius": "12px"
-          }
-        },
-        "sm": {
-          "default": {
-            "borderRadius": "0px",
-            "width": "100%",
-            "height": "100%"
-          }
-        },
-        "lg": {
-          "default": {
-            "borderRadius": "0px",
-            "width": "100%",
-            "height": "100%"
-          }
-        }
-      }
-    },
-    "node_mvhxphegdj6tb": {
-      "id": "node_mvhxphegdj6tb",
-      "type": "box",
-      "name": "めにゅ",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mvhxphegecpu9"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px"
-          }
-        },
-        "sm": {
-          "default": {
-            "position": "absolute",
-            "right": "7%",
-            "paddingTop": "0px",
-            "paddingRight": "0px",
-            "paddingBottom": "0px",
-            "paddingLeft": "0px",
-            "width": "15%",
-            "top": "30%"
-          }
-        },
-        "lg": {
-          "default": {
-            "width": "13%",
-            "position": "absolute",
-            "top": "30%",
-            "right": "5%"
-          }
-        }
-      },
-      "hiddenOn": [
-        "base"
-      ],
-      "scripts": [
-        {
-          "id": "sc_muppns1xu",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_muppufavw",
-              "kind": "wait",
-              "seconds": 0.5
-            },
-            {
-              "id": "st_muppok7iv",
-              "kind": "show",
-              "target": "memu-p"
-            }
-          ],
-          "pos": {
-            "x": 1106,
-            "y": 572
-          }
-        }
-      ],
-      "motions": [
-        {
-          "id": "motion_muppqidv3o",
-          "trigger": "active",
-          "property": "all",
-          "keyframes": "swing",
-          "duration": 1,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 1,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ]
-    },
-    "node_mvhxphehhdnz2": {
-      "id": "node_mvhxphehhdnz2",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmupoh1ku-pasted-artwork.svg",
-        "alt": "",
-        "width": 43,
-        "height": 31,
-        "assetId": "asset_mupoh22f2m"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "43px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "100%",
-            "height": "auto"
-          }
-        },
-        "lg": {
-          "default": {
-            "width": "100%"
-          }
-        }
-      }
-    },
-    "node_mvhxphehgvw89": {
-      "id": "node_mvhxphehgvw89",
-      "type": "box",
-      "name": "とじる",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mvhxphehhdnz2"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px"
-          }
-        },
-        "sm": {
-          "default": {
-            "position": "absolute",
-            "right": "10%",
-            "paddingTop": "0px",
-            "paddingRight": "0px",
-            "paddingBottom": "0px",
-            "paddingLeft": "0px",
-            "width": "13%",
-            "top": "5%"
-          }
-        },
-        "lg": {
-          "default": {
-            "position": "absolute",
-            "top": "10%",
-            "right": "8%",
-            "paddingRight": "0px",
-            "paddingLeft": "0px",
-            "paddingTop": "0px",
-            "paddingBottom": "0px",
-            "width": "7%"
-          }
-        }
-      },
-      "scripts": [
-        {
-          "id": "sc_muppxh3bx",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_muppxoaty",
-              "kind": "wait",
-              "seconds": 0.5
-            },
-            {
-              "id": "st_muppxu9lz",
-              "kind": "hide",
-              "target": "memu-p"
-            }
-          ],
-          "pos": {
-            "x": 1106,
-            "y": 442
-          }
-        }
-      ],
-      "motions": [
-        {
-          "id": "motion_muppysnu3p",
-          "trigger": "active",
-          "property": "all",
-          "keyframes": "swing",
-          "duration": 1,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 1,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ]
-    },
-    "node_mvhxphehibcyo": {
-      "id": "node_mvhxphehibcyo",
-      "type": "box",
-      "name": "スマホ松ヶ崎祭",
-      "semantic": "auto",
-      "text": {
-        "content": "松ヶ崎祭について",
-        "heading": 0
-      },
-      "link": null,
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "backgroundColor": "#18181b",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "80%",
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "height": "10%",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "22px",
-            "textDecoration": "underline",
-            "backgroundColor": "#282b37",
-            "paddingRight": "20px",
-            "paddingLeft": "20px"
-          }
-        },
-        "lg": {
-          "default": {
-            "backgroundColor": "#282b37",
-            "paddingRight": "0px",
-            "paddingLeft": "0px",
-            "paddingTop": "20px",
-            "paddingBottom": "20px",
-            "width": "80%",
-            "fontFamily": "Zen Kaku Gothic New",
-            "fontSize": "20px",
-            "textDecoration": "underline"
-          }
-        }
-      },
-      "attrId": "松ヶ崎祭について",
-      "motions": [],
-      "scripts": [
-        {
-          "id": "sc_muthwt1j9",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_mutj2e9gj",
-              "kind": "toggle",
-              "target": "mf-phone"
-            }
-          ],
-          "pos": {
-            "x": 1104,
-            "y": 720
-          }
-        }
-      ]
-    },
-    "node_mvhxphehji2pc": {
-      "id": "node_mvhxphehji2pc",
-      "type": "box",
-      "name": "スマホ企画",
-      "semantic": "auto",
-      "text": {
-        "content": "企画さがし",
-        "heading": 0
-      },
-      "link": null,
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "backgroundColor": "#18181b",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "80%",
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "height": "10%",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "22px",
-            "textDecoration": "underline",
-            "backgroundColor": "#282b37",
-            "paddingRight": "20px",
-            "paddingLeft": "20px"
-          }
-        },
-        "lg": {
-          "default": {
-            "backgroundColor": "#282b37",
-            "paddingRight": "0px",
-            "paddingLeft": "0px",
-            "paddingTop": "20px",
-            "paddingBottom": "20px",
-            "width": "80%",
-            "fontFamily": "Zen Kaku Gothic New",
-            "fontSize": "20px",
-            "textDecoration": "underline"
-          }
-        }
-      },
-      "attrId": "企画さがし",
-      "scripts": [
-        {
-          "id": "sc_muthxc2ka",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_mutiy9ole",
-              "kind": "toggle",
-              "target": "kikaku-phone"
-            }
-          ],
-          "pos": {
-            "x": 1104,
-            "y": 798
-          }
-        }
-      ]
-    },
-    "node_mvhxphehkl53a": {
-      "id": "node_mvhxphehkl53a",
-      "type": "box",
-      "name": "スマホご案内",
-      "semantic": "auto",
-      "text": {
-        "content": "ご案内",
-        "heading": 0
-      },
-      "link": null,
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "backgroundColor": "#18181b",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "80%",
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "height": "10%",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "22px",
-            "textDecoration": "underline",
-            "backgroundColor": "#282b37",
-            "paddingRight": "20px",
-            "paddingLeft": "20px"
-          }
-        },
-        "lg": {
-          "default": {
-            "backgroundColor": "#282b37",
-            "paddingRight": "0px",
-            "paddingLeft": "0px",
-            "paddingTop": "20px",
-            "paddingBottom": "20px",
-            "width": "80%",
-            "fontFamily": "Zen Kaku Gothic New",
-            "fontSize": "20px",
-            "textDecoration": "underline"
-          }
-        }
-      },
-      "attrId": "ご案内",
-      "scripts": [
-        {
-          "id": "sc_muthxg22b",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_mutiyii6f",
-              "kind": "toggle",
-              "target": "goannai-phone"
-            }
-          ],
-          "pos": {
-            "x": 1106,
-            "y": 875
-          }
-        }
-      ]
-    },
-    "node_mvhxphehlg4yy": {
-      "id": "node_mvhxphehlg4yy",
-      "type": "box",
-      "name": "スマホ公式",
-      "semantic": "auto",
-      "text": {
-        "content": "公式特集",
-        "heading": 0
-      },
-      "link": null,
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "backgroundColor": "#18181b",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "80%",
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "height": "10%",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "22px",
-            "textDecoration": "underline",
-            "backgroundColor": "#282b37",
-            "paddingRight": "20px",
-            "paddingLeft": "20px"
-          }
-        },
-        "lg": {
-          "default": {
-            "backgroundColor": "#282b37",
-            "paddingRight": "0px",
-            "paddingLeft": "0px",
-            "paddingTop": "20px",
-            "paddingBottom": "20px",
-            "width": "80%",
-            "fontFamily": "Zen Kaku Gothic New",
-            "fontSize": "20px",
-            "textDecoration": "underline"
-          }
-        }
-      },
-      "attrId": "公式特集",
-      "scripts": [
-        {
-          "id": "sc_muthxje0c",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_mutiynjpg",
-              "kind": "toggle",
-              "target": "koushiki-phone"
-            }
-          ],
-          "pos": {
-            "x": 1107,
-            "y": 953
-          }
-        }
-      ]
-    },
-    "node_mvhxphehn3igo": {
-      "id": "node_mvhxphehn3igo",
-      "type": "box",
-      "name": "ボタン",
-      "semantic": "auto",
-      "text": {
-        "content": "松ヶ崎祭とは",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_muf6dx2a7y",
-        "pos": {
-          "x": 1109,
-          "y": 1062
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "backgroundColor": "#18181b",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        },
-        "sm": {
-          "default": {
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "16px"
-          }
-        }
-      },
-      "attrId": "松ヶ崎祭とは-p"
-    },
-    "node_mvhxphehosp0j": {
-      "id": "node_mvhxphehosp0j",
-      "type": "box",
-      "name": "ボタン",
-      "semantic": "auto",
-      "text": {
-        "content": "mf56メインテ〜マ",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_muf6el0a87",
-        "pos": {
-          "x": 1106,
-          "y": 1138
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "backgroundColor": "#18181b",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        },
-        "sm": {
-          "default": {
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "16px"
-          }
-        }
-      },
-      "attrId": "mf56-p"
-    },
-    "node_mvhxphehp1bff": {
-      "id": "node_mvhxphehp1bff",
-      "type": "box",
-      "name": "ボタン",
-      "semantic": "auto",
-      "text": {
-        "content": "ご協賛いただいた皆さま",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_muf6exd68g",
-        "pos": {
-          "x": 1105,
-          "y": 1211
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "backgroundColor": "#18181b",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        },
-        "sm": {
-          "default": {
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "16px"
-          }
-        }
-      },
-      "attrId": "協賛-p"
-    },
-    "node_mvhxphehqyfvl": {
-      "id": "node_mvhxphehqyfvl",
-      "type": "box",
-      "name": "ボタン",
-      "semantic": "auto",
-      "text": {
-        "content": "お知らせ",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_muf6flq18p",
-        "pos": {
-          "x": 1107,
-          "y": 1293
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "backgroundColor": "#18181b",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        },
-        "sm": {
-          "default": {
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "16px"
-          }
-        }
-      },
-      "attrId": "お知らせ-p"
-    },
-    "node_mvhxphehmnsz1": {
-      "id": "node_mvhxphehmnsz1",
-      "type": "box",
-      "name": "松ヶ崎祭について",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mvhxphehn3igo",
-        "node_mvhxphehosp0j",
-        "node_mvhxphehp1bff",
-        "node_mvhxphehqyfvl"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px"
-          }
-        },
-        "sm": {
-          "default": {
-            "position": "absolute",
-            "left": "0%",
-            "top": "36%",
-            "backgroundColor": "#282b37",
-            "width": "100%",
-            "height": "40%"
-          }
-        },
-        "lg": {
-          "default": {
-            "width": "80%",
-            "position": "absolute",
-            "left": "0%",
-            "top": "28%",
-            "backgroundColor": "#282b37"
-          }
-        }
-      },
-      "attrId": "mf-phone",
-      "locked": false,
-      "hiddenOn": [
-        "lg",
-        "md",
-        "sm"
-      ]
-    },
-    "node_mvhxphehsk674": {
-      "id": "node_mvhxphehsk674",
-      "type": "box",
-      "name": "ボタン",
-      "semantic": "auto",
-      "text": {
-        "content": "言葉からさがす",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_msotieex1e",
-        "pos": {
-          "x": 1109,
-          "y": 1405
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "backgroundColor": "#18181b",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        },
-        "sm": {
-          "default": {
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "16px"
-          }
-        }
-      },
-      "attrId": "言葉-p"
-    },
-    "node_mvhxpheht8ai0": {
-      "id": "node_mvhxpheht8ai0",
-      "type": "box",
-      "name": "ボタン",
-      "semantic": "auto",
-      "text": {
-        "content": "日程表からさがす",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_msmxmtrg5",
-        "pos": {
-          "x": 1108,
-          "y": 1480
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "backgroundColor": "#18181b",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        },
-        "sm": {
-          "default": {
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "16px"
-          }
-        }
-      },
-      "attrId": "日程表-p"
-    },
-    "node_mvhxphehuloki": {
-      "id": "node_mvhxphehuloki",
-      "type": "box",
-      "name": "ボタン",
-      "semantic": "auto",
-      "text": {
-        "content": "地図からさがす",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_msoti2tux",
-        "pos": {
-          "x": 1109,
-          "y": 1551
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "backgroundColor": "#18181b",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        },
-        "sm": {
-          "default": {
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "16px"
-          }
-        }
-      },
-      "attrId": "地図-p"
-    },
-    "node_mvhxphehvpw03": {
-      "id": "node_mvhxphehvpw03",
-      "type": "box",
-      "name": "ボタン",
-      "semantic": "auto",
-      "text": {
-        "content": "きみのしおり\n",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_mu3wp199l",
-        "pos": {
-          "x": 1108,
-          "y": 1627
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "backgroundColor": "#18181b",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        },
-        "sm": {
-          "default": {
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "16px"
-          }
-        }
-      },
-      "attrId": "しおり-p"
-    },
-    "node_mvhxphehrhp5o": {
-      "id": "node_mvhxphehrhp5o",
-      "type": "box",
-      "name": "企画さがし",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mvhxphehsk674",
-        "node_mvhxpheht8ai0",
-        "node_mvhxphehuloki",
-        "node_mvhxphehvpw03"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px"
-          }
-        },
-        "sm": {
-          "default": {
-            "position": "absolute",
-            "left": "0%",
-            "top": "47%",
-            "backgroundColor": "#282b37",
-            "width": "100%",
-            "height": "40%"
-          }
-        },
-        "lg": {
-          "default": {
-            "width": "80%",
-            "position": "absolute",
-            "left": "0px",
-            "top": "39%",
-            "backgroundColor": "#282b37"
-          }
-        }
-      },
-      "hiddenOn": [
-        "lg",
-        "md",
-        "sm"
-      ],
-      "attrId": "kikaku-phone"
-    },
-    "node_mvhxphehx037b": {
-      "id": "node_mvhxphehx037b",
-      "type": "box",
-      "name": "ボタン",
-      "semantic": "auto",
-      "text": {
-        "content": "ご来場の皆さまへ",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_muiixvz340",
-        "pos": {
-          "x": 1106,
-          "y": 1738
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "backgroundColor": "#18181b",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        },
-        "sm": {
-          "default": {
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "16px"
-          }
-        }
-      },
-      "attrId": "ご来場の-p"
-    },
-    "node_mvhxphehyjb9x": {
-      "id": "node_mvhxphehyjb9x",
-      "type": "box",
-      "name": "ボタン",
-      "semantic": "auto",
-      "text": {
-        "content": "行き方・会場地図",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_muf53mtd6j",
-        "pos": {
-          "x": 1106,
-          "y": 1812
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "backgroundColor": "#18181b",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        },
-        "sm": {
-          "default": {
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "16px"
-          }
-        }
-      },
-      "attrId": "行き方-p"
-    },
-    "node_mvhxphehzcs5p": {
-      "id": "node_mvhxphehzcs5p",
-      "type": "box",
-      "name": "ボタン",
-      "semantic": "auto",
-      "text": {
-        "content": "来場者アンケ〜ト",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_muhpllld2i",
-        "pos": {
-          "x": 1106,
-          "y": 1887
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "backgroundColor": "#18181b",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        },
-        "sm": {
-          "default": {
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "16px"
-          }
-        }
-      },
-      "attrId": "アンケ〜ト-p"
-    },
-    "node_mvhxpheh10x16h": {
-      "id": "node_mvhxpheh10x16h",
-      "type": "box",
-      "name": "ボタン",
-      "semantic": "auto",
-      "text": {
-        "content": "よくあるご質問",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_muhpllld2i",
-        "pos": {
-          "x": 1105,
-          "y": 1960
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "backgroundColor": "#18181b",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        },
-        "sm": {
-          "default": {
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "16px"
-          }
-        }
-      },
-      "attrId": "ご質問-p"
-    },
-    "node_mvhxphehwlfmu": {
-      "id": "node_mvhxphehwlfmu",
-      "type": "box",
-      "name": "ご案内",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mvhxphehx037b",
-        "node_mvhxphehyjb9x",
-        "node_mvhxphehzcs5p",
-        "node_mvhxpheh10x16h"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px"
-          }
-        },
-        "sm": {
-          "default": {
-            "position": "absolute",
-            "left": "0%",
-            "top": "59%",
-            "backgroundColor": "#282b37",
-            "width": "100%",
-            "height": "40%"
-          }
-        },
-        "lg": {
-          "default": {
-            "position": "absolute",
-            "left": "0px",
-            "top": "50%",
-            "width": "80%",
-            "backgroundColor": "#282b37"
-          }
-        }
-      },
-      "hiddenOn": [
-        "lg",
-        "md",
-        "sm"
-      ],
-      "attrId": "goannai-phone"
-    },
-    "node_mvhxpheh12a2kq": {
-      "id": "node_mvhxpheh12a2kq",
-      "type": "box",
-      "name": "ボタン",
-      "semantic": "auto",
-      "text": {
-        "content": "委員会企画",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_mu2t6c971l",
-        "pos": {
-          "x": 1106,
-          "y": 2073
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "backgroundColor": "#18181b",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        },
-        "sm": {
-          "default": {
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "16px"
-          }
-        }
-      },
-      "attrId": "委員会企画-p"
-    },
-    "node_mvhxpheh1393md": {
-      "id": "node_mvhxpheh1393md",
-      "type": "box",
-      "name": "ボタン",
-      "semantic": "auto",
-      "text": {
-        "content": "m-1グランプリ",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_mswzfiqry",
-        "pos": {
-          "x": 1107,
-          "y": 2152
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "backgroundColor": "#18181b",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        },
-        "sm": {
-          "default": {
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "16px"
-          }
-        }
-      },
-      "attrId": "m-1-p"
-    },
-    "node_mvhxpheh14ekji": {
-      "id": "node_mvhxpheh14ekji",
-      "type": "box",
-      "name": "ボタン",
-      "semantic": "auto",
-      "text": {
-        "content": "公式メンバ〜「まつぴよ」",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_muhpllld2i",
-        "pos": {
-          "x": 1107,
-          "y": 2231
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "backgroundColor": "#18181b",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        },
-        "sm": {
-          "default": {
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "16px"
-          }
-        }
-      },
-      "attrId": "まつぴよ-p"
-    },
-    "node_mvhxpheh11cepx": {
-      "id": "node_mvhxpheh11cepx",
-      "type": "box",
-      "name": "公式特集",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mvhxpheh12a2kq",
-        "node_mvhxpheh1393md",
-        "node_mvhxpheh14ekji"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px"
-          }
-        },
-        "sm": {
-          "default": {
-            "position": "absolute",
-            "left": "0%",
-            "top": "70%",
-            "backgroundColor": "#282b37",
-            "width": "100%",
-            "height": "30%"
-          }
-        },
-        "lg": {
-          "default": {
-            "width": "80%",
-            "position": "absolute",
-            "left": "0px",
-            "top": "60%"
-          }
-        }
-      },
-      "hiddenOn": [
-        "lg",
-        "md",
-        "sm"
-      ],
-      "attrId": "koushiki-phone"
-    },
-    "node_mvhxphehfya62": {
-      "id": "node_mvhxphehfya62",
-      "type": "box",
-      "name": "めにゅ〜",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mvhxphehgvw89",
-        "node_mvhxphehibcyo",
-        "node_mvhxphehji2pc",
-        "node_mvhxphehkl53a",
-        "node_mvhxphehlg4yy",
-        "node_mvhxphehmnsz1",
-        "node_mvhxphehrhp5o",
-        "node_mvhxphehwlfmu",
-        "node_mvhxpheh11cepx"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px"
-          }
-        },
-        "sm": {
-          "default": {
-            "paddingTop": "0px",
-            "paddingRight": "0px",
-            "paddingBottom": "0px",
-            "paddingLeft": "0px",
-            "width": "100%",
-            "height": "850px",
-            "backgroundColor": "#282b37",
-            "justifyContent": "center",
-            "alignItems": "center",
-            "fontFamily": "Zen Maru Gothic",
-            "fontSize": "22px",
-            "position": "absolute",
-            "top": "0px",
-            "zIndex": "5",
-            "left": "0px"
-          }
-        },
-        "lg": {
-          "default": {
-            "width": "100%",
-            "height": "768px",
-            "position": "absolute",
-            "left": "0px",
-            "top": "0px",
-            "backgroundColor": "#282b37",
-            "paddingTop": "150px"
-          }
-        }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ],
-      "attrId": "memu-p",
-      "motions": [
-        {
-          "id": "motion_muqvm7gl1",
-          "trigger": "state",
-          "property": "all",
-          "keyframes": "fade-up",
-          "duration": 0.3,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 1,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ]
-    },
-    "node_mvhxpheh15eugc": {
-      "id": "node_mvhxpheh15eugc",
-      "type": "image",
-      "name": "トップへ",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmv51ekep-pasted-artwork.svg",
-        "alt": "",
-        "width": 213,
-        "height": 213,
-        "assetId": "asset_mv51el22un"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "15%",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        },
-        "sm": {
-          "default": {
-            "width": "20%"
-          }
-        }
-      },
-      "scripts": [
-        {
-          "id": "sc_mv566f7x10",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_mv566gig11",
-              "kind": "open-page",
-              "pageId": "page_msleaffe1"
-            }
-          ],
-          "pos": {
-            "x": 576,
-            "y": 63
-          }
-        }
-      ]
-    },
-    "node_mvhxphei1889gd": {
-      "id": "node_mvhxphei1889gd",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmsq6l15y-pasted-artwork.svg",
-        "alt": "",
-        "width": 244,
-        "height": 55,
-        "assetId": "asset_msq6l1pg7p"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "244px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      }
-    },
-    "node_mvhxphei1a5qai": {
-      "id": "node_mvhxphei1a5qai",
-      "type": "box",
-      "name": "とは",
-      "semantic": "auto",
-      "text": {
-        "content": "松ヶ崎祭とは",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_muf6dx2a7y",
-        "pos": {
-          "x": 49,
-          "y": 425
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "color": "#ffffff",
-            "fontSize": "16px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer",
-            "fontFamily": "Zen Kaku Gothic New"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        }
-      }
-    },
-    "node_mvhxphei1bejx3": {
-      "id": "node_mvhxphei1bejx3",
-      "type": "box",
-      "name": "mf56",
-      "semantic": "auto",
-      "text": {
-        "content": "mf56メインテ〜マ",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_muf6el0a87",
-        "pos": {
-          "x": 49,
-          "y": 503
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "color": "#ffffff",
-            "fontSize": "16px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer",
-            "fontFamily": "Zen Kaku Gothic New"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        }
-      }
-    },
-    "node_mvhxphei1cp318": {
-      "id": "node_mvhxphei1cp318",
-      "type": "box",
-      "name": "ご協賛",
-      "semantic": "auto",
-      "text": {
-        "content": "ご協賛いただいた皆さま",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_muf6exd68g",
-        "pos": {
-          "x": 49,
-          "y": 581
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "color": "#ffffff",
-            "fontSize": "16px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer",
-            "fontFamily": "Zen Kaku Gothic New"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        }
-      }
-    },
-    "node_mvhxphei1dg43h": {
-      "id": "node_mvhxphei1dg43h",
-      "type": "box",
-      "name": "お知らせ",
-      "semantic": "auto",
-      "text": {
-        "content": "お知らせ",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_muf6flq18p",
-        "pos": {
-          "x": 48,
-          "y": 657
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "color": "#ffffff",
-            "fontSize": "16px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer",
-            "fontFamily": "Zen Kaku Gothic New"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        }
-      }
-    },
-    "node_mvhxphei19oy9b": {
-      "id": "node_mvhxphei19oy9b",
-      "type": "box",
-      "name": "松ヶ崎祭について　メニュー",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mvhxphei1a5qai",
-        "node_mvhxphei1bejx3",
-        "node_mvhxphei1cp318",
-        "node_mvhxphei1dg43h"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "height": "294px",
-            "width": "277px",
-            "backgroundColor": "#282b37",
-            "justifyContent": "center",
-            "alignItems": "flex-start",
-            "marginLeft": "0px",
-            "borderRadius": "20px",
-            "marginTop": "0px",
-            "zIndex": "5",
-            "position": "absolute",
-            "left": "0px",
-            "top": "80px"
-          }
-        }
-      },
-      "motions": [
-        {
-          "id": "motion_msmvdx6g2",
-          "trigger": "in-view",
-          "property": "all",
-          "keyframes": "fade-down",
-          "duration": 0.3,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 1,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ],
-      "locked": false,
-      "attrId": "menu1",
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ]
-    },
-    "node_mvhxphei17ji5q": {
-      "id": "node_mvhxphei17ji5q",
-      "type": "box",
-      "name": "松ヶ崎祭について",
-      "semantic": "auto",
-      "text": {
-        "content": "",
-        "heading": 0
-      },
-      "link": null,
-      "children": [
-        "node_mvhxphei1889gd",
-        "node_mvhxphei19oy9b"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "color": "#ffffff",
-            "fontSize": "18px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer",
-            "zIndex": "1",
-            "position": "relative",
-            "fontFamily": "Zen Kaku Gothic New",
-            "textShadow": "0px 3px 4px #282b37",
-            "width": "205px",
-            "height": "60px"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        }
-      },
-      "hidden": false,
-      "attrId": "matsufes",
-      "scripts": [
-        {
-          "id": "sc_mumjiirm8",
-          "steps": [
-            {
-              "id": "st_mumjkz2vd",
-              "kind": "show",
-              "target": "menu1"
-            }
-          ],
-          "pos": {
-            "x": 62,
-            "y": 34
-          },
-          "trigger": "hover-start"
-        },
-        {
-          "id": "sc_muxwewhx1",
-          "trigger": "hover-end",
-          "steps": [
-            {
-              "id": "st_muxwezz63",
-              "kind": "hide",
-              "target": "menu1"
-            }
-          ],
-          "pos": {
-            "x": 1096,
-            "y": 19
-          },
-          "keepOnShown": true
-        }
-      ]
-    },
-    "node_mvhxphei1fsu72": {
-      "id": "node_mvhxphei1fsu72",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmsq6lhec-pasted-artwork.svg",
-        "alt": "",
-        "width": 153,
-        "height": 55,
-        "assetId": "asset_msq6lhvw7r"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "153px",
-            "borderRadius": "0px",
-            "maxWidth": "100%"
-          }
-        }
-      }
-    },
-    "node_mvhxphei1h4cjn": {
-      "id": "node_mvhxphei1h4cjn",
-      "type": "box",
-      "name": "言葉から",
-      "semantic": "auto",
-      "text": {
-        "content": "言葉からさがす",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_msotieex1e",
-        "pos": {
-          "x": 47,
-          "y": 756
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "color": "#ffffff",
-            "fontSize": "16px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer",
-            "fontFamily": "Zen Kaku Gothic New"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        }
-      }
-    },
-    "node_mvhxphei1ioe9x": {
-      "id": "node_mvhxphei1ioe9x",
-      "type": "box",
-      "name": "日程表から",
-      "semantic": "auto",
-      "text": {
-        "content": "日程表からさがす",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_msmxmtrg5",
-        "pos": {
-          "x": 43,
-          "y": 829
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "color": "#ffffff",
-            "fontSize": "16px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer",
-            "fontFamily": "Zen Kaku Gothic New"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        }
-      }
-    },
-    "node_mvhxphei1jfz1g": {
-      "id": "node_mvhxphei1jfz1g",
-      "type": "box",
-      "name": "地図から",
-      "semantic": "auto",
-      "text": {
-        "content": "地図からさがす",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_msoti2tux",
-        "pos": {
-          "x": 40,
-          "y": 907
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "color": "#ffffff",
-            "fontSize": "16px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer",
-            "fontFamily": "Zen Kaku Gothic New"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        }
-      }
-    },
-    "node_mvhxphei1kpoyg": {
-      "id": "node_mvhxphei1kpoyg",
-      "type": "box",
-      "name": "きみのしおり",
-      "semantic": "auto",
-      "text": {
-        "content": "きみのしおり",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_mu3wp199l",
-        "pos": {
-          "x": 40,
-          "y": 987
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "color": "#ffffff",
-            "fontSize": "16px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer",
-            "fontFamily": "Zen Kaku Gothic New"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        }
-      }
-    },
-    "node_mvhxphei1g1hgd": {
-      "id": "node_mvhxphei1g1hgd",
-      "type": "box",
-      "name": "企画さがし　メニュー",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mvhxphei1h4cjn",
-        "node_mvhxphei1ioe9x",
-        "node_mvhxphei1jfz1g",
-        "node_mvhxphei1kpoyg"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "position": "absolute",
-            "top": "80px",
-            "height": "294px",
-            "width": "273px",
-            "backgroundColor": "#282b37",
-            "justifyContent": "center",
-            "alignItems": "flex-start",
-            "marginLeft": "0px",
-            "borderRadius": "20px",
-            "marginTop": "0px",
-            "zIndex": "2",
-            "left": "0px"
-          }
-        }
-      },
-      "attrId": "menu2",
-      "motions": [
-        {
-          "id": "motion_msmvdx6g2",
-          "trigger": "in-view",
-          "property": "all",
-          "keyframes": "fade-up",
-          "duration": 0.3,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 1,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ],
-      "locked": false,
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ]
-    },
-    "node_mvhxphei1eltsy": {
-      "id": "node_mvhxphei1eltsy",
-      "type": "box",
-      "name": "企画さがし",
-      "semantic": "auto",
-      "text": {
-        "content": "",
-        "heading": 0
-      },
-      "link": null,
-      "children": [
-        "node_mvhxphei1fsu72",
-        "node_mvhxphei1g1hgd"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "color": "#ffffff",
-            "fontSize": "18px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer",
-            "flexDirection": "row",
-            "fontFamily": "Zen Kaku Gothic New",
-            "textShadow": "0px 3px 4px #18181b",
-            "width": "155px",
-            "height": "60px"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        }
-      },
-      "attrId": "kikaku",
-      "scripts": [
-        {
-          "id": "sc_mukz3qdd46",
-          "pos": {
-            "x": 62,
-            "y": 127
-          },
-          "trigger": "hover-start",
-          "steps": [
-            {
-              "id": "st_mukz3qdd45",
-              "kind": "show",
-              "target": "menu2"
-            }
-          ]
-        },
-        {
-          "id": "sc_mv38bb752",
-          "trigger": "hover-end",
-          "steps": [
-            {
-              "id": "st_mv38cjkf5",
-              "kind": "hide",
-              "target": "menu2"
-            }
-          ],
-          "pos": {
-            "x": 1113,
-            "y": 127
-          },
-          "keepOnShown": true
-        }
-      ]
-    },
-    "node_mvhxphei1m0ir3": {
-      "id": "node_mvhxphei1m0ir3",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmsq6qiay-pasted-artwork.svg",
-        "alt": "",
-        "width": 93,
-        "height": 61,
-        "assetId": "asset_msq6qirl1"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "61px",
-            "borderRadius": "0px",
-            "maxWidth": "100%",
-            "height": "40px"
-          }
-        }
-      }
-    },
-    "node_mvhxphei1ox6aa": {
-      "id": "node_mvhxphei1ox6aa",
-      "type": "box",
-      "name": "ご来場の皆さまへ",
-      "semantic": "auto",
-      "text": {
-        "content": "ご来場の皆さまへ",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_muiixvz340",
-        "pos": {
-          "x": 40,
-          "y": 1089
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "color": "#ffffff",
-            "fontSize": "16px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer",
-            "fontFamily": "Zen Kaku Gothic New"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        }
-      }
-    },
-    "node_mvhxphei1pjs8c": {
-      "id": "node_mvhxphei1pjs8c",
-      "type": "box",
-      "name": "行き方",
-      "semantic": "auto",
-      "text": {
-        "content": "行き方・会場地図",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_muf53mtd6j",
-        "pos": {
-          "x": 37,
-          "y": 1163
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "color": "#ffffff",
-            "fontSize": "16px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer",
-            "fontFamily": "Zen Kaku Gothic New"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        }
-      }
-    },
-    "node_mvhxphei1qxmev": {
-      "id": "node_mvhxphei1qxmev",
-      "type": "box",
-      "name": "アンケート",
-      "semantic": "auto",
-      "text": {
-        "content": "来場者アンケ〜ト",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_muhpllld2i",
-        "pos": {
-          "x": 37,
-          "y": 1244
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "color": "#ffffff",
-            "fontSize": "16px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer",
-            "fontFamily": "Zen Kaku Gothic New"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        }
-      }
-    },
-    "node_mvhxphei1rjg7i": {
-      "id": "node_mvhxphei1rjg7i",
-      "type": "box",
-      "name": "ご質問",
-      "semantic": "auto",
-      "text": {
-        "content": "よくあるご質問",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_muhpllld2i",
-        "pos": {
-          "x": 35,
-          "y": 1325
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "color": "#ffffff",
-            "fontSize": "16px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer",
-            "fontFamily": "Zen Kaku Gothic New"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        }
-      }
-    },
-    "node_mvhxphei1nrpsd": {
-      "id": "node_mvhxphei1nrpsd",
-      "type": "box",
-      "name": "ご案内　メニュー",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mvhxphei1ox6aa",
-        "node_mvhxphei1pjs8c",
-        "node_mvhxphei1qxmev",
-        "node_mvhxphei1rjg7i"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "position": "absolute",
-            "top": "80px",
-            "height": "294px",
-            "width": "284px",
-            "backgroundColor": "#282b37",
-            "justifyContent": "center",
-            "alignItems": "flex-start",
-            "borderRadius": "20px",
-            "marginTop": "0px",
-            "zIndex": "3",
-            "left": "0px"
-          }
-        }
-      },
-      "attrId": "menu3",
-      "motions": [
-        {
-          "id": "motion_msmvdx6g2",
-          "trigger": "in-view",
-          "property": "all",
-          "keyframes": "fade-up",
-          "duration": 0.3,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 1,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ],
-      "locked": false,
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ]
-    },
-    "node_mvhxphei1lfojc": {
-      "id": "node_mvhxphei1lfojc",
-      "type": "box",
-      "name": "ご案内",
-      "semantic": "auto",
-      "text": {
-        "content": "",
-        "heading": 0
-      },
-      "link": null,
-      "children": [
-        "node_mvhxphei1m0ir3",
-        "node_mvhxphei1nrpsd"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "color": "#ffffff",
-            "fontSize": "14px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        }
-      },
-      "attrId": "goannai",
-      "scripts": [
-        {
-          "id": "sc_mumizje618",
-          "trigger": "hover-start",
-          "steps": [
-            {
-              "id": "st_mumj0c6h1a",
-              "kind": "show",
-              "target": "menu3"
-            }
-          ],
-          "pos": {
-            "x": 63,
-            "y": 218
-          }
-        },
-        {
-          "id": "sc_mv38bxaj3",
-          "trigger": "hover-end",
-          "steps": [
-            {
-              "id": "st_mv38cssz6",
-              "kind": "hide",
-              "target": "menu3"
-            }
-          ],
-          "pos": {
-            "x": 1113,
-            "y": 225
-          },
-          "keepOnShown": true
-        }
-      ]
-    },
-    "node_mvhxphei1tm4ey": {
-      "id": "node_mvhxphei1tm4ey",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmsq6spc8-pasted-artwork.svg",
-        "alt": "",
-        "width": 127,
-        "height": 58,
-        "assetId": "asset_msq6sps02"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "79px",
-            "borderRadius": "0px",
-            "maxWidth": "100%",
-            "height": "36px"
-          }
-        }
-      }
-    },
-    "node_mvhxphei1v0cj9": {
-      "id": "node_mvhxphei1v0cj9",
-      "type": "box",
-      "name": "委員会企画",
-      "semantic": "auto",
-      "text": {
-        "content": "委員会企画",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_mu2t6c971l",
-        "pos": {
-          "x": 36,
-          "y": 1432
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "color": "#ffffff",
-            "fontSize": "16px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer",
-            "fontFamily": "Zen Kaku Gothic New"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        }
-      }
-    },
-    "node_mvhxphei1wulj3": {
-      "id": "node_mvhxphei1wulj3",
-      "type": "box",
-      "name": "m-1",
-      "semantic": "auto",
-      "text": {
-        "content": "m-1グランプリ",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_mswzfiqry",
-        "pos": {
-          "x": 33,
-          "y": 1506
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "color": "#ffffff",
-            "fontSize": "16px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer",
-            "fontFamily": "Zen Kaku Gothic New"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        }
-      }
-    },
-    "node_mvhxphei1x2xg6": {
-      "id": "node_mvhxphei1x2xg6",
-      "type": "box",
-      "name": "まつぴよ",
-      "semantic": "auto",
-      "text": {
-        "content": "公式メンバ〜「まつぴよ」",
-        "heading": 0
-      },
-      "link": {
-        "kind": "page",
-        "pageId": "page_muhpllld2i",
-        "pos": {
-          "x": 32,
-          "y": 1575
-        }
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "color": "#ffffff",
-            "fontSize": "16px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer",
-            "fontFamily": "Zen Kaku Gothic New"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        }
-      }
-    },
-    "node_mvhxphei1u34gf": {
-      "id": "node_mvhxphei1u34gf",
-      "type": "box",
-      "name": "公式特集　メニュー",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mvhxphei1v0cj9",
-        "node_mvhxphei1wulj3",
-        "node_mvhxphei1x2xg6"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "padding": "20px",
-            "gap": "12px",
-            "position": "absolute",
-            "top": "80px",
-            "height": "228px",
-            "width": "289px",
-            "backgroundColor": "#282b37",
-            "justifyContent": "center",
-            "alignItems": "flex-start",
-            "marginLeft": "0px",
-            "borderRadius": "20px",
-            "marginTop": "0px",
-            "zIndex": "3",
-            "right": "0px"
-          }
-        }
-      },
-      "motions": [
-        {
-          "id": "motion_msmvdx6g2",
-          "trigger": "in-view",
-          "property": "all",
-          "keyframes": "fade-up",
-          "duration": 0.3,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 1,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ],
-      "locked": false,
-      "attrId": "menu4",
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ]
-    },
-    "node_mvhxphei1sz6q5": {
-      "id": "node_mvhxphei1sz6q5",
-      "type": "box",
-      "name": "公式特集",
-      "semantic": "auto",
-      "text": {
-        "content": "",
-        "heading": 0
-      },
-      "link": null,
-      "children": [
-        "node_mvhxphei1tm4ey",
-        "node_mvhxphei1u34gf"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "inline-flex",
-            "alignItems": "center",
-            "justifyContent": "center",
-            "padding": "12px 28px",
-            "color": "#ffffff",
-            "fontSize": "18px",
-            "fontWeight": "600",
-            "borderRadius": "8px",
-            "textDecoration": "none",
-            "transition": "all 200ms ease",
-            "cursor": "pointer",
-            "fontFamily": "Zen Kaku Gothic New",
-            "textShadow": "0px 3px 4px #18181b",
-            "width": "155px",
-            "height": "60px"
-          },
-          "hover": {
-            "backgroundColor": "#3f3f46"
-          }
-        }
-      },
-      "attrId": "kousiki",
-      "scripts": [
-        {
-          "id": "sc_mumjv4jeh",
-          "trigger": "hover-start",
-          "steps": [
-            {
-              "id": "st_mumjv94ci",
-              "kind": "show",
-              "target": "menu4"
-            }
-          ],
-          "pos": {
-            "x": 62,
-            "y": 308
-          }
-        },
-        {
-          "id": "sc_mv38ce964",
-          "trigger": "hover-end",
-          "steps": [
-            {
-              "id": "st_mv38d1ze7",
-              "kind": "hide",
-              "target": "menu4"
-            }
-          ],
-          "pos": {
-            "x": 1126,
-            "y": 316
-          },
-          "keepOnShown": true
-        }
-      ]
-    },
-    "node_mvhxpheh16jpbs": {
-      "id": "node_mvhxpheh16jpbs",
-      "type": "box",
-      "name": "ヘッダ",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mvhxphei17ji5q",
-        "node_mvhxphei1eltsy",
-        "node_mvhxphei1lfojc",
-        "node_mvhxphei1sz6q5"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "row",
-            "gap": "30px",
-            "width": "100%",
-            "justifyContent": "center",
-            "alignItems": "center",
-            "marginRight": "0px",
-            "height": "100%",
-            "paddingTop": "0px",
-            "paddingRight": "20px",
-            "paddingBottom": "0px",
-            "paddingLeft": "20px"
-          }
-        },
-        "sm": {
-          "default": {
-            "marginRight": "0px"
-          }
-        }
-      },
-      "locked": false,
-      "hiddenOn": [
-        "lg",
-        "md",
-        "sm"
-      ]
-    },
-    "node_mvhxphegcxy7f": {
-      "id": "node_mvhxphegcxy7f",
-      "type": "box",
-      "name": "メニュー",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mvhxphegdj6tb",
-        "node_mvhxphehfya62",
-        "node_mvhxpheh15eugc",
-        "node_mvhxpheh16jpbs"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "row",
-            "gap": "12px",
-            "height": "40%",
-            "justifyContent": "flex-end",
-            "alignItems": "center",
-            "width": "100%",
-            "position": "absolute",
-            "top": "0%",
-            "zIndex": "5",
-            "paddingTop": "0px",
-            "paddingRight": "20px",
-            "paddingBottom": "0px",
-            "paddingLeft": "20px",
-            "left": "0%"
-          }
-        },
-        "sm": {
-          "default": {
-            "justifyContent": "flex-start",
-            "alignItems": "center",
-            "paddingTop": "0px",
-            "paddingBottom": "0px",
-            "height": "100px"
-          }
-        },
-        "lg": {
-          "default": {
-            "justifyContent": "space-between"
-          }
-        }
-      }
-    },
-    "node_mvhxphei1yh2yx": {
-      "id": "node_mvhxphei1yh2yx",
-      "type": "image",
-      "name": "上雲",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmsoqcuc7--.svg",
-        "alt": "",
-        "width": 1920,
-        "height": 583,
-        "assetId": "asset_msoqcurx1q"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "100%",
-            "borderRadius": "0px"
-          }
-        }
-      },
-      "motions": [
-        {
-          "id": "motion_mv4z97wr1r",
-          "trigger": "in-view",
-          "property": "all",
-          "keyframes": "fade-down",
-          "duration": 1,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 1,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ],
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ]
-    },
-    "node_mvhxphegbvx9j": {
-      "id": "node_mvhxphegbvx9j",
-      "type": "box",
-      "name": "上の部分",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "children": [
-        "node_mvhxphegcxy7f",
-        "node_mvhxphei1yh2yx",
-        "node_mvhxr0192f2xm1"
-      ],
-      "styles": {
-        "base": {
-          "default": {
-            "display": "flex",
-            "flexDirection": "column",
-            "gap": "12px",
-            "paddingTop": "0px",
-            "paddingRight": "0px",
-            "paddingBottom": "0px",
-            "paddingLeft": "0px"
-          }
-        }
-      },
-      "motions": [
-        {
-          "id": "motion_mw7zjl6z18451w",
-          "trigger": "in-view",
-          "property": "all",
-          "keyframes": "fade-down",
-          "duration": 1,
-          "delay": 0,
-          "easing": "ease-out",
-          "repeat": 1,
-          "direction": "normal",
-          "fillMode": "both"
-        }
-      ]
-    },
-    "node_mvhxr0192f2xm1": {
-      "id": "node_mvhxr0192f2xm1",
-      "type": "image",
-      "name": "２雲",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmvhxqy2sab72b0-pasted-artwork.svg",
-        "alt": "",
-        "width": 1440,
-        "height": 489,
-        "assetId": "asset_mvhxr0142eyz1c"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "1440px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        }
-      }
-    },
     "node_mwf92x301miwep": {
       "id": "node_mwf92x301miwep",
       "type": "box",
@@ -349476,7 +347124,7 @@
       "name": "テキスト",
       "semantic": "auto",
       "text": {
-        "content": "いつ",
+        "content": "いつ？",
         "heading": 0
       },
       "link": null,
@@ -350691,7 +348339,7 @@
       "name": "テキスト",
       "semantic": "auto",
       "text": {
-        "content": "どこで",
+        "content": "どこで？",
         "heading": 0
       },
       "link": null,
@@ -358949,8 +356597,8 @@
         "heading": 0
       },
       "link": {
-        "kind": "url",
-        "url": "https://map.matsufes.info/?bookmarks=1",
+        "kind": "page",
+        "pageId": "page_mvhxphej2d8ldu",
         "pos": {
           "x": 1108,
           "y": 1627
@@ -360844,8 +358492,8 @@
         "heading": 0
       },
       "link": {
-        "kind": "url",
-        "url": "https://map.matsufes.info/?bookmarks=1",
+        "kind": "page",
+        "pageId": "page_mvhxphej2d8ldu",
         "pos": {
           "x": 48,
           "y": 957
@@ -362274,6 +359922,1335 @@
             "paddingRight": "12px",
             "paddingLeft": "12px",
             "marginBottom": "50px"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb1mooaa": {
+      "id": "node_mwga7gbb1mooaa",
+      "type": "list",
+      "name": "リスト",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "list": {
+        "from": "data"
+      },
+      "children": [
+        "node_mwga7gbb1nbz8j"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "grid",
+            "overflow": "auto",
+            "minWidth": "0",
+            "gridTemplateColumns": "repeat(3, 1fr)",
+            "paddingTop": "0px",
+            "paddingRight": "59px",
+            "paddingBottom": "0px",
+            "paddingLeft": "59px",
+            "rowGap": "18px",
+            "columnGap": "18px",
+            "maxWidth": "1200px"
+          }
+        },
+        "lg": {
+          "default": {
+            "gridTemplateColumns": "repeat(2, 1fr)"
+          }
+        },
+        "md": {
+          "default": {
+            "height": "auto",
+            "gridTemplateColumns": "repeat(1, 1fr)",
+            "paddingRight": "25px",
+            "paddingLeft": "25px"
+          }
+        },
+        "sm": {
+          "default": {
+            "paddingRight": "16px",
+            "paddingLeft": "16px"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb1nbz8j": {
+      "id": "node_mwga7gbb1nbz8j",
+      "type": "box",
+      "name": "項目",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "/booth/{publicId}",
+        "newTab": false,
+        "pos": {
+          "x": 1163,
+          "y": 2218
+        }
+      },
+      "children": [
+        "node_mwga7gbb1omk3g",
+        "node_mwga7gbb1tahy5",
+        "node_mwga7gbb1uvn5b",
+        "node_mwga7gbb1vtda6",
+        "node_mwga7gbb2fjgok"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "border": "1px solid #e4e4e7",
+            "borderRadius": "0px",
+            "borderWidth": "0px",
+            "borderStyle": "solid",
+            "borderColor": "#000000",
+            "paddingTop": "20px",
+            "paddingRight": "24px",
+            "paddingBottom": "20px",
+            "paddingLeft": "24px",
+            "cursor": "pointer"
+          }
+        },
+        "md": {
+          "default": {}
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mv712weu1",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.2,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mwga7gbb1omk3g": {
+      "id": "node_mwga7gbb1omk3g",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwga7gbb1pz48w",
+        "node_mwga7gbb1q6gm9"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "padding": "0px",
+            "justifyContent": "space-between"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb1pz48w": {
+      "id": "node_mwga7gbb1pz48w",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "{name}",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "1.3rem",
+            "color": "#ffffff",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontWeight": "900",
+            "letterSpacing": "0px",
+            "textShadow": "0px 3px 4px rgba(0, 0, 0, 0.4)",
+            "zIndex": "2",
+            "position": "relative",
+            "marginBottom": "6px"
+          }
+        },
+        "lg": {
+          "default": {}
+        }
+      }
+    },
+    "node_mwga7gbb1q6gm9": {
+      "id": "node_mwga7gbb1q6gm9",
+      "type": "box",
+      "name": "お気に入り登録",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwga7gbb1rjqst",
+        "node_mwga7gbb1s8nwy"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "35px",
+            "flexShrink": "0",
+            "height": "35px",
+            "marginRight": "4px",
+            "pointerEvents": "auto",
+            "zIndex": "2",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "gridTemplateColumns": "repeat(2, 1fr)",
+            "flexDirection": "column"
+          }
+        }
+      },
+      "scripts": [
+        {
+          "id": "sc_mwga7gbc12f9",
+          "trigger": "click",
+          "steps": [
+            {
+              "id": "st_mwga7gbc2mwe",
+              "kind": "if",
+              "cond": {
+                "subject": "var",
+                "target": "",
+                "left": "{お気に入り}",
+                "op": "contains",
+                "value": "{publicId}"
+              },
+              "then": [
+                {
+                  "id": "st_mwga7gbc3l2k",
+                  "kind": "remove-list-item",
+                  "list": "お気に入り",
+                  "mode": "value",
+                  "value": "{publicId}"
+                },
+                {
+                  "id": "st_mwga7gbc4nnq",
+                  "kind": "show",
+                  "target": "fav-off"
+                },
+                {
+                  "id": "st_mwga7gbc5olj",
+                  "kind": "hide",
+                  "target": "fav-on"
+                }
+              ],
+              "else": [
+                {
+                  "id": "st_mwga7gbc6m38",
+                  "kind": "set-list-item",
+                  "list": "お気に入り",
+                  "key": "",
+                  "value": "{publicId}"
+                },
+                {
+                  "id": "st_mwga7gbc7cmt",
+                  "kind": "show",
+                  "target": "fav-on"
+                },
+                {
+                  "id": "st_mwga7gbc8zv3",
+                  "kind": "hide",
+                  "target": "fav-off"
+                }
+              ]
+            },
+            {
+              "id": "st_mwga7gbc91sq",
+              "kind": "transform",
+              "source": "お気に入り",
+              "into": "mf_bookmarks",
+              "transform": {
+                "kind": "join",
+                "separator": "."
+              }
+            },
+            {
+              "id": "st_mwga7gbca51l",
+              "kind": "store-save",
+              "key": "mf_bookmarks",
+              "value": "{mf_bookmarks}",
+              "shared": true
+            }
+          ],
+          "pos": {
+            "x": 1140,
+            "y": 2476
+          }
+        },
+        {
+          "id": "sc_mwga7gbcbqm1",
+          "trigger": "load",
+          "steps": [
+            {
+              "id": "st_mwga7gbccw8q",
+              "kind": "if",
+              "cond": {
+                "subject": "var",
+                "target": "",
+                "op": "contains",
+                "value": "{publicId}",
+                "left": "{お気に入り}"
+              },
+              "then": [
+                {
+                  "id": "st_mwga7gbcdkil",
+                  "kind": "show",
+                  "target": "fav-on"
+                },
+                {
+                  "id": "st_mwga7gbcebd1",
+                  "kind": "hide",
+                  "target": "fav-off"
+                }
+              ],
+              "else": [
+                {
+                  "id": "st_mwga7gbcfu7f",
+                  "kind": "show",
+                  "target": "fav-off"
+                },
+                {
+                  "id": "st_mwga7gbcgehx",
+                  "kind": "hide",
+                  "target": "fav-on"
+                }
+              ]
+            }
+          ],
+          "pos": {
+            "x": 1038,
+            "y": 2813
+          }
+        }
+      ]
+    },
+    "node_mwga7gbb1rjqst": {
+      "id": "node_mwga7gbb1rjqst",
+      "type": "image",
+      "name": "bkonn.svg",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwg0x6hu9c40af-pasted-artwork.svg",
+        "alt": "お気に入り登録済",
+        "width": 140,
+        "height": 136,
+        "assetId": "asset_mwg0x70p1mcy0h",
+        "priority": true
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "32px",
+            "flexShrink": "0",
+            "zIndex": "2",
+            "position": "relative"
+          }
+        }
+      },
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
+      ],
+      "attrId": "fav-on"
+    },
+    "node_mwga7gbb1s8nwy": {
+      "id": "node_mwga7gbb1s8nwy",
+      "type": "image",
+      "name": "bkoff2.svg",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwg0z1a38e77b1-pasted-artwork.svg",
+        "alt": "お気に入り未登録",
+        "width": 140,
+        "height": 136,
+        "assetId": "asset_mwg0z1nv1ohdbd"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "32px",
+            "zIndex": "2",
+            "display": "block"
+          }
+        }
+      },
+      "attrId": "fav-off"
+    },
+    "node_mwga7gbb1tahy5": {
+      "id": "node_mwga7gbb1tahy5",
+      "type": "image",
+      "name": "メインテーマ装飾 (1).svg",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmv7hp363-1.svg",
+        "alt": "",
+        "width": 307,
+        "height": 17,
+        "assetId": "asset_mv7hp3kk1"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "zIndex": "2"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb1uvn5b": {
+      "id": "node_mwga7gbb1uvn5b",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "{exhibitorName}",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "1rem",
+            "color": "#ffffff",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontWeight": "600",
+            "letterSpacing": "0px",
+            "textShadow": "0px 3px 4px rgba(0, 0, 0, 0.4)",
+            "zIndex": "2",
+            "position": "relative",
+            "lineHeight": "1",
+            "marginBottom": "18px"
+          }
+        },
+        "lg": {
+          "default": {}
+        }
+      }
+    },
+    "node_mwga7gbb1vtda6": {
+      "id": "node_mwga7gbb1vtda6",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwga7gbb1wruu8",
+        "node_mwga7gbb20i8t9"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "padding": "0px",
+            "gap": "0px",
+            "zIndex": "2",
+            "position": "relative",
+            "marginBottom": "8px"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb1wruu8": {
+      "id": "node_mwga7gbb1wruu8",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwga7gbb1xxriw"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "30%",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "height": "100%"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb1xxriw": {
+      "id": "node_mwga7gbb1xxriw",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwga7gbb1yein6",
+        "node_mwga7gbb1ztkz7"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "100%",
+            "aspectRatio": "1/1",
+            "backgroundColor": "#f4f4f5",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "boxShadow": "0px 3.6px 3.6px 0px rgba(0, 0, 0, 0.25)"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb1yein6": {
+      "id": "node_mwga7gbb1yein6",
+      "type": "image",
+      "name": "画像",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "{imageUrl}",
+        "alt": "",
+        "width": 1024,
+        "height": 1024
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "auto",
+            "aspectRatio": "1/1",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb1ztkz7": {
+      "id": "node_mwga7gbb1ztkz7",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "No Image",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "16px",
+            "textAlign": "center",
+            "color": "#86869c",
+            "fontWeight": "500"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb20i8t9": {
+      "id": "node_mwga7gbb20i8t9",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwga7gbb21d27c",
+        "node_mwga7gbb24dzbc",
+        "node_mwga7gbb27bp4j",
+        "node_mwga7gbb2az8cd"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "5px",
+            "flexGrow": "1",
+            "flexShrink": "1",
+            "flexBasis": "0%",
+            "minWidth": "0",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb21d27c": {
+      "id": "node_mwga7gbb21d27c",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwga7gbb22z340",
+        "node_mwga7gbb23w8t8"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "gap": "5px",
+            "justifyContent": "flex-start",
+            "alignItems": "center",
+            "paddingTop": "0px",
+            "paddingRight": "12px",
+            "paddingBottom": "0px",
+            "paddingLeft": "12px"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb22z340": {
+      "id": "node_mwga7gbb22z340",
+      "type": "image",
+      "name": "キラキラ",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw5xj43r33cd95-pasted-artwork.svg",
+        "alt": "",
+        "width": 60,
+        "height": 60,
+        "assetId": "asset_mw5xj4in3841a"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "12px",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "flexShrink": "0"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb23w8t8": {
+      "id": "node_mwga7gbb23w8t8",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "{customAnswers.皆さまへ}",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "0.8rem",
+            "color": "#ffffff",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontWeight": "600",
+            "textShadow": "0px 3px 4px rgba(0, 0, 0, 0.4)",
+            "flexGrow": "1",
+            "flexShrink": "1",
+            "flexBasis": "0%",
+            "minWidth": "0"
+          }
+        },
+        "lg": {
+          "default": {}
+        }
+      }
+    },
+    "node_mwga7gbb24dzbc": {
+      "id": "node_mwga7gbb24dzbc",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwga7gbb25u9ju",
+        "node_mwga7gbb262uvj"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "gap": "5px",
+            "paddingTop": "0px",
+            "paddingRight": "12px",
+            "paddingBottom": "0px",
+            "paddingLeft": "12px",
+            "justifyContent": "flex-start",
+            "alignItems": "center"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb25u9ju": {
+      "id": "node_mwga7gbb25u9ju",
+      "type": "image",
+      "name": "ピン",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmw5xv9nw48f891-pasted-artwork.svg",
+        "alt": "",
+        "width": 49,
+        "height": 79,
+        "assetId": "asset_mw5xva0d7oet0"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "10px",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "flexShrink": "0"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb262uvj": {
+      "id": "node_mwga7gbb262uvj",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "{location}",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "0.8rem",
+            "color": "#ffffff",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontWeight": "600",
+            "textShadow": "0px 3px 4px rgba(0, 0, 0, 0.4)",
+            "flexGrow": "1",
+            "flexShrink": "1",
+            "flexBasis": "0%",
+            "minWidth": "0"
+          }
+        },
+        "lg": {
+          "default": {}
+        }
+      }
+    },
+    "node_mwga7gbb27bp4j": {
+      "id": "node_mwga7gbb27bp4j",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwga7gbb28qrtn"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "padding": "0px",
+            "gap": "0px",
+            "justifyContent": "flex-end",
+            "alignItems": "center",
+            "marginLeft": "12px",
+            "marginTop": "6px"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb28qrtn": {
+      "id": "node_mwga7gbb28qrtn",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwga7gbb296c55"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "0px",
+            "width": "47%",
+            "backgroundColor": "#ffffff",
+            "borderRadius": "8px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "paddingRight": "2px",
+            "paddingLeft": "2px"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb296c55": {
+      "id": "node_mwga7gbb296c55",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "{categories.投票カテゴリ.0}",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "0.9rem",
+            "color": "#4f80b8",
+            "fontWeight": "600",
+            "textAlign": "center"
+          }
+        },
+        "md": {
+          "default": {
+            "fontSize": "0.8rem"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb2az8cd": {
+      "id": "node_mwga7gbb2az8cd",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwga7gbb2b9xbl",
+        "node_mwga7gbb2dq4d5"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "padding": "0px",
+            "justifyContent": "space-between",
+            "alignItems": "flex-start",
+            "marginLeft": "12px",
+            "marginTop": "6px"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb2b9xbl": {
+      "id": "node_mwga7gbb2b9xbl",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwga7gbb2ckwmn"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "0px",
+            "width": "47%",
+            "backgroundColor": "#ffffff",
+            "borderRadius": "8px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "paddingRight": "2px",
+            "paddingLeft": "2px"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb2ckwmn": {
+      "id": "node_mwga7gbb2ckwmn",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "{categories.大分類.0}",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "0.9rem",
+            "color": "#4f80b8",
+            "fontWeight": "600",
+            "textAlign": "center"
+          }
+        },
+        "md": {
+          "default": {
+            "fontSize": "0.8rem"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb2dq4d5": {
+      "id": "node_mwga7gbb2dq4d5",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwga7gbb2ec9eq"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "0px",
+            "width": "47%",
+            "backgroundColor": "#ffffff",
+            "borderRadius": "8px",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "paddingRight": "2px",
+            "paddingLeft": "2px"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb2ec9eq": {
+      "id": "node_mwga7gbb2ec9eq",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "{customAnswers.中分類}",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "0.9rem",
+            "color": "#4f80b8",
+            "fontWeight": "600",
+            "textAlign": "center"
+          }
+        },
+        "md": {
+          "default": {
+            "fontSize": "0.8rem"
+          }
+        }
+      }
+    },
+    "node_mwga7gbb2fjgok": {
+      "id": "node_mwga7gbb2fjgok",
+      "type": "image",
+      "name": "frame.png",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmv7heuzq-frame.png",
+        "alt": "",
+        "width": 750,
+        "height": 468,
+        "assetId": "asset_mv7hevrf1"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px",
+            "height": "100%",
+            "zIndex": "1"
+          }
+        },
+        "md": {
+          "default": {}
+        }
+      }
+    },
+    "node_mwgaopu82gtseb": {
+      "id": "node_mwgaopu82gtseb",
+      "type": "instance",
+      "name": "ヘッダー",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "componentId": "comp_mweszk241mvfiq",
+      "children": [],
+      "styles": {}
+    },
+    "node_mwgaopu82hdunp": {
+      "id": "node_mwgaopu82hdunp",
+      "type": "image",
+      "name": "２雲",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwexsdqkccc310-clouds.webp",
+        "alt": "",
+        "width": 1600,
+        "height": 543,
+        "assetId": "asset_mwexse9u1xrfoe"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%",
+            "borderRadius": "0px",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px"
+          }
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mw7zb9ygs24nm",
+          "trigger": "in-view",
+          "property": "all",
+          "keyframes": "fade-down",
+          "duration": 1,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mwgaq5hz2iczau": {
+      "id": "node_mwgaq5hz2iczau",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwgaq5hz2jeqc3"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "width": "100%",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "marginTop": "40px",
+            "cursor": "pointer",
+            "marginBottom": "26px"
+          }
+        },
+        "md": {
+          "default": {}
+        }
+      }
+    },
+    "node_mwgaq5hz2jeqc3": {
+      "id": "node_mwgaq5hz2jeqc3",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": {
+        "kind": "url",
+        "url": "https://map.matsufes.info/?bookmarks=1",
+        "pos": {
+          "x": 831,
+          "y": 263
+        }
+      },
+      "children": [
+        "node_mwgaq5hz2k6ogf",
+        "node_mwgaq5hz2qqrum"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px"
+          }
+        },
+        "md": {
+          "default": {
+            "width": "57%"
+          }
+        },
+        "sm": {
+          "default": {}
+        }
+      },
+      "motions": [
+        {
+          "id": "motion_mv7gy8nba",
+          "trigger": "hover",
+          "property": "all",
+          "keyframes": "pulse",
+          "duration": 0.3,
+          "delay": 0,
+          "easing": "ease-out",
+          "repeat": 1,
+          "direction": "normal",
+          "fillMode": "both"
+        }
+      ]
+    },
+    "node_mwgaq5hz2k6ogf": {
+      "id": "node_mwgaq5hz2k6ogf",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwgaq5hz2lnhaw"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "position": "absolute",
+            "left": "0px",
+            "top": "0px",
+            "width": "100%",
+            "height": "80%",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        }
+      }
+    },
+    "node_mwgaq5hz2lnhaw": {
+      "id": "node_mwgaq5hz2lnhaw",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwgaq5hz2mrg97"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "row",
+            "padding": "0px",
+            "gap": "6px",
+            "justifyContent": "center",
+            "alignItems": "flex-end"
+          }
+        },
+        "sm": {
+          "default": {
+            "marginTop": "-5px"
+          }
+        },
+        "md": {
+          "default": {
+            "width": "73%",
+            "justifyContent": "center",
+            "alignItems": "center"
+          }
+        }
+      }
+    },
+    "node_mwgaq5hz2mrg97": {
+      "id": "node_mwgaq5hz2mrg97",
+      "type": "box",
+      "name": "テキスト",
+      "semantic": "auto",
+      "text": {
+        "content": "地図で確認する",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "fontSize": "24px",
+            "lineHeight": "1.2",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontWeight": "600",
+            "color": "#ffffff"
+          }
+        },
+        "sm": {
+          "default": {
+            "fontSize": "16px"
+          }
+        }
+      },
+      "locked": false
+    },
+    "node_mwgaq5hz2qqrum": {
+      "id": "node_mwgaq5hz2qqrum",
+      "type": "image",
+      "name": "貼り付けたSVG",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvhx5ydie5a3d8-pasted-artwork.svg",
+        "alt": "",
+        "width": 411,
+        "height": 110,
+        "assetId": "asset_mvhx5zc61ijcb"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "411px",
+            "maxWidth": "100%",
+            "borderRadius": "0px",
+            "marginTop": "-14px"
+          }
+        }
+      }
+    },
+    "node_mwgc1kat1m3bcr": {
+      "id": "node_mwgc1kat1m3bcr",
+      "type": "image",
+      "name": "いつアイコン",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvhwfn0w27345e-pasted-artwork.svg",
+        "alt": "",
+        "width": 60,
+        "height": 58,
+        "assetId": "asset_mvhwfnz25hlsa"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "28%",
+            "height": "0%"
+          }
+        }
+      }
+    },
+    "node_mwgc5r871nqlip": {
+      "id": "node_mwgc5r871nqlip",
+      "type": "image",
+      "name": "どこアイコン",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmvhwh5m62fde85-pasted-artwork.svg",
+        "alt": "",
+        "width": 50,
+        "height": 71,
+        "assetId": "asset_mvhwh6k870lan"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%"
+          }
+        },
+        "sm": {
+          "default": {
+            "width": "25%"
+          }
+        }
+      }
+    },
+    "node_mwgcobts2rulyy": {
+      "id": "node_mwgcobts2rulyy",
+      "type": "box",
+      "name": "ボックス",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "children": [
+        "node_mwga7gbb1mooaa"
+      ],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "padding": "0px",
+            "gap": "0px",
+            "justifyContent": "center",
+            "alignItems": "center"
           }
         }
       }
@@ -368578,5 +367555,22 @@
       "width": 701,
       "height": 228
     }
-  }
+  },
+  "components": {
+    "comp_mweszk241mvfiq": {
+      "id": "comp_mweszk241mvfiq",
+      "name": "ヘッダー",
+      "rootId": "node_mvzcltfc1lasc3"
+    }
+  },
+  "pageFolders": [
+    {
+      "id": "folder_mv9nleld1",
+      "name": "バックアップ"
+    },
+    {
+      "id": "folder_mweu13tz1nr4ao",
+      "name": "第一弾"
+    }
+  ]
 }
