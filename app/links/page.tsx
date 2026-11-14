@@ -24,9 +24,9 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2477"
+        className="el-2476"
       />
-      <p className="box-777">
+      <p className="box-776">
         <Image
           src="/assets/pasted-artwork-298.svg"
           alt=""
@@ -35,7 +35,7 @@ export default function Page() {
           className="svg-441"
         />
       </p>
-      <section className="box-778">
+      <section className="box-777">
         <Image
           src="/assets/pasted-artwork-281.svg"
           alt=""
@@ -44,12 +44,12 @@ export default function Page() {
           className="pasted-artwork-svg-128"
         />
       </section>
-      <section className="box-780">
-        <p className="box-779">
+      <section className="box-779">
+        <p className="box-778">
           {"開催日程順に掲載しています。"}
         </p>
       </section>
-      <section className="box-782">
+      <section className="box-781">
         <span
           className="crisp-svg svg-431"
           style={{ ["--crisp-svg-width"]: "577px", ["--crisp-svg-ratio"]: "577 / 178" } as import("react").CSSProperties}
@@ -62,17 +62,17 @@ export default function Page() {
             height={356}
           />
         </span>
-        <div className="box-781">
+        <div className="box-780">
           <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://trias.link/2026/\"}]}]"}
             src="/assets/pasted-artwork-285.svg"
             alt=""
             width={414}
             height={206}
-            className="el-2032"
+            className="el-2031"
           />
         </div>
       </section>
-      <section className="box-783">
+      <section className="box-782">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://maps.app.goo.gl/akv65Tn4vQnYoEfP8?g_st=ic\"}]}]"}
           src="/assets/pasted-artwork-289.svg"
           alt=""
@@ -81,7 +81,7 @@ export default function Page() {
           className="google1-2"
         />
       </section>
-      <section className="box-785">
+      <section className="box-784">
         <span
           className="crisp-svg svg-432"
           style={{ ["--crisp-svg-width"]: "625px", ["--crisp-svg-ratio"]: "625 / 180" } as import("react").CSSProperties}
@@ -94,17 +94,17 @@ export default function Page() {
             height={360}
           />
         </span>
-        <div className="box-784">
+        <div className="box-783">
           <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://geidaisai2026.com/\"}]}]"}
             src="/assets/pasted-artwork-285.svg"
             alt=""
             width={414}
             height={206}
-            className="el-2033"
+            className="el-2032"
           />
         </div>
       </section>
-      <section className="box-786">
+      <section className="box-785">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://maps.app.goo.gl/ZnEXceuCtfmEXqbUA?g_st=il）\"}]}]"}
           src="/assets/pasted-artwork-289.svg"
           alt=""
@@ -113,7 +113,7 @@ export default function Page() {
           className="google2-2"
         />
       </section>
-      <section className="box-788">
+      <section className="box-787">
         <span
           className="crisp-svg svg-433"
           style={{ ["--crisp-svg-width"]: "560px", ["--crisp-svg-ratio"]: "560 / 180" } as import("react").CSSProperties}
@@ -126,17 +126,17 @@ export default function Page() {
             height={360}
           />
         </span>
-        <div className="box-787">
+        <div className="box-786">
           <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://share.google/0e65Z9CXmgJzcDiEI\"}]}]"}
             src="/assets/pasted-artwork-285.svg"
             alt=""
             width={414}
             height={206}
-            className="el-2034"
+            className="el-2033"
           />
         </div>
       </section>
-      <section className="box-789">
+      <section className="box-788">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://maps.app.goo.gl/q7N6d7AU35q5W2HC7?g_st=in\"}]}]"}
           src="/assets/pasted-artwork-289.svg"
           alt=""
@@ -145,7 +145,7 @@ export default function Page() {
           className="google3-2"
         />
       </section>
-      <section className="box-791">
+      <section className="box-790">
         <span
           className="crisp-svg svg-434"
           style={{ ["--crisp-svg-width"]: "665px", ["--crisp-svg-ratio"]: "665 / 180" } as import("react").CSSProperties}
@@ -158,17 +158,17 @@ export default function Page() {
             height={360}
           />
         </span>
-        <div className="box-790">
+        <div className="box-789">
           <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://nf.la/\"}]}]"}
             src="/assets/pasted-artwork-285.svg"
             alt=""
             width={414}
             height={206}
-            className="el-2035"
+            className="el-2034"
           />
         </div>
       </section>
-      <section className="box-792">
+      <section className="box-791">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://www.google.co.jp/maps/place/%E4%BA%AC%E9%83%BD%E5%A4%A7%E5%AD%A6+%E5%90%89%E7%94%B0%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9+%E6%9C%AC%E9%83%A8%E6%A7%8B%E5%86%85/@35.0271195,135.7786612,17z/data=!3m2!4b1!5s0x60010857f2d5c407:0xa51ccd9fd0612078!4m6!3m5!1s0x600108562446b2bb:0x17026e2b02f706d9!8m2!3d35.0271151!4d135.7812361!16s%2Fg%2F120x68zh?entry=ttu\\u0026g_ep=EgoyMDI2MTAwNC4wIKXMDSoASAFQAw%3D%3D\"}]}]"}
           src="/assets/pasted-artwork-289.svg"
           alt=""
@@ -177,8 +177,8 @@ export default function Page() {
           className="google4-2"
         />
       </section>
-      <section data-inview className="el-1999">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2000">
+      <section data-inview className="el-1998">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1999">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -211,7 +211,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-23">
         <span
-          className="crisp-svg svg-700"
+          className="crisp-svg svg-695"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -222,7 +222,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2001">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2000">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

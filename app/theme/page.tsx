@@ -24,9 +24,9 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2483"
+        className="el-2482"
       />
-      <p className="box-825">
+      <p className="box-824">
         <Image
           src="/assets/pasted-artwork-345.svg"
           alt=""
@@ -35,7 +35,7 @@ export default function Page() {
           className="svg-450"
         />
       </p>
-      <section className="box-826">
+      <section className="box-825">
         <Image
           src="/assets/pasted-artwork-281.svg"
           alt=""
@@ -44,7 +44,7 @@ export default function Page() {
           className="pasted-artwork-svg-133"
         />
       </section>
-      <section className="box-827">
+      <section className="box-826">
         <Image
           src="/assets/pasted-artwork-338.svg"
           alt=""
@@ -53,7 +53,7 @@ export default function Page() {
           className="svg-443"
         />
       </section>
-      <section className="box-828">
+      <section className="box-827">
         <Image
           src="/assets/pasted-artwork-341.svg"
           alt=""
@@ -62,8 +62,8 @@ export default function Page() {
           className="svg-446"
         />
       </section>
-      <section className="box-831">
-        <div className="box-829">
+      <section className="box-830">
+        <div className="box-828">
           <Image
             src="/assets/pasted-artwork-351.svg"
             alt=""
@@ -72,12 +72,12 @@ export default function Page() {
             className="pasted-artwork-svg-138"
           />
         </div>
-        <p className="box-830">
+        <p className="box-829">
           {"夢宙　むちゅー "}
         </p>
       </section>
-      <section className="box-834">
-        <div className="box-832">
+      <section className="box-833">
+        <div className="box-831">
           <Image
             src="/assets/pasted-artwork-342.svg"
             alt=""
@@ -86,7 +86,7 @@ export default function Page() {
             className="svg-447"
           />
         </div>
-        <div className="box-833">
+        <div className="box-832">
           <Image
             src="/assets/pasted-artwork-343.svg"
             alt=""
@@ -96,7 +96,7 @@ export default function Page() {
           />
         </div>
       </section>
-      <section className="box-835">
+      <section className="box-834">
         <span
           className="crisp-svg svg-449"
           style={{ ["--crisp-svg-width"]: "123px", ["--crisp-svg-ratio"]: "123 / 361" } as import("react").CSSProperties}
@@ -110,8 +110,8 @@ export default function Page() {
           />
         </span>
       </section>
-      <section data-inview className="el-2017">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2018">
+      <section data-inview className="el-2016">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2017">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -155,7 +155,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2019">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2018">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

@@ -22,7 +22,7 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2480"
+        className="el-2479"
       />
       <p className="box-50">
         <Image
@@ -42,7 +42,7 @@ export default function Page() {
           className="pasted-artwork-svg-139"
         />
       </section>
-      <p className="box-879">
+      <p className="box-878">
         {"松ヶ崎祭に来てくれて　ほんとーにありがとう。\n松ヶ崎祭は　どうだった？　きみの感想　教えてね。\n来年の松ヶ崎祭も　もっともっと　楽しくするからね。\nまた来年も　会えたらいいな。"}
       </p>
       <section className="box-52">
@@ -52,7 +52,7 @@ export default function Page() {
             alt=""
             width={769}
             height={383}
-            className="el-2036"
+            className="el-2035"
           />
         </a>
         <Image
@@ -66,8 +66,8 @@ export default function Page() {
       <p className="box-152">
         {"アンケート回答後、スクリーンショットなどで画面を保存するのを忘れないでね。"}
       </p>
-      <section data-inview className="el-2008">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2009">
+      <section data-inview className="el-2007">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2008">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -100,7 +100,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-26">
         <span
-          className="crisp-svg svg-703"
+          className="crisp-svg svg-698"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -111,7 +111,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2010">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2009">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
