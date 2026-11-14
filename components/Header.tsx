@@ -69,9 +69,9 @@ export default function Header({ hiddenClassName = "", instanceId }: { hiddenCla
               <a href="/navigation" id="地図-p-2" className="button-481">
                 {"地図からさがす"}
               </a>
-              <Link href="/mypage" id="しおり-p-2" className="button-482">
+              <a href="https://map.matsufes.info/?bookmarks=1" id="しおり-p-2" className="button-482">
                 {"きみのしおり"}
-              </Link>
+              </a>
             </div>
             <p id="ご案内-2" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"goannai-phone-2\"}]}]"} className="el-1900">
               {"ご案内"}
@@ -171,9 +171,9 @@ export default function Header({ hiddenClassName = "", instanceId }: { hiddenCla
                 <a href="/navigation" className="el-1918">
                   {"地図からさがす"}
                 </a>
-                <Link href="/mypage" className="el-1919">
+                <a href="https://map.matsufes.info/?bookmarks=1" className="el-1919">
                   {"きみのしおり"}
-                </Link>
+                </a>
                 <div id="menu1-5" className="el-1920" />
               </div>
             </div>

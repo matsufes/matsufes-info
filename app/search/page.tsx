@@ -1082,7 +1082,7 @@ export default async function Page() {
                   </div>
                 </div>
               </div>
-              <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\"}]}]"} className="el-2400">
+              <a href="https://matsufes-info.vercel.app/search" className="el-2400">
                 <div id="div-29" data-toggle-show="flex" className="box-1035">
                   <Image
                     src="/assets/image-4.png"
@@ -1104,7 +1104,7 @@ export default async function Page() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </a>
               <div className="box-1039">
                 <Link href="/m-1" className="box-1038">
                   <div className="box-1037">

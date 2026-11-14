@@ -18944,7 +18944,7 @@ body:has([data-page-body="page_mwey915180yk5u"]) {
   width: 24%;
   border-radius: 0px;
   max-width: 100%;
-  position: fixed;
+  position: absolute;
   left: 0%;
   top: 0%;
   height: auto;
@@ -18959,7 +18959,7 @@ body:has([data-page-body="page_mwey915180yk5u"]) {
   width: 29%;
   border-radius: 0px;
   max-width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0px;
   right: 0%;
   height: auto;

@@ -263954,7 +263954,7 @@
             "width": "24%",
             "borderRadius": "0px",
             "maxWidth": "100%",
-            "position": "fixed",
+            "position": "absolute",
             "left": "0%",
             "top": "0%"
           }
@@ -263996,7 +263996,7 @@
             "width": "29%",
             "borderRadius": "0px",
             "maxWidth": "100%",
-            "position": "fixed",
+            "position": "absolute",
             "top": "0px",
             "right": "0%"
           }
@@ -271534,8 +271534,8 @@
         "heading": 0
       },
       "link": {
-        "kind": "page",
-        "pageId": "page_mvhxphej2d8ldu",
+        "kind": "url",
+        "url": "https://map.matsufes.info/?bookmarks=1",
         "pos": {
           "x": 1108,
           "y": 1627
@@ -273429,8 +273429,8 @@
         "heading": 0
       },
       "link": {
-        "kind": "page",
-        "pageId": "page_mvhxphej2d8ldu",
+        "kind": "url",
+        "url": "https://map.matsufes.info/?bookmarks=1",
         "pos": {
           "x": 48,
           "y": 957
@@ -329444,7 +329444,15 @@
       "name": "やり直す",
       "semantic": "auto",
       "text": null,
-      "link": null,
+      "link": {
+        "kind": "url",
+        "url": "https://matsufes-info.vercel.app/search",
+        "newTab": false,
+        "pos": {
+          "x": 73,
+          "y": 10253
+        }
+      },
       "children": [
         "node_mwefqpvsajh3bg"
       ],
@@ -329486,28 +329494,6 @@
           "repeat": 1,
           "direction": "normal",
           "fillMode": "both"
-        }
-      ],
-      "scripts": [
-        {
-          "id": "sc_mwbxpo084g97j",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_mwbxq4l54h4p9",
-              "kind": "list-display",
-              "mode": "clear",
-              "array": "data",
-              "field": "",
-              "op": "eq",
-              "value": "",
-              "dir": "asc"
-            }
-          ],
-          "pos": {
-            "x": 73,
-            "y": 10253
-          }
         }
       ]
     },
