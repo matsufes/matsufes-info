@@ -349558,29 +349558,6 @@
         "sm"
       ]
     },
-    "node_mwg374jc69bi78": {
-      "id": "node_mwg374jc69bi78",
-      "type": "image",
-      "name": "ボタン.png",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmwg3zof67b5c1d-off.webp",
-        "alt": "",
-        "width": 701,
-        "height": 228,
-        "assetId": "asset_mwg3zotq1sru3c"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "100%"
-          }
-        }
-      }
-    },
     "node_mwg374jc6b9i3j": {
       "id": "node_mwg374jc6b9i3j",
       "type": "box",
@@ -355576,8 +355553,6 @@
         }
       ],
       "hiddenOn": [
-        "base",
-        "lg",
         "md",
         "sm"
       ]
@@ -357243,6 +357218,29 @@
         }
       }
     },
+    "node_mwg374jc69bi78": {
+      "id": "node_mwg374jc69bi78",
+      "type": "image",
+      "name": "ボタン.png",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwg3zof67b5c1d-off.webp",
+        "alt": "",
+        "width": 701,
+        "height": 228,
+        "assetId": "asset_mwg3zotq1sru3c"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "100%"
+          }
+        }
+      }
+    },
     "node_mwg5h3hy1ykbgx": {
       "id": "node_mwg5h3hy1ykbgx",
       "type": "box",
@@ -357598,7 +357596,7 @@
             "width": "395px",
             "borderRadius": "0px",
             "maxWidth": "100%",
-            "position": "fixed",
+            "position": "absolute",
             "top": "0px",
             "right": "0%",
             "height": "351px"
@@ -357662,7 +357660,7 @@
             "width": "339px",
             "borderRadius": "0px",
             "maxWidth": "100%",
-            "position": "fixed",
+            "position": "absolute",
             "left": "0%",
             "top": "0%",
             "height": "319px"

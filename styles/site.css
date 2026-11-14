@@ -8448,7 +8448,7 @@ body:has([data-page-body="page_mwg374j71mg4xr"]) {
 .png-175,
 .png-176,
 .png-177,
-.png-178,
+.png-179,
 .vector-3-svg-5 {
   width: 100%;
   height: auto;
@@ -9371,7 +9371,7 @@ body:has([data-page-body="page_mwg374j71mg4xr"]) {
 .png-58,
 .png-90,
 .png-148,
-.png-179 {
+.png-178 {
   width: 100%;
   height: 51px;
   flex-shrink: 0;
@@ -18766,8 +18766,7 @@ body:has([data-page-body="page_mwg374j71mg4xr"]) {
   animation-play-state: running;
 }
 
-.svg-293,
-.svg-713 {
+.svg-293 {
   width: 395px;
   border-radius: 0px;
   max-width: 100%;
@@ -18795,8 +18794,7 @@ body:has([data-page-body="page_mwg374j71mg4xr"]) {
   animation-play-state: running;
 }
 
-.svg-294,
-.svg-714 {
+.svg-294 {
   width: 339px;
   border-radius: 0px;
   max-width: 100%;
@@ -24133,8 +24131,30 @@ body:has([data-page-body="page_mwg374j71mg4xr"]) {
   animation-play-state: running;
 }
 
+.svg-713 {
+  width: 395px;
+  border-radius: 0px;
+  max-width: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0%;
+  height: 351px;
+  animation: anim-fade-down 1s ease-out 0s 1 normal both paused;
+}
+
 .svg-714.is-inview {
   animation-play-state: running;
+}
+
+.svg-714 {
+  width: 339px;
+  border-radius: 0px;
+  max-width: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 319px;
+  animation: anim-fade-down 1s ease-out 0s 1 normal both paused;
 }
 
 .footer-41.is-inview {
@@ -34200,7 +34220,6 @@ body:has([data-page-body="page_mwg374j71mg4xr"]) {
   .el-2576,
   .checkbox-42,
   .el-2579,
-  .el-2583,
   .text-770,
   .bkonn-svg-4,
   .box-1151,
@@ -35089,7 +35108,6 @@ body:has([data-page-body="page_mwg374j71mg4xr"]) {
   .el-2576,
   .checkbox-42,
   .el-2579,
-  .el-2583,
   .text-770,
   .bkonn-svg-4,
   .box-1151,
