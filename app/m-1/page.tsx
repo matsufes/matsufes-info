@@ -24,11 +24,11 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2477"
+        className="el-2476"
       />
       <p className="box-892">
         <span
-          className="crisp-svg svg-502"
+          className="crisp-svg svg-500"
           style={{ ["--crisp-svg-width"]: "779px", ["--crisp-svg-ratio"]: "779 / 139" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={779} height={139} viewBox="0 0 779 139" />
@@ -49,9 +49,32 @@ export default function Page() {
           className="pasted-artwork-svg-152"
         />
       </section>
+      <section className="box-1068">
+        <div className="box-1069">
+          <a href="https://vote.matsufes.info" className="box-1070">
+            <p className="text-707">
+              {"m-1グランプリに投票する"}
+            </p>
+            <Image
+              src="/assets/pasted-artwork-216.svg"
+              alt=""
+              width={27}
+              height={39}
+              className="svg-706"
+            />
+            <Image
+              src="/assets/pasted-artwork-215.svg"
+              alt=""
+              width={411}
+              height={110}
+              className="svg-707"
+            />
+          </a>
+        </div>
+      </section>
       <section className="box-894">
         <span
-          className="crisp-svg svg-504"
+          className="crisp-svg svg-502"
           style={{ ["--crisp-svg-width"]: "565px", ["--crisp-svg-ratio"]: "565 / 118" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={565} height={118} viewBox="0 0 565 118" />
@@ -70,7 +93,7 @@ export default function Page() {
       </section>
       <section className="box-897">
         <span
-          className="crisp-svg svg-505"
+          className="crisp-svg svg-503"
           style={{ ["--crisp-svg-width"]: "358px", ["--crisp-svg-ratio"]: "358 / 121" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={358} height={121} viewBox="0 0 358 121" />
@@ -84,7 +107,7 @@ export default function Page() {
       </section>
       <section className="box-898">
         <span
-          className="crisp-svg svg-503"
+          className="crisp-svg svg-501"
           style={{ ["--crisp-svg-width"]: "390px", ["--crisp-svg-ratio"]: "390 / 59" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={390} height={59} viewBox="0 0 390 59" />
@@ -99,7 +122,7 @@ export default function Page() {
       <section className="box-904">
         <div className="box-899">
           <span
-            className="crisp-svg svg-506"
+            className="crisp-svg svg-504"
             style={{ ["--crisp-svg-width"]: "351px", ["--crisp-svg-ratio"]: "351 / 320" } as import("react").CSSProperties}
           >
             <svg aria-hidden="true" width={351} height={320} viewBox="0 0 351 320" />
@@ -117,12 +140,12 @@ export default function Page() {
             alt=""
             width={49}
             height={57}
-            className="svg-509"
+            className="svg-507"
           />
         </div>
         <div className="box-901">
           <span
-            className="crisp-svg svg-507"
+            className="crisp-svg svg-505"
             style={{ ["--crisp-svg-width"]: "345px", ["--crisp-svg-ratio"]: "345 / 281" } as import("react").CSSProperties}
           >
             <svg aria-hidden="true" width={345} height={281} viewBox="0 0 345 281" />
@@ -145,7 +168,7 @@ export default function Page() {
         </div>
         <div className="box-903">
           <span
-            className="crisp-svg svg-508"
+            className="crisp-svg svg-506"
             style={{ ["--crisp-svg-width"]: "343px", ["--crisp-svg-ratio"]: "343 / 281" } as import("react").CSSProperties}
           >
             <svg aria-hidden="true" width={343} height={281} viewBox="0 0 343 281" />
@@ -158,10 +181,10 @@ export default function Page() {
           </span>
         </div>
       </section>
-      <section className="el-2209">
+      <section className="el-2208">
         <input id="field" type="text" className="input-9" name="field" placeholder="ここに　言葉を　入力してみてね" />
       </section>
-      <section className="el-2210">
+      <section className="el-2209">
         <Image
           src="/assets/pasted-artwork-15.svg"
           alt=""
@@ -200,7 +223,7 @@ export default function Page() {
       </section>
       <section className="box-905">
         <span
-          className="crisp-svg svg-510"
+          className="crisp-svg svg-508"
           style={{ ["--crisp-svg-width"]: "452px", ["--crisp-svg-ratio"]: "452 / 122" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={452} height={122} viewBox="0 0 452 122" />
@@ -218,7 +241,7 @@ export default function Page() {
         </p>
         <div className="box-907">
           <span
-            className="crisp-svg svg-511"
+            className="crisp-svg svg-509"
             style={{ ["--crisp-svg-width"]: "989px", ["--crisp-svg-ratio"]: "989 / 171" } as import("react").CSSProperties}
           >
             <svg aria-hidden="true" width={989} height={171} viewBox="0 0 989 171" />
@@ -239,7 +262,7 @@ export default function Page() {
       </section>
       <p data-inview className="box-911">
         <span
-          className="crisp-svg svg-517"
+          className="crisp-svg svg-515"
           style={{ ["--crisp-svg-width"]: "1095px", ["--crisp-svg-ratio"]: "1095 / 670" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1095} height={670} viewBox="0 0 1095 670" />
@@ -251,7 +274,7 @@ export default function Page() {
           />
         </span>
         <span
-          className="crisp-svg svg-512"
+          className="crisp-svg svg-510"
           style={{ ["--crisp-svg-width"]: "1399px", ["--crisp-svg-ratio"]: "1399 / 238" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1399} height={238} viewBox="0 0 1399 238" />
@@ -263,7 +286,7 @@ export default function Page() {
           />
         </span>
         <span
-          className="crisp-svg svg-513"
+          className="crisp-svg svg-511"
           style={{ ["--crisp-svg-width"]: "1407px", ["--crisp-svg-ratio"]: "1407 / 44" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1407} height={44} viewBox="0 0 1407 44" />
@@ -276,8 +299,8 @@ export default function Page() {
         </span>
       </p>
       <section className="box-912" />
-      <section data-inview className="el-2211">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2212">
+      <section data-inview className="el-2210">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2211">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -296,7 +319,7 @@ export default function Page() {
           />
         </a>
         <span
-          className="crisp-svg svg-514"
+          className="crisp-svg svg-512"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 350" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={375} height={350} viewBox="0 0 375 350" />
@@ -310,7 +333,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-35">
         <span
-          className="crisp-svg svg-701"
+          className="crisp-svg svg-699"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -321,13 +344,13 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2213">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2212">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
             width={58}
             height={58}
-            className="svg-515"
+            className="svg-513"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-72">
@@ -336,7 +359,7 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-516"
+            className="svg-514"
           />
         </a>
       </section>

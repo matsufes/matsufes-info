@@ -24,11 +24,11 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2486"
+        className="el-2485"
       />
       <p className="box-836">
         <span
-          className="crisp-svg svg-375"
+          className="crisp-svg svg-373"
           style={{ ["--crisp-svg-width"]: "1161px", ["--crisp-svg-ratio"]: "1161 / 131" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1161} height={131} viewBox="0 0 1161 131" />
@@ -58,7 +58,7 @@ export default function Page() {
           alt=""
           width={438}
           height={128}
-          className="svg-453"
+          className="svg-451"
         />
       </section>
       <section className="box-842">
@@ -75,7 +75,7 @@ export default function Page() {
           alt=""
           width={438}
           height={128}
-          className="svg-454"
+          className="svg-452"
         />
       </section>
       <section className="box-846">
@@ -92,7 +92,7 @@ export default function Page() {
           alt=""
           width={438}
           height={128}
-          className="svg-455"
+          className="svg-453"
         />
       </section>
       <section className="box-848">
@@ -111,7 +111,7 @@ export default function Page() {
             alt=""
             width={1024}
             height={727}
-            className="el-1985"
+            className="el-1984"
           />
         </div>
         <div className="box-850">
@@ -120,7 +120,7 @@ export default function Page() {
             alt=""
             width={1438}
             height={1035}
-            className="el-1986"
+            className="el-1985"
           />
         </div>
         <div className="box-851">
@@ -149,12 +149,12 @@ export default function Page() {
             alt=""
             width={1021}
             height={574}
-            className="el-1987"
+            className="el-1986"
           />
         </div>
       </section>
-      <section data-inview className="el-2022">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2023">
+      <section data-inview className="el-2021">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2022">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -173,7 +173,7 @@ export default function Page() {
           />
         </a>
         <span
-          className="crisp-svg svg-414"
+          className="crisp-svg svg-412"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 350" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={375} height={350} viewBox="0 0 375 350" />
@@ -187,7 +187,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-30">
         <span
-          className="crisp-svg svg-415"
+          className="crisp-svg svg-413"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -198,13 +198,13 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2024">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2023">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
             width={58}
             height={58}
-            className="svg-416"
+            className="svg-414"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-62">
@@ -213,7 +213,7 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-417"
+            className="svg-415"
           />
         </a>
       </section>

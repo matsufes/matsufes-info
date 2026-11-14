@@ -25,11 +25,11 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2464"
+        className="el-2463"
       />
-      <p className="el-2465">
+      <p className="el-2464">
         <span
-          className="crisp-svg svg-658"
+          className="crisp-svg svg-656"
           style={{ ["--crisp-svg-width"]: "707px", ["--crisp-svg-ratio"]: "707 / 136" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={707} height={136} viewBox="0 0 707 136" />
@@ -41,13 +41,13 @@ export default function Page() {
           />
         </span>
       </p>
-      <section className="el-2466">
+      <section className="el-2465">
         <Image
           src="/assets/pasted-artwork-78.svg"
           alt=""
           width={1246}
           height={34}
-          className="svg-659"
+          className="svg-657"
         />
         <Image
           src="/assets/pasted-artwork-281.svg"
@@ -60,9 +60,9 @@ export default function Page() {
       <p className="box-1065">
         {"1日の日程表を　見ることができるよ。\nメインステージでの催しや　音楽サークルの公演時間を　確認しよう。"}
       </p>
-      <section className="el-2467">
+      <section className="el-2466">
         <span
-          className="crisp-svg svg-660"
+          className="crisp-svg svg-658"
           style={{ ["--crisp-svg-width"]: "430px", ["--crisp-svg-ratio"]: "430 / 64" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={430} height={64} viewBox="0 0 430 64" />
@@ -74,53 +74,53 @@ export default function Page() {
           />
         </span>
       </section>
-      <section className="el-2471">
-        <Link href="/schedule/0" className="el-2472">
+      <section className="el-2470">
+        <Link href="/schedule/0" className="el-2471">
           <Image
             src="/assets/pasted-artwork-51.svg"
             alt=""
             width={268}
             height={84}
-            className="svg-665"
+            className="svg-663"
           />
           <Image
             src="/assets/pasted-artwork-247.svg"
             alt=""
             width={268}
             height={84}
-            className="svg-666"
+            className="svg-664"
           />
         </Link>
-        <Link href="/schedule" className="el-2473">
+        <Link href="/schedule" className="el-2472">
           <Image
             src="/assets/pasted-artwork-47.svg"
             alt=""
             width={268}
             height={84}
-            className="svg-667"
+            className="svg-665"
           />
           <Image
             src="/assets/pasted-artwork-251.svg"
             alt=""
             width={268}
             height={84}
-            className="svg-668"
+            className="svg-666"
           />
         </Link>
-        <div className="el-2474">
+        <div className="el-2473">
           <Image
             src="/assets/pasted-artwork-52.svg"
             alt=""
             width={268}
             height={84}
-            className="svg-669"
+            className="svg-667"
           />
           <Image
             src="/assets/pasted-artwork-250.svg"
             alt=""
             width={268}
             height={84}
-            className="svg-670"
+            className="svg-668"
           />
         </div>
       </section>
@@ -132,7 +132,7 @@ export default function Page() {
           <option value="委員会企画">{"委員会企画"}</option>
         </select>
       </section>
-      <section className="el-2475">
+      <section className="el-2474">
         <div className="box-1066">
           <div id="main15" data-toggle-show="flex" className="t-7">
             <Image
@@ -140,77 +140,77 @@ export default function Page() {
               alt=""
               width={306}
               height={113}
-              className="svg-671"
+              className="svg-669"
             />
             <Image
               src="/assets/pasted-artwork-329.svg"
               alt=""
               width={306}
               height={224}
-              className="svg-672"
+              className="svg-670"
             />
             <Image
               src="/assets/pasted-artwork-322.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-673"
+              className="svg-671"
             />
             <Image
               src="/assets/pasted-artwork-323.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-674"
+              className="svg-672"
             />
             <Image
               src="/assets/pasted-artwork-324.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-675"
+              className="svg-673"
             />
             <Image
               src="/assets/pasted-artwork-325.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-676"
+              className="svg-674"
             />
             <Image
               src="/assets/pasted-artwork-326.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-677"
+              className="svg-675"
             />
             <Image
               src="/assets/pasted-artwork-327.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-678"
+              className="svg-676"
             />
             <Image
               src="/assets/pasted-artwork-330.svg"
               alt=""
               width={175}
               height={63}
-              className="svg-679"
+              className="svg-677"
             />
             <Image
               src="/assets/pasted-artwork-441.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-680"
+              className="svg-678"
             />
             <Image
               src="/assets/pasted-artwork-442.svg"
               alt=""
               width={306}
               height={227}
-              className="svg-681"
+              className="svg-679"
             />
           </div>
           <div id="center15" data-toggle-show="flex" className="t-8">
@@ -219,7 +219,7 @@ export default function Page() {
               alt=""
               width={306}
               height={801}
-              className="svg-682"
+              className="svg-680"
             />
           </div>
           <div id="street15" data-toggle-show="flex" className="t-9">
@@ -228,35 +228,35 @@ export default function Page() {
               alt=""
               width={306}
               height={113}
-              className="svg-683"
+              className="svg-681"
             />
             <Image
               src="/assets/pasted-artwork-333.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-684"
+              className="svg-682"
             />
             <Image
               src="/assets/pasted-artwork-335.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-685"
+              className="svg-683"
             />
             <Image
               src="/assets/pasted-artwork-336.svg"
               alt=""
               width={306}
               height={202}
-              className="svg-686"
+              className="svg-684"
             />
             <Image
               src="/assets/pasted-artwork-334.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-687"
+              className="svg-685"
             />
           </div>
           <div id="committee15" data-toggle-show="flex" className="t-10">
@@ -265,7 +265,7 @@ export default function Page() {
               alt=""
               width={306}
               height={212}
-              className="svg-688"
+              className="svg-686"
             />
           </div>
           <Image
@@ -273,7 +273,7 @@ export default function Page() {
             alt=""
             width={295}
             height={2502}
-            className="el-2476"
+            className="el-2475"
           />
           <span
             className="crisp-svg pc-10"
@@ -289,8 +289,8 @@ export default function Page() {
           </span>
         </div>
       </section>
-      <section data-inview className="el-2469">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2468">
+      <section data-inview className="el-2468">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2467">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -309,7 +309,7 @@ export default function Page() {
           />
         </a>
         <span
-          className="crisp-svg svg-661"
+          className="crisp-svg svg-659"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 350" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={375} height={350} viewBox="0 0 375 350" />
@@ -323,7 +323,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-40">
         <span
-          className="crisp-svg svg-662"
+          className="crisp-svg svg-660"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -334,13 +334,13 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2470">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2469">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
             width={58}
             height={58}
-            className="svg-663"
+            className="svg-661"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-82">
@@ -349,7 +349,7 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-664"
+            className="svg-662"
           />
         </a>
       </section>

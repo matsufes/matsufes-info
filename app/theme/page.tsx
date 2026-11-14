@@ -24,7 +24,7 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2485"
+        className="el-2484"
       />
       <p className="box-825">
         <Image
@@ -32,7 +32,7 @@ export default function Page() {
           alt=""
           width={909}
           height={79}
-          className="svg-452"
+          className="svg-450"
         />
       </p>
       <section className="box-826">
@@ -50,7 +50,7 @@ export default function Page() {
           alt=""
           width={1096}
           height={67}
-          className="svg-445"
+          className="svg-443"
         />
       </section>
       <section className="box-828">
@@ -59,7 +59,7 @@ export default function Page() {
           alt=""
           width={544}
           height={128}
-          className="svg-448"
+          className="svg-446"
         />
       </section>
       <section className="box-831">
@@ -83,7 +83,7 @@ export default function Page() {
             alt=""
             width={1040}
             height={859}
-            className="svg-449"
+            className="svg-447"
           />
         </div>
         <div className="box-833">
@@ -92,13 +92,13 @@ export default function Page() {
             alt=""
             width={1061}
             height={1076}
-            className="svg-450"
+            className="svg-448"
           />
         </div>
       </section>
       <section className="box-835">
         <span
-          className="crisp-svg svg-451"
+          className="crisp-svg svg-449"
           style={{ ["--crisp-svg-width"]: "123px", ["--crisp-svg-ratio"]: "123 / 361" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={123} height={361} viewBox="0 0 123 361" />
@@ -110,8 +110,8 @@ export default function Page() {
           />
         </span>
       </section>
-      <section data-inview className="el-2019">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2020">
+      <section data-inview className="el-2018">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2019">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -130,7 +130,7 @@ export default function Page() {
           />
         </a>
         <span
-          className="crisp-svg svg-410"
+          className="crisp-svg svg-408"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 350" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={375} height={350} viewBox="0 0 375 350" />
@@ -144,7 +144,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-29">
         <span
-          className="crisp-svg svg-411"
+          className="crisp-svg svg-409"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -155,13 +155,13 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2021">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2020">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
             width={58}
             height={58}
-            className="svg-412"
+            className="svg-410"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-60">
@@ -170,7 +170,7 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-413"
+            className="svg-411"
           />
         </a>
       </section>

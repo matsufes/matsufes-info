@@ -24,11 +24,11 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2484"
+        className="el-2483"
       />
       <p className="box-818">
         <span
-          className="crisp-svg svg-374"
+          className="crisp-svg svg-372"
           style={{ ["--crisp-svg-width"]: "636px", ["--crisp-svg-ratio"]: "636 / 130" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={636} height={130} viewBox="0 0 636 130" />
@@ -55,7 +55,7 @@ export default function Page() {
           alt=""
           width={438}
           height={128}
-          className="svg-440"
+          className="svg-438"
         />
       </section>
       <section className="box-822">
@@ -63,33 +63,33 @@ export default function Page() {
           {"松ヶ崎祭は2026年で56回目を迎えたよ。\n\n\n毎年 11 月に松ヶ崎キャンパスで開催されている京都工芸繊維大学の学園祭。\n\n様々な団体が日々の活動成果を発表する場になっているよ。"}
         </p>
       </section>
-      <section className="el-1980">
+      <section className="el-1979">
         <Image
           src="/assets/pasted-artwork-339.svg"
           alt=""
           width={438}
           height={128}
-          className="svg-446"
+          className="svg-444"
         />
       </section>
-      <section className="el-1981">
+      <section className="el-1980">
         <p className="box-823">
           {"本日は第56回松ヶ崎祭にご来場いただきありがとうございます。 \n松ヶ崎祭実行委員会を代表しまして心より歓迎申し上げます。  \nまた、松ヶ崎祭の開催にあたり、日頃より多大なるご支援・ご協力を賜りました、  \nすべての関係者の皆さまに、深く御礼申し上げます。\n\n今年度の松ヶ崎祭開催に向けて、出展者さまが安心して当日を迎えられるよう、\nそして松ヶ崎祭が無事に開催できるよう、準備に注力してきました。  \n私たちが準備してきた過程は注目されにくいものがほとんどです。\nしかし、その成果として、構内の至る所に、私たちが無我夢中で創り上げた景色が広がっています。\n\n今年度の松ヶ崎祭のテーマは「夢宙」です。\n私たち松ヶ崎祭実行委員会は「松ヶ崎祭という無限の夢が宙がる空間での時間に思わず熱中してしまうような最高の体験を、出展者の皆さま、そして来場される皆さまに届けたい」という一心で、\n松ヶ崎祭が終わる最後の時まで駆け抜けます。"}
         </p>
       </section>
-      <section className="el-1984">
+      <section className="el-1983">
         <div className="box-824">
           <Image
             src="/assets/pasted-artwork-340.svg"
             alt=""
             width={1087}
             height={856}
-            className="svg-447"
+            className="svg-445"
           />
-          <a href="https://mf55.matsufes.info/" className="el-1982">
+          <a href="https://mf55.matsufes.info/" className="el-1981">
             {"第55回松ヶ崎祭　「カイカセンゲン」"}
           </a>
-          <a href="https://mf54.matsufes.info/" className="el-1983">
+          <a href="https://mf54.matsufes.info/" className="el-1982">
             {"第54回松ヶ崎祭　「みちみち」"}
           </a>
           <a href="https://mf53.matsufes.info/" className="hello-world-2">
@@ -100,8 +100,8 @@ export default function Page() {
           </a>
         </div>
       </section>
-      <section data-inview className="el-2016">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2017">
+      <section data-inview className="el-2015">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2016">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -120,7 +120,7 @@ export default function Page() {
           />
         </a>
         <span
-          className="crisp-svg svg-406"
+          className="crisp-svg svg-404"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 350" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={375} height={350} viewBox="0 0 375 350" />
@@ -134,7 +134,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-28">
         <span
-          className="crisp-svg svg-407"
+          className="crisp-svg svg-405"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -145,13 +145,13 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2018">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2017">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
             width={58}
             height={58}
-            className="svg-408"
+            className="svg-406"
           />
         </a>
         <a href="https://x.com/matsufes_info" className="x-58">
@@ -160,7 +160,7 @@ export default function Page() {
             alt=""
             width={54}
             height={49}
-            className="svg-409"
+            className="svg-407"
           />
         </a>
       </section>

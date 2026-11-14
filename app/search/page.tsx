@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { fetchPublic, readTextLimited } from "@/lib/safe-fetch";
-import { evaluateValueRecipe as __evalValueRecipe } from "@/lib/value-recipe";
 import { cache } from "react";
 import Link from "next/link";
 import SmartLink from "@/components/SmartLink";
@@ -32,20 +31,22 @@ function safeRequestOrigin(url: string, init?: string, origin?: string): boolean
 /** スクリプト「ページを開いたとき」のデータのブロックを上から順に実行する */
 async function loadData(vars: Vars) {
   vars["_0"] = await fetchJson(interpolateUrl("https://api.matsufes.info/data/web-info.json", vars));
-  vars["_1"] = lookupVar(vars, "_0.data") ?? null;
-  {
-    const result = __evalValueRecipe(lookupVar(vars, "_1"), [{"kind":"length"}], vars);
-    if (result.kind === "value") vars["_3"] = result.value;
-    else if (result.kind === "missing") vars["_3"] = undefined;
-  }
 }
 
-/** リストで並べる項目にする（オブジェクトはそのまま、文字や数値は {値} に入れる） */
-function toItems(v: unknown): Item[] {
-  if (!v || typeof v !== "object") return [];
-  return Object.values(v).map((x): Item =>
-    x && typeof x === "object" && !Array.isArray(x) ? x as Item : { ["値"]: x }
-  );
+/** ブラウザで並べるリストのお手本用: ページの変数に無い {名前} はそのまま残す */
+function templateVars(vars: Vars): Vars {
+  return new Proxy(vars, {
+    has: () => true,
+    // lookupVar deliberately reads only own keys. Expose virtual own-key
+    // descriptors for template placeholders without weakening JSON safety.
+    getOwnPropertyDescriptor: (t, k) => Reflect.getOwnPropertyDescriptor(t, k) ??
+      (typeof k === "string"
+        ? { configurable: true, enumerable: false, writable: true, value: "{" + k + "}" }
+        : undefined),
+    // 文字としての「{」は「\{」のまま残し、複製するときに置き換える
+    get: (t, k) =>
+      typeof k !== "string" ? undefined : k === "\u0000keepEscapes" ? true : k in t ? t[k] : `{${k}}`,
+  });
 }
 
 export const metadata: Metadata = {
@@ -105,13 +106,13 @@ export default async function Page() {
   vars["まつぴよ-p"] = "公式メンバ〜「まつぴよ」";
   return (
     <>
-      <span hidden data-page-body="page_mwefqpvo1m40u4" data-scripts={"[{\"trigger\":\"load\",\"steps\":[{\"kind\":\"store-load\",\"key\":\"mf_bookmarks\",\"into\":\"_4\",\"shared\":true},{\"kind\":\"transform\",\"source\":\"_4\",\"into\":\"_5\",\"transform\":{\"kind\":\"split\",\"separator\":\".\"}},{\"kind\":\"list-display\",\"mode\":\"sort\",\"array\":\"_1\",\"field\":\"publicId\",\"dir\":\"asc\"}]}]"} />
+      <span hidden data-page-body="page_mwefqpvo1m40u4" data-scripts={JSON.stringify([{"trigger":"change","steps":[{"kind":"set-var","into":"_3","value":interpolate("{_3}", { ...vars, ...{"_3":"{_3}","\u0000keepEscapes":true} })}],"changeVariable":"_1"},{"trigger":"load","steps":[{"kind":"store-load","key":"mf_bookmarks","into":"_4","shared":true},{"kind":"transform","source":"_4","into":"_5","transform":{"kind":"split","separator":"."}},{"kind":"set-var","into":"_1","raw":lookupVar(vars, "_0.data") ?? null},{"kind":"transform","source":"_1","into":"_3","transform":{"kind":"length"}},{"kind":"list-display","mode":"sort","array":"_1","field":"publicId","dir":"asc"}]}])} />
       <Image data-inview
         src="/assets/image.png"
         alt=""
         width={477}
         height={374}
-        className="el-2298"
+        className="el-2297"
         preload
         fetchPriority="high"
       />
@@ -120,7 +121,7 @@ export default async function Page() {
         alt=""
         width={476}
         height={374}
-        className="el-2299"
+        className="el-2298"
         preload
         fetchPriority="high"
       />
@@ -130,9 +131,9 @@ export default async function Page() {
           alt="トップへ戻る"
           width={298}
           height={298}
-          className="el-2300"
+          className="el-2299"
         />
-        <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"memu-p\"}]}]"} className="el-2301">
+        <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"show\",\"target\":\"memu-p\"}]}]"} className="el-2300">
           <Image
             src="/assets/menu.png"
             alt="メニューを開く"
@@ -141,12 +142,12 @@ export default async function Page() {
             className="pasted-artwork-svg-157"
           />
         </div>
-        <div id="memu-p" data-toggle-show="flex" data-inview className="el-2312">
+        <div id="memu-p" data-toggle-show="flex" data-inview className="el-2311">
           <div className="box-968">
-            <div id="div-42" className="el-2303">
-              <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-2302">
+            <div id="div-42" className="el-2302">
+              <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"memu-p\"}]}]"} className="el-2301">
                 <span
-                  className="crisp-svg svg-528"
+                  className="crisp-svg svg-526"
                   style={{ ["--crisp-svg-width"]: "43px", ["--crisp-svg-ratio"]: "43 / 31" } as import("react").CSSProperties}
                 >
                   <svg aria-hidden="true" width={43} height={31} viewBox="0 0 43 31" />
@@ -160,10 +161,10 @@ export default async function Page() {
               </div>
             </div>
             <div className="container-151">
-              <p id="松ヶ崎祭について" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"mf-phone\"}]}]"} className="el-2304">
+              <p id="松ヶ崎祭について" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"mf-phone\"}]}]"} className="el-2303">
                 {"松ヶ崎祭について"}
               </p>
-              <div id="mf-phone" data-toggle-show="flex" data-inview className="el-2305">
+              <div id="mf-phone" data-toggle-show="flex" data-inview className="el-2304">
                 <Link href="/about" id="松ヶ崎祭とは-p" className="button-542">
                   {"松ヶ崎祭とは"}
                 </Link>
@@ -177,10 +178,10 @@ export default async function Page() {
                   {"お知らせ"}
                 </Link>
               </div>
-              <p id="企画さがし" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"kikaku-phone\"}]}]"} className="el-2306">
+              <p id="企画さがし" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"kikaku-phone\"}]}]"} className="el-2305">
                 {"企画さがし"}
               </p>
-              <div id="kikaku-phone" data-toggle-show="flex" data-inview className="el-2307">
+              <div id="kikaku-phone" data-toggle-show="flex" data-inview className="el-2306">
                 <Link href="/search" id="言葉-p" className="button-546">
                   {"言葉からさがす"}
                 </Link>
@@ -190,14 +191,14 @@ export default async function Page() {
                 <a href="/navigation" id="地図-p" className="button-548">
                   {"地図からさがす"}
                 </a>
-                <Link href="/mypage" id="しおり-p" className="button-549">
+                <a href="https://map.matsufes.info/?bookmarks=1" id="しおり-p" className="button-549">
                   {"きみのしおり"}
-                </Link>
+                </a>
               </div>
-              <p id="ご案内" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"goannai-phone\"}]}]"} className="el-2308">
+              <p id="ご案内" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"goannai-phone\"}]}]"} className="el-2307">
                 {"ご案内"}
               </p>
-              <div id="goannai-phone" data-toggle-show="flex" data-inview className="el-2309">
+              <div id="goannai-phone" data-toggle-show="flex" data-inview className="el-2308">
                 <Link href="/attention" id="ご来場の-p" className="button-550">
                   {"ご来場の皆さまへ"}
                 </Link>
@@ -214,10 +215,10 @@ export default async function Page() {
                   {"相互リンク"}
                 </Link>
               </div>
-              <p id="公式特集" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"koushiki-phone\"}]}]"} className="el-2310">
+              <p id="公式特集" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"koushiki-phone\"}]}]"} className="el-2309">
                 {"公式特集"}
               </p>
-              <div id="koushiki-phone" data-toggle-show="flex" data-inview className="el-2311">
+              <div id="koushiki-phone" data-toggle-show="flex" data-inview className="el-2310">
                 <Link href="/committee" id="委員会企画-p" className="button-555">
                   {"委員会企画"}
                 </Link>
@@ -231,10 +232,10 @@ export default async function Page() {
             </div>
           </div>
         </div>
-        <div className="el-2349">
+        <div className="el-2348">
           <div className="container-156">
-            <div data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-33\"},{\"kind\":\"show\",\"target\":\"div-34\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-33\"},{\"kind\":\"hide\",\"target\":\"div-34\"}]}]"} className="el-2321">
-              <div className="el-2313">
+            <div data-scripts={"[{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-33\"},{\"kind\":\"show\",\"target\":\"div-34\"}]},{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-33\"},{\"kind\":\"hide\",\"target\":\"div-34\"}]}]"} className="el-2320">
+              <div className="el-2312">
                 <div className="box-969">
                   <p className="text-621">
                     {"まつがさきさい"}
@@ -247,27 +248,27 @@ export default async function Page() {
                   {"について"}
                 </p>
               </div>
-              <div id="div-33" data-toggle-show="flex" data-inview className="el-2314" />
-              <div id="div-34" data-toggle-show="flex" className="el-2320">
+              <div id="div-33" data-toggle-show="flex" data-inview className="el-2313" />
+              <div id="div-34" data-toggle-show="flex" className="el-2319">
                 <div id="menu1-2" data-inview className="container-152">
-                  <Link href="/about" className="el-2315">
+                  <Link href="/about" className="el-2314">
                     {"松ヶ崎祭とは"}
                   </Link>
-                  <Link href="/theme" className="el-2316">
+                  <Link href="/theme" className="el-2315">
                     {"mf56メインテ〜マ"}
                   </Link>
-                  <Link href="/sponsor" className="el-2317">
+                  <Link href="/sponsor" className="el-2316">
                     {"ご協賛いただいた皆さま"}
                   </Link>
-                  <Link href="/notice" className="el-2318">
+                  <Link href="/notice" className="el-2317">
                     {"お知らせ"}
                   </Link>
-                  <div id="menu1-3" className="el-2319" />
+                  <div id="menu1-3" className="el-2318" />
                 </div>
               </div>
             </div>
-            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-35\"},{\"kind\":\"hide\",\"target\":\"div-36\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-35\"},{\"kind\":\"show\",\"target\":\"div-36\"}]}]"} className="el-2330">
-              <div className="el-2322">
+            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-35\"},{\"kind\":\"hide\",\"target\":\"div-36\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-35\"},{\"kind\":\"show\",\"target\":\"div-36\"}]}]"} className="el-2329">
+              <div className="el-2321">
                 <div className="box-970">
                   <p className="text-624">
                     {"きかく"}
@@ -280,27 +281,27 @@ export default async function Page() {
                   {"さがし"}
                 </p>
               </div>
-              <div id="div-35" data-toggle-show="flex" data-inview className="el-2323" />
-              <div id="div-36" data-toggle-show="flex" className="el-2329">
+              <div id="div-35" data-toggle-show="flex" data-inview className="el-2322" />
+              <div id="div-36" data-toggle-show="flex" className="el-2328">
                 <div id="menu1-4" data-inview className="container-153">
-                  <Link href="/search" className="el-2324">
+                  <Link href="/search" className="el-2323">
                     {"言葉からさがす"}
                   </Link>
-                  <Link href="/schedule" className="el-2325">
+                  <Link href="/schedule" className="el-2324">
                     {"日程表からさがす"}
                   </Link>
-                  <a href="/navigation" className="el-2326">
+                  <a href="/navigation" className="el-2325">
                     {"地図からさがす"}
                   </a>
-                  <Link href="/mypage" className="el-2327">
+                  <a href="https://map.matsufes.info/?bookmarks=1" className="el-2326">
                     {"きみのしおり"}
-                  </Link>
-                  <div id="menu1-5" className="el-2328" />
+                  </a>
+                  <div id="menu1-5" className="el-2327" />
                 </div>
               </div>
             </div>
-            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-37\"},{\"kind\":\"hide\",\"target\":\"div-39\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-37\"},{\"kind\":\"show\",\"target\":\"div-39\"}]}]"} className="el-2340">
-              <div className="el-2331">
+            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-37\"},{\"kind\":\"hide\",\"target\":\"div-39\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-37\"},{\"kind\":\"show\",\"target\":\"div-39\"}]}]"} className="el-2339">
+              <div className="el-2330">
                 <p className="text-627">
                   {"ご"}
                 </p>
@@ -313,30 +314,30 @@ export default async function Page() {
                   </p>
                 </div>
               </div>
-              <div id="div-37" data-toggle-show="flex" data-inview className="el-2332" />
-              <div id="div-39" data-toggle-show="flex" className="el-2339">
+              <div id="div-37" data-toggle-show="flex" data-inview className="el-2331" />
+              <div id="div-39" data-toggle-show="flex" className="el-2338">
                 <div id="menu1-6" data-inview className="container-154">
-                  <Link href="/attention" className="el-2333">
+                  <Link href="/attention" className="el-2332">
                     {"ご来場の皆さまへ"}
                   </Link>
-                  <Link href="/access" className="el-2334">
+                  <Link href="/access" className="el-2333">
                     {"行き方・会場地図"}
                   </Link>
-                  <Link href="/survey" className="el-2335">
+                  <Link href="/survey" className="el-2334">
                     {"来場者アンケ〜ト"}
                   </Link>
-                  <Link href="/question" className="el-2336">
+                  <Link href="/question" className="el-2335">
                     {"よくあるご質問"}
                   </Link>
-                  <Link href="/links" className="el-2337">
+                  <Link href="/links" className="el-2336">
                     {"相互リンク"}
                   </Link>
-                  <div id="menu1-7" className="el-2338" />
+                  <div id="menu1-7" className="el-2337" />
                 </div>
               </div>
             </div>
-            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-40\"},{\"kind\":\"hide\",\"target\":\"div-38\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-40\"},{\"kind\":\"show\",\"target\":\"div-38\"}]}]"} className="el-2348">
-              <div className="el-2341">
+            <div data-scripts={"[{\"trigger\":\"hover-end\",\"steps\":[{\"kind\":\"hide\",\"target\":\"div-40\"},{\"kind\":\"hide\",\"target\":\"div-38\"}]},{\"trigger\":\"hover-start\",\"steps\":[{\"kind\":\"show\",\"target\":\"div-40\"},{\"kind\":\"show\",\"target\":\"div-38\"}]}]"} className="el-2347">
+              <div className="el-2340">
                 <div className="box-972">
                   <p className="text-630">
                     {"こうしきとくしゅ〜"}
@@ -346,26 +347,26 @@ export default async function Page() {
                   </p>
                 </div>
               </div>
-              <div id="div-40" data-toggle-show="flex" data-inview className="el-2342" />
-              <div id="div-38" data-toggle-show="flex" className="el-2347">
+              <div id="div-40" data-toggle-show="flex" data-inview className="el-2341" />
+              <div id="div-38" data-toggle-show="flex" className="el-2346">
                 <div id="menu1-8" data-inview className="container-155">
-                  <Link href="/committee" className="el-2343">
+                  <Link href="/committee" className="el-2342">
                     {"委員会企画"}
                   </Link>
-                  <Link href="/m-1" className="el-2344">
+                  <Link href="/m-1" className="el-2343">
                     {"m-1グランプリ"}
                   </Link>
-                  <Link href="/matsupiyo-old" className="el-2345">
+                  <Link href="/matsupiyo-old" className="el-2344">
                     {"公式メンバ〜「まつぴよ」"}
                   </Link>
-                  <div id="menu1-9" className="el-2346" />
+                  <div id="menu1-9" className="el-2345" />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </nav>
-      <section className="el-2350">
+      <section className="el-2349">
         <div className="box-973">
           <p className="text-632">
             {"ことば"}
@@ -390,7 +391,7 @@ export default async function Page() {
         />
       </section>
       <section className="box-982">
-        <div className="el-2351">
+        <div className="el-2350">
           <div className="box-975">
             <p className="text-635">
               {"まつがさきさい"}
@@ -414,7 +415,7 @@ export default async function Page() {
             {"がいっぱい。"}
           </p>
         </div>
-        <div className="el-2352">
+        <div className="el-2351">
           <div className="box-977">
             <p className="text-641">
               {"き"}
@@ -489,7 +490,7 @@ export default async function Page() {
           </div>
         </div>
       </section>
-      <section className="el-2407">
+      <section className="el-2406">
         <div className="box-1056">
           <div className="box-1040">
             <div className="box-992">
@@ -510,8 +511,8 @@ export default async function Page() {
               </div>
             </div>
             <div className="box-995">
-              <div className="el-2355">
-                <div id="div-30" data-toggle-show="flex" className="el-2353">
+              <div className="el-2354">
+                <div id="div-30" data-toggle-show="flex" className="el-2352">
                   <Image
                     src="/assets/image-4.png"
                     alt=""
@@ -525,7 +526,7 @@ export default async function Page() {
                     </p>
                   </div>
                 </div>
-                <div id="div-31" data-toggle-show="flex" data-inview className="el-2354">
+                <div id="div-31" data-toggle-show="flex" data-inview className="el-2353">
                   <Image
                     src="/assets/image-124-1.png"
                     alt=""
@@ -543,26 +544,26 @@ export default async function Page() {
                 </div>
               </div>
             </div>
-            <div id="div-32" data-toggle-show="flex" data-inview className="el-2402">
+            <div id="div-32" data-toggle-show="flex" data-inview className="el-2401">
               <div className="box-996">
                 <Image
                   src="/assets/_-_2.png"
                   alt="いつ"
                   width={129}
                   height={129}
-                  className="el-2356"
+                  className="el-2355"
                 />
                 <p className="text-658">
                   {"いつ"}
                 </p>
               </div>
               <div className="box-1003">
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-2\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-2\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":3},{\"kind\":\"hide\",\"target\":\"div\"},{\"kind\":\"show\",\"target\":\"div-2\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-2\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":3,\"join\":\"or\",\"conds\":[{\"field\":\"businessHours\",\"op\":\"contains\",\"value\":\"11/13\"}]},{\"kind\":\"hide\",\"target\":\"div-2\"},{\"kind\":\"show\",\"target\":\"div\"}]}]}]"} className="el-2359">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-2\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-2\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":3},{\"kind\":\"hide\",\"target\":\"div\"},{\"kind\":\"show\",\"target\":\"div-2\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-2\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":3,\"join\":\"or\",\"conds\":[{\"field\":\"businessHours\",\"op\":\"contains\",\"value\":\"11/13\"}]},{\"kind\":\"hide\",\"target\":\"div-2\"},{\"kind\":\"show\",\"target\":\"div\"}]}]}]"} className="el-2358">
                   <label id="agree-2" className="checkbox-15">
                     <input type="checkbox" name="agree-2" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-2" data-toggle-show="flex" className="el-2357">
+                  <div id="div-2" data-toggle-show="flex" className="el-2356">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -576,7 +577,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div" data-toggle-show="flex" data-inview className="el-2358">
+                  <div id="div" data-toggle-show="flex" data-inview className="el-2357">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -591,12 +592,12 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-3\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-3\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":3},{\"kind\":\"hide\",\"target\":\"div-4\"},{\"kind\":\"show\",\"target\":\"div-3\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-3\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":4,\"join\":\"or\",\"conds\":[{\"field\":\"businessHours\",\"op\":\"contains\",\"value\":\"11/14\"}]},{\"kind\":\"hide\",\"target\":\"div-3\"},{\"kind\":\"show\",\"target\":\"div-4\"}]}]}]"} className="el-2362">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-3\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-3\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":3},{\"kind\":\"hide\",\"target\":\"div-4\"},{\"kind\":\"show\",\"target\":\"div-3\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-3\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":4,\"join\":\"or\",\"conds\":[{\"field\":\"businessHours\",\"op\":\"contains\",\"value\":\"11/14\"}]},{\"kind\":\"hide\",\"target\":\"div-3\"},{\"kind\":\"show\",\"target\":\"div-4\"}]}]}]"} className="el-2361">
                   <label id="agree-3" className="checkbox-16">
                     <input type="checkbox" name="agree-3" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-3" data-toggle-show="flex" className="el-2360">
+                  <div id="div-3" data-toggle-show="flex" className="el-2359">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -610,7 +611,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-4" data-toggle-show="flex" data-inview className="el-2361">
+                  <div id="div-4" data-toggle-show="flex" data-inview className="el-2360">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -625,12 +626,12 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-4\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-4\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":3},{\"kind\":\"hide\",\"target\":\"div-6\"},{\"kind\":\"show\",\"target\":\"div-5\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-4\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":5,\"join\":\"or\",\"conds\":[{\"field\":\"businessHours\",\"op\":\"contains\",\"value\":\"11/15\"}]},{\"kind\":\"hide\",\"target\":\"div-5\"},{\"kind\":\"show\",\"target\":\"div-6\"}]}]}]"} className="el-2365">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-4\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-4\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":3},{\"kind\":\"hide\",\"target\":\"div-6\"},{\"kind\":\"show\",\"target\":\"div-5\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-4\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":5,\"join\":\"or\",\"conds\":[{\"field\":\"businessHours\",\"op\":\"contains\",\"value\":\"11/15\"}]},{\"kind\":\"hide\",\"target\":\"div-5\"},{\"kind\":\"show\",\"target\":\"div-6\"}]}]}]"} className="el-2364">
                   <label id="agree-4" className="checkbox-17">
                     <input type="checkbox" name="agree-4" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-5" data-toggle-show="flex" className="el-2363">
+                  <div id="div-5" data-toggle-show="flex" className="el-2362">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -644,7 +645,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-6" data-toggle-show="flex" data-inview className="el-2364">
+                  <div id="div-6" data-toggle-show="flex" data-inview className="el-2363">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -673,12 +674,12 @@ export default async function Page() {
                 </p>
               </div>
               <div className="box-1015">
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-5\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-5\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":6},{\"kind\":\"hide\",\"target\":\"div-8\"},{\"kind\":\"show\",\"target\":\"div-7\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-5\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":6,\"join\":\"or\",\"conds\":[{\"field\":\"place\",\"op\":\"empty\",\"value\":\"\"}]},{\"kind\":\"hide\",\"target\":\"div-7\"},{\"kind\":\"show\",\"target\":\"div-8\"}]}]}]"} className="el-2368">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-5\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-5\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":6},{\"kind\":\"hide\",\"target\":\"div-8\"},{\"kind\":\"show\",\"target\":\"div-7\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-5\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":6,\"join\":\"or\",\"conds\":[{\"field\":\"place\",\"op\":\"empty\",\"value\":\"\"}]},{\"kind\":\"hide\",\"target\":\"div-7\"},{\"kind\":\"show\",\"target\":\"div-8\"}]}]}]"} className="el-2367">
                   <label id="agree-5" className="checkbox-18">
                     <input type="checkbox" name="agree-5" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-7" data-toggle-show="flex" className="el-2366">
+                  <div id="div-7" data-toggle-show="flex" className="el-2365">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -697,7 +698,7 @@ export default async function Page() {
                       </div>
                     </div>
                   </div>
-                  <div id="div-8" data-toggle-show="flex" className="el-2367">
+                  <div id="div-8" data-toggle-show="flex" className="el-2366">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -717,12 +718,12 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-6\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-6\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":7},{\"kind\":\"hide\",\"target\":\"div-10\"},{\"kind\":\"show\",\"target\":\"div-9\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-6\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":7,\"join\":\"or\",\"conds\":[{\"field\":\"place\",\"op\":\"empty\",\"value\":\"\",\"not\":true}]},{\"kind\":\"hide\",\"target\":\"div-9\"},{\"kind\":\"show\",\"target\":\"div-10\"}]}]}]"} className="el-2371">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-6\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-6\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":7},{\"kind\":\"hide\",\"target\":\"div-10\"},{\"kind\":\"show\",\"target\":\"div-9\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-6\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":7,\"join\":\"or\",\"conds\":[{\"field\":\"place\",\"op\":\"empty\",\"value\":\"\",\"not\":true}]},{\"kind\":\"hide\",\"target\":\"div-9\"},{\"kind\":\"show\",\"target\":\"div-10\"}]}]}]"} className="el-2370">
                   <label id="agree-6" className="checkbox-19">
                     <input type="checkbox" name="agree-6" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-9" data-toggle-show="flex" className="el-2369">
+                  <div id="div-9" data-toggle-show="flex" className="el-2368">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -741,7 +742,7 @@ export default async function Page() {
                       </div>
                     </div>
                   </div>
-                  <div id="div-10" data-toggle-show="flex" className="el-2370">
+                  <div id="div-10" data-toggle-show="flex" className="el-2369">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -761,12 +762,12 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-7\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-7\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":8},{\"kind\":\"hide\",\"target\":\"div-12\"},{\"kind\":\"show\",\"target\":\"div-11\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-7\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":8,\"join\":\"or\",\"conds\":[{\"field\":\"categories.出展カテゴリ\",\"op\":\"contains\",\"value\":\"パフォーマンス\",\"not\":true},{\"field\":\"categories.出展カテゴリ\",\"op\":\"contains\",\"value\":\"ストリートパフォーマンス\",\"and\":false},{\"field\":\"categories.出展カテゴリ\",\"op\":\"contains\",\"value\":\"屋内パフォーマンス\",\"and\":false}]},{\"kind\":\"hide\",\"target\":\"div-11\"},{\"kind\":\"show\",\"target\":\"div-12\"}]}]}]"} className="el-2374">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-7\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-7\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":8},{\"kind\":\"hide\",\"target\":\"div-12\"},{\"kind\":\"show\",\"target\":\"div-11\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-7\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":8,\"join\":\"or\",\"conds\":[{\"field\":\"categories.出展カテゴリ\",\"op\":\"contains\",\"value\":\"パフォーマンス\",\"not\":true},{\"field\":\"categories.出展カテゴリ\",\"op\":\"contains\",\"value\":\"ストリートパフォーマンス\",\"and\":false},{\"field\":\"categories.出展カテゴリ\",\"op\":\"contains\",\"value\":\"屋内パフォーマンス\",\"and\":false}]},{\"kind\":\"hide\",\"target\":\"div-11\"},{\"kind\":\"show\",\"target\":\"div-12\"}]}]}]"} className="el-2373">
                   <label id="agree-7" className="checkbox-20">
                     <input type="checkbox" name="agree-7" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-11" data-toggle-show="flex" className="el-2372">
+                  <div id="div-11" data-toggle-show="flex" className="el-2371">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -780,7 +781,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-12" data-toggle-show="flex" className="el-2373">
+                  <div id="div-12" data-toggle-show="flex" className="el-2372">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -802,19 +803,19 @@ export default async function Page() {
                   alt="どんなことがしたい？"
                   width={82}
                   height={104}
-                  className="el-2375"
+                  className="el-2374"
                 />
                 <p className="text-676">
                   {"どんなことがしたい？"}
                 </p>
               </div>
               <div className="box-1033">
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-8\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-8\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":9},{\"kind\":\"hide\",\"target\":\"div-14\"},{\"kind\":\"show\",\"target\":\"div-13\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-8\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":9,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"たべる\"}]},{\"kind\":\"hide\",\"target\":\"div-13\"},{\"kind\":\"show\",\"target\":\"div-14\"}]}]}]"} className="el-2378">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-8\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-8\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":9},{\"kind\":\"hide\",\"target\":\"div-14\"},{\"kind\":\"show\",\"target\":\"div-13\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-8\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":9,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"たべる\"}]},{\"kind\":\"hide\",\"target\":\"div-13\"},{\"kind\":\"show\",\"target\":\"div-14\"}]}]}]"} className="el-2377">
                   <label id="agree-8" className="checkbox-21">
                     <input type="checkbox" name="agree-8" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-13" data-toggle-show="flex" className="el-2376">
+                  <div id="div-13" data-toggle-show="flex" className="el-2375">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -828,7 +829,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-14" data-toggle-show="flex" data-inview className="el-2377">
+                  <div id="div-14" data-toggle-show="flex" data-inview className="el-2376">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -843,12 +844,12 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-9\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-9\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":10},{\"kind\":\"hide\",\"target\":\"div-16\"},{\"kind\":\"show\",\"target\":\"div-15\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-9\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":10,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"あそぶ\"}]},{\"kind\":\"hide\",\"target\":\"div-15\"},{\"kind\":\"show\",\"target\":\"div-16\"}]}]}]"} className="el-2381">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-9\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-9\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":10},{\"kind\":\"hide\",\"target\":\"div-16\"},{\"kind\":\"show\",\"target\":\"div-15\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-9\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":10,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"あそぶ\"}]},{\"kind\":\"hide\",\"target\":\"div-15\"},{\"kind\":\"show\",\"target\":\"div-16\"}]}]}]"} className="el-2380">
                   <label id="agree-9" className="checkbox-22">
                     <input type="checkbox" name="agree-9" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-15" data-toggle-show="flex" className="el-2379">
+                  <div id="div-15" data-toggle-show="flex" className="el-2378">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -862,7 +863,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-16" data-toggle-show="flex" data-inview className="el-2380">
+                  <div id="div-16" data-toggle-show="flex" data-inview className="el-2379">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -877,12 +878,12 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-10\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-10\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":11},{\"kind\":\"hide\",\"target\":\"div-18\"},{\"kind\":\"show\",\"target\":\"div-17\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-10\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":11,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"のむ\"}]},{\"kind\":\"hide\",\"target\":\"div-17\"},{\"kind\":\"show\",\"target\":\"div-18\"}]}]}]"} className="el-2384">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-10\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-10\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":11},{\"kind\":\"hide\",\"target\":\"div-18\"},{\"kind\":\"show\",\"target\":\"div-17\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-10\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":11,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"のむ\"}]},{\"kind\":\"hide\",\"target\":\"div-17\"},{\"kind\":\"show\",\"target\":\"div-18\"}]}]}]"} className="el-2383">
                   <label id="agree-10" className="checkbox-23">
                     <input type="checkbox" name="agree-10" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-17" data-toggle-show="flex" className="el-2382">
+                  <div id="div-17" data-toggle-show="flex" className="el-2381">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -896,7 +897,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-18" data-toggle-show="flex" data-inview className="el-2383">
+                  <div id="div-18" data-toggle-show="flex" data-inview className="el-2382">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -911,12 +912,12 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-11\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-11\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":12},{\"kind\":\"hide\",\"target\":\"div-20\"},{\"kind\":\"show\",\"target\":\"div-19\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-11\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":12,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"みる\"}]},{\"kind\":\"hide\",\"target\":\"div-19\"},{\"kind\":\"show\",\"target\":\"div-20\"}]}]}]"} className="el-2387">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-11\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-11\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":12},{\"kind\":\"hide\",\"target\":\"div-20\"},{\"kind\":\"show\",\"target\":\"div-19\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-11\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":12,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"みる\"}]},{\"kind\":\"hide\",\"target\":\"div-19\"},{\"kind\":\"show\",\"target\":\"div-20\"}]}]}]"} className="el-2386">
                   <label id="agree-11" className="checkbox-24">
                     <input type="checkbox" name="agree-11" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-19" data-toggle-show="flex" className="el-2385">
+                  <div id="div-19" data-toggle-show="flex" className="el-2384">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -930,7 +931,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-20" data-toggle-show="flex" data-inview className="el-2386">
+                  <div id="div-20" data-toggle-show="flex" data-inview className="el-2385">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -945,12 +946,12 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-12\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-12\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":13},{\"kind\":\"hide\",\"target\":\"div-22\"},{\"kind\":\"show\",\"target\":\"div-21\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-12\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":13,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"かう\"}]},{\"kind\":\"hide\",\"target\":\"div-21\"},{\"kind\":\"show\",\"target\":\"div-22\"}]}]}]"} className="el-2390">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-12\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-12\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":13},{\"kind\":\"hide\",\"target\":\"div-22\"},{\"kind\":\"show\",\"target\":\"div-21\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-12\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":13,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"かう\"}]},{\"kind\":\"hide\",\"target\":\"div-21\"},{\"kind\":\"show\",\"target\":\"div-22\"}]}]}]"} className="el-2389">
                   <label id="agree-12" className="checkbox-25">
                     <input type="checkbox" name="agree-12" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-21" data-toggle-show="flex" className="el-2388">
+                  <div id="div-21" data-toggle-show="flex" className="el-2387">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -964,7 +965,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-22" data-toggle-show="flex" data-inview className="el-2389">
+                  <div id="div-22" data-toggle-show="flex" data-inview className="el-2388">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -979,12 +980,12 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-13\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-13\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":14},{\"kind\":\"hide\",\"target\":\"div-24\"},{\"kind\":\"show\",\"target\":\"div-23\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-13\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":14,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"さわる\"}]},{\"kind\":\"hide\",\"target\":\"div-23\"},{\"kind\":\"show\",\"target\":\"div-24\"}]}]}]"} className="el-2393">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-13\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-13\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":14},{\"kind\":\"hide\",\"target\":\"div-24\"},{\"kind\":\"show\",\"target\":\"div-23\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-13\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":14,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"さわる\"}]},{\"kind\":\"hide\",\"target\":\"div-23\"},{\"kind\":\"show\",\"target\":\"div-24\"}]}]}]"} className="el-2392">
                   <label id="agree-13" className="checkbox-26">
                     <input type="checkbox" name="agree-13" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-23" data-toggle-show="flex" className="el-2391">
+                  <div id="div-23" data-toggle-show="flex" className="el-2390">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -998,7 +999,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-24" data-toggle-show="flex" data-inview className="el-2392">
+                  <div id="div-24" data-toggle-show="flex" data-inview className="el-2391">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -1013,12 +1014,12 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-14\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-14\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":15},{\"kind\":\"hide\",\"target\":\"div-26\"},{\"kind\":\"show\",\"target\":\"div-25\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-14\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":15,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"つくる\"}]},{\"kind\":\"hide\",\"target\":\"div-25\"},{\"kind\":\"show\",\"target\":\"div-26\"}]}]}]"} className="el-2396">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-14\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-14\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":15},{\"kind\":\"hide\",\"target\":\"div-26\"},{\"kind\":\"show\",\"target\":\"div-25\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-14\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":15,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"つくる\"}]},{\"kind\":\"hide\",\"target\":\"div-25\"},{\"kind\":\"show\",\"target\":\"div-26\"}]}]}]"} className="el-2395">
                   <label id="agree-14" className="checkbox-27">
                     <input type="checkbox" name="agree-14" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-25" data-toggle-show="flex" className="el-2394">
+                  <div id="div-25" data-toggle-show="flex" className="el-2393">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -1032,7 +1033,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-26" data-toggle-show="flex" data-inview className="el-2395">
+                  <div id="div-26" data-toggle-show="flex" data-inview className="el-2394">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -1047,12 +1048,12 @@ export default async function Page() {
                     </div>
                   </div>
                 </div>
-                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-15\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-15\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":16},{\"kind\":\"hide\",\"target\":\"div-28\"},{\"kind\":\"show\",\"target\":\"div-27\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-15\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":16,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"きく\"}]},{\"kind\":\"hide\",\"target\":\"div-27\"},{\"kind\":\"show\",\"target\":\"div-28\"}]}]}]"} className="el-2399">
+                <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"if\",\"cond\":{\"subject\":\"checked\",\"target\":\"agree-15\"},\"then\":[{\"kind\":\"set-value\",\"target\":\"agree-15\",\"value\":\"false\"},{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\",\"no\":16},{\"kind\":\"hide\",\"target\":\"div-28\"},{\"kind\":\"show\",\"target\":\"div-27\"}],\"else\":[{\"kind\":\"set-value\",\"target\":\"agree-15\",\"value\":\"true\"},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":16,\"join\":\"or\",\"conds\":[{\"field\":\"categories.大分類\",\"op\":\"contains\",\"value\":\"きく\"}]},{\"kind\":\"hide\",\"target\":\"div-27\"},{\"kind\":\"show\",\"target\":\"div-28\"}]}]}]"} className="el-2398">
                   <label id="agree-15" className="checkbox-28">
                     <input type="checkbox" name="agree-15" value="true" />
                     {"同意する"}
                   </label>
-                  <div id="div-27" data-toggle-show="flex" className="el-2397">
+                  <div id="div-27" data-toggle-show="flex" className="el-2396">
                     <Image
                       src="/assets/image-4.png"
                       alt=""
@@ -1066,7 +1067,7 @@ export default async function Page() {
                       </p>
                     </div>
                   </div>
-                  <div id="div-28" data-toggle-show="flex" data-inview className="el-2398">
+                  <div id="div-28" data-toggle-show="flex" data-inview className="el-2397">
                     <Image
                       src="/assets/image-124-1.png"
                       alt=""
@@ -1082,7 +1083,7 @@ export default async function Page() {
                   </div>
                 </div>
               </div>
-              <div data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"list-display\",\"mode\":\"clear\",\"array\":\"_1\"}]}]"} className="el-2401">
+              <a href="https://matsufes-info.vercel.app/search" className="el-2400">
                 <div id="div-29" data-toggle-show="flex" className="box-1035">
                   <Image
                     src="/assets/image-4.png"
@@ -1097,14 +1098,14 @@ export default async function Page() {
                       alt="やり直し"
                       width={50}
                       height={58}
-                      className="el-2400"
+                      className="el-2399"
                     />
                     <p className="text-693">
                       {"やりなおす"}
                     </p>
                   </div>
                 </div>
-              </div>
+              </a>
               <div className="box-1039">
                 <Link href="/m-1" className="box-1038">
                   <div className="box-1037">
@@ -1139,127 +1140,126 @@ export default async function Page() {
           </div>
           <div className="box-1055">
             <div className="box-1041">
-              <p className="text-695">
+              <p className="text-695" data-live={interpolate("{_3}件の出展が見つかりました", { ...vars, ...{"_3":"{_3}","\u0000keepEscapes":true} })}>
                 {interpolate("{_3}件の出展が見つかりました", vars)}
               </p>
             </div>
             <div className="box-1054">
-              <div data-array="_1" className="el-2406">
-                {toItems(lookupVar(vars, "_1")).map((item, i) => {
-                  const iv0 = { ...vars, ...item };
-                  return (
-                    <div key={i} style={{ display: "contents" }} data-row data-item={JSON.stringify({ "name": (Object.prototype.hasOwnProperty.call(item, "name") ? item["name"] : undefined), "exhibitorName": (Object.prototype.hasOwnProperty.call(item, "exhibitorName") ? item["exhibitorName"] : undefined), "tags": (Object.prototype.hasOwnProperty.call(item, "tags") ? item["tags"] : undefined), "customAnswers.中分類": lookupVar(item, "customAnswers.中分類"), "searchWords": (Object.prototype.hasOwnProperty.call(item, "searchWords") ? item["searchWords"] : undefined), "place": (Object.prototype.hasOwnProperty.call(item, "place") ? item["place"] : undefined), "categories.出展カテゴリ": lookupVar(item, "categories.出展カテゴリ"), "businessHours": (Object.prototype.hasOwnProperty.call(item, "businessHours") ? item["businessHours"] : undefined), "venue": (Object.prototype.hasOwnProperty.call(item, "venue") ? item["venue"] : undefined), "categories.大分類": lookupVar(item, "categories.大分類"), "publicId": (Object.prototype.hasOwnProperty.call(item, "publicId") ? item["publicId"] : undefined) })}>
-                      <SmartLink href={safeNavigationUrl(interpolateUrl("/booth/{publicId}", iv0))} className="el-2405">
-                        <div className="box-1042">
-                          <p className="text-696">
-                            {interpolate("{name}", iv0)}
-                          </p>
-                          <div data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_5"},"op":"contains","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null}},"then":[{"kind":"set-list-item","list":"_5","key":"","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null}},{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}],"else":[{"kind":"set-list-item","list":"","key":"","value":""},{"kind":"remove-list-item","list":"","mode":"value","value":""},{"kind":"remove-list-item","list":"_5","mode":"value","value":""},{"kind":"transform","source":"_5","into":"_5","transform":{"kind":"field","key":""}}]}]},{"trigger":"load","steps":[{"kind":"if","cond":{"subject":"var","target":"","op":"contains","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null},"left":{"inputRef":"_5"}},"then":[{"kind":"show","target":"fav-on"},{"kind":"hide","target":"fav-off"}],"else":[{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}]}]}])} className="el-2403">
-                            <Image id="fav-on" data-toggle-show="block"
-                              src="/assets/bkonn.svg"
-                              alt="お気に入り登録済"
-                              width={35}
-                              height={34}
-                              className="bkonn-svg-4"
-                              preload
-                              fetchPriority="high"
-                            />
-                            <Image id="fav-off" data-toggle-show="block"
-                              src="/assets/bkoff2.svg"
-                              alt="お気に入り未登録"
-                              width={35}
-                              height={34}
-                              className="bkoff2-svg-4"
-                            />
-                          </div>
-                        </div>
-                        <span
-                          className="crisp-svg el-2404"
-                          style={{ ["--crisp-svg-width"]: "307px", ["--crisp-svg-ratio"]: "307 / 17" } as import("react").CSSProperties}
-                        >
-                          <svg aria-hidden="true" width={307} height={17} viewBox="0 0 307 17" />
-                          <Image
-                            src="/assets/1.svg"
-                            alt=""
-                            width={614}
-                            height={34}
-                          />
-                        </span>
-                        <p className="text-697">
-                          {interpolate("{exhibitorName}", iv0)}
+              <div data-array="_1" data-client-list className="el-2405">
+                <div data-tpl hidden style={{ display: "none" }}>
+                  {((iv0: Vars) => (
+                    <>
+                    <SmartLink href={safeNavigationUrl(interpolateUrl("/booth/{publicId}", iv0))} className="el-2404" data-href-parts={JSON.stringify(["/booth/", { name: "publicId", at: 7, ...(Object.prototype.hasOwnProperty.call(iv0, "publicId") || Object.prototype.hasOwnProperty.call(iv0, "publicId") ? { fallback: interpolate("{publicId}", { ...iv0 }) } : {}) }, ""])}>
+                      <div className="box-1042">
+                        <p className="text-696" data-text-parts={JSON.stringify(["", { name: "name", ...(Object.prototype.hasOwnProperty.call(iv0, "name") || Object.prototype.hasOwnProperty.call(iv0, "name") ? { fallback: interpolate("{name}", { ...iv0 }) } : {}) }, ""])}>
+                          {interpolate("{name}", iv0)}
                         </p>
-                        <div className="box-1053">
-                          <div className="box-1044">
-                            <div className="box-1043">
-                              <Image
-                                src={interpolate("{imageUrl}", iv0) || "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"}
-                                alt=""
-                                width={1024}
-                                height={1024}
-                                className="image-21"
-                              />
-                              <p className="text-698">
-                                {"No Image"}
+                        <div data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_5","rawRef":{ name: "_5" }},"op":"contains","value":{"inputRef":"publicId","rawRef":{ name: "publicId", ...(Object.prototype.hasOwnProperty.call(iv0, "publicId") || Object.prototype.hasOwnProperty.call(iv0, "publicId") ? { fallback: lookupVar({ ...iv0 }, "publicId") ?? null } : {}) }}},"then":[{"kind":"remove-list-item","list":"_5","mode":"value","value":{"inputRef":"publicId","rawRef":{ name: "publicId", ...(Object.prototype.hasOwnProperty.call(iv0, "publicId") || Object.prototype.hasOwnProperty.call(iv0, "publicId") ? { fallback: lookupVar({ ...iv0 }, "publicId") ?? null } : {}) }}},{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}],"else":[{"kind":"set-list-item","list":"_5","key":"","value":{"inputRef":"publicId","rawRef":{ name: "publicId", ...(Object.prototype.hasOwnProperty.call(iv0, "publicId") || Object.prototype.hasOwnProperty.call(iv0, "publicId") ? { fallback: lookupVar({ ...iv0 }, "publicId") ?? null } : {}) }}},{"kind":"show","target":"fav-on"},{"kind":"hide","target":"fav-off"}]},{"kind":"transform","source":"_5","into":"_4","transform":{"kind":"join","separator":"."},"rawRef":{ name: "_5" }},{"kind":"store-save","key":"mf_bookmarks","value":{ scriptParts: ["", { name: "_4" }, ""] },"shared":true}]},{"trigger":"load","steps":[{"kind":"if","cond":{"subject":"var","target":"","op":"contains","value":{"inputRef":"publicId","rawRef":{ name: "publicId", ...(Object.prototype.hasOwnProperty.call(iv0, "publicId") || Object.prototype.hasOwnProperty.call(iv0, "publicId") ? { fallback: lookupVar({ ...iv0 }, "publicId") ?? null } : {}) }},"left":{"inputRef":"_5","rawRef":{ name: "_5" }}},"then":[{"kind":"show","target":"fav-on"},{"kind":"hide","target":"fav-off"}],"else":[{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}]}]}])} className="el-2402">
+                          <Image id="fav-on" data-toggle-show="block"
+                            src="/assets/bkonn.svg"
+                            alt="お気に入り登録済"
+                            width={35}
+                            height={34}
+                            className="bkonn-svg-4"
+                            preload
+                            fetchPriority="high"
+                          />
+                          <Image id="fav-off" data-toggle-show="block"
+                            src="/assets/bkoff2.svg"
+                            alt="お気に入り未登録"
+                            width={35}
+                            height={34}
+                            className="bkoff2-svg-4"
+                          />
+                        </div>
+                      </div>
+                      <span
+                        className="crisp-svg el-2403"
+                        style={{ ["--crisp-svg-width"]: "307px", ["--crisp-svg-ratio"]: "307 / 17" } as import("react").CSSProperties}
+                      >
+                        <svg aria-hidden="true" width={307} height={17} viewBox="0 0 307 17" />
+                        <Image
+                          src="/assets/1.svg"
+                          alt=""
+                          width={614}
+                          height={34}
+                        />
+                      </span>
+                      <p className="text-697" data-text-parts={JSON.stringify(["", { name: "exhibitorName", ...(Object.prototype.hasOwnProperty.call(iv0, "exhibitorName") || Object.prototype.hasOwnProperty.call(iv0, "exhibitorName") ? { fallback: interpolate("{exhibitorName}", { ...iv0 }) } : {}) }, ""])}>
+                        {interpolate("{exhibitorName}", iv0)}
+                      </p>
+                      <div className="box-1053">
+                        <div className="box-1044">
+                          <div className="box-1043">
+                            <Image
+                              src={interpolate("{imageUrl}", iv0) || "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"} data-image-src-parts={JSON.stringify(["", { name: "imageUrl", ...(Object.prototype.hasOwnProperty.call(iv0, "imageUrl") || Object.prototype.hasOwnProperty.call(iv0, "imageUrl") ? { fallback: interpolate("{imageUrl}", { ...iv0 }) } : {}) }, ""])}
+                              alt=""
+                              width={1024}
+                              height={1024}
+                              className="image-21"
+                            />
+                            <p className="text-698">
+                              {"No Image"}
+                            </p>
+                          </div>
+                        </div>
+                        <div className="box-1052">
+                          <div className="box-1045">
+                            <Image
+                              src="/assets/Vector-4.svg"
+                              alt=""
+                              width={15}
+                              height={15}
+                              className="vector-4-svg-3"
+                            />
+                            <p className="text-699" data-text-parts={JSON.stringify(["", { name: "customAnswers.皆さまへ", ...(Object.prototype.hasOwnProperty.call(iv0, "customAnswers.皆さまへ") || Object.prototype.hasOwnProperty.call(iv0, "customAnswers") ? { fallback: interpolate("{customAnswers.皆さまへ}", { ...iv0 }) } : {}) }, ""])}>
+                              {interpolate("{customAnswers.皆さまへ}", iv0)}
+                            </p>
+                          </div>
+                          <div className="box-1046">
+                            <Image
+                              src="/assets/Group-244.svg"
+                              alt=""
+                              width={13}
+                              height={20}
+                              className="group-244-svg-3"
+                            />
+                            <p className="text-700" data-text-parts={JSON.stringify(["", { name: "location", ...(Object.prototype.hasOwnProperty.call(iv0, "location") || Object.prototype.hasOwnProperty.call(iv0, "location") ? { fallback: interpolate("{location}", { ...iv0 }) } : {}) }, ""])}>
+                              {interpolate("{location}", iv0)}
+                            </p>
+                          </div>
+                          <div className="box-1048">
+                            <div className="box-1047">
+                              <p className="text-701" data-text-parts={JSON.stringify(["", { name: "categories.投票カテゴリ.0", ...(Object.prototype.hasOwnProperty.call(iv0, "categories.投票カテゴリ.0") || Object.prototype.hasOwnProperty.call(iv0, "categories") ? { fallback: interpolate("{categories.投票カテゴリ.0}", { ...iv0 }) } : {}) }, ""])}>
+                                {interpolate("{categories.投票カテゴリ.0}", iv0)}
                               </p>
                             </div>
                           </div>
-                          <div className="box-1052">
-                            <div className="box-1045">
-                              <Image
-                                src="/assets/Vector-4.svg"
-                                alt=""
-                                width={15}
-                                height={15}
-                                className="vector-4-svg-3"
-                              />
-                              <p className="text-699">
-                                {interpolate("{customAnswers.皆さまへ}", iv0)}
+                          <div className="box-1051">
+                            <div className="box-1049">
+                              <p className="text-702" data-text-parts={JSON.stringify(["", { name: "categories.大分類.0", ...(Object.prototype.hasOwnProperty.call(iv0, "categories.大分類.0") || Object.prototype.hasOwnProperty.call(iv0, "categories") ? { fallback: interpolate("{categories.大分類.0}", { ...iv0 }) } : {}) }, ""])}>
+                                {interpolate("{categories.大分類.0}", iv0)}
                               </p>
                             </div>
-                            <div className="box-1046">
-                              <Image
-                                src="/assets/Group-244.svg"
-                                alt=""
-                                width={13}
-                                height={20}
-                                className="group-244-svg-3"
-                              />
-                              <p className="text-700">
-                                {interpolate("{location}", iv0)}
+                            <div className="box-1050">
+                              <p className="text-703" data-text-parts={JSON.stringify(["", { name: "customAnswers.中分類", ...(Object.prototype.hasOwnProperty.call(iv0, "customAnswers.中分類") || Object.prototype.hasOwnProperty.call(iv0, "customAnswers") ? { fallback: interpolate("{customAnswers.中分類}", { ...iv0 }) } : {}) }, ""])}>
+                                {interpolate("{customAnswers.中分類}", iv0)}
                               </p>
-                            </div>
-                            <div className="box-1048">
-                              <div className="box-1047">
-                                <p className="text-701">
-                                  {interpolate("{categories.投票カテゴリ.0}", iv0)}
-                                </p>
-                              </div>
-                            </div>
-                            <div className="box-1051">
-                              <div className="box-1049">
-                                <p className="text-702">
-                                  {interpolate("{categories.大分類.0}", iv0)}
-                                </p>
-                              </div>
-                              <div className="box-1050">
-                                <p className="text-703">
-                                  {interpolate("{customAnswers.中分類}", iv0)}
-                                </p>
-                              </div>
                             </div>
                           </div>
                         </div>
-                        <Image
-                          src="/assets/frame.png"
-                          alt=""
-                          width={750}
-                          height={468}
-                          className="frame-png-4"
-                        />
-                      </SmartLink>
-                    </div>
-                  );
-                })}
+                      </div>
+                      <Image
+                        src="/assets/frame.png"
+                        alt=""
+                        width={750}
+                        height={468}
+                        className="frame-png-4"
+                      />
+                    </SmartLink>
+                    </>
+                  ))(templateVars(vars))}
+                </div>
               </div>
             </div>
           </div>
@@ -1287,6 +1287,26 @@ export default async function Page() {
             height={2030}
           />
         </span>
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2407">
+          <Image
+            src="/assets/pasted-artwork-134.svg"
+            alt=""
+            width={58}
+            height={58}
+            className="svg-527"
+          />
+        </a>
+        <a href="https://x.com/matsufes_info" className="x-73">
+          <Image
+            src="/assets/pasted-artwork-135.svg"
+            alt=""
+            width={54}
+            height={49}
+            className="svg-528"
+          />
+        </a>
+      </section>
+      <section data-inview className="el-2409">
         <a href="https://www.instagram.com/kit_matsufes/" className="el-2408">
           <Image
             src="/assets/pasted-artwork-134.svg"
@@ -1296,7 +1316,7 @@ export default async function Page() {
             className="svg-529"
           />
         </a>
-        <a href="https://x.com/matsufes_info" className="x-73">
+        <a href="https://x.com/matsufes_info" className="x-74">
           <Image
             src="/assets/pasted-artwork-135.svg"
             alt=""
@@ -1305,28 +1325,8 @@ export default async function Page() {
             className="svg-530"
           />
         </a>
-      </section>
-      <section data-inview className="el-2410">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2409">
-          <Image
-            src="/assets/pasted-artwork-134.svg"
-            alt=""
-            width={58}
-            height={58}
-            className="svg-531"
-          />
-        </a>
-        <a href="https://x.com/matsufes_info" className="x-74">
-          <Image
-            src="/assets/pasted-artwork-135.svg"
-            alt=""
-            width={54}
-            height={49}
-            className="svg-532"
-          />
-        </a>
         <span
-          className="crisp-svg svg-533"
+          className="crisp-svg svg-531"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 347" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={375} height={347} viewBox="0 0 375 347" />
