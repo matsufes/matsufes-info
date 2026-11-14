@@ -7119,7 +7119,7 @@
               "array": "data",
               "field": "publicId",
               "op": "in",
-              "value": "{mf_bookmarks}",
+              "value": "{お気に入り}",
               "dir": "asc",
               "no": 1
             },

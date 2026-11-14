@@ -107,7 +107,7 @@ export default async function Page() {
   vars["p"] = "まだお気に入りがありません";
   return (
     <>
-      <span hidden data-page-body="page_mvhxphej2d8ldu" data-scripts={JSON.stringify([{"trigger":"load","steps":[{"kind":"store-load","key":"mf_bookmarks","into":"_4","shared":true},{"kind":"transform","source":"_4","into":"_5","transform":{"kind":"split","separator":"."}},{"kind":"list-display","mode":"filter","array":"_1","no":1,"conds":[{"field":"publicId","op":"in","value":{"inputRef":"_4"}}]},{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_b","raw":lookupVar(vars, "_b") ?? null},"op":"eq","value":"0","not":true},"then":[{"kind":"hide","target":"p"}]}]}])} />
+      <span hidden data-page-body="page_mvhxphej2d8ldu" data-scripts={JSON.stringify([{"trigger":"load","steps":[{"kind":"store-load","key":"mf_bookmarks","into":"_4","shared":true},{"kind":"transform","source":"_4","into":"_5","transform":{"kind":"split","separator":"."}},{"kind":"list-display","mode":"filter","array":"_1","no":1,"conds":[{"field":"publicId","op":"in","value":{"inputRef":"_5"}}]},{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_b","raw":lookupVar(vars, "_b") ?? null},"op":"eq","value":"0","not":true},"then":[{"kind":"hide","target":"p"}]}]}])} />
       <Header />
       <Image data-inview
         src="/assets/clouds.webp"
