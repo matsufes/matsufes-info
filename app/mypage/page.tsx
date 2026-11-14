@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     siteName: "第56回松ヶ崎祭",
     title: "マイページ",
     description: "松ヶ崎祭HPにてブックマークした出展などを確認できます。",
-    images: ["/assets/ogp.png"],
+    images: ["/assets/ogp-2.png"],
   },
   twitter: { card: "summary_large_image" },
 };

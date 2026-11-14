@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: "第56回松ヶ崎祭",
     title: "準備中",
-    images: ["/assets/ogp.png"],
+    images: ["/assets/ogp-2.png"],
   },
   twitter: { card: "summary_large_image" },
 };

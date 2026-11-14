@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     siteName: "第56回松ヶ崎祭",
     title: "メインテーマ",
     description: "今回の松ヶ崎祭のメインテーマをご紹介します。",
-    images: ["/assets/ogp.png"],
+    images: ["/assets/ogp-2.png"],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -24,81 +24,81 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2523"
+        className="el-2484"
       />
-      <p className="box-829">
+      <p className="box-825">
         <Image
           src="/assets/pasted-artwork-345.svg"
           alt=""
           width={909}
           height={79}
-          className="svg-527"
+          className="svg-450"
         />
       </p>
-      <section className="box-830">
+      <section className="box-826">
         <Image
           src="/assets/pasted-artwork-281.svg"
           alt=""
           width={1356}
           height={65}
-          className="pasted-artwork-svg-139"
+          className="pasted-artwork-svg-133"
         />
       </section>
-      <section className="box-831">
+      <section className="box-827">
         <Image
           src="/assets/pasted-artwork-338.svg"
           alt=""
           width={1096}
           height={67}
-          className="svg-520"
+          className="svg-443"
         />
       </section>
-      <section className="box-832">
+      <section className="box-828">
         <Image
           src="/assets/pasted-artwork-341.svg"
           alt=""
           width={544}
           height={128}
-          className="svg-523"
+          className="svg-446"
         />
       </section>
-      <section className="box-835">
-        <div className="box-833">
+      <section className="box-831">
+        <div className="box-829">
           <Image
             src="/assets/pasted-artwork-351.svg"
             alt=""
             width={123}
             height={99}
-            className="pasted-artwork-svg-144"
+            className="pasted-artwork-svg-138"
           />
         </div>
-        <p className="box-834">
+        <p className="box-830">
           {"夢宙　むちゅー "}
         </p>
       </section>
-      <section className="box-838">
-        <div className="box-836">
+      <section className="box-834">
+        <div className="box-832">
           <Image
             src="/assets/pasted-artwork-342.svg"
             alt=""
             width={1040}
             height={859}
-            className="svg-524"
+            className="svg-447"
           />
         </div>
-        <div className="box-837">
+        <div className="box-833">
           <Image
             src="/assets/pasted-artwork-343.svg"
             alt=""
             width={1061}
             height={1076}
-            className="svg-525"
+            className="svg-448"
           />
         </div>
       </section>
-      <section className="box-839">
+      <section className="box-835">
         <span
-          className="crisp-svg svg-526"
+          className="crisp-svg svg-449"
           style={{ ["--crisp-svg-width"]: "123px", ["--crisp-svg-ratio"]: "123 / 361" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={123} height={361} viewBox="0 0 123 361" />
@@ -110,27 +110,27 @@ export default function Page() {
           />
         </span>
       </section>
-      <section data-inview className="el-2090">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2091">
+      <section data-inview className="el-2018">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2019">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
             width={58}
             height={58}
-            className="pasted-artwork-svg-124"
+            className="pasted-artwork-svg-118"
           />
         </a>
-        <a href="https://x.com/matsufes_info" className="x-63">
+        <a href="https://x.com/matsufes_info" className="x-59">
           <Image
             src="/assets/pasted-artwork-276.svg"
             alt=""
             width={54}
             height={49}
-            className="pasted-artwork-svg-125"
+            className="pasted-artwork-svg-119"
           />
         </a>
         <span
-          className="crisp-svg svg-454"
+          className="crisp-svg svg-408"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 350" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={375} height={350} viewBox="0 0 375 350" />
@@ -142,9 +142,9 @@ export default function Page() {
           />
         </span>
       </section>
-      <section data-inview className="footer-31">
+      <section data-inview className="footer-29">
         <span
-          className="crisp-svg svg-455"
+          className="crisp-svg svg-409"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -155,22 +155,22 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2092">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2020">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
             width={58}
             height={58}
-            className="svg-456"
+            className="svg-410"
           />
         </a>
-        <a href="https://x.com/matsufes_info" className="x-64">
+        <a href="https://x.com/matsufes_info" className="x-60">
           <Image
             src="/assets/pasted-artwork-276.svg"
             alt=""
             width={54}
             height={49}
-            className="svg-457"
+            className="svg-411"
           />
         </a>
       </section>

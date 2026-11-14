@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     siteName: "第56回松ヶ崎祭",
     title: "松ヶ崎祭について",
     description: "松ヶ崎祭とは？ 松ヶ崎祭についてご紹介します。",
-    images: ["/assets/ogp.png"],
+    images: ["/assets/ogp-2.png"],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -24,11 +24,11 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2522"
+        className="el-2483"
       />
-      <p className="box-822">
+      <p className="box-818">
         <span
-          className="crisp-svg svg-403"
+          className="crisp-svg svg-372"
           style={{ ["--crisp-svg-width"]: "636px", ["--crisp-svg-ratio"]: "636 / 130" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={636} height={130} viewBox="0 0 636 130" />
@@ -40,56 +40,56 @@ export default function Page() {
           />
         </span>
       </p>
-      <section className="box-823">
+      <section className="box-819">
         <Image
           src="/assets/pasted-artwork-281.svg"
           alt=""
           width={1356}
           height={65}
-          className="pasted-artwork-svg-138"
+          className="pasted-artwork-svg-132"
         />
       </section>
-      <section className="box-824">
+      <section className="box-820">
         <Image
           src="/assets/pasted-artwork-293.svg"
           alt=""
           width={438}
           height={128}
-          className="svg-484"
+          className="svg-438"
         />
       </section>
-      <section className="box-826">
-        <p className="box-825">
+      <section className="box-822">
+        <p className="box-821">
           {"松ヶ崎祭は2026年で56回目を迎えたよ。\n\n\n毎年 11 月に松ヶ崎キャンパスで開催されている京都工芸繊維大学の学園祭。\n\n様々な団体が日々の活動成果を発表する場になっているよ。"}
         </p>
       </section>
-      <section className="el-2045">
+      <section className="el-1979">
         <Image
           src="/assets/pasted-artwork-339.svg"
           alt=""
           width={438}
           height={128}
-          className="svg-521"
+          className="svg-444"
         />
       </section>
-      <section className="el-2046">
-        <p className="box-827">
+      <section className="el-1980">
+        <p className="box-823">
           {"本日は第56回松ヶ崎祭にご来場いただきありがとうございます。 \n松ヶ崎祭実行委員会を代表しまして心より歓迎申し上げます。  \nまた、松ヶ崎祭の開催にあたり、日頃より多大なるご支援・ご協力を賜りました、  \nすべての関係者の皆さまに、深く御礼申し上げます。\n\n今年度の松ヶ崎祭開催に向けて、出展者さまが安心して当日を迎えられるよう、\nそして松ヶ崎祭が無事に開催できるよう、準備に注力してきました。  \n私たちが準備してきた過程は注目されにくいものがほとんどです。\nしかし、その成果として、構内の至る所に、私たちが無我夢中で創り上げた景色が広がっています。\n\n今年度の松ヶ崎祭のテーマは「夢宙」です。\n私たち松ヶ崎祭実行委員会は「松ヶ崎祭という無限の夢が宙がる空間での時間に思わず熱中してしまうような最高の体験を、出展者の皆さま、そして来場される皆さまに届けたい」という一心で、\n松ヶ崎祭が終わる最後の時まで駆け抜けます。"}
         </p>
       </section>
-      <section className="el-2049">
-        <div className="box-828">
+      <section className="el-1983">
+        <div className="box-824">
           <Image
             src="/assets/pasted-artwork-340.svg"
             alt=""
             width={1087}
             height={856}
-            className="svg-522"
+            className="svg-445"
           />
-          <a href="https://mf55.matsufes.info/" className="el-2047">
+          <a href="https://mf55.matsufes.info/" className="el-1981">
             {"第55回松ヶ崎祭　「カイカセンゲン」"}
           </a>
-          <a href="https://mf54.matsufes.info/" className="el-2048">
+          <a href="https://mf54.matsufes.info/" className="el-1982">
             {"第54回松ヶ崎祭　「みちみち」"}
           </a>
           <a href="https://mf53.matsufes.info/" className="hello-world-2">
@@ -100,27 +100,27 @@ export default function Page() {
           </a>
         </div>
       </section>
-      <section data-inview className="el-2087">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2088">
+      <section data-inview className="el-2015">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2016">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
             width={58}
             height={58}
-            className="pasted-artwork-svg-122"
+            className="pasted-artwork-svg-116"
           />
         </a>
-        <a href="https://x.com/matsufes_info" className="x-61">
+        <a href="https://x.com/matsufes_info" className="x-57">
           <Image
             src="/assets/pasted-artwork-276.svg"
             alt=""
             width={54}
             height={49}
-            className="pasted-artwork-svg-123"
+            className="pasted-artwork-svg-117"
           />
         </a>
         <span
-          className="crisp-svg svg-450"
+          className="crisp-svg svg-404"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 350" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={375} height={350} viewBox="0 0 375 350" />
@@ -132,9 +132,9 @@ export default function Page() {
           />
         </span>
       </section>
-      <section data-inview className="footer-30">
+      <section data-inview className="footer-28">
         <span
-          className="crisp-svg svg-451"
+          className="crisp-svg svg-405"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -145,22 +145,22 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2089">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2017">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
             width={58}
             height={58}
-            className="svg-452"
+            className="svg-406"
           />
         </a>
-        <a href="https://x.com/matsufes_info" className="x-62">
+        <a href="https://x.com/matsufes_info" className="x-58">
           <Image
             src="/assets/pasted-artwork-276.svg"
             alt=""
             width={54}
             height={49}
-            className="svg-453"
+            className="svg-407"
           />
         </a>
       </section>

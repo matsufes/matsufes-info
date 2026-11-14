@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     siteName: "第56回松ヶ崎祭",
     title: "よくあるご質問",
     description: "松ヶ崎祭に関するよくあるご質問をご紹介します。",
-    images: ["/assets/ogp.png"],
+    images: ["/assets/ogp-2.png"],
   },
   twitter: { card: "summary_large_image" },
 };
@@ -24,11 +24,11 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2521"
+        className="el-2482"
       />
-      <p className="box-819">
+      <p className="box-815">
         <span
-          className="crisp-svg svg-402"
+          className="crisp-svg svg-371"
           style={{ ["--crisp-svg-width"]: "735px", ["--crisp-svg-ratio"]: "735 / 130" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={735} height={130} viewBox="0 0 735 130" />
@@ -40,34 +40,34 @@ export default function Page() {
           />
         </span>
       </p>
-      <section className="box-820">
+      <section className="box-816">
         <Image
           src="/assets/pasted-artwork-281.svg"
           alt=""
           width={1356}
           height={65}
-          className="pasted-artwork-svg-137"
+          className="pasted-artwork-svg-131"
         />
       </section>
-      <section className="box-821">
+      <section className="box-817">
         <div id="Q-8" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"A-8\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"8-1\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"8-2\"}]}]"} className="q-8-2">
           <p className="text-553">
             {"第56回松ヶ崎祭の開催場所と日時を教えてください。"}
           </p>
-          <div className="button-506">
+          <div className="button-491">
             <Image id="8-1" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2110"
+              className="el-2038"
             />
             <Image id="8-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2111"
+              className="el-2039"
             />
           </div>
         </div>
@@ -78,20 +78,20 @@ export default function Page() {
           <p className="text-554">
             {"松ヶ崎祭の入場に必要な手続きなどはありますか？"}
           </p>
-          <div className="button-507">
+          <div className="button-492">
             <Image id="1-1" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2112"
+              className="el-2040"
             />
             <Image id="1-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2113"
+              className="el-2041"
             />
           </div>
         </div>
@@ -102,20 +102,20 @@ export default function Page() {
           <p className="text-555">
             {"雨の場合でも開催されますか？"}
           </p>
-          <div className="button-508">
+          <div className="button-493">
             <Image id="2-1" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2114"
+              className="el-2042"
             />
             <Image id="2-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2115"
+              className="el-2043"
             />
           </div>
         </div>
@@ -126,20 +126,20 @@ export default function Page() {
           <p className="text-556">
             {"公式パンフレットはどこでもらえますか？"}
           </p>
-          <div className="button-509">
+          <div className="button-494">
             <Image id="3-1" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2116"
+              className="el-2044"
             />
             <Image id="3-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2117"
+              className="el-2045"
             />
           </div>
         </div>
@@ -150,20 +150,20 @@ export default function Page() {
           <p className="text-557">
             {"落とし物に関するご質問"}
           </p>
-          <div className="button-510">
+          <div className="button-495">
             <Image id="4-1" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2118"
+              className="el-2046"
             />
             <Image id="4-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2119"
+              className="el-2047"
             />
           </div>
         </div>
@@ -174,20 +174,20 @@ export default function Page() {
           <p className="text-558">
             {"一緒に来た人とはぐれてしまいました。どうすればいいでしょうか。"}
           </p>
-          <div className="button-511">
+          <div className="button-496">
             <Image id="5-1" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2120"
+              className="el-2048"
             />
             <Image id="5-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2121"
+              className="el-2049"
             />
           </div>
         </div>
@@ -198,20 +198,20 @@ export default function Page() {
           <p className="text-559">
             {"飲食・休憩などをできる場所はありますか？"}
           </p>
-          <div className="button-512">
+          <div className="button-497">
             <Image id="6-1" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2122"
+              className="el-2050"
             />
             <Image id="6-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2123"
+              className="el-2051"
             />
           </div>
         </div>
@@ -222,20 +222,20 @@ export default function Page() {
           <p className="text-560">
             {"授乳やおむつ交換をすることができる場所はありますか。"}
           </p>
-          <div className="button-513">
+          <div className="button-498">
             <Image id="7-1" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2124"
+              className="el-2052"
             />
             <Image id="7-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2125"
+              className="el-2053"
             />
           </div>
         </div>
@@ -246,20 +246,20 @@ export default function Page() {
           <p className="text-561">
             {"車やバイクでの来場はできますか？"}
           </p>
-          <div className="button-514">
+          <div className="button-499">
             <Image id="9-1" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2126"
+              className="el-2054"
             />
             <Image id="9-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2127"
+              className="el-2055"
             />
           </div>
         </div>
@@ -270,20 +270,20 @@ export default function Page() {
           <p className="text-562">
             {"駐輪場はありますか？"}
           </p>
-          <div className="button-515">
+          <div className="button-500">
             <Image id="10-1" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2128"
+              className="el-2056"
             />
             <Image id="10-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2129"
+              className="el-2057"
             />
           </div>
         </div>
@@ -294,20 +294,20 @@ export default function Page() {
           <p className="text-563">
             {"ペットを連れてきてもいいですか？"}
           </p>
-          <div className="button-516">
+          <div className="button-501">
             <Image id="11-1" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2130"
+              className="el-2058"
             />
             <Image id="11-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2131"
+              className="el-2059"
             />
           </div>
         </div>
@@ -318,20 +318,20 @@ export default function Page() {
           <p className="text-564">
             {"構内での飲酒・喫煙は可能ですか？"}
           </p>
-          <div className="button-517">
+          <div className="button-502">
             <Image id="12-1" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2132"
+              className="el-2060"
             />
             <Image id="12-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2133"
+              className="el-2061"
             />
           </div>
         </div>
@@ -342,20 +342,20 @@ export default function Page() {
           <p className="text-565">
             {"電子決済は可能ですか？"}
           </p>
-          <div className="button-518">
+          <div className="button-503">
             <Image id="13-1" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2134"
+              className="el-2062"
             />
             <Image id="13-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2135"
+              className="el-2063"
             />
           </div>
         </div>
@@ -366,20 +366,20 @@ export default function Page() {
           <p className="text-566">
             {"委員会企画とは何ですか？"}
           </p>
-          <div className="button-519">
+          <div className="button-504">
             <Image id="14-1" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2136"
+              className="el-2064"
             />
             <Image id="14-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2137"
+              className="el-2065"
             />
           </div>
         </div>
@@ -390,20 +390,20 @@ export default function Page() {
           <p className="text-567">
             {"公式メンバー「まつぴよ」に会える企画はありますか？"}
           </p>
-          <div className="button-520">
+          <div className="button-505">
             <Image id="15-1" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2138"
+              className="el-2066"
             />
             <Image id="15-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2139"
+              className="el-2067"
             />
           </div>
         </div>
@@ -411,27 +411,27 @@ export default function Page() {
           {"まつぴよグリーティングやストリートパフォーマンスで会うことができます。\n詳しくは「公式メンバー「まつぴよ」」ページからご確認ください。"}
         </p>
       </section>
-      <section data-inview className="el-2084">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2085">
+      <section data-inview className="el-2012">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2013">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
             width={58}
             height={58}
-            className="pasted-artwork-svg-120"
+            className="pasted-artwork-svg-114"
           />
         </a>
-        <a href="https://x.com/matsufes_info" className="x-59">
+        <a href="https://x.com/matsufes_info" className="x-55">
           <Image
             src="/assets/pasted-artwork-276.svg"
             alt=""
             width={54}
             height={49}
-            className="pasted-artwork-svg-121"
+            className="pasted-artwork-svg-115"
           />
         </a>
         <span
-          className="crisp-svg svg-446"
+          className="crisp-svg svg-401"
           style={{ ["--crisp-svg-width"]: "375px", ["--crisp-svg-ratio"]: "375 / 350" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={375} height={350} viewBox="0 0 375 350" />
@@ -443,9 +443,9 @@ export default function Page() {
           />
         </span>
       </section>
-      <section data-inview className="footer-29">
+      <section data-inview className="footer-27">
         <span
-          className="crisp-svg svg-447"
+          className="crisp-svg svg-705"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -456,22 +456,22 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2086">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2014">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
             width={58}
             height={58}
-            className="svg-448"
+            className="svg-402"
           />
         </a>
-        <a href="https://x.com/matsufes_info" className="x-60">
+        <a href="https://x.com/matsufes_info" className="x-56">
           <Image
             src="/assets/pasted-artwork-276.svg"
             alt=""
             width={54}
             height={49}
-            className="svg-449"
+            className="svg-403"
           />
         </a>
       </section>
