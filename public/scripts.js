@@ -9,14 +9,14 @@ if (scheme && ["http", "https", "mailto", "tel"].indexOf(scheme) < 0) return "#"
 if ((scheme === "http" || scheme === "https") && !/^https?:\/\//i.test(url)) return "#";
 return url;
 }
-var writeVarPath = (function ev(e,t,i,s,n=!1){if("string"!=typeof t||!t)return;let a=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),r=(t,i)=>{if(!s||s(i))return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!0,configurable:!0}),t};if(a(e,t)||!t.includes("."))return r(t,i);let o=!1,l=(e,t)=>{if(!t.length)return i;let[s,...r]=t;if(Array.isArray(e)){let t=n&&"-1"===s;if(!t&&!/^(0|[1-9][0-9]*)$/.test(s))return o=!0,e;let i=t?e.length-1:Number(s);if(!Number.isSafeInteger(i)||i<0||i>e.length||i===e.length&&e.length>=1e4)return o=!0,e;let c=e.slice();return c[i]=l(a(e,i)?e[i]:void 0,r),c}let c=e&&"object"==typeof e?e:{};return{...c,[s]:l(a(c,s)?c[s]:void 0,r)}},[c,...d]=t.split(".");if(d.length>64)return;let h=l(a(e,c)?e[c]:void 0,d);return o?void 0:r(c,h)});
-var withinValueLimit = (function em(e){if(null==e)return!0;if("object"!=typeof e)return"number"==typeof e?Number.isFinite(e):"string"==typeof e?e.length<=5242880:"boolean"==typeof e;let t=new WeakMap,i=(e,s)=>{if(s>64)return{cost:1/0,height:0};if(null==e)return{cost:8,height:0};if("object"!=typeof e)return("number"!=typeof e||Number.isFinite(e))&&("number"==typeof e||"string"==typeof e||"boolean"==typeof e)?{cost:"string"==typeof e?e.length+2:8,height:0}:{cost:1/0,height:0};let n=t.get(e);if(n)return s+n.height<=64?n:{cost:1/0,height:0};if(t.set(e,{cost:1/0,height:0}),Array.isArray(e)&&e.length>5242880)return{cost:1/0,height:0};let a=Array.isArray(e)?2+e.length:2,r=0;for(let t of Object.keys(e)){let n=i(e[t],s+1);if(a+=t.length+4+n.cost,r=Math.max(r,n.height+1),a>5242880)return{cost:1/0,height:0}}let o={cost:a,height:r};return t.set(e,o),o};return i(e,0).cost<=5242880});
-var matchValueCondition = (function ep(e,t,i){let s=e=>null!==e&&"object"==typeof e,n=e=>{if("number"==typeof e)return Number.isFinite(e)?e:void 0;if("string"!=typeof e||!/^-?(?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][+-]?\d+)?$/.test(e.trim()))return;let t=Number(e.trim());return Number.isFinite(t)?t:void 0},a=(e,t,i=0)=>{if("number"==typeof e&&!Number.isFinite(e)||"number"==typeof t&&!Number.isFinite(t))return!1;if(e===t)return!0;if("string"==typeof e&&("boolean"==typeof t||"number"==typeof t&&Number.isFinite(t)))return e===String(t);if("string"==typeof t&&("boolean"==typeof e||"number"==typeof e&&Number.isFinite(e)))return String(e)===t;if(!s(e)||!s(t)||i>=16)return!1;let n=Object.keys(e),r=Object.keys(t);return n.length===r.length&&!(n.length>1e4)&&n.every(s=>Object.prototype.hasOwnProperty.call(t,s)&&a(e[s],t[s],i+1))};if("has-key"===t)return!(!s(e)||s(i))&&null!=i&&Object.prototype.propertyIsEnumerable.call(e,String(i));if("empty"===t)return null==e||""===e||!!s(e)&&0===Object.keys(e).length;if("contains-any"===t){let t=s(i)?Object.keys(i).map(e=>i[e]):"string"==typeof i?i.split(",").map(e=>e.trim()):[i];return s(e)?Object.keys(e).some(i=>t.some(t=>a(e[i],t))):"string"==typeof e&&t.some(t=>!s(t)&&null!=t&&e.includes(String(t)))}if("contains"===t)return s(e)?Object.keys(e).some(t=>a(e[t],i)):null!=e&&!s(i)&&String(e).includes(String(i));if("eq"===t||void 0===t)return a(e,i);if("in"===t)return s(i)?Object.keys(i).some(t=>a(i[t],e)):"string"==typeof i&&i.split(",").some(t=>a(e,t.trim()));if("starts-with"===t||"ends-with"===t){if(null==e||s(e)||s(i))return!1;let n=String(e),a=String(i);return"starts-with"===t?n.startsWith(a):n.endsWith(a)}if("gt"===t||"gte"===t||"lt"===t||"lte"===t){let s=n(e),a=n(i);return void 0!==s&&void 0!==a&&("gt"===t?s>a:"gte"===t?s>=a:"lt"===t?s<a:s<=a)}return!1});
-var parseValueLiteral = (function eg(e){let t=e.trim();if("true"===t||"false"===t||"null"===t||t.startsWith("[")||t.startsWith("{")||/^-?(?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][+-]?\d+)?$/.test(t)||t.length>=2&&t.startsWith('"')&&t.endsWith('"'))try{return JSON.parse(t)}catch{}return e});
-var formatValueText = (function w(e,t=!1){if(null==e)return"";if(!Array.isArray(e))return"object"==typeof e?t?"[object Object]":"":String(e);let i=[],s=[{value:e,index:0}],n=new WeakSet([e]),a=0,r=0;for(;s.length;){if(++a>5242880)return"";let e=s[s.length-1];if(e.index>=e.value.length){n.delete(e.value),s.pop();continue}t&&e.index>0&&(i.push(","),r++);let o=e.value[e.index++];if(Array.isArray(o))n.has(o)||(n.add(o),s.push({value:o,index:0}));else{let e=null==o?"":"object"==typeof o?t?"[object Object]":"":String(o);e&&(!t&&i.length&&(i.push(", "),r+=2),i.push(e),r+=e.length)}if(r>5242880)return""}return i.join("")});
+var writeVarPath = (function K(e,t,i,s,n=!1){if("string"!=typeof t||!t)return;let a=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),r=(t,i)=>{if(!s||s(i))return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!0,configurable:!0}),t};if(a(e,t)||!t.includes("."))return r(t,i);let o=!1,l=(e,t)=>{if(!t.length)return i;let[s,...r]=t;if(Array.isArray(e)){let t=n&&"-1"===s;if(!t&&!/^(0|[1-9][0-9]*)$/.test(s))return o=!0,e;let i=t?e.length-1:Number(s);if(!Number.isSafeInteger(i)||i<0||i>e.length||i===e.length&&e.length>=1e4)return o=!0,e;let c=e.slice();return c[i]=l(a(e,i)?e[i]:void 0,r),c}let c=e&&"object"==typeof e?e:{};return{...c,[s]:l(a(c,s)?c[s]:void 0,r)}},[c,...d]=t.split(".");if(d.length>64)return;let h=l(a(e,c)?e[c]:void 0,d);return o?void 0:r(c,h)});
+var withinValueLimit = (function G(e){if(null==e)return!0;if("object"!=typeof e)return"number"==typeof e?Number.isFinite(e):"string"==typeof e?e.length<=5242880:"boolean"==typeof e;let t=new WeakMap,i=(e,s)=>{if(s>64)return{cost:1/0,height:0};if(null==e)return{cost:8,height:0};if("object"!=typeof e)return("number"!=typeof e||Number.isFinite(e))&&("number"==typeof e||"string"==typeof e||"boolean"==typeof e)?{cost:"string"==typeof e?e.length+2:8,height:0}:{cost:1/0,height:0};let n=t.get(e);if(n)return s+n.height<=64?n:{cost:1/0,height:0};if(t.set(e,{cost:1/0,height:0}),Array.isArray(e)&&e.length>5242880)return{cost:1/0,height:0};let a=Array.isArray(e)?2+e.length:2,r=0;for(let t of Object.keys(e)){let n=i(e[t],s+1);if(a+=t.length+4+n.cost,r=Math.max(r,n.height+1),a>5242880)return{cost:1/0,height:0}}let o={cost:a,height:r};return t.set(e,o),o};return i(e,0).cost<=5242880});
+var matchValueCondition = (function $(e,t,i){let s=e=>null!==e&&"object"==typeof e,n=e=>{if("number"==typeof e)return Number.isFinite(e)?e:void 0;if("string"!=typeof e||!/^-?(?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][+-]?\d+)?$/.test(e.trim()))return;let t=Number(e.trim());return Number.isFinite(t)?t:void 0},a=(e,t,i=0)=>{if("number"==typeof e&&!Number.isFinite(e)||"number"==typeof t&&!Number.isFinite(t))return!1;if(e===t)return!0;if("string"==typeof e&&("boolean"==typeof t||"number"==typeof t&&Number.isFinite(t)))return e===String(t);if("string"==typeof t&&("boolean"==typeof e||"number"==typeof e&&Number.isFinite(e)))return String(e)===t;if(!s(e)||!s(t)||i>=16)return!1;let n=Object.keys(e),r=Object.keys(t);return n.length===r.length&&!(n.length>1e4)&&n.every(s=>Object.prototype.hasOwnProperty.call(t,s)&&a(e[s],t[s],i+1))};if("has-key"===t)return!(!s(e)||s(i))&&null!=i&&Object.prototype.propertyIsEnumerable.call(e,String(i));if("empty"===t)return null==e||""===e||!!s(e)&&0===Object.keys(e).length;if("contains-any"===t){let t=s(i)?Object.keys(i).map(e=>i[e]):"string"==typeof i?i.split(",").map(e=>e.trim()):[i];return s(e)?Object.keys(e).some(i=>t.some(t=>a(e[i],t))):"string"==typeof e&&t.some(t=>!s(t)&&null!=t&&e.includes(String(t)))}if("contains"===t)return s(e)?Object.keys(e).some(t=>a(e[t],i)):null!=e&&!s(i)&&String(e).includes(String(i));if("eq"===t||void 0===t)return a(e,i);if("in"===t)return s(i)?Object.keys(i).some(t=>a(i[t],e)):"string"==typeof i&&i.split(",").some(t=>a(e,t.trim()));if("starts-with"===t||"ends-with"===t){if(null==e||s(e)||s(i))return!1;let n=String(e),a=String(i);return"starts-with"===t?n.startsWith(a):n.endsWith(a)}if("gt"===t||"gte"===t||"lt"===t||"lte"===t){let s=n(e),a=n(i);return void 0!==s&&void 0!==a&&("gt"===t?s>a:"gte"===t?s>=a:"lt"===t?s<a:s<=a)}return!1});
+var parseValueLiteral = (function H(e){let t=e.trim();if("true"===t||"false"===t||"null"===t||t.startsWith("[")||t.startsWith("{")||/^-?(?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][+-]?\d+)?$/.test(t)||t.length>=2&&t.startsWith('"')&&t.endsWith('"'))try{return JSON.parse(t)}catch{}return e});
+var formatValueText = (function n(e,t=!1){if(null==e)return"";if(!Array.isArray(e))return"object"==typeof e?t?"[object Object]":"":String(e);let r=[],i=[{value:e,index:0}],o=new WeakSet([e]),a=0,s=0;for(;i.length;){if(++a>5242880)return"";let e=i[i.length-1];if(e.index>=e.value.length){o.delete(e.value),i.pop();continue}t&&e.index>0&&(r.push(","),s++);let n=e.value[e.index++];if(Array.isArray(n))o.has(n)||(o.add(n),i.push({value:n,index:0}));else{let e=null==n?"":"object"==typeof n?t?"[object Object]":"":String(n);e&&(!t&&r.length&&(r.push(", "),s+=2),r.push(e),s+=e.length)}if(s>5242880)return""}return r.join("")});
 var __name = function (fn) { return fn; };
-var evalRecipe = (function eu(e,t,i={}){let s=e=>({kind:"error",code:e});if(!Array.isArray(t)||t.length>32)return s("invalid-recipe");let n=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),a=(e,t)=>{if(!t)return e;if(!e||"object"!=typeof e)return;if(n(e,t))return e[t];let i=e,s=t.split(".");if(!(s.length>16)){for(let e of s){if(null===i||"object"!=typeof i)return;let t=Array.isArray(i)&&"-1"===e?i.length-1:e;if(!n(i,t))return;i=i[t]}return i}},r=(e,t)=>{if(!e||"object"!=typeof e)return!1;if(n(e,t))return!0;let i=t.split(".");if(i.length>16)return!1;let s=e;for(let e of i){if(null===s||"object"!=typeof s)return!1;let t=Array.isArray(s)&&"-1"===e?s.length-1:e;if(!n(s,t))return!1;s=s[t]}return!0},o=e=>null===e||"string"==typeof e||"boolean"==typeof e||"number"==typeof e&&Number.isFinite(e),l=e=>"string"==typeof e||"boolean"==typeof e||"number"==typeof e&&Number.isFinite(e)?String(e):void 0,c=(e,t,s=!1)=>{if("string"!=typeof e||e.length>t)return{ok:!1};let n=/^\{([^{}\s"'<>]+)\}$/.exec(e);if(n&&(!s||!/^\d+(,\d*)?$/.test(n[1]))){let e=a(i,n[1]);return void 0===e?{ok:!1}:{ok:!0,value:e}}let r="",o=0;for(let n of e.matchAll(/\\\{|\{([^{}\s"'<>]+)\}/g)){if(r+=e.slice(o,n.index),o=n.index+n[0].length,!n[1]){r+="{";continue}if(s&&/^\d+(,\d*)?$/.test(n[1])){r+=n[0];continue}let l=a(i,n[1]),c="";for(let e of Array.isArray(l)?l:[l]){if(null==e||"object"==typeof e||""===e)continue;let i=String(e);if(r.length+c.length+i.length>t)return{ok:!1};r+=c+i,c=", "}}return(r+=e.slice(o)).length<=t?{ok:!0,value:r}:{ok:!1}},d=(e,t,i=!1)=>{let s=c(e,t,i);if(!s.ok||null===s.value||"object"==typeof s.value)return{ok:!1};let n=String(s.value);return n.length<=t?{ok:!0,value:n}:{ok:!1}},h=e=>{if("number"==typeof e)return Number.isFinite(e)?e:void 0;if("string"!=typeof e||!/^[-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?$/.test(e.trim()))return;let t=Number(e.trim());return Number.isFinite(t)?t:void 0},u=(e,t)=>{if(e.length>256)return!1;let i=t+1,s=()=>({repeats:!1,alternation:!1,paths:0,branchPaths:1,choices:0,branchChoices:1,fixedWork:0,runtimeWork:0}),n=[s()],a=[],r=e=>"\\d"===e||"[0-9]"===e?"digit":"\\w"===e?"word":"\\s"===e?"space":"[a-z]"===e?"lower":"[A-Z]"===e?"upper":1===e.length?"literal:"+e:null,o=(e,t)=>"word"===e?/^[a-zA-Z0-9_]$/.test(t):"digit"===e?/^[0-9]$/.test(t):"lower"===e?/^[a-z]$/.test(t):"upper"===e?/^[A-Z]$/.test(t):"space"!==e||/^\s$/.test(t),l=(e,t)=>!e||!t||(e.startsWith("literal:")?t.startsWith("literal:")?e===t:o(t,e.slice(8)):t.startsWith("literal:")?o(e,t.slice(8)):"word"===e?"space"!==t:"word"===t?"space"!==e:e===t),c=null,d=(e,t)=>{let i=n[n.length-1];t&&(i.branchPaths*=t.paths+t.branchPaths);let s=t?t.choices+t.branchChoices:1,a={category:e,group:t,choices:s,fixedWork:t?t.fixedWork+2:1,runtimeWork:t?1+t.runtimeWork+s:1};return i.fixedWork+=a.fixedWork,i.runtimeWork+=i.branchChoices*a.runtimeWork,i.branchChoices*=s,i.paths+i.branchPaths<=256&&i.choices+i.branchChoices<=0x1000000&&i.fixedWork<=4096&&i.runtimeWork<=0x1000000?a:null};for(let t=0;t<e.length;t++){let o=e[t];if("\\"===o){if(t+1>=e.length||/[1-9]/.test(e[t+1])||"k"===e[t+1])return!1;let i=e[t+1];if("x"===i||"u"===i||"c"===i){let s=/^(?:x[0-9a-f]{2}|u[0-9a-f]{4}|c[a-z])/i.exec(e.slice(t+1));if(!s||!(c=d(r(String.fromCharCode("c"===i?s[0].toUpperCase().charCodeAt(1)%32:parseInt(s[0].slice(1),16))))))return!1;t+=s[0].length;continue}if("0"===i&&/[0-9]/.test(e[t+2]??"")||!(c=d(r("\\"+e[++t]))))return!1;continue}if("["===o){let i=t+1;for(;i<e.length;i++){if("\\"===e[i]){i++;continue}if("]"===e[i])break}if(i>=e.length||!(c=d(r(e.slice(t,i+1)))))return!1;t=i;continue}if("("===o){if("?"===e[t+1]){if(":"!==e[t+2])return!1;t+=2}n.push(s()),c=null;continue}if(")"===o){if(n.length<=1)return!1;let e=n.pop();if(n[n.length-1].repeats||=e.repeats,n[n.length-1].alternation||=e.alternation,!(c=d(null,e)))return!1;continue}if("|"===o){let e=n[n.length-1];if(e.alternation=!0,e.paths+=e.branchPaths,e.branchPaths=1,e.choices+=e.branchChoices,e.branchChoices=1,e.paths+e.branchPaths>256||e.choices+e.branchChoices>0x1000000)return!1;c=null;continue}let h="*"===o||"+"===o||"?"===o,u=!1,p=+("+"===o),f="?"===o?1:1/0;if("{"===o){let i=/^\{(\d+)(?:,(\d*))?\}/.exec(e.slice(t));if(i){let e=Number(i[1]),s=""===i[2]?1/0:void 0===i[2]?e:Number(i[2]);if(e>1e3||s>1e3&&1/0!==s||s<e)return!1;h=!0,u=e===s,p=e,f=s,t+=i[0].length-1}}if(h){if(!c||c.group&&(c.group.repeats||c.group.alternation))return!1;let e=n[n.length-1],t=Math.max(1,1/0===f?p:f),s=1/0===f?Math.max(i,p):Math.max(1,f),r=e.branchChoices/c.choices,o=u?1:s-p+1;if(e.fixedWork+=c.fixedWork*(t-1),e.runtimeWork+=r*c.runtimeWork*(s-1),e.branchChoices=r*o,e.fixedWork>4096||e.runtimeWork>0x1000000||e.choices+e.branchChoices>0x1000000)return!1;if(!u){if(a.some(e=>l(c.category,e)))return!1;a.push(c.category),n[n.length-1].repeats=!0}c=null}else if(!(c=d("."===o||"^"===o||"$"===o?null:r(o))))return!1}let h=n[0];return 1===n.length&&i*h.runtimeWork<=0x1000000},p=e,f=void 0===p;try{for(let e of t){if(!e||"object"!=typeof e||!("kind"in e))return s("invalid-recipe");switch(e.kind){case"fallback":if("string"!=typeof e.text||e.text.length>1e4||"missing"!==e.when&&"nullish"!==e.when)return s("invalid-recipe");if(f||"nullish"===e.when&&null===p){let t=c(e.text,1e4);if(!t.ok)return s("missing-value");p=t.value,f=!1}break;case"field":{if(f)break;let t=d(e.key,256);if(!t.ok||!p||"object"!=typeof p)return s("type-mismatch");let i=n(p,t.value);p=i||t.value&&r(p,t.value)?i?p[t.value]:a(p,t.value):void 0,f=void 0===p;break}case"length":if(f)break;if(!p||"object"!=typeof p)return s("type-mismatch");p=Object.keys(p).length;break;case"stringify":if(f)break;if(p=JSON.stringify(p),"string"!=typeof p||p.length>1e5)return s("limit-exceeded");break;case"parse":if(f)break;if("string"!=typeof p){if(null===p||"boolean"==typeof p||"number"==typeof p&&Number.isFinite(p)||"object"==typeof p)break;return s("type-mismatch")}if(p.length>1e5)return s("limit-exceeded");try{p=JSON.parse(p)}catch{return s("invalid-json")}break;case"math":{if(f)break;if("number"!==e.operandType&&"variable"!==e.operandType)return s("invalid-recipe");let t=h(p),n="variable"===e.operandType?a(i,"string"==typeof e.operand?e.operand:""):e.operand,r=h(n);if(void 0===t||void 0===r)return s("type-mismatch");let o=t;switch(e.operation){case"add":o+=r;break;case"subtract":o-=r;break;case"multiply":o*=r;break;case"divide":if(0===r)return s("division-by-zero");o/=r;break;case"remainder":if(0===r)return s("division-by-zero");o%=r;break;default:return s("invalid-recipe")}if(!Number.isFinite(o))return s("limit-exceeded");p=o;break}case"split":{if(f)break;let t=d(e.separator,256),i=l(p);if(void 0===i||!t.ok)return s("type-mismatch");if(i.length>1e5)return s("limit-exceeded");p=i.split(t.value||",").map(e=>e.trim()).filter(Boolean);break}case"join":{if(f)break;let t=d(e.separator,256);if(!p||"object"!=typeof p||!t.ok)return s("type-mismatch");let i=Object.keys(p);if(i.length>1e4)return s("limit-exceeded");let n=[],a=0;for(let e of i){let i=p[e];if(null===i||""===i)continue;if(!o(i))return s("type-mismatch");let r=String(i);if((a+=r.length+(n.length?t.value.length:0))>1e5)return s("limit-exceeded");n.push(r)}p=n.join(t.value);break}case"replace":{if(f)break;let t=d(e.find,256,e.regex),i=d(e.replacement,1e4),n=l(p);if(void 0===n||!t.ok||!i.ok||"boolean"!=typeof e.regex)return s("type-mismatch");if(n.length>1e4)return s("limit-exceeded");if(!t.value){p=n;break}if(e.regex){let e;if(n.length>2048||!u(t.value,n.length))return s("invalid-regex");try{e=RegExp(t.value,"g")}catch{return s("invalid-regex")}let a=n.length,r=i.value.match(/\$(?:&|[1-9]\d?)/g)?.length??0,o=i.value.match(/\$(?:'|`)/g)?.length??0;for(let t of n.matchAll(e))if((a+=i.value.length+r*t[0].length+o*n.length)>1e5)return s("limit-exceeded");p=n.replace(e,i.value)}else{let e=n.split(t.value),a=e.length-1;if(n.length+a*(i.value.length-t.value.length)>1e5)return s("limit-exceeded");p=e.join(i.value)}if("string"!=typeof p||p.length>1e5)return s("limit-exceeded");break}case"sort":{let t;if(f)break;let i=d(e.field,256);if(!p||"object"!=typeof p||!i.ok||"asc"!==e.direction&&"desc"!==e.direction)return s("type-mismatch");let n=Array.isArray(p),r=Object.entries(p);if(r.length>1e4||Array.isArray(p)&&p.length>1e4)return s("limit-exceeded");let o=[];for(let e=0;e<r.length;e++){let[n,l]=r[e],c=a(l,i.value);if(void 0===c)return s("missing-value");if("number"!=typeof c&&"string"!=typeof c||"number"==typeof c&&!Number.isFinite(c)||void 0!==t&&t!==typeof c)return s("type-mismatch");t=typeof c,o.push({item:l,sourceKey:n,key:c,order:e})}let l="string"===t?new Intl.Collator("ja",{numeric:!0}):void 0;o.sort((t,i)=>{let s="number"==typeof t.key&&"number"==typeof i.key?t.key-i.key:l.compare(String(t.key),String(i.key));return"desc"===e.direction&&(s*=-1),s||t.order-i.order}),p=n?o.map(e=>e.item):o.map(e=>({キー:e.sourceKey,値:e.item}));break}default:return s("invalid-recipe")}if("string"==typeof p&&p.length>1e5||Array.isArray(p)&&p.length>1e4)return s("limit-exceeded")}return f?{kind:"missing"}:{kind:"value",value:p}}catch{return s("invalid-recipe")}});
-var removeItem = (function ef(e,t,i,s){if(!e||"object"!=typeof e||void 0===i||Array.isArray(e)&&e.length>1e4)return;let n=Object.keys(e);if(n.length>1e4)return;if("key"===t){if("string"!=typeof i&&"number"!=typeof i)return;let t=String(i);if(Array.isArray(e)){if(!/^(0|[1-9][0-9]*)$/.test(t))return;let i=Number(t);if(!Number.isSafeInteger(i)||i>=e.length)return;let s=e.slice();return s.splice(i,1),s}if(!Object.prototype.hasOwnProperty.call(e,t))return;let s=Object.assign(Object.create(null),e);return delete s[t],s}if("value"!==t)return;if(Array.isArray(e)){let t=e.filter(e=>!s(e,"eq",i));return t.length===e.length?void 0:t}let a=Object.assign(Object.create(null),e),r=!1;for(let e of n)s(a[e],"eq",i)&&(delete a[e],r=!0);return r?a:void 0});
+var evalRecipe = (function B(e,t,i={}){let s=e=>({kind:"error",code:e});if(!Array.isArray(t)||t.length>32)return s("invalid-recipe");let n=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),a=(e,t)=>{if(!t)return e;if(!e||"object"!=typeof e)return;if(n(e,t))return e[t];let i=e,s=t.split(".");if(!(s.length>16)){for(let e of s){if(null===i||"object"!=typeof i)return;let t=Array.isArray(i)&&"-1"===e?i.length-1:e;if(!n(i,t))return;i=i[t]}return i}},r=(e,t)=>{if(!e||"object"!=typeof e)return!1;if(n(e,t))return!0;let i=t.split(".");if(i.length>16)return!1;let s=e;for(let e of i){if(null===s||"object"!=typeof s)return!1;let t=Array.isArray(s)&&"-1"===e?s.length-1:e;if(!n(s,t))return!1;s=s[t]}return!0},o=e=>null===e||"string"==typeof e||"boolean"==typeof e||"number"==typeof e&&Number.isFinite(e),l=e=>"string"==typeof e||"boolean"==typeof e||"number"==typeof e&&Number.isFinite(e)?String(e):void 0,c=(e,t,s=!1)=>{if("string"!=typeof e||e.length>t)return{ok:!1};let n=/^\{([^{}\s"'<>]+)\}$/.exec(e);if(n&&(!s||!/^\d+(,\d*)?$/.test(n[1]))){let e=a(i,n[1]);return void 0===e?{ok:!1}:{ok:!0,value:e}}let r="",o=0;for(let n of e.matchAll(/\\\{|\{([^{}\s"'<>]+)\}/g)){if(r+=e.slice(o,n.index),o=n.index+n[0].length,!n[1]){r+="{";continue}if(s&&/^\d+(,\d*)?$/.test(n[1])){r+=n[0];continue}let l=a(i,n[1]),c="";for(let e of Array.isArray(l)?l:[l]){if(null==e||"object"==typeof e||""===e)continue;let i=String(e);if(r.length+c.length+i.length>t)return{ok:!1};r+=c+i,c=", "}}return(r+=e.slice(o)).length<=t?{ok:!0,value:r}:{ok:!1}},d=(e,t,i=!1)=>{let s=c(e,t,i);if(!s.ok||null===s.value||"object"==typeof s.value)return{ok:!1};let n=String(s.value);return n.length<=t?{ok:!0,value:n}:{ok:!1}},h=e=>{if("number"==typeof e)return Number.isFinite(e)?e:void 0;if("string"!=typeof e||!/^[-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?$/.test(e.trim()))return;let t=Number(e.trim());return Number.isFinite(t)?t:void 0},u=(e,t)=>{if(e.length>256)return!1;let i=t+1,s=()=>({repeats:!1,alternation:!1,paths:0,branchPaths:1,choices:0,branchChoices:1,fixedWork:0,runtimeWork:0}),n=[s()],a=[],r=e=>"\\d"===e||"[0-9]"===e?"digit":"\\w"===e?"word":"\\s"===e?"space":"[a-z]"===e?"lower":"[A-Z]"===e?"upper":1===e.length?"literal:"+e:null,o=(e,t)=>"word"===e?/^[a-zA-Z0-9_]$/.test(t):"digit"===e?/^[0-9]$/.test(t):"lower"===e?/^[a-z]$/.test(t):"upper"===e?/^[A-Z]$/.test(t):"space"!==e||/^\s$/.test(t),l=(e,t)=>!e||!t||(e.startsWith("literal:")?t.startsWith("literal:")?e===t:o(t,e.slice(8)):t.startsWith("literal:")?o(e,t.slice(8)):"word"===e?"space"!==t:"word"===t?"space"!==e:e===t),c=null,d=(e,t)=>{let i=n[n.length-1];t&&(i.branchPaths*=t.paths+t.branchPaths);let s=t?t.choices+t.branchChoices:1,a={category:e,group:t,choices:s,fixedWork:t?t.fixedWork+2:1,runtimeWork:t?1+t.runtimeWork+s:1};return i.fixedWork+=a.fixedWork,i.runtimeWork+=i.branchChoices*a.runtimeWork,i.branchChoices*=s,i.paths+i.branchPaths<=256&&i.choices+i.branchChoices<=0x1000000&&i.fixedWork<=4096&&i.runtimeWork<=0x1000000?a:null};for(let t=0;t<e.length;t++){let o=e[t];if("\\"===o){if(t+1>=e.length||/[1-9]/.test(e[t+1])||"k"===e[t+1])return!1;let i=e[t+1];if("x"===i||"u"===i||"c"===i){let s=/^(?:x[0-9a-f]{2}|u[0-9a-f]{4}|c[a-z])/i.exec(e.slice(t+1));if(!s||!(c=d(r(String.fromCharCode("c"===i?s[0].toUpperCase().charCodeAt(1)%32:parseInt(s[0].slice(1),16))))))return!1;t+=s[0].length;continue}if("0"===i&&/[0-9]/.test(e[t+2]??"")||!(c=d(r("\\"+e[++t]))))return!1;continue}if("["===o){let i=t+1;for(;i<e.length;i++){if("\\"===e[i]){i++;continue}if("]"===e[i])break}if(i>=e.length||!(c=d(r(e.slice(t,i+1)))))return!1;t=i;continue}if("("===o){if("?"===e[t+1]){if(":"!==e[t+2])return!1;t+=2}n.push(s()),c=null;continue}if(")"===o){if(n.length<=1)return!1;let e=n.pop();if(n[n.length-1].repeats||=e.repeats,n[n.length-1].alternation||=e.alternation,!(c=d(null,e)))return!1;continue}if("|"===o){let e=n[n.length-1];if(e.alternation=!0,e.paths+=e.branchPaths,e.branchPaths=1,e.choices+=e.branchChoices,e.branchChoices=1,e.paths+e.branchPaths>256||e.choices+e.branchChoices>0x1000000)return!1;c=null;continue}let h="*"===o||"+"===o||"?"===o,u=!1,p=+("+"===o),f="?"===o?1:1/0;if("{"===o){let i=/^\{(\d+)(?:,(\d*))?\}/.exec(e.slice(t));if(i){let e=Number(i[1]),s=""===i[2]?1/0:void 0===i[2]?e:Number(i[2]);if(e>1e3||s>1e3&&1/0!==s||s<e)return!1;h=!0,u=e===s,p=e,f=s,t+=i[0].length-1}}if(h){if(!c||c.group&&(c.group.repeats||c.group.alternation))return!1;let e=n[n.length-1],t=Math.max(1,1/0===f?p:f),s=1/0===f?Math.max(i,p):Math.max(1,f),r=e.branchChoices/c.choices,o=u?1:s-p+1;if(e.fixedWork+=c.fixedWork*(t-1),e.runtimeWork+=r*c.runtimeWork*(s-1),e.branchChoices=r*o,e.fixedWork>4096||e.runtimeWork>0x1000000||e.choices+e.branchChoices>0x1000000)return!1;if(!u){if(a.some(e=>l(c.category,e)))return!1;a.push(c.category),n[n.length-1].repeats=!0}c=null}else if(!(c=d("."===o||"^"===o||"$"===o?null:r(o))))return!1}let h=n[0];return 1===n.length&&i*h.runtimeWork<=0x1000000},p=e,f=void 0===p;try{for(let e of t){if(!e||"object"!=typeof e||!("kind"in e))return s("invalid-recipe");switch(e.kind){case"fallback":if("string"!=typeof e.text||e.text.length>1e4||"missing"!==e.when&&"nullish"!==e.when)return s("invalid-recipe");if(f||"nullish"===e.when&&null===p){let t=c(e.text,1e4);if(!t.ok)return s("missing-value");p=t.value,f=!1}break;case"field":{if(f)break;let t=d(e.key,256);if(!t.ok||!p||"object"!=typeof p)return s("type-mismatch");let i=n(p,t.value);p=i||t.value&&r(p,t.value)?i?p[t.value]:a(p,t.value):void 0,f=void 0===p;break}case"length":if(f)break;if(!p||"object"!=typeof p)return s("type-mismatch");p=Object.keys(p).length;break;case"stringify":if(f)break;if(p=JSON.stringify(p),"string"!=typeof p||p.length>1e5)return s("limit-exceeded");break;case"parse":if(f)break;if("string"!=typeof p){if(null===p||"boolean"==typeof p||"number"==typeof p&&Number.isFinite(p)||"object"==typeof p)break;return s("type-mismatch")}if(p.length>1e5)return s("limit-exceeded");try{p=JSON.parse(p)}catch{return s("invalid-json")}break;case"math":{if(f)break;if("number"!==e.operandType&&"variable"!==e.operandType)return s("invalid-recipe");let t=h(p),n="variable"===e.operandType?a(i,"string"==typeof e.operand?e.operand:""):e.operand,r=h(n);if(void 0===t||void 0===r)return s("type-mismatch");let o=t;switch(e.operation){case"add":o+=r;break;case"subtract":o-=r;break;case"multiply":o*=r;break;case"divide":if(0===r)return s("division-by-zero");o/=r;break;case"remainder":if(0===r)return s("division-by-zero");o%=r;break;default:return s("invalid-recipe")}if(!Number.isFinite(o))return s("limit-exceeded");p=o;break}case"split":{if(f)break;let t=d(e.separator,256),i=l(p);if(void 0===i||!t.ok)return s("type-mismatch");if(i.length>1e5)return s("limit-exceeded");p=i.split(t.value||",").map(e=>e.trim()).filter(Boolean);break}case"join":{if(f)break;let t=d(e.separator,256);if(!p||"object"!=typeof p||!t.ok)return s("type-mismatch");let i=Object.keys(p);if(i.length>1e4)return s("limit-exceeded");let n=[],a=0;for(let e of i){let i=p[e];if(null===i||""===i)continue;if(!o(i))return s("type-mismatch");let r=String(i);if((a+=r.length+(n.length?t.value.length:0))>1e5)return s("limit-exceeded");n.push(r)}p=n.join(t.value);break}case"replace":{if(f)break;let t=d(e.find,256,e.regex),i=d(e.replacement,1e4),n=l(p);if(void 0===n||!t.ok||!i.ok||"boolean"!=typeof e.regex)return s("type-mismatch");if(n.length>1e4)return s("limit-exceeded");if(!t.value){p=n;break}if(e.regex){let e;if(n.length>2048||!u(t.value,n.length))return s("invalid-regex");try{e=RegExp(t.value,"g")}catch{return s("invalid-regex")}let a=n.length,r=i.value.match(/\$(?:&|[1-9]\d?)/g)?.length??0,o=i.value.match(/\$(?:'|`)/g)?.length??0;for(let t of n.matchAll(e))if((a+=i.value.length+r*t[0].length+o*n.length)>1e5)return s("limit-exceeded");p=n.replace(e,i.value)}else{let e=n.split(t.value),a=e.length-1;if(n.length+a*(i.value.length-t.value.length)>1e5)return s("limit-exceeded");p=e.join(i.value)}if("string"!=typeof p||p.length>1e5)return s("limit-exceeded");break}case"sort":{let t;if(f)break;let i=d(e.field,256);if(!p||"object"!=typeof p||!i.ok||"asc"!==e.direction&&"desc"!==e.direction)return s("type-mismatch");let n=Array.isArray(p),r=Object.entries(p);if(r.length>1e4||Array.isArray(p)&&p.length>1e4)return s("limit-exceeded");let o=[];for(let e=0;e<r.length;e++){let[n,l]=r[e],c=a(l,i.value);if(void 0===c)return s("missing-value");if("number"!=typeof c&&"string"!=typeof c||"number"==typeof c&&!Number.isFinite(c)||void 0!==t&&t!==typeof c)return s("type-mismatch");t=typeof c,o.push({item:l,sourceKey:n,key:c,order:e})}let l="string"===t?new Intl.Collator("ja",{numeric:!0}):void 0;o.sort((t,i)=>{let s="number"==typeof t.key&&"number"==typeof i.key?t.key-i.key:l.compare(String(t.key),String(i.key));return"desc"===e.direction&&(s*=-1),s||t.order-i.order}),p=n?o.map(e=>e.item):o.map(e=>({キー:e.sourceKey,値:e.item}));break}default:return s("invalid-recipe")}if("string"==typeof p&&p.length>1e5||Array.isArray(p)&&p.length>1e4)return s("limit-exceeded")}return f?{kind:"missing"}:{kind:"value",value:p}}catch{return s("invalid-recipe")}});
+var removeItem = (function q(e,t,i,s){if(!e||"object"!=typeof e||void 0===i||Array.isArray(e)&&e.length>1e4)return;let n=Object.keys(e);if(n.length>1e4)return;if("key"===t){if("string"!=typeof i&&"number"!=typeof i)return;let t=String(i);if(Array.isArray(e)){if(!/^(0|[1-9][0-9]*)$/.test(t))return;let i=Number(t);if(!Number.isSafeInteger(i)||i>=e.length)return;let s=e.slice();return s.splice(i,1),s}if(!Object.prototype.hasOwnProperty.call(e,t))return;let s=Object.assign(Object.create(null),e);return delete s[t],s}if("value"!==t)return;if(Array.isArray(e)){let t=e.filter(e=>!s(e,"eq",i));return t.length===e.length?void 0:t}let a=Object.assign(Object.create(null),e),r=!1;for(let e of n)s(a[e],"eq",i)&&(delete a[e],r=!0);return r?a:void 0});
 var cache = new Map();
 var cacheChars = 0;
 var cacheMaxChars = 8 * 1024 * 1024;
@@ -90,9 +90,10 @@ return el.matches("input,select,textarea")
 function radiosOf(input) {
 if (!input.name) return [input];
 try {
+var tree = input.getRootNode ? input.getRootNode() : document;
 return Array.prototype.slice.call(
-document.querySelectorAll('input[type="radio"][name="' + CSS.escape(input.name) + '"]')
-);
+tree.querySelectorAll('input[type="radio"][name="' + CSS.escape(input.name) + '"]')
+).filter(function (radio) { return radio.form === input.form; });
 } catch (e) {
 return [input];
 }
@@ -101,10 +102,10 @@ function truthy(v) {
 v = String(v == null ? "" : v).trim().toLowerCase();
 return v !== "" && v !== "off" && v !== "false" && v !== "0" && v !== "no";
 }
-function isRadioItem(el, input) {
-return !!input && input.type === "radio" && !!el.id && el.id !== input.name;
+function isRadioItem(el, input, name) {
+return !!input && input.type === "radio" && !!el.id && el.id !== input.name && name !== input.name;
 }
-function stateOf(els, prop) {
+function stateOf(els, prop, name) {
 var input = els.length ? inputOf(els[0]) : null;
 if (!input && els.length && els[0].matches("button")) input = els[0];
 if (!input) return undefined;
@@ -113,7 +114,7 @@ switch (prop) {
 case "disabled":
 return String(!!input.disabled);
 case "length":
-return String(valueOf(els).length);
+return String(valueOf(els, name).length);
 case "index":
 if (input.tagName === "SELECT") return String(input.selectedIndex + 1);
 if (radios) {
@@ -128,11 +129,11 @@ default:
 return undefined;
 }
 }
-function valueOf(els) {
+function valueOf(els, name) {
 for (var i = 0; i < els.length; i++) {
 var input = inputOf(els[i]);
 if (!input) return (els[i].textContent || "").trim();
-if (input.type === "checkbox" || isRadioItem(els[i], input)) return input.checked ? "true" : "false";
+if (input.type === "checkbox" || isRadioItem(els[i], input, name)) return input.checked ? "true" : "false";
 if (input.type === "radio") {
 var hit = radiosOf(input).filter(function (r) {
 return r.checked;
@@ -225,6 +226,7 @@ encodeURIComponent(k) + "=" + encodeURIComponent(v) + "; Max-Age=31536000; Path=
 return cookieGet(encodeURIComponent(k)) === v;
 }
 function encodeStored(value) {
+if (typeof value === "string" && decodeStored(value) === value) return value;
 return "tsumu-store-v1:" + JSON.stringify({
 value: value === undefined ? null : value,
 missing: value === undefined
@@ -382,13 +384,16 @@ return true;
 function inTpl(el) {
 return !!(el.closest && el.closest("[data-tpl]"));
 }
-function groupOf(name) {
+function namedFields(self, name) {
 try {
-return Array.prototype.slice
-.call(root.querySelectorAll('input[type="radio"][name="' + CSS.escape(name) + '"]'))
+var fields = Array.prototype.slice.call(root.querySelectorAll('[name="' + CSS.escape(name) + '"]'))
 .filter(function (el) {
-return !inTpl(el);
+return !inTpl(el) && el.matches("input,select,textarea") && (!el.id || el.type === "radio");
 });
+if (!fields.length) return fields;
+var owner = self && (self.form || (self.closest && self.closest("form")));
+if (!owner || !fields.some(function (el) { return el.form === owner; })) owner = fields[0].form;
+return fields.filter(function (el) { return el.form === owner; });
 } catch (e) {
 return [];
 }
@@ -405,12 +410,14 @@ return !inTpl(el);
 } catch (e) {
 return [];
 }
-var row = self && self.closest && self.closest("[data-row],[data-item]");
-if (row) {
-var mine = els.filter(function (el) {
-return row.contains(el);
-});
+if (els.length > 1) {
+var rowSelector = "[data-row],[data-item]";
+var row = self && self.closest && self.closest(rowSelector);
+while (row) {
+var mine = els.filter(function (el) { return row.contains(el); });
 if (mine.length) return mine;
+row = row.parentElement && row.parentElement.closest(rowSelector);
+}
 }
 return els;
 }
@@ -422,10 +429,10 @@ return has(item, name) ? item[name] : dig(item, name);
 if (has(vars, name) || has(vars, head)) return getVar(name);
 var prop = dot < 0 ? "" : name.slice(dot + 1);
 var els = find(self, head);
-if (!els.length) els = groupOf(head);
+if (!els.length) els = namedFields(self, head);
 if (els.length) {
-var state = prop ? stateOf(els, prop) : undefined;
-return state !== undefined ? state : valueOf(els);
+var state = prop ? stateOf(els, prop, head) : undefined;
+return state !== undefined ? state : valueOf(els, head);
 }
 try {
 var q = new URLSearchParams(location.search).get(name);
@@ -724,7 +731,7 @@ root.querySelectorAll('[data-array="' + CSS.escape(name) + '"]')
 return [];
 }
 }
-var toListItem = (function ek(e){return null===e||"object"!=typeof e||Array.isArray(e)?{値:e}:e});
+var toListItem = (function et(e){return null===e||"object"!=typeof e||Array.isArray(e)?{値:e}:e});
 var rendered = new WeakSet();
 var rowScopes = new WeakMap();
 function listJson(list, name, fallback) {
@@ -946,15 +953,15 @@ if (!inTpl(child) && !rendered.has(child)) renderList(child);
 }
 function setValue(self, id, v) {
 var els = find(self, id);
-if (!els.length) els = groupOf(id);
+if (!els.length) els = namedFields(self, id);
 var first = els.length ? inputOf(els[0]) : null;
 if (first && first.type === "file" && v !== "") return;
-var toggle = !!first && (first.type === "checkbox" || isRadioItem(els[0], first));
+var toggle = !!first && (first.type === "checkbox" || isRadioItem(els[0], first, id));
 if (toggle) v = truthy(v) ? "true" : "false";
 else if (first && first.type === "radio") els = radiosOf(first);
 var select = first && first.tagName === "SELECT";
 var scalar = first && !select && first.type !== "checkbox" && first.type !== "radio";
-if (valueOf(els) === v && !(select && first.selectedIndex < 0)) return;
+if (valueOf(els, id) === v && !(select && first.selectedIndex < 0)) return;
 var changed = [];
 els.forEach(function (el) {
 var input = inputOf(el);
@@ -1011,7 +1018,7 @@ function include(name) {
 if (!name || count++ >= 64) return;
 var rootName = name.split(".")[0];
 if (has(scope, name) || has(scope, rootName)) return;
-var exists = !!find(self, rootName).length || !!groupOf(rootName).length;
+var exists = !!find(self, rootName).length || !!namedFields(self, rootName).length;
 if (!exists) {
 try { exists = new URLSearchParams(location.search).has(name); } catch (e) {}
 }
@@ -1082,17 +1089,22 @@ break;
 case "set-value":
 setValue(self, st.target, resolve(st.value, self, sc));
 break;
-case "set-enabled":
-(find(self, st.target).length ? find(self, st.target) : groupOf(st.target)).forEach(function (el) {
+case "set-enabled": {
+var targets = find(self, st.target);
+var controls = new Set(targets.length ? [] : namedFields(self, st.target));
+targets.forEach(function (el) {
 var ctl = el.matches("button") ? el : inputOf(el);
 if (!ctl) return;
-var list = ctl.type === "radio" && !isRadioItem(el, ctl) ? radiosOf(ctl) : [ctl];
-list.forEach(function (c) {
-c.disabled = st.op === "toggle" ? !c.disabled : st.op === "disable";
+if (ctl.type === "radio" && !isRadioItem(el, ctl)) {
+radiosOf(ctl).forEach(function (c) { controls.add(c); });
+} else controls.add(ctl);
 });
+controls.forEach(function (c) {
+c.disabled = st.op === "toggle" ? !c.disabled : st.op === "disable";
 });
 refreshLive();
 break;
+}
 case "list-display": {
 if (!st.array) break;
 if (st.mode === "filter") {

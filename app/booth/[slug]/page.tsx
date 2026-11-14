@@ -172,7 +172,7 @@ export default async function Page({
         height={1101}
         className="svg-331"
       />
-      <section className="el-1825">
+      <section className="el-1824">
         <h1 className="text-498">
           {interpolate("{_1.name}", vars)}
         </h1>
@@ -200,10 +200,10 @@ export default async function Page({
           {interpolate("{_1.exhibitorName}", vars)}
         </h2>
       </section>
-      <section className="el-1840">
+      <section className="el-1839">
         <div className="box-746">
           <div className="box-721">
-            <div className="el-1826">
+            <div className="el-1825">
               <div className="box-709">
                 <p className="text-500">
                   {interpolate("{_1.customAnswers.皆さまへ}", vars)}
@@ -214,7 +214,7 @@ export default async function Page({
                 <div className="box-708" />
               </div>
             </div>
-            <div className="el-1828">
+            <div className="el-1827">
               <div className="icon-6">
                 <div className="box-711">
                   <div className="box-710">
@@ -261,13 +261,13 @@ export default async function Page({
                       alt="どこで"
                       width={50}
                       height={71}
-                      className="png-92"
+                      className="png-91"
                     />
                     <h2 className="text-504">
                       {interpolate("{_1.location}", vars)}
                     </h2>
                   </div>
-                  <SmartLink href={safeNavigationUrl(interpolateUrl("https://map.matsufes.info/?id={_1.publicId}", vars))} className="el-1827">
+                  <SmartLink href={safeNavigationUrl(interpolateUrl("https://map.matsufes.info/?id={_1.publicId}", vars))} className="el-1826">
                     <div className="box-718">
                       <Image
                         src="/assets/pasted-artwork-231.svg"
@@ -307,13 +307,13 @@ export default async function Page({
             </div>
           </div>
           <div className="box-722">
-            <div className="el-1831">
+            <div className="el-1830">
               {toItems(lookupVar(vars, "_7")).map((item, i) => {
                 const iv1 = { ...vars, ...item };
                 return (
                   <Fragment key={i}>
-                    <div className="el-1830">
-                      <p className="el-1829">
+                    <div className="el-1829">
+                      <p className="el-1828">
                         {interpolate("{値}", iv1)}
                       </p>
                     </div>
@@ -321,13 +321,13 @@ export default async function Page({
                 );
               })}
             </div>
-            <div className="el-1834">
+            <div className="el-1833">
               {toItems(lookupVar(vars, "_9")).map((item, i) => {
                 const iv2 = { ...vars, ...item };
                 return (
                   <Fragment key={i}>
-                    <div className="el-1833">
-                      <p className="el-1832">
+                    <div className="el-1832">
+                      <p className="el-1831">
                         {interpolate("{値}", iv2)}
                       </p>
                     </div>
@@ -335,9 +335,9 @@ export default async function Page({
                 );
               })}
             </div>
-            <div className="el-1837">
-              <div className="el-1836">
-                <p className="el-1835">
+            <div className="el-1836">
+              <div className="el-1835">
+                <p className="el-1834">
                   {interpolate("{_8}", vars)}
                 </p>
               </div>
@@ -351,7 +351,7 @@ export default async function Page({
                   alt=""
                   width={129}
                   height={129}
-                  className="el-1838"
+                  className="el-1837"
                 />
                 <div className="text-512">
                   {toItems(lookupVar(vars, "_a")).map((item, i) => {
@@ -373,7 +373,7 @@ export default async function Page({
                     alt=""
                     width={85}
                     height={108}
-                    className="png-93"
+                    className="png-92"
                   />
                   <h2 className="text-513">
                     {interpolate("{_1.location}", vars)}
@@ -382,13 +382,13 @@ export default async function Page({
               </div>
             </div>
             <div className="box-730">
-              <SmartLink href={safeNavigationUrl(interpolateUrl("https://map.matsufes.info/?id={_1.publicId}", vars))} className="el-1839">
+              <SmartLink href={safeNavigationUrl(interpolateUrl("https://map.matsufes.info/?id={_1.publicId}", vars))} className="el-1838">
                 <Image
                   src="/assets/image-4.png"
                   alt=""
                   width={300}
                   height={107}
-                  className="png-94"
+                  className="png-93"
                 />
                 <Image
                   src="/assets/pasted-artwork-228.svg"
@@ -436,25 +436,25 @@ export default async function Page({
             <div data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_5"},"op":"contains","value":{"inputRef":"_1.publicId","raw":lookupVar(vars, "_1.publicId") ?? null}},"then":[{"kind":"remove-list-item","list":"_5","mode":"value","value":{"inputRef":"_1.publicId","raw":lookupVar(vars, "_1.publicId") ?? null}},{"kind":"hide","target":"div-41"},{"kind":"show","target":"div-43"}],"else":[{"kind":"set-list-item","list":"_5","key":"","value":{"inputRef":"_1.publicId","raw":lookupVar(vars, "_1.publicId") ?? null}},{"kind":"hide","target":"div-43"},{"kind":"show","target":"div-41"}]},{"kind":"transform","source":"_5","into":"_4","transform":{"kind":"join","separator":"."}},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_4}", { ...vars, ...{"_4":"{_4}","\u0000keepEscapes":true} }),"shared":true}]}])} className="box-736">
               <div className="fav-3">
                 <div className="box-735">
-                  <div id="div-43" data-toggle-show="flex" className="el-2532">
+                  <div id="div-43" data-toggle-show="flex" className="el-2531">
                     <Image
                       src="/assets/pasted-artwork-443.svg"
                       alt=""
                       width={90}
                       height={93}
-                      className="svg-523"
+                      className="svg-522"
                     />
                     <p className="text-521">
                       {"お気に入り"}
                     </p>
                   </div>
-                  <div id="div-41" data-toggle-show="flex" className="el-2533">
+                  <div id="div-41" data-toggle-show="flex" className="el-2532">
                     <Image
                       src="/assets/pasted-artwork-443.svg"
                       alt=""
                       width={90}
                       height={93}
-                      className="svg-697"
+                      className="svg-696"
                     />
                     <p className="text-706">
                       {"登録済み"}
@@ -530,7 +530,7 @@ export default async function Page({
                 alt="一覧にもどるボタン"
                 width={300}
                 height={107}
-                className="png-95"
+                className="png-94"
               />
               <Image
                 src="/assets/pasted-artwork-231.svg"
@@ -565,8 +565,8 @@ export default async function Page({
           className="group-264-png-6"
         />
       </section>
-      <section data-inview className="el-1994">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1995">
+      <section data-inview className="el-1993">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1994">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -599,7 +599,7 @@ export default async function Page({
       </section>
       <section data-inview className="footer-21">
         <span
-          className="crisp-svg svg-698"
+          className="crisp-svg svg-697"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -610,7 +610,7 @@ export default async function Page({
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1996">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1995">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

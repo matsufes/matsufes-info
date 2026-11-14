@@ -22,7 +22,7 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2481"
+        className="el-2480"
       />
       <p className="box-50">
         <Image
@@ -52,7 +52,7 @@ export default function Page() {
             alt=""
             width={769}
             height={383}
-            className="el-2037"
+            className="el-2036"
           />
         </a>
         <Image
@@ -66,8 +66,8 @@ export default function Page() {
       <p className="box-152">
         {"アンケート回答後、スクリーンショットなどで画面を保存するのを忘れないでね。"}
       </p>
-      <section data-inview className="el-2009">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2010">
+      <section data-inview className="el-2008">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2009">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -100,7 +100,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-26">
         <span
-          className="crisp-svg svg-704"
+          className="crisp-svg svg-703"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -111,7 +111,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2011">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2010">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

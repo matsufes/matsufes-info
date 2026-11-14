@@ -24,7 +24,7 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2477"
+        className="el-2476"
       />
       <p className="box-870">
         <Image
@@ -72,8 +72,8 @@ export default function Page() {
           {"◇ 落とし物をしたり、発見した場合は本部までお越しください。\n\n◇ 迷子を見つけた場合、お連れの方が迷子になった場合は本部までお越しください。\n\n◇ 急病人を発見した場合は、お近くの実行委員までお知らせください。\n\n◇ 怪我や体調が優れない場合は、本部または保健管理センターまでお越しください。 "}
         </p>
       </section>
-      <section data-inview className="el-1997">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1998">
+      <section data-inview className="el-1996">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1997">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -106,7 +106,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-22">
         <span
-          className="crisp-svg svg-700"
+          className="crisp-svg svg-699"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -117,7 +117,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1999">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1998">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

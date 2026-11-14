@@ -24,7 +24,7 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2485"
+        className="el-2484"
       />
       <p className="box-836">
         <span
@@ -111,7 +111,7 @@ export default function Page() {
             alt=""
             width={1024}
             height={727}
-            className="el-1984"
+            className="el-1983"
           />
         </div>
         <div className="box-850">
@@ -120,7 +120,7 @@ export default function Page() {
             alt=""
             width={1438}
             height={1035}
-            className="el-1985"
+            className="el-1984"
           />
         </div>
         <div className="box-851">
@@ -149,12 +149,12 @@ export default function Page() {
             alt=""
             width={1021}
             height={574}
-            className="el-1986"
+            className="el-1985"
           />
         </div>
       </section>
-      <section data-inview className="el-2021">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2022">
+      <section data-inview className="el-2020">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2021">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -198,7 +198,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2023">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2022">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

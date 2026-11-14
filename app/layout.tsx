@@ -44,7 +44,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${zenmarugothic.variable} ${zenkakugothicnew.variable}`}>
         {children}
         <Script src="/inview.js?v=16qqctc" strategy="afterInteractive" />
-        <Script src="/scripts.js?v=1ubx9we" strategy="afterInteractive" />
+        <Script src="/scripts.js?v=93hbok" strategy="afterInteractive" />
       </body>
     </html>
   );
