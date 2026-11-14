@@ -8058,6 +8058,23 @@
       },
       "pageScripts": [
         {
+          "id": "sc_mwfo2flh75kk",
+          "trigger": "change",
+          "steps": [
+            {
+              "id": "st_mwfo2qbn88e6",
+              "kind": "set-var",
+              "value": "{dataの件数}",
+              "into": "dataの件数"
+            }
+          ],
+          "pos": {
+            "x": 1311,
+            "y": 2899
+          },
+          "changeVariable": "data"
+        },
+        {
           "id": "sc_mv70adir9",
           "trigger": "load",
           "steps": [
@@ -330053,7 +330070,7 @@
               "into": "mf_bookmarks",
               "transform": {
                 "kind": "join",
-                "separator": " ."
+                "separator": "."
               }
             },
             {

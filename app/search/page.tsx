@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { fetchPublic, readTextLimited } from "@/lib/safe-fetch";
-import { evaluateValueRecipe as __evalValueRecipe } from "@/lib/value-recipe";
 import { cache } from "react";
 import Link from "next/link";
 import SmartLink from "@/components/SmartLink";
@@ -32,20 +31,22 @@ function safeRequestOrigin(url: string, init?: string, origin?: string): boolean
 /** スクリプト「ページを開いたとき」のデータのブロックを上から順に実行する */
 async function loadData(vars: Vars) {
   vars["_0"] = await fetchJson(interpolateUrl("https://api.matsufes.info/data/web-info.json", vars));
-  vars["_1"] = lookupVar(vars, "_0.data") ?? null;
-  {
-    const result = __evalValueRecipe(lookupVar(vars, "_1"), [{"kind":"length"}], vars);
-    if (result.kind === "value") vars["_3"] = result.value;
-    else if (result.kind === "missing") vars["_3"] = undefined;
-  }
 }
 
-/** リストで並べる項目にする（オブジェクトはそのまま、文字や数値は {値} に入れる） */
-function toItems(v: unknown): Item[] {
-  if (!v || typeof v !== "object") return [];
-  return Object.values(v).map((x): Item =>
-    x && typeof x === "object" && !Array.isArray(x) ? x as Item : { ["値"]: x }
-  );
+/** ブラウザで並べるリストのお手本用: ページの変数に無い {名前} はそのまま残す */
+function templateVars(vars: Vars): Vars {
+  return new Proxy(vars, {
+    has: () => true,
+    // lookupVar deliberately reads only own keys. Expose virtual own-key
+    // descriptors for template placeholders without weakening JSON safety.
+    getOwnPropertyDescriptor: (t, k) => Reflect.getOwnPropertyDescriptor(t, k) ??
+      (typeof k === "string"
+        ? { configurable: true, enumerable: false, writable: true, value: "{" + k + "}" }
+        : undefined),
+    // 文字としての「{」は「\{」のまま残し、複製するときに置き換える
+    get: (t, k) =>
+      typeof k !== "string" ? undefined : k === "\u0000keepEscapes" ? true : k in t ? t[k] : `{${k}}`,
+  });
 }
 
 export const metadata: Metadata = {
@@ -105,7 +106,7 @@ export default async function Page() {
   vars["まつぴよ-p"] = "公式メンバ〜「まつぴよ」";
   return (
     <>
-      <span hidden data-page-body="page_mwefqpvo1m40u4" data-scripts={"[{\"trigger\":\"load\",\"steps\":[{\"kind\":\"store-load\",\"key\":\"mf_bookmarks\",\"into\":\"_4\",\"shared\":true},{\"kind\":\"transform\",\"source\":\"_4\",\"into\":\"_5\",\"transform\":{\"kind\":\"split\",\"separator\":\".\"}},{\"kind\":\"list-display\",\"mode\":\"sort\",\"array\":\"_1\",\"field\":\"publicId\",\"dir\":\"asc\"}]}]"} />
+      <span hidden data-page-body="page_mwefqpvo1m40u4" data-scripts={JSON.stringify([{"trigger":"change","steps":[{"kind":"set-var","into":"_3","value":interpolate("{_3}", { ...vars, ...{"_3":"{_3}","\u0000keepEscapes":true} })}],"changeVariable":"_1"},{"trigger":"load","steps":[{"kind":"store-load","key":"mf_bookmarks","into":"_4","shared":true},{"kind":"transform","source":"_4","into":"_5","transform":{"kind":"split","separator":"."}},{"kind":"set-var","into":"_1","raw":lookupVar(vars, "_0.data") ?? null},{"kind":"transform","source":"_1","into":"_3","transform":{"kind":"length"}},{"kind":"list-display","mode":"sort","array":"_1","field":"publicId","dir":"asc"}]}])} />
       <Image data-inview
         src="/assets/image.png"
         alt=""
@@ -1139,127 +1140,126 @@ export default async function Page() {
           </div>
           <div className="box-1055">
             <div className="box-1041">
-              <p className="text-695">
+              <p className="text-695" data-live={interpolate("{_3}件の出展が見つかりました", { ...vars, ...{"_3":"{_3}","\u0000keepEscapes":true} })}>
                 {interpolate("{_3}件の出展が見つかりました", vars)}
               </p>
             </div>
             <div className="box-1054">
-              <div data-array="_1" className="el-2405">
-                {toItems(lookupVar(vars, "_1")).map((item, i) => {
-                  const iv0 = { ...vars, ...item };
-                  return (
-                    <div key={i} style={{ display: "contents" }} data-row data-item={JSON.stringify({ "name": (Object.prototype.hasOwnProperty.call(item, "name") ? item["name"] : undefined), "exhibitorName": (Object.prototype.hasOwnProperty.call(item, "exhibitorName") ? item["exhibitorName"] : undefined), "tags": (Object.prototype.hasOwnProperty.call(item, "tags") ? item["tags"] : undefined), "customAnswers.中分類": lookupVar(item, "customAnswers.中分類"), "searchWords": (Object.prototype.hasOwnProperty.call(item, "searchWords") ? item["searchWords"] : undefined), "place": (Object.prototype.hasOwnProperty.call(item, "place") ? item["place"] : undefined), "categories.出展カテゴリ": lookupVar(item, "categories.出展カテゴリ"), "businessHours": (Object.prototype.hasOwnProperty.call(item, "businessHours") ? item["businessHours"] : undefined), "venue": (Object.prototype.hasOwnProperty.call(item, "venue") ? item["venue"] : undefined), "categories.大分類": lookupVar(item, "categories.大分類"), "publicId": (Object.prototype.hasOwnProperty.call(item, "publicId") ? item["publicId"] : undefined) })}>
-                      <SmartLink href={safeNavigationUrl(interpolateUrl("/booth/{publicId}", iv0))} className="el-2404">
-                        <div className="box-1042">
-                          <p className="text-696">
-                            {interpolate("{name}", iv0)}
-                          </p>
-                          <div data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_5"},"op":"contains","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null}},"then":[{"kind":"set-list-item","list":"_5","key":"","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null}},{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}],"else":[{"kind":"remove-list-item","list":"_5","mode":"value","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null}},{"kind":"show","target":"fav-on"},{"kind":"hide","target":"fav-off"}]},{"kind":"transform","source":"_5","into":"_4","transform":{"kind":"join","separator":" ."}},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_4}", { ...iv0, ...{"_4":"{_4}","\u0000keepEscapes":true} }),"shared":true}]},{"trigger":"load","steps":[{"kind":"if","cond":{"subject":"var","target":"","op":"contains","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null},"left":{"inputRef":"_5"}},"then":[{"kind":"show","target":"fav-on"},{"kind":"hide","target":"fav-off"}],"else":[{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}]}]}])} className="el-2402">
-                            <Image id="fav-on" data-toggle-show="block"
-                              src="/assets/bkonn.svg"
-                              alt="お気に入り登録済"
-                              width={35}
-                              height={34}
-                              className="bkonn-svg-4"
-                              preload
-                              fetchPriority="high"
-                            />
-                            <Image id="fav-off" data-toggle-show="block"
-                              src="/assets/bkoff2.svg"
-                              alt="お気に入り未登録"
-                              width={35}
-                              height={34}
-                              className="bkoff2-svg-4"
-                            />
-                          </div>
-                        </div>
-                        <span
-                          className="crisp-svg el-2403"
-                          style={{ ["--crisp-svg-width"]: "307px", ["--crisp-svg-ratio"]: "307 / 17" } as import("react").CSSProperties}
-                        >
-                          <svg aria-hidden="true" width={307} height={17} viewBox="0 0 307 17" />
-                          <Image
-                            src="/assets/1.svg"
-                            alt=""
-                            width={614}
-                            height={34}
-                          />
-                        </span>
-                        <p className="text-697">
-                          {interpolate("{exhibitorName}", iv0)}
+              <div data-array="_1" data-client-list className="el-2405">
+                <div data-tpl hidden style={{ display: "none" }}>
+                  {((iv0: Vars) => (
+                    <>
+                    <SmartLink href={safeNavigationUrl(interpolateUrl("/booth/{publicId}", iv0))} className="el-2404" data-href-parts={JSON.stringify(["/booth/", { name: "publicId", at: 7, ...(Object.prototype.hasOwnProperty.call(iv0, "publicId") || Object.prototype.hasOwnProperty.call(iv0, "publicId") ? { fallback: interpolate("{publicId}", { ...iv0 }) } : {}) }, ""])}>
+                      <div className="box-1042">
+                        <p className="text-696" data-text-parts={JSON.stringify(["", { name: "name", ...(Object.prototype.hasOwnProperty.call(iv0, "name") || Object.prototype.hasOwnProperty.call(iv0, "name") ? { fallback: interpolate("{name}", { ...iv0 }) } : {}) }, ""])}>
+                          {interpolate("{name}", iv0)}
                         </p>
-                        <div className="box-1053">
-                          <div className="box-1044">
-                            <div className="box-1043">
-                              <Image
-                                src={interpolate("{imageUrl}", iv0) || "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"}
-                                alt=""
-                                width={1024}
-                                height={1024}
-                                className="image-21"
-                              />
-                              <p className="text-698">
-                                {"No Image"}
+                        <div data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_5","rawRef":{ name: "_5" }},"op":"contains","value":{"inputRef":"publicId","rawRef":{ name: "publicId", ...(Object.prototype.hasOwnProperty.call(iv0, "publicId") || Object.prototype.hasOwnProperty.call(iv0, "publicId") ? { fallback: lookupVar({ ...iv0 }, "publicId") ?? null } : {}) }}},"then":[{"kind":"set-list-item","list":"_5","key":"","value":{"inputRef":"publicId","rawRef":{ name: "publicId", ...(Object.prototype.hasOwnProperty.call(iv0, "publicId") || Object.prototype.hasOwnProperty.call(iv0, "publicId") ? { fallback: lookupVar({ ...iv0 }, "publicId") ?? null } : {}) }}},{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}],"else":[{"kind":"remove-list-item","list":"_5","mode":"value","value":{"inputRef":"publicId","rawRef":{ name: "publicId", ...(Object.prototype.hasOwnProperty.call(iv0, "publicId") || Object.prototype.hasOwnProperty.call(iv0, "publicId") ? { fallback: lookupVar({ ...iv0 }, "publicId") ?? null } : {}) }}},{"kind":"show","target":"fav-on"},{"kind":"hide","target":"fav-off"}]},{"kind":"transform","source":"_5","into":"_4","transform":{"kind":"join","separator":"."},"rawRef":{ name: "_5" }},{"kind":"store-save","key":"mf_bookmarks","value":{ scriptParts: ["", { name: "_4" }, ""] },"shared":true}]},{"trigger":"load","steps":[{"kind":"if","cond":{"subject":"var","target":"","op":"contains","value":{"inputRef":"publicId","rawRef":{ name: "publicId", ...(Object.prototype.hasOwnProperty.call(iv0, "publicId") || Object.prototype.hasOwnProperty.call(iv0, "publicId") ? { fallback: lookupVar({ ...iv0 }, "publicId") ?? null } : {}) }},"left":{"inputRef":"_5","rawRef":{ name: "_5" }}},"then":[{"kind":"show","target":"fav-on"},{"kind":"hide","target":"fav-off"}],"else":[{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}]}]}])} className="el-2402">
+                          <Image id="fav-on" data-toggle-show="block"
+                            src="/assets/bkonn.svg"
+                            alt="お気に入り登録済"
+                            width={35}
+                            height={34}
+                            className="bkonn-svg-4"
+                            preload
+                            fetchPriority="high"
+                          />
+                          <Image id="fav-off" data-toggle-show="block"
+                            src="/assets/bkoff2.svg"
+                            alt="お気に入り未登録"
+                            width={35}
+                            height={34}
+                            className="bkoff2-svg-4"
+                          />
+                        </div>
+                      </div>
+                      <span
+                        className="crisp-svg el-2403"
+                        style={{ ["--crisp-svg-width"]: "307px", ["--crisp-svg-ratio"]: "307 / 17" } as import("react").CSSProperties}
+                      >
+                        <svg aria-hidden="true" width={307} height={17} viewBox="0 0 307 17" />
+                        <Image
+                          src="/assets/1.svg"
+                          alt=""
+                          width={614}
+                          height={34}
+                        />
+                      </span>
+                      <p className="text-697" data-text-parts={JSON.stringify(["", { name: "exhibitorName", ...(Object.prototype.hasOwnProperty.call(iv0, "exhibitorName") || Object.prototype.hasOwnProperty.call(iv0, "exhibitorName") ? { fallback: interpolate("{exhibitorName}", { ...iv0 }) } : {}) }, ""])}>
+                        {interpolate("{exhibitorName}", iv0)}
+                      </p>
+                      <div className="box-1053">
+                        <div className="box-1044">
+                          <div className="box-1043">
+                            <Image
+                              src={interpolate("{imageUrl}", iv0) || "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"} data-image-src-parts={JSON.stringify(["", { name: "imageUrl", ...(Object.prototype.hasOwnProperty.call(iv0, "imageUrl") || Object.prototype.hasOwnProperty.call(iv0, "imageUrl") ? { fallback: interpolate("{imageUrl}", { ...iv0 }) } : {}) }, ""])}
+                              alt=""
+                              width={1024}
+                              height={1024}
+                              className="image-21"
+                            />
+                            <p className="text-698">
+                              {"No Image"}
+                            </p>
+                          </div>
+                        </div>
+                        <div className="box-1052">
+                          <div className="box-1045">
+                            <Image
+                              src="/assets/Vector-4.svg"
+                              alt=""
+                              width={15}
+                              height={15}
+                              className="vector-4-svg-3"
+                            />
+                            <p className="text-699" data-text-parts={JSON.stringify(["", { name: "customAnswers.皆さまへ", ...(Object.prototype.hasOwnProperty.call(iv0, "customAnswers.皆さまへ") || Object.prototype.hasOwnProperty.call(iv0, "customAnswers") ? { fallback: interpolate("{customAnswers.皆さまへ}", { ...iv0 }) } : {}) }, ""])}>
+                              {interpolate("{customAnswers.皆さまへ}", iv0)}
+                            </p>
+                          </div>
+                          <div className="box-1046">
+                            <Image
+                              src="/assets/Group-244.svg"
+                              alt=""
+                              width={13}
+                              height={20}
+                              className="group-244-svg-3"
+                            />
+                            <p className="text-700" data-text-parts={JSON.stringify(["", { name: "location", ...(Object.prototype.hasOwnProperty.call(iv0, "location") || Object.prototype.hasOwnProperty.call(iv0, "location") ? { fallback: interpolate("{location}", { ...iv0 }) } : {}) }, ""])}>
+                              {interpolate("{location}", iv0)}
+                            </p>
+                          </div>
+                          <div className="box-1048">
+                            <div className="box-1047">
+                              <p className="text-701" data-text-parts={JSON.stringify(["", { name: "categories.投票カテゴリ.0", ...(Object.prototype.hasOwnProperty.call(iv0, "categories.投票カテゴリ.0") || Object.prototype.hasOwnProperty.call(iv0, "categories") ? { fallback: interpolate("{categories.投票カテゴリ.0}", { ...iv0 }) } : {}) }, ""])}>
+                                {interpolate("{categories.投票カテゴリ.0}", iv0)}
                               </p>
                             </div>
                           </div>
-                          <div className="box-1052">
-                            <div className="box-1045">
-                              <Image
-                                src="/assets/Vector-4.svg"
-                                alt=""
-                                width={15}
-                                height={15}
-                                className="vector-4-svg-3"
-                              />
-                              <p className="text-699">
-                                {interpolate("{customAnswers.皆さまへ}", iv0)}
+                          <div className="box-1051">
+                            <div className="box-1049">
+                              <p className="text-702" data-text-parts={JSON.stringify(["", { name: "categories.大分類.0", ...(Object.prototype.hasOwnProperty.call(iv0, "categories.大分類.0") || Object.prototype.hasOwnProperty.call(iv0, "categories") ? { fallback: interpolate("{categories.大分類.0}", { ...iv0 }) } : {}) }, ""])}>
+                                {interpolate("{categories.大分類.0}", iv0)}
                               </p>
                             </div>
-                            <div className="box-1046">
-                              <Image
-                                src="/assets/Group-244.svg"
-                                alt=""
-                                width={13}
-                                height={20}
-                                className="group-244-svg-3"
-                              />
-                              <p className="text-700">
-                                {interpolate("{location}", iv0)}
+                            <div className="box-1050">
+                              <p className="text-703" data-text-parts={JSON.stringify(["", { name: "customAnswers.中分類", ...(Object.prototype.hasOwnProperty.call(iv0, "customAnswers.中分類") || Object.prototype.hasOwnProperty.call(iv0, "customAnswers") ? { fallback: interpolate("{customAnswers.中分類}", { ...iv0 }) } : {}) }, ""])}>
+                                {interpolate("{customAnswers.中分類}", iv0)}
                               </p>
-                            </div>
-                            <div className="box-1048">
-                              <div className="box-1047">
-                                <p className="text-701">
-                                  {interpolate("{categories.投票カテゴリ.0}", iv0)}
-                                </p>
-                              </div>
-                            </div>
-                            <div className="box-1051">
-                              <div className="box-1049">
-                                <p className="text-702">
-                                  {interpolate("{categories.大分類.0}", iv0)}
-                                </p>
-                              </div>
-                              <div className="box-1050">
-                                <p className="text-703">
-                                  {interpolate("{customAnswers.中分類}", iv0)}
-                                </p>
-                              </div>
                             </div>
                           </div>
                         </div>
-                        <Image
-                          src="/assets/frame.png"
-                          alt=""
-                          width={750}
-                          height={468}
-                          className="frame-png-4"
-                        />
-                      </SmartLink>
-                    </div>
-                  );
-                })}
+                      </div>
+                      <Image
+                        src="/assets/frame.png"
+                        alt=""
+                        width={750}
+                        height={468}
+                        className="frame-png-4"
+                      />
+                    </SmartLink>
+                    </>
+                  ))(templateVars(vars))}
+                </div>
               </div>
             </div>
           </div>

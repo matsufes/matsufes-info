@@ -329,6 +329,7 @@ pageSeeds = seedData;
 if (pageId !== null) {
 vars = Object.create(null);
 if (changed) seen = new WeakSet();
+rendered = new WeakSet();
 filters.clear();
 sorts.clear();
 }
@@ -439,9 +440,25 @@ var name = ref.name, head = name.split(".")[0];
 if (item && (has(item, name) || has(item, head))) {
 return has(item, name) ? item[name] : dig(item, name);
 }
+var row = self && self.closest && self.closest("[data-row]");
+var scope = row && rowScopes.get(row);
+if (scope && (has(scope, name) || has(scope, head))) {
+return has(scope, name) ? scope[name] : dig(scope, name);
+}
 return has(ref, "fallback") ? ref.fallback : lookup(name, self, item);
 }
+function scriptExpression(s, self, item, mode) {
+var offset = 0;
+return s.scriptParts.map(function (part) {
+if (typeof part === "string") { offset += part.length; return part; }
+var v = text(scriptReference(part, self, item)), at = offset++;
+if (mode !== "url") return v;
+return at === 0 && (/^(?:https?:|mailto:|tel:|data:image\/(?:png|jpe?g|gif|webp|avif|bmp|x-icon|vnd\.microsoft\.icon)[;,])/i.test(v) || (v.charAt(0) === "/" && v.charAt(1) !== "/") || v.charAt(0) === "#")
+? v : encodeURIComponent(v);
+}).join("");
+}
 function resolve(s, self, item) {
+if (s && Array.isArray(s.scriptParts)) return scriptExpression(s, self, item, "text");
 var source;
 try { source = String(s == null ? "" : s); } catch (e) { return ""; }
 return source.replace(/\\\{|\{([^{}\s"'<>`]+)\}/g, function (m, k) {
@@ -450,6 +467,7 @@ return text(lookup(k.trim(), self, item));
 });
 }
 function resolveUrl(s, self, item) {
+if (s && Array.isArray(s.scriptParts)) return scriptExpression(s, self, item, "url");
 var source;
 try { source = String(s == null ? "" : s); } catch (e) { return ""; }
 return source.replace(
@@ -472,9 +490,69 @@ return at === 0 && (/^(?:https?:|mailto:|tel:|data:image\/(?:png|jpe?g|gif|webp|
 }
 );
 }
+function refreshLive() {
+root.querySelectorAll("[data-live]").forEach(function (el) {
+if (inTpl(el)) return;
+var t = el.firstChild;
+if (!t || t.nodeType !== 3) {
+t = document.createTextNode("");
+el.insertBefore(t, el.firstChild);
+}
+var next = resolve(el.getAttribute("data-live"), el);
+if (t.nodeValue !== next) t.nodeValue = next;
+});
+root.querySelectorAll("[data-live-placeholder]").forEach(function (el) {
+if (inTpl(el)) return;
+el.placeholder = resolve(el.getAttribute("data-live-placeholder"), el);
+});
+var liveValues = Array.prototype.slice.call(root.querySelectorAll("[data-live-value]"));
+liveValues.sort(function (a, b) {
+return Number(b.tagName === "OPTION") - Number(a.tagName === "OPTION");
+});
+liveValues.forEach(function (el) {
+if (inTpl(el) || el.hasAttribute("data-edited")) return;
+var nv = resolve(el.getAttribute("data-live-value"), el);
+if (el.value !== nv) el.value = nv;
+});
+["text", "placeholder", "value"].forEach(function (name) {
+var fieldNodes = Array.prototype.slice.call(root.querySelectorAll("[data-field-" + name + "-parts]"));
+if (name === "value") fieldNodes.sort(function (a, b) {
+return Number(b.tagName === "OPTION") - Number(a.tagName === "OPTION");
+});
+fieldNodes.forEach(function (el) {
+if (inTpl(el)) return;
+var row = el.closest("[data-row]");
+fillFieldParts(el, row && rowScopes.get(row) || {}, false, name);
+});
+});
+}
+function onLiveInput(e) {
+if (e.isTrusted && e.target && e.target.setAttribute) e.target.setAttribute("data-edited", "");
+refreshLive();
+}
 function setVar(name, v, editingList) {
 if (typeof name !== "string" || !name || Object.is(getVar(name, missingVar), v)) return;
+var owner = root.querySelector("[data-page-body]");
+var watching = [];
+var changedRoot = name.split(".")[0];
+if (owner) parse(owner).forEach(function (s) {
+if (s.trigger !== "change" || typeof s.changeVariable !== "string" || !s.changeVariable) return;
+var watched = s.changeVariable;
+if (watched.split(".")[0] === changedRoot)
+watching.push({ script: s, name: watched, before: getVar(watched) });
+});
 if (!writeVar(name, v, editingList)) return;
+refreshLive();
+var rk = name.split(".")[0];
+root.querySelectorAll("[data-client-list]").forEach(function (list) {
+var a = list.getAttribute("data-array") || "";
+if (a === name || a.indexOf(name + ".") === 0 || a === rk || a.indexOf(rk + ".") === 0) renderList(list);
+});
+watching.forEach(function (entry) {
+if (Object.is(entry.before, getVar(entry.name)) ||
+!alive || owner !== root.querySelector("[data-page-body]")) return;
+runTriggered(entry.script.steps, owner, entry.script, currentCause);
+});
 }
 function readInput(raw, self, scope) {
 if (raw && typeof raw.inputRef === "string") {
@@ -622,6 +700,10 @@ list.appendChild(r.w);
 }
 function relist(name) {
 listsOf(name).forEach(function (list) {
+if (list.hasAttribute("data-client-list")) {
+renderList(list);
+return;
+}
 applySort(list);
 applyFilters(list);
 });
@@ -641,6 +723,226 @@ root.querySelectorAll('[data-array="' + CSS.escape(name) + '"]')
 } catch (e) {
 return [];
 }
+}
+var toListItem = (function ek(e){return null===e||"object"!=typeof e||Array.isArray(e)?{値:e}:e});
+var rendered = new WeakSet();
+var rowScopes = new WeakMap();
+function listJson(list, name, fallback) {
+try { return JSON.parse(list.getAttribute(name)) || fallback; } catch (e) { return fallback; }
+}
+function fillScriptJson(v, item) {
+function fillValue(value) {
+if (typeof value === "string") return JSON.parse(fillJson(JSON.stringify(value), item));
+if (!value || typeof value !== "object") return value;
+if (Array.isArray(value.scriptParts)) return value;
+if (Array.isArray(value)) return value.map(fillValue);
+var out = Object.create(null);
+Object.keys(value).forEach(function (key) {
+out[key] = (key === "rawRef" || key === "transform" || key === "raw") ? value[key] : fillValue(value[key]);
+});
+return out;
+}
+try { return JSON.stringify(fillValue(JSON.parse(v))); } catch (e) { return v; }
+}
+function fillJson(v, item) {
+return v
+.replace(/\\\\\{|\{([^{}\s"'<>`]+)\}/g, function (m, k) {
+if (k == null) return m;
+return JSON.stringify(text(lookup(k.trim(), null, item))).slice(1, -1);
+})
+.replace(/%7B(.*?)%7D/gi, function (m, b, at, all) {
+try {
+var k = decodeURIComponent(b).trim();
+if (!/^[^{}\s"'<>`]+$/.test(k)) return m;
+var v = text(lookup(k, null, item));
+if (all.charAt(at - 1) === '"' && (/^(?:https?:|mailto:|tel:|data:image\/(?:png|jpe?g|gif|webp|avif|bmp|x-icon|vnd\.microsoft\.icon)[;,])/i.test(v) || (v.charAt(0) === "/" && v.charAt(1) !== "/") || v.charAt(0) === "#")) {
+return JSON.stringify(v).slice(1, -1);
+}
+return encodeURIComponent(v);
+} catch (e) {
+return m;
+}
+});
+}
+function fillFieldParts(n, item, initial, only) {
+["min", "max", "step", "accept", "placeholder", "text", "value"].forEach(function (name) {
+if (only && name !== only) return;
+var attr = "data-field-" + name + "-parts";
+if (!n.hasAttribute(attr)) return;
+var parts = listJson(n, attr, []);
+if (!initial && (!parts.some(function (p) { return p && p.live; }) || (name === "value" && n.hasAttribute("data-edited")))) return;
+var value = parts.map(function (p) {
+if (typeof p === "string") return p;
+if (has(item, p.name) || has(item, p.name.split(".")[0])) return text(has(item, p.name) ? item[p.name] : dig(item, p.name));
+return p.live || !has(p, "fallback") ? text(lookup(p.name, n, item)) : p.fallback;
+}).join("");
+if (name === "text") {
+if (n.textContent !== value) n.textContent = value;
+} else if (name === "value") {
+if (initial && n.tagName === "SELECT") {
+var options = Array.prototype.slice.call(n.options), found = options.findIndex(function (o) { return o.value === value; });
+var selected = found < 0 ? (options.length ? 0 : -1) : found;
+options.forEach(function (o, i) { o.defaultSelected = i === selected; });
+n.selectedIndex = selected;
+} else {
+if (initial) n.defaultValue = value;
+if (n.value !== value) n.value = value;
+}
+} else if (n.getAttribute(name) !== value) n.setAttribute(name, value);
+});
+}
+function fill(n, item) {
+if (n.nodeType === 3) {
+if (n.nodeValue.indexOf("{") >= 0) n.nodeValue = resolve(n.nodeValue, null, item);
+return;
+}
+if (n.nodeType !== 1 || n.hasAttribute("data-tpl")) return;
+Array.prototype.slice.call(n.attributes).forEach(function (a) {
+if ((a.name === "alt" && n.tagName === "IMG") ||
+(a.name === "src" && (n.tagName === "AUDIO" || n.tagName === "VIDEO" || n.tagName === "IFRAME"))) return;
+if (a.name.indexOf("data-field-") === 0 || n.hasAttribute("data-field-" + a.name + "-parts") ||
+a.name === "data-list-ops" || a.name === "data-text-parts" || a.name === "data-href-parts" || a.name === "data-image-src-parts" ||
+(a.name === "href" && n.hasAttribute("data-href-parts")) ||
+(a.name === "src" && n.hasAttribute("data-image-src-parts"))) return;
+var v = a.value;
+if (v.indexOf("{") < 0 && !/%7B/i.test(v)) return;
+n.setAttribute(
+a.name,
+a.name === "data-scripts"
+? fillScriptJson(v, item)
+: a.name === "href"
+? safeNavigationUrl(resolveUrl(v, null, item))
+: a.name === "src"
+? resolve(v, null, item) || "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+: resolve(v, null, item)
+);
+});
+if (n.hasAttribute("data-href-parts")) {
+var href = listJson(n, "data-href-parts", []).map(function (part) {
+if (typeof part === "string") return part;
+var v = has(item, part.name) || has(item, part.name.split(".")[0])
+? text(has(item, part.name) ? item[part.name] : dig(item, part.name))
+: has(part, "fallback") ? part.fallback : text(lookup(part.name, null, item));
+if (part.at === 0 && (/^(?:https?:|mailto:|tel:|data:image\/(?:png|jpe?g|gif|webp|avif|bmp|x-icon|vnd\.microsoft\.icon)[;,])/i.test(v) || (v.charAt(0) === "/" && v.charAt(1) !== "/") || v.charAt(0) === "#")) return v;
+return encodeURIComponent(v);
+}).join("");
+n.setAttribute("href", safeNavigationUrl(href));
+}
+if (n.hasAttribute("data-image-src-parts")) {
+var src = listJson(n, "data-image-src-parts", []).map(function (part) {
+if (typeof part === "string") return part;
+if (has(item, part.name) || has(item, part.name.split(".")[0])) {
+return text(has(item, part.name) ? item[part.name] : dig(item, part.name));
+}
+return has(part, "fallback") ? part.fallback : text(lookup(part.name, null, item));
+}).join("");
+n.setAttribute("src", src || "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+}
+if (n.hasAttribute("data-raw")) return;
+var ownText = null;
+if (n.hasAttribute("data-text-parts")) {
+var value = listJson(n, "data-text-parts", []).map(function (part) {
+if (typeof part === "string") return part;
+if (has(item, part.name) || has(item, part.name.split(".")[0])) {
+return text(has(item, part.name) ? item[part.name] : dig(item, part.name));
+}
+return has(part, "fallback") ? part.fallback : text(lookup(part.name, null, item));
+}).join("");
+ownText = n.firstChild;
+if (!ownText || ownText.nodeType !== 3) {
+ownText = document.createTextNode("");
+if (n.firstChild) n.insertBefore(ownText, n.firstChild);
+else n.appendChild(ownText);
+}
+ownText.nodeValue = value;
+}
+if (!n.hasAttribute("data-field-text-parts") && !(n.tagName === "TEXTAREA" && n.hasAttribute("data-field-value-parts"))) {
+for (var c = n.firstChild; c; c = c.nextSibling) if (c !== ownText) fill(c, item);
+}
+fillFieldParts(n, item, true);
+}
+function renderList(list) {
+if (inTpl(list) || !root.contains(list)) return;
+rendered.add(list);
+var tpl = null, fallback = null;
+Array.prototype.slice.call(list.children).forEach(function (c) {
+if (c.hasAttribute("data-row")) list.removeChild(c);
+else if (c.hasAttribute("data-list-fallback")) fallback = c;
+else if (c.hasAttribute("data-tpl")) tpl = c;
+});
+if (!tpl) return;
+var parentRow = list.parentElement && list.parentElement.closest("[data-row]");
+var parentScope = parentRow && rowScopes.get(parentRow) || {};
+var scope = merged(vars, parentScope);
+var name = list.getAttribute("data-array") || "";
+var value = has(scope, name) ? scope[name] : dig(scope, name);
+if (!has(scope, name) && !has(scope, name.split(".")[0]) && fallback) {
+Array.prototype.forEach.call(fallback.children, function (row) { list.appendChild(row.cloneNode(true)); });
+applySort(list);
+applyFilters(list);
+return;
+}
+var items = pageListRows ? pageListRows(value, name, scope) :
+value && typeof value === "object" ? Object.values(value).map(toListItem) : [];
+var ops = listJson(list, "data-list-ops", []);
+var baseFilters = ops.filter(function (op) { return op.kind === "filter"; }).map(function (op) {
+return { join: op.join, conds: op.conds.map(function (c) {
+function resolve(part) {
+if (typeof part === "string") return part;
+if (has(parentScope, part.name) || has(parentScope, part.name.split(".")[0])) {
+var own = has(parentScope, part.name) ? parentScope[part.name] : dig(parentScope, part.name);
+return c.raw ? own : text(own);
+}
+if (has(part, "fallback")) return part.fallback;
+var value = lookup(part.name, null, parentScope);
+return c.raw ? value : text(value);
+}
+return { field: c.field, op: c.op, and: c.and, not: c.not,
+value: c.raw ? resolve(c.parts[0]) : parseValueLiteral(c.parts.map(resolve).join("")) };
+}) };
+});
+items = items.filter(function (x) { return passes(baseFilters, x); });
+ops.forEach(function (op) {
+if (op.kind !== "sort") return;
+items.sort(function (a, b) { return order(fieldOf(a, op.field), fieldOf(b, op.field)) * (op.dir === "desc" ? -1 : 1); });
+});
+var fs = filters.get(name) || [];
+items = items.filter(function (x) {
+return passes(fs, x);
+});
+var so = sorts.get(name);
+if (so) {
+var sd = so.dir === "desc" ? -1 : 1;
+items = items
+.map(function (x, i) {
+return { x: x, i: i };
+})
+.sort(function (a, b) {
+return order(fieldOf(a.x, so.field), fieldOf(b.x, so.field)) * sd || a.i - b.i;
+})
+.map(function (r) {
+return r.x;
+});
+}
+var lim = Number(list.getAttribute("data-limit")) || 0;
+if (lim > 0) items = items.slice(0, lim);
+items.forEach(function (item) {
+var row = document.createElement("div");
+row.setAttribute("data-row", "");
+row.setAttribute("data-item", JSON.stringify(item));
+row.style.display = "contents";
+var itemScope = merged(parentScope, item);
+rowScopes.set(row, itemScope);
+Array.prototype.forEach.call(tpl.childNodes, function (c) {
+var copy = c.cloneNode(true);
+fill(copy, itemScope);
+row.appendChild(copy);
+});
+list.appendChild(row);
+row.querySelectorAll("[data-client-list]").forEach(function (child) {
+if (!inTpl(child) && !rendered.has(child)) renderList(child);
+});
+});
 }
 function setValue(self, id, v) {
 var els = find(self, id);
@@ -676,6 +978,7 @@ changed.push(input);
 });
 if ((select || scalar) && !changed.length) return;
 if (scalar) v = first.value;
+if (!changed.length) refreshLive();
 changed.forEach(function (input) {
 input.dispatchEvent(new Event("input", { bubbles: true }));
 input.dispatchEvent(new Event("change", { bubbles: true }));
@@ -788,6 +1091,7 @@ list.forEach(function (c) {
 c.disabled = st.op === "toggle" ? !c.disabled : st.op === "disable";
 });
 });
+refreshLive();
 break;
 case "list-display": {
 if (!st.array) break;
@@ -840,6 +1144,7 @@ setVar(st.into, st.serverValue);
 break;
 }
 if (inputValue === undefined && !localShadows) inputValue = getVar(st.source);
+if (inputValue === undefined && !shadowed && st.rawRef) inputValue = scriptReference(st.rawRef, self, sc);
 if (inputValue === undefined && !shadowed && "raw" in st) inputValue = st.raw;
 if (inputValue === undefined && !shadowed &&
 st.transform.kind !== "fallback")
@@ -886,6 +1191,10 @@ if (remaining !== undefined) setVar(st.list, remaining, true);
 break;
 }
 case "set-var": {
+if (st.rawRef) {
+setVar(st.into, scriptReference(st.rawRef, self, sc));
+break;
+}
 if ("raw" in st) {
 setVar(st.into, st.raw);
 break;
@@ -1122,6 +1431,10 @@ var seen = new WeakSet();
 function scan() {
 if (!alive) return;
 syncPage(true);
+refreshLive();
+root.querySelectorAll("[data-client-list]").forEach(function (list) {
+if (!rendered.has(list)) renderList(list);
+});
 if (sorts.size || filters.size) {
 root.querySelectorAll("[data-array]").forEach(function (list) {
 if (list.hasAttribute("data-client-list") || inTpl(list)) return;
@@ -1159,6 +1472,7 @@ root.addEventListener("click", onClick);
 root.addEventListener("mouseover", onOver);
 root.addEventListener("mouseout", onOut);
 root.addEventListener("input", onInput);
+root.addEventListener("input", onLiveInput);
 scan();
 return function dispose() {
 alive = false;
@@ -1175,6 +1489,7 @@ root.removeEventListener("click", onClick);
 root.removeEventListener("mouseover", onOver);
 root.removeEventListener("mouseout", onOut);
 root.removeEventListener("input", onInput);
+root.removeEventListener("input", onLiveInput);
 };
 },
 };
