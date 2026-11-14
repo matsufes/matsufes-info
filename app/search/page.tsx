@@ -190,9 +190,9 @@ export default async function Page() {
                 <a href="/navigation" id="地図-p" className="button-548">
                   {"地図からさがす"}
                 </a>
-                <Link href="/mypage" id="しおり-p" className="button-549">
+                <a href="https://map.matsufes.info/?bookmarks=1" id="しおり-p" className="button-549">
                   {"きみのしおり"}
-                </Link>
+                </a>
               </div>
               <p id="ご案内" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"goannai-phone\"}]}]"} className="el-2307">
                 {"ご案内"}
@@ -292,9 +292,9 @@ export default async function Page() {
                   <a href="/navigation" className="el-2325">
                     {"地図からさがす"}
                   </a>
-                  <Link href="/mypage" className="el-2326">
+                  <a href="https://map.matsufes.info/?bookmarks=1" className="el-2326">
                     {"きみのしおり"}
-                  </Link>
+                  </a>
                   <div id="menu1-5" className="el-2327" />
                 </div>
               </div>
@@ -1154,7 +1154,7 @@ export default async function Page() {
                           <p className="text-696">
                             {interpolate("{name}", iv0)}
                           </p>
-                          <div data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_5"},"op":"contains","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null}},"then":[{"kind":"set-list-item","list":"_5","key":"","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null}},{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}],"else":[{"kind":"set-list-item","list":"","key":"","value":""},{"kind":"remove-list-item","list":"","mode":"value","value":""},{"kind":"remove-list-item","list":"_5","mode":"value","value":""},{"kind":"transform","source":"_5","into":"_5","transform":{"kind":"field","key":""}}]}]},{"trigger":"load","steps":[{"kind":"if","cond":{"subject":"var","target":"","op":"contains","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null},"left":{"inputRef":"_5"}},"then":[{"kind":"show","target":"fav-on"},{"kind":"hide","target":"fav-off"}],"else":[{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}]}]}])} className="el-2402">
+                          <div data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_5"},"op":"contains","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null}},"then":[{"kind":"set-list-item","list":"_5","key":"","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null}},{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}],"else":[{"kind":"remove-list-item","list":"_5","mode":"value","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null}},{"kind":"show","target":"fav-on"},{"kind":"hide","target":"fav-off"}]},{"kind":"transform","source":"_5","into":"_4","transform":{"kind":"join","separator":" ."}},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_4}", { ...iv0, ...{"_4":"{_4}","\u0000keepEscapes":true} }),"shared":true}]},{"trigger":"load","steps":[{"kind":"if","cond":{"subject":"var","target":"","op":"contains","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null},"left":{"inputRef":"_5"}},"then":[{"kind":"show","target":"fav-on"},{"kind":"hide","target":"fav-off"}],"else":[{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}]}]}])} className="el-2402">
                             <Image id="fav-on" data-toggle-show="block"
                               src="/assets/bkonn.svg"
                               alt="お気に入り登録済"

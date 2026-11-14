@@ -317812,8 +317812,9 @@
         "heading": 0
       },
       "link": {
-        "kind": "page",
-        "pageId": "page_mu3wp199l",
+        "kind": "url",
+        "url": "https://map.matsufes.info/?bookmarks=1",
+        "newTab": false,
         "pos": {
           "x": 598,
           "y": 1211
@@ -319707,8 +319708,9 @@
         "heading": 0
       },
       "link": {
-        "kind": "page",
-        "pageId": "page_mv6alv245p",
+        "kind": "url",
+        "url": "https://map.matsufes.info/?bookmarks=1",
+        "newTab": false,
         "pos": {
           "x": 69,
           "y": 561
@@ -330026,37 +330028,40 @@
               ],
               "else": [
                 {
-                  "id": "st_mwd632w745rs",
-                  "kind": "set-list-item",
-                  "list": "",
-                  "key": "",
-                  "value": ""
-                },
-                {
-                  "id": "st_mwd62urm3raa",
-                  "kind": "remove-list-item",
-                  "list": "",
-                  "mode": "value",
-                  "value": ""
-                },
-                {
                   "id": "st_mwd61sd7263f",
                   "kind": "remove-list-item",
                   "list": "お気に入り",
                   "mode": "value",
-                  "value": ""
+                  "value": "{publicId}"
                 },
                 {
-                  "id": "st_mwd613q616dr",
-                  "kind": "transform",
-                  "source": "お気に入り",
-                  "into": "お気に入り",
-                  "transform": {
-                    "kind": "field",
-                    "key": ""
-                  }
+                  "id": "st_mwfnw96b2e1i",
+                  "kind": "show",
+                  "target": "fav-on"
+                },
+                {
+                  "id": "st_mwfnwjxb3vxd",
+                  "kind": "hide",
+                  "target": "fav-off"
                 }
               ]
+            },
+            {
+              "id": "st_mwfnwtri4z97",
+              "kind": "transform",
+              "source": "お気に入り",
+              "into": "mf_bookmarks",
+              "transform": {
+                "kind": "join",
+                "separator": " ."
+              }
+            },
+            {
+              "id": "st_mwfnx7d56rih",
+              "kind": "store-save",
+              "key": "mf_bookmarks",
+              "value": "{mf_bookmarks}",
+              "shared": true
             }
           ],
           "pos": {
