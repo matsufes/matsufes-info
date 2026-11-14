@@ -24,7 +24,7 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2479"
+        className="el-2478"
       />
       <p className="box-793">
         <Image
@@ -96,8 +96,8 @@ export default function Page() {
         />
       </section>
       <section className="box-805" />
-      <section data-inview className="el-2003">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2004">
+      <section data-inview className="el-2002">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2003">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -141,7 +141,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2005">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2004">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

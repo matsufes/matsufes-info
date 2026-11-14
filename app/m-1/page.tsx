@@ -24,7 +24,7 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2476"
+        className="el-2475"
       />
       <p className="box-892">
         <span
@@ -181,10 +181,10 @@ export default function Page() {
           </span>
         </div>
       </section>
-      <section className="el-2208">
+      <section className="el-2207">
         <input id="field" type="text" className="input-9" name="field" placeholder="ここに　言葉を　入力してみてね" />
       </section>
-      <section className="el-2209">
+      <section className="el-2208">
         <Image
           src="/assets/pasted-artwork-15.svg"
           alt=""
@@ -299,8 +299,8 @@ export default function Page() {
         </span>
       </p>
       <section className="box-912" />
-      <section data-inview className="el-2210">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2211">
+      <section data-inview className="el-2209">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2210">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -344,7 +344,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2212">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2211">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

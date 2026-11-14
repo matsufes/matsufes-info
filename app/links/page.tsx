@@ -24,7 +24,7 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2478"
+        className="el-2477"
       />
       <p className="box-777">
         <Image
@@ -68,7 +68,7 @@ export default function Page() {
             alt=""
             width={414}
             height={206}
-            className="el-2033"
+            className="el-2032"
           />
         </div>
       </section>
@@ -100,7 +100,7 @@ export default function Page() {
             alt=""
             width={414}
             height={206}
-            className="el-2034"
+            className="el-2033"
           />
         </div>
       </section>
@@ -132,7 +132,7 @@ export default function Page() {
             alt=""
             width={414}
             height={206}
-            className="el-2035"
+            className="el-2034"
           />
         </div>
       </section>
@@ -164,7 +164,7 @@ export default function Page() {
             alt=""
             width={414}
             height={206}
-            className="el-2036"
+            className="el-2035"
           />
         </div>
       </section>
@@ -177,8 +177,8 @@ export default function Page() {
           className="google4-2"
         />
       </section>
-      <section data-inview className="el-2000">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2001">
+      <section data-inview className="el-1999">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2000">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -222,7 +222,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2002">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2001">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

@@ -24,7 +24,7 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2483"
+        className="el-2482"
       />
       <p className="box-818">
         <span
@@ -63,7 +63,7 @@ export default function Page() {
           {"松ヶ崎祭は2026年で56回目を迎えたよ。\n\n\n毎年 11 月に松ヶ崎キャンパスで開催されている京都工芸繊維大学の学園祭。\n\n様々な団体が日々の活動成果を発表する場になっているよ。"}
         </p>
       </section>
-      <section className="el-1979">
+      <section className="el-1978">
         <Image
           src="/assets/pasted-artwork-339.svg"
           alt=""
@@ -72,12 +72,12 @@ export default function Page() {
           className="svg-444"
         />
       </section>
-      <section className="el-1980">
+      <section className="el-1979">
         <p className="box-823">
           {"本日は第56回松ヶ崎祭にご来場いただきありがとうございます。 \n松ヶ崎祭実行委員会を代表しまして心より歓迎申し上げます。  \nまた、松ヶ崎祭の開催にあたり、日頃より多大なるご支援・ご協力を賜りました、  \nすべての関係者の皆さまに、深く御礼申し上げます。\n\n今年度の松ヶ崎祭開催に向けて、出展者さまが安心して当日を迎えられるよう、\nそして松ヶ崎祭が無事に開催できるよう、準備に注力してきました。  \n私たちが準備してきた過程は注目されにくいものがほとんどです。\nしかし、その成果として、構内の至る所に、私たちが無我夢中で創り上げた景色が広がっています。\n\n今年度の松ヶ崎祭のテーマは「夢宙」です。\n私たち松ヶ崎祭実行委員会は「松ヶ崎祭という無限の夢が宙がる空間での時間に思わず熱中してしまうような最高の体験を、出展者の皆さま、そして来場される皆さまに届けたい」という一心で、\n松ヶ崎祭が終わる最後の時まで駆け抜けます。"}
         </p>
       </section>
-      <section className="el-1983">
+      <section className="el-1982">
         <div className="box-824">
           <Image
             src="/assets/pasted-artwork-340.svg"
@@ -86,10 +86,10 @@ export default function Page() {
             height={856}
             className="svg-445"
           />
-          <a href="https://mf55.matsufes.info/" className="el-1981">
+          <a href="https://mf55.matsufes.info/" className="el-1980">
             {"第55回松ヶ崎祭　「カイカセンゲン」"}
           </a>
-          <a href="https://mf54.matsufes.info/" className="el-1982">
+          <a href="https://mf54.matsufes.info/" className="el-1981">
             {"第54回松ヶ崎祭　「みちみち」"}
           </a>
           <a href="https://mf53.matsufes.info/" className="hello-world-2">
@@ -100,8 +100,8 @@ export default function Page() {
           </a>
         </div>
       </section>
-      <section data-inview className="el-2015">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2016">
+      <section data-inview className="el-2014">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2015">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -145,7 +145,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2017">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2016">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

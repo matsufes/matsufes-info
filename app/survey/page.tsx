@@ -22,7 +22,7 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2481"
+        className="el-2480"
       />
       <p className="box-50">
         <Image
@@ -52,7 +52,7 @@ export default function Page() {
             alt=""
             width={769}
             height={383}
-            className="el-2037"
+            className="el-2036"
           />
         </a>
         <Image
@@ -66,8 +66,8 @@ export default function Page() {
       <p className="box-152">
         {"アンケート回答後、スクリーンショットなどで画面を保存するのを忘れないでね。"}
       </p>
-      <section data-inview className="el-2009">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2010">
+      <section data-inview className="el-2008">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2009">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -111,7 +111,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2011">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2010">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

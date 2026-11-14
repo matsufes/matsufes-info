@@ -24,7 +24,7 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2486"
+        className="el-2485"
       />
       <p className="box-856">
         <span
@@ -64,7 +64,7 @@ export default function Page() {
         </div>
       </section>
       <section className="box-861">
-        <div id="お知らせ１" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"詳細1\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"8-1\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"8-2\"}]}]"} className="el-2068">
+        <div id="お知らせ１" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"詳細1\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"8-1\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"8-2\"}]}]"} className="el-2067">
           <p className="text-568">
             {"第56回松ヶ崎祭公式webページが更新されました。"}
           </p>
@@ -74,18 +74,18 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2069"
+              className="el-2068"
             />
             <Image id="8-2" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2070"
+              className="el-2069"
             />
           </div>
         </div>
-        <p id="詳細1" data-toggle-show="flex" className="el-2071">
+        <p id="詳細1" data-toggle-show="flex" className="el-2070">
           {"出展者様情報が公開されました。\n各出展者様のSNS等で松ヶ崎祭の情報を発信していただけます。\n ぜひ一緒に、松ヶ崎祭を盛り上げていただけますと幸いです。\n\n また、システム調整に伴う公開予定日時の変更により、\n出展者の皆さまに多大なるご迷惑をおかけしましたことを、心よりお詫び申し上げます。"}
         </p>
       </section>
@@ -105,7 +105,7 @@ export default function Page() {
       </section>
       <section className="box-874">
         <span id="10/13中身-2" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"hide\",\"target\":\"10/13中身-2\"}]}]"}
-          className="crisp-svg el-2124"
+          className="crisp-svg el-2123"
           style={{ ["--crisp-svg-width"]: "1393px", ["--crisp-svg-ratio"]: "1393 / 451" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1393} height={451} viewBox="0 0 1393 451" />
@@ -116,7 +116,7 @@ export default function Page() {
             height={902}
           />
         </span>
-        <div id="お知らせ１-2" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"詳細1-2\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"8-3\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"8-4\"}]}]"} className="el-2125">
+        <div id="お知らせ１-2" data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"詳細1-2\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"8-3\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"toggle\",\"target\":\"8-4\"}]}]"} className="el-2124">
           <p className="text-580">
             {"第56回松ヶ崎祭公式webページが更新されました。"}
           </p>
@@ -126,18 +126,18 @@ export default function Page() {
               alt=""
               width={44}
               height={28}
-              className="el-2126"
+              className="el-2125"
             />
             <Image id="8-4" data-toggle-show="block"
               src="/assets/pasted-artwork-300.svg"
               alt=""
               width={44}
               height={28}
-              className="el-2127"
+              className="el-2126"
             />
           </div>
         </div>
-        <p id="詳細1-2" data-toggle-show="flex" className="el-2128">
+        <p id="詳細1-2" data-toggle-show="flex" className="el-2127">
           {"追加されたコンテンツは以下の通りです。\n\n・公式メンバ〜「まつぴよ」\n・委員会企画"}
         </p>
       </section>
@@ -153,8 +153,8 @@ export default function Page() {
           height={2454}
         />
       </span>
-      <section data-inview className="el-2024">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2025">
+      <section data-inview className="el-2023">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2024">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -186,7 +186,7 @@ export default function Page() {
         </span>
       </section>
       <section data-inview className="footer-31">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2026">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2025">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
