@@ -140,35 +140,35 @@ export default function Page() {
               alt=""
               width={306}
               height={113}
-              className="svg-532"
+              className="svg-531"
             />
             <Image
               src="/assets/pasted-artwork-321.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-533"
+              className="svg-532"
             />
             <Image
               src="/assets/pasted-artwork-318.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-534"
+              className="svg-533"
             />
             <Image
               src="/assets/pasted-artwork-319.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-535"
+              className="svg-534"
             />
             <Image
               src="/assets/pasted-artwork-317.svg"
               alt=""
               width={175}
               height={63}
-              className="svg-536"
+              className="svg-535"
             />
           </div>
           <div id="committee14-2" data-toggle-show="flex" className="t-2">
@@ -177,28 +177,28 @@ export default function Page() {
               alt=""
               width={306}
               height={537}
-              className="svg-537"
+              className="svg-536"
             />
             <Image
               src="/assets/pasted-artwork-447.svg"
               alt=""
               width={306}
               height={594}
-              className="svg-538"
+              className="svg-537"
             />
             <Image
               src="/assets/pasted-artwork-453.svg"
               alt=""
               width={306}
               height={681}
-              className="svg-539"
+              className="svg-538"
             />
             <Image
               src="/assets/pasted-artwork-448.svg"
               alt=""
               width={306}
               height={708}
-              className="svg-540"
+              className="svg-539"
             />
           </div>
           <Image

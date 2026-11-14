@@ -35,7 +35,7 @@ export default function Page() {
           alt=""
           width={1280}
           height={1010}
-          className="svg-524"
+          className="svg-523"
         />
         <div className="box-957">
           <div className="header-29">

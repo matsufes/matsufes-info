@@ -6323,7 +6323,7 @@
         }
       ],
       "htmlBackground": "#4d4c51",
-      "unpublished": false
+      "unpublished": true
     },
     "page_mvhxphej2d8ldu": {
       "id": "page_mvhxphej2d8ldu",
@@ -8851,7 +8851,7 @@
         }
       ],
       "htmlBackground": "#4d4c51",
-      "unpublished": true,
+      "unpublished": false,
       "titlePending": true,
       "folderId": "folder_mweu13tz1nr4ao"
     },
@@ -253071,388 +253071,6 @@
         }
       }
     },
-    "node_mvhve1zlapw2x6": {
-      "id": "node_mvhve1zlapw2x6",
-      "type": "image",
-      "name": "bkonn.svg",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmv7s7evl-bkonn.svg",
-        "alt": "お気に入り登録済",
-        "width": 35,
-        "height": 34,
-        "assetId": "asset_mv7s7fil8",
-        "priority": true
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "32px",
-            "flexShrink": "0",
-            "zIndex": "2",
-            "position": "relative"
-          }
-        }
-      },
-      "hiddenOn": [
-        "base",
-        "lg",
-        "md",
-        "sm"
-      ],
-      "attrId": "fav-on",
-      "scripts": [
-        {
-          "id": "sc_mv7t2e8q4",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_restore_4f819c1e42d9c4b",
-              "kind": "set-var",
-              "into": "__tsumu_restore_50c381f75b067bc_22c92e57a9557d5_wanted",
-              "value": "{publicId}"
-            },
-            {
-              "id": "st_mv7t2lpt5",
-              "kind": "if",
-              "cond": {
-                "subject": "var",
-                "target": "",
-                "left": "{__tsumu_restore_50c381f75b067bc_22c92e57a9557d5_wanted}",
-                "op": "empty",
-                "value": "",
-                "not": true
-              },
-              "then": [
-                {
-                  "id": "st_restore_1958dea6235496a",
-                  "kind": "transform",
-                  "source": "mf_bookmarks",
-                  "into": "__tsumu_restore_50c381f75b067bc_22c92e57a9557d5_initial",
-                  "transform": {
-                    "kind": "fallback",
-                    "text": "",
-                    "when": "nullish"
-                  }
-                },
-                {
-                  "id": "st_restore_b76f8f212b718de",
-                  "kind": "transform",
-                  "source": "__tsumu_restore_50c381f75b067bc_22c92e57a9557d5_initial",
-                  "into": "__tsumu_restore_50c381f75b067bc_22c92e57a9557d5_parts",
-                  "transform": {
-                    "kind": "split",
-                    "separator": "."
-                  }
-                },
-                {
-                  "id": "st_restore_8535747af8c289b",
-                  "kind": "set-var",
-                  "into": "__tsumu_restore_50c381f75b067bc_22c92e57a9557d5_wanted",
-                  "value": "{publicId}"
-                },
-                {
-                  "id": "st_restore_2dc549e61c18c7e",
-                  "kind": "set-var",
-                  "into": "__tsumu_restore_50c381f75b067bc_22c92e57a9557d5_output",
-                  "value": "[]"
-                },
-                {
-                  "id": "st_restore_9a85d1803670e99",
-                  "kind": "set-var",
-                  "into": "__tsumu_restore_50c381f75b067bc_22c92e57a9557d5_found",
-                  "value": "false"
-                },
-                {
-                  "id": "st_restore_937dde6fdecdaaf",
-                  "kind": "for-each",
-                  "array": "__tsumu_restore_50c381f75b067bc_22c92e57a9557d5_parts",
-                  "then": [
-                    {
-                      "id": "st_restore_746fe0546b4ffd1",
-                      "kind": "if",
-                      "cond": {
-                        "subject": "var",
-                        "target": "",
-                        "left": "{ループ.値}",
-                        "op": "eq",
-                        "value": "{__tsumu_restore_50c381f75b067bc_22c92e57a9557d5_wanted}"
-                      },
-                      "then": [],
-                      "else": [
-                        {
-                          "id": "st_restore_59c800358b09179",
-                          "kind": "set-list-item",
-                          "list": "__tsumu_restore_50c381f75b067bc_22c92e57a9557d5_output",
-                          "key": "",
-                          "value": "{ループ.値}"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "st_restore_145a2d978787e73",
-                  "kind": "transform",
-                  "source": "__tsumu_restore_50c381f75b067bc_22c92e57a9557d5_output",
-                  "into": "mf_bookmarks",
-                  "transform": {
-                    "kind": "join",
-                    "separator": "."
-                  }
-                }
-              ]
-            },
-            {
-              "id": "st_mv7tk5at23",
-              "kind": "store-save",
-              "key": "mf_bookmarks",
-              "value": "{mf_bookmarks}",
-              "shared": true
-            },
-            {
-              "id": "st_mv7t2wgm7",
-              "kind": "hide",
-              "target": "fav-on"
-            },
-            {
-              "id": "st_mv7t32ke8",
-              "kind": "show",
-              "target": "fav-off"
-            }
-          ],
-          "pos": {
-            "x": 716,
-            "y": 4736
-          }
-        }
-      ]
-    },
-    "node_mvhve1zlaqbsbh": {
-      "id": "node_mvhve1zlaqbsbh",
-      "type": "image",
-      "name": "bkoff2.svg",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmv7rlzdl-bkoff2.svg",
-        "alt": "お気に入り未登録",
-        "width": 35,
-        "height": 34,
-        "assetId": "asset_mv7rlzqn5"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "32px",
-            "zIndex": "2",
-            "display": "block"
-          }
-        }
-      },
-      "scripts": [
-        {
-          "id": "sc_mv7rtedb8",
-          "trigger": "load",
-          "steps": [
-            {
-              "id": "st_mv7sfe4t2",
-              "kind": "if",
-              "cond": {
-                "subject": "var",
-                "target": "",
-                "op": "contains",
-                "value": "{publicId}",
-                "left": "{mf_bookmarks}"
-              },
-              "then": [
-                {
-                  "id": "st_mv7sg6b53",
-                  "kind": "show",
-                  "target": "fav-on"
-                },
-                {
-                  "id": "st_mv7sgfad4",
-                  "kind": "hide",
-                  "target": "fav-off"
-                }
-              ],
-              "else": [
-                {
-                  "id": "st_mv7sgk8e5",
-                  "kind": "show",
-                  "target": "fav-off"
-                },
-                {
-                  "id": "st_mv7sgqf07",
-                  "kind": "hide",
-                  "target": "fav-on"
-                }
-              ]
-            }
-          ],
-          "pos": {
-            "x": 703,
-            "y": 4221
-          }
-        },
-        {
-          "id": "sc_mv7sh3n08",
-          "trigger": "click",
-          "steps": [
-            {
-              "id": "st_restore_e366c09100bed29",
-              "kind": "set-var",
-              "into": "__tsumu_restore_50c381f75b067bc_7bb4d58c790eafb_wanted",
-              "value": "{publicId}"
-            },
-            {
-              "id": "st_mv7shwy99",
-              "kind": "if",
-              "cond": {
-                "subject": "var",
-                "target": "",
-                "left": "{__tsumu_restore_50c381f75b067bc_7bb4d58c790eafb_wanted}",
-                "op": "empty",
-                "value": "",
-                "not": true
-              },
-              "then": [
-                {
-                  "id": "st_restore_90158e4c979e3b9",
-                  "kind": "transform",
-                  "source": "mf_bookmarks",
-                  "into": "__tsumu_restore_50c381f75b067bc_7bb4d58c790eafb_initial",
-                  "transform": {
-                    "kind": "fallback",
-                    "text": "",
-                    "when": "nullish"
-                  }
-                },
-                {
-                  "id": "st_restore_9735c359dd7c091",
-                  "kind": "transform",
-                  "source": "__tsumu_restore_50c381f75b067bc_7bb4d58c790eafb_initial",
-                  "into": "__tsumu_restore_50c381f75b067bc_7bb4d58c790eafb_parts",
-                  "transform": {
-                    "kind": "split",
-                    "separator": "."
-                  }
-                },
-                {
-                  "id": "st_restore_136826c1890a8d4",
-                  "kind": "set-var",
-                  "into": "__tsumu_restore_50c381f75b067bc_7bb4d58c790eafb_wanted",
-                  "value": "{publicId}"
-                },
-                {
-                  "id": "st_restore_0ae2c33c6474edf",
-                  "kind": "set-var",
-                  "into": "__tsumu_restore_50c381f75b067bc_7bb4d58c790eafb_output",
-                  "value": "[]"
-                },
-                {
-                  "id": "st_restore_53215b1e1f89b1b",
-                  "kind": "set-var",
-                  "into": "__tsumu_restore_50c381f75b067bc_7bb4d58c790eafb_found",
-                  "value": "false"
-                },
-                {
-                  "id": "st_restore_f6e707ca4350b51",
-                  "kind": "for-each",
-                  "array": "__tsumu_restore_50c381f75b067bc_7bb4d58c790eafb_parts",
-                  "then": [
-                    {
-                      "id": "st_restore_2fbf45c83abb1d6",
-                      "kind": "if",
-                      "cond": {
-                        "subject": "var",
-                        "target": "",
-                        "left": "{ループ.値}",
-                        "op": "eq",
-                        "value": "{__tsumu_restore_50c381f75b067bc_7bb4d58c790eafb_wanted}"
-                      },
-                      "then": [
-                        {
-                          "id": "st_restore_d477762d81e6bf3",
-                          "kind": "set-var",
-                          "into": "__tsumu_restore_50c381f75b067bc_7bb4d58c790eafb_found",
-                          "value": "true"
-                        }
-                      ]
-                    },
-                    {
-                      "id": "st_restore_c86745e0529ac2f",
-                      "kind": "set-list-item",
-                      "list": "__tsumu_restore_50c381f75b067bc_7bb4d58c790eafb_output",
-                      "key": "",
-                      "value": "{ループ.値}"
-                    }
-                  ]
-                },
-                {
-                  "id": "st_restore_83b8ba9adbecef2",
-                  "kind": "if",
-                  "cond": {
-                    "subject": "var",
-                    "target": "",
-                    "left": "{__tsumu_restore_50c381f75b067bc_7bb4d58c790eafb_found}",
-                    "op": "eq",
-                    "value": "false"
-                  },
-                  "then": [
-                    {
-                      "id": "st_restore_37836692719bfae",
-                      "kind": "set-list-item",
-                      "list": "__tsumu_restore_50c381f75b067bc_7bb4d58c790eafb_output",
-                      "key": "",
-                      "value": "{__tsumu_restore_50c381f75b067bc_7bb4d58c790eafb_wanted}"
-                    }
-                  ]
-                },
-                {
-                  "id": "st_restore_bdc58beb3bc5e99",
-                  "kind": "transform",
-                  "source": "__tsumu_restore_50c381f75b067bc_7bb4d58c790eafb_output",
-                  "into": "mf_bookmarks",
-                  "transform": {
-                    "kind": "join",
-                    "separator": "."
-                  }
-                }
-              ]
-            },
-            {
-              "id": "st_mv7tj8re21",
-              "kind": "store-save",
-              "key": "mf_bookmarks",
-              "value": "{mf_bookmarks}",
-              "shared": true
-            },
-            {
-              "id": "st_mv7t23ba2",
-              "kind": "hide",
-              "target": "fav-off"
-            },
-            {
-              "id": "st_mv7t28tm3",
-              "kind": "show",
-              "target": "fav-on"
-            }
-          ],
-          "pos": {
-            "x": 656,
-            "y": 4535
-          }
-        }
-      ],
-      "attrId": "fav-off"
-    },
     "node_mvhve1zlaocxe2": {
       "id": "node_mvhve1zlaocxe2",
       "type": "box",
@@ -253461,9 +253079,8 @@
       "text": null,
       "link": null,
       "children": [
-        "node_mvhve1zlapw2x6",
-        "node_mvhve1zlaqbsbh",
-        "node_mw5y14bdek6ks"
+        "node_mwg0x7121nlwa5",
+        "node_mwg0z1py1pdcvx"
       ],
       "styles": {
         "base": {
@@ -300480,31 +300097,6 @@
         }
       }
     },
-    "node_mw5y14bdek6ks": {
-      "id": "node_mw5y14bdek6ks",
-      "type": "image",
-      "name": "貼り付けたSVG",
-      "semantic": "auto",
-      "text": null,
-      "link": null,
-      "image": {
-        "src": "/api/assets/file?path=assets%2Fmw5y13yr8cd52c-pasted-artwork.svg",
-        "alt": "",
-        "width": 160,
-        "height": 149,
-        "assetId": "asset_mw5y14bcdaej6"
-      },
-      "children": [],
-      "styles": {
-        "base": {
-          "default": {
-            "width": "160px",
-            "maxWidth": "100%",
-            "borderRadius": "0px"
-          }
-        }
-      }
-    },
     "node_mw7wwzrqg449d": {
       "id": "node_mw7wwzrqg449d",
       "type": "image",
@@ -346843,6 +346435,64 @@
           }
         }
       }
+    },
+    "node_mwg0x7121nlwa5": {
+      "id": "node_mwg0x7121nlwa5",
+      "type": "image",
+      "name": "bkonn.avg",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwg0x6hu9c40af-pasted-artwork.svg",
+        "alt": "",
+        "width": 140,
+        "height": 136,
+        "assetId": "asset_mwg0x70p1mcy0h"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "140px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      },
+      "attrId": "fav-on",
+      "hiddenOn": [
+        "base",
+        "lg",
+        "md",
+        "sm"
+      ]
+    },
+    "node_mwg0z1py1pdcvx": {
+      "id": "node_mwg0z1py1pdcvx",
+      "type": "image",
+      "name": "bkoff2.avg",
+      "semantic": "auto",
+      "text": null,
+      "link": null,
+      "image": {
+        "src": "/api/assets/file?path=assets%2Fmwg0z1a38e77b1-pasted-artwork.svg",
+        "alt": "",
+        "width": 140,
+        "height": 136,
+        "assetId": "asset_mwg0z1nv1ohdbd"
+      },
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "width": "140px",
+            "maxWidth": "100%",
+            "borderRadius": "0px"
+          }
+        }
+      },
+      "attrId": "fav-off"
     }
   },
   "assets": {
@@ -353105,6 +352755,26 @@
       "mimeType": "image/png",
       "width": 60,
       "height": 58
+    },
+    "asset_mwg0x70p1mcy0h": {
+      "id": "asset_mwg0x70p1mcy0h",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mwg0x6hu9c40af-pasted-artwork.svg",
+      "bytes": 328,
+      "mimeType": "image/svg+xml",
+      "width": 140,
+      "height": 136,
+      "svgFilter": false
+    },
+    "asset_mwg0z1nv1ohdbd": {
+      "id": "asset_mwg0z1nv1ohdbd",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mwg0z1a38e77b1-pasted-artwork.svg",
+      "bytes": 631,
+      "mimeType": "image/svg+xml",
+      "width": 140,
+      "height": 136,
+      "svgFilter": false
     }
   }
 }

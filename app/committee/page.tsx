@@ -237,7 +237,7 @@ export default function Page() {
             alt=""
             width={1046}
             height={215}
-            className="svg-516"
+            className="svg-515"
           />
         </div>
       </section>
@@ -253,7 +253,7 @@ export default function Page() {
           alt=""
           width={245}
           height={58}
-          className="svg-517"
+          className="svg-516"
         />
       </section>
       <p className="text-599">
@@ -265,7 +265,7 @@ export default function Page() {
           alt=""
           width={265}
           height={58}
-          className="svg-518"
+          className="svg-517"
         />
       </section>
       <section className="el-2214">
@@ -275,7 +275,7 @@ export default function Page() {
             alt=""
             width={307}
             height={32}
-            className="svg-519"
+            className="svg-518"
           />
         </div>
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/survey\"}]}]"}
@@ -298,7 +298,7 @@ export default function Page() {
             alt=""
             width={495}
             height={32}
-            className="svg-520"
+            className="svg-519"
           />
         </div>
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/m-1\"}]}]"}
@@ -321,7 +321,7 @@ export default function Page() {
             alt=""
             width={423}
             height={32}
-            className="svg-521"
+            className="svg-520"
           />
         </div>
         <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://www.instagram.com/matsupiyo_piyo/\"}]}]"}
@@ -371,7 +371,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-25">
         <span
-          className="crisp-svg svg-703"
+          className="crisp-svg svg-702"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />

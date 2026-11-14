@@ -92,7 +92,7 @@ export default function Page() {
           alt=""
           width={1069}
           height={677}
-          className="svg-486"
+          className="svg-485"
         />
       </section>
       <section className="box-805" />
@@ -130,7 +130,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-24">
         <span
-          className="crisp-svg svg-702"
+          className="crisp-svg svg-701"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />

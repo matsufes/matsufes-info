@@ -442,7 +442,7 @@ export default async function Page({
                       alt=""
                       width={90}
                       height={93}
-                      className="svg-523"
+                      className="svg-522"
                     />
                     <p className="text-521">
                       {"お気に入り"}
@@ -454,7 +454,7 @@ export default async function Page({
                       alt=""
                       width={90}
                       height={93}
-                      className="svg-697"
+                      className="svg-696"
                     />
                     <p className="text-706">
                       {"登録済み"}
@@ -599,7 +599,7 @@ export default async function Page({
       </section>
       <section data-inview className="footer-21">
         <span
-          className="crisp-svg svg-698"
+          className="crisp-svg svg-697"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />

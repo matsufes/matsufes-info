@@ -53,7 +53,7 @@ export default function Page() {
           </div>
           <div className="el-1944">
             <span
-              className="crisp-svg svg-483"
+              className="crisp-svg svg-482"
               style={{ ["--crisp-svg-width"]: "659px", ["--crisp-svg-ratio"]: "659 / 329" } as import("react").CSSProperties}
             >
               <svg aria-hidden="true" width={659} height={329} viewBox="0 0 659 329" />
@@ -74,7 +74,7 @@ export default function Page() {
             alt=""
             width={718}
             height={233}
-            className="svg-487"
+            className="svg-486"
           />
         </div>
       </section>
@@ -158,7 +158,7 @@ export default function Page() {
             alt=""
             width={718}
             height={230}
-            className="svg-488"
+            className="svg-487"
           />
         </div>
       </section>
@@ -219,7 +219,7 @@ export default function Page() {
             alt=""
             width={718}
             height={176}
-            className="svg-693"
+            className="svg-692"
           />
         </div>
       </section>
@@ -229,7 +229,7 @@ export default function Page() {
         </p>
         <div className="el-2528">
           <span
-            className="crisp-svg svg-692"
+            className="crisp-svg svg-691"
             style={{ ["--crisp-svg-width"]: "928px", ["--crisp-svg-ratio"]: "928 / 577" } as import("react").CSSProperties}
           >
             <svg aria-hidden="true" width={928} height={577} viewBox="0 0 928 577" />
@@ -247,7 +247,7 @@ export default function Page() {
             alt=""
             width={556}
             height={236}
-            className="svg-696"
+            className="svg-695"
           />
         </a>
       </section>
@@ -261,7 +261,7 @@ export default function Page() {
             alt=""
             width={1262}
             height={1016}
-            className="svg-694"
+            className="svg-693"
           />
         </div>
         <a href="/yumeuranai" className="el-2530">
@@ -270,7 +270,7 @@ export default function Page() {
             alt=""
             width={556}
             height={236}
-            className="svg-695"
+            className="svg-694"
           />
         </a>
       </section>
@@ -281,7 +281,7 @@ export default function Page() {
             alt=""
             width={718}
             height={176}
-            className="svg-489"
+            className="svg-488"
           />
         </div>
       </section>
