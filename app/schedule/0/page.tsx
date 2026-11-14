@@ -115,7 +115,7 @@ export default function Page() {
             height={84}
             className="svg-349"
           />
-          <Image
+          <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/schedule/1\"}]}]"}
             src="/assets/pasted-artwork-248.svg"
             alt="11.15（にち）"
             width={268}
