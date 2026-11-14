@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { fetchPublic, readTextLimited } from "@/lib/safe-fetch";
+import { evaluateValueRecipe as __evalValueRecipe } from "@/lib/value-recipe";
 import { cache } from "react";
 import SmartLink from "@/components/SmartLink";
 import Image from "next/image";
@@ -32,6 +33,11 @@ function safeRequestOrigin(url: string, init?: string, origin?: string): boolean
 async function loadData(vars: Vars) {
   vars["_0"] = await fetchJson(interpolateUrl("https://api.matsufes.info/data/web-info.json", vars));
   vars["_1"] = lookupVar(vars, "_0.data") ?? null;
+  {
+    const result = __evalValueRecipe(lookupVar(vars, "_1"), [{"kind":"length"}], vars);
+    if (result.kind === "value") vars["_b"] = result.value;
+    else if (result.kind === "missing") vars["_b"] = undefined;
+  }
 }
 
 /** リストで並べる項目にする（オブジェクトはそのまま、文字や数値は {値} に入れる） */
@@ -76,6 +82,7 @@ export default async function Page() {
   vars["委員会企画-p-2"] = "委員会企画";
   vars["m-1-p-2"] = "m-1グランプリ";
   vars["まつぴよ-p-2"] = "公式メンバー「まつぴよ」";
+  vars["p"] = "まだお気に入りがありません";
   await loadData(vars);
   vars["松ヶ崎祭について-2"] = "松ヶ崎祭について";
   vars["松ヶ崎祭とは-p-2"] = "松ヶ崎祭とは";
@@ -97,9 +104,10 @@ export default async function Page() {
   vars["委員会企画-p-2"] = "委員会企画";
   vars["m-1-p-2"] = "m-1グランプリ";
   vars["まつぴよ-p-2"] = "公式メンバー「まつぴよ」";
+  vars["p"] = "まだお気に入りがありません";
   return (
     <>
-      <span hidden data-page-body="page_mvhxphej2d8ldu" data-scripts={"[{\"trigger\":\"load\",\"steps\":[{\"kind\":\"store-load\",\"key\":\"mf_bookmarks\",\"into\":\"_4\",\"shared\":true},{\"kind\":\"transform\",\"source\":\"_4\",\"into\":\"_5\",\"transform\":{\"kind\":\"split\",\"separator\":\".\"}},{\"kind\":\"list-display\",\"mode\":\"filter\",\"array\":\"_1\",\"no\":1,\"conds\":[{\"field\":\"publicId\",\"op\":\"in\",\"value\":{\"inputRef\":\"_4\"}}]}]}]"} />
+      <span hidden data-page-body="page_mvhxphej2d8ldu" data-scripts={JSON.stringify([{"trigger":"load","steps":[{"kind":"store-load","key":"mf_bookmarks","into":"_4","shared":true},{"kind":"transform","source":"_4","into":"_5","transform":{"kind":"split","separator":"."}},{"kind":"list-display","mode":"filter","array":"_1","no":1,"conds":[{"field":"publicId","op":"in","value":{"inputRef":"_4"}}]},{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_b","raw":lookupVar(vars, "_b") ?? null},"op":"eq","value":"0","not":true},"then":[{"kind":"hide","target":"p"}]}]}])} />
       <Header />
       <Image data-inview
         src="/assets/clouds.webp"
@@ -246,6 +254,9 @@ export default async function Page() {
           />
         </a>
       </section>
+      <p id="p" className="el-2620">
+        {"まだお気に入りがありません"}
+      </p>
       <section className="box-1176">
         <div data-array="_1" className="el-2611">
           {toItems(lookupVar(vars, "_1")).map((item, i) => {

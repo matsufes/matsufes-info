@@ -6262,6 +6262,7 @@
         "node_mvhxphej29olz1",
         "node_mvhxphej2cn4qp",
         "node_mwgaq5hz2iczau",
+        "node_mwgct27j2shn1y",
         "node_mwgcobts2rulyy",
         "node_mw1ip9qo1518dne",
         "node_mw1ip9qq157doym"
@@ -7038,6 +7039,34 @@
               "value": "{mf_bookmarks}",
               "dir": "asc",
               "no": 1
+            },
+            {
+              "id": "st_mwgcwx5krdqj",
+              "kind": "transform",
+              "source": "data",
+              "into": "dataの数",
+              "transform": {
+                "kind": "length"
+              }
+            },
+            {
+              "id": "st_mwgcvatvpgra",
+              "kind": "if",
+              "cond": {
+                "subject": "var",
+                "target": "",
+                "left": "{dataの数}",
+                "op": "eq",
+                "value": "0",
+                "not": true
+              },
+              "then": [
+                {
+                  "id": "st_mwgcxvdjsurr",
+                  "kind": "hide",
+                  "target": "p"
+                }
+              ]
             }
           ],
           "pos": {
@@ -361015,6 +361044,7 @@
       "link": {
         "kind": "url",
         "url": "https://map.matsufes.info/?bookmarks=1",
+        "newTab": false,
         "pos": {
           "x": 831,
           "y": 263
@@ -361254,6 +361284,59 @@
           }
         }
       }
+    },
+    "node_mwgct27j2shn1y": {
+      "id": "node_mwgct27j2shn1y",
+      "type": "box",
+      "name": "まだお気に入りがありません",
+      "semantic": "auto",
+      "text": {
+        "content": "まだお気に入りがありません",
+        "heading": 0
+      },
+      "link": null,
+      "children": [],
+      "styles": {
+        "base": {
+          "default": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "12px",
+            "height": "100%",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "100%",
+            "textAlign": "center",
+            "fontFamily": "Zen Kaku Gothic New",
+            "fontSize": "24px",
+            "fontWeight": "600",
+            "color": "#ffffff",
+            "textShadow": "0px 2px 4px rgba(0, 0, 0, 0.5)",
+            "paddingTop": "50px",
+            "paddingRight": "20px",
+            "paddingBottom": "50px",
+            "paddingLeft": "20px"
+          }
+        },
+        "sm": {
+          "default": {
+            "height": "100%",
+            "fontSize": "18px"
+          }
+        },
+        "lg": {
+          "default": {
+            "height": "100%",
+            "fontSize": "20px"
+          }
+        },
+        "md": {
+          "default": {
+            "fontSize": "20px"
+          }
+        }
+      },
+      "attrId": "p"
     }
   },
   "assets": {
