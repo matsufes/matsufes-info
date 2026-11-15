@@ -24,7 +24,7 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2482"
+        className="el-2472"
       />
       <p className="box-824">
         <Image
@@ -32,7 +32,7 @@ export default function Page() {
           alt=""
           width={909}
           height={79}
-          className="svg-450"
+          className="svg-448"
         />
       </p>
       <section className="box-825">
@@ -50,7 +50,7 @@ export default function Page() {
           alt=""
           width={1096}
           height={67}
-          className="svg-443"
+          className="svg-441"
         />
       </section>
       <section className="box-827">
@@ -59,7 +59,7 @@ export default function Page() {
           alt=""
           width={544}
           height={128}
-          className="svg-446"
+          className="svg-444"
         />
       </section>
       <section className="box-830">
@@ -83,7 +83,7 @@ export default function Page() {
             alt=""
             width={1040}
             height={859}
-            className="svg-447"
+            className="svg-445"
           />
         </div>
         <div className="box-832">
@@ -92,13 +92,13 @@ export default function Page() {
             alt=""
             width={1061}
             height={1076}
-            className="svg-448"
+            className="svg-446"
           />
         </div>
       </section>
       <section className="box-834">
         <span
-          className="crisp-svg svg-449"
+          className="crisp-svg svg-447"
           style={{ ["--crisp-svg-width"]: "123px", ["--crisp-svg-ratio"]: "123 / 361" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={123} height={361} viewBox="0 0 123 361" />
@@ -110,8 +110,8 @@ export default function Page() {
           />
         </span>
       </section>
-      <section data-inview className="el-2016">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2017">
+      <section data-inview className="el-2015">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2016">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -155,7 +155,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2018">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2017">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

@@ -20,40 +20,40 @@ export default function Page() {
     <>
       <span hidden data-page-body="page_mvzcltff5ss5c7" />
       <Header />
-      <section className="el-1943">
-        <div data-inview className="el-2408">
+      <section className="el-1942">
+        <div data-inview className="el-2398">
           <Image
             src="/assets/hero.webp"
             alt=""
             width={1131}
             height={1600}
-            className="el-2138"
+            className="el-2137"
           />
         </div>
-        <div data-inview className="el-1939">
+        <div data-inview className="el-1938">
           <Image
             src="/assets/cloud.webp"
             alt=""
             width={1230}
             height={1600}
-            className="el-1963"
+            className="el-1962"
           />
         </div>
         <div className="box-760">
-          <div className="el-1941">
+          <div className="el-1940">
             <Image
               src="/assets/title.png"
               alt="第56回松ヶ崎祭"
               width={1500}
               height={844}
-              className="el-1940"
+              className="el-1939"
               preload
               fetchPriority="high"
             />
           </div>
-          <div className="el-1942">
+          <div className="el-1941">
             <span
-              className="crisp-svg svg-482"
+              className="crisp-svg svg-480"
               style={{ ["--crisp-svg-width"]: "659px", ["--crisp-svg-ratio"]: "659 / 329" } as import("react").CSSProperties}
             >
               <svg aria-hidden="true" width={659} height={329} viewBox="0 0 659 329" />
@@ -67,19 +67,19 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="el-1945">
-        <div className="el-1944">
+      <section className="el-1944">
+        <div className="el-1943">
           <Image
             src="/assets/pasted-artwork-385.svg"
             alt=""
             width={718}
             height={233}
-            className="svg-486"
+            className="svg-484"
           />
         </div>
       </section>
       <section className="box-762">
-        <Link href="/search" className="el-1947">
+        <Link href="/search" className="el-1946">
           <Image
             src="/assets/image-2.webp"
             alt=""
@@ -89,7 +89,7 @@ export default function Page() {
           />
           <p className="box-761">
             <span
-              className="crisp-svg el-1946"
+              className="crisp-svg el-1945"
               style={{ ["--crisp-svg-width"]: "164px", ["--crisp-svg-ratio"]: "164 / 119" } as import("react").CSSProperties}
             >
               <svg aria-hidden="true" width={164} height={119} viewBox="0 0 164 119" />
@@ -104,7 +104,7 @@ export default function Page() {
         </Link>
       </section>
       <section className="box-765">
-        <a href="/navigation" className="el-1949">
+        <a href="/navigation" className="el-1948">
           <Image
             src="/assets/image-3.webp"
             alt=""
@@ -114,7 +114,7 @@ export default function Page() {
           />
           <p className="box-763">
             <span
-              className="crisp-svg el-1948"
+              className="crisp-svg el-1947"
               style={{ ["--crisp-svg-width"]: "164px", ["--crisp-svg-ratio"]: "164 / 119" } as import("react").CSSProperties}
             >
               <svg aria-hidden="true" width={164} height={119} viewBox="0 0 164 119" />
@@ -127,17 +127,17 @@ export default function Page() {
             </span>
           </p>
         </a>
-        <Link href="/schedule" className="el-1950">
+        <Link href="/schedule" className="el-1949">
           <Image
             src="/assets/image-4.webp"
             alt=""
             width={617}
             height={620}
-            className="el-1964"
+            className="el-1963"
           />
           <p className="box-764">
             <span
-              className="crisp-svg el-1965"
+              className="crisp-svg el-1964"
               style={{ ["--crisp-svg-width"]: "202px", ["--crisp-svg-ratio"]: "202 / 111" } as import("react").CSSProperties}
             >
               <svg aria-hidden="true" width={202} height={111} viewBox="0 0 202 111" />
@@ -151,51 +151,51 @@ export default function Page() {
           </p>
         </Link>
       </section>
-      <section className="el-1952">
-        <div className="el-1951">
+      <section className="el-1951">
+        <div className="el-1950">
           <Image
             src="/assets/pasted-artwork-386.svg"
             alt=""
             width={718}
             height={230}
-            className="svg-487"
+            className="svg-485"
           />
         </div>
       </section>
-      <section data-inview className="el-1953">
+      <section data-inview className="el-1952">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/attention\"}]}]"}
           src="/assets/image-5.webp"
           alt="ご来場の皆さまへ"
+          width={1600}
+          height={1056}
+          className="el-2138"
+        />
+      </section>
+      <section data-inview className="el-1953">
+        <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/access\"}]}]"}
+          src="/assets/image-6.webp"
+          alt="行き方・会場地図"
           width={1600}
           height={1056}
           className="el-2139"
         />
       </section>
       <section data-inview className="el-1954">
-        <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/access\"}]}]"}
-          src="/assets/image-6.webp"
-          alt="行き方・会場地図"
-          width={1600}
-          height={1056}
-          className="el-2140"
-        />
-      </section>
-      <section data-inview className="el-1955">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/question\"}]}]"}
           src="/assets/image-7.webp"
           alt="よくあるご質問"
           width={1600}
           height={1103}
-          className="el-1966"
+          className="el-1965"
         />
       </section>
-      <section data-inview className="el-1956">
+      <section data-inview className="el-1955">
         <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-page\",\"href\":\"/survey\"}]}]"}
           src="/assets/image-8.webp"
           alt="来場者アンケート"
           width={1600}
           height={1104}
-          className="el-2141"
+          className="el-2140"
         />
       </section>
       <section className="box-766">
@@ -212,24 +212,24 @@ export default function Page() {
           />
         </span>
       </section>
-      <section className="el-2485">
-        <div className="el-2486">
+      <section className="el-2475">
+        <div className="el-2476">
           <Image
             src="/assets/pasted-artwork-454.svg"
             alt=""
             width={718}
             height={176}
-            className="svg-687"
+            className="svg-681"
           />
         </div>
       </section>
-      <section className="el-2487">
+      <section className="el-2477">
         <p className="text-704">
           {"第56回松ヶ崎祭オリジナルゲームが新登場！\nきみも まつぴよと 恋に落ちちゃう・・・！？"}
         </p>
-        <div className="el-2488">
+        <div className="el-2478">
           <span
-            className="crisp-svg svg-686"
+            className="crisp-svg svg-680"
             style={{ ["--crisp-svg-width"]: "928px", ["--crisp-svg-ratio"]: "928 / 577" } as import("react").CSSProperties}
           >
             <svg aria-hidden="true" width={928} height={577} viewBox="0 0 928 577" />
@@ -241,17 +241,17 @@ export default function Page() {
             />
           </span>
         </div>
-        <a href="/tokimeki-dreamworld" className="el-2491">
+        <a href="/tokimeki-dreamworld" className="el-2481">
           <Image
             src="/assets/pasted-artwork-458.svg"
             alt=""
             width={556}
             height={236}
-            className="svg-690"
+            className="svg-684"
           />
         </a>
       </section>
-      <section className="el-2489">
+      <section className="el-2479">
         <p className="text-705">
           {"今日　どんな夢をみた？\nきみの夢を　占ってみよう。"}
         </p>
@@ -261,38 +261,38 @@ export default function Page() {
             alt=""
             width={1262}
             height={1016}
-            className="svg-688"
+            className="svg-682"
           />
         </div>
-        <a href="/yumeuranai" className="el-2490">
+        <a href="/yumeuranai" className="el-2480">
           <Image
             src="/assets/pasted-artwork-458.svg"
             alt=""
             width={556}
             height={236}
-            className="svg-689"
+            className="svg-683"
           />
         </a>
       </section>
-      <section className="el-1958">
-        <div className="el-1957">
+      <section className="el-1957">
+        <div className="el-1956">
           <Image
             src="/assets/pasted-artwork-387.svg"
             alt=""
             width={718}
             height={176}
-            className="svg-488"
+            className="svg-486"
           />
         </div>
       </section>
-      <section className="el-1959">
+      <section className="el-1958">
         <div data-inview className="box-767">
           <Image
             src="/assets/pasted-artwork-351.svg"
             alt=""
             width={123}
             height={99}
-            className="svg-459"
+            className="svg-457"
           />
         </div>
         <div className="box-768">
@@ -305,8 +305,8 @@ export default function Page() {
           />
         </div>
       </section>
-      <section data-inview className="el-1961">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1960">
+      <section data-inview className="el-1960">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1959">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -350,7 +350,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1962">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1961">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

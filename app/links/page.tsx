@@ -24,7 +24,7 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2476"
+        className="el-2466"
       />
       <p className="box-776">
         <Image
@@ -32,7 +32,7 @@ export default function Page() {
           alt=""
           width={514}
           height={122}
-          className="svg-441"
+          className="svg-439"
         />
       </p>
       <section className="box-777">
@@ -68,7 +68,7 @@ export default function Page() {
             alt=""
             width={414}
             height={206}
-            className="el-2031"
+            className="el-2030"
           />
         </div>
       </section>
@@ -83,12 +83,12 @@ export default function Page() {
       </section>
       <section className="box-784">
         <span
-          className="crisp-svg svg-432"
+          className="crisp-svg svg-706"
           style={{ ["--crisp-svg-width"]: "625px", ["--crisp-svg-ratio"]: "625 / 180" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={625} height={180} viewBox="0 0 625 180" />
           <Image
-            src="/assets/pasted-artwork-286.svg"
+            src="/assets/pasted-artwork-466.svg"
             alt=""
             width={1250}
             height={360}
@@ -100,7 +100,7 @@ export default function Page() {
             alt=""
             width={414}
             height={206}
-            className="el-2032"
+            className="el-2031"
           />
         </div>
       </section>
@@ -115,7 +115,7 @@ export default function Page() {
       </section>
       <section className="box-787">
         <span
-          className="crisp-svg svg-433"
+          className="crisp-svg svg-432"
           style={{ ["--crisp-svg-width"]: "560px", ["--crisp-svg-ratio"]: "560 / 180" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={560} height={180} viewBox="0 0 560 180" />
@@ -132,7 +132,7 @@ export default function Page() {
             alt=""
             width={414}
             height={206}
-            className="el-2033"
+            className="el-2032"
           />
         </div>
       </section>
@@ -147,12 +147,12 @@ export default function Page() {
       </section>
       <section className="box-790">
         <span
-          className="crisp-svg svg-434"
+          className="crisp-svg svg-707"
           style={{ ["--crisp-svg-width"]: "665px", ["--crisp-svg-ratio"]: "665 / 180" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={665} height={180} viewBox="0 0 665 180" />
           <Image
-            src="/assets/pasted-artwork-288.svg"
+            src="/assets/pasted-artwork-467.svg"
             alt=""
             width={1330}
             height={360}
@@ -164,7 +164,7 @@ export default function Page() {
             alt=""
             width={414}
             height={206}
-            className="el-2034"
+            className="el-2033"
           />
         </div>
       </section>
@@ -177,8 +177,8 @@ export default function Page() {
           className="google4-2"
         />
       </section>
-      <section data-inview className="el-1998">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1999">
+      <section data-inview className="el-1997">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1998">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -211,7 +211,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-23">
         <span
-          className="crisp-svg svg-695"
+          className="crisp-svg svg-689"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -222,7 +222,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2000">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1999">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

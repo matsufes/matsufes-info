@@ -24,7 +24,7 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2477"
+        className="el-2467"
       />
       <p className="box-792">
         <Image
@@ -32,7 +32,7 @@ export default function Page() {
           alt=""
           width={846}
           height={125}
-          className="svg-442"
+          className="svg-440"
         />
       </p>
       <section className="box-793">
@@ -50,7 +50,7 @@ export default function Page() {
           alt=""
           width={545}
           height={128}
-          className="svg-435"
+          className="svg-433"
         />
       </section>
       <section className="box-796">
@@ -64,7 +64,7 @@ export default function Page() {
           alt=""
           width={545}
           height={128}
-          className="svg-436"
+          className="svg-434"
         />
       </section>
       <section className="box-799">
@@ -78,7 +78,7 @@ export default function Page() {
           alt=""
           width={332}
           height={128}
-          className="svg-437"
+          className="svg-435"
         />
       </section>
       <section className="box-802">
@@ -92,12 +92,12 @@ export default function Page() {
           alt=""
           width={1069}
           height={677}
-          className="svg-485"
+          className="svg-483"
         />
       </section>
       <section className="box-804" />
-      <section data-inview className="el-2001">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2002">
+      <section data-inview className="el-2000">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2001">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -130,7 +130,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-24">
         <span
-          className="crisp-svg svg-696"
+          className="crisp-svg svg-690"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -141,7 +141,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2003">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2002">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
