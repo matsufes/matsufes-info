@@ -8,10 +8,10 @@
   ],
   "siteUrl": "https://matsufes.info",
   "favicon": {
-    "assetId": "asset_mwfdoi081nku4m"
+    "assetId": "asset_mwh2o0wq2w4se4"
   },
   "appleTouchIcon": {
-    "assetId": "asset_mwfdqjql1o2svx"
+    "assetId": "asset_mwh2o0wq2w4se4"
   },
   "ogImage": {
     "assetId": "asset_mwfdnb7y1m2tcg"
@@ -349652,8 +349652,7 @@
                   "op": "contains",
                   "value": "たべる",
                   "dir": "asc",
-                  "no": 9,
-                  "join": "or"
+                  "no": 9
                 },
                 {
                   "id": "st_mwbx9ixa2fngn",
@@ -350032,8 +350031,7 @@
                   "op": "contains",
                   "value": "あそぶ",
                   "dir": "asc",
-                  "no": 10,
-                  "join": "or"
+                  "no": 10
                 },
                 {
                   "id": "st_mwbxbw832pb77",
@@ -350412,8 +350410,7 @@
                   "op": "contains",
                   "value": "のむ",
                   "dir": "asc",
-                  "no": 11,
-                  "join": "or"
+                  "no": 11
                 },
                 {
                   "id": "st_mwbxcxc32zpc4",
@@ -350792,8 +350789,7 @@
                   "op": "contains",
                   "value": "みる",
                   "dir": "asc",
-                  "no": 12,
-                  "join": "or"
+                  "no": 12
                 },
                 {
                   "id": "st_mwbxe3jo39q2a",
@@ -351172,8 +351168,7 @@
                   "op": "contains",
                   "value": "かう",
                   "dir": "asc",
-                  "no": 13,
-                  "join": "or"
+                  "no": 13
                 },
                 {
                   "id": "st_mwbxfp553jq29",
@@ -351552,8 +351547,7 @@
                   "op": "contains",
                   "value": "さわる",
                   "dir": "asc",
-                  "no": 14,
-                  "join": "or"
+                  "no": 14
                 },
                 {
                   "id": "st_mwbxgsws3teye",
@@ -351932,8 +351926,7 @@
                   "op": "contains",
                   "value": "つくる",
                   "dir": "asc",
-                  "no": 15,
-                  "join": "or"
+                  "no": 15
                 },
                 {
                   "id": "st_mwbxiedi43gip",
@@ -352312,8 +352305,7 @@
                   "op": "contains",
                   "value": "きく",
                   "dir": "asc",
-                  "no": 16,
-                  "join": "or"
+                  "no": 16
                 },
                 {
                   "id": "st_mwbxjnkr4ddjd",
@@ -367597,6 +367589,16 @@
       "mimeType": "image/svg+xml",
       "width": 857,
       "height": 856,
+      "svgFilter": false
+    },
+    "asset_mwh2o0wq2w4se4": {
+      "id": "asset_mwh2o0wq2w4se4",
+      "name": "pasted-artwork.svg",
+      "path": "assets/mwh2o090f5f8fd-pasted-artwork.svg",
+      "bytes": 135326,
+      "mimeType": "image/svg+xml",
+      "width": 487,
+      "height": 478,
       "svgFilter": false
     }
   }
