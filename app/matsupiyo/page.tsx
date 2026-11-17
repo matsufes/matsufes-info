@@ -39,7 +39,7 @@ export default function Page() {
         />
         <div className="box-956">
           <div className="header-29">
-            <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://www.matsufes.info/\"}]}]"}
+            <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://www.matsufes.info/\"},{\"kind\":\"open-page\",\"href\":\"/\"}]}]"}
               src="/assets/pasted-artwork-406.svg"
               alt=""
               width={121}
@@ -252,7 +252,7 @@ export default function Page() {
           </span>
         </div>
         <div className="box-961">
-          <div className="box-959">
+          <a href="https://www.matsufes.info/booth/175" className="box-959">
             <Image
               src="/assets/pasted-artwork-407.svg"
               alt=""
@@ -267,9 +267,9 @@ export default function Page() {
               height={185}
               className="el-2612"
             />
-          </div>
+          </a>
           <div className="box-964">
-            <Image
+            <Image data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://www.matsufes.info/booth/143\"}]},{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://www.matsufes.info/booth/143\"}]}]"}
               src="/assets/pasted-artwork-464.svg"
               alt=""
               width={350}
