@@ -22,7 +22,7 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2479"
+        className="el-2469"
       />
       <p className="box-50">
         <Image
@@ -30,7 +30,7 @@ export default function Page() {
           alt=""
           width={840}
           height={129}
-          className="svg-440"
+          className="svg-438"
         />
       </p>
       <section className="box-51">
@@ -52,7 +52,7 @@ export default function Page() {
             alt=""
             width={769}
             height={383}
-            className="el-2035"
+            className="el-2034"
           />
         </a>
         <Image
@@ -60,14 +60,14 @@ export default function Page() {
           alt=""
           width={1920}
           height={1126}
-          className="svg-439"
+          className="svg-437"
         />
       </section>
       <p className="box-152">
         {"アンケート回答後、スクリーンショットなどで画面を保存するのを忘れないでね。"}
       </p>
-      <section data-inview className="el-2007">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2008">
+      <section data-inview className="el-2006">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2007">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -100,7 +100,7 @@ export default function Page() {
       </section>
       <section data-inview className="footer-26">
         <span
-          className="crisp-svg svg-698"
+          className="crisp-svg svg-692"
           style={{ ["--crisp-svg-width"]: "1920px", ["--crisp-svg-ratio"]: "1920 / 1227" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={1920} height={1227} viewBox="0 0 1920 1227" />
@@ -111,7 +111,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2009">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2008">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

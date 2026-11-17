@@ -107,14 +107,14 @@ export default async function Page() {
   vars["p"] = "まだお気に入りがありません";
   return (
     <>
-      <span hidden data-page-body="page_mvhxphej2d8ldu" data-scripts={JSON.stringify([{"trigger":"load","steps":[{"kind":"store-load","key":"mf_bookmarks","into":"_4","shared":true},{"kind":"transform","source":"_4","into":"_5","transform":{"kind":"split","separator":"."}},{"kind":"list-display","mode":"filter","array":"_1","no":1,"conds":[{"field":"publicId","op":"in","value":{"inputRef":"_4"}}]},{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_b","raw":lookupVar(vars, "_b") ?? null},"op":"eq","value":"0","not":true},"then":[{"kind":"hide","target":"p"}]}]}])} />
+      <span hidden data-page-body="page_mvhxphej2d8ldu" data-scripts={JSON.stringify([{"trigger":"load","steps":[{"kind":"store-load","key":"mf_bookmarks","into":"_4","shared":true},{"kind":"transform","source":"_4","into":"_5","transform":{"kind":"split","separator":"."}},{"kind":"list-display","mode":"filter","array":"_1","no":1,"conds":[{"field":"publicId","op":"in","value":{"inputRef":"_5"}}]},{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_b","raw":lookupVar(vars, "_b") ?? null},"op":"eq","value":"0","not":true},"then":[{"kind":"hide","target":"p"}]}]}])} />
       <Header />
       <Image data-inview
         src="/assets/clouds.webp"
         alt=""
         width={1600}
         height={543}
-        className="el-2617"
+        className="el-2605"
       />
       <p className="box-673">
         <span
@@ -139,11 +139,11 @@ export default async function Page() {
           className="pasted-artwork-svg-89"
         />
         <Image
-          src="/assets/pasted-artwork-219.svg"
+          src="/assets/pasted-artwork-281.svg"
           alt=""
-          width={941}
-          height={78}
-          className="el-1781"
+          width={1356}
+          height={65}
+          className="pasted-artwork-svg-175"
         />
       </section>
       <p className="box-675">
@@ -190,7 +190,7 @@ export default async function Page() {
             />
           </span>
           <span data-scripts={"[{\"trigger\":\"click\",\"steps\":[{\"kind\":\"open-url\",\"url\":\"https://vote.matsufes.info/\"}]}]"}
-            className="crisp-svg el-1782"
+            className="crisp-svg el-1781"
             style={{ ["--crisp-svg-width"]: "306px", ["--crisp-svg-ratio"]: "306 / 236" } as import("react").CSSProperties}
           >
             <svg aria-hidden="true" width={306} height={236} viewBox="0 0 306 236" />
@@ -250,25 +250,25 @@ export default async function Page() {
             alt=""
             width={411}
             height={110}
-            className="svg-713"
+            className="svg-704"
           />
         </a>
       </section>
-      <p id="p" className="el-2620">
+      <p id="p" className="el-2608">
         {"まだお気に入りがありません"}
       </p>
       <section className="box-1176">
-        <div data-array="_1" className="el-2611">
+        <div data-array="_1" className="el-2599">
           {toItems(lookupVar(vars, "_1")).map((item, i) => {
             const iv0 = { ...vars, ...item };
             return (
               <div key={i} style={{ display: "contents" }} data-row data-item={JSON.stringify({ "name": (Object.prototype.hasOwnProperty.call(item, "name") ? item["name"] : undefined), "exhibitorName": (Object.prototype.hasOwnProperty.call(item, "exhibitorName") ? item["exhibitorName"] : undefined), "tags": (Object.prototype.hasOwnProperty.call(item, "tags") ? item["tags"] : undefined), "customAnswers.中分類": lookupVar(item, "customAnswers.中分類"), "searchWords": (Object.prototype.hasOwnProperty.call(item, "searchWords") ? item["searchWords"] : undefined), "place": (Object.prototype.hasOwnProperty.call(item, "place") ? item["place"] : undefined), "categories.出展カテゴリ": lookupVar(item, "categories.出展カテゴリ"), "businessHours": (Object.prototype.hasOwnProperty.call(item, "businessHours") ? item["businessHours"] : undefined), "venue": (Object.prototype.hasOwnProperty.call(item, "venue") ? item["venue"] : undefined), "categories.大分類": lookupVar(item, "categories.大分類"), "exhibitNo": (Object.prototype.hasOwnProperty.call(item, "exhibitNo") ? item["exhibitNo"] : undefined), "publicId": (Object.prototype.hasOwnProperty.call(item, "publicId") ? item["publicId"] : undefined) })}>
-                <SmartLink href={safeNavigationUrl(interpolateUrl("/booth/{publicId}", iv0))} className="el-2612">
+                <SmartLink href={safeNavigationUrl(interpolateUrl("/booth/{publicId}", iv0))} className="el-2600">
                   <div className="box-1160">
                     <p className="text-791">
                       {interpolate("{name}", iv0)}
                     </p>
-                    <div data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_5"},"op":"contains","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null}},"then":[{"kind":"remove-list-item","list":"_5","mode":"value","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null}},{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}],"else":[{"kind":"set-list-item","list":"_5","key":"","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null}},{"kind":"show","target":"fav-on"},{"kind":"hide","target":"fav-off"}]},{"kind":"transform","source":"_5","into":"_4","transform":{"kind":"join","separator":"."}},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_4}", { ...iv0, ...{"_4":"{_4}","\u0000keepEscapes":true} }),"shared":true}]},{"trigger":"load","steps":[{"kind":"if","cond":{"subject":"var","target":"","op":"contains","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null},"left":{"inputRef":"_5"}},"then":[{"kind":"show","target":"fav-on"},{"kind":"hide","target":"fav-off"}],"else":[{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}]}]}])} className="el-2613">
+                    <div data-scripts={JSON.stringify([{"trigger":"click","steps":[{"kind":"if","cond":{"subject":"var","target":"","left":{"inputRef":"_5"},"op":"contains","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null}},"then":[{"kind":"remove-list-item","list":"_5","mode":"value","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null}},{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}],"else":[{"kind":"set-list-item","list":"_5","key":"","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null}},{"kind":"show","target":"fav-on"},{"kind":"hide","target":"fav-off"}]},{"kind":"transform","source":"_5","into":"_4","transform":{"kind":"join","separator":"."}},{"kind":"store-save","key":"mf_bookmarks","value":interpolate("{_4}", { ...iv0, ...{"_4":"{_4}","\u0000keepEscapes":true} }),"shared":true}]},{"trigger":"load","steps":[{"kind":"if","cond":{"subject":"var","target":"","op":"contains","value":{"inputRef":"publicId","raw":lookupVar(iv0, "publicId") ?? null},"left":{"inputRef":"_5"}},"then":[{"kind":"show","target":"fav-on"},{"kind":"hide","target":"fav-off"}],"else":[{"kind":"show","target":"fav-off"},{"kind":"hide","target":"fav-on"}]}]}])} className="el-2601">
                       <Image id="fav-on" data-toggle-show="block"
                         src="/assets/pasted-artwork-459.svg"
                         alt="お気に入り登録済"
@@ -288,7 +288,7 @@ export default async function Page() {
                     </div>
                   </div>
                   <span
-                    className="crisp-svg el-2614"
+                    className="crisp-svg el-2602"
                     style={{ ["--crisp-svg-width"]: "307px", ["--crisp-svg-ratio"]: "307 / 17" } as import("react").CSSProperties}
                   >
                     <svg aria-hidden="true" width={307} height={17} viewBox="0 0 307 17" />
@@ -324,7 +324,7 @@ export default async function Page() {
                           alt=""
                           width={60}
                           height={60}
-                          className="el-2615"
+                          className="el-2603"
                         />
                         <p className="text-794">
                           {interpolate("{customAnswers.皆さまへ}", iv0)}
@@ -336,7 +336,7 @@ export default async function Page() {
                           alt=""
                           width={49}
                           height={79}
-                          className="el-2616"
+                          className="el-2604"
                         />
                         <p className="text-795">
                           {interpolate("{location}", iv0)}
@@ -376,8 +376,8 @@ export default async function Page() {
           })}
         </div>
       </section>
-      <section data-inview className="el-2025">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2026">
+      <section data-inview className="el-2024">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2025">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -421,7 +421,7 @@ export default async function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2027">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2026">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

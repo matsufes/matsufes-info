@@ -24,7 +24,7 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-2483"
+        className="el-2473"
       />
       <p className="box-835">
         <span
@@ -58,7 +58,7 @@ export default function Page() {
           alt=""
           width={438}
           height={128}
-          className="svg-451"
+          className="svg-449"
         />
       </section>
       <section className="box-841">
@@ -75,7 +75,7 @@ export default function Page() {
           alt=""
           width={438}
           height={128}
-          className="svg-452"
+          className="svg-450"
         />
       </section>
       <section className="box-845">
@@ -92,7 +92,7 @@ export default function Page() {
           alt=""
           width={438}
           height={128}
-          className="svg-453"
+          className="svg-451"
         />
       </section>
       <section className="box-847">
@@ -111,7 +111,7 @@ export default function Page() {
             alt=""
             width={1024}
             height={727}
-            className="el-1982"
+            className="el-1981"
           />
         </div>
         <div className="box-849">
@@ -120,7 +120,7 @@ export default function Page() {
             alt=""
             width={1438}
             height={1035}
-            className="el-1983"
+            className="el-1982"
           />
         </div>
         <div className="box-850">
@@ -149,12 +149,12 @@ export default function Page() {
             alt=""
             width={1021}
             height={574}
-            className="el-1984"
+            className="el-1983"
           />
         </div>
       </section>
-      <section data-inview className="el-2019">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2020">
+      <section data-inview className="el-2018">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2019">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -198,7 +198,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-2021">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-2020">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""

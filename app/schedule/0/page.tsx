@@ -25,11 +25,11 @@ export default function Page() {
         alt=""
         width={1600}
         height={543}
-        className="el-1857"
+        className="el-1856"
       />
-      <p className="el-1850">
+      <p className="el-1849">
         <span
-          className="crisp-svg svg-477"
+          className="crisp-svg svg-475"
           style={{ ["--crisp-svg-width"]: "707px", ["--crisp-svg-ratio"]: "707 / 136" } as import("react").CSSProperties}
         >
           <svg aria-hidden="true" width={707} height={136} viewBox="0 0 707 136" />
@@ -41,7 +41,7 @@ export default function Page() {
           />
         </span>
       </p>
-      <section className="el-1851">
+      <section className="el-1850">
         <Image
           src="/assets/pasted-artwork-78.svg"
           alt=""
@@ -60,7 +60,7 @@ export default function Page() {
       <p className="box-747">
         {"1日の日程表を　見ることができるよ。\nメインステージでの催しや　音楽サークルの公演時間を　確認しよう。"}
       </p>
-      <section className="el-1852">
+      <section className="el-1851">
         <span
           className="crisp-svg svg-346"
           style={{ ["--crisp-svg-width"]: "430px", ["--crisp-svg-ratio"]: "430 / 64" } as import("react").CSSProperties}
@@ -74,8 +74,8 @@ export default function Page() {
           />
         </span>
       </section>
-      <section className="el-1856">
-        <Link href="/schedule/0" className="el-1853">
+      <section className="el-1855">
+        <Link href="/schedule/0" className="el-1852">
           <Image
             src="/assets/pasted-artwork-46.svg"
             alt="11.13（きん）"
@@ -91,7 +91,7 @@ export default function Page() {
             className="svg-350"
           />
         </Link>
-        <Link href="/schedule" className="el-1854">
+        <Link href="/schedule" className="el-1853">
           <Image
             src="/assets/pasted-artwork-47.svg"
             alt="11.14（ど）"
@@ -107,7 +107,7 @@ export default function Page() {
             className="svg-352"
           />
         </Link>
-        <Link href="/schedule/1" className="el-1855">
+        <Link href="/schedule/1" className="el-1854">
           <Image
             src="/assets/pasted-artwork-48.svg"
             alt="11.15（にち）"
@@ -132,7 +132,7 @@ export default function Page() {
           <option value="委員会企画">{"委員会企画"}</option>
         </select>
       </section>
-      <section className="el-2410">
+      <section className="el-2400">
         <div className="box-1057">
           <div id="main-2" data-toggle-show="flex" className="t">
             <Image
@@ -140,35 +140,35 @@ export default function Page() {
               alt=""
               width={306}
               height={113}
-              className="svg-531"
+              className="svg-525"
             />
             <Image
               src="/assets/pasted-artwork-321.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-532"
+              className="svg-526"
             />
             <Image
               src="/assets/pasted-artwork-318.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-533"
+              className="svg-527"
             />
             <Image
               src="/assets/pasted-artwork-319.svg"
               alt=""
               width={306}
               height={113}
-              className="svg-534"
+              className="svg-528"
             />
             <Image
               src="/assets/pasted-artwork-317.svg"
               alt=""
               width={175}
               height={63}
-              className="svg-535"
+              className="svg-529"
             />
           </div>
           <div id="committee14-2" data-toggle-show="flex" className="t-2">
@@ -177,28 +177,28 @@ export default function Page() {
               alt=""
               width={306}
               height={537}
-              className="svg-536"
+              className="svg-530"
             />
             <Image
               src="/assets/pasted-artwork-447.svg"
               alt=""
               width={306}
               height={594}
-              className="svg-537"
+              className="svg-531"
             />
             <Image
               src="/assets/pasted-artwork-453.svg"
               alt=""
               width={306}
               height={681}
-              className="svg-538"
+              className="svg-532"
             />
             <Image
               src="/assets/pasted-artwork-448.svg"
               alt=""
               width={306}
               height={708}
-              className="svg-539"
+              className="svg-533"
             />
           </div>
           <Image
@@ -206,7 +206,7 @@ export default function Page() {
             alt=""
             width={295}
             height={2502}
-            className="el-2409"
+            className="el-2399"
           />
           <span
             className="crisp-svg pc-6"
@@ -222,8 +222,8 @@ export default function Page() {
           </span>
         </div>
       </section>
-      <section data-inview className="el-1986">
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1987">
+      <section data-inview className="el-1985">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1986">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
@@ -267,7 +267,7 @@ export default function Page() {
             height={2454}
           />
         </span>
-        <a href="https://www.instagram.com/kit_matsufes/" className="el-1988">
+        <a href="https://www.instagram.com/kit_matsufes/" className="el-1987">
           <Image
             src="/assets/pasted-artwork-275.svg"
             alt=""
